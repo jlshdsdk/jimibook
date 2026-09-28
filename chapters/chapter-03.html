@@ -1,0 +1,2914 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第3章 第三章 微分中值定理与导数的应用 · 吉米多维奇高等数学刷题版</title>
+<meta name="description" content="吉米多维奇高等数学习题精选精解第3章第三章 微分中值定理与导数的应用题目与详解，共156题">
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+<script defer src="../assets/katex/katex.min.js"></script>
+<script defer src="../assets/katex/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</head>
+<body data-chapter="3" data-lazy="1">
+<header class="topbar">
+  <a class="back" href="../index.html">← 总目录</a>
+  <button class="icon-btn sidebar-toggle" id="sidebar-toggle">☰ 目录</button>
+  <span class="title">第3章 第三章 微分中值定理与导数的应用 · 共156题</span>
+  <button class="icon-btn" id="theme-btn">🌙 夜间</button>
+</header>
+<div class="sidebar-mask" id="sidebar-mask"></div>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<h3>本章节选</h3>
+<a class="sec" href="#sec-s1">2. 洛必达法则</a>
+<a class="sec" href="#sec-s2">3. 泰勒公式</a>
+<a class="sec" href="#sec-s3">4. 函数的单调性与曲线的凹凸性</a>
+<a class="sec" href="#sec-s4">5. 函数的极值与最大值、最小值</a>
+<a class="sec" href="#sec-s5">6. 函数图形的描绘</a>
+<a class="sec" href="#sec-s6">1. 曲线的渐近线</a>
+<a class="sec" href="#sec-s7">2. 作图步骤</a>
+<a class="sec" href="#sec-s8">7. 曲率</a>
+<a class="sec" href="#sec-s9">1. 曲率的定义</a>
+<a class="sec" href="#sec-s10">2. 计算曲率的公式</a>
+<a class="sec" href="#sec-s11">8. 综合提高题型</a>
+<a class="sec" href="#sec-s12">§1. 不定积分的概念与性质</a>
+<a class="sec" href="#sec-s13">1. 原函数与不定积分的定义</a>
+<a class="sec" href="#sec-s14">2. 不定积分的基本性质</a>
+<a class="sec" href="#sec-s15">3. 基本公式</a>
+<h3>题号</h3><div class="qindex">
+<a href="#q231" id="qi231">231</a>
+<a href="#q232" id="qi232">232</a>
+<a href="#q233" id="qi233">233</a>
+<a href="#q234" id="qi234">234</a>
+<a href="#q235" id="qi235">235</a>
+<a href="#q236" id="qi236">236</a>
+<a href="#q237" id="qi237">237</a>
+<a href="#q238" id="qi238">238</a>
+<a href="#q239" id="qi239">239</a>
+<a href="#q240" id="qi240">240</a>
+<a href="#q241" id="qi241">241</a>
+<a href="#q242" id="qi242">242</a>
+<a href="#q243" id="qi243">243</a>
+<a href="#q244" id="qi244">244</a>
+<a href="#q245" id="qi245">245</a>
+<a href="#q246" id="qi246">246</a>
+<a href="#q247" id="qi247">247</a>
+<a href="#q248" id="qi248">248</a>
+<a href="#q249" id="qi249">249</a>
+<a href="#q250" id="qi250">250</a>
+<a href="#q251" id="qi251">251</a>
+<a href="#q252" id="qi252">252</a>
+<a href="#q253" id="qi253">253</a>
+<a href="#q254" id="qi254">254</a>
+<a href="#q255" id="qi255">255</a>
+<a href="#q256" id="qi256">256</a>
+<a href="#q257" id="qi257">257</a>
+<a href="#q258" id="qi258">258</a>
+<a href="#q259" id="qi259">259</a>
+<a href="#q260" id="qi260">260</a>
+<a href="#q261" id="qi261">261</a>
+<a href="#q262" id="qi262">262</a>
+<a href="#q263" id="qi263">263</a>
+<a href="#q264" id="qi264">264</a>
+<a href="#q265" id="qi265">265</a>
+<a href="#q266" id="qi266">266</a>
+<a href="#q267" id="qi267">267</a>
+<a href="#q268" id="qi268">268</a>
+<a href="#q269" id="qi269">269</a>
+<a href="#q270" id="qi270">270</a>
+<a href="#q271" id="qi271">271</a>
+<a href="#q272" id="qi272">272</a>
+<a href="#q273" id="qi273">273</a>
+<a href="#q274" id="qi274">274</a>
+<a href="#q275" id="qi275">275</a>
+<a href="#q276" id="qi276">276</a>
+<a href="#q277" id="qi277">277</a>
+<a href="#q278" id="qi278">278</a>
+<a href="#q279" id="qi279">279</a>
+<a href="#q280" id="qi280">280</a>
+<a href="#q281" id="qi281">281</a>
+<a href="#q282" id="qi282">282</a>
+<a href="#q283" id="qi283">283</a>
+<a href="#q284" id="qi284">284</a>
+<a href="#q285" id="qi285">285</a>
+<a href="#q286" id="qi286">286</a>
+<a href="#q287" id="qi287">287</a>
+<a href="#q288" id="qi288">288</a>
+<a href="#q289" id="qi289">289</a>
+<a href="#q290" id="qi290">290</a>
+<a href="#q291" id="qi291">291</a>
+<a href="#q292" id="qi292">292</a>
+<a href="#q293" id="qi293">293</a>
+<a href="#q294" id="qi294">294</a>
+<a href="#q295" id="qi295">295</a>
+<a href="#q296" id="qi296">296</a>
+<a href="#q297" id="qi297">297</a>
+<a href="#q298" id="qi298">298</a>
+<a href="#q299" id="qi299">299</a>
+<a href="#q300" id="qi300">300</a>
+<a href="#q301" id="qi301">301</a>
+<a href="#q302" id="qi302">302</a>
+<a href="#q303" id="qi303">303</a>
+<a href="#q304" id="qi304">304</a>
+<a href="#q305" id="qi305">305</a>
+<a href="#q306" id="qi306">306</a>
+<a href="#q307" id="qi307">307</a>
+<a href="#q308" id="qi308">308</a>
+<a href="#q309" id="qi309">309</a>
+<a href="#q310" id="qi310">310</a>
+<a href="#q311" id="qi311">311</a>
+<a href="#q312" id="qi312">312</a>
+<a href="#q313" id="qi313">313</a>
+<a href="#q314" id="qi314">314</a>
+<a href="#q315" id="qi315">315</a>
+<a href="#q316" id="qi316">316</a>
+<a href="#q317" id="qi317">317</a>
+<a href="#q318" id="qi318">318</a>
+<a href="#q319" id="qi319">319</a>
+<a href="#q320" id="qi320">320</a>
+<a href="#q321" id="qi321">321</a>
+<a href="#q322" id="qi322">322</a>
+<a href="#q323" id="qi323">323</a>
+<a href="#q324" id="qi324">324</a>
+<a href="#q325" id="qi325">325</a>
+<a href="#q326" id="qi326">326</a>
+<a href="#q327" id="qi327">327</a>
+<a href="#q328" id="qi328">328</a>
+<a href="#q329" id="qi329">329</a>
+<a href="#q330" id="qi330">330</a>
+<a href="#q331" id="qi331">331</a>
+<a href="#q332" id="qi332">332</a>
+<a href="#q333" id="qi333">333</a>
+<a href="#q334" id="qi334">334</a>
+<a href="#q335" id="qi335">335</a>
+<a href="#q336" id="qi336">336</a>
+<a href="#q337" id="qi337">337</a>
+<a href="#q338" id="qi338">338</a>
+<a href="#q339" id="qi339">339</a>
+<a href="#q340" id="qi340">340</a>
+<a href="#q341" id="qi341">341</a>
+<a href="#q342" id="qi342">342</a>
+<a href="#q343" id="qi343">343</a>
+<a href="#q344" id="qi344">344</a>
+<a href="#q345" id="qi345">345</a>
+<a href="#q346" id="qi346">346</a>
+<a href="#q347" id="qi347">347</a>
+<a href="#q348" id="qi348">348</a>
+<a href="#q349" id="qi349">349</a>
+<a href="#q350" id="qi350">350</a>
+<a href="#q351" id="qi351">351</a>
+<a href="#q352" id="qi352">352</a>
+<a href="#q353" id="qi353">353</a>
+<a href="#q354" id="qi354">354</a>
+<a href="#q355" id="qi355">355</a>
+<a href="#q356" id="qi356">356</a>
+<a href="#q357" id="qi357">357</a>
+<a href="#q358" id="qi358">358</a>
+<a href="#q359" id="qi359">359</a>
+<a href="#q360" id="qi360">360</a>
+<a href="#q361" id="qi361">361</a>
+<a href="#q362" id="qi362">362</a>
+<a href="#q363" id="qi363">363</a>
+<a href="#q364" id="qi364">364</a>
+<a href="#q365" id="qi365">365</a>
+<a href="#q366" id="qi366">366</a>
+<a href="#q367" id="qi367">367</a>
+<a href="#q368" id="qi368">368</a>
+<a href="#q369" id="qi369">369</a>
+<a href="#q370" id="qi370">370</a>
+<a href="#q371" id="qi371">371</a>
+<a href="#q372" id="qi372">372</a>
+<a href="#q373" id="qi373">373</a>
+<a href="#q374" id="qi374">374</a>
+<a href="#q375" id="qi375">375</a>
+<a href="#q376" id="qi376">376</a>
+<a href="#q377" id="qi377">377</a>
+<a href="#q378" id="qi378">378</a>
+<a href="#q379" id="qi379">379</a>
+<a href="#q380" id="qi380">380</a>
+<a href="#q381" id="qi381">381</a>
+<a href="#q382" id="qi382">382</a>
+<a href="#q383" id="qi383">383</a>
+<a href="#q384" id="qi384">384</a>
+<a href="#q385" id="qi385">385</a>
+<a href="#q386" id="qi386">386</a>
+</div></nav>
+<main class="main">
+<div class="ch-progress-wrap" style="margin-bottom:18px;color:var(--text-soft);font-size:14px;">
+  本章进度：<span id="ch-progress-text">0 / 156</span>
+  <div class="progress-bar" id="ch-progress" data-ch-count="156" style="margin:6px 0 0;"><i></i></div>
+</div>
+<article class="problem" id="q231">
+<div class="q-head">
+<span class="q-no" data-n="231">【231】</span>
+<span class="q-group">验证中值定理及其有关中值的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">罗尔定理对 $y=\ln\sin x$ 在 $\left[\dfrac{\pi}{6},\dfrac{5}{6}\pi\right]$ 上的正确性．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> $y=\ln\sin x$ 的定义域为 $\{x\mid 2n\pi&lt;x&lt;(2n+1)\pi$，$n=0,\pm1,\pm2,\cdots\}$．因为初等函数在定义区间内连续，所以该函数在 $\left[\dfrac{\pi}{6},\dfrac{5}{6}\pi\right]$ 上连续；又 $y'=\cot x$ 在 $\left(\dfrac{\pi}{6},\dfrac{5}{6}\pi\right)$ 内处处存在，并且 $f\left(\dfrac{\pi}{6}\right)=f\left(\dfrac{5}{6}\pi\right)=-\ln2$，可知函数在 $\left[\dfrac{\pi}{6},\dfrac{5}{6}\pi\right]$ 上满足罗尔定理条件．由 $y'=\cot x=0$ 在 $\left(\dfrac{\pi}{6},\dfrac{5}{6}\pi\right)$ 内显然有解 $x=\dfrac{\pi}{2}$，取 $\xi=\dfrac{\pi}{2}$，则 $f'(\xi)=0$．</div>
+
+</div>
+</article>
+<article class="problem" id="q232">
+<div class="q-head">
+<span class="q-no" data-n="232">【232】</span>
+<span class="q-group">验证中值定理及其有关中值的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">验证函数 $f(x)=\begin{cases}1-x^{2}, &amp; -1\leqslant x&lt;0\\ 1+x^{2}, &amp; 0\leqslant x\leqslant1\end{cases}$ 在 $-1\leqslant x\leqslant1$ 上是否满足拉格朗日定理，如满足，求出满足定理的中值 $\xi$．</div>
+<div class="figure-note">（图 232，位于本页右侧）直角坐标系，$x$ 轴上自左至右标出 $-1$、$-\dfrac{1}{2}$、$O$、$\dfrac{1}{2}$、$1$；曲线 $y=f(x)$ 自点 $(-1,0)$ 上升，先陡后缓地经过 $O$ 上方附近（点 $(0,1)$），再逐渐变陡升至点 $(1,2)$；连接 $(-1,0)$ 与 $(1,2)$ 的弦为虚线（斜率 $1$）；在 $x=-\dfrac{1}{2}$ 与 $x=\dfrac{1}{2}$ 处各有一条与该弦平行的切线（实线），并有竖直虚线自切点连到 $x$ 轴上的 $-\dfrac{1}{2}$ 与 $\dfrac{1}{2}$．</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 函数 $f(x)$ 在 $[0,1]$ 和 $[-1,0]$ 上连续且可导，从而只需验证 $f(x)$ 在 $x=0$ 处的连续性与可导性．由于 $f(0+0)=\lim\limits_{x\to0^{+}}(1+x^{2})=1$，$f(0-0)=\lim\limits_{x\to0^{-}}(1-x^{2})=1$，$f(0)=1$，所以，$f(x)$ 在 $x=0$ 处连续．又 $f'_{+}(0)=\lim\limits_{x\to0^{+}}\dfrac{f(x)-f(0)}{x}=\lim\limits_{x\to0^{+}}\dfrac{1+x^{2}-1}{x}=0$，$f'_{-}(0)=\lim\limits_{x\to0^{-}}\dfrac{f(x)-f(0)}{x}=\lim\limits_{x\to0^{-}}\dfrac{1-x^{2}-1}{x}=0$，从而 $f(x)$ 在 $x=0$ 处可导．因而 $f(x)$ 在 $[-1,1]$ 上连续，在 $(-1,1)$ 内可导，满足拉格朗日定理所需条件，此时存在 $\xi\in(-1,1)$ 使得 $\dfrac{f(1)-f(-1)}{1-(-1)}=f'(\xi)$，而 $\dfrac{f(1)-f(-1)}{1-(-1)}=\dfrac{2-0}{2}=1$．$f'(x)=\begin{cases}2x, &amp; 0\leqslant x\leqslant1\\ -2x, &amp; -1\leqslant x&lt;0\end{cases}$ 故由 $2x=1$，解得 $\xi_{1}=\dfrac{1}{2}$；由 $-2x=1$，解得 $\xi_{2}=-\dfrac{1}{2}$．满足定理的中值共有两个：$\xi_{1}=\dfrac{1}{2}$ 和 $\xi_{2}=-\dfrac{1}{2}$．（如图 232）</div>
+
+</div>
+</article>
+<h3 class="grp-h">构造辅助函数利用罗尔定理证明等式的题目</h3>
+<article class="problem" id="q233">
+<div class="q-head">
+<span class="q-no" data-n="233">【233】</span>
+<span class="q-group">构造辅助函数利用罗尔定理证明等式的题目</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(1)=0$，试证：至少存在一点 $\xi\in(0,1)$，使 $f'(\xi)=-\dfrac{2f(\xi)}{\xi}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 显然 $f(x)$ 在 $[0,1]$ 上满足拉格朗日中值定理，但是问题的形式并不是拉格朗日定理形式，因此需另辟蹊径．为此，可先将问题变形为 $\xi f'(\xi)+2f(\xi)=0$　　① 如果令 $F'(\xi)=\xi f'(\xi)+2f(\xi)$，此时若能求出 $F(x)$，且 $F(x)$ 在 $[0,1]$ 上满足罗尔定理的条件，则问题易证，然而 $F(x)$ 难以判定，但注意到 $\xi\neq0$，由①式有 $\xi^{2}f'(\xi)+2\xi f(\xi)=0$　　② 且①式与②式等价．若记 $\Phi'(\xi)=\xi^{2}f'(\xi)+2\xi f(\xi)$，则易知 $\Phi(x)=x^{2}f(x)$，且 $\Phi(x)$ 在 $[0,1]$ 上满足罗尔定理条件．于是问题得证．<strong>证</strong> 作辅助函数 $\Phi(x)=x^{2}f(x)$ 由已知条件可知，$\Phi(x)$ 在 $[0,1]$ 上满足罗尔定理条件．因此，至少存在一点 $\xi\in(0,1)$，使 $\Phi'(\xi)=\xi^{2}f'(\xi)+2\xi f(\xi)=0$ 由于 $\xi\neq0$，可知必有 $\xi f'(\xi)+2f(\xi)=0$　即　$f'(\xi)=-\dfrac{2f(\xi)}{\xi}$．<strong>点评</strong>　（1）当欲证结论为“至少存在一点 $\xi\in(a,b)$ 使得 $f'(\xi)=h(\xi)$ 及类似命题”，其证题程序一般为：“第一步构造辅助函数 $F(x)$；第二步验证 $F(x)$ 满足罗尔定理条件”．(2)辅助函数的构造常用常数变易法，其步骤为：第一步　把结论中的 $\xi$ 换成 $x$；第二步　通过恒等变形化为易于消除导数符号的形式；第三步　利用观察法或积分求出全部原函数；第四步　移项使等式一边为积分常数，把此常数变成函数，即为所构造的辅助函数．</div>
+
+</div>
+</article>
+<article class="problem" id="q234">
+<div class="q-head">
+<span class="q-no" data-n="234">【234】</span>
+<span class="q-group">构造辅助函数利用罗尔定理证明等式的题目</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $[0,1]$ 上有三阶导数，且 $f(0)=f(1)=0$，设 $F(x)=x^{3}f(x)$，试证：在 $(0,1)$ 内存在一个 $\xi$，使 $F'''(\xi)=0$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 由 $F(0)=F(1)=0$ 知存在 $\xi_{1}\in(0,1)$，使 $F'(\xi_{1})=0$．又由 $F'(x)=3x^{2}f(x)+x^{3}f'(x)$ 知 $F'(0)=0$．对 $F'(x)$ 在 $[0,\xi_{1}]$ 上应用罗尔定理，有 $\xi_{2}\in(0,\xi_{1})$，使 $F''(\xi_{2})=0$．又 $F''(x)=6xf(x)+6x^{2}f'(x)+x^{3}f''(x)$，$F''(0)=0$．对 $F''(x)$ 在 $[0,\xi_{2}]$ 上应用罗尔定理，知存在 $\xi\in(0,\xi_{2})\subset(0,1)$，使 $F'''(\xi)=0$．</div>
+
+</div>
+</article>
+<article class="problem" id="q235">
+<div class="q-head">
+<span class="q-no" data-n="235">【235】</span>
+<span class="q-group">构造辅助函数利用罗尔定理证明等式的题目</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若函数 $f(x)$ 在 $(a,b)$ 内具有二阶导数，且 $f(x_{1})=f(x_{2})=f(x_{3})$，其中 $a&lt;x_{1}&lt;x_{2}&lt;x_{3}&lt;b$，证明：在 $(x_{1},x_{3})$ 内至少有一点 $\xi$，使 $f''(\xi)=0$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 由于 $f(x)$ 在 $(a,b)$ 内具有二阶导数，所以 $f(x)$ 在 $[x_{1},x_{2}]$ 上连续，在 $(x_{1},x_{2})$ 内可导，再根据题意 $f(x_{1})=f(x_{2})$，由罗尔定理知至少存在一点 $\xi_{1}\in(x_{1},x_{2})$，使 $f'(\xi_{1})=0$；同理，在 $[x_{2},x_{3}]$ 上对函数 $f(x)$ 使用罗尔定理得至少存在一点 $\xi_{2}\in(x_{2},x_{3})$，使 $f'(\xi_{2})=0$；对函数 $f'(x)$，由已知条件知 $f'(x)$ 在 $[\xi_{1},\xi_{2}]$ 上连续，在 $(\xi_{1},\xi_{2})$ 内可导，且 $f'(\xi_{1})=f'(\xi_{2})=0$，由罗尔定理知至少存在一点 $\xi\in(\xi_{1},\xi_{2})$，使 $f''(\xi)=0$，而 $(\xi_{1},\xi_{2})\subset(x_{1},x_{3})$，故结论得证．</div>
+
+</div>
+</article>
+<article class="problem" id="q236">
+<div class="q-head">
+<span class="q-no" data-n="236">【236】</span>
+<span class="q-group">构造辅助函数利用罗尔定理证明等式的题目</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在区间 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(0)=f(1)=0$，$f\left(\dfrac{1}{2}\right)=1$，试证：(1)存在 $\eta\in\left(\dfrac{1}{2},1\right)$，使 $f(\eta)=\eta$；(2)对任意实数 $\lambda$，必存在 $\xi\in(0,\eta)$，使得 $f'(\xi)-\lambda[f(\xi)-\xi]=1$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> (1)令 $\Phi(x)=f(x)-x$，则 $\Phi(x)$ 在 $[0,1]$ 上连续．又 $\Phi(1)=-1&lt;0$，$\Phi\left(\dfrac{1}{2}\right)=\dfrac{1}{2}&gt;0$，故由闭区间上连续函数的介值定理知，存在 $\eta\in\left(\dfrac{1}{2},1\right)$，使得 $\Phi(\eta)=f(\eta)-\eta=0$，即 $f(\eta)=\eta$．(2)设 $F(x)=e^{-\lambda x}\Phi(x)=e^{-\lambda x}[f(x)-x]$，则 $F(x)$ 在 $[0,\eta]$ 上连续，在 $(0,\eta)$ 内可导，且 $F(0)=0$，$F(\eta)=e^{-\lambda\eta}\Phi(\eta)=0$，即 $F(x)$ 在 $[0,\eta]$ 上满足罗尔定理的条件，故存在 $\xi\in(0,\eta)$，使得 $F'(\xi)=0$，即 $e^{-\lambda\xi}\{f'(\xi)-\lambda[f(\xi)-\xi]-1\}=0$，从而 $f'(\xi)-\lambda[f(\xi)-\xi]=1$．<strong>点评</strong>　要证结论中不含未知函数的导数，可考虑用介值定理．例如本题(1)中设辅助函数 $\Phi(x)=f(x)-x$，然后利用介值定理．要证结论中含有未知函数的导数值，则可考虑用罗尔中值定理或其他中值定理，通过构造辅助函数证得结论．</div>
+
+</div>
+</article>
+<article class="problem" id="q237">
+<div class="q-head">
+<span class="q-no" data-n="237">【237】</span>
+<span class="q-group">构造辅助函数利用罗尔定理证明等式的题目</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设抛物线 $y=-x^{2}+Bx+C$ 与 $x$ 轴有两个交点 $x=a$，$x=b$（$a&lt;b$），又 $f(x)$ 在 $[a,b]$ 上有二阶导数，且 $f(a)=f(b)=0$．若曲线 $y=f(x)$ 与 $y=-x^{2}+Bx+C$ 在 $(a,b)$ 内有一个交点，求证：在 $(a,b)$ 内存在一点 $\xi$，使 $f''(\xi)+2=0$．</div>
+<div class="figure-note">（图 237，位于本页右上方）直角坐标系，$x$ 轴上自左至右标出 $a$、$c$、$O$、$b$；开口向下的抛物线 $y=-x^{2}+Bx+C$ 与 $x$ 轴交于 $(a,0)$、$(b,0)$ 两点；曲线 $y=f(x)$ 也过 $(a,0)$、$(b,0)$ 两点，呈拱形；两曲线在 $(a,b)$ 内相交于一点，交点横坐标为 $c$，自交点向 $x$ 轴引竖直虚线标 $c$；两轴末端带箭头并标 $x$、$y$．</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 如图 237．设 $y=f(x)$ 与 $y=-x^{2}+Bx+C$ 在 $(a,b)$ 内的交点为 $(c,f(c))$（$a&lt;c&lt;b$）．作辅助函数 $\varphi(x)=f(x)-(-x^{2}+Bx+C)$，由题设条件知 $\varphi(x)$ 在 $[a,b]$ 上也有二阶导数，且 $\varphi(a)=\varphi(c)=\varphi(b)=0$．由罗尔定理知存在 $\xi_{1}\in(a,c)$，$\xi_{2}\in(c,b)$，使 $\varphi'(\xi_{1})=f'(\xi_{1})+2\xi_{1}-B=0$ 和 $\varphi'(\xi_{2})=f'(\xi_{2})+2\xi_{2}-B=0$．将函数 $\varphi'(x)$ 在 $[\xi_{1},\xi_{2}]$ 上应用罗尔定理，知存在 $\xi\in(\xi_{1},\xi_{2})$，使 $\varphi''(\xi)=f''(\xi)+2=0$，$a&lt;\xi_{1}&lt;\xi&lt;\xi_{2}&lt;b$，即 $f''(\xi)+2=0$．</div>
+
+</div>
+</article>
+<h3 class="grp-h">利用罗尔定理证明根的存在性</h3>
+<article class="problem" id="q238">
+<div class="q-head">
+<span class="q-no" data-n="238">【238】</span>
+<span class="q-group">利用罗尔定理证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">不用求出函数 $f(x)=(x-1)(x-2)(x-3)(x-4)$ 的导数，说明方程 $f'(x)=0$ 有几个实根，并指出它们所在的区间．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由于 $f(x)$ 为多项式函数，所以 $f(x)$ 在定义域内是连续的、可导的，且 $f(1)=f(2)=f(3)=f(4)=0$，从而 $f(x)$ 在 $[1,2],[2,3],[3,4]$ 上均满足罗尔定理条件．因此在 $(1,2)$ 内至少存在一点 $\xi_{1}$，使 $f'(\xi_{1})=0$，$\xi_{1}$ 是 $f'(x)=0$ 的一个实根；在 $(2,3)$ 内至少存在一点 $\xi_{2}$，使 $f'(\xi_{2})=0$，$\xi_{2}$ 也是 $f'(x)=0$ 的一个实根；在 $(3,4)$ 内至少存在一点 $\xi_{3}$，使 $f'(\xi_{3})=0$，$\xi_{3}$ 也是 $f'(x)=0$ 的一个实根．而 $f'(x)$ 为三次多项式，最多只能有三个实根，故 $\xi_{1},\xi_{2},\xi_{3}$ 为 $f'(x)=0$ 的三个实根，它们分别在区间 $(1,2)$、$(2,3)$ 及 $(3,4)$ 内．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">方程 $f'(x)=0$ 有三个实根，分别在区间 $(1,2)$、$(2,3)$ 及 $(3,4)$ 内</span></div>
+</div>
+</article>
+<article class="problem" id="q239">
+<div class="q-head">
+<span class="q-no" data-n="239">【239】</span>
+<span class="q-group">利用罗尔定理证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $a_{0},a_{1},\cdots,a_{n}$ 是满足 $a_{0}+\dfrac{a_{1}}{2}+\dfrac{a_{2}}{3}+\cdots+\dfrac{a_{n}}{n+1}=0$ 的实数，证明多项式 $f(x)=a_{0}+a_{1}x+a_{2}x^{2}+\cdots+a_{n}x^{n}$ 在 $(0,1)$ 内至少有一个零点．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 令 $F(x)=a_{0}x+\dfrac{a_{1}}{2}x^{2}+\cdots+\dfrac{a_{n}}{n+1}x^{n+1}$，显然 $F(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $F(0)=0$，$F(1)=a_{0}+\dfrac{a_{1}}{2}+\cdots+\dfrac{a_{n}}{n+1}=0$，由罗尔定理得在 $(0,1)$ 内至少存在一点 $\xi$，使 $F'(\xi)=0$，即 $a_{0}+a_{1}\xi+\cdots+a_{n}\xi^{n}=0$．从而，$f(x)=a_{0}+a_{1}x+\cdots+a_{n}x^{n}$ 在 $(0,1)$ 内至少有一个零点．</div>
+
+</div>
+</article>
+<article class="problem" id="q240">
+<div class="q-head">
+<span class="q-no" data-n="240">【240】</span>
+<span class="q-group">利用罗尔定理证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若方程 $a_{0}x^{n}+a_{1}x^{n-1}+\cdots+a_{n-1}x=0$ 有一个正根 $x_{0}$，证明方程 $a_{0}nx^{n-1}+a_{1}(n-1)x^{n-2}+\cdots+a_{n-1}=0$ 必有一个小于 $x_{0}$ 的正根．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 令 $F(x)=a_{0}x^{n}+a_{1}x^{n-1}+\cdots+a_{n-1}x$，显然 $F(x)$ 在 $[0,x_{0}]$ 上连续，在 $(0,x_{0})$ 内可导，且 $F(0)=0$，$F(x_{0})=a_{0}x_{0}^{n}+a_{1}x_{0}^{n-1}+\cdots+a_{n-1}x_{0}=0$．由罗尔定理知在 $(0,x_{0})$ 内至少存在一点 $\xi$，使 $F'(\xi)=0$，即 $a_{0}n\xi^{n-1}+a_{1}(n-1)\xi^{n-2}+\cdots+a_{n-1}=0$．从而得证．</div>
+
+</div>
+</article>
+<article class="problem" id="q241">
+<div class="q-head">
+<span class="q-no" data-n="241">【241】</span>
+<span class="q-group">利用罗尔定理证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $a_{1},a_{2},\cdots,a_{n}$ 满足 $a_{1}-\dfrac{a_{2}}{3}+\dfrac{a_{3}}{5}+\cdots+(-1)^{n-1}\dfrac{a_{n}}{2n-1}=0$，$a_{i}\in R$，$i=1,2,\cdots,n$．证明：方程 $a_{1}\cos x+a_{2}\cos3x+\cdots+a_{n}\cos(2n-1)x=0$ 在 $\left(0,\dfrac{\pi}{2}\right)$ 内至少有一个实根．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $F(x)=a_{1}\sin x+\dfrac{a_{2}}{3}\sin3x+\cdots+\dfrac{a_{n}}{2n-1}\sin(2n-1)x$，则 $F'(x)=a_{1}\cos x+a_{2}\cos3x+\cdots+a_{n}\cos(2n-1)x$，$F(0)=0$，$F\left(\dfrac{\pi}{2}\right)=a_{1}-\dfrac{a_{2}}{3}+\dfrac{a_{3}}{5}+\cdots+(-1)^{n-1}\cdot\dfrac{a_{n}}{2n-1}=0$．由罗尔定理知至少存在一点 $\xi\in\left(0,\dfrac{\pi}{2}\right)$，使 $F'(\xi)=0$，即方程 $a_{1}\cos x+a_{2}\cos3x+\cdots+a_{n}\cos(2n-1)x=0$ 在 $\left(0,\dfrac{\pi}{2}\right)$ 内至少有一个实根．<strong>点评</strong>　利用中值定理验证方程根的思路主要有两种：(1)把所证问题化为 $f^{(n)}(\xi)=0$ 形式．当 $n=0$ 时，直接用连续函数的零点定理证明；当 $n=1$ 时，应用罗尔定理证明；当 $n=2$ 时，对导函数 $f'(x)$ 应用罗尔定理证明，$n&gt;2$ 时，反复对高阶导数应用罗尔定理．(2)把所证命题化为 $f'(\xi)=\dfrac{f(b)-f(a)}{b-a}$，$[a,b]$ 为闭区间，然后用拉格朗日定理证明．以上思路的关键是要构造出适当的函数 $f(x)$ 及相应的区间 $[a,b]$，积分法是构造函数的重要方法．</div>
+
+</div>
+</article>
+<article class="problem" id="q242">
+<div class="q-head">
+<span class="q-no" data-n="242">【242】</span>
+<span class="q-group">利用罗尔定理证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $y=f(x)$ 具有二阶导数，且 $f'(x)&gt;0$，$f''(x)&gt;0$，$\Delta x$ 为自变量 $x$ 在点 $x_{0}$ 处的增量，$\Delta y$ 与 $\mathrm{d}y$ 分别为 $f(x)$ 在点 $x_{0}$ 处相应的增量与微分，若 $\Delta x&gt;0$，则________．(A) $0&lt;\mathrm{d}y&lt;\Delta y$　(B) $0&lt;\Delta y&lt;\mathrm{d}y$　(C) $\Delta y&lt;\mathrm{d}y&lt;0$　(D) $\mathrm{d}y&lt;\Delta y&lt;0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $\Delta x&gt;0$ 时，$\Delta y=f(x_{0}+\Delta x)-f(x_{0})=f'(\xi)\Delta x$，其中 $x_{0}&lt;\xi&lt;x_{0}+\Delta x$，由 $f'(x)&gt;0$，$f''(x)&gt;0$，得 $0&lt;f'(x_{0})&lt;f'(\xi)$，所以 $0&lt;\mathrm{d}y=f'(x_{0})\Delta x&lt;f'(\xi)\Delta x=\Delta y$．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<article class="problem" id="q243">
+<div class="q-head">
+<span class="q-no" data-n="243">【243】</span>
+<span class="q-group">利用罗尔定理证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $y=f(x)$ 在 $(0,+\infty)$ 内有界且可导，则________．(A) 当 $\lim\limits_{x\to+\infty}f(x)=0$ 时，必有 $\lim\limits_{x\to+\infty}f'(x)=0$　(B) 当 $\lim\limits_{x\to+\infty}f'(x)$ 存在时，必有 $\lim\limits_{x\to+\infty}f'(x)=0$　(C) 当 $\lim\limits_{x\to0^{+}}f(x)=0$ 时，必有 $\lim\limits_{x\to0^{+}}f'(x)=0$　(D) 当 $\lim\limits_{x\to0^{+}}f'(x)$ 存在时，必有 $\lim\limits_{x\to0^{+}}f'(x)=0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 对 $y=f(x)$ 在区间 $[a,x]$ 上使用拉格朗日中值定理，得 $f'(\xi)=\dfrac{f(x)-f(a)}{x-a}$，其中 $\xi$ 介于 $a$ 与 $x$ 之间．因为 $f(x)$ 在 $[a,x]\subset(0,+\infty)$ 上有界，所以 $f(x)-f(a)$ 有界，$\lim\limits_{x\to+\infty}f'(x)=\lim\limits_{\xi\to+\infty}f'(\xi)=\lim\limits_{x\to+\infty}\dfrac{1}{x-a}\cdot[f(x)-f(a)]=0$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q244">
+<div class="q-head">
+<span class="q-no" data-n="244">【244】</span>
+<span class="q-group">利用罗尔定理证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 处处可导，则________．(A) 当 $\lim\limits_{x\to+\infty}f(x)=-\infty$，必有 $\lim\limits_{x\to+\infty}f'(x)=-\infty$　(B) 当 $\lim\limits_{x\to+\infty}f'(x)=-\infty$，必有 $\lim\limits_{x\to+\infty}f(x)=-\infty$　(C) 当 $\lim\limits_{x\to+\infty}f(x)=+\infty$，必有 $\lim\limits_{x\to+\infty}f'(x)=+\infty$　(D) 当 $\lim\limits_{x\to+\infty}f'(x)=+\infty$，必有 $\lim\limits_{x\to+\infty}f(x)=+\infty$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\lim\limits_{x\to+\infty}f'(x)=+\infty$ 知，存在 $X&gt;0$，当 $x&gt;X$ 时，$f'(x)&gt;M$（$M$ 为任意大正数）．在 $[X,x]$ 上使用拉格朗日中值定理有 $f(x)-f(X)=f'(\xi)(x-X)$，其中 $\xi\in(X,x)$，则 $f(x)-f(X)=f'(\xi)(x-X)&gt;M(x-X)\to+\infty$，故 $f(x)-f(X)\to+\infty$，而 $f(X)$ 为确定值，从而 $f(x)\to+\infty(x\to+\infty)$．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q245">
+<div class="q-head">
+<span class="q-no" data-n="245">【245】</span>
+<span class="q-group">利用罗尔定理证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">以下四个命题中，正确的是________．(A) 若 $f'(x)$ 在 $(0,1)$ 内连续，则 $f(x)$ 在 $(0,1)$ 内有界　(B) 若 $f(x)$ 在 $(0,1)$ 内连续，则 $f(x)$ 在 $(0,1)$ 内有界　(C) 若 $f'(x)$ 在 $(0,1)$ 内有界，则 $f(x)$ 在 $(0,1)$ 内有界　(D) 若 $f(x)$ 在 $(0,1)$ 内有界，则 $f'(x)$ 在 $(0,1)$ 内有界</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 通过举反例用排除法找到正确答案即可．设 $f(x)=\dfrac{1}{x}$，则 $f(x)$ 及 $f'(x)=-\dfrac{1}{x^{2}}$ 均在 $(0,1)$ 内连续，但 $f(x)$ 在 $(0,1)$ 内无界，排除(A)、(B)；又 $f(x)=\sqrt{x}$ 在 $(0,1)$ 内有界，但 $f'(x)=\dfrac{1}{2\sqrt{x}}$ 在 $(0,1)$ 内无界，排除(D)．故应选 (C)．<strong>点评</strong>　用拉格朗日中值定理可直接证明选项(C)正确．事实上，由 $f'(x)$ 在 $(0,1)$ 内有界，可知存在正数 $M$，使得当 $x\in(0,1)$ 时，$|f'(x)|\leqslant M$ 成立．由题设知对任何 $x\in(0,1)$ 有位于 $x$ 与 $\dfrac{1}{2}$ 之间的 $\xi$，使得 $f(x)-f\left(\dfrac{1}{2}\right)=f'(\xi)\left(x-\dfrac{1}{2}\right)$，即 $f(x)=f\left(\dfrac{1}{2}\right)+f'(\xi)\left(x-\dfrac{1}{2}\right)$，故 $|f(x)|\leqslant\left|f\left(\dfrac{1}{2}\right)\right|+|f'(\xi)|\cdot\left|x-\dfrac{1}{2}\right|\leqslant\left|f\left(\dfrac{1}{2}\right)\right|+\dfrac{1}{2}M$，$x\in(0,1)$．这表明函数 $f(x)$ 在 $(0,1)$ 内有界．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q246">
+<div class="q-head">
+<span class="q-no" data-n="246">【246】</span>
+<span class="q-group">利用罗尔定理证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在闭区间 $[a,b]$ 上有定义，在开区间 $(a,b)$ 内可导，则________．(A) 当 $f(a)f(b)&lt;0$ 时，存在 $\xi\in(a,b)$，使 $f(\xi)=0$　(B) 对任何 $\xi\in(a,b)$，有 $\lim\limits_{x\to\xi}[f(x)-f(\xi)]=0$　(C) 当 $f(a)=f(b)$ 时，存在 $\xi\in(a,b)$，使 $f'(\xi)=0$　(D) 存在 $\xi\in(a,b)$，使 $f(b)-f(a)=f'(\xi)(b-a)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 选项(A)，(C)，(D)均不确定，因已知条件中 $f(x)$ 仅在 $[a,b]$ 上有定义，不能保证 $f(x)$ 在 $[a,b]$ 上的连续性．对于选项(B)：不妨设 $\xi&lt;x$，则 $f(x)$ 在 $[\xi,x]\subset(a,b)$ 上连续，在 $(\xi,x)$ 内可导，由拉格朗日中值定理知至少存在一点 $t\in(\xi,x)$，使 $f(x)-f(\xi)=f'(t)(x-\xi)$，从而 $\lim\limits_{x\to\xi}[f(x)-f(\xi)]=\lim\limits_{x\to\xi}f'(t)(x-\xi)=0$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q247">
+<div class="q-head">
+<span class="q-no" data-n="247">【247】</span>
+<span class="q-group">利用罗尔定理证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设在 $[0,1]$ 上，$f''(x)&gt;0$，则 $f'(0)$，$f'(1)$，$f(1)-f(0)$ 或 $f(0)-f(1)$ 的大小顺序是________．(A) $f'(1)&gt;f'(0)&gt;f(1)-f(0)$　(B) $f'(1)&gt;f(1)-f(0)&gt;f'(0)$　(C) $f(1)-f(0)&gt;f'(1)&gt;f'(0)$　(D) $f'(1)&gt;f(0)-f(1)&gt;f'(0)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f''(x)&gt;0$，所以 $f'(x)$ 在 $[0,1]$ 上单调递增，故 $f'(1)&gt;f'(0)$．而由拉格朗日中值定理知 $f(1)-f(0)=f'(\xi)(1-0)$，其中 $\xi$ 介于 0 与 1 之间．则 $f'(0)&lt;f'(\xi)&lt;f'(1)$．故应选 (B)．<strong>点评</strong>　根据 $f''(x)&gt;0$ 可知 $f'(x)$ 单调增加，而 $f(1)-f(0)$ 涉及到两点的函数值之差，则自然会想到使用拉格朗日中值定理，但应注意 $f(1)-f(0)$ 也可写成 $\int_{0}^{1}f'(x)\mathrm{d}x$，从而 $f'(0)=\int_{0}^{1}f'(0)\mathrm{d}x&lt;\int_{0}^{1}f'(x)\mathrm{d}x&lt;\int_{0}^{1}f'(1)\mathrm{d}x=f'(1)$．一般情况下，$f(b)-f(a)=f'(\xi)(b-a)$ 或者 $f(b)-f(a)=\int_{a}^{b}f'(x)\mathrm{d}x$ 对于这种处理方式应特别注意．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用拉格朗日中值定理构造辅助函数证明</h3>
+<article class="problem" id="q248">
+<div class="q-head">
+<span class="q-no" data-n="248">【248】</span>
+<span class="q-group">利用拉格朗日中值定理构造辅助函数证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在区间 $[a,b]$ 上连续，在 $(a,b)$ 内可导．证明：在 $(a,b)$ 内至少存在一点 $\xi$，使 $\dfrac{bf(b)-af(a)}{b-a}=f(\xi)+\xi f'(\xi)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 作辅助函数 $F(x)=xf(x)$，则 $F(x)$ 在 $[a,b]$ 上满足拉格朗日中值定理的条件，从而在 $(a,b)$ 内至少存在一点 $\xi$，使 $\dfrac{F(b)-F(a)}{b-a}=F'(\xi)$．可见，$\dfrac{bf(b)-af(a)}{b-a}=f(\xi)+\xi f'(\xi)$．</div>
+
+</div>
+</article>
+<article class="problem" id="q249">
+<div class="q-head">
+<span class="q-no" data-n="249">【249】</span>
+<span class="q-group">利用拉格朗日中值定理构造辅助函数证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $[a,b]$ 上满足罗尔定理的条件，且 $f(x)$ 不恒等于常数．证明：在 $(a,b)$ 内至少存在一点 $\xi$，使 $f'(\xi)&gt;0$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $f(x)$ 在 $[a,b]$ 上满足罗尔定理的条件，且不恒等于常数，所以至少存在一点 $x_{0}\in(a,b)$，使 $f(x_{0})\neq f(a)=f(b)$．(1)若 $f(x_{0})&gt;f(a)$，则将 $f(x)$ 在 $[a,x_{0}]$ 应用拉格朗日中值定理，至少存在一点 $\xi_{1}\in(a,x_{0})$ 使 $f'(\xi_{1})=\dfrac{f(x_{0})-f(a)}{x_{0}-a}&gt;0$ (2)若 $f(x_{0})&lt;f(b)$，则将 $f(x)$ 在 $[x_{0},b]$ 上应用拉格朗日中值定理，至少存在一点 $\xi_{2}\in(x_{0},b)$ 使 $f'(\xi_{2})=\dfrac{f(b)-f(x_{0})}{b-x_{0}}&gt;0$．综合(1)(2)得在 $(a,b)$ 内至少存在一点 $\xi$，使 $f'(\xi)&gt;0$．</div>
+
+</div>
+</article>
+<article class="problem" id="q250">
+<div class="q-head">
+<span class="q-no" data-n="250">【250】</span>
+<span class="q-group">利用拉格朗日中值定理构造辅助函数证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">假设函数 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内二阶可导，过点 $A(0,f(0))$ 与 $B(1,f(1))$ 的直线与曲线 $y=f(x)$ 相交于点 $C(c,f(c))$，其中 $0&lt;c&lt;1$，证明：在 $(0,1)$ 内至少存在一点 $\xi$，使 $f''(\xi)=0$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证法一</strong> 因为 $f(x)$ 在 $[0,c]$ 上满足拉格朗日中值定理的条件，故存在 $\xi_{1}\in(0,c)$，使 $f'(\xi_{1})=\dfrac{f(c)-f(0)}{c-0}$，由于点 $C$ 在弦 $AB$ 上，故有 $\dfrac{f(c)-f(0)}{c-0}=\dfrac{f(1)-f(0)}{1-0}=f(1)-f(0)$ 从而 $f'(\xi_{1})=f(1)-f(0)$．同理可证，存在 $\xi_{2}\in(c,1)$，使 $f'(\xi_{2})=f(1)-f(0)$．由 $f'(\xi_{1})=f'(\xi_{2})$ 知在 $[\xi_{1},\xi_{2}]$ 上，$f'(x)$ 满足罗尔定理的条件，所以存在 $\xi\in(\xi_{1},\xi_{2})\subset(0,1)$，使 $f''(\xi)=0$．<strong>证法二</strong> 点 $A$ 与点 $B$ 连线的方程为 $y=[f(1)-f(0)]x+f(0)$．令 $F(x)=f(x)-[f(1)-f(0)]x-f(0)$，则 $F(x)$ 在 $[0,c]$ 与 $[c,1]$ 上满足罗尔定理条件，于是至少存在两点 $\xi_{1}\in(0,c)$ 和 $\xi_{2}\in(c,1)$，使 $F'(\xi_{1})=0$，$F'(\xi_{2})=0$．于是，$F'(x)$ 在 $[\xi_{1},\xi_{2}]$ 上满足罗尔定理的条件，故至少存在一点 $\xi\in(\xi_{1},\xi_{2})\subset(0,1)$，使 $F''(\xi)=f''(\xi)=0$．</div>
+
+</div>
+</article>
+<h3 class="grp-h">利用拉格朗日中值定理证明等式</h3>
+<article class="problem" id="q251">
+<div class="q-head">
+<span class="q-no" data-n="251">【251】</span>
+<span class="q-group">利用拉格朗日中值定理证明等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明恒等式 $\arcsin x+\arccos x=\dfrac{\pi}{2}$（$-1\leqslant x\leqslant1$）．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $f(x)=\arcsin x+\arccos x$，则 $f'(x)=\dfrac{1}{\sqrt{1-x^{2}}}-\dfrac{1}{\sqrt{1-x^{2}}}=0$，根据拉格朗日中值定理的推论“若 $f'(x)=0$，则 $f(x)=C$”得 $f(x)=C$．令 $x=0$，得 $f(0)=\dfrac{\pi}{2}$．故 $\arcsin x+\arccos x=\dfrac{\pi}{2}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q252">
+<div class="q-head">
+<span class="q-no" data-n="252">【252】</span>
+<span class="q-group">利用拉格朗日中值定理证明等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明恒等式 $\arctan x=\arcsin\dfrac{x}{\sqrt{1+x^{2}}}$（$-\infty&lt;x&lt;+\infty$）．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $g(x)=\arctan x-\arcsin\dfrac{x}{\sqrt{1+x^{2}}}$，则 $g'(x)=\dfrac{1}{1+x^{2}}-\dfrac{\dfrac{\sqrt{1+x^{2}}-\dfrac{x^{2}}{\sqrt{1+x^{2}}}}{1+x^{2}}}{\sqrt{1-\left(\dfrac{x}{\sqrt{1+x^{2}}}\right)^{2}}}=0$，故 $g(x)=C$．令 $x=0$ 得 $g(0)=0$，所以 $g(x)=0$．结论得证．</div>
+
+</div>
+</article>
+<h3 class="grp-h">利用拉格朗日中值定理证明不等式</h3>
+<article class="problem" id="q253">
+<div class="q-head">
+<span class="q-no" data-n="253">【253】</span>
+<span class="q-group">利用拉格朗日中值定理证明不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明不等式：$\dfrac{a-b}{a}&lt;\ln\dfrac{a}{b}&lt;\dfrac{a-b}{b}$，$a&gt;b&gt;0$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $f(x)=\ln x$，在区间 $[b,a]$ 上使用拉格朗日中值定理得 $\ln a-\ln b=\dfrac{1}{\xi}(a-b)$，其中 $\xi\in(b,a)$．由 $b&lt;\xi&lt;a$ 得 $\dfrac{1}{a}&lt;\dfrac{1}{\xi}&lt;\dfrac{1}{b}$，故 $\dfrac{a-b}{a}&lt;\ln\dfrac{a}{b}&lt;\dfrac{a-b}{b}$．</div>
+
+</div>
+</article>
+<h3 class="grp-h">利用拉格朗日中值定理求极限</h3>
+<article class="problem" id="q254">
+<div class="q-head">
+<span class="q-no" data-n="254">【254】</span>
+<span class="q-group">利用拉格朗日中值定理求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f(x)$ 在 $(-\infty,+\infty)$ 内可导，且 $\lim\limits_{x\to\infty}f'(x)=e$，$\lim\limits_{x\to\infty}\left(\dfrac{x+c}{x-c}\right)^{x}=\lim\limits_{x\to\infty}[f(x)-f(x-1)]$，求 $c$ 的值．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由条件易见 $c\neq0$．$\lim\limits_{x\to\infty}\left(\dfrac{x+c}{x-c}\right)^{x}=\lim\limits_{x\to\infty}\left[\left(1+\dfrac{2c}{x-c}\right)^{\frac{x-c}{2c}}\right]^{\frac{2cx}{x-c}}=e^{2c}$．由拉格朗日定理，有 $f(x)-f(x-1)=f'(\xi)\cdot1$，其中 $\xi$ 介于 $x-1$ 与 $x$ 之间，那么 $\lim\limits_{x\to\infty}[f(x)-f(x-1)]=\lim\limits_{\xi\to\infty}f'(\xi)=e$．于是 $e^{2c}=e$，故 $c=\dfrac{1}{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $c=\dfrac{1}{2}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用柯西中值定理证明</h3>
+<article class="problem" id="q255">
+<div class="q-head">
+<span class="q-no" data-n="255">【255】</span>
+<span class="q-group">利用柯西中值定理证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x_{1}x_{2}&gt;0$，证明：$x_{1}e^{x_{2}}-x_{2}e^{x_{1}}=(1-\xi)e^{\xi}(x_{1}-x_{2})$，其中 $\xi$ 在 $x_{1}$ 与 $x_{2}$ 之间．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 要证关系式可改写为 $\dfrac{\dfrac{e^{x_{2}}}{x_{2}}-\dfrac{e^{x_{1}}}{x_{1}}}{\dfrac{1}{x_{2}}-\dfrac{1}{x_{1}}}=(1-\xi)e^{\xi}$ 因此对 $f(x)=\dfrac{e^{x}}{x}$，$g(x)=\dfrac{1}{x}$ 在 $[x_{1},x_{2}]$ 上应用柯西定理即可．<strong>证</strong> 令 $f(x)=\dfrac{e^{x}}{x}$，$g(x)=\dfrac{1}{x}$，则 $f(x)$，$g(x)$ 在 $[x_{1},x_{2}]$ 上连续，在 $(x_{1},x_{2})$ 内可导，且 $g'(x)\neq0$．由柯西中值定理知存在 $\xi\in(x_{1},x_{2})$，使 $\dfrac{f(x_{2})-f(x_{1})}{g(x_{2})-g(x_{1})}=\dfrac{f'(\xi)}{g'(\xi)}$　即　$\dfrac{\dfrac{e^{x_{2}}}{x_{2}}-\dfrac{e^{x_{1}}}{x_{1}}}{\dfrac{1}{x_{2}}-\dfrac{1}{x_{1}}}=(1-\xi)e^{\xi}$，也即 $x_{1}e^{x_{2}}-x_{2}e^{x_{1}}=(1-\xi)e^{\xi}(x_{1}-x_{2})$．</div>
+
+</div>
+</article>
+<article class="problem" id="q256">
+<div class="q-head">
+<span class="q-no" data-n="256">【256】</span>
+<span class="q-group">利用柯西中值定理证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[a,b]$ 上连续，$(a,b)$ 内可导，$0&lt;a&lt;b$，试证：存在 $\xi\in(a,b)$，使 $\dfrac{f(b)-f(a)}{b-a}=(a^{2}+ab+b^{2})\dfrac{f'(\xi)}{3\xi^{2}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 要证关系式可改写为 $\dfrac{f(b)-f(a)}{(b-a)(a^{2}+ab+b^{2})}=\dfrac{f'(\xi)}{3\xi^{2}}$，即 $\dfrac{f(b)-f(a)}{b^{3}-a^{3}}=\dfrac{f'(\xi)}{3\xi^{2}}$，因此对 $f(x)$，$g(x)=x^{3}$ 在 $[a,b]$ 上应用柯西定理即可．<strong>证</strong> 令 $g(x)=x^{3}$，则 $f(x)$，$g(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $g'(x)\neq0$，$x&gt;0$．由柯西中值定理知存在 $\xi\in(a,b)$，使 $\dfrac{f(b)-f(a)}{g(b)-g(a)}=\dfrac{f'(\xi)}{g'(\xi)}$，即 $\dfrac{f(b)-f(a)}{b^{3}-a^{3}}=\dfrac{f'(\xi)}{3\xi^{2}}$，也即 $\dfrac{f(b)-f(a)}{b-a}=(a^{2}+ab+b^{2})\dfrac{f'(\xi)}{3\xi^{2}}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q257">
+<div class="q-head">
+<span class="q-no" data-n="257">【257】</span>
+<span class="q-group">利用柯西中值定理证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $f'(x)\neq0$．试证：存在 $\xi,\eta\in(a,b)$，使得 $\dfrac{f'(\xi)}{f'(\eta)}=\dfrac{e^{b}-e^{a}}{b-a}\cdot e^{-\eta}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 令 $g(x)=e^{x}$，则 $g(x)$ 与 $f(x)$ 在 $[a,b]$ 上满足柯西中值定理条件，故由柯西中值定理，存在 $\eta\in(a,b)$，使得 $\dfrac{f(b)-f(a)}{e^{b}-e^{a}}=\dfrac{f'(\eta)}{e^{\eta}}$，即 $\dfrac{f(b)-f(a)}{b-a}=\dfrac{(e^{b}-e^{a})e^{-\eta}}{b-a}\cdot f'(\eta)$．又 $f(x)$ 在 $[a,b]$ 上满足拉格朗日中值定理条件，故存在 $\xi\in(a,b)$，使 $\dfrac{f(b)-f(a)}{b-a}=f'(\xi)$．由题设 $f'(x)\neq0$ 知，$f'(\eta)\neq0$，从而 $\dfrac{f'(\xi)}{f'(\eta)}=\dfrac{e^{b}-e^{a}}{b-a}\cdot e^{-\eta}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q258">
+<div class="q-head">
+<span class="q-no" data-n="258">【258】</span>
+<span class="q-group">利用柯西中值定理证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">试证：$\sin1=\cos\ln\xi$，$1&lt;\xi&lt;e$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $F(x)=\sin\ln x$，$G(x)=\ln x$，则 $F(x)$，$G(x)$ 在 $[1,e]$ 上满足柯西中值定理条件．由于 $F(1)=\sin\ln1=0$，$F(e)=\sin\ln e=\sin1$，$G(1)=\ln1=0$，$G(e)=\ln e=1$，$F'(x)=\cos\ln x\cdot\dfrac{1}{x}$，$G'(x)=\dfrac{1}{x}$，故由柯西中值定理存在 $\xi\in(1,e)$，使得 $\dfrac{F(e)-F(1)}{G(e)-G(1)}=\dfrac{F'(\xi)}{G'(\xi)}$，即 $\sin1=\dfrac{\cos\ln\xi\cdot\dfrac{1}{\xi}}{\dfrac{1}{\xi}}=\cos\ln\xi$．</div>
+
+</div>
+</article>
+<h2 class="sec-h" id="sec-s1">2. 洛必达法则</h2>
+<div class="sec-intro">1．洛必达法则Ⅰ 设函数 $f(x)$ 与 $g(x)$ 满足：(1)在点 $x_{0}$ 的某一邻域内（点 $x_{0}$ 可除外）有定义，且 $\lim\limits_{x\to x_{0}}f(x)=0$，$\lim\limits_{x\to x_{0}}g(x)=0$；(2)在该邻域内可导，且 $g'(x)\neq0$；(3)$\lim\limits_{x\to x_{0}}\dfrac{f'(x)}{g'(x)}$ 存在（或为 $\infty$）．则 $\lim\limits_{x\to x_{0}}\dfrac{f(x)}{g(x)}=\lim\limits_{x\to x_{0}}\dfrac{f'(x)}{g'(x)}$（或为 $\infty$）．2．洛必达法则Ⅱ 设函数 $f(x)$ 与 $g(x)$ 满足：(1)在 $x_{0}$ 的某一邻域内（点 $x_{0}$ 可除外）有定义，且 $\lim\limits_{x\to x_{0}}f(x)=\infty$，$\lim\limits_{x\to x_{0}}g(x)=\infty$；(2)在该邻域内可导，且 $g'(x)\neq0$；(3)$\lim\limits_{x\to x_{0}}\dfrac{f'(x)}{g'(x)}$ 存在（或为 $\infty$）．则 $\lim\limits_{x\to x_{0}}\dfrac{f(x)}{g(x)}=\lim\limits_{x\to x_{0}}\dfrac{f'(x)}{g'(x)}$（或为 $\infty$）．以上两法则对于 $x\to\infty$ 时的未定式“$\dfrac{0}{0}$”,“$\dfrac{\infty}{\infty}$”同样适用．</div>
+<h3 class="grp-h">利用洛必达法则求“$\dfrac{0}{0}$”型极限</h3>
+<article class="problem" id="q259" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="259">【259】</span>
+<span class="q-group">利用洛必达法则求“$\dfrac{0}{0}$”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算：$\lim\limits_{x\to0}\dfrac{x-\sin x}{x^{3}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $\overset{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{1-\cos x}{3x^{2}}=\lim\limits_{x\to0}\dfrac{\frac{1}{2}x^{2}}{3x^{2}}=\dfrac{1}{6}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $\lim\limits_{x\to0}\dfrac{x-\sin x}{x^{3}}=\dfrac{1}{6}$</span></div>
+</div>
+</article>
+<article class="problem" id="q260" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="260">【260】</span>
+<span class="q-group">利用洛必达法则求“$\dfrac{0}{0}$”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算：$\lim\limits_{x\to\frac{\pi}{2}}\dfrac{\ln\sin x}{(\pi-2x)^{2}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $\overset{\frac{0}{0}}{=}\lim\limits_{x\to\frac{\pi}{2}}\dfrac{\dfrac{\cos x}{\sin x}}{2(\pi-2x)\cdot(-2)}=-\dfrac{1}{4}\lim\limits_{x\to\frac{\pi}{2}}\dfrac{1}{\sin x}\cdot\lim\limits_{x\to\frac{\pi}{2}}\dfrac{\cos x}{\pi-2x}=-\dfrac{1}{4}\lim\limits_{x\to\frac{\pi}{2}}\dfrac{\cos x}{\pi-2x}$（本页至此中断，解答接下一批）
+<strong>解</strong>（接上批解答末段）$\stackrel{\frac{0}{0}}{=}-\dfrac{1}{4}\lim\limits_{x\to\frac{\pi}{2}}\dfrac{-\sin x}{-2}=-\dfrac{1}{8}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">[解答接下批]</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s1">2. 洛必达法则</h2>
+<article class="problem" id="q261" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="261">【261】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算：$\lim\limits_{x\to0}\dfrac{\ln(1+x^{2})}{\sec x-\cos x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to0}\dfrac{x^{2}}{1-\cos^{2}x}\cdot\cos x=\lim\limits_{x\to0}\dfrac{x^{2}}{1-\cos^{2}x}\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{2x}{-2\cos x\cdot(-\sin x)}=1$．</div>
+
+</div>
+</article>
+<article class="problem" id="q262" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="262">【262】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to0}\dfrac{\sqrt{1+x}+\sqrt{1-x}-2}{x^{2}}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{\dfrac{1}{2\sqrt{1+x}}-\dfrac{1}{2\sqrt{1-x}}}{2x}=\dfrac{1}{4}\lim\limits_{x\to0}\dfrac{\sqrt{1-x}-\sqrt{1+x}}{x}$ $\stackrel{\frac{0}{0}}{=}\dfrac{1}{4}\lim\limits_{x\to0}\left(-\dfrac{1}{2\sqrt{1-x}}-\dfrac{1}{2\sqrt{1+x}}\right)=-\dfrac{1}{4}$． 故应填 $-\dfrac{1}{4}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-\dfrac{1}{4}$</span></div>
+</div>
+</article>
+<article class="problem" id="q263" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="263">【263】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算：$\lim\limits_{x\to0}\dfrac{\arctan x-x}{\ln(1+2x^{3})}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to0}\dfrac{\arctan x-x}{2x^{3}}=\lim\limits_{x\to0}\dfrac{\dfrac{1}{1+x^{2}}-1}{6x^{2}}=\dfrac{1}{6}\lim\limits_{x\to0}\dfrac{-x^{2}}{x^{2}(1+x^{2})}=-\dfrac{1}{6}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q264" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="264">【264】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to0}\dfrac{\sin^{2}x-x^{2}\cos x}{x(e^{2x}-1)\ln(1+\tan^{2}x)}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to0}\dfrac{\sin^{2}x-x^{2}\cos x}{x\cdot2x\cdot\tan^{2}x}$ $=\dfrac{1}{2}\lim\limits_{x\to0}\dfrac{(\sin x-x\cos x)(\sin x+x\cos x)}{x^{3}}=\dfrac{1}{2}\lim\limits_{x\to0}\dfrac{\sin x-x\cos x}{x^{3}}\cdot\lim\limits_{x\to0}\dfrac{\sin x+x\cos x}{x}$ $=\dfrac{1}{2}\lim\limits_{x\to0}\dfrac{\sin x-x\cos x}{x^{3}}\cdot2\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{\cos x-\cos x+x\sin x}{3x^{2}}=\lim\limits_{x\to0}\dfrac{x\sin x}{3x^{2}}=\lim\limits_{x\to0}\dfrac{x^{2}}{3x^{2}}=\dfrac{1}{3}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q265" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="265">【265】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\lim\limits_{x\to0}\dfrac{a\tan x+b(1-\cos x)}{c\ln(1-2x)+d(1-\mathrm{e}^{-x^{2}})}=2$，其中 $a^{2}+c^{2}\neq0$，则必有________． (A) $b=4d$　(B) $b=-4d$　(C) $a=4c$　(D) $a=-4c$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 左边$\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{a\sec^{2}x+b\sin x}{c\cdot\dfrac{-2}{1-2x}+d\cdot2x\mathrm{e}^{-x^{2}}}=\lim\limits_{x\to0}\dfrac{a+b\sin x\cos^{2}x}{-2c+2dx\mathrm{e}^{-x^{2}}(1-2x)}\cdot\dfrac{1-2x}{\cos^{2}x}$ $=\lim\limits_{x\to0}\dfrac{a+b\sin x\cos^{2}x}{-2c+2dx\mathrm{e}^{-x^{2}}(1-2x)}=-\dfrac{a}{2c}$． 由 $-\dfrac{a}{2c}=2$，得 $a=-4c$． 故应选 (D)． 点评 本题也可考虑使用等价无穷小代换计算． 原式$=\lim\limits_{x\to0}\dfrac{a\cdot\dfrac{\tan x}{x}+b\cdot\dfrac{1-\cos x}{x}}{c\cdot\dfrac{\ln(1-2x)}{x}+d\cdot\dfrac{1-\mathrm{e}^{-x^{2}}}{x}}=\dfrac{a\cdot\lim\limits_{x\to0}\dfrac{\tan x}{x}+b\cdot\lim\limits_{x\to0}\dfrac{1-\cos x}{x}}{c\cdot\lim\limits_{x\to0}\dfrac{\ln(1-2x)}{x}+d\cdot\lim\limits_{x\to0}\dfrac{1-\mathrm{e}^{-x^{2}}}{x}}$ $=\dfrac{a\cdot\lim\limits_{x\to0}\dfrac{x}{x}+b\cdot\lim\limits_{x\to0}\dfrac{\dfrac{1}{2}x^{2}}{x}}{c\cdot\lim\limits_{x\to0}\dfrac{-2x}{x}+d\cdot\lim\limits_{x\to0}\dfrac{x^{2}}{x}}=-\dfrac{a}{2c}$． 所以有 $a=-4c$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q266" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="266">【266】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求极限 $\lim\limits_{x\to0}\dfrac{(1-\cos x)[x-\ln(1+\tan x)]}{\sin^{4}x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to0}\dfrac{(1-\cos x)[x-\ln(1+\tan x)]}{\sin^{4}x}=\lim\limits_{x\to0}\dfrac{x-\ln(1+\tan x)}{2x^{2}}$ $=\lim\limits_{x\to0}\dfrac{1-\dfrac{\sec^{2}x}{1+\tan x}}{4x}=\lim\limits_{x\to0}\dfrac{1+\tan x-\sec^{2}x}{4x}=\lim\limits_{x\to0}\dfrac{\sec^{2}x-2\sec^{2}x\tan x}{4}=\dfrac{1}{4}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q267" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="267">【267】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to+\infty}\dfrac{\ln\left(1+\dfrac{1}{x}\right)}{\operatorname{arccot}x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to+\infty}\dfrac{\ln(x+1)-\ln x}{\operatorname{arccot}x}\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to+\infty}\dfrac{\dfrac{1}{1+x}-\dfrac{1}{x}}{-\dfrac{1}{1+x^{2}}}=\lim\limits_{x\to+\infty}\dfrac{1+x^{2}}{x(1+x)}=1$．</div>
+
+</div>
+</article>
+<h3 class="grp-h">利用洛必达法则求“∞/∞”型极限</h3>
+<article class="problem" id="q268" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="268">【268】</span>
+<span class="q-group">利用洛必达法则求“∞/∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to\frac{\pi}{2}^{-}}\dfrac{\ln\cot x}{\tan x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to\frac{\pi}{2}^{-}}\dfrac{-\ln\tan x}{\tan x}\stackrel{\frac{\infty}{\infty}}{=}-\lim\limits_{x\to\frac{\pi}{2}^{-}}\dfrac{\dfrac{\sec^{2}x}{\tan x}}{\sec^{2}x}=-\lim\limits_{x\to\frac{\pi}{2}^{-}}\dfrac{1}{\tan x}=0$．</div>
+
+</div>
+</article>
+<article class="problem" id="q269" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="269">【269】</span>
+<span class="q-group">利用洛必达法则求“∞/∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to+\infty}\dfrac{\ln(x\ln x)}{x^{a}}$（$a&gt;0$）．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to+\infty}\dfrac{\ln x+\ln\ln x}{x^{a}}\stackrel{\frac{\infty}{\infty}}{=}\lim\limits_{x\to+\infty}\dfrac{\dfrac{1}{x}+\dfrac{1}{x\ln x}}{ax^{a-1}}=\dfrac{1}{a}\lim\limits_{x\to+\infty}\dfrac{\ln x+1}{x^{a}\ln x}=0$．</div>
+
+</div>
+</article>
+<h3 class="grp-h">利用洛必达法则求“0·∞”型极限</h3>
+<article class="problem" id="q270" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="270">【270】</span>
+<span class="q-group">利用洛必达法则求“0·∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to0^{+}}x\ln x=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to0^{+}}\dfrac{\ln x}{\dfrac{1}{x}}\stackrel{\frac{\infty}{\infty}}{=}\lim\limits_{x\to0^{+}}\dfrac{\dfrac{1}{x}}{-\dfrac{1}{x^{2}}}=0$． 故应填 $0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $0$</span></div>
+</div>
+</article>
+<article class="problem" id="q271" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="271">【271】</span>
+<span class="q-group">利用洛必达法则求“0·∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to0}\dfrac{1}{x}\left(\dfrac{1}{\sin x}-\dfrac{1}{\tan x}\right)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to0}\dfrac{1}{x}\left(\dfrac{1}{\sin x}-\dfrac{\cos x}{\sin x}\right)=\lim\limits_{x\to0}\dfrac{1-\cos x}{x\sin x}=\lim\limits_{x\to0}\dfrac{1-\cos x}{x^{2}}\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{\sin x}{2x}=\dfrac{1}{2}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q272" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="272">【272】</span>
+<span class="q-group">利用洛必达法则求“0·∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{n\to\infty}n^{3}\left(a^{\frac{1}{n}}-a^{\sin\frac{1}{n}}\right)$（$a&gt;0$）．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 数列求极限若需使用洛必达法则应先连续化，即求极限 $\lim\limits_{x\to+\infty}x^{3}\left(a^{\frac{1}{x}}-a^{\sin\frac{1}{x}}\right)$． <strong>解</strong> 令 $x=\dfrac{1}{t}$，则 $\lim\limits_{x\to+\infty}x^{3}\left(a^{\frac{1}{x}}-a^{\sin\frac{1}{x}}\right)=\lim\limits_{t\to0^{+}}\dfrac{a^{t}-a^{\sin t}}{t^{3}}=\lim\limits_{t\to0^{+}}\dfrac{a^{t}(1-a^{\sin t-t})}{t^{3}}=\lim\limits_{t\to0^{+}}\dfrac{t-\sin t}{t^{3}}\cdot\ln a$ $\stackrel{\frac{0}{0}}{=}\ln a\lim\limits_{t\to0^{+}}\dfrac{1-\cos t}{3t^{2}}\stackrel{\frac{0}{0}}{=}\ln a\lim\limits_{t\to0^{+}}\dfrac{\sin t}{6t}=\dfrac{1}{6}\ln a$． 故原式$=\dfrac{1}{6}\ln a$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故原式$=\dfrac{1}{6}\ln a$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用洛必达法则求“∞−∞”型极限</h3>
+<article class="problem" id="q273" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="273">【273】</span>
+<span class="q-group">利用洛必达法则求“∞−∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to\frac{\pi}{2}}(\sec x-\tan x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to\frac{\pi}{2}}\dfrac{1-\sin x}{\cos x}\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to\frac{\pi}{2}}\dfrac{-\cos x}{-\sin x}=0$．</div>
+
+</div>
+</article>
+<article class="problem" id="q274" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="274">【274】</span>
+<span class="q-group">利用洛必达法则求“∞−∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算 $\lim\limits_{x\to1}\left(\dfrac{x}{x-1}-\dfrac{1}{\ln x}\right)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to1}\dfrac{x\ln x-x+1}{(x-1)\ln x}=\lim\limits_{x\to1}\dfrac{x\ln x-x+1}{(x-1)\ln[1+(x-1)]}=\lim\limits_{x\to1}\dfrac{x\ln x-x+1}{(x-1)^{2}}$ $\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to1}\dfrac{\ln x}{2(x-1)}\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to1}\dfrac{\dfrac{1}{x}}{2}=\dfrac{1}{2}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q275" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="275">【275】</span>
+<span class="q-group">利用洛必达法则求“∞−∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to0}\left(\dfrac{1}{x^{2}}-\dfrac{1}{x\tan x}\right)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to0}\dfrac{\tan x-x}{x^{2}\tan x}=\lim\limits_{x\to0}\dfrac{\tan x-x}{x^{3}}=\lim\limits_{x\to0}\dfrac{\sec^{2}x-1}{3x^{2}}$ $=\lim\limits_{x\to0}\dfrac{\tan^{2}x}{3x^{2}}=\dfrac{1}{3}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q276" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="276">【276】</span>
+<span class="q-group">利用洛必达法则求“∞−∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to0}\left(\dfrac{1+x}{1-\mathrm{e}^{-x}}-\dfrac{1}{x}\right)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to0}\dfrac{x+x^{2}-1+\mathrm{e}^{-x}}{x(1-\mathrm{e}^{-x})}=\lim\limits_{x\to0}\dfrac{x+x^{2}-1+\mathrm{e}^{-x}}{x^{2}}\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{1+2x-\mathrm{e}^{-x}}{2x}$ $\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{2+\mathrm{e}^{-x}}{2}=\dfrac{3}{2}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q277" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="277">【277】</span>
+<span class="q-group">利用洛必达法则求“∞−∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to0}\left[\dfrac{a}{x}-\left(\dfrac{1}{x^{2}}-a^{2}\right)\ln(1+ax)\right]$（$a\neq0$）．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to0}\dfrac{ax-(1-a^{2}x^{2})\ln(1+ax)}{x^{2}}\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{a+2a^{2}x\ln(1+ax)-a(1-ax)}{2x}$ $\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{2a^{2}\ln(1+ax)+\dfrac{2a^{3}x}{1+ax}+a^{2}}{2}=\dfrac{a^{2}}{2}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q278" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="278">【278】</span>
+<span class="q-group">利用洛必达法则求“∞−∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to+\infty}\left(\cos\dfrac{a}{x}+k\sin\dfrac{a}{x}\right)^{x}$（$a,k\neq0$）．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to+\infty}\ln y=\lim\limits_{x\to+\infty}x\ln\left(\cos\dfrac{a}{x}+k\sin\dfrac{a}{x}\right)$ $\stackrel{\frac{1}{x}=t}{=}\lim\limits_{t\to0^{+}}\dfrac{\ln(\cos at+k\sin at)}{t}\stackrel{\frac{0}{0}}{=}\lim\limits_{t\to0^{+}}\dfrac{-a\sin at+ak\cos at}{\cos at+k\sin at}=ka$． 所以，原式$=\mathrm{e}^{ka}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以，原式$=\mathrm{e}^{ka}$</span></div>
+</div>
+</article>
+<article class="problem" id="q279" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="279">【279】</span>
+<span class="q-group">利用洛必达法则求“∞−∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to0}(\cos x)^{\frac{1}{\ln(1+x^{2})}}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to0}(\cos x)^{\frac{1}{\ln(1+x^{2})}}=\exp\left[\lim\limits_{x\to0}\dfrac{1}{\ln(1+x^{2})}\ln\cos x\right]$， 而 $\lim\limits_{x\to0}\dfrac{\ln\cos x}{\ln(1+x^{2})}=\lim\limits_{x\to0}\dfrac{\ln\cos x}{x^{2}}\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{-\dfrac{\sin x}{\cos x}}{2x}=-\dfrac{1}{2}$， 所以，原式$=\mathrm{e}^{-\frac{1}{2}}=\dfrac{1}{\sqrt{\mathrm{e}}}$． 故应填 $\dfrac{1}{\sqrt{\mathrm{e}}}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{\sqrt{\mathrm{e}}}$</span></div>
+</div>
+</article>
+<article class="problem" id="q280" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="280">【280】</span>
+<span class="q-group">利用洛必达法则求“∞−∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $a&gt;0$，$b&gt;0$ 均为常数，则 $\lim\limits_{x\to0}\left(\dfrac{a^{x}+b^{x}}{2}\right)^{\frac{3}{x}}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $y=\left(\dfrac{a^{x}+b^{x}}{2}\right)^{\frac{3}{x}}$，则 $\lim\limits_{x\to0}\ln y=3\lim\limits_{x\to0}\dfrac{\ln(a^{x}+b^{x})-\ln2}{x}=3\lim\limits_{x\to0}\dfrac{\dfrac{a^{x}\ln a+b^{x}\ln b}{a^{x}+b^{x}}-0}{1}=\dfrac{3}{2}\ln(ab)=\ln(ab)^{\frac{3}{2}}$． 所以 $\lim\limits_{x\to0}y=\mathrm{e}^{\ln(ab)^{\frac{3}{2}}}=(ab)^{\frac{3}{2}}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以 $\lim\limits_{x\to0}y=(ab)^{\frac{3}{2}}$</span></div>
+</div>
+</article>
+<article class="problem" id="q281" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="281">【281】</span>
+<span class="q-group">利用洛必达法则求“∞−∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to\infty}\left[\dfrac{a_{1}^{\frac{1}{x}}+a_{2}^{\frac{1}{x}}+\cdots+a_{n}^{\frac{1}{x}}}{n}\right]^{nx}$（其中 $a_{1},a_{2},\cdots,a_{n}&gt;0$）．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $y=\left[\dfrac{a_{1}^{\frac{1}{x}}+a_{2}^{\frac{1}{x}}+\cdots+a_{n}^{\frac{1}{x}}}{n}\right]^{nx}$， 则 $\ln y=nx\left[\ln\left(a_{1}^{\frac{1}{x}}+a_{2}^{\frac{1}{x}}+\cdots+a_{n}^{\frac{1}{x}}\right)-\ln n\right]$． $\lim\limits_{x\to\infty}\ln y=\lim\limits_{x\to\infty}\left\{nx\left[\ln\left(a_{1}^{\frac{1}{x}}+a_{2}^{\frac{1}{x}}+\cdots+a_{n}^{\frac{1}{x}}\right)-\ln n\right]\right\}=n\lim\limits_{x\to\infty}\dfrac{\ln\left(a_{1}^{\frac{1}{x}}+a_{2}^{\frac{1}{x}}+\cdots+a_{n}^{\frac{1}{x}}\right)-\ln n}{\dfrac{1}{x}}$ $=n\lim\limits_{x\to\infty}\dfrac{\dfrac{1}{a_{1}^{\frac{1}{x}}+a_{2}^{\frac{1}{x}}+\cdots+a_{n}^{\frac{1}{x}}}}{-\dfrac{1}{x^{2}}}\cdot\left[a_{1}^{\frac{1}{x}}\ln a_{1}\left(\dfrac{-1}{x^{2}}\right)+\cdots+a_{n}^{\frac{1}{x}}\ln a_{n}\left(\dfrac{-1}{x^{2}}\right)\right]$ $=n\lim\limits_{x\to\infty}\dfrac{a_{1}^{\frac{1}{x}}\ln a_{1}+\cdots+a_{n}^{\frac{1}{x}}\ln a_{n}}{a_{1}^{\frac{1}{x}}+a_{2}^{\frac{1}{x}}+\cdots+a_{n}^{\frac{1}{x}}}=n\dfrac{\ln a_{1}+\cdots+\ln a_{n}}{n}=\ln(a_{1}\cdot a_{2}\cdot\cdots\cdot a_{n})$． 所以 $\lim\limits_{x\to\infty}y=\mathrm{e}^{\ln(a_{1}\cdot a_{2}\cdot\cdots\cdot a_{n})}=a_{1}\cdot a_{2}\cdot\cdots\cdot a_{n}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以 $\lim\limits_{x\to\infty}y=a_{1}\cdot a_{2}\cdot\cdots\cdot a_{n}$</span></div>
+</div>
+</article>
+<article class="problem" id="q282" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="282">【282】</span>
+<span class="q-group">利用洛必达法则求“∞−∞”型极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{n\to\infty}\left(n\tan\dfrac{1}{n}\right)^{n^{2}}$（$n$ 为自然数）．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\lim\limits_{x\to0^{+}}\left(\dfrac{\tan x}{x}\right)^{\frac{1}{x^{2}}}=\lim\limits_{x\to0^{+}}\left[\left(1+\dfrac{\tan x-x}{x}\right)^{\frac{x}{\tan x-x}}\right]^{\frac{\tan x-x}{x^{3}}}$，其中 $\lim\limits_{x\to0^{+}}\dfrac{\tan x-x}{x^{3}}\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0^{+}}\dfrac{\sec^{2}x-1}{3x^{2}}=\dfrac{1}{3}$． 取 $x=\dfrac{1}{n}$，则原式$=\mathrm{e}^{\frac{1}{3}}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故原式$=\mathrm{e}^{\frac{1}{3}}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用洛必达法则讨论无穷小的比较</h3>
+<article class="problem" id="q283" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="283">【283】</span>
+<span class="q-group">利用洛必达法则讨论无穷小的比较</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x\to0$ 时，$\mathrm{e}^{\tan x}-\mathrm{e}^{x}$ 与 $x^{n}$ 是同阶无穷小，则 $n$ 为________． (A) $1$　(B) $2$　(C) $3$　(D) $4$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to0}\dfrac{\mathrm{e}^{\tan x}-\mathrm{e}^{x}}{x^{n}}=\lim\limits_{x\to0}\dfrac{\mathrm{e}^{x}(\mathrm{e}^{\tan x-x}-1)}{x^{n}}=\lim\limits_{x\to0}\dfrac{\tan x-x}{x^{n}}$ $\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{\sec^{2}x-1}{nx^{n-1}}=\lim\limits_{x\to0}\dfrac{1-\cos^{2}x}{nx^{n-1}}=\dfrac{1}{n}\lim\limits_{x\to0}\dfrac{\sin^{2}x}{x^{n-1}}=\dfrac{1}{n}\lim\limits_{x\to0}\dfrac{x^{2}}{x^{n-1}}$． 所以 $n-1=2$，即 $n=3$． 故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q284" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="284">【284】</span>
+<span class="q-group">利用洛必达法则讨论无穷小的比较</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">当 $x\to0$ 时，$\alpha(x)=kx^{2}$ 与 $\beta(x)=\sqrt{1+x\arcsin x}-\sqrt{\cos x}$ 是等价无穷小，则 $k=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题设， $\lim\limits_{x\to0}\dfrac{\beta(x)}{\alpha(x)}=\lim\limits_{x\to0}\dfrac{\sqrt{1+x\arcsin x}-\sqrt{\cos x}}{kx^{2}}=\lim\limits_{x\to0}\dfrac{x\arcsin x+1-\cos x}{kx^{2}(\sqrt{1+x\arcsin x}+\sqrt{\cos x})}$ $=\dfrac{1}{2k}\lim\limits_{x\to0}\dfrac{x\arcsin x+1-\cos x}{x^{2}}=\dfrac{3}{4k}=1$． 得 $k=\dfrac{3}{4}$． 故应填 $\dfrac{3}{4}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{3}{4}$</span></div>
+</div>
+</article>
+<article class="problem" id="q285" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="285">【285】</span>
+<span class="q-group">利用洛必达法则讨论无穷小的比较</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">试确定常数 $A$、$B$、$C$ 的值，使得 $\mathrm{e}^{x}(1+Bx+Cx^{2})=1+Ax+o(x^{3})$，其中 $o(x^{3})$ 是当 $x\to0$ 时比 $x^{3}$ 高阶的无穷小．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 根据题设和洛必达法则，由于 $0=\lim\limits_{x\to0}\dfrac{\mathrm{e}^{x}(1+Bx+Cx^{2})-1-Ax}{x^{3}}=\lim\limits_{x\to0}\dfrac{\mathrm{e}^{x}(1+B+Bx+2Cx+Cx^{2})-A}{3x^{2}}$ $=\lim\limits_{x\to0}\dfrac{\mathrm{e}^{x}[2C+1+2B+(B+4C)x+Cx^{2}]}{6x}=\lim\limits_{x\to0}\dfrac{B+4C+2Cx}{6}$． 得 $\begin{cases}1+B-A=0,\\ 2B+2C+1=0,\\ B+4C=0.\end{cases}$ 解得 $A=\dfrac{1}{3}$，$B=-\dfrac{2}{3}$，$C=\dfrac{1}{6}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">解得 $A=\dfrac{1}{3}$，$B=-\dfrac{2}{3}$，$C=\dfrac{1}{6}$</span></div>
+</div>
+</article>
+<article class="problem" id="q286" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="286">【286】</span>
+<span class="q-group">利用洛必达法则讨论无穷小的比较</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $x=0$ 的某邻域内具有一阶连续导数，且 $f(0)\neq0$，$f'(0)\neq0$，若 $af(h)+bf(2h)-f(0)$ 在 $h\to0$ 时是比 $h$ 高阶的无穷小，试确定 $a$、$b$ 的值．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题设条件知 $\lim\limits_{h\to0}[af(h)+bf(2h)-f(0)]=(a+b-1)f(0)=0$． 由于 $f(0)\neq0$，故必有 $a+b-1=0$． 又由洛必达法则，有 $0=\lim\limits_{h\to0}\dfrac{af(h)+bf(2h)-f(0)}{h}=\lim\limits_{h\to0}\dfrac{af'(h)+2bf'(2h)}{1}=(a+2b)f'(0)$． 因 $f'(0)\neq0$，故 $a+2b=0$，于是得 $a=2$，$b=-1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">于是得 $a=2$，$b=-1$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用洛必达法则讨论函数的连续性</h3>
+<article class="problem" id="q287" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="287">【287】</span>
+<span class="q-group">利用洛必达法则讨论函数的连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $f(x)=\begin{cases}\dfrac{\sin2x+\mathrm{e}^{2ax}-1}{x}, &amp; x\neq0\\ a, &amp; x=0\end{cases}$ 在 $(-\infty,+\infty)$ 上连续，则 $a=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 若 $f(x)$ 在 $(-\infty,+\infty)$ 上连续，则 $f(x)$ 必在 $x=0$ 处连续，即 $\lim\limits_{x\to0}f(x)=f(0)=a$．而 $\lim\limits_{x\to0}f(x)=\lim\limits_{x\to0}\dfrac{\sin2x+\mathrm{e}^{2ax}-1}{x}\stackrel{\frac{0}{0}}{=}\lim\limits_{x\to0}\dfrac{2\cos2x+2a\mathrm{e}^{2ax}}{1}=2+2a$． 所以 $2+2a=a$，则 $a=-2$． 故应填 $-2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-2$</span></div>
+</div>
+</article>
+<article class="problem" id="q288" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="288">【288】</span>
+<span class="q-group">利用洛必达法则讨论函数的连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f(x)=\begin{cases}(\cos x)^{x^{-2}}, &amp; x\neq0\\ a, &amp; x=0\end{cases}$ 在 $x=0$ 处连续，则 $a=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题意 $\lim\limits_{x\to0}f(x)=a$，而 $\lim\limits_{x\to0}f(x)=\lim\limits_{x\to0}(\cos x)^{x^{-2}}=\mathrm{e}^{\lim\limits_{x\to0}\frac{\ln\cos x}{x^{2}}}=\mathrm{e}^{\lim\limits_{x\to0}\frac{-\frac{\sin x}{\cos x}}{2x}}=\mathrm{e}^{-1/2}$， 则 $a=\mathrm{e}^{-1/2}$． 故应填 $\mathrm{e}^{-1/2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\mathrm{e}^{-1/2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q289" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="289">【289】</span>
+<span class="q-group">利用洛必达法则讨论函数的连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\dfrac{1}{\pi x}+\dfrac{1}{\sin\pi x}-\dfrac{1}{\pi(1-x)}$，$x\in\left[\dfrac{1}{2},1\right)$．试补充定义 $f(1)$ 使得 $f(x)$ 在 $\left[\dfrac{1}{2},1\right]$ 上连续．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $y=1-x$，有 $\lim\limits_{x\to1^{-}}f(x)=\dfrac{1}{\pi}+\lim\limits_{x\to1^{-}}\dfrac{\pi(1-x)-\sin\pi x}{\pi(1-x)\sin\pi x}=\dfrac{1}{\pi}+\lim\limits_{y\to0^{+}}\dfrac{\pi y-\sin\pi y}{\pi y\sin\pi y}$ $=\dfrac{1}{\pi}+\lim\limits_{y\to0^{+}}\dfrac{\pi y-\sin\pi y}{\pi^{2}y^{2}}=\dfrac{1}{\pi}+\lim\limits_{y\to0^{+}}\dfrac{\pi-\pi\cos\pi y}{2\pi^{2}y}$ $=\dfrac{1}{\pi}+\lim\limits_{y\to0^{+}}\dfrac{\pi^{2}\sin\pi y}{2\pi^{2}}=\dfrac{1}{\pi}$． 由于 $f(x)$ 在 $\left[\dfrac{1}{2},1\right]$ 上连续，因此定义 $f(1)=\dfrac{1}{\pi}$，就可使 $f(x)$ 在 $\left[\dfrac{1}{2},1\right]$ 上连续． 点评 易观察出 $x=1$ 时 $f(x)$ 无意义．补充定义使 $f(x)$ 在 $\left[\dfrac{1}{2},1\right]$ 上连续，也就是求 $f(x)$ 左连续问题，即求 $\lim\limits_{x\to1^{-}}f(x)$．在运算过程中，使用了洛必达法则及等价无穷小代换．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">定义 $f(1)=\dfrac{1}{\pi}$，就可使 $f(x)$ 在 $\left[\dfrac{1}{2},1\right]$ 上连续</span></div>
+</div>
+</article>
+<article class="problem" id="q290" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="290">【290】</span>
+<span class="q-group">利用洛必达法则讨论函数的连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求极限 $\lim\limits_{t\to x}\left(\dfrac{\sin t}{\sin x}\right)^{\frac{x}{\sin t-\sin x}}$，记此极限为 $f(x)$，求函数 $f(x)$ 的间断点并指出其类型．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f(x)=\mathrm{e}^{\lim\limits_{t\to x}\frac{x}{\sin t-\sin x}\ln\frac{\sin t}{\sin x}}$，而 $\lim\limits_{t\to x}\dfrac{x}{\sin t-\sin x}\ln\dfrac{\sin t}{\sin x}=\lim\limits_{t\to x}x\dfrac{\dfrac{\cos t}{\sin t}}{\cos x}=\dfrac{x}{\sin x}$， 故 $f(x)=\mathrm{e}^{\frac{x}{\sin x}}$． 由于 $\lim\limits_{x\to0}f(x)=\lim\limits_{x\to0}\mathrm{e}^{\frac{x}{\sin x}}=\mathrm{e}$，所以 $x=0$ 是函数 $f(x)$ 的第一类（或可去）间断点；$x=k\pi$（$k=\pm1,\pm2,\cdots$）是 $f(x)$ 的第二类（或无穷）间断点．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$x=0$ 是第一类（或可去）间断点；$x=k\pi$（$k=\pm1,\pm2,\cdots$）是第二类（或无穷）间断点</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s2">3. 泰勒公式</h2>
+<div class="sec-intro">1．泰勒定理 若 $f(x)$ 在含有 $x_{0}$ 的某个邻域内具有直到 $n+1$ 阶的导数，则对于该邻域内任意点 $x$，有泰勒公式 $f(x)=\sum\limits_{k=0}^{n}\dfrac{f^{(k)}(x_{0})}{k!}(x-x_{0})^{k}+\dfrac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_{0})^{n+1}$，其中 $\xi$ 介于 $x_{0}$ 与 $x$ 之间，$f^{(0)}(x_{0})=f(x_{0})$．2．麦克劳林公式 在 $x_{0}=0$ 展开的泰勒公式，也称为麦克劳林公式，即 $f(x)=\sum\limits_{k=0}^{n}\dfrac{f^{(k)}(0)}{k!}x^{k}+\dfrac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}$，其中 $\xi$ 介于 $0$ 与 $x$ 之间．3．常用的六个泰勒展开式 $\mathrm{e}^{x}=1+x+\dfrac{x^{2}}{2!}+\cdots+\dfrac{x^{n}}{n!}+o(x^{n})$；$\sin x=x-\dfrac{x^{3}}{3!}+\dfrac{x^{5}}{5!}-\cdots+(-1)^{n}\dfrac{x^{2n+1}}{(2n+1)!}+o(x^{2n+1})$；$\cos x=1-\dfrac{x^{2}}{2!}+\dfrac{x^{4}}{4!}-\dfrac{x^{6}}{6!}+\cdots+(-1)^{n}\dfrac{x^{2n}}{(2n)!}+o(x^{2n})$；$\ln(1+x)=x-\dfrac{x^{2}}{2}+\dfrac{x^{3}}{3}-\cdots+(-1)^{n}\dfrac{x^{n+1}}{n+1}+o(x^{n+1})$；$\dfrac{1}{1-x}=1+x+x^{2}+\cdots+x^{n}+o(x^{n})$；$(1+x)^{m}=1+mx+\dfrac{m(m-1)}{2!}x^{2}+\cdots+\dfrac{m(m-1)\cdot\cdots\cdot(m-n+1)}{n!}x^{n}+o(x^{n})$．</div>
+<h3 class="grp-h">求麦克劳林公式中的系数</h3>
+<article class="problem" id="q291" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="291">【291】</span>
+<span class="q-group">求麦克劳林公式中的系数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$y=2^{x}$ 的麦克劳林公式公式中 $x^{n}$ 项的系数是________．</div>
+<div class="book-note">※ 原书如此，题干中“公式”二字重复排印，照录。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $y'=2^{x}\ln2$，$y''=2^{x}(\ln2)^{2}$，$\cdots$，$y^{(n)}=2^{x}(\ln2)^{n}$，于是有 $y^{(n)}(0)=(\ln2)^{n}$，所以麦克劳林公式中 $x^{n}$ 项的系数是 $\dfrac{y^{(n)}(0)}{n!}=\dfrac{(\ln2)^{n}}{n!}$． 故应填 $\dfrac{(\ln2)^{n}}{n!}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{(\ln2)^{n}}{n!}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">写出泰勒展开式</h3>
+<article class="problem" id="q292" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="292">【292】</span>
+<span class="q-group">写出泰勒展开式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $f(x)=\dfrac{1-x}{1+x}$ 在 $x=0$ 点处带拉格朗日型余项的 $n$ 阶泰勒展开式．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f(x)=\dfrac{2}{1+x}-1$，$f^{(k)}(x)=\dfrac{(-1)^{k}2\cdot k!}{(1+x)^{k+1}}$（$k=1,2,\cdots,n+1$）． 所以 $f(x)=1-2x+2x^{2}-\cdots+(-1)^{n}2x^{n}+(-1)^{n+1}\dfrac{2x^{n+1}}{(1+\theta x)^{n+2}}$（$0&lt;\theta&lt;1$）．</div>
+
+</div>
+</article>
+<h3 class="grp-h">利用泰勒公式求极限</h3>
+<article class="problem" id="q293" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="293">【293】</span>
+<span class="q-group">利用泰勒公式求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\lim\limits_{x\to0}\dfrac{\ln(1+x)-(ax+bx^{2})}{x^{2}}=2$，则________． (A) $a=1$，$b=-\dfrac{5}{2}$　(B) $a=0$，$b=-2$　(C) $a=0$，$b=-\dfrac{5}{2}$　(D) $a=1$，$b=-2$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 左边$=\lim\limits_{x\to0}\dfrac{x-\dfrac{x^{2}}{2}+o(x^{2})-ax-bx^{2}}{x^{2}}$ $=\lim\limits_{x\to0}\dfrac{(1-a)x+\left(-b-\dfrac{1}{2}\right)x^{2}+o(x^{2})}{x^{2}}=2=$右边． 所以 $1-a=0$，$-b-\dfrac{1}{2}=2$．即 $a=1$，$b=-\dfrac{5}{2}$． 故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<article class="problem" id="q294" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="294">【294】</span>
+<span class="q-group">利用泰勒公式求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求下列函数的极限：$\lim\limits_{x\to0}\dfrac{\cos x-\mathrm{e}^{-\frac{x^{2}}{2}}}{x^{4}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\cos x=1-\dfrac{x^{2}}{2!}+\dfrac{x^{4}}{4!}+o(x^{4})$，$\mathrm{e}^{-\frac{x^{2}}{2}}=1-\dfrac{x^{2}}{2}+\dfrac{1}{2!}\left(-\dfrac{x^{2}}{2}\right)^{2}+o(x^{4})$ 所以 原式$=\lim\limits_{x\to0}\dfrac{\left[1-\dfrac{x^{2}}{2}+\dfrac{x^{4}}{24}+o(x^{4})\right]-\left[1-\dfrac{x^{2}}{2}+\dfrac{x^{4}}{8}+o(x^{4})\right]}{x^{4}}=\lim\limits_{x\to0}\dfrac{\left(\dfrac{1}{24}-\dfrac{1}{8}\right)x^{4}+o(x^{4})}{x^{4}}$ $=-\dfrac{1}{12}$．</div>
+
+</div>
+</article>
+<article class="problem" id="q295" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="295">【295】</span>
+<span class="q-group">利用泰勒公式求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to0}\dfrac{x\ln(1+x)}{\mathrm{e}^{x}-x-1}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\mathrm{e}^{x}=1+x+\dfrac{x^{2}}{2!}+o(x^{2})$，且 $x\to0$ 时，$\ln(1+x)\sim x$，所以 原式$=\lim\limits_{x\to0}\dfrac{x^{2}}{\mathrm{e}^{x}-x-1}=\lim\limits_{x\to0}\dfrac{x^{2}}{\dfrac{x^{2}}{2!}+o(x^{2})}=2$．</div>
+
+</div>
+</article>
+<article class="problem" id="q296" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="296">【296】</span>
+<span class="q-group">利用泰勒公式求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求极限 $\lim\limits_{x\to+\infty}\left\{\dfrac{\mathrm{e}}{2}x+x^{2}\left[\left(1+\dfrac{1}{x}\right)^{x}-\mathrm{e}\right]\right\}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由泰勒公式 $\left(1+\dfrac{1}{x}\right)^{x}=\mathrm{e}^{x\ln\left(1+\frac{1}{x}\right)}=\mathrm{e}^{x\left[\frac{1}{x}-\frac{1}{2x^{2}}+\frac{1}{3x^{3}}+o\left(\frac{1}{x^{3}}\right)\right]}=\mathrm{e}^{1-\frac{1}{2x}+\frac{1}{3x^{2}}+o\left(\frac{1}{x^{2}}\right)}$ $=\mathrm{e}\left\{1-\dfrac{1}{2x}+\dfrac{1}{3x^{2}}+o\left(\dfrac{1}{x^{2}}\right)+\dfrac{1}{2!}\left[-\dfrac{1}{2x}+\dfrac{1}{3x^{2}}+o\left(\dfrac{1}{x^{2}}\right)\right]^{2}+o\left(\dfrac{1}{x^{2}}\right)\right\}$ $=\mathrm{e}-\dfrac{\mathrm{e}}{2}\cdot\dfrac{1}{x}+\dfrac{11}{24}\mathrm{e}\cdot\dfrac{1}{x^{2}}+o\left(\dfrac{1}{x^{2}}\right)$， 从而有 $x^{2}\left[\left(1+\dfrac{1}{x}\right)^{x}-\mathrm{e}\right]=-\dfrac{\mathrm{e}}{2}x+\dfrac{11}{24}\mathrm{e}+x^{2}\cdot o\left(\dfrac{1}{x^{2}}\right)$，所以 $\lim\limits_{x\to+\infty}\left\{\dfrac{\mathrm{e}}{2}x+x^{2}\left[\left(1+\dfrac{1}{x}\right)^{x}-\mathrm{e}\right]\right\}=\lim\limits_{x\to+\infty}\left[\dfrac{\mathrm{e}}{2}x-\dfrac{\mathrm{e}}{2}x+\dfrac{11}{24}\mathrm{e}+x^{2}\cdot o\left(\dfrac{1}{x^{2}}\right)\right]=\dfrac{11}{24}\mathrm{e}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{11}{24}\mathrm{e}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用泰勒公式讨论无穷小的比较</h3>
+<article class="problem" id="q297" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="297">【297】</span>
+<span class="q-group">利用泰勒公式讨论无穷小的比较</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设当 $x\to0$ 时，$\mathrm{e}^{x}-(ax^{2}+bx+1)$ 是比 $x^{2}$ 高阶的无穷小，则________． (A) $a=\dfrac{1}{2}$，$b=1$　(B) $a=1$，$b=1$　(C) $a=-\dfrac{1}{2}$，$b=1$　(D) $a=-1$，$b=1$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\mathrm{e}^{x}=1+x+\dfrac{x^{2}}{2!}+o(x^{2})$ 知 $\mathrm{e}^{x}-(ax^{2}+bx+1)=(1-b)x+\left(\dfrac{1}{2}-a\right)x^{2}+o(x^{2})$． 所以必有 $a=\dfrac{1}{2}$，$b=1$． 故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用泰勒定理证明等式、不等式</h3>
+<article class="problem" id="q298" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="298">【298】</span>
+<span class="q-group">利用泰勒定理证明等式、不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">试证明：若 $f(x)$ 在 $[a,b]$ 上存在二阶导数，且 $f'(a)=f'(b)=0$，则存在 $\xi\in(a,b)$，使 $|f''(\xi)|\geqslant\dfrac{4}{(b-a)^{2}}|f(b)-f(a)|$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 将 $f\left(\dfrac{a+b}{2}\right)$ 分别在点 $a$ 和点 $b$ 泰勒展开，得 $f\left(\dfrac{a+b}{2}\right)=f(a)+\dfrac{f''(\xi_{1})}{2}\left(\dfrac{b-a}{2}\right)^{2}$，$\xi_{1}\in\left(a,\dfrac{a+b}{2}\right)$， $f\left(\dfrac{a+b}{2}\right)=f(b)+\dfrac{f''(\xi_{2})}{2}\left(\dfrac{b-a}{2}\right)^{2}$，$\xi_{2}\in\left(\dfrac{a+b}{2},b\right)$． 令 $|f''(\xi)|=\max\left\{|f''(\xi_{1})|,|f''(\xi_{2})|\right\}$，则 $|f(b)-f(a)|=\left|\dfrac{f''(\xi_{1})}{2}-\dfrac{f''(\xi_{2})}{2}\right|\cdot\dfrac{(b-a)^{2}}{4}\leqslant|f''(\xi)|\dfrac{(b-a)^{2}}{4}$， 即存在 $\xi\in(a,b)$，使 $|f''(\xi)|\geqslant\dfrac{4}{(b-a)^{2}}|f(b)-f(a)|$．</div>
+
+</div>
+</article>
+<article class="problem" id="q299" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="299">【299】</span>
+<span class="q-group">利用泰勒定理证明等式、不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[0,1]$ 上二阶可导，且 $f(0)=f(1)=0$，$f(x)$ 在 $[0,1]$ 上的最小值等于 $-1$，试证至少存在一点 $\xi\in(0,1)$，使 $f''(\xi)\geqslant8$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 由题设存在 $a\in(0,1)$，使 $f(a)=-1$，$f'(a)=0$．利用泰勒公式： $f(x)=f(a)+f'(a)(x-a)+\dfrac{f''(\xi)}{2!}(x-a)^{2}=-1+\dfrac{f''(\xi)}{2}(x-a)^{2}$， 令 $x=0$，$x=1$ 得 $0=-1+\dfrac{f''(\xi_{1})}{2}a^{2}$，$0&lt;\xi_{1}&lt;a$　① $0=-1+\dfrac{f''(\xi_{2})}{2}(1-a)^{2}$，$a&lt;\xi_{2}&lt;1$　② 若 $0&lt;a&lt;\dfrac{1}{2}$，由①式得 $f''(\xi_{1})&gt;8$；若 $\dfrac{1}{2}\leqslant a&lt;1$，由②式得 $f''(\xi_{2})\geqslant8$，故结论成立． 点评 用泰勒公式时，$x_{0}$ 的选取是关键．若证明结果中不含一阶导数时，$x_{0}$ 可考虑选取为题设条件已知一阶导数的点或隐含为一阶导数已知的点．若是积分不等式，还可考虑选取 $x_{0}=\dfrac{a+b}{2}$，因为 $\int_{a}^{b}f'(x_{0})\left(x-\dfrac{a+b}{2}\right)\mathrm{d}x=0$，积分后可把含有 $f'(x_{0})$ 的项消去．</div>
+
+</div>
+</article>
+<article class="problem" id="q300" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="300">【300】</span>
+<span class="q-group">利用泰勒定理证明等式、不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 三阶可导，且 $f'''(a)\neq0$， $$f(x)=f(a)+f'(a)(x-a)+\dfrac{f''[a+\theta(x-a)](x-a)^{2}}{2}\quad(0&lt;\theta&lt;1)，$$　① 证明：$\lim\limits_{x\to a}\theta=\dfrac{1}{3}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 把 $f(x)$ 在 $x=a$ 处展为泰勒公式： $f(x)=f(a)+f'(a)(x-a)+\dfrac{f''(a)}{2!}(x-a)^{2}+\dfrac{f'''(a)}{3!}(x-a)^{3}+o\left((x-a)^{3}\right)$，　② $f''(x)=f''(a)+f'''(a)(x-a)+o(x-a)$． 把 $x=a+\theta(x-a)$ 代入上式得： $f''[a+\theta(x-a)]=f''(a)+f'''(a)\theta(x-a)+o(x-a)$．　③ 另一方面，由①$-$②得：$f''[a+\theta(x-a)]=f''(a)+\dfrac{f'''(a)}{3}(x-a)+o(x-a)$．　④ ③、④联立得：$\dfrac{1}{3}f'''(a)(x-a)+o(x-a)=f'''(a)\theta(x-a)+o(x-a)$． 所以 $\lim\limits_{x\to a}\theta=\dfrac{1}{3}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以 $\lim\limits_{x\to a}\theta=\dfrac{1}{3}$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s3">4. 函数的单调性与曲线的凹凸性</h2>
+<h2 class="sec-h" id="sec-s3">4. 函数的单调性与曲线的凹凸性</h2>
+<h3 class="grp-h">利用单调性判断选项</h3>
+<article class="problem" id="q301" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="301">【301】</span>
+<span class="q-group">利用单调性判断选项</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $(-\infty,+\infty)$ 内可导，且对任意 $x_{1},x_{2}$，当 $x_{1}&gt;x_{2}$ 时，都有 $f(x_{1})&gt;f(x_{2})$，则________．(A) 对任意 $x$，$f'(x)&gt;0$　(B) 对任意 $x$，$f'(-x)\leqslant 0$　(C) 函数 $f(-x)$ 单调增加　(D) 函数 $-f(-x)$ 单调增加</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x_{1}&gt;x_{2}$ 时，$-x_{1}&lt;-x_{2}$，则 $f(-x_{1})&lt;f(-x_{2})$，从而 $-f(-x_{1})&gt;-f(-x_{2})$．即 $-f(-x)$ 单调增加．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q302" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="302">【302】</span>
+<span class="q-group">利用单调性判断选项</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$、$g(x)$ 是恒大于零的可导函数，且 $f'(x)g(x)-f(x)g'(x)&lt;0$，则当 $a&lt;x&lt;b$ 时，有________．(A) $f(x)g(b)&gt;f(b)g(x)$　(B) $f(x)g(a)&gt;f(a)g(x)$　(C) $f(x)g(x)&gt;f(b)g(b)$　(D) $f(x)g(x)&gt;f(a)g(a)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\left[\dfrac{f(x)}{g(x)}\right]'=\dfrac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^{2}}&lt;0$ 得：$\dfrac{f(x)}{g(x)}$ 当 $a&lt;x&lt;b$ 时为单调减函数．从而 $x&lt;b$ 时，$\dfrac{f(x)}{g(x)}&gt;\dfrac{f(b)}{g(b)}$．即 $f(x)g(b)-f(b)g(x)&gt;0$．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<article class="problem" id="q303" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="303">【303】</span>
+<span class="q-group">利用单调性判断选项</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设在 $[0,1]$ 上，$f''(x)\leqslant 0$，则 $f'(0)$，$f'(1)$，$f(1)-f(0)$ 或 $f(0)-f(1)$ 的大小顺序是________．(A) $f'(1)\leqslant f'(0)\leqslant f(1)-f(0)$　(B) $f'(1)\leqslant f(1)-f(0)\leqslant f'(0)$　(C) $f(1)-f(0)\leqslant f'(1)\leqslant f'(0)$　(D) $f'(1)\leqslant f(0)-f(1)\leqslant f'(0)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f''(x)\leqslant 0$，所以 $f'(x)$ 在 $[0,1]$ 上单调不增．故 $f'(1)\leqslant f'(0)$．而由拉格朗日中值定理，$f(1)-f(0)=f'(\xi)(1-0)$，其中 $\xi$ 介于 $0$，$1$ 之间，则 $f'(1)\leqslant f'(\xi)\leqslant f'(0)$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q304" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="304">【304】</span>
+<span class="q-group">利用单调性判断选项</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知函数 $f(x)$ 在区间 $(1-\delta,1+\delta)$ 内具有二阶导数，$f'(x)$ 严格单调减少，且 $f(1)=f'(1)=1$，则________．(A) 在 $(1-\delta,1)$ 和 $(1,1+\delta)$ 内均有 $f(x)&lt;x$　(B) 在 $(1-\delta,1)$ 和 $(1,1+\delta)$ 内均有 $f(x)&gt;x$　(C) 在 $(1-\delta,1)$ 内，$f(x)&lt;x$，在 $(1,1+\delta)$ 内，$f(x)&gt;x$　(D) 在 $(1-\delta,1)$ 内，$f(x)&gt;x$，在 $(1,1+\delta)$ 内，$f(x)&lt;x$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $F(x)=f(x)-x$，则 $F(1)=f(1)-1=0$．$F'(x)=f'(x)-1$，$F'(1)=f'(1)-1=0$．$F''(x)=f''(x)$，由 $f'(x)$ 在 $(1-\delta,1+\delta)$ 内严格单调减少知 $F''(x)&lt;0$．从而 $F'(x)$ 在 $(1-\delta,1+\delta)$ 内单调减少，即 $x\in(1-\delta,1)$ 时，$F'(x)&gt;F'(1)=0$；$x\in(1,1+\delta)$ 时，$F'(x)&lt;F'(1)=0$．当 $x\in(1-\delta,1)$ 时，由 $F'(x)&gt;0$ 知 $F(x)$ 单增，即 $F(x)&lt;F(1)=0$，也即 $f(x)&lt;x$；当 $x\in(1,1+\delta)$ 时，由 $F'(x)&lt;0$ 知 $F(x)$ 单减，即 $F(x)&lt;F(1)=0$，也即 $f(x)&lt;x$．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<article class="problem" id="q305" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="305">【305】</span>
+<span class="q-group">利用单调性判断选项</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $f(-x)=f(x)$（$-\infty&lt;x&lt;+\infty$）．在 $(-\infty,0)$ 内 $f'(x)&gt;0$ 且 $f''(x)&lt;0$，则在 $(0,+\infty)$ 内有________．(A) $f'(x)&gt;0$，$f''(x)&lt;0$　(B) $f'(x)&gt;0$，$f''(x)&gt;0$　(C) $f'(x)&lt;0$，$f''(x)&lt;0$　(D) $f'(x)&lt;0$，$f''(x)&gt;0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $f(-x)=f(x)$ 知，$f(x)$ 在 $(-\infty,+\infty)$ 内为偶函数，$f(x)$ 的图象关于 $y$ 轴对称，在 $(-\infty,0)$ 内，$f'(x)&gt;0$ 说明 $f(x)$ 为单调单增，$f''(x)&lt;0$ 说明 $f(x)$ 为凸的．故 $f(x)$ 在 $(0,+\infty)$ 内为单调递减凸函数，从而 $x\in(0,+\infty)$ 时，$f'(x)&lt;0$，$f''(x)&lt;0$．故应选 (C)．<strong>点评</strong> 本题也可根据函数的奇偶性、使用复合函数求导法则得出结论．由 $f(-x)=f(x)$（$-\infty&lt;x&lt;+\infty$）可知 $f(x)$ 为偶函数，即关于 $y$ 轴对称．对 $f(-x)=f(x)$ 等式两端求导得 $-f'(-x)=f'(x)$，即 $f'(x)$ 为奇函数．再对 $f'(-x)=-f'(x)$ 两端求导得 $f''(-x)=f''(x)$，即 $f''(x)$ 为偶函数．从而根据已知条件 $x\in(0,+\infty)$ 时，$-x\in(-\infty,0)$，有 $$f'(x)=-f'(-x)&lt;0，\quad f''(x)=f''(-x)&lt;0.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用单调性的证明题</h3>
+<article class="problem" id="q306" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="306">【306】</span>
+<span class="q-group">利用单调性的证明题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明函数 $f(x)=\left(1+\dfrac{1}{x}\right)^{x}$ 在区间 $(0,+\infty)$ 上单调增加．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 只需要证明 $f'(x)&gt;0$（$x&gt;0$），由 $$f(x)=e^{x\ln\left(1+\frac{1}{x}\right)}，\quad f'(x)=\left(1+\frac{1}{x}\right)^{x}\left[\ln\left(1+\frac{1}{x}\right)-\frac{1}{1+x}\right]，$$ 由于 $\ln\left(1+\dfrac{1}{x}\right)=\ln(1+x)-\ln x$，考虑 $y=\ln x$ 在 $[x,1+x]$ 上满足拉格朗日定理，即存在 $x&lt;\xi&lt;x+1$，使得 $$\ln\left(1+\frac{1}{x}\right)=\ln(1+x)-\ln x=(\ln x)'\Big|_{x=\xi}=\frac{1}{\xi}&gt;\frac{1}{1+x}.$$ 由 $\left(1+\dfrac{1}{x}\right)^{x}&gt;0$，所以 $f(x)$ 在 $(0,+\infty)$ 上单增．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以 $f(x)$ 在 $(0,+\infty)$ 上单增</span></div>
+</div>
+</article>
+<article class="problem" id="q307" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="307">【307】</span>
+<span class="q-group">利用单调性的证明题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[a,+\infty)$ 上连续，$f''(x)$ 在 $(a,+\infty)$ 上存在且大于零，记 $$F(x)=\frac{f(x)-f(a)}{x-a}\quad(x&gt;a).$$ 证明：$F(x)$ 在 $(a,+\infty)$ 内单调增加．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 只需证明 $F'(x)&gt;0$（$a&lt;x&lt;+\infty$），$$F'(x)=\frac{f'(x)(x-a)-[f(x)-f(a)]}{(x-a)^{2}}=\frac{1}{x-a}\left[f'(x)-\frac{f(x)-f(a)}{x-a}\right].$$ 由拉格朗日中值定理知，存在 $\xi$（$a&lt;\xi&lt;x$），使 $\dfrac{f(x)-f(a)}{x-a}=f'(\xi)$，于是有 $$F'(x)=\frac{1}{x-a}\left[f'(x)-f'(\xi)\right].$$ 由于 $f''(x)&gt;0$，可见 $f'(x)$ 在 $(a,+\infty)$ 内单调增加．因此，对于任意 $x$ 和 $\xi$（$a&lt;\xi&lt;x$），有 $f'(x)&gt;f'(\xi)$．从而 $F'(x)&gt;0$，于是 $F(x)$ 是单调增加的．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">从而 $F'(x)&gt;0$，于是 $F(x)$ 是单调增加的</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用单调性证明不等式</h3>
+<article class="problem" id="q308" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="308">【308】</span>
+<span class="q-group">利用单调性证明不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">试证：当 $x&gt;0$ 时，$(x^{2}-1)\ln x\geqslant(x-1)^{2}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 令 $\varphi(x)=(x^{2}-1)\ln x-(x-1)^{2}$，易知 $\varphi(1)=0$．由于 $$\varphi'(x)=2x\ln x-x+2-\frac{1}{x}，\quad \varphi'(1)=0;$$ $$\varphi''(x)=2\ln x+1+\frac{1}{x^{2}}，\quad \varphi''(1)=2&gt;0;$$ $$\varphi'''(x)=\frac{2(x^{2}-1)}{x^{3}}.$$ 所以当 $0&lt;x&lt;1$ 时，$\varphi'''(x)&lt;0$；当 $1&lt;x&lt;+\infty$ 时，$\varphi'''(x)&gt;0$，从而推知当 $x\in(0,+\infty)$ 时，$\varphi''(x)&gt;0$．由 $\varphi'(1)=0$ 推知，当 $0&lt;x&lt;1$ 时，$\varphi'(x)&lt;0$；当 $1&lt;x&lt;+\infty$ 时，$\varphi'(x)&gt;0$．再由 $\varphi(1)=0$ 推知，当 $x&gt;0$ 时，$(x^{2}-1)\ln x\geqslant(x-1)^{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">再由 $\varphi(1)=0$ 推知，当 $x&gt;0$ 时，$(x^{2}-1)\ln x\geqslant(x-1)^{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q309" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="309">【309】</span>
+<span class="q-group">利用单调性证明不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x\in(0,1)$，证明 (1) $(1+x)\ln^{2}(1+x)&lt;x^{2}$；(2) $\dfrac{1}{\ln 2}-1&lt;\dfrac{1}{\ln(1+x)}-\dfrac{1}{x}&lt;\dfrac{1}{2}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> (1) 令 $\varphi(x)=(1+x)\ln^{2}(1+x)-x^{2}$，则有 $$\varphi(0)=0，\quad \varphi'(x)=\ln^{2}(1+x)+2\ln(1+x)-2x，\quad \varphi'(0)=0.$$ 因为当 $x\in(0,1)$ 时，$\varphi''(x)=\dfrac{2}{1+x}[\ln(1+x)-x]&lt;0$，所以 $\varphi'(x)&lt;\varphi'(0)=0$，从而 $\varphi(x)&lt;0$，即 $(1+x)\ln^{2}(1+x)&lt;x^{2}$．(2) 令 $f(x)=\dfrac{1}{\ln(1+x)}-\dfrac{1}{x}$，$x\in(0,1]$，则有 $$f'(x)=\frac{(1+x)\ln^{2}(1+x)-x^{2}}{x^{2}(1+x)\ln^{2}(1+x)}.$$ 由 (1) 知，$f'(x)&lt;0$（当 $x\in(0,1)$），于是推知在 $(0,1)$ 内 $f(x)$ 单调减少，又 $f(x)$ 在区间 $(0,1]$ 上连续，且 $f(1)=\dfrac{1}{\ln 2}-1$，故当 $x\in(0,1)$ 时，$f(x)=\dfrac{1}{\ln(1+x)}-\dfrac{1}{x}&gt;\dfrac{1}{\ln 2}-1$，不等式左边证毕．又 $$\lim_{x\to 0^{+}}f(x)=\lim_{x\to 0^{+}}\frac{x-\ln(1+x)}{x\ln(1+x)}=\lim_{x\to 0^{+}}\frac{x-\ln(1+x)}{x^{2}}=\lim_{x\to 0^{+}}\frac{x}{2x(1+x)}=\frac{1}{2}，$$ 故当 $x\in(0,1)$ 时，$f(x)=\dfrac{1}{\ln(1+x)}-\dfrac{1}{x}&lt;\dfrac{1}{2}$．不等式右边证毕．<strong>点评</strong> 利用函数的单调性证明不等式一般步骤为：(1)移项（有时需要再作其他简单变形），使不等式一端为 $0$，另一端为 $f(x)$；(2)求 $f'(x)$ 并验证 $f(x)$ 在指定区间的增减性；(3)求出区间端点的函数值（或极限值），作出比较即得所证．</div>
+
+</div>
+</article>
+<article class="problem" id="q310" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="310">【310】</span>
+<span class="q-group">利用单调性证明不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $0&lt;x_{1}&lt;x_{2}&lt;2$，问 $\dfrac{e^{x_{1}}}{x_{1}^{2}}$ 和 $\dfrac{e^{x_{2}}}{x_{2}^{2}}$ 何者更大？为什么？</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $$y=\frac{e^{x}}{x^{2}}，x\in(0,2)，\quad y'=\frac{x^{2}e^{x}-2xe^{x}}{x^{4}}=\frac{e^{x}(x-2)}{x^{3}}&lt;0，$$ 故 $y$ 为 $(0,2)$ 内单调递减函数．所以当 $0&lt;x_{1}&lt;x_{2}&lt;2$ 时，$\dfrac{e^{x_{1}}}{x_{1}^{2}}&gt;\dfrac{e^{x_{2}}}{x_{2}^{2}}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以当 $0&lt;x_{1}&lt;x_{2}&lt;2$ 时，$\dfrac{e^{x_{1}}}{x_{1}^{2}}&gt;\dfrac{e^{x_{2}}}{x_{2}^{2}}$</span></div>
+</div>
+</article>
+<article class="problem" id="q311" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="311">【311】</span>
+<span class="q-group">利用单调性证明不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x&gt;0$，常数 $a&gt;e$，证明：$(a+x)^{a}&lt;a^{a+x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $y=\ln x$ 是单调增加函数，所以欲证明 $(a+x)^{a}&lt;a^{a+x}$，只须证 $$a\ln(a+x)&lt;(a+x)\ln a.$$ 设 $f(x)=(a+x)\ln a-a\ln(a+x)$，则 $f(x)$ 在 $[0,+\infty)$ 内连续且可导，又有 $$f'(x)=\ln a-\frac{a}{a+x}，$$ 因为 $\ln a&gt;1$，$\dfrac{a}{a+x}&lt;1$，故 $f'(x)&gt;0$，所以函数 $f(x)$ 在 $[0,+\infty)$ 内单调增加．而 $f(0)=0$，所以 $f(x)&gt;0$（$0&lt;x&lt;+\infty$），即 $a\ln(a+x)&lt;(a+x)\ln a$，也即 $(a+x)^{a}&lt;a^{a+x}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">即 $a\ln(a+x)&lt;(a+x)\ln a$，也即 $(a+x)^{a}&lt;a^{a+x}$</span></div>
+</div>
+</article>
+<article class="problem" id="q312" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="312">【312】</span>
+<span class="q-group">利用单调性证明不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $b&gt;a&gt;e$，证明：$a^{b}&gt;b^{a}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 要证 $a^{b}&gt;b^{a}$，只须证 $b\ln a&gt;a\ln b$．令 $f(x)=x\ln a-a\ln x$（$x\geqslant a$），因为 $$f'(x)=\ln a-\frac{a}{x}&gt;1-\frac{a}{x}\geqslant 0\quad(x\geqslant a)，$$ 所以 $f(x)$ 在 $x\geqslant a$ 时单调增加．于是，当 $b&gt;a$ 时，有 $f(b)&gt;f(a)=0$．即有 $b\ln a&gt;a\ln b$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">即有 $b\ln a&gt;a\ln b$</span></div>
+</div>
+</article>
+<article class="problem" id="q313" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="313">【313】</span>
+<span class="q-group">利用单调性证明不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f''(x)&lt;0$，$f(0)=0$，证明对任何 $x_{1}&gt;0$，$x_{2}&gt;0$，有 $f(x_{1}+x_{2})&lt;f(x_{1})+f(x_{2})$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 令 $F(x)=f(x+x_{2})-f(x)$，则 $$F'(x)=f'(x+x_{2})-f'(x)=x_{2}f''(x+\theta x_{2})&lt;0，\quad(0&lt;\theta&lt;1)$$ 所以 $F(x)$ 单调减少．又 $x_{1}&gt;0$，故 $F(x_{1})&lt;F(0)$，即 $f(x_{1}+x_{2})-f(x_{1})&lt;f(x_{2})-f(0)$．由 $f(0)=0$，即得 $f(x_{1}+x_{2})&lt;f(x_{1})+f(x_{2})$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">由 $f(0)=0$，即得 $f(x_{1}+x_{2})&lt;f(x_{1})+f(x_{2})$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用单调性讨论根的个数</h3>
+<article class="problem" id="q314" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="314">【314】</span>
+<span class="q-group">利用单调性讨论根的个数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">当 $a$ 取下列哪个值时，函数 $f(x)=2x^{3}-9x^{2}+12x-a$ 恰有两个不同的零点________．(A) $2$　(B) $4$　(C) $6$　(D) $8$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f'(x)=6x^{2}-18x+12=6(x-1)(x-2)$，从而 $f(x)$ 可能的极值点为 $x=1$，$x=2$．且 $f(1)=5-a$，$f(2)=4-a$．可见当 $a=4$ 时，函数 $f(x)$ 恰好有两个零点．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q315" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="315">【315】</span>
+<span class="q-group">利用单调性讨论根的个数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设常数 $k&gt;0$，函数 $f(x)=\ln x-\dfrac{x}{e}+k$ 在 $(0,+\infty)$ 内零点个数为________．(A) $3$　(B) $2$　(C) $1$　(D) $0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因 $\lim\limits_{x\to 0^{+}}f(x)=-\infty$，$\lim\limits_{x\to+\infty}f(x)=-\infty$，而 $f'(x)=\dfrac{1}{x}-\dfrac{1}{e}=0$．当 $0&lt;x&lt;e$ 时，$f'(x)&gt;0$，$f(x)$ 单调增加；当 $x&gt;e$ 时，$f'(x)&lt;0$，$f(x)$ 单调减少．而 $f(e)=k&gt;0$．所以 $f(x)$ 在 $(0,e)$ 内有一个零点，在 $(e,+\infty)$ 内有一个零点．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q316" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="316">【316】</span>
+<span class="q-group">利用单调性讨论根的个数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">在区间 $(-\infty,+\infty)$ 内，方程 $|x|^{\frac{1}{4}}+|x|^{\frac{1}{2}}-\cos x=0$________．(A) 无实根　(B) 有且仅有一个实根　(C) 有且仅有二个实根　(D) 有无穷多个实根</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x\in[0,+\infty)$ 时，令 $f(x)=x^{\frac{1}{4}}+x^{\frac{1}{2}}-\cos x$．显然，$f(0)=-1&lt;0$，$f(1)=2-\cos 1&gt;0$．由零点定理知在 $(0,1)$ 内至少有一个 $f(x)=0$ 的根．易知 $f'(x)=\dfrac{1}{4}x^{-\frac{3}{4}}+\dfrac{1}{2}x^{-\frac{1}{2}}+\sin x$，$\lim\limits_{x\to 0^{+}}f'(x)=+\infty$，$f(x)$ 在 $[0,1]$ 为单调增加函数．故 $f(x)=0$ 在 $(0,+\infty)$ 内仅有一个实根．$f(x)=|x|^{\frac{1}{4}}+|x|^{\frac{1}{2}}-\cos x$ 为偶函数，根据偶函数的图像的对称性可知，$f(x)=0$ 在 $(-\infty,0)$ 内仅有一个实根．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q317" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="317">【317】</span>
+<span class="q-group">利用单调性讨论根的个数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">讨论函数 $y=\dfrac{1}{x-a_{1}}+\dfrac{1}{x-a_{2}}+\dfrac{1}{x-a_{3}}$ 的零点，其中 $a_{1}&lt;a_{2}&lt;a_{3}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 易知，当 $x&lt;a_{1}$ 时，$y(x)&lt;0$；当 $x&gt;a_{3}$ 时，$y(x)&gt;0$．因此，函数 $y(x)$ 在 $(-\infty,a_{1})$ 及 $(a_{3},+\infty)$ 内无零点，其零点只可能在 $(a_{1},a_{2})$ 和 $(a_{2},a_{3})$ 中．因为 $y'=\dfrac{-1}{(x-a_{1})^{2}}+\dfrac{-1}{(x-a_{2})^{2}}+\dfrac{-1}{(x-a_{3})^{2}}$，可知 $y'(x)&lt;0$，$x\in(a_{1},a_{2})$ 或 $x\in(a_{2},a_{3})$．故 $y(x)$ 在 $(a_{1},a_{2})$ 内严格单调下降，在 $(a_{2},a_{3})$ 内也严格单调下降．又由 $\lim\limits_{x\to a_{1}^{+}}y(x)=+\infty$，$\lim\limits_{x\to a_{2}^{-}}y(x)=-\infty$，可知连续函数 $y(x)$ 在 $(a_{1},a_{2})$ 内有且仅有一个零点．同理可知，$y(x)$ 在 $(a_{2},a_{3})$ 内有且仅有一个零点．总之，函数 $y(x)$ 共有两个零点，它们分别在 $(a_{1},a_{2})$ 与 $(a_{2},a_{3})$ 内．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">总之，函数 $y(x)$ 共有两个零点，它们分别在 $(a_{1},a_{2})$ 与 $(a_{2},a_{3})$ 内</span></div>
+</div>
+</article>
+<h3 class="grp-h">求曲线的拐点</h3>
+<article class="problem" id="q318" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="318">【318】</span>
+<span class="q-group">求曲线的拐点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $y=x^{5}-4x+2$ 的拐点是________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=5x^{4}-4$，$y''=20x^{3}$，令 $y''=0$，则 $20x^{3}=0$，解得 $x=0$．且在 $x=0$ 左右两侧 $y''$ 改变符号，即在此处存在拐点．所以拐点为 $(0,2)$．故应填 $(0,2)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $(0,2)$</span></div>
+</div>
+</article>
+<article class="problem" id="q319" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="319">【319】</span>
+<span class="q-group">求曲线的拐点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $y=x^{3}-x^{2}$________．(A) 没有拐点　(B) 有两个拐点　(C) 有一个拐点　(D) 有三个拐点</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=3x^{2}-2x$，$y''=6x-2=0$，解得 $x=\dfrac{1}{3}$，且 $y''$ 在 $x=\dfrac{1}{3}$ 的左、右两侧改变符号，所以 $x=\dfrac{1}{3}$ 为曲线 $y=x^{3}-x^{2}$ 的拐点．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q320" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="320">【320】</span>
+<span class="q-group">求曲线的拐点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $y=(x-1)^{2}(x-3)^{2}$ 的拐点个数为________．(A) $0$　(B) $1$　(C) $2$　(D) $3$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=2(x-1)(x-3)^{2}+2(x-1)^{2}(x-3)$，$y''=4(3x^{2}-12x+11)=0$．解得 $y''=0$ 有两个根，且根两侧二阶导数符号变号．故应选 (C)．<strong>点评</strong> 本题使用拐点的必要条件，求二阶导数为零的点，再考查二阶导数在该点左右两侧的符号．但要注意的是，一般函数的拐点应是二阶导数为零的点或二阶导数不存在的点．对本题来讲，因其二阶导数均存在，故只需求二阶导数为零的点．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q321" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="321">【321】</span>
+<span class="q-group">求曲线的拐点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">点 $(0,1)$ 是曲线 $y=ax^{3}+bx^{2}+c$ 的拐点，则 $a$，$b$，$c$ 应满足________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 拐点 $(0,1)$ 应在曲线上，则 $y\Big|_{x=0}=1$，从而得 $c=1$．又因为 $y''\Big|_{x=0}=0$，而 $y''=6ax+2b$，故 $2b=0$，即 $b=0$．为保证 $y''$ 在 $x=0$ 的左、右两侧符号变化，应要求 $a\neq 0$．故应填 $a\neq 0$，$b=0$，$c=1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $a\neq 0$，$b=0$，$c=1$</span></div>
+</div>
+</article>
+<article class="problem" id="q322" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="322">【322】</span>
+<span class="q-group">求曲线的拐点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=|x(1-x)|$，则________．(A) $x=0$ 是 $f(x)$ 的极值点，但 $(0,0)$ 不是曲线 $y=f(x)$ 的拐点　(B) $x=0$ 不是 $f(x)$ 的极值点，但 $(0,0)$ 是曲线 $y=f(x)$ 的拐点　(C) $x=0$ 是 $f(x)$ 的极值点，且 $(0,0)$ 是曲线 $y=f(x)$ 的拐点　(D) $x=0$ 不是 $f(x)$ 的极值点，且 $(0,0)$ 也不是曲线 $y=f(x)$ 的拐点</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f(x)$ 在 $x=0$ 附近的表达式为 $$f(x)=\begin{cases}x(x-1)， &amp; x&lt;0\\ x(1-x)， &amp; 0\leqslant x&lt;1\end{cases}，\quad 从而 f'(x)=\begin{cases}2x-1， &amp; x&lt;0\\ 不存在， &amp; x=0\\ 1-2x， &amp; x&gt;0\end{cases}.$$ 由于 $f'(0)$ 不存在，且 $f'(x)$ 在 $x=0$ 左右两边符号改变，故 $x=0$ 是 $f(x)$ 的极值点．又 $$f''(0)=\begin{cases}2， &amp; x&lt;0\\ 不存在， &amp; x=0\\ -2， &amp; x&gt;0\end{cases}$$ 由于 $f''(0)$ 不存在，且 $f''(x)$ 在 $x=0$ 左右两边符号改变，所以 $x=0$ 是 $y=f(x)$ 的拐点．故应选 (C)．<strong>点评</strong> 本题的可能极值点应在 $f'(x)$ 不存在处求得，但需判断该点左、右两侧符号是否改变；同样的，$f(x)$ 的拐点也应从 $f''(x)$ 不存在处寻找，找到该点后应判断 $f''(x)$ 在该点左、右两侧的符号是否改变．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q323" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="323">【323】</span>
+<span class="q-group">求曲线的拐点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f'(x_{0})=f''(x_{0})=0$，$f'''(x_{0})&gt;0$，则下列选项正确的是________．(A) $f'(x_{0})$ 是 $f'(x)$ 的极大值　(B) $f(x_{0})$ 是 $f(x)$ 的极大值　(C) $f(x_{0})$ 是 $f(x)$ 的极小值　(D) $(x_{0},f(x_{0}))$ 是曲线 $y=f(x)$ 的拐点</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f'''(x_{0})=\lim\limits_{x\to x_{0}}\dfrac{f''(x)-f''(x_{0})}{x-x_{0}}=\lim\limits_{x\to x_{0}}\dfrac{f''(x)}{x-x_{0}}&gt;0$．由极限的保号性知，当 $x&lt;x_{0}$ 时，$f''(x)&lt;0$；当 $x&gt;x_{0}$ 时，$f''(x)&gt;0$．所以 $(x_{0},f(x_{0}))$ 是曲线 $y=f(x)$ 的拐点．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q324" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="324">【324】</span>
+<span class="q-group">求曲线的拐点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 满足关系式 $f''(x)+[f'(x)]^{2}=x$，且 $f'(0)=0$，则________．(A) $f(0)$ 是 $f(x)$ 的极大值　(B) $f(0)$ 是 $f(x)$ 的极小值　(C) 点 $(0,f(0))$ 是曲线 $y=f(x)$ 的拐点　(D) $f(0)$ 不是 $f(x)$ 的极值，点 $(0,f(0))$ 也不是曲线 $y=f(x)$ 的拐点</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 在关系式中令 $x=0$ 得 $f''(0)=0$，对 $f''(x)=x-[f'(x)]^{2}$ 两边关于 $x$ 求导得 $$f'''(x)=1-2f'(x)f''(x).$$ 令 $x=0$，$f'''(0)=1&gt;0$，所以 $(0,f(0))$ 是曲线 $y=f(x)$ 拐点．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<h3 class="grp-h">求曲线的凹凸区间</h3>
+<article class="problem" id="q325" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="325">【325】</span>
+<span class="q-group">求曲线的凹凸区间</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线的 $y=-6x^{2}+4x^{4}$ 的凸区间是________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=-12x+16x^{3}$，$y''=-12+48x^{2}=12(4x^{2}-1)&lt;0$，解得 $-\dfrac{1}{2}&lt;x&lt;\dfrac{1}{2}$．故应填 $\left(-\dfrac{1}{2},\dfrac{1}{2}\right)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\left(-\dfrac{1}{2},\dfrac{1}{2}\right)$</span></div>
+</div>
+</article>
+<article class="problem" id="q326" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="326">【326】</span>
+<span class="q-group">求曲线的凹凸区间</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲线 $y=\ln(x^{2}+1)$ 的凹凸区间和拐点．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=\dfrac{2x}{x^{2}+1}$，$y''=\dfrac{(x^{2}+1)\cdot 2-2x\cdot 2x}{(x^{2}+1)^{2}}=\dfrac{2(1-x^{2})}{(x^{2}+1)^{2}}$．令 $y''=0$，得 $1-x^{2}=0$，解得 $x=\pm 1$．函数无二阶导数不存在的点．$x=-1$ 和 $x=1$ 把 $(-\infty,+\infty)$ 分成三部分，在 $(-\infty,-1)$ 和 $(1,+\infty)$ 上 $y''&lt;0$，曲线是凸的；在 $(-1,1)$ 上 $y''&gt;0$，曲线是凹的．当 $x=\pm 1$ 时，$y=\ln 2$．故 $(-1,\ln 2)$ 和 $(1,\ln 2)$ 是曲线的拐点．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">凸区间为 $(-\infty,-1)$ 和 $(1,+\infty)$，凹区间为 $(-1,1)$；$(-1,\ln 2)$ 和 $(1,\ln 2)$ 是曲线的拐点</span></div>
+</div>
+</article>
+<article class="problem" id="q327" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="327">【327】</span>
+<span class="q-group">求曲线的凹凸区间</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $y=|1+\sin x|$ 在区间 $(\pi,2\pi)$ 内的图形是________．(A) 凹的　(B) 凸的　(C) 既是凹的又是凸的　(D) 为直线</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x\in(\pi,2\pi)$ 时，$-1\leqslant\sin x\leqslant 0$，从而 $0\leqslant 1+\sin x\leqslant 1$，所以 $$y=|1+\sin x|=1+\sin x，\quad y'=\cos x，\quad y''=-\sin x&gt;0，$$ 从而函数 $y=|1+\sin x|$ 在 $(\pi,2\pi)$ 内为凹的．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<article class="problem" id="q328" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="328">【328】</span>
+<span class="q-group">求曲线的凹凸区间</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $y(x)$ 由参数方程 $\begin{cases}x=t^{3}+3t+1\\ y=t^{3}-3t+1\end{cases}$ 确定，则曲线 $y=y(x)$ 凸的 $x$ 取值范围是________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{dy}{dx}=\dfrac{\dfrac{dy}{dt}}{\dfrac{dx}{dt}}=\dfrac{3t^{2}-3}{3t^{2}+3}=\dfrac{t^{2}-1}{t^{2}+1}$，$\dfrac{d^{2}y}{dx^{2}}=\dfrac{d}{dx}\left(\dfrac{dy}{dx}\right)=\dfrac{\dfrac{d}{dt}\left(\dfrac{t^{2}-1}{t^{2}+1}\right)}{\dfrac{dx}{dt}}=\dfrac{\dfrac{4t}{(t^{2}+1)^{2}}}{3(t^{2}+1)}=\dfrac{4t}{3(t^{2}+1)^{3}}$．令 $\dfrac{d^{2}y}{dx^{2}}=0$，得 $t=0$，从而 $x=1$．且 $x&lt;1$ 时，$y''&lt;0$．故 $y=y(x)$ 凸的 $x$ 取值范围为 $(-\infty,1)$（或 $(-\infty,1]$）．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $y=y(x)$ 凸的 $x$ 取值范围为 $(-\infty,1)$（或 $(-\infty,1]$）</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用曲线的凹凸性证明</h3>
+<article class="problem" id="q329" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="329">【329】</span>
+<span class="q-group">利用曲线的凹凸性证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明：当 $0&lt;x&lt;\pi$ 时，有 $\sin\dfrac{x}{2}&gt;\dfrac{x}{\pi}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $f(x)=\sin\dfrac{x}{2}-\dfrac{x}{\pi}$，有 $$f'(x)=\frac{1}{2}\cos\frac{x}{2}-\frac{1}{\pi}，\quad f''(x)=-\frac{1}{4}\sin\frac{x}{2}&lt;0\quad(0&lt;x&lt;\pi).$$ 则函数 $f(x)$ 对应的曲线在 $(0,\pi)$ 内为凸的．由于 $f(0)=f(\pi)=0$，可见，当 $0&lt;x&lt;\pi$ 时，$f(x)&gt;0$，即 $\sin\dfrac{x}{2}&gt;\dfrac{x}{\pi}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">即 $\sin\dfrac{x}{2}&gt;\dfrac{x}{\pi}$</span></div>
+</div>
+</article>
+<article class="problem" id="q330" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="330">【330】</span>
+<span class="q-group">利用曲线的凹凸性证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明：当 $x\neq y$ 时，$\dfrac{e^{x}+e^{y}}{2}&gt;e^{\frac{x+y}{2}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 令 $f(t)=e^{t}$，则 $f'(t)=e^{t}$，$f''(t)=e^{t}&gt;0$，因此 $f(t)=e^{t}$ 在 $(x,y)$ 或 $(y,x)$ 上的曲线弧是凹的，于是 $$\frac{1}{2}[f(x)+f(y)]&gt;f\left(\frac{x+y}{2}\right)，\quad 即 \frac{1}{2}(e^{x}+e^{y})&gt;e^{\frac{x+y}{2}}，$$ 亦即 $\dfrac{e^{x}+e^{y}}{2}&gt;e^{\frac{x+y}{2}}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">亦即 $\dfrac{e^{x}+e^{y}}{2}&gt;e^{\frac{x+y}{2}}$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s4">5. 函数的极值与最大值、最小值</h2>
+<div class="sec-intro">1．函数的极值 极值的定义 设函数 $f(x)$ 在 $x_{0}$ 点的某个邻域内有定义，对于该邻域内异于 $x_{0}$ 的点 $x$，如果恒有 $f(x)&lt;f(x_{0})$，则称 $f(x_{0})$ 为 $f(x)$ 的极大值，而称 $x_{0}$ 为 $f(x)$ 的极大值点；如果恒有 $f(x)&gt;f(x_{0})$，则称 $f(x_{0})$ 为 $f(x)$ 的极小值，而称 $x_{0}$ 为 $f(x)$ 的极小值点．极大值与极小值统称为极值，极大值点与极小值点统称为极值点．极值的必要条件 设函数 $f(x)$ 在 $x_{0}$ 点可导，且在 $x_{0}$ 点取得极值，则必有 $f'(x_{0})=0$．极值第一判别法 设函数 $f(x)$ 在 $x_{0}$ 点的某个邻域内可导，且 $f'(x_{0})=0$，那么 (1)若当 $x&lt;x_{0}$ 时，$f'(x)&gt;0$；当 $x&gt;x_{0}$ 时 $f'(x)&lt;0$，则 $f(x_{0})$ 是 $f(x)$ 的极大值．(2)若当 $x&lt;x_{0}$ 时，$f'(x)&lt;0$；当 $x&gt;x_{0}$ 时 $f'(x)&gt;0$，则 $f(x_{0})$ 是 $f(x)$ 的极小值．(3)若在 $x_{0}$ 的两侧，$f'(x)$ 的符号相同，则 $f(x_{0})$ 不是极值．极值第二判别法 设函数 $f(x)$ 在 $x_{0}$ 点处有二阶导数，且 $f'(x_{0})=0$，$f''(x_{0})\neq 0$，则 (1)当 $f''(x_{0})&lt;0$ 时，函数 $f(x)$ 在点 $x_{0}$ 取得极大值；(2)当 $f''(x_{0})&gt;0$ 时，函数 $f(x)$ 在点 $x_{0}$ 取得极小值．2．求极值的步骤 (1)求出函数 $f(x)$ 的全部极值疑点——驻点（$f'(x)=0$ 的点）及导数不存在但函数有意义的内点；(2)逐个地进行判断. 判断的方法一般有两个 方法一：用第一种充分条件，求出导函数 $f'(x)$ 并把它因式分解，根据极值疑点邻近 $f'(x)$ 的符号判断. 如果极值疑点较多时，亦可先列表求出单调区间，然后根据各单调区间进行判断. 方法二：用第二种充分条件，即如果是驻点，用二阶导数在该点处的正负判断. 注意方法二的条件是极值疑点必为驻点；该点处存在二阶导数且不为 0，否则应改用方法一判断. 当 $f''(x)$ 存在但较复杂时，一般也用方法一判断. 3．函数的最大值与最小值 设函数 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内仅有一个极值点，则若 $x_{0}$ 是 $f(x)$ 的极大值点，那么 $x_{0}$ 必为 $f(x)$ 在 $[a,b]$ 上的最大值点；若 $x_{0}$ 是 $f(x)$ 的极小值点，那么 $x_{0}$ 必为 $f(x)$ 在 $[a,b]$ 上的最小值点．4．求函数最值的步骤 (1)找出此区间上的全部极值疑点（即驻点、导数不存在但函数有意义的内点）及使函数有定义的边界点；(2)分别求出函数在这些点上的函数值并比较其大小，其中最大的函数值就是最大值，最小的函数值就是最小值. 注意，若函数在指定区间单调且在边界点处连续，则其边界点必为最值点.</div>
+<h3 class="grp-h">一元函数极值的判定</h3>
+<article class="problem" id="q331" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="331">【331】</span>
+<span class="q-group">一元函数极值的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=x\sin x+\cos x$，下列命题中正确的是________．(A) $f(0)$ 是极大值，$f\left(\dfrac{\pi}{2}\right)$ 是极小值　(B) $f(0)$ 是极小值，$f\left(\dfrac{\pi}{2}\right)$ 是极大值　(C) $f(0)$ 是极大值，$f\left(\dfrac{\pi}{2}\right)$ 也是极大值　(D) $f(0)$ 是极小值，$f\left(\dfrac{\pi}{2}\right)$ 也是极小值</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f'(x)=\sin x+x\cos x-\sin x=x\cos x$，显然 $f'(0)=0$，$f'\left(\dfrac{\pi}{2}\right)=0$，又 $f''(x)=\cos x-x\sin x$，且 $f''(0)=1&gt;0$，$f''\left(\dfrac{\pi}{2}\right)=-\dfrac{\pi}{2}&lt;0$，所以 $f(0)$ 是极小值，$f\left(\dfrac{\pi}{2}\right)$ 是极大值．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q332" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="332">【332】</span>
+<span class="q-group">一元函数极值的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $(-\infty,+\infty)$ 内连续，其导函数的图形如图 332 所示，则 $f(x)$ 有________．(A) 一个极小值点和两个极大值点　(B) 两个极小值点和一个极大值点　(C) 两个极小值点和两个极大值点　(D) 三个极小值点和一个极大值点</div>
+<div class="figure-note">平面直角坐标系（横轴 $x$，纵轴 $y$，原点 $O$），图中曲线即导函数 $y=f&#x27;(x)$ 的图形：$y$ 轴左侧有一条开口向上的 U 形曲线（形似抛物线），与 $x$ 轴交于两点（两交点均在 $y$ 轴左侧），U 形底部位于 $x$ 轴下方，其右支向上延伸至接近 $y$ 轴处、终点在 $x$ 轴上方；$y$ 轴右侧有一条单调上升曲线，从 $y$ 轴上 $x=0$ 处（纵坐标为负）出发，与正 $x$ 轴交于一点后向右上方延伸；曲线在 $x=0$ 处间断（左侧端点高、右侧起点低），即 $x=0$ 处导数值不存在．图下标注&quot;图 332&quot;．</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 根据导函数的图形可知，一阶导数为零的点有 $3$ 个，而 $x=0$ 则是导数不存在的点．三个一阶导数为零的点左右两侧导数符号不一致，必为极值点，且为两个极小值点、一个极大值点；在 $x=0$ 左侧一阶导数为正，右侧一阶导数为负，可见 $x=0$ 为极大值点．所以 $f(x)$ 共有两个极小值点和两个极大值点．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q333" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="333">【333】</span>
+<span class="q-group">一元函数极值的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=f(x)$ 是满足方程 $y''+y'-e^{\sin x}=0$ 的解．且 $f'(x_{0})=0$，则 $f(x)$ 在________．(A) $x_{0}$ 的某邻域内单调增加　(B) $x_{0}$ 的某邻域内单调减少　(C) $x_{0}$ 处取得极小值　(D) $x_{0}$ 处取得极大值</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $f'(x_{0})=0$ 知 $x_{0}$ 为驻点．又 $y''\Big|_{x=x_{0}}=\left(-y'+e^{\sin x}\right)\Big|_{x=x_{0}}=e^{\sin x_{0}}&gt;0$．因此 $f(x)$ 在 $x_{0}$ 处取得极小值．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q334" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="334">【334】</span>
+<span class="q-group">一元函数极值的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知函数 $y=f(x)$ 对一切 $x$ 满足 $xf''(x)+3x[f'(x)]^{2}=1-e^{-x}$，若 $f'(x_{0})=0$（$x_{0}\neq 0$），则________．(A) $f(x_{0})$ 是 $f(x)$ 的极大值　(B) $f(x_{0})$ 是 $f(x)$ 的极小值　(C) $(x_{0},f(x_{0}))$ 是曲线 $y=f(x)$ 的拐点　(D) $f(x_{0})$ 不是 $f(x)$ 的极值，$(x_{0},f(x_{0}))$ 也不是曲线 $y=f(x)$ 的拐点</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由方程 $xf''(x)+3x[f'(x)]^{2}=1-e^{-x}$ 得 $f''(x)=\dfrac{1-e^{-x}}{x}-3[f'(x)]^{2}$，则 $$f''(x_{0})=\frac{1-e^{-x_{0}}}{x_{0}}-3[f'(x_{0})]^{2}=\frac{1-e^{-x_{0}}}{x_{0}}&gt;0，$$ 所以 $f(x)$ 在 $x_{0}$ 取得极小值．故应选 (B)．<strong>点评</strong> 本题考查极值的判别. 把 $x_{0}$ 代入已知微分方程可求得 $f''(x_{0})$，再用极值第二充分条件判定．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q335" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="335">【335】</span>
+<span class="q-group">一元函数极值的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 的导数在 $x=a$ 处连续，又 $\lim\limits_{x\to a}\dfrac{f'(x)}{x-a}=-1$，则________．(A) $x=a$ 是 $f(x)$ 的极小值点　(B) $x=a$ 是 $f(x)$ 的极大值点　(C) $(a,f(a))$ 是曲线 $y=f(x)$ 的拐点　(D) $x=a$ 不是 $f(x)$ 的极值点，$(a,f(a))$ 也不是曲线 $y=f(x)$ 的拐点</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f'(x)$ 在 $x=a$ 处连续，所以 $f'(a)=\lim\limits_{x\to a}f'(x)=0$，故 $x=a$ 为 $f(x)$ 的驻点．又 $$f''(a)=\lim_{x\to a}\frac{f'(x)-f'(a)}{x-a}=\lim_{x\to a}\frac{f'(x)}{x-a}=-1&lt;0.$$ 由极值判定的第二充分条件知 $x=a$ 处 $f(x)$ 取得极大值．故应选 (B)．<strong>点评</strong> 由条件知 $f'(a)=0$，且当 $x&lt;a$ 并在 $a$ 点附近时，$f'(x)&gt;0$；当 $x&gt;a$ 并在 $a$ 点附近时，$f'(x)&lt;0$，因此可以判断存在 $\delta&gt;0$，当 $a-\delta&lt;x&lt;a$ 时，$f(x)$ 单调上升，而当 $a&lt;x&lt;a+\delta$ 时，$f(x)$ 单调下降. 这就得知 $x=a$ 是 $f(x)$ 的极大值点．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q336" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="336">【336】</span>
+<span class="q-group">一元函数极值的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\lim\limits_{x\to a}\dfrac{f(x)-f(a)}{(x-a)^{2}}=-1$，则在点 $x=a$ 处________．(A) $f(x)$ 的导数存在，且 $f'(a)\neq 0$　(B) $f(x)$ 取得极大值　(C) $f(x)$ 取得极小值　(D) $f(x)$ 的导数不存在</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\lim\limits_{x\to a}\dfrac{f(x)-f(a)}{(x-a)^{2}}=-1$，所以 $\lim\limits_{x\to a}\dfrac{f(x)-f(a)}{x-a}=0$，即 $f'(a)=0$．又在 $a$ 的某一去心邻域内有 $\dfrac{f(x)-f(a)}{(x-a)^{2}}&lt;0$，即 $f(x)-f(a)&lt;0$，所以 $f(x)$ 在 $x=a$ 处取极大值．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q337" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="337">【337】</span>
+<span class="q-group">一元函数极值的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=f(x)$ 是方程 $y''-2y'+4y=0$ 的一个解，若 $f(x_{0})&gt;0$，且 $f'(x_{0})=0$，试判定 $x_{0}$ 是否是 $f(x)$ 的极值点？如果 $x_{0}$ 为 $f(x)$ 的极值点，是极大值点，还是极小值点？</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 虽然问题以方程形式出现，但由于 $f'(x_{0})=0$，因此，可知 $x_{0}$ 为 $f(x)$ 的驻点. 为了判定 $x_{0}$ 是否为极值点，由已知条件可以想到，只须判定 $f''(x_{0})$ 的符号．<strong>证</strong> 由于 $y=f(x)$ 为 $y''-2y'+4y=0$ 的解，从而 $f''(x)-2f'(x)+4f(x)=0$. 特别，当 $f(x_{0})&gt;0$，$f'(x_{0})=0$ 时，上述方程可以化为 $$f''(x_{0})+4f(x_{0})=0，\quad 即 \quad f''(x_{0})=-4f(x_{0})&lt;0，$$ 由极值的第二充分条件可以得知，$x_{0}$ 为 $f(x)$ 的极值点，且为极大值点. 即 $f(x)$ 在 $x_{0}$ 点取得极大值．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">即 $f(x)$ 在 $x_{0}$ 点取得极大值</span></div>
+</div>
+</article>
+<article class="problem" id="q338" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="338">【338】</span>
+<span class="q-group">一元函数极值的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $y=y(x)$ 由方程 $2y^{3}-2y^{2}+2xy-x^{2}=1$ 所确定. 试求 $y=y(x)$ 的驻点，并判定它是否为极值点．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 对原方程两边关于 $x$ 求导可得 $$3y^{2}y'-2yy'+xy'+y-x=0，\qquad①$$ 令 $y'=0$，得 $y=x$. 将此代入原方程，有 $2x^{3}-x^{2}-1=0$，从而得驻点 $x=1$. ①式两边求导得 $$(3y^{2}-2y+x)y''+2(3y-1)(y')^{2}+2y'-1=0，$$ 因此，$y''\Big|_{(1,1)}=\dfrac{1}{2}&gt;0$. 故驻点 $(1,1)$ 是 $y=y(x)$ 的极小值点．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故驻点 $(1,1)$ 是 $y=y(x)$ 的极小值点</span></div>
+</div>
+</article>
+<article class="problem" id="q339" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="339">【339】</span>
+<span class="q-group">一元函数极值的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知二次方程 $x^{2}-2ax+10x+2a^{2}-4a-2=0$ 有实根，试问 $a$ 为何值时，它是方程两根之积的极值点，并求极值．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body">[本题解答在下一批]
+<strong>解</strong> 因为二次方程有实根，可知其判别式
+$$\Delta=(10-2a)^2-4(2a^2-4a-2)=4\left[-a^2-6a+27\right]\geqslant 0,$$
+此不等式的解为 $-9\leqslant a\leqslant 3$
+又因方程的两根之积为 $y=2a^2-4a-2$（$a\in[-9,3]$），由 $y'=4a-4$，$y''=4&gt;0$，可知 $y$ 有唯一的驻点 $a=1$，且为极小值点. 极值为 $y(1)=-4$.
+总之当 $a=1$ 时，它是方程两根之积的极小值点，其极小值为 $-4$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">当 $a=1$ 时，它是方程两根之积的极小值点，其极小值为 $-4$.</span></div>
+</div>
+</article>
+<article class="problem" id="q340" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="340">【340】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $a$ 的范围，使函数 $f(x)=x^3+3ax^2-ax-1$ 既无极大值同时又无极小值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f'(x)=3x^2+6ax-a$.
+当 $\Delta=4(9a^2+3a)&lt;0$ 时，可知 $f(x)$ 无驻点，即 $f(x)$ 无极值点.
+当 $\Delta=4(9a^2+3a)=0$ 时，$a=-\frac{1}{3}$ 或 $0$，这时 $f'(x)=3\left(x-\frac{1}{3}\right)^2$ 或 $f'(x)=3x^2$，可知这时函数 $f(x)=\left(x+\frac{1}{3}\right)^3+C_1$ 或 $f(x)=x^3+C_2$，从而无极值点.
+当 $\Delta=4(9a^2+3a)&gt;0$ 时，易知有两个驻点且为极值点.
+由此可知，当 $-\frac{1}{3}\leqslant a\leqslant 0$ 时，函数 $f(x)$ 既无极大值又无极小值.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">当 $-\frac{1}{3}\leqslant a\leqslant 0$ 时，函数 $f(x)$ 既无极大值又无极小值.</span></div>
+</div>
+</article>
+<h3 class="grp-h">求函数的最大(小)值</h3>
+<article class="problem" id="q341" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="341">【341】</span>
+<span class="q-group">求函数的最大(小)值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $a&gt;1$，$f(t)=a^t-at$ 在 $(-\infty,+\infty)$ 内的驻点为 $t(a)$. 问 $a$ 为何值时，$t(a)$ 最小？并求出最小值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $f'(t)=a^t\ln a-a=0$，得唯一驻点 $t(a)=1-\frac{\ln\ln a}{\ln a}$.
+考查函数 $t(a)=1-\frac{\ln\ln a}{\ln a}$ 在 $a&gt;1$ 时的最小值.
+令 $t'(a)=-\dfrac{\dfrac{1}{a}-\dfrac{1}{a}\ln\ln a}{(\ln a)^2}=-\dfrac{1-\ln\ln a}{a(\ln a)^2}=0$，得唯一驻点 $a=e^e$.
+当 $a&gt;e^e$ 时，$t'(a)&gt;0$；当 $a&lt;e^e$ 时，$t'(a)&lt;0$，因此 $t(e^e)=1-\frac{1}{e}$ 为极小值，从而是最小值.
+<strong>点评</strong> 根据函数 $f(t)$ 在 $(-\infty,+\infty)$ 内有驻点 $t(a)$，可知 $f'(a)=0$，由此求出 $t(a)$ 的表达式，这是解答本题的关键. 在求出驻点 $a=e^e$ 后，应进行判断，验证其确实取得最小值.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">当 $a=e^e$ 时 $t(a)$ 最小，最小值为 $t(e^e)=1-\frac{1}{e}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q342" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="342">【342】</span>
+<span class="q-group">求函数的最大(小)值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">作半径为 $r$ 的球的外切正圆锥，问此圆锥的高 $h$ 为何值时，其体积 $V$ 最小，并求出该最小值.</div>
+<div class="figure-note">图342——正圆锥轴截面图：顶点 $S$ 在上方，竖直轴线过 $S$ 与底面圆心 $C$；内切球球心 $O$ 在轴线上，虚线圆为球的大圆，$OD=r$ 为半径（$D$ 为球与母线的切点，带箭头标注 $r$）；$C$ 为底面圆心，$B$ 为底面圆周上一点，$CB=R$（带箭头的半径标注）；右侧双向箭头标注圆锥高 $h$（自 $S$ 的水平线到 $B$ 的水平线）.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设圆锥底面圆半径为 $R$，如图 342 所示，
+$$SC=h,\quad OC=OD=r,\quad BC=R.$$
+因 $\frac{BC}{SC}=\frac{OD}{SD}$，故 $\frac{R}{h}=\frac{r}{\sqrt{(h-r)^2-r^2}}$，从而 $R=\frac{rh}{\sqrt{h^2-2hr}}$.
+于是圆锥体积为
+$$V(h)=\frac{\pi}{3}R^2h=\frac{\pi r^2}{3}\cdot\frac{h^2}{h-2r}\quad(2r&lt;h&lt;+\infty).$$
+因 $V'(h)=\frac{\pi r^2}{3}\cdot\frac{h^2-4rh}{(h-2r)^2}$，故解 $V'(h)=0$ 得 $h=4r$，$h=0$（舍去）.
+由于圆锥体的最小体积一定存在，且 $h=4r$ 是 $V(h)$ 在 $(2r,+\infty)$ 内的唯一驻点，所以当 $h=4r$ 时 $V$ 取最小值
+$$V(4r)=\frac{\pi r^2}{3}\cdot\frac{(4r)^2}{4r-2r}=\frac{8\pi r^3}{3}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">当 $h=4r$ 时 $V$ 取最小值 $V(4r)=\frac{8\pi r^3}{3}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q343" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="343">【343】</span>
+<span class="q-group">求函数的最大(小)值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">宽度为 $a$ 米的河流修筑一条宽为 $b$ 米的运河，二者成直角相交，问能驶进该运河的船，其最大长度为多少？</div>
+<div class="figure-note">图343——竖直河岸与水平运河岸垂直相交（左下角为直角拐点）：$A$ 在竖直河岸上（左上），$C$ 在水平运河岸线上（右下）；线段 $ABC$ 为一条直线（$A$、$B$、$C$ 共线），$B$ 位于运河岸线水平延长线上；顶部双向箭头标注 $a$（$A$ 与 $B$ 之间的水平距离），右侧双向箭头标注 $b$（$B$ 所在水平线与 $C$ 所在水平线之间的竖直距离）；$\theta$ 标注在 $C$ 处，为 $BC$ 与水平岸线的夹角.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 如图 343，要求船长度尽可能长，即船长为过 $B$ 点与两河岸相交的线段 $ABC$ 的长度，又船可以驶进运河，即船长度为线段 $ABC$ 的最小值（不考虑船的宽度）.
+<strong>解</strong> 设线段长度为 $l$，与运河岸边的夹角为 $\theta$，则
+$$l(\theta)=\overline{AB}+\overline{BC}=\frac{a}{\cos\theta}+\frac{b}{\sin\theta}\quad\left(0&lt;\theta&lt;\frac{\pi}{2}\right)$$
+$$l'(\theta)=\frac{b\sin\theta}{\cos^2\theta}\left(\frac{a}{b}-\cot^3\theta\right)\overset{\text{令}}{=}0\text{，得 }\cot\theta=\sqrt[3]{\frac{a}{b}}\text{，}$$
+即 $\theta_0=\mathrm{arccot}\sqrt[3]{\frac{a}{b}}$，且它为唯一驻点.
+因为 $y=\cot\theta$ 在 $0&lt;\theta&lt;\frac{\pi}{2}$ 时单调减少，当 $0&lt;\theta&lt;\theta_0$ 时，$l'&lt;0$；而当 $\theta_0&lt;\theta&lt;\frac{\pi}{2}$ 时，$l'&gt;0$. 即当 $\theta=\theta_0$ 时有极小值，亦为最小值.
+此时
+$$l(\theta_0)=\frac{b}{\sin\theta_0}+\frac{a}{\cos\theta_0}=b\sqrt{1+\left(\sqrt[3]{\frac{a}{b}}\right)^2}+a\cdot\frac{\sqrt{1+\left(\sqrt[3]{\frac{a}{b}}\right)^2}}{\sqrt[3]{\frac{a}{b}}}=\left(a^{\frac{2}{3}}+b^{\frac{2}{3}}\right)^{\frac{3}{2}},$$
+即过 $B$ 点与两岸相交的线段 $ABC$ 最小长度为 $\left(a^{\frac{2}{3}}+b^{\frac{2}{3}}\right)^{\frac{3}{2}}$.
+故能驶进运河的船的最大长度为 $\left(a^{\frac{2}{3}}+b^{\frac{2}{3}}\right)^{\frac{3}{2}}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">能驶进运河的船的最大长度为 $\left(a^{\frac{2}{3}}+b^{\frac{2}{3}}\right)^{\frac{3}{2}}$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用极值、最大(小)值证明</h3>
+<article class="problem" id="q344" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="344">【344】</span>
+<span class="q-group">利用极值、最大(小)值证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明：若 $p&gt;1$，则对于 $[0,1]$ 内任意 $x$，有 $\frac{1}{2^{p-1}}\leqslant x^p+(1-x)^p\leqslant 1$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 构造辅助函数 $f(x)=x^p+(1-x)^p$，则
+$$f'(x)=px^{p-1}-p(1-x)^{p-1},\quad f''(x)=p(p-1)x^{p-2}+p(p-1)(1-x)^{p-2},$$
+令 $f'(x)=0$，得 $x^{p-1}=(1-x)^{p-1}$，从中求得在 $[0,1]$ 上只有一个驻点 $x=\frac{1}{2}$，又因为 $p&gt;1$，且当 $x\in[0,1]$ 时，$f''(x)&gt;0$，即在 $[0,1]$ 上，曲线 $y=f(x)$ 是凹的，且 $f(x)$ 在 $x=\frac{1}{2}$ 处取得极小值，且为 $f(x)$ 在 $[0,1]$ 上的最小值.
+$$f\left(\frac{1}{2}\right)=\left(\frac{1}{2}\right)^p+\left(1-\frac{1}{2}\right)^p=\frac{1}{2^{p-1}}.$$
+又 $f(0)=1$，$f(1)=1$，从而 $y=f(x)$ 的最大值为 1.
+因此，$\frac{1}{2^{p-1}}\leqslant x^p+(1-x)^p\leqslant 1$.</div>
+
+</div>
+</article>
+<article class="problem" id="q345" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="345">【345】</span>
+<span class="q-group">利用极值、最大(小)值证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $p,q$ 是大于 1 的常数，且 $\frac{1}{p}+\frac{1}{q}=1$. 证明：对于任意 $x&gt;0$，有 $\frac{1}{p}x^p+\frac{1}{q}\geqslant x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 令 $f(x)=\frac{1}{p}x^p+\frac{1}{q}-x$，则 $f'(x)=x^{p-1}-1$. 令 $f'(x)=0$，得 $x=1$.
+因为 $f''(x)=(p-1)x^{p-2}$，则 $f''(1)=p-1&gt;0$. 所以当 $x=1$ 时，$f(x)$ 取极小值，即最小值.
+从而当 $x&gt;0$ 时，有 $f(x)\geqslant f(1)=0$，即 $\frac{1}{p}x^p+\frac{1}{q}\geqslant x$.</div>
+
+</div>
+</article>
+<article class="problem" id="q346" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="346">【346】</span>
+<span class="q-group">利用极值、最大(小)值证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\lim\limits_{x\to 0}\frac{f(x)}{x}=1$，且 $f''(x)&gt;0$，证明：$f(x)\geqslant x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $f(x)$ 连续且具有一阶导数，所以由 $\lim\limits_{x\to 0}\frac{f(x)}{x}=1$ 知 $f(0)=0$. 又
+$$f'(0)=\lim_{x\to 0}\frac{f(x)-f(0)}{x-0}=\lim_{x\to 0}\frac{f(x)}{x}=1.$$
+令 $F(x)=f(x)-x$，则 $F(0)=0$. 由于 $F'(x)=f'(x)-1$，所以 $F'(0)=0$. 又由 $F''(x)=f''(x)&gt;0$ 知，$F(0)$ 是 $F(x)$ 的极小值和 $F'(x)$ 单调. 故 $F(x)$ 只有一个驻点，从而 $F(0)$ 是 $F(x)$ 的最小值. 因此 $F(x)\geqslant F(0)=0$. 即 $f(x)\geqslant x$.</div>
+
+</div>
+</article>
+<h2 class="sec-h" id="sec-s5">6. 函数图形的描绘</h2>
+<h2 class="sec-h" id="sec-s6">1. 曲线的渐近线</h2>
+<h2 class="sec-h" id="sec-s7">2. 作图步骤</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">求曲线的渐近线方程</h3>
+<article class="problem" id="q347" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="347">【347】</span>
+<span class="q-group">求曲线的渐近线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $y=\frac{x+4\sin x}{5x-2\cos x}$ 的水平渐近线方程为________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\lim\limits_{x\to+\infty}\frac{x+4\sin x}{5x-2\cos x}=\frac{1}{5}$，所以曲线的水平渐近线为 $y=\frac{1}{5}$.
+故应填 $y=\frac{1}{5}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$y=\frac{1}{5}$</span></div>
+</div>
+</article>
+<article class="problem" id="q348" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="348">【348】</span>
+<span class="q-group">求曲线的渐近线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">当 $x&gt;0$ 时，曲线 $y=x\sin\frac{1}{x}$________.
+(A)有且仅有水平渐近线　　(B)有且仅有铅直渐近线
+(C)既有水平渐近线，也有铅直渐近线　　(D)既无水平渐近线，也无铅直渐近线</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\lim\limits_{x\to+\infty}x\sin\frac{1}{x}=\lim\limits_{t\to 0^+}\frac{\sin t}{t}=1$，$\lim\limits_{x\to 0^+}x\sin\frac{1}{x}=\lim\limits_{t\to+\infty}\frac{\sin t}{t}=0$
+所以，$y=x\sin\frac{1}{x}$ 有水平渐近线，但没有铅直渐近线.
+故应选（A）.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">（A）</span></div>
+</div>
+</article>
+<article class="problem" id="q349" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="349">【349】</span>
+<span class="q-group">求曲线的渐近线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $y=\frac{1}{x}+\ln(1+e^x)$ 渐近线的条数为_______.
+(A)0　　(B)1　　(C)2　　(D)3</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 只有间断点 $x=0$. 由于 $\lim\limits_{x\to 0}y=\lim\limits_{x\to 0}\left[\frac{1}{x}+\ln(1+e^x)\right]=\infty$，故 $x=0$ 为垂直渐近线.
+又 $\lim\limits_{x\to-\infty}y=\lim\limits_{x\to-\infty}\left[\frac{1}{x}+\ln(1+e^x)\right]=0+\ln 1=0$，故 $x\to-\infty$ 时有水平渐近线 $y=0$.
+又 $\lim\limits_{x\to+\infty}\frac{y}{x}=\lim\limits_{x\to+\infty}\left[\frac{1}{x^2}+\frac{\ln(1+e^x)}{x}\right]=0+\lim\limits_{x\to+\infty}\frac{e^x}{1+e^x}=1$，
+$$\lim_{x\to+\infty}(y-x)=\lim_{x\to+\infty}\left[\frac{1}{x}+\ln(1+e^x)-\ln e^x\right]=0+\lim_{x\to+\infty}\ln\frac{1+e^x}{e^x}=0,$$
+故 $x\to+\infty$ 时有斜渐近线 $y=x$.
+故应选（D）.
+<strong>点评</strong> $\lim\limits_{x\to-\infty}\left[\frac{1}{x}+\ln(1+e^x)\right]=0$ 说明 $x\to-\infty$ 时，$y=0$ 是曲线 $y=\frac{1}{x}+\ln(1+e^x)$ 的一条水平渐近线，不排除 $x\to+\infty$ 时，曲线 $y=\frac{1}{x}+\ln(1+e^x)$ 有斜渐近线 $y=x$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">（D）</span></div>
+</div>
+</article>
+<article class="problem" id="q350" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="350">【350】</span>
+<span class="q-group">求曲线的渐近线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $y=xe^{\frac{1}{x^2}}$_______.
+(A)仅有水平渐近线　　(B)仅有铅直渐近线
+(C)既有铅直又有水平渐近线　　(D)既有铅直又有斜渐近线</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x\to\pm\infty$ 时，极限 $\lim\limits_{x\to\pm\infty}y$ 均不存在，故不存在水平渐近线；又因为
+$$\lim_{x\to\infty}\frac{y}{x}=\lim_{x\to\infty}e^{\frac{1}{x^2}}=1,\quad \lim_{x\to\infty}\left(xe^{\frac{1}{x^2}}-x\right)=0,$$
+所以有斜渐近线 $y=x$.
+另外，在 $x=0$ 处 $y=xe^{\frac{1}{x^2}}$ 无定义，且 $\lim\limits_{x\to 0}xe^{\frac{1}{x^2}}=\infty$，可见 $x=0$ 为铅直渐近线. 所以曲线 $y=xe^{\frac{1}{x^2}}$ 既有铅直渐近线又有斜渐近线.
+故应选（D）.
+<strong>点评</strong> 铅直渐近线应在函数的无穷间断点处取得.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">（D）</span></div>
+</div>
+</article>
+<article class="problem" id="q351" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="351">【351】</span>
+<span class="q-group">求曲线的渐近线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $y=x\ln\left(e+\frac{1}{x}\right)$（$x&gt;0$）的渐近线方程为_______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $y=ax+b$ 为曲线的渐近线. 则
+$$a=\lim_{x\to+\infty}\frac{f(x)}{x}=\lim_{x\to+\infty}\ln\left(e+\frac{1}{x}\right)=1,$$
+$$b=\lim_{x\to+\infty}\left[f(x)-ax\right]=\lim_{x\to+\infty}\left[x\ln\left(e+\frac{1}{x}\right)-x\right]=\lim_{t\to 0}\frac{\ln(e+t)-1}{t}=\frac{1}{e}.$$
+所以渐近线方程为 $y=x+\frac{1}{e}$.
+故应填 $y=x+\frac{1}{e}$.
+<strong>点评</strong> 求渐近线应按水平渐近线、铅直渐近线、斜渐近线的顺序逐一考虑.
+本题中 $f(+\infty)=\lim\limits_{x\to+\infty}x\ln\left(e+\frac{1}{x}\right)=+\infty$，所以无水平渐近线. $f(0+0)=\lim\limits_{x\to 0^+}x\ln\left(e+\frac{1}{x}\right)=0$，所以无铅直渐近线.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$y=x+\frac{1}{e}$</span></div>
+</div>
+</article>
+<article class="problem" id="q352" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="352">【352】</span>
+<span class="q-group">求曲线的渐近线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $y=(2x-1)e^{\frac{1}{x}}$ 的斜渐近线方程为_______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由于 $\lim\limits_{x\to\infty}\frac{f(x)}{x}=\lim\limits_{x\to\infty}\frac{(2x-1)e^{\frac{1}{x}}}{x}=2$，
+$$\lim_{x\to\infty}\left[f(x)-ax\right]=\lim_{x\to\infty}\left[(2x-1)\cdot e^{\frac{1}{x}}-2x\right]=\lim_{t\to 0}\frac{(2-t)e^t-2}{t}$$
+$$\overset{\frac{0}{0}}{=}\lim_{t\to 0}\frac{-e^t+(2-t)e^t}{1}=\lim_{t\to 0}(1-t)e^t=1.$$
+所以曲线的斜渐近线方程为 $y=2x+1$.
+故应填 $y=2x+1$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$y=2x+1$</span></div>
+</div>
+</article>
+<article class="problem" id="q353" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="353">【353】</span>
+<span class="q-group">求曲线的渐近线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知曲线满足 $x^3+y^3-3axy=0$，求该曲线的斜渐近线.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $k=\lim\limits_{x\to\infty}\frac{y}{x}$，$b=\lim\limits_{x\to\infty}(y-kx)$. 令 $y=xt$，代入方程得
+$$x^3+x^3t^3=3ax^2t\text{，}\quad\text{即}\quad x(1+t^3)=3at\text{，}\quad\text{亦即}\quad\begin{cases}x=\dfrac{3at}{1+t^3},\\[2mm]y=\dfrac{3at^2}{1+t^3},\end{cases}$$
+$$k=\lim_{x\to\infty}\frac{y}{x}=\lim_{t\to-1}t=-1,$$
+$$b=\lim_{x\to\infty}(y-kx)=\lim_{t\to-1}\left(\frac{3at^2}{1+t^3}+\frac{3at}{1+t^3}\right)=\lim_{t\to-1}\frac{3at(t+1)}{(1+t)(t^2-t+1)}=-a.$$
+所以斜渐近线为 $y=-x-a$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">斜渐近线为 $y=-x-a$.</span></div>
+</div>
+</article>
+<article class="problem" id="q354" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="354">【354】</span>
+<span class="q-group">求曲线的渐近线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $y=f(x)=(x-1)e^{\frac{\pi}{2}+\arctan x}$ 的单调区间和极值，并求该函数图形的渐近线.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=\frac{x^2+x}{1+x^2}e^{\frac{\pi}{2}+\arctan x}$. 令 $y'=0$，得驻点 $x_1=0$，$x_2=-1$. 列表
+| $x$ | $(-\infty,-1)$ | $-1$ | $(-1,0)$ | $0$ | $(0,+\infty)$ |
+|---|---|---|---|---|---|
+| $y'$ | $+$ | $0$ | $-$ | $0$ | $+$ |
+| $y$ | $\nearrow$ | $-2e^{\frac{\pi}{4}}$ | $\searrow$ | $-e^{\frac{\pi}{2}}$ | $\nearrow$ |
+由此可见，递增区间为 $(-\infty,-1)$，$(0,+\infty)$；递减区间为 $(-1,0)$. 极小值为 $f(0)=-e^{\frac{\pi}{2}}$；极大值为 $f(-1)=-2e^{\frac{\pi}{4}}$.
+由于 $a_1=\lim\limits_{x\to+\infty}\frac{f(x)}{x}=e^{\pi}$，$b_1=\lim\limits_{x\to+\infty}\left[f(x)-a_1x\right]=-2e^{\pi}$，
+$$a_2=\lim_{x\to-\infty}\frac{f(x)}{x}=1,\quad b_2=\lim_{x\to-\infty}\left[f(x)-a_2x\right]=-2.$$
+可见渐近线为 $y_1=a_1x+b_1=e^{\pi}(x-2)$，$y_2=a_2x+b_2=x-2$.</div>
+
+</div>
+</article>
+<article class="problem" id="q355" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="355">【355】</span>
+<span class="q-group">求曲线的渐近线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知函数 $y=\frac{x^3}{(x-1)^2}$，求
+(1)函数的增减区间及极值；
+(2)函数图形的凹凸区间及拐点；
+(3)函数图形的渐近线.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 所给函数的定义域为 $(-\infty,1)\cup(1,+\infty)$.
+$y'=\frac{x^2(x-3)}{(x-1)^3}$，令 $y'=0$，得驻点 $x=0$ 及 $x=3$. $y''=\frac{6x}{(x-1)^4}$，令 $y''=0$，得 $x=0$.
+列表讨论如下：
+| $x$ | $(-\infty,0)$ | $0$ | $(0,1)$ | $(1,3)$ | $3$ | $(3,+\infty)$ |
+|---|---|---|---|---|---|---|
+| $y'$ | $+$ | $0$ | $+$ | $-$ | $0$ | $+$ |
+| $y''$ | $-$ | $0$ | $+$ | $+$ | $+$ | $+$ |
+| $y$ | $\nearrow$ | 拐点 | $\nearrow$ | $\searrow$ | 极小值 | $\nearrow$ |
+由此可知：(1)函数的单调增加区间为 $(-\infty,1)$ 和 $(3,+\infty)$，单调减少区间为 $(1,3)$；极小值为 $y\big|_{x=3}=\frac{27}{4}$.
+(2)函数图形在区间 $(-\infty,0)$ 内是凸的，在区间 $(0,1)$，$(1,+\infty)$ 内是凹的，拐点为点 $(0,0)$.
+(3)由 $\lim\limits_{x\to 1}\frac{x^3}{(x-1)^2}=+\infty$ 知，$x=1$ 是函数图形的铅直渐近线；又
+$$\lim_{x\to\infty}\frac{y}{x}=\lim_{x\to\infty}\frac{x^2}{(x-1)^2}=1,\quad \lim_{x\to\infty}(y-x)=\lim_{x\to\infty}\left[\frac{x^3}{(x-1)^2}-x\right]=2.$$
+故 $y=x+2$ 是函数图形的斜渐近线.</div>
+
+</div>
+</article>
+<article class="problem" id="q356" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="356">【356】</span>
+<span class="q-group">求曲线的渐近线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在定义域内可导，$y=f(x)$ 的图形如图 356(1) 所示，则导函数 $y=f'(x)$ 的图形如图 356(2) 中的________.</div>
+<div class="figure-note">图356(1)——平面直角坐标系（$y$ 轴向上，$x$ 轴向右，原点 $O$）：左支（$x&lt;0$）自左下方向右上方单调上升、越来越陡（下凸），在接近 $y$ 轴处升至高处（$x\to 0^-$ 时 $y\to+\infty$）；右支（$x&gt;0$）自 $y$ 轴右下方低处（$x\to 0^+$ 时 $y\to-\infty$）陡升，穿过 $x$ 轴后到达一个局部极大（小峰，略高于 $x$ 轴），随后下降到一个局部极小（小谷，略低于 $x$ 轴），再单调上升伸向右上.</div><div class="figure-note">图356(2)选项(A)——左支自 $x$ 轴下方（左下）上升、穿过 $x$ 轴（在 $x&lt;0$ 处与 $x$ 轴相交）后越来越陡趋向 $y$ 轴高处（$x\to 0^-$ 时 $y\to+\infty$）；右支自 $y$ 轴右下方（$x\to 0^+$ 时 $y\to-\infty$）上升，过一个小峰（峰在 $x$ 轴上方）和一个小谷（谷底触及 $x$ 轴），再单调上升.</div><div class="figure-note">图356(2)选项(B)——左支自左侧 $x$ 轴上方较平缓处单调上升（不穿过 $x$ 轴），接近 $y$ 轴时越来越陡趋向高处（$x\to 0^-$ 时 $y\to+\infty$）；右支与 (A) 的右支相同：自 $y$ 轴右下方（$x\to 0^+$ 时 $y\to-\infty$）上升，经小峰、小谷再上升.</div><div class="figure-note">图356(2)选项(C)——左支自 $x$ 轴下方（左下）上升、穿过 $x$ 轴，越来越陡趋向 $y$ 轴高处（$x\to 0^-$ 时 $y\to+\infty$）；右支自 $y$ 轴右上方向（$x\to 0^+$ 时 $y\to+\infty$）下降，穿过 $x$ 轴到 $x$ 轴下方一个局部极小（谷），再上升穿过 $x$ 轴伸向右上.</div><div class="figure-note">图356(2)选项(D)——左支全程位于 $x$ 轴上方：自左侧近 $x$ 轴处（$y&gt;0$）平缓单调上升，接近 $y$ 轴时越来越陡趋向 $+\infty$；右支与 (C) 的右支相同：自 $y$ 轴右上方向（$x\to 0^+$ 时 $y\to+\infty$）下降，穿过 $x$ 轴到 $x$ 轴下方一个局部极小，再上升穿过 $x$ 轴伸向右上.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 根据 $y=f(x)$ 图形知：当 $x&lt;0$ 时，$f(x)$ 单调递增，故 $f'(x)&gt;0$，排除(A)，(C). 当 $x&gt;0$ 时，$f(x)$ 图形由凸$\to$凹，则 $f''(x)$ 由 $-\to+$，即 $f'(x)$ 由单减$\to$单增，排除(B).
+故应选(D).
+<strong>点评</strong> 本题应注意到曲线 $y=f(x)$ 的图形中曲线上升（$f'(x)\geqslant 0$）、下降（$f'(x)\leqslant 0$）的区间、驻点数等几个特性，一般就可以确定 $y=f'(x)$ 的形状.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">（D）</span></div>
+</div>
+</article>
+<article class="problem" id="q357" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="357">【357】</span>
+<span class="q-group">求曲线的渐近线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">运用导数的知识作函数 $y=(x+6)e^{\frac{1}{x}}$ 的图形.</div>
+<div class="figure-note">图357——平面直角坐标系：斜渐近线 $y=x+7$ 画为直线（在 $y$ 轴上截距标注 $7$，在 $x$ 轴上的交点附近标注 $-7$），其右上方与左下方各标字母 $D$ 表示曲线沿此方向延伸；曲线右支自 $y$ 轴右侧 $+\infty$ 下降到极小值点 $(3,9\sqrt[3]{e})$（$y$ 轴标注 $9\sqrt[3]{e}$，$x$ 轴标注 $3$，虚线引至该点），再上升并贴近渐近线向右上延伸；曲线左支自左下沿渐近线下方延伸，上升至极大值点 $(-2,\frac{4}{\sqrt{e}})$（$x$ 轴标注 $-2$，$y$ 轴标注 $\frac{4}{\sqrt{e}}$，虚线引至该点），随后下降，当 $x\to 0^-$ 时趋向原点 $O$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)定义域为 $(-\infty,0)\cup(0,+\infty)$
+(2)讨论单调性、极值、凹凸、拐点
+$$y'=\frac{x^2-x-6}{x^2}e^{\frac{1}{x}}\text{，令 }y'=0\text{，得 }x_1=-2\text{，}x_2=3$$
+$$y''=\frac{13x+6}{x^4}e^{\frac{1}{x}}\text{，令 }y''=0\text{，得 }x_3=-\frac{6}{13}$$
+列表如下：
+| $x$ | $(-\infty,-2)$ | $-2$ | $(-2,-\frac{6}{13})$ | $-\frac{6}{13}$ | $(-\frac{6}{13},0)$ | $0$ | $(0,3)$ | $3$ | $(3,+\infty)$ |
+|---|---|---|---|---|---|---|---|---|---|
+| $y'$ | $+$ | $0$ | $-$ | | $-$ | | $-$ | $0$ | $+$ |
+| $y''$ | $-$ | $-$ | $-$ | $0$ | $+$ | | $+$ | $+$ | $+$ |
+| $y$ | $\nearrow$ | 极大值 | $\searrow$ | 拐点 | $\searrow$ | 不存在 | $\searrow$ | 极小值 | $\nearrow$ |
+极大值为 $y\big|_{x=-2}=\frac{4}{\sqrt{e}}$；极小值为 $y\big|_{x=3}=9\sqrt[3]{e}$；拐点为 $\left(-\frac{6}{13},\frac{72}{13}e^{-13/6}\right)$.
+由 $\lim\limits_{x\to 0^+}y=+\infty$，知 $x=0$ 为铅直渐近线. 因为
+$$a=\lim_{x\to\infty}\frac{f(x)}{x}=\lim_{x\to\infty}\frac{(x+6)e^{\frac{1}{x}}}{x}=1,$$
+$$b=\lim_{x\to\infty}\left[f(x)-x\right]=\lim_{x\to\infty}\left[(x+6)e^{\frac{1}{x}}-x\right]=7,$$
+所以 $y=x+7$ 为斜渐近线.
+此外，由于 $\lim\limits_{x\to 0^-}y=0$，可知函数曲线的左半支，当 $x\to 0^-$ 时趋向于原点.
+综上所述，见图 357.</div>
+
+</div>
+</article>
+<h2 class="sec-h" id="sec-s8">7. 曲率</h2>
+<h2 class="sec-h" id="sec-s9">1. 曲率的定义</h2>
+<h2 class="sec-h" id="sec-s10">2. 计算曲率的公式</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">求曲线的曲率、曲率半径</h3>
+<article class="problem" id="q358" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="358">【358】</span>
+<span class="q-group">求曲线的曲率、曲率半径</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设摆线 $\begin{cases}x=a(t-\sin t)\\y=a(1-\cos t)\end{cases}$（$a&gt;0$），$t\in(0,2\pi)$. 问 $t$ 为何值时曲率最小，并求出最小曲率和该点处的曲率半径.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如记不住曲率的参数方程公式，可先求出 $\frac{dy}{dx}$ 和 $\frac{d^2y}{dx^2}$.
+$$\frac{dy}{dx}=\frac{a\sin t}{a(1-\cos t)}=\frac{\sin t}{1-\cos t},$$
+$$1+y'^2=1+\left(\frac{\sin t}{1-\cos t}\right)^2=\frac{2}{1-\cos t},$$
+$$\frac{d^2y}{dx^2}=\frac{\cos t-1}{(1-\cos t)^2}\cdot\frac{1}{a(1-\cos t)}=-\frac{1}{a(1-\cos t)^2},$$
+$$K=\left|\frac{y''}{(1+y'^2)^{\frac{3}{2}}}\right|=\left|\frac{-1}{a(1-\cos t)^2}\cdot\frac{(1-\cos t)^{\frac{3}{2}}}{2\sqrt{2}}\right|=\frac{1}{4a\left|\sin\frac{t}{2}\right|}.$$
+不必用导数求极值就可知，当 $\sin\frac{t}{2}=1$，即当 $t=\pi$ 时，也就是 $x=a\pi$，$y=2a$ 处曲率最小，最小曲率为 $\frac{1}{4a}$，曲率半径为 $4a$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">当 $t=\pi$（即 $x=a\pi$，$y=2a$）处曲率最小，最小曲率为 $\frac{1}{4a}$，曲率半径为 $4a$.</span></div>
+</div>
+</article>
+<article class="problem" id="q359" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="359">【359】</span>
+<span class="q-group">求曲线的曲率、曲率半径</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">如图 359 所示，设曲线上的方程 $y=f(x)$，且 $y''&gt;0$，又 $MT$、$MP$ 分别为该曲线在点 $M(x_0,y_0)$ 处的切线和法线，已知线段 $MP$ 长度为 $\frac{(1+y_0'^2)^{\frac{3}{2}}}{y_0''}$（其中 $y_0'=y'(x_0)$，$y_0''=y''(x_0)$），求点 $P(\xi,\eta)$ 的坐标表达式.</div>
+<div class="figure-note">图359——平面直角坐标系：一段凹向上（$y&#x27;&#x27;&gt;0$）的曲线经过第一象限的点 $M(x_0,y_0)$；过 $M$ 的切线 $MT$ 向左下方延伸交 $x$ 轴于点 $T$；过 $M$ 的法线 $MP$ 与切线垂直、向左上方延伸，其上标出点 $P(\xi,\eta)$（位于 $M$ 的左上方、$y$ 轴附近）；原点 $O$ 在左下角.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 由已知条件，根据 $MP$ 长度和切线、法线的概念，得到含有 $\xi$、$\eta$ 的方程，由此可求出 $\xi$、$\eta$ 的表达式.
+<strong>解</strong> 由题设 $(\xi,\eta)$ 满足
+$$(x_0-\xi)^2+(y_0-\eta)^2=\frac{(1+y_0'^2)^3}{y_0''^2},\qquad ①$$
+又由于 $PM\perp MT$，所以
+$$y_0'=-\frac{x_0-\xi}{y_0-\eta},\qquad ②$$
+将②代入①式求得
+$$(y_0-\eta)^2=\frac{(1+y_0'^2)^2}{y_0''^2}.$$
+由于 $y''&gt;0$，曲线是凹的，故 $y_0-\eta&lt;0$，从而 $y_0-\eta=-\frac{1+y_0'^2}{y_0''}$，又由
+$$x_0-\xi=-(y_0-\eta)y_0'=\frac{y_0'(1+y_0'^2)}{y_0''},\quad\text{推得}\quad\begin{cases}\xi=x_0-\dfrac{y_0'(1+y_0'^2)}{y_0''},\\[2mm]\eta=y_0+\dfrac{1+y_0'^2}{y_0''}.\end{cases}$$</div>
+
+</div>
+</article>
+<article class="problem" id="q360" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="360">【360】</span>
+<span class="q-group">求曲线的曲率、曲率半径</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\rho=\rho(x)$ 是抛物线 $y=\sqrt{x}$ 上任一点 $M(x,y)$（$x\geqslant 1$）处的曲率半径，$s=s(x)$ 是该抛物线上介于点 $A(1,1)$ 与 $M$ 之间的弧长，计算 $3\rho\frac{d^2\rho}{ds^2}-\left(\frac{d\rho}{ds}\right)^2$ 的值.（在直角坐标系下曲率公式为 $K=\frac{|y''|}{(1+y'^2)^{\frac{3}{2}}}$）.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=\frac{1}{2\sqrt{x}}$，$y''=-\frac{1}{4\sqrt{x^3}}$，抛物线在点 $M(x,y)$ 处的曲率半径
+$$\rho=\rho(x)=\frac{1}{K}=\frac{(1+y'^2)^{\frac{3}{2}}}{|y''|}=\frac{1}{2}(4x+1)^{\frac{3}{2}},$$
+抛物线上 $\overset{\frown}{AM}$ 的弧长
+$$s=s(x)=\int_1^x\sqrt{1+y'^2}\,dx=\int_1^x\sqrt{1+\frac{1}{4x}}\,dx,$$
+故
+$$\frac{d\rho}{ds}=\frac{\dfrac{d\rho}{dx}}{\dfrac{ds}{dx}}=\frac{\dfrac{1}{2}\cdot\dfrac{3}{2}(4x+1)^{\frac{1}{2}}\cdot 4}{\sqrt{1+\dfrac{1}{4x}}}=6\sqrt{x},$$
+$$\frac{d^2\rho}{ds^2}=\frac{d}{dx}\left(\frac{d\rho}{ds}\right)\cdot\frac{1}{\dfrac{ds}{dx}}=\frac{6}{2\sqrt{x}}\cdot\frac{1}{\sqrt{1+\dfrac{1}{4x}}}=\frac{6}{\sqrt{4x+1}},$$
+因此 $3\rho\dfrac{d^2\rho}{ds^2}-\left(\dfrac{d\rho}{ds}\right)^2=3\cdot\dfrac{1}{2}(4x+1)^{\frac{3}{2}}\cdot\dfrac{6}{\sqrt{4x+1}}-36x=9$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$3\rho\dfrac{d^2\rho}{ds^2}-\left(\dfrac{d\rho}{ds}\right)^2=9$</span></div>
+</div>
+</article>
+<article class="problem" id="q361" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="361">【361】</span>
+<span class="q-group">求曲线的曲率、曲率半径</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲线 $y=a\ln\left(1-\frac{x^2}{a^2}\right)$（$a&gt;0$）上曲率半径为最小的点的坐标.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=-\frac{2ax}{a^2-x^2}$，$y''=-\frac{2a(a^2+x^2)}{(a^2-x^2)^2}$（$|x|&lt;a$），$K=\frac{|y''|}{(1+y'^2)^{3/2}}=\frac{2a(a^2-x^2)}{(a^2+x^2)^2}$，
+$$\rho=\frac{1}{K}=\frac{(a^2+x^2)^3}{2a(a^2-x^2)^2},|x|&lt;a,\quad \frac{d\rho}{dx}=\frac{x(a^2+x^2)(3a^2-x^2)}{a(a^2-x^2)^3}.$$
+当 $-a&lt;x&lt;0$ 时，$\frac{d\rho}{dx}&lt;0$，当 $0&lt;x&lt;a$ 时，$\frac{d\rho}{dx}&gt;0$，故当 $x=0$，$y=0$ 时，$\rho$ 最小.
+故所求点为 $(0,0)$.
+<strong>点评</strong> 把曲率和最值结合起来，是本节一类综合题目，这就要求对求最值的方法和步骤要牢记于心，能够把知识融汇贯通，灵活运用，只要公式记忆准确，计算仔细认真，一般就能够顺利地解决问题.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所求点为 $(0,0)$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关曲率的应用题</h3>
+<article class="problem" id="q362" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="362">【362】</span>
+<span class="q-group">有关曲率的应用题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">汽车连同载重共 5t，在抛物线拱桥上行驶，速度为 21.6km/h，桥的跨度为 10m，拱的矢高为 0.25m（如图 362），求汽车越过桥顶时对桥的压力.</div>
+<div class="figure-note">图362——以桥顶为原点 $O$ 的直角坐标系：$x$ 轴水平向右（过桥顶），$y$ 轴竖直向下；抛物线拱桥关于 $y$ 轴对称、自桥顶 $O$ 向两侧下降；连接两拱脚的水平虚线低于桥顶 $0.25$m（左侧双向箭头标注 $0.25$m）；两拱脚之间的水平距离标注 $10$m（下方双向箭头）.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图取直角坐标系，设抛物线拱桥方程为 $y=ax^2$，由于抛物线过点 $(5,0.25)$，代入方程得 $a=\frac{0.25}{25}=0.01$.
+又 $y'\big|_{x=0}=2ax\big|_{x=0}=0$，$y''\big|_{x=0}=2a=0.02$，
+故 $\rho\big|_{x=0}=\dfrac{(1+y'^2)^{3/2}}{|y''|}\bigg|_{x=0}=\dfrac{(1+0^2)^{3/2}}{0.02}=50$，因而向心力
+$$F=\frac{mv^2}{\rho}=\frac{5\times 10^3\left(\dfrac{21.6\times 10^3}{3600}\right)^2}{50}=3600\text{N}.$$
+由于汽车重为 5t，所以汽车越过桥顶时对桥的压力为
+$5\times 10^3\times 9.8-3600=45400\text{N}$.
+<strong>点评</strong> 数学知识在各个领域中都有重要的应用，曲率也不例外. 在解实际问题时，要学会如何合理地应用数学知识，另外熟悉基本的物理学和经济学公式也是必要的.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">汽车越过桥顶时对桥的压力为 $45400\text{N}$.</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s11">8. 综合提高题型</h2>
+<h3 class="grp-h">利用微分中值定理证明含有中值ξ的命题</h3>
+<article class="problem" id="q363" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="363">【363】</span>
+<span class="q-group">利用微分中值定理证明含有中值ξ的命题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $[0,3]$ 上连续，在 $(0,3)$ 内可导，且 $f(0)+f(1)+f(2)=3$，$f(3)=1$. 试证必存在 $\xi\in(0,3)$，使 $f'(\xi)=0$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $f(x)$ 在 $[0,3]$ 上连续，所以 $f(x)$ 在 $[0,2]$ 上连续，且在 $[0,2]$ 上必有最大值 $M$ 和最小值 $m$，于是 $$m\leqslant f(0)\leqslant M,\quad m\leqslant f(1)\leqslant M,\quad m\leqslant f(2)\leqslant M,$$ 故 $m\leqslant\frac{f(0)+f(1)+f(2)}{3}\leqslant M$. 由介值定理知，至少存在一点 $c\in[0,2]$，使 $$f(c)=\frac{f(0)+f(1)+f(2)}{3}=1.$$ 因为 $f(c)=1=f(3)$，且 $f(x)$ 在 $[c,3]$ 上连续，在 $(c,3)$ 内可导，所以由罗尔定理知，必存在 $\xi\in(c,3)\subset(0,3)$，使 $f'(\xi)=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">必存在 $\xi\in(0,3)$，使 $f'(\xi)=0$.</span></div>
+</div>
+</article>
+<article class="problem" id="q364" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="364">【364】</span>
+<span class="q-group">利用微分中值定理证明含有中值ξ的命题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">假设函数 $f(x)$ 和 $g(x)$ 在 $[a,b]$ 上存在二阶导数，并且 $g''(x)\neq 0$，$f(a)=f(b)=g(a)=g(b)=0$. 试证：(1)在开区间 $(a,b)$ 内 $g(x)\neq 0$；(2)在开区间 $(a,b)$ 内至少存在一点 $\xi$，使 $\frac{f(\xi)}{g(\xi)}=\frac{f''(\xi)}{g''(\xi)}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> (1)用反证法. 若存在点 $c\in(a,b)$，使 $g(c)=0$，则对 $g(x)$ 在 $[a,c]$ 和 $[c,b]$ 上分别用罗尔定理，知存在 $\xi_1\in(a,c)$，$\xi_2\in(c,b)$，使 $g'(\xi_1)=g'(\xi_2)=0$. 再对 $g'(x)$ 在 $[\xi_1,\xi_2]$ 上应用罗尔定理，知存在 $\xi_3\in(\xi_1,\xi_2)$，使 $g''(\xi_3)=0$. 这与题设 $g''(x)\neq 0$ 矛盾，故在 $(a,b)$ 内 $g(x)\neq 0$. (2)令 $\varphi(x)=f(x)g'(x)-f'(x)g(x)$，易知 $\varphi(a)=\varphi(b)=0$. 对 $\varphi(x)$ 在 $[a,b]$ 上应用罗尔定理知存在 $\xi\in(a,b)$，使 $\varphi'(\xi)=0$，即 $f(\xi)g''(\xi)-f''(\xi)g(\xi)=0$. 因 $g(\xi)\neq 0$，$g''(\xi)\neq 0$，故得 $\frac{f(\xi)}{g(\xi)}=\frac{f''(\xi)}{g''(\xi)}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)在 $(a,b)$ 内 $g(x)\neq 0$；(2)存在 $\xi\in(a,b)$ 使 $\frac{f(\xi)}{g(\xi)}=\frac{f''(\xi)}{g''(\xi)}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q365" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="365">【365】</span>
+<span class="q-group">利用微分中值定理证明含有中值ξ的命题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $f(a)\cdot f(b)&gt;0$，$f(a)\cdot f\left(\frac{a+b}{2}\right)&lt;0$，试证至少有一点 $\xi\in(a,b)$ 使 $f'(\xi)=f(\xi)$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $F(x)=f(a)e^{-x}f(x)$，则 $$F(a)=f^2(a)e^{-a}&gt;0,\quad F\left(\frac{a+b}{2}\right)=f(a)f\left(\frac{a+b}{2}\right)e^{-\frac{a+b}{2}}&lt;0,\quad F(b)=f(a)f(b)e^{-b}&gt;0.$$ 所以由零点定理知存在 $\xi_1\in\left(a,\frac{a+b}{2}\right)$，$\xi_2\in\left(\frac{a+b}{2},b\right)$，使 $F(\xi_1)=0$，$F(\xi_2)=0$. 再在区间 $[\xi_1,\xi_2]$ 上使用罗尔定理即得结果.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">至少有一点 $\xi\in(a,b)$ 使 $f'(\xi)=f(\xi)$.</span></div>
+</div>
+</article>
+<article class="problem" id="q366" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="366">【366】</span>
+<span class="q-group">利用微分中值定理证明含有中值ξ的命题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f'(x)$ 在 $[0,a]$ 上连续，且 $f(0)=0$，证明：$$\left|\int_0^a f(x)\,dx\right|\leqslant\frac{Ma^2}{2},\quad\text{其中 } M=\max_{0\leqslant x\leqslant a}|f'(x)|.$$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 任取 $x\in[0,a]$，由微分中值定理有 $f(x)-f(0)=f'(\xi)x$，$\xi\in(0,x)$. 因为 $f(0)=0$，故 $f(x)=f'(\xi)x$，$x\in[0,a]$，所以 $$\left|\int_0^a f(x)\,dx\right|=\left|\int_0^a f'(\xi)x\,dx\right|\leqslant\int_0^a|f'(\xi)|x\,dx\leqslant M\int_0^a x\,dx=\frac{M}{2}a^2.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\left|\int_0^a f(x)\,dx\right|\leqslant\frac{Ma^2}{2}$，其中 $M=\max\limits_{0\leqslant x\leqslant a}|f'(x)|$.</span></div>
+</div>
+</article>
+<article class="problem" id="q367" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="367">【367】</span>
+<span class="q-group">利用微分中值定理证明含有中值ξ的命题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$，$g(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内具有二阶导数且存在相等的最大值，$f(a)=g(a)$，$f(b)=g(b)$，证明：存在 $\xi\in(a,b)$，使得 $f''(\xi)=g''(\xi)$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 令 $h(x)=f(x)-g(x)$，则 $h(a)=h(b)=0$. 设 $f(x)$，$g(x)$ 在 $(a,b)$ 内的最大值 $M$ 分别在 $\alpha\in(a,b)$，$\beta\in(a,b)$ 取得. 当 $\alpha=\beta$ 时，取 $\eta=\alpha$，则 $h(\eta)=0$. 当 $\alpha\neq\beta$ 时，$$h(\alpha)=f(\alpha)-g(\alpha)=M-g(\alpha)&gt;0,\quad h(\beta)=f(\beta)-g(\beta)=f(\beta)-M&lt;0,$$ 由介值定理，存在介于 $\alpha$ 与 $\beta$ 之间的点 $\eta$，使得 $h(\eta)=0$. 综上，存在 $\eta\in(a,b)$，使得 $h(\eta)=0$. 因此由罗尔定理可知，存在 $\xi_1\in(a,\eta)$，$\xi_2\in(\eta,b)$，使得 $$h'(\xi_1)=h'(\xi_2)=0,$$ 再由罗尔定理可知，存在 $\xi\in(\xi_1,\xi_2)\subset(a,b)$，使得 $h''(\xi)=0$，即 $$f''(\xi)=g''(\xi).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">存在 $\xi\in(a,b)$，使得 $f''(\xi)=g''(\xi)$.</span></div>
+</div>
+</article>
+<article class="problem" id="q368" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="368">【368】</span>
+<span class="q-group">利用微分中值定理证明含有中值ξ的命题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内二阶可导，$f(a)=f(b)=0$，且有 $c(a&lt;c&lt;b)$，使 $f(c)&gt;0$，则至少存在一点 $\xi\in(a,b)$，使 $f''(\xi)&lt;0$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内二阶可导，所以 $f(x)$ 满足拉格朗日中值定理的条件，将函数 $f(x)$ 分别在 $[a,c]$，$[c,b]$ 上应用拉格朗日中值定理，得 $$f'(\xi_1)=\frac{f(c)-f(a)}{c-a}\quad \xi_1\in(a,c)$$ $$f'(\xi_2)=\frac{f(b)-f(c)}{b-c}\quad \xi_2\in(c,b)$$ 根据已知条件 $f'(\xi_1)&gt;0$，$f'(\xi_2)&lt;0$. 将 $f'(x)$ 在 $[\xi_1,\xi_2]$ 上再次应用拉格朗日中值定理，至少存在一点 $\xi\in(a,b)$，使 $f''(\xi)=\frac{f'(\xi_2)-f'(\xi_1)}{\xi_2-\xi_1}&lt;0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">至少存在一点 $\xi\in(a,b)$，使 $f''(\xi)&lt;0$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">证明有两个中值ξ，η（ξ≠η）满足某种关系式的命题</h3>
+<article class="problem" id="q369" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="369">【369】</span>
+<span class="q-group">证明有两个中值ξ，η（ξ≠η）满足某种关系式的命题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $0\leqslant a&lt;b$，$f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，证明：在 $(a,b)$ 内必有 $\xi$ 与 $\eta$ 使 $f'(\xi)=\frac{a+b}{2\eta}\cdot f'(\eta)$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 首先，由拉格朗日中值定理，必有 $\xi\in(a,b)$ 使 $f'(\xi)=\frac{f(b)-f(a)}{b-a}$，因此，问题转化为须证：存在 $\eta\in(a,b)$ 使 $$\frac{f(b)-f(a)}{b-a}=\frac{a+b}{2\eta}f'(\eta),\quad\text{或}\quad\frac{f(b)-f(a)}{b-a}\eta-\frac{a+b}{2}f'(\eta)=0,$$ 为此，令 $$F(x)=\frac{f(b)-f(a)}{b-a}\cdot\frac{x^2}{2}-\frac{a+b}{2}f(x),$$ 则 $F(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导且 $$F(a)=\frac{f(b)-f(a)}{b-a}\cdot\frac{a^2}{2}-\frac{a+b}{2}f(a)=\frac{a^2f(b)-b^2f(a)}{2(b-a)}=F(b),$$ 即 $F(x)$ 满足罗尔定理的条件，则存在 $\eta\in(a,b)$ 使 $F'(\eta)=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">在 $(a,b)$ 内必有 $\xi$ 与 $\eta$ 使 $f'(\xi)=\frac{a+b}{2\eta}\cdot f'(\eta)$.</span></div>
+</div>
+</article>
+<article class="problem" id="q370" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="370">【370】</span>
+<span class="q-group">证明有两个中值ξ，η（ξ≠η）满足某种关系式的命题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $f(a)=f(b)=1$. 试证：存在 $\xi,\eta\in(a,b)$，使 $e^{\eta-\xi}[f(\eta)+f'(\eta)]=1$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 令 $F(x)=e^xf(x)$，则 $F(x)$ 在 $[a,b]$ 上满足拉格朗日中值定理条件，故存在 $\eta\in(a,b)$，使得 $$\frac{e^bf(b)-e^af(a)}{b-a}=e^{\eta}[f(\eta)+f'(\eta)]$$ 由条件 $f(a)=f(b)=1$ 得 $$\frac{e^b-e^a}{b-a}=e^{\eta}[f(\eta)+f'(\eta)]\qquad\text{①}$$ 再令 $\varphi(x)=e^x$，则 $\varphi(x)$ 在 $[a,b]$ 上满足拉格朗日中值定理条件. 故存在 $\xi\in(a,b)$，使 $$\frac{e^b-e^a}{b-a}=e^{\xi}\qquad\text{②}$$ 综合①，②两式，有 $e^{\eta-\xi}[f(\eta)+f'(\eta)]=1$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">存在 $\xi,\eta\in(a,b)$，使 $e^{\eta-\xi}[f(\eta)+f'(\eta)]=1$.</span></div>
+</div>
+</article>
+<article class="problem" id="q371" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="371">【371】</span>
+<span class="q-group">证明有两个中值ξ，η（ξ≠η）满足某种关系式的命题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知函数 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(0)=0$，$f(1)=1$. 证明：(1)存在 $\xi\in(0,1)$，使得 $f(\xi)=1-\xi$；(2)存在两个不同的点 $\eta,\zeta\in(0,1)$，使得 $f'(\eta)f'(\zeta)=1$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> (1)令 $g(x)=f(x)+x-1$，则 $g(x)$ 在 $[0,1]$ 上连续，且 $g(0)=-1&lt;0$，$g(1)=1&gt;0$，所以存在 $\xi\in(0,1)$，使得 $g(\xi)=f(\xi)+\xi-1=0$，即 $f(\xi)=1-\xi$. (2)根据拉格朗日中值定理，存在 $\eta\in(0,\xi)$，$\zeta\in(\xi,1)$，使得 $$f'(\eta)=\frac{f(\xi)-f(0)}{\xi}=\frac{1-\xi}{\xi},\quad f'(\zeta)=\frac{f(1)-f(\xi)}{1-\xi}=\frac{1-(1-\xi)}{1-\xi}=\frac{\xi}{1-\xi},$$ 从而 $f'(\eta)f'(\zeta)=\frac{1-\xi}{\xi}\cdot\frac{\xi}{1-\xi}=1$. <strong>点评</strong> 当欲证结论为：“在 $(a,b)$ 至少存在两点 $\xi,\eta$ 满足某种关系式”. 一般而言，此类问题的证明不必构造辅助函数，而是依据结论中各部分的特点分别利用微分中值定理.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)存在 $\xi\in(0,1)$ 使 $f(\xi)=1-\xi$；(2)存在两个不同的点 $\eta,\zeta\in(0,1)$ 使 $f'(\eta)f'(\zeta)=1$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">使用泰勒定理证明</h3>
+<article class="problem" id="q372" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="372">【372】</span>
+<span class="q-group">使用泰勒定理证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[0,1]$ 上具有二阶导数，且满足条件 $|f(x)|\leqslant a$，$|f''(x)|\leqslant b$，其中 $a,b$ 都是非负常数，$c$ 是 $(0,1)$ 内任意一点.(1)写出点 $c$ 处带拉格朗日型余项的一阶泰勒公式；(2)证明 $|f'(c)|\leqslant 2a+\frac{b}{2}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body">(1)<strong>解</strong> $f(x)=f(c)+f'(c)(x-c)+\frac{f''(\xi)}{2!}(x-c)^2$，其中 $\xi=c+\theta(x-c)$（$0&lt;\theta&lt;1$）. (2)<strong>证</strong> $$f(x)=f(c)+f'(c)(x-c)+\frac{f''(\xi)(x-c)^2}{2!}\qquad\text{①}$$ 其中 $\xi=c+\theta(x-c)$，$0&lt;\theta&lt;1$. 在①式中，令 $x=0$，则有 $$f(0)=f(c)+f'(c)(0-c)+\frac{f''(\xi_1)(0-c)^2}{2!},\quad 0&lt;\xi_1&lt;c&lt;1$$ 在①式中，令 $x=1$，则有 $$f(1)=f(c)+f'(c)(1-c)+\frac{f''(\xi_2)(1-c)^2}{2!},\quad 0&lt;c&lt;\xi_2&lt;1$$ 上述两式相减得 $f(1)-f(0)=f'(c)+\frac{1}{2!}[f''(\xi_2)(1-c)^2-f''(\xi_1)c^2]$，于是 $$|f'(c)|=\left|f(1)-f(0)-\frac{1}{2!}[f''(\xi_2)(1-c)^2-f''(\xi_1)c^2]\right|$$ $$\leqslant|f(1)|+|f(0)|+\frac{1}{2}|f''(\xi_2)|(1-c)^2+\frac{1}{2}|f''(\xi_1)|c^2$$ $$\leqslant a+a+\frac{b}{2}[(1-c)^2+c^2].$$ 又因 $c\in(0,1)$，$(1-c)^2+c^2\leqslant 1$，故 $|f'(c)|\leqslant 2a+\frac{b}{2}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)$f(x)=f(c)+f'(c)(x-c)+\frac{f''(\xi)}{2!}(x-c)^2$，其中 $\xi=c+\theta(x-c)$（$0&lt;\theta&lt;1$）；(2)$|f'(c)|\leqslant 2a+\frac{b}{2}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q373" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="373">【373】</span>
+<span class="q-group">使用泰勒定理证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在闭区间 $[-1,1]$ 上具有三阶连续导数，且 $f(-1)=0$，$f(1)=1$，$f'(0)=0$. 证明：在开区间 $(-1,1)$ 内至少存在一点 $\xi$，使 $f'''(\xi)=3$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 由麦克劳林公式得 $$f(x)=f(0)+f'(0)x+\frac{1}{2!}f''(0)x^2+\frac{1}{3!}f'''(\eta)x^3,$$ 其中 $\eta$ 介于 0 与 $x$ 之间，$x\in[-1,1]$. 分别令 $x=-1$ 和 $x=1$，并结合已知条件，得 $$0=f(-1)=f(0)+\frac{1}{2}f''(0)-\frac{1}{6}f'''(\eta_1),\quad -1&lt;\eta_1&lt;0,$$ $$1=f(1)=f(0)+\frac{1}{2}f''(0)+\frac{1}{6}f'''(\eta_2),\quad 0&lt;\eta_2&lt;1.$$ 两式相减，可得 $f'''(\eta_1)+f'''(\eta_2)=6$, 由 $f'''(x)$ 的连续性，$f'''(x)$ 在闭区间 $[\eta_1,\eta_2]$ 上有最大值和最小值，设它们分别为 $M$ 和 $m$，则有 $$m\leqslant\frac{1}{2}[f'''(\eta_1)+f'''(\eta_2)]\leqslant M,$$ 再由连续函数的介值定理知，至少存在一点 $\xi\in[\eta_1,\eta_2]\subset(-1,1)$，使 $$f'''(\xi)=\frac{1}{2}[f'''(\eta_1)+f'''(\eta_2)]=3.$$ <strong>点评</strong> 当题目中含有高阶导数（二阶和二阶以上）的某些函数值或讨论函数的高阶导数时，一般利用泰勒展开式解题.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">在 $(-1,1)$ 内至少存在一点 $\xi$，使 $f'''(\xi)=3$.</span></div>
+</div>
+</article>
+<article class="problem" id="q374" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="374">【374】</span>
+<span class="q-group">使用泰勒定理证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 的二阶导数 $f''(x)$ 在 $[2,4]$ 上连续，且 $f(3)=0$. 试证：在 $(2,4)$ 上至少存在一点 $\xi$，使得 $f''(\xi)=3\int_2^4 f(t)\,dt$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $F(x)=\int_3^x f(t)\,dt$，$F(3)=0$，$F'(3)=f(3)=0$. 把 $F(x)$ 在 $x=3$ 展为麦克劳林公式得：$$F(x)=F(3)+F'(3)(x-3)+\frac{F''(3)}{2!}(x-3)^2+\frac{F'''(\xi)}{3!}(x-3)^3,$$ 其中 $\xi$ 介于 $x$ 与 3 之间. 令 $x=2$，得：$F(2)=\frac{f'(3)}{2}(2-3)^2+\frac{f''(\xi_1)}{3!}(2-3)^3$，$\xi_1\in(2,3)$ ① 令 $x=4$，得：$F(4)=\frac{f'(3)}{2}(4-3)^2+\frac{f''(\xi_2)}{3!}(4-3)^3$，$\xi_2\in(3,4)$ ② ②－①得：$\int_2^4 f(t)\,dt=F(4)-F(2)=\frac{1}{6}[f''(\xi_1)+f''(\xi_2)]$. 由 $f''(x)$ 的连续性，$f''(x)$ 在闭区间 $[\xi_1,\xi_2]$ 上存在最大、小值 $M,m$，使 $m\leqslant\frac{f''(\xi_1)+f''(\xi_2)}{2}\leqslant M$. 再由介值定理，存在 $\xi\in[\xi_1,\xi_2]\subset(2,4)$，使 $$f''(\xi)=\frac{f''(\xi_1)+f''(\xi_2)}{2},\quad\text{即}\quad\int_2^4 f(t)\,dt=\frac{1}{3}f''(\xi).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">在 $(2,4)$ 上至少存在一点 $\xi$，使得 $f''(\xi)=3\int_2^4 f(t)\,dt$.</span></div>
+</div>
+</article>
+<article class="problem" id="q375" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="375">【375】</span>
+<span class="q-group">使用泰勒定理证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在点 $x=0$ 的某个邻域内二阶可导，且 $\lim\limits_{x\to 0}\frac{\sin x+xf(x)}{x^3}=\frac{1}{2}$，试求：$f(0)$，$f'(0)$ 及 $f''(0)$ 的值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $$\sin x=x-\frac{x^3}{3!}+o(x^3),\quad f(x)=f(0)+f'(0)x+\frac{1}{2!}f''(0)x^2+o(x^2),$$ 所以，由 $\lim\limits_{x\to 0}\frac{\sin x+xf(x)}{x^3}=\frac{1}{2}$ 可知 $$\lim_{x\to 0}\frac{1}{x^3}\left[x-\frac{x^3}{3!}+o(x^3)+f(0)x+f'(0)x^2+\frac{f''(0)}{2}x^3+xo(x^2)\right]$$ $$=\lim_{x\to 0}\frac{1}{x^3}\left[(1+f(0))x+f'(0)x^2+\left(\frac{f''(0)}{2}-\frac{1}{6}\right)x^3+o(x^3)\right]=\frac{1}{2},$$ 所以 $1+f(0)=0$，$f'(0)=0$，$\frac{f''(0)}{2}-\frac{1}{6}=\frac{1}{2}$. 故 $f(0)=-1$，$f'(0)=0$，$f''(0)=\frac{4}{3}$. <strong>点评</strong> 此题不能直接通过洛必达法则来求解</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(0)=-1$，$f'(0)=0$，$f''(0)=\frac{4}{3}$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用单调性或微分中值定理证明不等式</h3>
+<article class="problem" id="q376" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="376">【376】</span>
+<span class="q-group">利用单调性或微分中值定理证明不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $0&lt;a&lt;b$，证明不等式 $\frac{2a}{a^2+b^2}&lt;\frac{\ln b-\ln a}{b-a}&lt;\frac{1}{\sqrt{ab}}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 先证右边不等式. 设 $\varphi(x)=\ln x-\ln a-\frac{x-a}{\sqrt{ax}}$（$x&gt;a&gt;0$），因为 $$\varphi'(x)=\frac{1}{x}-\frac{1}{\sqrt{a}}\left(\frac{1}{2\sqrt{x}}+\frac{a}{2x\sqrt{x}}\right)=-\frac{(\sqrt{x}-\sqrt{a})^2}{2x\sqrt{ax}}&lt;0,$$ 故当 $x&gt;a$ 时，$\varphi(x)$ 单调减少. 又 $\varphi(a)=0$，所以，当 $x&gt;a$ 时，$\varphi(x)&lt;\varphi(a)=0$，即 $$\ln x-\ln a&lt;\frac{x-a}{\sqrt{ax}},$$ 从而当 $b&gt;a&gt;0$ 时，$\ln b-\ln a&lt;\frac{b-a}{\sqrt{ab}}$，即 $\frac{\ln b-\ln a}{b-a}&lt;\frac{1}{\sqrt{ab}}$. 再证左边不等式. <strong>证</strong> 设函数 $f(x)=\ln x$（$x&gt;a&gt;0$），由拉格朗日中值定理知，至少存在一点 $\xi\in(a,b)$，使 $$\frac{\ln b-\ln a}{b-a}=(\ln x)'\Big|_{x=\xi}=\frac{1}{\xi},$$ 由于 $0&lt;a&lt;\xi&lt;b$，故 $\frac{1}{\xi}&gt;\frac{1}{b}&gt;\frac{2a}{a^2+b^2}$，从而 $\frac{\ln b-\ln a}{b-a}&gt;\frac{2a}{a^2+b^2}$. <strong>点评</strong> 利用拉格朗日中值定理可证明联合不等式，步骤为：(1)从中间表达式确定出 $f(x)$ 及区间 $[a,b]$；(2)验证 $f(x)$ 在 $[a,b]$ 满足拉格朗日中值定理条件，得 $f(b)-f(a)=f'(\xi)(b-a)$，$\xi\in(a,b)$；(3)分别令 $\xi=a$，$\xi=b$ 破坏这个等式得不等式.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\frac{2a}{a^2+b^2}&lt;\frac{\ln b-\ln a}{b-a}&lt;\frac{1}{\sqrt{ab}}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q377" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="377">【377】</span>
+<span class="q-group">利用单调性或微分中值定理证明不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $e&lt;a&lt;b&lt;e^2$，证明 $\ln^2 b-\ln^2 a&gt;\frac{4}{e^2}(b-a)$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 对函数 $\ln^2 x$ 在 $[a,b]$ 上应用拉格朗日中值定理，得 $$\ln^2 b-\ln^2 a=\frac{2\ln\xi}{\xi}(b-a),\ a&lt;\xi&lt;b.$$ 设 $\varphi(t)=\frac{\ln t}{t}$，则 $\varphi'(t)=\frac{1-\ln t}{t^2}$，当 $t&gt;e$ 时，$\varphi'(t)&lt;0$，所以 $\varphi(t)$ 单调减少，从而 $$\varphi(\xi)&gt;\varphi(e^2),\quad\text{即}\quad\frac{\ln\xi}{\xi}&gt;\frac{\ln e^2}{e^2}=\frac{2}{e^2},$$ 故 $\ln^2 b-\ln^2 a&gt;\frac{4}{e^2}(b-a)$. <strong>点评</strong> 当 $f'(x)$ 在区间 $[a,b]$ 上的符号不易判定时，如有条件 $f'(a)=0$，则可用 $f''(x)$ 来判定 $f'(x)$ 的符号，这种多次使用单调性证题的方法可归纳为：若函数 $f(x)$ 存在 $n$ 阶导数且 $f(a)=f'(a)=\cdots=f^{(n-1)}(a)=0$，如果当 $x&gt;a$ 时有 $f^{(n)}(x)&gt;0$（或 $&lt;0$），则当 $x&gt;a$ 时，$f(x)&gt;0$（或 $&lt;0$）.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\ln^2 b-\ln^2 a&gt;\frac{4}{e^2}(b-a)$.</span></div>
+</div>
+</article>
+<article class="problem" id="q378" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="378">【378】</span>
+<span class="q-group">利用单调性或微分中值定理证明不等式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明：当 $0&lt;a&lt;b&lt;\pi$ 时，$b\sin b+2\cos b+\pi b&gt;a\sin a+2\cos a+\pi a$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $f(x)=x\sin x+2\cos x+\pi x$，$x\in[0,\pi]$，则 $$f'(x)=\sin x+x\cos x-2\sin x+\pi=x\cos x-\sin x+\pi,$$ $$f''(x)=\cos x-x\sin x-\cos x=-x\sin x&lt;0,\ x\in(0,\pi),$$ 故 $f'(x)$ 在 $[0,\pi]$ 上单调减少，从而 $f'(x)&gt;f'(\pi)=0$，$x\in(0,\pi)$. 因此 $f(x)$ 在 $[0,\pi]$ 上单调增加，当 $0&lt;a&lt;b&lt;\pi$ 时，$$f(b)&gt;f(a),\quad\text{即}\quad b\sin b+2\cos b+\pi b&gt;a\sin a+2\cos a+\pi a.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">当 $0&lt;a&lt;b&lt;\pi$ 时，$b\sin b+2\cos b+\pi b&gt;a\sin a+2\cos a+\pi a$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">讨论函数的零点或方程的根</h3>
+<article class="problem" id="q379" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="379">【379】</span>
+<span class="q-group">讨论函数的零点或方程的根</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">讨论函数 $f(x)=\ln x-ax$（$a&gt;0$）有几个零点？</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 讨论函数的零点问题，也就是讨论函数曲线与 $x$ 轴的交点问题，此类问题通常可由函数的单调性、极值及连续函数的介值定理等来判定. <strong>解</strong> 令 $f'(x)=\frac{1}{x}-a=0$，得驻点 $x=\frac{1}{a}$. 当 $0&lt;x&lt;\frac{1}{a}$ 时，$f'(x)&gt;0$，即 $f(x)$ 单调增加；当 $x&gt;\frac{1}{a}$ 时，$f'(x)&lt;0$，即 $f(x)$ 单调减少，因此 $f\left(\frac{1}{a}\right)=\ln\frac{1}{a}-1$ 为 $f(x)$ 极大值，亦为最大值. 又可判断当 $x\to 0^+$ 或 $x\to+\infty$ 时，$f(x)\to-\infty$，从而依据连续函数的介值定理得 (1)当 $f\left(\frac{1}{a}\right)&gt;0$，即 $a&lt;\frac{1}{e}$ 时，曲线 $f(x)$ 与 $x$ 轴在区间 $\left(0,\frac{1}{a}\right)$ 与 $\left(\frac{1}{a},+\infty\right)$ 上各有一个交点，即 $f(x)$ 有二个零点； (2)当 $f\left(\frac{1}{a}\right)=0$，即 $a=\frac{1}{e}$ 时，曲线 $f(x)$ 与 $x$ 轴仅有一个交点，即 $f(x)$ 仅有一个零点； (3)当 $f\left(\frac{1}{a}\right)&lt;0$，即 $a&gt;\frac{1}{e}$ 时，曲线 $f(x)$ 与 $x$ 轴无交点，即 $f(x)$ 没有零点.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$a&lt;\frac{1}{e}$ 时 $f(x)$ 有二个零点；$a=\frac{1}{e}$ 时仅有一个零点；$a&gt;\frac{1}{e}$ 时没有零点.</span></div>
+</div>
+</article>
+<article class="problem" id="q380" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="380">【380】</span>
+<span class="q-group">讨论函数的零点或方程的根</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设有方程 $x^4+ax+b=0$. (1)当 $a,b$ 满足何种关系时，方程有唯一实根；(2)当 $a,b$ 满足何种关系时，方程无实根.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 考虑函数 $f(x)=x^4+ax+b$，$x\in(-\infty,+\infty)$. 由 $\lim\limits_{x\to-\infty}f(x)=+\infty$，$\lim\limits_{x\to+\infty}f(x)=+\infty$，可知 $f(x)$ 在 $(-\infty,+\infty)$ 上无最大值，只有最小值. 又由 $f'(x)=4x^3+a$，可知 $f(x)$ 有唯一驻点 $x=\sqrt[3]{-\frac{a}{4}}$，再由 $f''(x)=12x^2\geqslant 0$，可知 $x=\sqrt[3]{-\frac{a}{4}}$ 是 $f(x)$ 的唯一极小值点，即为最小值点. 由此可得： (1)当 $f\left(\sqrt[3]{-\frac{a}{4}}\right)=-\frac{3a}{4}\sqrt[3]{\frac{a}{4}}+b=0$，即 $\frac{3a}{4}\sqrt[3]{\frac{a}{4}}=b$ 时，方程 $f(x)=0$ 有唯一实根 $x=\sqrt[3]{-\frac{a}{4}}$. (2)当 $f\left(\sqrt[3]{-\frac{a}{4}}\right)=-\frac{3a}{4}\sqrt[3]{\frac{a}{4}}+b&gt;0$，即 $\frac{3a}{4}\sqrt[3]{\frac{a}{4}}&lt;b$ 时，方程 $f(x)=0$ 无实根.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)当 $\frac{3a}{4}\sqrt[3]{\frac{a}{4}}=b$ 时方程有唯一实根 $x=\sqrt[3]{-\frac{a}{4}}$；(2)当 $\frac{3a}{4}\sqrt[3]{\frac{a}{4}}&lt;b$ 时方程无实根.</span></div>
+</div>
+</article>
+<article class="problem" id="q381" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="381">【381】</span>
+<span class="q-group">讨论函数的零点或方程的根</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">讨论曲线 $y=4\ln x+k$ 与 $y=4x+\ln^4 x$ 的交点个数.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 问题等价于讨论方程 $\ln^4 x-4\ln x+4x-k=0$ 有几个不同的实根. 设 $\varphi(x)=\ln^4 x-4\ln x+4x-k$，则有 $\varphi'(x)=\frac{4(\ln^3 x-1+x)}{x}$. 不难看出，$x=1$ 是 $\varphi(x)$ 的驻点. 当 $0&lt;x&lt;1$ 时，$\varphi'(x)&lt;0$，即 $\varphi(x)$ 单调减少；当 $x&gt;1$ 时，$\varphi'(x)&gt;0$，即 $\varphi(x)$ 单调增加，故 $\varphi(1)=4-k$ 为函数 $\varphi(x)$ 的最小值. 当 $k&lt;4$，即 $4-k&gt;0$ 时，$\varphi(x)=0$ 无实根，即两条曲线无交点. 当 $k=4$，即 $4-k=0$ 时，$\varphi(x)=0$ 有唯一实根，即两条曲线只有一个交点. 当 $k&gt;4$，即 $4-k&lt;0$ 时，由于 $$\lim_{x\to 0^+}\varphi(x)=\lim_{x\to 0^+}[\ln x(\ln^3 x-4)+4x-k]=+\infty;$$ $$\lim_{x\to+\infty}\varphi(x)=\lim_{x\to+\infty}[\ln x(\ln^3 x-4)+4x-k]=+\infty.$$ 故 $\varphi(x)=0$ 有两个实根，分别位于 $(0,1)$ 与 $(1,+\infty)$ 内，即两条曲线有两个交点. <strong>点评</strong> 本题必须先构造一个辅助函数，将问题转化为求辅助函数零点的个数，最后通过导数对其单调性、极值进行讨论.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$k&lt;4$ 时两条曲线无交点；$k=4$ 时只有一个交点；$k&gt;4$ 时有两个交点.</span></div>
+</div>
+</article>
+<article class="problem" id="q382" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="382">【382】</span>
+<span class="q-group">讨论函数的零点或方程的根</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">就 $k$ 的不同取值情况，确定方程 $x-\frac{\pi}{2}\sin x=k$ 在开区间 $\left(0,\frac{\pi}{2}\right)$ 内根的个数，并证明你的结论.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $f(x)=x-\frac{\pi}{2}\sin x$，则 $f(x)$ 在 $\left[0,\frac{\pi}{2}\right]$ 上连续. 由 $f'(x)=1-\frac{\pi}{2}\cos x=0$ 解得 $f(x)$ 在 $\left(0,\frac{\pi}{2}\right)$ 内的唯一驻点 $x_0=\arccos\frac{2}{\pi}$. 由于当 $x\in(0,x_0)$ 时，$f'(x)&lt;0$；当 $x\in\left(x_0,\frac{\pi}{2}\right)$ 时，$f'(x)&gt;0$. 所以 $f(x)$ 在 $[0,x_0]$ 上单调减少，在 $\left[x_0,\frac{\pi}{2}\right]$ 上单调增加. 因此，$x_0$ 是 $f(x)$ 在 $\left(0,\frac{\pi}{2}\right)$ 内的唯一最小值点，最小值为 $y_0=f(x_0)=x_0-\frac{\pi}{2}\sin x_0$. 又因 $f(0)=f\left(\frac{\pi}{2}\right)=0$，故在 $\left(0,\frac{\pi}{2}\right)$ 内 $f(x)$ 的取值范围为 $(y_0,0)$. 因此，当 $k\notin[y_0,0)$，即 $k&lt;y_0$ 或 $k\geqslant 0$ 时，原方程在 $\left(0,\frac{\pi}{2}\right)$ 内没有根； 当 $k=y_0$ 时，原方程在 $\left(0,\frac{\pi}{2}\right)$ 内有唯一根 $x_0$； 当 $k\in(y_0,0)$ 时，原方程在 $(0,x_0)$ 和 $\left(x_0,\frac{\pi}{2}\right)$ 内各恰有一根，即原方程在 $\left(0,\frac{\pi}{2}\right)$ 内恰有两个不同的根. <strong>点评</strong> 本题主要考查利用导数分析函数图形的属性. 令 $f(x)=x-\frac{\pi}{2}\sin x$，讨论方程 $f(x)=k$ 在开区间 $\left(0,\frac{\pi}{2}\right)$ 内根的个数，实际上只需研究函数 $f(x)$ 在 $\left(0,\frac{\pi}{2}\right)$ 上图形的特点，$f(x)=k$ 在开区间 $\left(0,\frac{\pi}{2}\right)$ 内根的个数即为直线 $y=k$ 与曲线 $y=f(x)$ 在 $\left(0,\frac{\pi}{2}\right)$ 区间内交点的个数.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">当 $k\notin[y_0,0)$（即 $k&lt;y_0$ 或 $k\geqslant 0$）时没有根；当 $k=y_0$ 时有唯一根 $x_0$；当 $k\in(y_0,0)$ 时恰有两个不同的根. 其中 $y_0=x_0-\frac{\pi}{2}\sin x_0$，$x_0=\arccos\frac{2}{\pi}$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用泰勒公式讨论函数的极值</h3>
+<article class="problem" id="q383" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="383">【383】</span>
+<span class="q-group">利用泰勒公式讨论函数的极值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 有二阶连续导数，且 $f'(0)=0$，$\lim\limits_{x\to 0}\frac{f''(x)}{|x|}=1$，则________. (A)$f(0)$ 是 $f(x)$ 的极大值 (B)$f(0)$ 是 $f(x)$ 的极小值 (C)$(0,f(0))$ 是曲线 $y=f(x)$ 的拐点 (D)$f(0)$ 不是 $f(x)$ 的极值，$(0,f(0))$ 也不是曲线 $y=f(x)$ 的拐点</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\lim\limits_{x\to 0}\frac{f''(x)}{|x|}=1&gt;0$ 及保号性知在 $x=0$ 的某邻域内 $f''(x)&gt;0$，故 $(0,f(0))$ 不是曲线 $y=f(x)$ 的拐点. 而由麦克劳林公式知 $f(x)=f(0)+f'(0)x+\frac{f''(\xi)}{2!}x^2$，$\xi$ 介于 0 与 $x$ 之间，则 $f(x)-f(0)=\frac{f''(\xi)}{2!}x^2&gt;0$，即 $f(x)&gt;f(0)$，$f(0)$ 是 $f(x)$ 的极小值. 故应选（B）.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（B）.</span></div>
+</div>
+</article>
+<article class="problem" id="q384" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="384">【384】</span>
+<span class="q-group">利用泰勒公式讨论函数的极值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=f(x)$ 在点 $x_0$ 的某邻域内具有连续的 4 阶导数，若 $f'(x_0)=f''(x_0)=f'''(x_0)=0$，且 $f^{(4)}(x_0)&lt;0$，则________. (A)$f(x)$ 在点 $x_0$ 取极小值 (B)$f(x)$ 在点 $x_0$ 取极大值 (C)点 $(x_0,f(x_0))$ 为曲线 $y=f(x)$ 的拐点 (D)$f(x)$ 在点 $x_0$ 的某邻域内单调减少</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $y=f(x)$ 在点 $x_0$ 的某邻域内具有连续的 4 阶导数，且 $f^{(4)}(x_0)&lt;0$，故存在 $x_0$ 的一个 $\delta$ 邻域 $(x_0-\delta,x_0+\delta)$，当 $x\in(x_0-\delta,x_0+\delta)$ 时 $f^{(4)}(x)&lt;0$，并由泰勒公式 $$f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{1}{2!}f''(x_0)(x-x_0)^2+\frac{1}{3!}f'''(x_0)(x-x_0)^3+\frac{1}{4!}f^{(4)}(\xi)(x-x_0)^4$$ $$=f(x_0)+\frac{1}{4!}f^{(4)}(\xi)(x-x_0)^4\quad(\xi\text{ 在 }x_0\text{ 与 }x\text{ 之间})$$ 由此得知，当 $x\in(x_0-\delta,x_0+\delta)$ 时，$f(x)\leqslant f(x_0)$. 故应选（B）.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（B）.</span></div>
+</div>
+</article>
+<article class="problem" id="q385" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="385">【385】</span>
+<span class="q-group">利用泰勒公式讨论函数的极值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $x_0$ 的某一邻域内存在连续的三阶导数，且 $f'(x_0)=f''(x_0)=0$ 而 $f'''(x_0)\neq 0$，试证 $(x_0,f(x_0))$ 是曲线的拐点，而 $x_0$ 不是 $f(x)$ 的极值点.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 不妨设 $$f'''(x_0)&gt;0,\ f'''(x_0)=\lim_{x\to x_0}\frac{f''(x)-f''(x_0)}{x-x_0}=\lim_{x\to x_0}\frac{f''(x)}{x-x_0}&gt;0.$$ 所以根据保号性存在 $x_0$ 的某邻域，使 $\frac{f''(x)}{x-x_0}&gt;0$，即 $x&gt;x_0$ 时，$f''(x)&gt;0$；$x&lt;x_0$ 时，$f''(x)&lt;0$. 从而 $(x_0,f(x_0))$ 是曲线的拐点. 而 $$f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2+\frac{f'''(\xi)}{3!}(x-x_0)^3,$$ 故 $f(x)-f(x_0)=\frac{f'''(\xi)}{3!}(x-x_0)^3$. 即 $x&gt;x_0$ 时，$f(x)&gt;f(x_0)$；$x&lt;x_0$ 时，$f(x)&lt;f(x_0)$. 故 $x_0$ 不是 $f(x)$ 的极值点.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$(x_0,f(x_0))$ 是曲线的拐点，而 $x_0$ 不是 $f(x)$ 的极值点.</span></div>
+</div>
+</article>
+<article class="problem" id="q386" data-secanchor="s11">
+<div class="q-head">
+<span class="q-no" data-n="386">【386】</span>
+<span class="q-group">利用泰勒公式讨论函数的极值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $x_0$ 的某一邻域内具有直到 $n$ 阶的连续导数，且 $f'(x_0)=f''(x_0)=\cdots=f^{(n-1)}(x_0)=0$，而 $f^{(n)}(x_0)\neq 0$，试证：(1)当 $n$ 为偶数，且 $f^{(n)}(x_0)&gt;0$ 时，则 $f(x_0)$ 为极小值；当 $n$ 为偶数，且 $f^{(n)}(x_0)&lt;0$ 时，则 $f(x_0)$ 为极大值；(2)当 $n$ 为奇数时，$f(x_0)$ 不是极值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $f'(x_0)=f''(x_0)=\cdots=f^{(n-1)}(x_0)=0$，由泰勒公式有 $$f(x)=f(x_0)+\frac{f^{(n)}(\xi)}{n!}(x-x_0)^n,$$ 其中 $\xi$ 介于 $x$ 与 $x_0$ 之间，即 $$f(x)-f(x_0)=\frac{f^{(n)}(\xi)}{n!}(x-x_0)^n.$$ 因为 $f^{(n)}(x)$ 在 $x_0$ 连续，且 $f^{(n)}(x_0)\neq 0$，所以必存在 $x_0$ 的某一邻域 $(x_0-\delta,x_0+\delta)$，使对于该邻域内任意 $x$，$f^{(n)}(x)$ 与 $f^{(n)}(x_0)$ 同号，进而 $f^{(n)}(\xi)$ 与 $f^{(n)}(x_0)$ 同号，于是，在 $f^{(n)}(x_0)$ 的符号确定后，$f(x)-f(x_0)$ 的符号完全取决于 $(x-x_0)^n$ 的符号. (1)当 $n$ 为偶数时，$(x-x_0)^n\geqslant 0$，所以，当 $f^{(n)}(x_0)&lt;0$ 时，$f(x)-f(x_0)\leqslant 0$，即 $f(x)\leqslant f(x_0)$，从而 $f(x_0)$ 为极大值；当 $f^{(n)}(x_0)&gt;0$ 时，$f(x)-f(x_0)\geqslant 0$，即 $f(x)\geqslant f(x_0)$，从而 $f(x_0)$ 为极小值. (2)当 $n$ 为奇数时，若 $x&lt;x_0$，则 $(x-x_0)^n&lt;0$；若 $x&gt;x_0$，则 $(x-x_0)^n&gt;0$. 所以不论 $f^{(n)}(x_0)$ 的符号如何，当 $(x-x_0)$ 由负变正时，则 $f(x)-f(x_0)$ 的符号也随之改变，因此 $f(x)$ 在 $x_0$ 处不取得极值.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)$n$ 为偶数且 $f^{(n)}(x_0)&gt;0$ 时 $f(x_0)$ 为极小值，$n$ 为偶数且 $f^{(n)}(x_0)&lt;0$ 时 $f(x_0)$ 为极大值；(2)$n$ 为奇数时 $f(x_0)$ 不是极值.</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s12">§1. 不定积分的概念与性质</h2>
+<h2 class="sec-h" id="sec-s13">1. 原函数与不定积分的定义</h2>
+<div class="sec-intro">1．原函数与不定积分的定义　设函数 $F(x)$ 与 $f(x)$ 在区间 $(a,b)$ 内有定义，若对于任意 $x\in(a,b)$ 有 $F'(x)=f(x)$ 或 $\mathrm{d}F(x)=f(x)\mathrm{d}x$，则称 $F(x)$ 是 $f(x)$ 在 $(a,b)$ 上的一个原函数．函数 $f(x)$ 的全体原函数称为 $f(x)$ 的不定积分，记为 $\int f(x)\mathrm{d}x$．设 $F(x)$ 是 $f(x)$ 的一个原函数，则 $\int f(x)\mathrm{d}x=F(x)+C$，$C$ 为任意常数．</div>
+<h2 class="sec-h" id="sec-s14">2. 不定积分的基本性质</h2>
+<h2 class="sec-h" id="sec-s15">3. 基本公式</h2>
+<h3 class="grp-h">利用原函数与不定积分的定义求解问题</h3>
+</main>
+</div>
+<div class="qnav">
+  <button id="qnav-prev" title="上一题">↑</button>
+  <button id="qnav-next" title="下一题">↓</button>
+</div>
+<footer>
+  内容来自《吉米多维奇高等数学习题精选精解》（张天德、蒋晓云主编）· 仅供个人学习使用<br>
+  <a href="../index.html" style="color:var(--accent);">返回总目录</a> <a class="icon-btn" href="chapter-02.html">上一章</a> <a class="icon-btn" href="chapter-04.html">下一章</a>
+</footer>
+</body>
+</html>

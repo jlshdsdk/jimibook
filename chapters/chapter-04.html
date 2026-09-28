@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第4章 第四章 不定积分 · 吉米多维奇高等数学刷题版</title>
+<meta name="description" content="吉米多维奇高等数学习题精选精解第4章第四章 不定积分题目与详解，共64题">
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+<script defer src="../assets/katex/katex.min.js"></script>
+<script defer src="../assets/katex/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</head>
+<body data-chapter="4" data-lazy="1">
+<header class="topbar">
+  <a class="back" href="../index.html">← 总目录</a>
+  <button class="icon-btn sidebar-toggle" id="sidebar-toggle">☰ 目录</button>
+  <span class="title">第4章 第四章 不定积分 · 共64题</span>
+  <button class="icon-btn" id="theme-btn">🌙 夜间</button>
+</header>
+<div class="sidebar-mask" id="sidebar-mask"></div>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<h3>本章节选</h3>
+<a class="sec" href="#sec-s1">§2. 换元积分法</a>
+<a class="sec" href="#sec-s2">1. 第一换元法（凑微分法）</a>
+<a class="sec" href="#sec-s3">2. 第二换元法</a>
+<a class="sec" href="#sec-s4">3. 分部积分法</a>
+<a class="sec" href="#sec-s5">4. 有理函数的积分</a>
+<a class="sec" href="#sec-s6">5. 综合提高题型</a>
+<a class="sec" href="#sec-s7">1. 定积分的概念与性质</a>
+<h3>题号</h3><div class="qindex">
+<a href="#q387" id="qi387">387</a>
+<a href="#q388" id="qi388">388</a>
+<a href="#q389" id="qi389">389</a>
+<a href="#q390" id="qi390">390</a>
+<a href="#q391" id="qi391">391</a>
+<a href="#q392" id="qi392">392</a>
+<a href="#q393" id="qi393">393</a>
+<a href="#q394" id="qi394">394</a>
+<a href="#q395" id="qi395">395</a>
+<a href="#q396" id="qi396">396</a>
+<a href="#q397" id="qi397">397</a>
+<a href="#q398" id="qi398">398</a>
+<a href="#q399" id="qi399">399</a>
+<a href="#q400" id="qi400">400</a>
+<a href="#q401" id="qi401">401</a>
+<a href="#q402" id="qi402">402</a>
+<a href="#q403" id="qi403">403</a>
+<a href="#q404" id="qi404">404</a>
+<a href="#q405" id="qi405">405</a>
+<a href="#q406" id="qi406">406</a>
+<a href="#q407" id="qi407">407</a>
+<a href="#q408" id="qi408">408</a>
+<a href="#q409" id="qi409">409</a>
+<a href="#q410" id="qi410">410</a>
+<a href="#q411" id="qi411">411</a>
+<a href="#q412" id="qi412">412</a>
+<a href="#q413" id="qi413">413</a>
+<a href="#q414" id="qi414">414</a>
+<a href="#q415" id="qi415">415</a>
+<a href="#q416" id="qi416">416</a>
+<a href="#q417" id="qi417">417</a>
+<a href="#q418" id="qi418">418</a>
+<a href="#q419" id="qi419">419</a>
+<a href="#q420" id="qi420">420</a>
+<a href="#q421" id="qi421">421</a>
+<a href="#q422" id="qi422">422</a>
+<a href="#q423" id="qi423">423</a>
+<a href="#q424" id="qi424">424</a>
+<a href="#q425" id="qi425">425</a>
+<a href="#q426" id="qi426">426</a>
+<a href="#q427" id="qi427">427</a>
+<a href="#q428" id="qi428">428</a>
+<a href="#q429" id="qi429">429</a>
+<a href="#q430" id="qi430">430</a>
+<a href="#q431" id="qi431">431</a>
+<a href="#q432" id="qi432">432</a>
+<a href="#q433" id="qi433">433</a>
+<a href="#q434" id="qi434">434</a>
+<a href="#q435" id="qi435">435</a>
+<a href="#q436" id="qi436">436</a>
+<a href="#q437" id="qi437">437</a>
+<a href="#q438" id="qi438">438</a>
+<a href="#q439" id="qi439">439</a>
+<a href="#q440" id="qi440">440</a>
+<a href="#q441" id="qi441">441</a>
+<a href="#q442" id="qi442">442</a>
+<a href="#q443" id="qi443">443</a>
+<a href="#q444" id="qi444">444</a>
+<a href="#q445" id="qi445">445</a>
+<a href="#q446" id="qi446">446</a>
+<a href="#q447" id="qi447">447</a>
+<a href="#q448" id="qi448">448</a>
+<a href="#q449" id="qi449">449</a>
+<a href="#q450" id="qi450">450</a>
+</div></nav>
+<main class="main">
+<div class="ch-progress-wrap" style="margin-bottom:18px;color:var(--text-soft);font-size:14px;">
+  本章进度：<span id="ch-progress-text">0 / 64</span>
+  <div class="progress-bar" id="ch-progress" data-ch-count="64" style="margin:6px 0 0;"><i></i></div>
+</div>
+<article class="problem" id="q387">
+<div class="q-head">
+<span class="q-no" data-n="387">【387】</span>
+<span class="q-group">利用原函数与不定积分的定义求解问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">下列函数中，不是 $e^{2x}-e^{-2x}$ 的原函数的是________．(A) $\dfrac{1}{2}(e^{2x}+e^{-2x})$　(B) $\dfrac{1}{2}(e^{x}+e^{-x})^{2}$　(C) $\dfrac{1}{2}(e^{x}-e^{-x})^{2}$　(D) $\dfrac{1}{2}(e^{2x}-e^{-2x})$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　$\Big[\dfrac{1}{2}(e^{2x}-e^{-2x})\Big]'=e^{2x}+e^{-2x}\neq e^{2x}-e^{-2x}$．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q388">
+<div class="q-head">
+<span class="q-no" data-n="388">【388】</span>
+<span class="q-group">利用原函数与不定积分的定义求解问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $f(x)$ 的导函数为 $\sin x$，则 $f(x)$ 的一个原函数是________．(A) $1+\sin x$　(B) $1-\sin x$　(C) $1+\cos x$　(D) $1-\cos x$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong>　由定义，$f(x)$ 的导函数是 $\sin x$，则 $f(x)$ 是 $\sin x$ 的原函数，因此可先对 $\sin x$ 求不定积分得到 $f(x)$，再对 $f(x)$ 求不定积分找到它的原函数，然后比较所给选项得到正确答案．<strong>解</strong>　因为 $f'(x)=\sin x$，所以 $f(x)=\int\sin x\mathrm{d}x=-\cos x+C_{1}$，而 $\int f(x)\mathrm{d}x=\int(-\cos x+C_{1})\mathrm{d}x=-\sin x+C_{1}x+C_{2}$，取 $C_{1}=0$，$C_{2}=1$ 得 $f(x)$ 的一个原函数为 $1-\sin x$．故应选 (B)．<strong>点评</strong>　利用原函数的定义求两次不定积分，并根据题目选取恰当的常数 $C_{1}$ 和 $C_{2}$，从而找到所要求的一个原函数是本题的主要方法，只要熟悉原函数的定义及基本积分表，题目便迎刃而解．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q389">
+<div class="q-head">
+<span class="q-no" data-n="389">【389】</span>
+<span class="q-group">利用原函数与不定积分的定义求解问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\int F'(x)\mathrm{d}x=\int G'(x)\mathrm{d}x$，则下列结论中错误的是________．(A) $F(x)=G(x)$　(B) $F(x)=G(x)+C$　(C) $F'(x)=G'(x)$　(D) $\mathrm{d}\int F'(x)\mathrm{d}x=\mathrm{d}\int G'(x)\mathrm{d}x$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　由不定积分的定义，$\int F'(x)\mathrm{d}x=F(x)+C_{1}$，$\int G'(x)\mathrm{d}x=G(x)+C_{2}$，其中 $C_{1},C_{2}$ 都是任意常数，所以有 $F(x)+C_{1}=G(x)+C_{2}$，即 $F(x)=G(x)+C$，此即选项 (B)；而结论 (B)，(C)，(D) 是互相等价的，所以错误的是 (A)．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<article class="problem" id="q390">
+<div class="q-head">
+<span class="q-no" data-n="390">【390】</span>
+<span class="q-group">利用原函数与不定积分的定义求解问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $F'(x)=\dfrac{1}{\sqrt{1-x^{2}}}$，$F(1)=\dfrac{3}{2}\pi$，则 $F(x)$ 为________．(A) $\arcsin x$　(B) $\arcsin x+C$　(C) $\arccos x+\pi$　(D) $\arcsin x+\pi$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong>　由 $F'(x)=\dfrac{1}{\sqrt{1-x^{2}}}$，对其求不定积分即可求得 $F(x)$，此 $F(x)$ 中带有常数 $C$．又知 $F(1)=\dfrac{3}{2}\pi$，由此条件，常数 $C$ 便可确定下来．<strong>解</strong>　由题意 $F(x)=\int\dfrac{\mathrm{d}x}{\sqrt{1-x^{2}}}=\arcsin x+C$．又 $F(1)=\dfrac{3}{2}\pi$，则 $\arcsin 1+C=\dfrac{3}{2}\pi$，所以 $C=\pi$．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q391">
+<div class="q-head">
+<span class="q-no" data-n="391">【391】</span>
+<span class="q-group">利用原函数与不定积分的定义求解问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $F_{1}(x),F_{2}(x)$ 是区间 $I$ 内连续函数 $f(x)$ 的两个不同的原函数，且 $f(x)\neq0$，则在区间 $I$ 内必有________．(A) $F_{1}(x)+F_{2}(x)=C$　(B) $F_{1}(x)\cdot F_{2}(x)=C$　(C) $F_{1}(x)=CF_{2}(x)$　(D) $F_{1}(x)-F_{2}(x)=C$（$C$ 为常数）</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong>　由原函数定义，$F_{1}'(x)=F_{2}'(x)=f(x)$，由 $(F_{1}(x)-F_{2}(x))'=F_{1}'(x)-F_{2}'(x)$，则 $F_{1}(x)-F_{2}(x)=C$，得 $F_{1}(x)$ 与 $F_{2}(x)$ 的关系．<strong>解</strong>　设 $G(x)=F_{1}(x)-F_{2}(x)$，则 $G'(x)=(F_{1}(x)-F_{2}(x))'=F_{1}'(x)-F_{2}'(x)=f(x)-f(x)=0$，从而 $G(x)=C$，即 $F_{1}(x)-F_{2}(x)=C$．故应选 (D)．<strong>点评</strong>　一个函数的任意两个原函数之间只相差一个常数，这是原函数的一个重要性质，由原函数的定义即可证明．此性质需熟记．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q392">
+<div class="q-head">
+<span class="q-no" data-n="392">【392】</span>
+<span class="q-group">利用原函数与不定积分的定义求解问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">下列等式中正确的是________．(A) $\int f'(x)\mathrm{d}x=f(x)$　(B) $\int\mathrm{d}f(x)=f(x)$　(C) $\dfrac{\mathrm{d}}{\mathrm{d}x}\int f(x)\mathrm{d}x=f(x)$　(D) $\mathrm{d}\int f(x)\mathrm{d}x=f(x)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　此题目讨论的是原函数、不定积分、导数、微分的关系．不定积分允许相差任意常数，而 (A)、(B) 漏掉了．(D) 的微分式中漏了 $\mathrm{d}x$，也不对．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用不定积分的性质讨论</h3>
+<article class="problem" id="q393">
+<div class="q-head">
+<span class="q-no" data-n="393">【393】</span>
+<span class="q-group">利用不定积分的性质讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $\int f(x)\mathrm{d}x=xe^{x}+C$，则 $f(x)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　两边取导数，得 $f(x)=e^{x}+xe^{x}=(1+x)e^{x}$．故应填 $(1+x)e^{x}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $(1+x)e^{x}$</span></div>
+</div>
+</article>
+<article class="problem" id="q394">
+<div class="q-head">
+<span class="q-no" data-n="394">【394】</span>
+<span class="q-group">利用不定积分的性质讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">如果等式 $\int f(x)e^{-\frac{1}{x}}\mathrm{d}x=-e^{-\frac{1}{x}}+C$，则函数 $f(x)=$________．(A) $-\dfrac{1}{x}$　(B) $-\dfrac{1}{x^{2}}$　(C) $\dfrac{1}{x}$　(D) $\dfrac{1}{x^{2}}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　这是关于原函数与被积函数关系的概念题．因为 $\int f(x)\mathrm{d}x=F(x)+C$，则有 $F'(x)=f(x)$，因此 $f(x)e^{-\frac{1}{x}}=(-e^{-\frac{1}{x}})'=-\dfrac{1}{x^{2}}e^{-\frac{1}{x}}$，比较等式两边可知 $f(x)=-\dfrac{1}{x^{2}}$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q395">
+<div class="q-head">
+<span class="q-no" data-n="395">【395】</span>
+<span class="q-group">利用不定积分的性质讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\mathrm{d}\int\mathrm{d}f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　由不定积分的性质知 $\int\mathrm{d}f(x)=f(x)+C$，故 $\mathrm{d}\int\mathrm{d}f(x)=\mathrm{d}f(x)$．从而 $\int\mathrm{d}\int\mathrm{d}f(x)=\int\mathrm{d}f(x)=f(x)+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\int\mathrm{d}\int\mathrm{d}f(x)=f(x)+C$</span></div>
+</div>
+</article>
+<h3 class="grp-h">作代换求函数表达式</h3>
+<article class="problem" id="q396">
+<div class="q-head">
+<span class="q-no" data-n="396">【396】</span>
+<span class="q-group">作代换求函数表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f'(\cos^{2}x)=\sin^{2}x$，且 $f(0)=0$，则 $f(x)=$________．(A) $\cos x+\dfrac{1}{2}\cos^{2}x$　(B) $\cos^{2}x-\dfrac{1}{2}\cos^{4}x$　(C) $x+\dfrac{1}{2}x^{2}$　(D) $x-\dfrac{1}{2}x^{2}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong>　这是导数的概念与不定积分的概念的综合题．<strong>解</strong>　因为 $f'(\cos^{2}x)=\sin^{2}x$ 是表示 $\dfrac{\mathrm{d}f(\cos^{2}x)}{\mathrm{d}\cos^{2}x}=\sin^{2}x=1-\cos^{2}x$，用 $x$ 换式中的 $\cos^{2}x$，则有 $\dfrac{\mathrm{d}f(x)}{\mathrm{d}x}=1-x$，积分得 $f(x)=x-\dfrac{x^{2}}{2}+C$．当 $x=0$ 时，$f(0)=0$ 代入上式得 $C=0$．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用不定积分的性质求分段函数的表达式</h3>
+<article class="problem" id="q397">
+<div class="q-head">
+<span class="q-no" data-n="397">【397】</span>
+<span class="q-group">利用不定积分的性质求分段函数的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=|x|+2$，则 $\int f(x)\mathrm{d}x=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　$f(x)=\begin{cases}x+2, &amp; x&gt;0\\ -x+2, &amp; x\leqslant0\end{cases}$．当 $x&gt;0$ 时，$\int f(x)\mathrm{d}x=\int(x+2)\mathrm{d}x=\dfrac{1}{2}x^{2}+2x+C_{1}$．当 $x\leqslant0$ 时，$\int f(x)\mathrm{d}x=\int(-x+2)\mathrm{d}x=-\dfrac{1}{2}x^{2}+2x+C_{2}$．因为 $F(x)$ 在 $x=0$ 点连续，故 $\dfrac{1}{2}\cdot0+2\cdot0+C_{1}=-\dfrac{1}{2}\cdot0+2\cdot0+C_{2}$，所以 $C_{1}=C_{2}$．故 $\int f(x)\mathrm{d}x=\begin{cases}\dfrac{1}{2}x^{2}+2x+C, &amp; x&gt;0\\ -\dfrac{1}{2}x^{2}+2x+C, &amp; x\leqslant0\end{cases}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\int f(x)\mathrm{d}x=\begin{cases}\dfrac{1}{2}x^{2}+2x+C, &amp; x&gt;0\\ -\dfrac{1}{2}x^{2}+2x+C, &amp; x\leqslant0\end{cases}$</span></div>
+</div>
+</article>
+<article class="problem" id="q398">
+<div class="q-head">
+<span class="q-no" data-n="398">【398】</span>
+<span class="q-group">利用不定积分的性质求分段函数的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求下列不定积分 (1) $\int x^{2}\sqrt[3]{x}\,\mathrm{d}x$；(2) $\int(x-2)^{2}\mathrm{d}x$；(3) $\int\dfrac{(1-x)^{2}}{\sqrt{x}}\mathrm{d}x$；(4) $\int\dfrac{3x^{4}+3x^{2}+1}{x^{2}+1}\mathrm{d}x$；(5) $\int3^{x}e^{x}\mathrm{d}x$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong>　利用不定积分的性质及基本积分公式求不定积分的方法称为直接积分法，这是积分常用的方法之一．被积函数如果不是积分表中的类型，可先把被积函数进行恒等变形，然后再积分．<strong>解</strong>　(1) $\int x^{2}\sqrt[3]{x}\,\mathrm{d}x=\int x^{\frac{7}{3}}\mathrm{d}x=\dfrac{1}{\frac{7}{3}+1}x^{\frac{7}{3}+1}+C=\dfrac{3}{10}x^{\frac{10}{3}}+C$；(2) $\int(x-2)^{2}\mathrm{d}x=\int(x^{2}-4x+4)\mathrm{d}x=\int x^{2}\mathrm{d}x-4\int x\mathrm{d}x+4\int\mathrm{d}x=\dfrac{1}{3}x^{3}-2x^{2}+4x+C$；(3) $\int\dfrac{(1-x)^{2}}{\sqrt{x}}\mathrm{d}x=\int x^{\frac{3}{2}}\mathrm{d}x-2\int x^{\frac{1}{2}}\mathrm{d}x+\int x^{-\frac{1}{2}}\mathrm{d}x=\dfrac{2}{5}x^{\frac{5}{2}}-\dfrac{4}{3}x^{\frac{3}{2}}+2x^{\frac{1}{2}}+C$；(4) $\int\dfrac{3x^{4}+3x^{2}+1}{x^{2}+1}\mathrm{d}x=\int\dfrac{3x^{2}(x^{2}+1)+1}{x^{2}+1}\mathrm{d}x=\int\Big(3x^{2}+\dfrac{1}{1+x^{2}}\Big)\mathrm{d}x=\int3x^{2}\mathrm{d}x+\int\dfrac{1}{1+x^{2}}\mathrm{d}x=x^{3}+\arctan x+C$；(5) $\int3^{x}e^{x}\mathrm{d}x=\int(3e)^{x}\mathrm{d}x=\dfrac{1}{\ln(3e)}(3e)^{x}+C$．<strong>点评</strong>　直接积分法要求熟练掌握基本积分公式，对被积函数可通过恒等变形后利用积分性质化为若干个基本积分公式的形式，从而求得积分．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $\dfrac{3}{10}x^{\frac{10}{3}}+C$；(2) $\dfrac{1}{3}x^{3}-2x^{2}+4x+C$；(3) $\dfrac{2}{5}x^{\frac{5}{2}}-\dfrac{4}{3}x^{\frac{3}{2}}+2x^{\frac{1}{2}}+C$；(4) $x^{3}+\arctan x+C$；(5) $\dfrac{1}{\ln(3e)}(3e)^{x}+C$</span></div>
+</div>
+</article>
+<h3 class="grp-h">使用基本积分公式计算不定积分</h3>
+<article class="problem" id="q399">
+<div class="q-head">
+<span class="q-no" data-n="399">【399】</span>
+<span class="q-group">使用基本积分公式计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\dfrac{1+x+x^{2}}{x(1+x^{2})}\mathrm{d}x$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong>　基本积分表中没有这种类型的积分，我们可以先把被积函数变形，化为表中所列类型之后，再逐项积分．<strong>解</strong>　$\int\dfrac{1+x+x^{2}}{x(1+x^{2})}\mathrm{d}x=\int\dfrac{x+(1+x^{2})}{x(1+x^{2})}\mathrm{d}x=\int\Big(\dfrac{1}{1+x^{2}}+\dfrac{1}{x}\Big)\mathrm{d}x=\int\dfrac{1}{1+x^{2}}\mathrm{d}x+\int\dfrac{1}{x}\mathrm{d}x=\arctan x+\ln|x|+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\arctan x+\ln|x|+C$</span></div>
+</div>
+</article>
+<article class="problem" id="q400">
+<div class="q-head">
+<span class="q-no" data-n="400">【400】</span>
+<span class="q-group">使用基本积分公式计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\dfrac{1+\sin^{2}x}{1-\cos 2x}\mathrm{d}x$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　$\int\dfrac{1+\sin^{2}x}{1-\cos 2x}\mathrm{d}x=\int\dfrac{1+\sin^{2}x}{1-1+2\sin^{2}x}\mathrm{d}x=\dfrac{1}{2}\int(\csc^{2}x+1)\mathrm{d}x=-\dfrac{1}{2}\cot x+\dfrac{1}{2}x+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-\dfrac{1}{2}\cot x+\dfrac{1}{2}x+C$</span></div>
+</div>
+</article>
+<h3 class="grp-h">求积分曲线</h3>
+<article class="problem" id="q401">
+<div class="q-head">
+<span class="q-no" data-n="401">【401】</span>
+<span class="q-group">求积分曲线</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">一曲线通过点 $(e^{2},3)$，且在任一点处的切线斜率等于该点横坐标的倒数，求该积分曲线．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong>　函数的原函数图形即为此函数的积分曲线．由题意，本题是求函数 $\dfrac{1}{x}$ 的通过点 $(e^{2},3)$ 的那条积分曲线．<strong>解</strong>　设该曲线的方程为 $y=f(x)$，由题意知 $y'=f'(x)=\dfrac{1}{x}$，从而 $y=\int\dfrac{1}{x}\mathrm{d}x=\ln|x|+C$，又曲线过点 $(e^{2},3)$，所以 $3=\ln e^{2}+C=2+C$，即得 $C=1$．因此该曲线方程为 $y=\ln|x|+1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">因此该曲线方程为 $y=\ln|x|+1$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s1">§2. 换元积分法</h2>
+<h2 class="sec-h" id="sec-s2">1. 第一换元法（凑微分法）</h2>
+<div class="sec-intro">1．第一换元法（凑微分法）　设 $\int f(u)\mathrm{d}u=F(u)+C$，且 $u=\varphi(x)$ 可微，则 $\int f[\varphi(x)]\varphi'(x)\mathrm{d}x=\int f[\varphi(x)]\mathrm{d}\varphi(x)=F[\varphi(x)]+C$．</div>
+<h2 class="sec-h" id="sec-s3">2. 第二换元法</h2>
+<h3 class="grp-h">使用第一换元法求不定积分</h3>
+<article class="problem" id="q402" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="402">【402】</span>
+<span class="q-group">使用第一换元法求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $F(x)$ 是 $f(x)$ 的一个原函数，则 $\int e^{-x}f(e^{-x})\mathrm{d}x=$________．(A) $F(e^{-x})+C$　(B) $-F(e^{-x})+C$　(C) $F(e^{x})+C$　(D) $-F(e^{x})+C$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　这是考察原函数定义和不定积分换元积分法的基本概念题．因为 $\int f(x)\mathrm{d}x=F(x)+C$（原函数的概念），又 $\int e^{-x}f(e^{-x})\mathrm{d}x=-\int f(e^{-x})\mathrm{d}e^{-x}=-F(e^{-x})+C$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q403" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="403">【403】</span>
+<span class="q-group">使用第一换元法求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\int xf(x)\mathrm{d}x=\arcsin x+C$，求 $\int\dfrac{1}{f(x)}\mathrm{d}x$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　对等式求导得 $xf(x)=\dfrac{1}{\sqrt{1-x^{2}}}$，从而 $\dfrac{1}{f(x)}=x\sqrt{1-x^{2}}$．所以 $\int\dfrac{1}{f(x)}\mathrm{d}x=\int x\sqrt{1-x^{2}}\,\mathrm{d}x=-\dfrac{1}{3}(1-x^{2})^{\frac{3}{2}}+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-\dfrac{1}{3}(1-x^{2})^{\frac{3}{2}}+C$</span></div>
+</div>
+</article>
+<article class="problem" id="q404" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="404">【404】</span>
+<span class="q-group">使用第一换元法求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">如果 $f(x)=e^{-x}$，则 $\int\dfrac{f'(\ln x)}{x}\mathrm{d}x=$________．(A) $-\dfrac{1}{x}+C$　(B) $\dfrac{1}{x}+C$　(C) $-\ln x+C$　(D) $\ln x+C$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　$\int\dfrac{f'(\ln x)}{x}\mathrm{d}x=\int f'(\ln x)\mathrm{d}\ln x=\int\mathrm{d}f(\ln x)=f(\ln x)+C=e^{-\ln x}+C=\dfrac{1}{x}+C$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q405" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="405">【405】</span>
+<span class="q-group">使用第一换元法求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求下列不定积分：(1) $\int xf(x^{2})f'(x^{2})\mathrm{d}x$；(2) $\int\dfrac{f'(\ln x)}{x}\mathrm{d}x$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　(1) 设 $u=x^{2}$，则 $xf'(x^{2})\mathrm{d}x=\dfrac{1}{2}f'(x^{2})\mathrm{d}x^{2}=\dfrac{1}{2}f'(u)\mathrm{d}u=\dfrac{1}{2}\mathrm{d}f(u)$，所以 $\int xf(x^{2})f'(x^{2})\mathrm{d}x=\dfrac{1}{2}\int f(u)\mathrm{d}f(u)=\dfrac{1}{4}[f(u)]^{2}+C=\dfrac{1}{4}[f(x^{2})]^{2}+C$；(2) 设 $v=\ln x$，则 $\dfrac{f'(\ln x)}{x}\mathrm{d}x=f'(\ln x)\mathrm{d}\ln x=f'(v)\mathrm{d}v$，所以 $\int\dfrac{f'(\ln x)}{x}\mathrm{d}x=\int f'(v)\mathrm{d}v=f(v)+C=f(\ln x)+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $\dfrac{1}{4}[f(x^{2})]^{2}+C$；(2) $f(\ln x)+C$</span></div>
+</div>
+</article>
+<article class="problem" id="q406" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="406">【406】</span>
+<span class="q-group">使用第一换元法求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f'(e^{x})=xe^{-x}$，且 $f(1)=0$，则 $f(x)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　由 $f'(e^{x})=xe^{-x}$ 得 $f'(t)=\dfrac{\ln t}{t}$，故 $f(x)=\int\dfrac{\ln x}{x}\mathrm{d}x=\dfrac{1}{2}(\ln x)^{2}+C$．再把 $f(1)=0$ 代入上式得 $C=0$，从而 $f(x)=\dfrac{1}{2}(\ln x)^{2}$．故应填 $\dfrac{1}{2}(\ln x)^{2}$．<strong>点评</strong>　本题属于基本题型，采用换元法令 $e^{x}=t$，从而得出 $f(x)$ 的表达式，然后使用“凑”微分计算．最后应记住把任意常数确定下来．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{2}(\ln x)^{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q407" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="407">【407】</span>
+<span class="q-group">使用第一换元法求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求下列函数的不定积分：(1) $\int\dfrac{\mathrm{d}x}{4-9x^{2}}$；(2) $\int\dfrac{1}{\sqrt{4-9x^{2}}}\mathrm{d}x$；(3) $\int\dfrac{\mathrm{d}x}{\sqrt{5-2x-x^{2}}}$；(4) $\int\dfrac{\mathrm{d}x}{\sqrt{x(4-x)}}$；(5) $\int\dfrac{\mathrm{d}x}{x\sqrt{1-\ln^{2}x}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　(1) $\int\dfrac{\mathrm{d}x}{4-9x^{2}}=\dfrac{1}{4}\int\dfrac{\mathrm{d}x}{1-(\frac{3}{2}x)^{2}}=\dfrac{1}{8}\int\Big[\dfrac{1}{1-\frac{3}{2}x}+\dfrac{1}{1+\frac{3}{2}x}\Big]\mathrm{d}x=\dfrac{1}{8}\Big[-\dfrac{2}{3}\int\dfrac{\mathrm{d}(1-\frac{3}{2}x)}{1-\frac{3}{2}x}+\dfrac{2}{3}\int\dfrac{\mathrm{d}(1+\frac{3}{2}x)}{1+\frac{3}{2}x}\Big]=\dfrac{1}{12}\Big[\ln\Big|1+\dfrac{3}{2}x\Big|-\ln\Big|1-\dfrac{3}{2}x\Big|\Big]+C=\dfrac{1}{12}\ln\Big|\dfrac{2+3x}{2-3x}\Big|+C$；(2) $\int\dfrac{\mathrm{d}x}{\sqrt{4-9x^{2}}}=\dfrac{1}{2}\int\dfrac{\mathrm{d}x}{\sqrt{1-(\frac{3}{2}x)^{2}}}=\dfrac{1}{2}\cdot\dfrac{2}{3}\int\dfrac{\mathrm{d}(\frac{3}{2}x)}{\sqrt{1-(\frac{3}{2}x)^{2}}}=\dfrac{1}{3}\arcsin(\dfrac{3}{2}x)+C$；(3) $\int\dfrac{\mathrm{d}x}{\sqrt{5-2x-x^{2}}}=\int\dfrac{\mathrm{d}x}{\sqrt{6-(x+1)^{2}}}=\arcsin\dfrac{x+1}{\sqrt{6}}+C$；(4) $\dfrac{\mathrm{d}x}{\sqrt{x(4-x)}}=\int\dfrac{1}{\sqrt{4-(2-x)^{2}}}\mathrm{d}x=\arcsin\dfrac{x-2}{2}+C$；(5) $\int\dfrac{\mathrm{d}x}{x\sqrt{1-\ln^{2}x}}=\int\dfrac{\mathrm{d}\ln x}{\sqrt{1-\ln^{2}x}}=\arcsin\ln x+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $\dfrac{1}{12}\ln\Big|\dfrac{2+3x}{2-3x}\Big|+C$；(2) $\dfrac{1}{3}\arcsin(\dfrac{3}{2}x)+C$；(3) $\arcsin\dfrac{x+1}{\sqrt{6}}+C$；(4) $\arcsin\dfrac{x-2}{2}+C$；(5) $\arcsin\ln x+C$</span></div>
+</div>
+</article>
+<article class="problem" id="q408" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="408">【408】</span>
+<span class="q-group">使用第一换元法求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求下列三角函数的不定积分：(1) $\int\sin x\sin 3x\,\mathrm{d}x$；(2) $\int\sin^{2}3x\,\mathrm{d}x$；(3) $\int\sin^{3}x\cos^{2}x\,\mathrm{d}x$；(4) $\int\sin^{3}x\,\mathrm{d}x$；(5) $\int\cos^{5}x\,\mathrm{d}x$；(6) $\int\tan^{3}x\,\mathrm{d}x$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　(1) 利用三角函数积化和差公式 $2\sin\alpha\sin\beta=\cos(\alpha-\beta)-\cos(\alpha+\beta)$，可得 $\int\sin x\sin 3x\,\mathrm{d}x=\dfrac{1}{2}\int(\cos 2x-\cos 4x)\,\mathrm{d}x=\dfrac{1}{2}\Big[\dfrac{1}{2}\int\cos 2x\,\mathrm{d}(2x)-\dfrac{1}{4}\int\cos 4x\,\mathrm{d}(4x)\Big]=\dfrac{1}{8}(2\sin 2x-\sin 4x)+C$；(2) $\int\sin^{2}3x\,\mathrm{d}x=\int\dfrac{1-\cos 6x}{2}\,\mathrm{d}x=\int\dfrac{1}{2}\,\mathrm{d}x-\dfrac{1}{12}\int\cos 6x\,\mathrm{d}(6x)=\dfrac{1}{2}x-\dfrac{1}{12}\sin 6x+C$；(3) $\int\sin^{3}x\cos^{2}x\,\mathrm{d}x=\int\sin^{2}x\cos^{2}x\sin x\,\mathrm{d}x=\int(1-\cos^{2}x)\cos^{2}x(-\mathrm{d}\cos x)=-\int(\cos^{2}x-\cos^{4}x)\,\mathrm{d}\cos x=\dfrac{1}{5}\cos^{5}x-\dfrac{1}{3}\cos^{3}x+C$；(4) $\int\sin^{3}x\,\mathrm{d}x=\int\sin^{2}x\sin x\,\mathrm{d}x=-\int(1-\cos^{2}x)\,\mathrm{d}(\cos x)=-\int\mathrm{d}(\cos x)+\int\cos^{2}x\,\mathrm{d}(\cos x)=-\cos x+\dfrac{1}{3}\cos^{3}x+C$；(5) $\int\cos^{5}x\,\mathrm{d}x=\int(\cos^{2}x)^{2}\cos x\,\mathrm{d}x=\int(1-\sin^{2}x)^{2}\,\mathrm{d}(\sin x)=\int(1-2\sin^{2}x+\sin^{4}x)\,\mathrm{d}(\sin x)=\sin x-\dfrac{2}{3}\sin^{3}x+\dfrac{1}{5}\sin^{5}x+C$；(6) $\int\tan^{3}x\,\mathrm{d}x=\int\tan^{2}x\tan x\,\mathrm{d}x=\int(\sec^{2}x-1)\tan x\,\mathrm{d}x=\int\sec^{2}x\tan x\,\mathrm{d}x-\int\tan x\,\mathrm{d}x=\int\tan x\,\mathrm{d}(\tan x)-\int\dfrac{\sin x}{\cos x}\,\mathrm{d}x=\dfrac{1}{2}\tan^{2}x+\ln|\cos x|+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $\dfrac{1}{8}(2\sin 2x-\sin 4x)+C$；(2) $\dfrac{1}{2}x-\dfrac{1}{12}\sin 6x+C$；(3) $\dfrac{1}{5}\cos^{5}x-\dfrac{1}{3}\cos^{3}x+C$；(4) $-\cos x+\dfrac{1}{3}\cos^{3}x+C$；(5) $\sin x-\dfrac{2}{3}\sin^{3}x+\dfrac{1}{5}\sin^{5}x+C$；(6) $\dfrac{1}{2}\tan^{2}x+\ln|\cos x|+C$</span></div>
+</div>
+</article>
+<article class="problem" id="q409" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="409">【409】</span>
+<span class="q-group">使用第一换元法求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求下列不定积分：(1) $\int e^{\sin x}\cos x\,\mathrm{d}x$；(2) $\int\dfrac{1-\sin x}{x+\cos x}\,\mathrm{d}x$；(3) $\int\dfrac{\mathrm{d}x}{1+\sin x}$；(4) $\int\dfrac{\mathrm{d}x}{\sin^{2}x+5\cos^{2}x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　(1) $\int e^{\sin x}\cos x\,\mathrm{d}x=\int e^{\sin x}\,\mathrm{d}(\sin x)=e^{\sin x}+C$；(2) $\int\dfrac{1-\sin x}{x+\cos x}\,\mathrm{d}x=\int\dfrac{1}{x+\cos x}\,\mathrm{d}(x+\cos x)=\ln|x+\cos x|+C$；(3) 解法一　原式 $=\int\dfrac{1-\sin x}{\cos^{2}x}\,\mathrm{d}x=\tan x-\dfrac{1}{\cos x}+C$；解法二　原式 $=\int\dfrac{\mathrm{d}x}{(\cos\frac{x}{2}+\sin\frac{x}{2})^{2}}=\int\dfrac{\sec^{2}\frac{x}{2}}{(1+\tan\frac{x}{2})^{2}}\,\mathrm{d}x=2\int\dfrac{\mathrm{d}(1+\tan\frac{x}{2})}{(1+\tan\frac{x}{2})^{2}}=-\dfrac{2}{1+\tan\frac{x}{2}}+C$；(4) $\int\dfrac{\mathrm{d}x}{\sin^{2}x+5\cos^{2}x}=\int\dfrac{\mathrm{d}x}{\cos^{2}x(5+\tan^{2}x)}=\int\dfrac{\sec^{2}x\,\mathrm{d}x}{5+\tan^{2}x}=\int\dfrac{\mathrm{d}\tan x}{(\sqrt{5})^{2}+\tan^{2}x}=\dfrac{1}{\sqrt{5}}\arctan\dfrac{\tan x}{\sqrt{5}}+C$．<strong>点评</strong>　能否熟练地凑微分，是求不定积分的重要技巧之一，常见的一些凑微分形式如下：(1) $x^{n-1}f(kx^{n}+p)\,\mathrm{d}x=\dfrac{1}{kn}f(kx^{n}+p)\,\mathrm{d}(kx^{n}+p)$；(2) $e^{x}f(ke^{x}+p)\,\mathrm{d}x=\dfrac{1}{k}f(ke^{x}+p)\,\mathrm{d}(ke^{x}+p)$，$a^{x}f(ka^{x}+p)\,\mathrm{d}x=\dfrac{1}{k\ln a}f(ka^{x}+p)\,\mathrm{d}(ka^{x}+p)$；(3) $\cos x f(k\sin x+p)\,\mathrm{d}x=\dfrac{1}{k}f(k\sin x+p)\,\mathrm{d}(k\sin x+p)$，$\sin x f(k\cos x+p)\,\mathrm{d}x=-\dfrac{1}{k}f(k\cos x+p)\,\mathrm{d}(k\cos x+p)$，$\dfrac{1}{\cos^{2}x}f(k\tan x+p)\,\mathrm{d}x=\dfrac{1}{k}f(k\tan x+p)\,\mathrm{d}(k\tan x+p)$；(4) $\dfrac{1}{x}f(k\ln x+p)\,\mathrm{d}x=\dfrac{1}{k}f(k\ln x+p)\,\mathrm{d}(k\ln x+p)$，$\dfrac{1}{x}f(k\log_{a}x+p)\,\mathrm{d}x=\dfrac{\ln a}{k}f(k\log_{a}x+p)\,\mathrm{d}(k\log_{a}x+p)$；(5) $f(\arcsin x)\cdot\dfrac{\mathrm{d}x}{\sqrt{1-x^{2}}}=f(\arcsin x)\,\mathrm{d}(\arcsin x)$，$f(\arctan\dfrac{x}{a})\cdot\dfrac{\mathrm{d}x}{a^{2}+x^{2}}=\dfrac{1}{a}f(\arctan\dfrac{x}{a})\,\mathrm{d}(\arctan\dfrac{x}{a})$；(6) $\dfrac{x\,\mathrm{d}x}{1+x^{2}}=\dfrac{1}{2}\mathrm{d}\ln(1+x^{2})$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $e^{\sin x}+C$；(2) $\ln|x+\cos x|+C$；(3) $\tan x-\dfrac{1}{\cos x}+C$，或 $-\dfrac{2}{1+\tan\frac{x}{2}}+C$；(4) $\dfrac{1}{\sqrt{5}}\arctan\dfrac{\tan x}{\sqrt{5}}+C$</span></div>
+</div>
+</article>
+<h3 class="grp-h">使用第二换元法计算不定积分</h3>
+<article class="problem" id="q410" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="410">【410】</span>
+<span class="q-group">使用第二换元法计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\dfrac{\mathrm{d}x}{\sqrt{x}(1+\sqrt[3]{x})}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　为了除去根号，设 $x=t^{6}$（$t&gt;0$），则 $t=\sqrt[6]{x}$，这时 $\int\dfrac{\mathrm{d}x}{\sqrt{x}(1+\sqrt[3]{x})}=\int\dfrac{\mathrm{d}t^{6}}{t^{3}(1+t^{2})}=\int\dfrac{6t^{5}\,\mathrm{d}t}{t^{3}(1+t^{2})}=6\int\dfrac{t^{2}}{1+t^{2}}\,\mathrm{d}t=6\int\dfrac{t^{2}+1-1}{1+t^{2}}\,\mathrm{d}t=6\int\Big(1-\dfrac{1}{1+t^{2}}\Big)\mathrm{d}t=6(t-\arctan t)+C=6(\sqrt[6]{x}-\arctan\sqrt[6]{x})+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$6(\sqrt[6]{x}-\arctan\sqrt[6]{x})+C$</span></div>
+</div>
+</article>
+<article class="problem" id="q411" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="411">【411】</span>
+<span class="q-group">使用第二换元法计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\int\dfrac{\mathrm{d}x}{(2-x)\sqrt{1-x}}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　原式 $\xrightarrow{\sqrt{1-x}=t}$ $\int\dfrac{-2t}{(1+t^{2})t}\,\mathrm{d}t=-2\int\dfrac{1}{1+t^{2}}\,\mathrm{d}t=-2\arctan t+C=-2\arctan\sqrt{1-x}+C$．故应填 $-2\arctan\sqrt{1-x}+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-2\arctan\sqrt{1-x}+C$</span></div>
+</div>
+</article>
+<article class="problem" id="q412" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="412">【412】</span>
+<span class="q-group">使用第二换元法计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int x^{3}\sqrt{4-x^{2}}\,\mathrm{d}x$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　令 $x=2\sin u$，$\mathrm{d}x=2\cos u\,\mathrm{d}u$，$\int x^{3}\sqrt{4-x^{2}}\,\mathrm{d}x=\int 8\sin^{3}u\cdot2\cos u\cdot2\cos u\,\mathrm{d}u=32\int\cos^{2}u\sin^{3}u\,\mathrm{d}u=32\int\cos^{2}u(\cos^{2}u-1)\,\mathrm{d}\cos u=32\int(\cos^{4}u-\cos^{2}u)\,\mathrm{d}\cos u=\dfrac{32}{5}\cos^{5}u-\dfrac{32}{3}\cos^{3}u+C=\dfrac{1}{5}(4-x^{2})^{\frac{5}{2}}-\dfrac{4}{3}(4-x^{2})^{\frac{3}{2}}+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{1}{5}(4-x^{2})^{\frac{5}{2}}-\dfrac{4}{3}(4-x^{2})^{\frac{3}{2}}+C$</span></div>
+</div>
+</article>
+<article class="problem" id="q413" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="413">【413】</span>
+<span class="q-group">使用第二换元法计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\dfrac{\mathrm{d}x}{(2x^{2}+1)\sqrt{x^{2}+1}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　设 $x=\tan u$，则 $\mathrm{d}x=\sec^{2}u\,\mathrm{d}u$，$\int\dfrac{\mathrm{d}x}{(2x^{2}+1)\sqrt{x^{2}+1}}=\int\dfrac{\mathrm{d}u}{\cos u\cdot(2\tan^{2}u+1)}=\int\dfrac{\cos u\,\mathrm{d}u}{2\sin^{2}u+\cos^{2}u}=\int\dfrac{\mathrm{d}\sin u}{1+\sin^{2}u}=\arctan(\sin u)+C=\arctan\Big(\dfrac{x}{\sqrt{1+x^{2}}}\Big)+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\arctan\Big(\dfrac{x}{\sqrt{1+x^{2}}}\Big)+C$</span></div>
+</div>
+</article>
+<article class="problem" id="q414" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="414">【414】</span>
+<span class="q-group">使用第二换元法计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\dfrac{x^{2}\,\mathrm{d}x}{(x^{2}-a^{2})^{\frac{3}{2}}}$．</div>
+<div class="figure-note">（图 414）直角三角形：左下角为锐角 $t$（带弧线标记），下底边（邻边）标 $a$，斜边标 $x$，右侧竖直边（对边）标 $\sqrt{x^{2}-a^{2}}$，右下角有直角符号（小正方形）．</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　作正割代换，令 $x=a\sec t$（$0&lt;t&lt;\dfrac{\pi}{2}$），把 $(x^{2}-a^{2})^{\frac{3}{2}}=a^{3}(\sec^{2}t-1)^{\frac{3}{2}}=a^{3}\tan^{3}t$，$\mathrm{d}x=a\cdot\sec t\cdot\tan t\,\mathrm{d}t$ 代入积分中得 $\int\dfrac{x^{2}\,\mathrm{d}x}{(x^{2}-a^{2})^{\frac{3}{2}}}=\int\dfrac{a^{2}\sec^{2}t}{a^{3}\tan^{3}t}\,a\cdot\sec t\cdot\tan t\,\mathrm{d}t=\int\dfrac{\mathrm{d}t}{\sin^{2}t\cos t}=\int\dfrac{\sin^{2}t+\cos^{2}t}{\sin^{2}t\cos t}\,\mathrm{d}t=\int\dfrac{\cos t}{\sin^{2}t}\,\mathrm{d}t+\int\dfrac{\mathrm{d}t}{\cos t}=-\dfrac{1}{\sin t}+\ln|\sec t+\tan t|+C_{1}$．画一个直角三角形，使它的一个锐角为 $t$，斜边为 $x$（如图 414），这时，$\sin t=\dfrac{\sqrt{x^{2}-a^{2}}}{x}$，$\tan t=\dfrac{\sqrt{x^{2}-a^{2}}}{a}$，于是所求积分为 $\int\dfrac{x^{2}}{(x^{2}-a^{2})^{\frac{3}{2}}}\,\mathrm{d}x=-\dfrac{x}{\sqrt{x^{2}-a^{2}}}+\ln|x+\sqrt{x^{2}-a^{2}}|+C$．其中 $C=C_{1}-\ln a$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-\dfrac{x}{\sqrt{x^{2}-a^{2}}}+\ln|x+\sqrt{x^{2}-a^{2}}|+C$（其中 $C=C_{1}-\ln a$）</span></div>
+</div>
+</article>
+<article class="problem" id="q415" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="415">【415】</span>
+<span class="q-group">使用第二换元法计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求不定积分 $\int\dfrac{\mathrm{d}x}{x\sqrt{x^{2}+1}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　令 $\dfrac{1}{x}=t$，则 原式 $=\int\dfrac{-\frac{1}{t^{2}}}{\frac{1}{t}\sqrt{\frac{1}{t^{2}}+1}}\,\mathrm{d}t=-\int\dfrac{1}{\sqrt{1+t^{2}}}\,\mathrm{d}t=-\ln(t+\sqrt{1+t^{2}})+C=-\ln\Big(\dfrac{1}{x}+\sqrt{1+\dfrac{1}{x^{2}}}\Big)+C=-\ln\dfrac{1+\sqrt{1+x^{2}}}{x}+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-\ln\dfrac{1+\sqrt{1+x^{2}}}{x}+C$</span></div>
+</div>
+</article>
+<article class="problem" id="q416" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="416">【416】</span>
+<span class="q-group">使用第二换元法计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\dfrac{\sqrt{a^{2}-x^{2}}}{x^{4}}\,\mathrm{d}x$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>　设 $x=\dfrac{1}{t}$，那么 $\mathrm{d}x=-\dfrac{\mathrm{d}t}{t^{2}}$，于是 $\int\dfrac{\sqrt{a^{2}-x^{2}}}{x^{4}}\,\mathrm{d}x=\int\dfrac{\sqrt{a^{2}-\frac{1}{t^{2}}}\cdot\Big(-\dfrac{\mathrm{d}t}{t^{2}}\Big)}{\frac{1}{t^{4}}}=-\int(a^{2}t^{2}-1)^{\frac{1}{2}}|t|\,\mathrm{d}t$，当 $x&gt;0$ 时，有 $\int\dfrac{\sqrt{a^{2}-x^{2}}}{x^{4}}\,\mathrm{d}x=-\dfrac{1}{2a^{2}}\int(a^{2}t^{2}-1)^{\frac{1}{2}}\,\mathrm{d}(a^{2}t^{2}-1)=-\dfrac{(a^{2}t^{2}-1)^{\frac{3}{2}}}{3a^{2}}+C=-\dfrac{(a^{2}-x^{2})^{\frac{3}{2}}}{3a^{2}x^{3}}+C$，当 $x&lt;0$ 时，有相同的结果．故无论何种情形，总有 $\int\dfrac{\sqrt{a^{2}-x^{2}}}{x^{4}}\,\mathrm{d}x=-\dfrac{(a^{2}-x^{2})^{\frac{3}{2}}}{3a^{2}x^{3}}+C$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-\dfrac{(a^{2}-x^{2})^{\frac{3}{2}}}{3a^{2}x^{3}}+C$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s4">3. 分部积分法</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">使用分部积分公式求不定积分</h3>
+<article class="problem" id="q417" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="417">【417】</span>
+<span class="q-group">使用分部积分公式求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\ln(x+\sqrt{x^2+1})\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\int\ln(x+\sqrt{x^2+1})\,\mathrm{d}x = x\cdot\ln(x+\sqrt{x^2+1}) - \int x\cdot\frac{1}{x+\sqrt{x^2+1}}\left(1+\frac{x}{\sqrt{x^2+1}}\right)\mathrm{d}x = x\ln(x+\sqrt{x^2+1}) - \int\frac{x}{\sqrt{x^2+1}}\,\mathrm{d}x = x\ln(x+\sqrt{x^2+1}) - \sqrt{x^2+1} + C$.</div>
+
+</div>
+</article>
+<article class="problem" id="q418" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="418">【418】</span>
+<span class="q-group">使用分部积分公式求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算 $\int\frac{x+\ln^3 x}{(x\ln x)^2}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由于分母为一项，分子为两项，应先考虑分成两项，再用凑微分及分部积分法积分.
+$$\int\frac{x+\ln^3 x}{(x\ln x)^2}\,\mathrm{d}x = \int\frac{1}{x\ln^2 x}\,\mathrm{d}x + \int\frac{\ln x}{x^2}\,\mathrm{d}x = \int\frac{1}{\ln^2 x}\,\mathrm{d}\ln x + \int\ln x\,\mathrm{d}\left(-\frac{1}{x}\right)$$
+$$= -\frac{1}{\ln x} - \frac{1}{x}\ln x + \int\frac{1}{x^2}\,\mathrm{d}x = -\frac{1}{\ln x} - \frac{1}{x}\ln x - \frac{1}{x} + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q419" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="419">【419】</span>
+<span class="q-group">使用分部积分公式求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\int\frac{\ln x - 1}{x^2}\,\mathrm{d}x =$ ________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $= \int\ln x\,\mathrm{d}\left(-\frac{1}{x}\right) - \int\frac{1}{x^2}\,\mathrm{d}x = -\frac{1}{x}\ln x + \int\frac{1}{x^2}\,\mathrm{d}x - \int\frac{1}{x^2}\,\mathrm{d}x = -\frac{1}{x}\ln x + C$.
+故应填 $-\frac{1}{x}\ln x + C$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-\frac{1}{x}\ln x + C$</span></div>
+</div>
+</article>
+<article class="problem" id="q420" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="420">【420】</span>
+<span class="q-group">使用分部积分公式求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\int\arctan\sqrt{x}\,\mathrm{d}x =$ ________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 利用分部积分法，注意到 $\mathrm{d}(\arctan\sqrt{x}) = \frac{1}{1+x}\,\mathrm{d}\sqrt{x}$，
+$$\int\arctan\sqrt{x}\,\mathrm{d}x = x\cdot\arctan\sqrt{x} - \int x\,\mathrm{d}(\arctan\sqrt{x}) = x\cdot\arctan\sqrt{x} - \int\frac{x}{1+x}\,\mathrm{d}(\sqrt{x})$$
+$$= x\cdot\arctan\sqrt{x} - \sqrt{x} + \arctan\sqrt{x} + C = (x+1)\cdot\arctan\sqrt{x} - \sqrt{x} + C.$$
+故应填 $(x+1)\cdot\arctan\sqrt{x} - \sqrt{x} + C$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$(x+1)\cdot\arctan\sqrt{x} - \sqrt{x} + C$</span></div>
+</div>
+</article>
+<article class="problem" id="q421" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="421">【421】</span>
+<span class="q-group">使用分部积分公式求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int(\arcsin x)^2\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\int(\arcsin x)^2\,\mathrm{d}x = x(\arcsin x)^2 - \int\frac{2x\arcsin x}{\sqrt{1-x^2}}\,\mathrm{d}x$$
+$$= x(\arcsin x)^2 + \int\frac{\arcsin x}{\sqrt{1-x^2}}\,\mathrm{d}(1-x^2)$$
+$$= x(\arcsin x)^2 + 2\sqrt{1-x^2}\arcsin x - \int 2\,\mathrm{d}x$$
+$$= x(\arcsin x)^2 + 2\sqrt{1-x^2}\arcsin x - 2x + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q422" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="422">【422】</span>
+<span class="q-group">使用分部积分公式求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\frac{\arctan\mathrm{e}^x}{\mathrm{e}^{2x}}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\int\frac{\arctan\mathrm{e}^x}{\mathrm{e}^{2x}}\,\mathrm{d}x = -\frac{1}{2}\int\arctan\mathrm{e}^x\,\mathrm{d}(\mathrm{e}^{-2x}) = -\frac{1}{2}\left[\mathrm{e}^{-2x}\arctan\mathrm{e}^x - \int\frac{\mathrm{d}\mathrm{e}^x}{\mathrm{e}^{2x}(1+\mathrm{e}^{2x})}\right]$$
+$$= -\frac{1}{2}\left(\mathrm{e}^{-2x}\arctan\mathrm{e}^x + \mathrm{e}^{-x} + \arctan\mathrm{e}^x\right) + C.$$
+点评　本题也可设 $\mathrm{e}^x = t$，利用换元法求解.</div>
+
+</div>
+</article>
+<article class="problem" id="q423" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="423">【423】</span>
+<span class="q-group">使用分部积分公式求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\mathrm{e}^{2x}(\tan x + 1)^2\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $= \int\mathrm{e}^{2x}\sec^2 x\,\mathrm{d}x + 2\int\mathrm{e}^{2x}\tan x\,\mathrm{d}x = \int\mathrm{e}^{2x}\,\mathrm{d}\tan x + 2\int\mathrm{e}^{2x}\tan x\,\mathrm{d}x$
+$$= \mathrm{e}^{2x}\tan x - 2\int\mathrm{e}^{2x}\tan x\,\mathrm{d}x + 2\int\mathrm{e}^{2x}\tan x\,\mathrm{d}x = \mathrm{e}^{2x}\tan x + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q424" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="424">【424】</span>
+<span class="q-group">使用分部积分公式求不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\frac{\ln\sin x}{\sin^2 x}\,\mathrm{d}x =$ ________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $= -\int\ln\sin x\,\mathrm{d}\cot x = -\cot x\cdot\ln\sin x + \int\cot x\cdot\frac{\cos x}{\sin x}\,\mathrm{d}x$
+$$= -\cot x\cdot\ln\sin x + \int(\csc^2 x - 1)\,\mathrm{d}x = -\cot x\cdot\ln\sin x - \cot x - x + C.$$
+故应填 $-\cot x\cdot\ln\sin x - \cot x - x + C$.
+点评　因为 $\frac{1}{\sin^2 x}\,\mathrm{d}x = -\mathrm{d}\cot x$，故采用分部积分公式计算.
+一般地，对形如 $\int\frac{f(x)}{\varphi(x)}\,\mathrm{d}x$ 的积分可考虑转化为 $\int f(x)\,\mathrm{d}g(x)$，然后使用分部积分公式计算，其中 $g'(x) = \frac{1}{\varphi(x)}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-\cot x\cdot\ln\sin x - \cot x - x + C$</span></div>
+</div>
+</article>
+<h3 class="grp-h">先作代换，再使用分部积分公式计算</h3>
+<article class="problem" id="q425" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="425">【425】</span>
+<span class="q-group">先作代换，再使用分部积分公式计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f'(x^2) = \ln x\ (x &gt; 0)$，求 $f(x)$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解法一</strong> 因为 $f'(x^2) = \frac{\mathrm{d}f(x^2)}{\mathrm{d}x^2} = \ln x$，所以 $\mathrm{d}f(x^2) = \ln x\,\mathrm{d}x^2$. 积分得
+$$f(x^2) = \int\ln x\,\mathrm{d}x^2 = x^2\ln x - \frac{x^2}{2} + C.$$
+令 $x^2 = t$，则有 $f(t) = t\ln\sqrt{t} - \frac{t}{2} + C = \frac{t}{2}(\ln t - 1) + C$. 故 $f(x) = \frac{x}{2}(\ln x - 1) + C$.
+<strong>解法二</strong> 先换元，再积分.
+令 $x^2 = t$，则有 $f'(t) = \ln\sqrt{t} = \frac{1}{2}\ln t$，即 $f'(x) = \frac{1}{2}\ln x$. 两边积分得
+$$f(x) = \frac{1}{2}\int\ln x\,\mathrm{d}x = \frac{1}{2}x\ln x - \frac{x}{2} + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q426" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="426">【426】</span>
+<span class="q-group">先作代换，再使用分部积分公式计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\int\frac{\arcsin\sqrt{x}}{\sqrt{x}}\,\mathrm{d}x =$ ________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $\xlongequal{\sqrt{x}=t} 2\int\arcsin t\,\mathrm{d}t = 2t\arcsin t - 2\int t\cdot\frac{1}{\sqrt{1-t^2}}\,\mathrm{d}t$
+$$= 2t\arcsin t + 2\sqrt{1-t^2} + C = 2\sqrt{x}\arcsin\sqrt{x} + 2\sqrt{1-x} + C.$$
+故应填 $2\sqrt{x}\arcsin\sqrt{x} + 2\sqrt{1-x} + C$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$2\sqrt{x}\arcsin\sqrt{x} + 2\sqrt{1-x} + C$</span></div>
+</div>
+</article>
+<article class="problem" id="q427" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="427">【427】</span>
+<span class="q-group">先作代换，再使用分部积分公式计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\int x^3\mathrm{e}^{x^2}\,\mathrm{d}x =$ ________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $= \frac{1}{2}\int x^2\mathrm{e}^{x^2}\,\mathrm{d}(x^2) \xlongequal{x^2=u} \frac{1}{2}\int u\mathrm{e}^u\,\mathrm{d}u = \frac{1}{2}\int u\,\mathrm{d}\mathrm{e}^u$
+$$= \frac{1}{2}\left(u\mathrm{e}^u - \int\mathrm{e}^u\,\mathrm{d}u\right) = \frac{1}{2}(u\mathrm{e}^u - \mathrm{e}^u) + C = \frac{1}{2}\mathrm{e}^{x^2}(x^2 - 1) + C.$$
+故应填 $\frac{1}{2}\mathrm{e}^{x^2}(x^2 - 1) + C$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\frac{1}{2}\mathrm{e}^{x^2}(x^2 - 1) + C$</span></div>
+</div>
+</article>
+<article class="problem" id="q428" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="428">【428】</span>
+<span class="q-group">先作代换，再使用分部积分公式计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算 $\int\mathrm{e}^{2x}\cos\mathrm{e}^x\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 先换元，然后再使用分部积分公式. 令 $\mathrm{e}^x = t$，则
+$$\int\mathrm{e}^{2x}\cos\mathrm{e}^x\,\mathrm{d}x = \int\mathrm{e}^x\cos\mathrm{e}^x\,\mathrm{d}\mathrm{e}^x = \int t\cos t\,\mathrm{d}t = \int t\,\mathrm{d}\sin t = t\sin t - \int\sin t\,\mathrm{d}t$$
+$$= t\sin t + \cos t + C = \mathrm{e}^x\sin\mathrm{e}^x + \cos\mathrm{e}^x + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q429" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="429">【429】</span>
+<span class="q-group">先作代换，再使用分部积分公式计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(\ln x) = \frac{\ln(1+x)}{x}$，计算 $\int f(x)\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $\ln x = t$，则 $x = \mathrm{e}^t$，$f(t) = \frac{\ln(1+\mathrm{e}^t)}{\mathrm{e}^t}$，
+$$\int f(x)\,\mathrm{d}x = \int\frac{\ln(1+\mathrm{e}^x)}{\mathrm{e}^x}\,\mathrm{d}x = -\int\ln(1+\mathrm{e}^x)\,\mathrm{d}\mathrm{e}^{-x} = -\mathrm{e}^{-x}\ln(1+\mathrm{e}^x) + \int\frac{1}{1+\mathrm{e}^x}\,\mathrm{d}x$$
+$$= -\mathrm{e}^{-x}\ln(1+\mathrm{e}^x) + \int\left(1 - \frac{\mathrm{e}^x}{1+\mathrm{e}^x}\right)\mathrm{d}x = -\mathrm{e}^{-x}\ln(1+\mathrm{e}^x) + x - \ln(1+\mathrm{e}^x) + C$$
+$$= x - (1+\mathrm{e}^{-x})\ln(1+\mathrm{e}^x) + C.$$</div>
+
+</div>
+</article>
+<h3 class="grp-h">已知函数的原函数，使用分部积分公式计算</h3>
+<article class="problem" id="q430" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="430">【430】</span>
+<span class="q-group">已知函数的原函数，使用分部积分公式计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f(x)$ 的一个原函数为 $\ln^2 x$，则 $\int xf'(x)\,\mathrm{d}x =$ ________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\int xf'(x)\,\mathrm{d}x = \int x\,\mathrm{d}f(x) = xf(x) - \int f(x)\,\mathrm{d}x$$
+$$= x(\ln^2 x)' - \ln^2 x + C = 2\ln x - \ln^2 x + C.$$
+故应填 $2\ln x - \ln^2 x + C$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$2\ln x - \ln^2 x + C$</span></div>
+</div>
+</article>
+<article class="problem" id="q431" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="431">【431】</span>
+<span class="q-group">已知函数的原函数，使用分部积分公式计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $\frac{\sin x}{x}$ 是函数 $f(x)$ 的一个原函数，求 $\int x^3 f'(x)\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由于 $\frac{\sin x}{x}$ 是函数 $f(x)$ 的一个原函数，有 $f(x) = \left(\frac{\sin x}{x}\right)' = \frac{x\cos x - \sin x}{x^2}$. 因此
+$$\int x^3 f'(x)\,\mathrm{d}x = x^3 f(x) - 3\int x^2 f(x)\,\mathrm{d}x = x^3 f(x) - 3\int x^2\,\mathrm{d}\left(\frac{\sin x}{x}\right)$$
+$$= x^3 f(x) - 3\left(x^2\cdot\frac{\sin x}{x} - 2\int\sin x\,\mathrm{d}x\right) = x^3 f(x) - 3x\sin x - 6\cos x + C$$
+$$= x^2\cos x - 4x\sin x - 6\cos x + C.$$
+点评　在不定积分运算中，若被积函数中含有 $f'(x)$ 项，则一般考虑使用分部积分公式计算，令 $v = f(x)$.</div>
+
+</div>
+</article>
+<article class="problem" id="q432" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="432">【432】</span>
+<span class="q-group">已知函数的原函数，使用分部积分公式计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 的一个原函数为 $\mathrm{e}^{x^2}$，求 $\int xf''(x)\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\int xf''(x)\,\mathrm{d}x = \int x\,\mathrm{d}f'(x) = xf'(x) - \int f'(x)\,\mathrm{d}x = xf'(x) - f(x) + C.$$
+由于 $f(x) = 2x\mathrm{e}^{x^2}$，则 $f'(x) = 2\mathrm{e}^{x^2} + 4x^2\mathrm{e}^{x^2}$，代入上式得 $\int xf''(x)\,\mathrm{d}x = 4x^3\mathrm{e}^{x^2} + C$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$4x^3\mathrm{e}^{x^2} + C$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s5">4. 有理函数的积分</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">有理函数的积分</h3>
+<article class="problem" id="q433" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="433">【433】</span>
+<span class="q-group">有理函数的积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求下列不定积分
+(1) $\int\frac{x^3}{x+3}\,\mathrm{d}x$；　　(2) $\int\frac{1}{(x^2+1)(x+1)^2}\,\mathrm{d}x$；
+(3) $\int\frac{4x+3}{(x-2)^3}\,\mathrm{d}x$；　　(4) $\int\frac{1}{x(x+1)(x^2+x+1)}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) $\int\frac{x^3}{x+3}\,\mathrm{d}x = \int\left(x^2 - 3x + 9 - \frac{27}{x+3}\right)\mathrm{d}x = \frac{1}{3}x^3 - \frac{3}{2}x^2 + 9x - 27\ln|x+3| + C$.
+点评　此题为有理假分式，所以先化为多项式与真分式的和再逐项积分.
+(2) 设 $\frac{1}{(x^2+1)(x+1)^2} = \frac{Ax+B}{x^2+1} + \frac{C}{(x+1)^2} + \frac{D}{x+1}$，
+通分后由分子得 $1 = (Ax+B)(x+1)^2 + C(x^2+1) + D(x+1)(x^2+1)$.
+比较 $x$ 的各次幂的系数得
+$$\begin{cases} A + D = 0 \\ 2A + B + C + D = 0 \\ A + 2B + D = 0 \\ B + C + D = 1 \end{cases} \Rightarrow \begin{cases} A = -\frac{1}{2} \\ B = 0 \\ C = \frac{1}{2} \\ D = \frac{1}{2} \end{cases}$$
+故　原式 $= -\frac{1}{2}\int\frac{x}{x^2+1}\,\mathrm{d}x + \frac{1}{2}\int\frac{1}{(x+1)^2}\,\mathrm{d}x + \frac{1}{2}\int\frac{1}{x+1}\,\mathrm{d}x$
+$$= -\frac{1}{4}\ln(x^2+1) - \frac{1}{2(x+1)} + \frac{1}{2}\ln|x+1| + C.$$
+点评　此题分母已经分解成一次因式与二次因式积的形式，只须用待定系数法将有理函数分解成部分分式的和再逐项积分即可.
+(3) 设 $\frac{4x+3}{(x-2)^3} = \frac{A_1}{x-2} + \frac{A_2}{(x-2)^2} + \frac{A_3}{(x-2)^3}$，
+通分比较系数得 $\begin{cases} A_1 = 0 \\ -4A_1 + A_2 = 4 \\ 4A_1 - 2A_2 + A_3 = 3 \end{cases}$　解得 $A_1 = 0$，$A_2 = 4$，$A_3 = 11$.
+故 $\frac{4x+3}{(x-2)^3} = \frac{4}{(x-2)^2} + \frac{11}{(x-2)^3}$.
+$$\int\frac{4x+3}{(x-2)^3}\,\mathrm{d}x = 4\int\frac{\mathrm{d}x}{(x-2)^2} + 11\int\frac{\mathrm{d}x}{(x-2)^3} = -\frac{4}{x-2} - \frac{11}{2}\cdot\frac{1}{(x-2)^2} + C.$$
+点评　事实上在求 $A_1、A_2、A_3$ 时可用特殊值法. 如通分后得
+$$4x + 3 = A_1(x-2)^2 + A_2(x-2) + A_3,$$
+令 $x = 2$ 得 $11 = A_3$，再比较系数得 $A_1、A_2$.
+(4) 因为 $\frac{1}{x(x+1)(x^2+x+1)} = \frac{1}{(x^2+x)(x^2+x+1)} = \frac{1}{x+x^2} - \frac{1}{x^2+x+1}$
+$$= \frac{1}{x} - \frac{1}{1+x} - \frac{1}{1+x+x^2},$$
+所以　原式 $= \int\frac{1}{x}\,\mathrm{d}x - \int\frac{1}{1+x}\,\mathrm{d}x - \int\frac{1}{1+x+x^2}\,\mathrm{d}x = \ln|x| - \ln|1+x| - \frac{2}{\sqrt{3}}\arctan\frac{2x+1}{\sqrt{3}} + C$.
+点评　当被积函数容易分解时也不必墨守成规非要用待定系数法，直接分解即可.</div>
+
+</div>
+</article>
+<article class="problem" id="q434" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="434">【434】</span>
+<span class="q-group">有理函数的积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求下列不定积分
+(1) $\int\frac{x+5}{x^2-6x+13}\,\mathrm{d}x$；　　(2) $\int\frac{x^3}{(x-1)^{10}}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 原式 $= \frac{1}{2}\int\frac{2x-6}{x^2-6x+13}\,\mathrm{d}x + 8\int\frac{1}{(x-3)^2+4}\,\mathrm{d}x$
+$$= \frac{1}{2}\int\frac{\mathrm{d}(x^2-6x+13)}{x^2-6x+13} + 4\int\frac{1}{1+\left(\frac{x-3}{2}\right)^2}\,\mathrm{d}\left(\frac{x-3}{2}\right)$$
+$$= \frac{1}{2}\ln(x^2-6x+13) + 4\arctan\frac{x-3}{2} + C.$$
+故应填 $\frac{1}{2}\ln(x^2-6x+13) + 4\arctan\frac{x-3}{2} + C$.
+点评　本题使用如下公式计算：
+$$\int\frac{Mx+N}{ax^2+bx+c}\,\mathrm{d}x = \int\frac{\frac{M}{2a}\cdot\mathrm{d}(ax^2+bx+c)}{ax^2+bx+c} + \int\frac{N - \frac{Mb}{2a}}{ax^2+bx+c}\,\mathrm{d}x.$$
+(2) 令 $x - 1 = u$，则 $\mathrm{d}x = \mathrm{d}u$，
+$$\int\frac{x^3}{(x-1)^{10}}\,\mathrm{d}x = \int\frac{(1+u)^3}{u^{10}}\,\mathrm{d}u = \int\frac{u^3 + 3u^2 + 3u + 1}{u^{10}}\,\mathrm{d}u$$
+$$= \int\frac{1}{u^7}\,\mathrm{d}u + 3\int\frac{1}{u^8}\,\mathrm{d}u + 3\int\frac{1}{u^9}\,\mathrm{d}u + \int\frac{1}{u^{10}}\,\mathrm{d}u = -\frac{1}{6u^6} - \frac{3}{7u^7} - \frac{3}{8u^8} - \frac{1}{9u^9} + C$$
+$$= -\frac{1}{6(x-1)^6} - \frac{3}{7(x-1)^7} - \frac{3}{8(x-1)^8} - \frac{1}{9(x-1)^9} + C.$$
+点评　求不定积分的基本方法是换元积分法和分部积分法，将有理分式化为部分分式和三角函数有理式的积分仅作为以上两种方法的补充. 如本题若将分母看成 $x = 1$ 是其 10 重根，然后利用有理分式化为部分分式将会非常麻烦.</div>
+
+</div>
+</article>
+<h3 class="grp-h">三角函数有理式积分</h3>
+<article class="problem" id="q435" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="435">【435】</span>
+<span class="q-group">三角函数有理式积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求不定积分 $\int\frac{\mathrm{d}x}{3+\cos x}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $\tan\frac{x}{2} = t$，则
+$$\int\frac{\mathrm{d}x}{3+\cos x} = \int\frac{\mathrm{d}t}{2+t^2} = \frac{1}{\sqrt{2}}\arctan\frac{t}{\sqrt{2}} + C = \frac{1}{\sqrt{2}}\arctan\left(\frac{1}{\sqrt{2}}\tan\frac{x}{2}\right) + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q436" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="436">【436】</span>
+<span class="q-group">三角函数有理式积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\frac{\sin x}{\sin x + \cos x}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\int\frac{\sin x}{\sin x+\cos x}\,\mathrm{d}x$，考虑
+$$\int\frac{\sin x+\cos x}{\sin x+\cos x}\,\mathrm{d}x = \int 1\,\mathrm{d}x = x + C_1$$
+及
+$$\int\frac{\sin x-\cos x}{\sin x+\cos x}\,\mathrm{d}x = -\int\frac{\mathrm{d}(\sin x+\cos x)}{\sin x+\cos x} = -\ln|\sin x+\cos x| + C_2,$$
+故
+$$\int\frac{\sin x}{\sin x+\cos x}\,\mathrm{d}x = \frac{1}{2}\left[\int\frac{\sin x+\cos x}{\sin x+\cos x}\,\mathrm{d}x + \int\frac{\sin x-\cos x}{\sin x+\cos x}\,\mathrm{d}x\right] = \frac{1}{2}\left[x - \ln|\sin x+\cos x|\right] + C.$$
+此法写成下面的形式常称为回归法.
+$$\int\frac{\sin x}{\sin x+\cos x}\,\mathrm{d}x = \int\frac{\sin x+\cos x-\cos x}{\sin x+\cos x}\,\mathrm{d}x = \int\mathrm{d}x - \int\frac{\cos x}{\sin x+\cos x}\,\mathrm{d}x$$
+$$= \int\mathrm{d}x - \int\frac{\cos x-\sin x+\sin x}{\sin x+\cos x}\,\mathrm{d}x = \int\mathrm{d}x - \int\frac{\mathrm{d}(\sin x+\cos x)}{\sin x+\cos x}\,\mathrm{d}x - \int\frac{\sin x}{\sin x+\cos x}\,\mathrm{d}x,$$
+即
+$$\int\frac{\sin x}{\sin x+\cos x}\,\mathrm{d}x = \frac{1}{2}\left[x - \ln|\sin x+\cos x|\right] + C.$$
+用同样的方法可以求出，
+$$\int\frac{\cos x}{\sin x+\cos x}\,\mathrm{d}x = \frac{1}{2}\left[\int\frac{\sin x+\cos x}{\sin x+\cos x}\,\mathrm{d}x - \int\frac{\sin x-\cos x}{\sin x+\cos x}\,\mathrm{d}x\right]$$
+$$= \frac{1}{2}\left[x + \ln|\sin x+\cos x|\right] + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q437" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="437">【437】</span>
+<span class="q-group">三角函数有理式积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\int\frac{\cos x}{2\sin x+\cos x}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\int\frac{\cos x}{2\sin x+\cos x}\,\mathrm{d}x = \int\frac{1}{2\tan x+1}\,\mathrm{d}x$.
+令 $\tan x = t$，$x = \arctan t$，$\mathrm{d}x = \frac{\mathrm{d}t}{1+t^2}$，则
+原式 $= \int\frac{1}{2t+1}\cdot\frac{1}{1+t^2}\,\mathrm{d}t = \frac{1}{5}\int\left(\frac{4}{2t+1} - \frac{2t-1}{1+t^2}\right)\mathrm{d}t$
+$$= \frac{4}{5}\int\frac{\mathrm{d}t}{2t+1} - \frac{1}{5}\int\frac{2t\,\mathrm{d}t}{1+t^2} + \frac{1}{5}\int\frac{1}{1+t^2}\,\mathrm{d}t$$
+$$= \frac{2}{5}\ln|2t+1| - \frac{1}{5}\ln|1+t^2| + \frac{1}{5}\arctan t + C$$
+$$= \frac{2}{5}\ln|2\tan x+1| - \frac{1}{5}\ln|1+\tan^2 x| + \frac{1}{5}x + C.$$</div>
+
+</div>
+</article>
+<h3 class="grp-h">简单无理式的积分</h3>
+<article class="problem" id="q438" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="438">【438】</span>
+<span class="q-group">简单无理式的积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\sqrt{\frac{1-x}{1+x}}\cdot\frac{\mathrm{d}x}{x}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 无理函数积分的基本思路是通过变量代换将根式去掉，化为有理函数的积分.
+<strong>解</strong> 令 $\sqrt{\frac{1-x}{1+x}} = t$，则
+原式 $= \int t\cdot\frac{t^2+1}{1-t^2}\cdot\frac{-4t}{(t^2+1)^2}\,\mathrm{d}t = 4\int\frac{t^2}{(t^2-1)(t^2+1)}\,\mathrm{d}t = 2\int\left(\frac{1}{t^2-1} + \frac{1}{t^2+1}\right)\mathrm{d}t$
+$$= \ln\left|\frac{t-1}{t+1}\right| + 2\arctan t + C = \ln\left|\frac{\sqrt{1-x}-\sqrt{1+x}}{\sqrt{1-x}+\sqrt{1+x}}\right| + 2\arctan\sqrt{\frac{1-x}{1+x}} + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q439" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="439">【439】</span>
+<span class="q-group">简单无理式的积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\frac{\mathrm{d}x}{\sqrt{ax+b}+d}$ ($a \neq 0$).</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $t = \sqrt{ax+b}$，$x = \frac{t^2-b}{a}$，$\mathrm{d}x = \frac{2t}{a}\,\mathrm{d}t$，则
+原式 $= \int\frac{\mathrm{d}x}{\sqrt{ax+b}+d} = \int\frac{1}{t+d}\cdot\frac{2t}{a}\,\mathrm{d}t = \frac{2}{a}\int\frac{t}{t+d}\,\mathrm{d}t = \frac{2}{a}\int\frac{t+d-d}{t+d}\,\mathrm{d}t$
+$$= \frac{2}{a}\int\mathrm{d}t - \frac{2d}{a}\int\frac{\mathrm{d}t}{t+d} = \frac{2}{a}t - \frac{2d}{a}\ln|t+d| + C$$
+$$= \frac{2}{a}\sqrt{ax+b} - \frac{2d}{a}\ln|\sqrt{ax+b}+d| + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q440" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="440">【440】</span>
+<span class="q-group">简单无理式的积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\frac{\mathrm{d}x}{\sqrt[3]{(x+1)^2(x-1)^4}}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 根号下太复杂，可先将分母中有理化.
+<strong>解</strong> $$\int\frac{\mathrm{d}x}{\sqrt[3]{(x+1)^2(x-1)^4}} = \int\frac{1}{(x+1)(x-1)}\sqrt[3]{\frac{x+1}{x-1}}\,\mathrm{d}x.$$
+令 $\sqrt[3]{\frac{x+1}{x-1}} = t$，则 $x = \frac{t^3+1}{t^3-1}$，$\mathrm{d}x = \frac{-6t^2}{(t^3-1)^2}\,\mathrm{d}t$，
+$$\int\frac{\mathrm{d}x}{\sqrt[3]{(x+1)^2(x-1)^4}} = \int\frac{t}{\frac{4t^3}{(t^3-1)^2}}\cdot\frac{-6t^2}{(t^3-1)^2}\,\mathrm{d}t = -\frac{3}{2}\int\mathrm{d}t = -\frac{3}{2}t + C = -\frac{3}{2}\sqrt[3]{\frac{x+1}{x-1}} + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q441" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="441">【441】</span>
+<span class="q-group">简单无理式的积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\frac{1}{\sqrt{1+x}+\sqrt[3]{1+x}}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 被积函数中出现两个根号 $\sqrt[a]{f(x)}$ 与 $\sqrt[b]{f(x)}$，一般设 $t = \sqrt[c]{f(x)}$，其中 $c$ 为 $a、b$ 的最小公倍数.
+<strong>解</strong> 令 $\sqrt[6]{1+x} = t$，$x = t^6 - 1$，$\mathrm{d}x = 6t^5\,\mathrm{d}t$，则
+$$\int\frac{1}{\sqrt{1+x}+\sqrt[3]{1+x}}\,\mathrm{d}x = \int\frac{1}{t^3+t^2}\,6t^5\,\mathrm{d}t = 6\int\frac{t^3}{t+1}\,\mathrm{d}t = 6\int\frac{t^3+1-1}{t+1}\,\mathrm{d}t$$
+$$= 6\int\left(t^2 - t + 1 - \frac{1}{t+1}\right)\mathrm{d}t = 2t^3 - 3t^2 + 6t - 6\ln|t+1| + C$$
+$$= 2\sqrt{1+x} - 3\sqrt[3]{1+x} + 6\sqrt[6]{1+x} - 6\ln|\sqrt[6]{1+x}+1| + C.$$</div>
+
+</div>
+</article>
+<h2 class="sec-h" id="sec-s6">5. 综合提高题型</h2>
+<h3 class="grp-h">作代换计算不定积分</h3>
+<article class="problem" id="q442" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="442">【442】</span>
+<span class="q-group">作代换计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x^2-1) = \ln\frac{x^2}{x^2-2}$，且 $f[\varphi(x)] = \ln x$，求 $\int\varphi(x)\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f(x^2-1) = \ln\frac{(x^2-1)+1}{(x^2-1)-1}$，所以 $f(x) = \ln\frac{x+1}{x-1}$.
+又 $f[\varphi(x)] = \ln\frac{\varphi(x)+1}{\varphi(x)-1} = \ln x$，从而 $\frac{\varphi(x)+1}{\varphi(x)-1} = x$，$\varphi(x) = \frac{x+1}{x-1}$. 于是
+$$\int\varphi(x)\,\mathrm{d}x = \int\frac{x+1}{x-1}\,\mathrm{d}x = 2\ln|x-1| + x + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q443" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="443">【443】</span>
+<span class="q-group">作代换计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int x^3\sqrt{1+x^2}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解法一</strong> $$\int x^3\sqrt{1+x^2}\,\mathrm{d}x = \frac{1}{2}\int x^2\sqrt{1+x^2}\,\mathrm{d}x^2 = \frac{1}{2}\int(1+x^2-1)\sqrt{1+x^2}\,\mathrm{d}(1+x^2)$$
+$$= \frac{1}{2}\int(1+x^2)^{3/2}\,\mathrm{d}(1+x^2) - \frac{1}{2}\int(1+x^2)^{1/2}\,\mathrm{d}(1+x^2)$$
+$$= \frac{1}{5}(1+x^2)^{5/2} - \frac{1}{3}(1+x^2)^{3/2} + C = \frac{1}{15}(3x^4+x^2-2)\sqrt{1+x^2} + C$$
+<strong>解法二</strong> 设 $x = \tan t$，则 $\mathrm{d}x = \sec^2 t\,\mathrm{d}t$，于是
+$$\int x^3\sqrt{1+x^2}\,\mathrm{d}x = \int\tan^3 t\cdot\sec^3 t\,\mathrm{d}t = \int\sec^2 t\tan^2 t\,\mathrm{d}(\sec t)$$
+$$= \int(\sec^4 t - \sec^2 t)\,\mathrm{d}(\sec t) = \frac{1}{5}\sec^5 t - \frac{1}{3}\sec^3 t + C$$
+$$= \frac{1}{5}(1+x^2)^{5/2} - \frac{1}{3}(1+x^2)^{3/2} + C = \frac{1}{15}(3x^4+x^2-2)\sqrt{1+x^2} + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q444" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="444">【444】</span>
+<span class="q-group">作代换计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算 $\int\frac{\arctan\frac{1}{x}}{1+x^2}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> $f(x) = \frac{\arctan\frac{1}{x}}{1+x^2}$ 与 $\frac{\arctan u}{1+u^2}$ 类似，而后者的积分为
+$$\int\frac{\arctan u}{1+u^2}\,\mathrm{d}u = \int\arctan u\,\mathrm{d}(\arctan u) = \frac{1}{2}(\arctan u)^2 + C.$$
+因此，就要设法利用这一积分公式.
+<strong>解法一</strong> 利用第一换元法计算.
+$$\int\frac{\arctan\frac{1}{x}}{1+x^2}\,\mathrm{d}x = \int\frac{\arctan\frac{1}{x}\,\frac{\mathrm{d}x}{x^2}}{1+\left(\frac{1}{x}\right)^2} = -\int\arctan\frac{1}{x}\,\mathrm{d}\left(\arctan\frac{1}{x}\right) = -\frac{1}{2}\left(\arctan\frac{1}{x}\right)^2 + C.$$
+<strong>解法二</strong> 利用分部积分法计算.
+$$\int\frac{\arctan\frac{1}{x}}{1+x^2}\,\mathrm{d}x = \int\arctan\frac{1}{x}\,\mathrm{d}(\arctan x)$$
+$$= \arctan\frac{1}{x}\cdot\arctan x - \int\arctan x\,\frac{1}{1+\left(\frac{1}{x}\right)^2}\left(-\frac{1}{x^2}\right)\mathrm{d}x$$
+$$= \arctan\frac{1}{x}\cdot\arctan x + \int\frac{\arctan x}{1+x^2}\,\mathrm{d}x$$
+$$= \arctan\frac{1}{x}\cdot\arctan x + \int\arctan x\,\mathrm{d}(\arctan x)$$
+$$= \arctan\frac{1}{x}\cdot\arctan x + \frac{1}{2}(\arctan x)^2 + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q445" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="445">【445】</span>
+<span class="q-group">作代换计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int\frac{\mathrm{d}x}{\sin(2x)+2\sin x}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong>
+$$\int\frac{\mathrm{d}x}{\sin(2x)+2\sin x} = \int\frac{\mathrm{d}x}{2\sin x(\cos x+1)} = \frac{1}{4}\int\frac{\mathrm{d}\left(\frac{x}{2}\right)}{\sin\frac{x}{2}\cos^3\frac{x}{2}} = \frac{1}{4}\int\frac{\mathrm{d}\left(\tan\frac{x}{2}\right)}{\tan\frac{x}{2}\cos^2\frac{x}{2}}$$
+$$= \frac{1}{4}\int\frac{1+\tan^2\frac{x}{2}}{\tan\frac{x}{2}}\,\mathrm{d}\left(\tan\frac{x}{2}\right) = \frac{1}{8}\tan^2\frac{x}{2} + \frac{1}{4}\ln\left|\tan\frac{x}{2}\right| + C.$$</div>
+
+</div>
+</article>
+<h3 class="grp-h">利用分部积分公式计算不定积分</h3>
+<article class="problem" id="q446" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="446">【446】</span>
+<span class="q-group">利用分部积分公式计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算 $\int\frac{x^2\mathrm{e}^x}{(x+2)^2}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 可以用分部积分法计算，如何选择 $u(x)$ 与 $\mathrm{d}v(x)$ 呢？若选 $u(x) = \frac{x^2}{(x+2)^2}$，则
+$$\mathrm{e}^x\mathrm{d}x = \mathrm{d}v(x) = \mathrm{d}(\mathrm{e}^x), \quad v(x) = \mathrm{e}^x, \quad \mathrm{d}u(x) = \frac{4x}{(x+2)^3}\,\mathrm{d}x$$
+$$\int\frac{x^2\mathrm{e}^x}{(x+2)^2}\,\mathrm{d}x = \frac{x^2}{(x+2)^2}\mathrm{e}^x - \int\frac{4x}{(x+2)^3}\mathrm{e}^x\,\mathrm{d}x,$$
+右边的积分并不容易求，因此，采用如下解法.
+<strong>解</strong> 取 $u(x) = x^2\mathrm{e}^x$，$\frac{1}{(x+2)^2}\,\mathrm{d}x = \mathrm{d}\left(\frac{-1}{x+2}\right) = \mathrm{d}v(x)$
+$$\int\frac{x^2\mathrm{e}^x}{(x+2)^2}\,\mathrm{d}x = \int x^2\mathrm{e}^x\,\mathrm{d}\left(\frac{-1}{x+2}\right) = -\frac{x^2\mathrm{e}^x}{x+2} - \int\left(\frac{-1}{x+2}\right)\left[2x\mathrm{e}^x + x^2\mathrm{e}^x\right]\mathrm{d}x$$
+$$= -\frac{x^2\mathrm{e}^x}{x+2} + \int\frac{1}{x+2}\,\mathrm{e}^x\cdot x\cdot(x+2)\,\mathrm{d}x = -\frac{x^2\mathrm{e}^x}{x+2} + \int x\mathrm{e}^x\,\mathrm{d}x = -\frac{x^2\mathrm{e}^x}{x+2} + x\mathrm{e}^x - \mathrm{e}^x + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q447" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="447">【447】</span>
+<span class="q-group">利用分部积分公式计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(\sin^2 x) = \frac{x}{\sin x}$，求 $\int\frac{\sqrt{x}}{\sqrt{1-x}}f(x)\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $u = \sin^2 x$，则有 $\sin x = \sqrt{u}$，$x = \arcsin\sqrt{u}$，从而 $f(x) = \frac{\arcsin\sqrt{x}}{\sqrt{x}}$. 于是，
+$$\int\frac{\sqrt{x}}{\sqrt{1-x}}f(x)\,\mathrm{d}x = \int\frac{\arcsin\sqrt{x}}{\sqrt{1-x}}\,\mathrm{d}x = -\int\frac{\arcsin\sqrt{x}}{\sqrt{1-x}}\,\mathrm{d}(1-x)$$
+$$= -2\int\arcsin\sqrt{x}\,\mathrm{d}\sqrt{1-x}$$
+$$= -2\sqrt{1-x}\arcsin\sqrt{x} + 2\int\sqrt{1-x}\,\frac{1}{\sqrt{1-x}}\,\mathrm{d}\sqrt{x}$$
+$$= -2\sqrt{1-x}\arcsin\sqrt{x} + 2\sqrt{x} + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q448" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="448">【448】</span>
+<span class="q-group">利用分部积分公式计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算 $\int\frac{x\mathrm{e}^x}{\sqrt{\mathrm{e}^x-2}}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 先分部积分后变量代换.
+$$\int\frac{x\mathrm{e}^x}{\sqrt{\mathrm{e}^x-2}}\,\mathrm{d}x = \int x\,\mathrm{d}(2\sqrt{\mathrm{e}^x-2}) = 2x\sqrt{\mathrm{e}^x-2} - 2\int\sqrt{\mathrm{e}^x-2}\,\mathrm{d}x.$$
+令 $\mathrm{e}^x - 2 = t^2$，$\mathrm{e}^x = 2 + t^2$，$x = \ln(2+t^2)$，$\mathrm{d}x = \frac{2t}{2+t^2}\,\mathrm{d}t$，
+$$\int\sqrt{\mathrm{e}^x-2}\,\mathrm{d}x = \int t\,\frac{2t}{2+t^2}\,\mathrm{d}t = 2\int\frac{t^2+2-2}{2+t^2}\,\mathrm{d}t = 2t - \frac{4}{\sqrt{2}}\arctan\frac{t}{\sqrt{2}} + C,$$
+所以
+$$\int\frac{x\mathrm{e}^x}{\sqrt{\mathrm{e}^x-2}}\,\mathrm{d}x = 2x\sqrt{\mathrm{e}^x-2} - 4\sqrt{\mathrm{e}^x-2} + 4\sqrt{2}\arctan\sqrt{\frac{\mathrm{e}^x-2}{2}} + C.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q449" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="449">【449】</span>
+<span class="q-group">利用分部积分公式计算不定积分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算不定积分 $\int\frac{x\mathrm{e}^{\arctan x}}{(1+x^2)^{3/2}}\,\mathrm{d}x$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解法一</strong> 设 $x = \tan t$，则
+$$\int\frac{x\mathrm{e}^{\arctan x}}{(1+x^2)^{3/2}}\,\mathrm{d}x = \int\frac{\mathrm{e}^t\tan t}{(1+\tan^2 t)^{3/2}}\sec^2 t\,\mathrm{d}t = \int\mathrm{e}^t\sin t\,\mathrm{d}t,$$
+又
+$$\int\mathrm{e}^t\sin t\,\mathrm{d}t = -\int\mathrm{e}^t\,\mathrm{d}\cos t = -\left(\mathrm{e}^t\cos t - \int\mathrm{e}^t\cos t\,\mathrm{d}t\right) = -\mathrm{e}^t\cos t + \mathrm{e}^t\sin t - \int\mathrm{e}^t\sin t\,\mathrm{d}t,$$
+故 $\int \text{e}^{t}\sin t\,dt=\frac{1}{2}\text{e}^{t}(\sin t-\cos t)+C$. 因此 $\int \frac{x\text{e}^{\arctan x}}{(1+x^{2})^{3/2}}\,dx=\frac{1}{2}\text{e}^{\arctan x}\left(\frac{x}{\sqrt{1+x^{2}}}-\frac{1}{\sqrt{1+x^{2}}}\right)+C=\frac{(x-1)\text{e}^{\arctan x}}{2\sqrt{1+x^{2}}}+C$. <strong>解法二</strong> $\int \frac{x\text{e}^{\arctan x}}{(1+x^{2})^{3/2}}\,dx=\int \frac{x}{\sqrt{1+x^{2}}}\,d\text{e}^{\arctan x}=\frac{x\text{e}^{\arctan x}}{\sqrt{1+x^{2}}}-\int \frac{\text{e}^{\arctan x}}{(1+x^{2})^{3/2}}\,dx=\frac{x\text{e}^{\arctan x}}{\sqrt{1+x^{2}}}-\int \frac{1}{\sqrt{1+x^{2}}}\,d\text{e}^{\arctan x}=\frac{x\text{e}^{\arctan x}}{\sqrt{1+x^{2}}}-\frac{\text{e}^{\arctan x}}{\sqrt{1+x^{2}}}-\int \frac{x\text{e}^{\arctan x}}{(1+x^{2})^{3/2}}\,dx$. 移项整理得 $\int \frac{x\text{e}^{\arctan x}}{(1+x^{2})^{3/2}}\,dx=\frac{(x-1)\text{e}^{\arctan x}}{2\sqrt{1+x^{2}}}+C$. <strong>点评</strong> 本题的解法一中使用了不定积分的第二换元法和分部积分公式. 作代换 $x=\tan t$, 则 $t=\arctan x$. 一般地, 若被积函数含 $\sqrt{x^{2}-1}$, $\sqrt{1-x^{2}}$, $\sqrt{1+x^{2}}$, $\sqrt{1-ax^{2}}$, $\sqrt{ax^{2}-1}$ 等均需使用第二换元法作三角代换.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\frac{(x-1)\text{e}^{\arctan x}}{2\sqrt{1+x^{2}}}+C$</span></div>
+</div>
+</article>
+<article class="problem" id="q450" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="450">【450】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\int \frac{x^{2}}{1+x^{2}}\arctan x\,dx$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $\arctan x=u$, $x=\tan u$, $dx=\frac{du}{\cos^{2}u}$. 于是 $$\text{原式}=\int \frac{\tan^{2}u}{1+\tan^{2}u}\cdot u\cdot \frac{du}{\cos^{2}u}=\int u\tan^{2}u\,du=\int u(\sec^{2}u-1)\,du$$ $$=\int u\sec^{2}u\,du-\frac{1}{2}u^{2}=\int u\,d(\tan u)-\frac{1}{2}u^{2}=u\tan u-\int \tan u\,du-\frac{1}{2}u^{2}$$ $$=u\tan u+\ln|\cos u|-\frac{1}{2}u^{2}+C=x\arctan x+\ln\frac{1}{\sqrt{1+x^{2}}}-\frac{1}{2}(\arctan x)^{2}+C.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$x\arctan x+\ln\frac{1}{\sqrt{1+x^{2}}}-\frac{1}{2}(\arctan x)^{2}+C$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s7">1. 定积分的概念与性质</h2>
+<div class="sec-intro">1．定积分的定义 设 $f(x)$ 是定义在区间 $[a,b]$ 上的有界函数，任取分点 $a=x_{0}&lt;x_{1}&lt;x_{2}&lt;\cdots&lt;x_{n}=b$，将 $[a,b]$ 分为 $n$ 个子区间 $[x_{i-1},x_{i}]$，记 $\Delta x_{i}=x_{i}-x_{i-1}$（$i=1,2,\cdots,n$），又在每个子区间上任取一点 $\xi_{i}\in[x_{i-1},x_{i}]$（$i=1,2,\cdots,n$），若不论区间 $[a,b]$ 如何分法，也不论 $\xi_{i}$ 在 $[x_{i-1},x_{i}]$ 中如何取法，只要当 $\lambda=\max\limits_{1\leqslant i\leqslant n}\Delta x_{i}$ 趋于零时，和式 $\sum\limits_{i=1}^{n}f(\xi_{i})\Delta x_{i}$ 的极限存在，则称此极限值为 $f(x)$ 在 $[a,b]$ 上的定积分，记为 $\int_{a}^{b}f(x)\,dx=\lim\limits_{\lambda\to 0}\sum\limits_{i=1}^{n}f(\xi_{i})\Delta x_{i}$，此时也称 $f(x)$ 在 $[a,b]$ 上可积．特别地，把区间 $[a,b]$ 分为 $n$ 等份，$\xi_{i}$ 取为每个小区间的右端点，则有 $\lim\limits_{n\to\infty}\frac{b-a}{n}\sum\limits_{i=1}^{n}f\left(a+\frac{b-a}{n}i\right)=\int_{a}^{b}f(x)\,dx$，$\lim\limits_{n\to\infty}\frac{1}{n}\sum\limits_{i=1}^{n}f\left(\frac{i}{n}\right)=\int_{0}^{1}f(x)\,dx$（此时 $a=0$，$b=1$）．使用以上两个公式可计算某些和式的极限．</div>
+<h3 class="grp-h">利用定积分的保号性比较定积分的大小</h3>
+</main>
+</div>
+<div class="qnav">
+  <button id="qnav-prev" title="上一题">↑</button>
+  <button id="qnav-next" title="下一题">↓</button>
+</div>
+<footer>
+  内容来自《吉米多维奇高等数学习题精选精解》（张天德、蒋晓云主编）· 仅供个人学习使用<br>
+  <a href="../index.html" style="color:var(--accent);">返回总目录</a> <a class="icon-btn" href="chapter-03.html">上一章</a> <a class="icon-btn" href="chapter-05.html">下一章</a>
+</footer>
+</body>
+</html>

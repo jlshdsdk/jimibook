@@ -1,0 +1,2364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第1章 第一章 极限与连续 · 吉米多维奇高等数学刷题版</title>
+<meta name="description" content="吉米多维奇高等数学习题精选精解第1章第一章 极限与连续题目与详解，共132题">
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+<script defer src="../assets/katex/katex.min.js"></script>
+<script defer src="../assets/katex/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</head>
+<body data-chapter="1" data-lazy="1">
+<header class="topbar">
+  <a class="back" href="../index.html">← 总目录</a>
+  <button class="icon-btn sidebar-toggle" id="sidebar-toggle">☰ 目录</button>
+  <span class="title">第1章 第一章 极限与连续 · 共132题</span>
+  <button class="icon-btn" id="theme-btn">🌙 夜间</button>
+</header>
+<div class="sidebar-mask" id="sidebar-mask"></div>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<h3>本章节选</h3>
+<a class="sec" href="#sec-s1">1. 函数</a>
+<a class="sec" href="#sec-s2">2. 数列的极限</a>
+<a class="sec" href="#sec-s3">3. 函数的极限</a>
+<a class="sec" href="#sec-s4">4. 无穷小与无穷大</a>
+<a class="sec" href="#sec-s5">5. 极限运算法则</a>
+<a class="sec" href="#sec-s6">6. 极限存在准则　两个重要极限</a>
+<a class="sec" href="#sec-s7">7. 无穷小的比较</a>
+<a class="sec" href="#sec-s8">8. 连续函数的运算与初等函数的连续性</a>
+<a class="sec" href="#sec-s9">9. 闭区间上连续函数的性质</a>
+<a class="sec" href="#sec-s10">10. 综合提高题型</a>
+<a class="sec" href="#sec-s11">1. 导数的概念</a>
+<h3>题号</h3><div class="qindex">
+<a href="#q1" id="qi1">1</a>
+<a href="#q2" id="qi2">2</a>
+<a href="#q3" id="qi3">3</a>
+<a href="#q4" id="qi4">4</a>
+<a href="#q5" id="qi5">5</a>
+<a href="#q6" id="qi6">6</a>
+<a href="#q7" id="qi7">7</a>
+<a href="#q8" id="qi8">8</a>
+<a href="#q9" id="qi9">9</a>
+<a href="#q10" id="qi10">10</a>
+<a href="#q11" id="qi11">11</a>
+<a href="#q12" id="qi12">12</a>
+<a href="#q13" id="qi13">13</a>
+<a href="#q14" id="qi14">14</a>
+<a href="#q15" id="qi15">15</a>
+<a href="#q16" id="qi16">16</a>
+<a href="#q17" id="qi17">17</a>
+<a href="#q18" id="qi18">18</a>
+<a href="#q19" id="qi19">19</a>
+<a href="#q20" id="qi20">20</a>
+<a href="#q21" id="qi21">21</a>
+<a href="#q22" id="qi22">22</a>
+<a href="#q23" id="qi23">23</a>
+<a href="#q24" id="qi24">24</a>
+<a href="#q25" id="qi25">25</a>
+<a href="#q26" id="qi26">26</a>
+<a href="#q27" id="qi27">27</a>
+<a href="#q28" id="qi28">28</a>
+<a href="#q29" id="qi29">29</a>
+<a href="#q30" id="qi30">30</a>
+<a href="#q31" id="qi31">31</a>
+<a href="#q32" id="qi32">32</a>
+<a href="#q33" id="qi33">33</a>
+<a href="#q34" id="qi34">34</a>
+<a href="#q35" id="qi35">35</a>
+<a href="#q36" id="qi36">36</a>
+<a href="#q37" id="qi37">37</a>
+<a href="#q38" id="qi38">38</a>
+<a href="#q39" id="qi39">39</a>
+<a href="#q40" id="qi40">40</a>
+<a href="#q41" id="qi41">41</a>
+<a href="#q42" id="qi42">42</a>
+<a href="#q43" id="qi43">43</a>
+<a href="#q44" id="qi44">44</a>
+<a href="#q45" id="qi45">45</a>
+<a href="#q46" id="qi46">46</a>
+<a href="#q47" id="qi47">47</a>
+<a href="#q48" id="qi48">48</a>
+<a href="#q49" id="qi49">49</a>
+<a href="#q50" id="qi50">50</a>
+<a href="#q51" id="qi51">51</a>
+<a href="#q52" id="qi52">52</a>
+<a href="#q53" id="qi53">53</a>
+<a href="#q54" id="qi54">54</a>
+<a href="#q55" id="qi55">55</a>
+<a href="#q56" id="qi56">56</a>
+<a href="#q57" id="qi57">57</a>
+<a href="#q58" id="qi58">58</a>
+<a href="#q59" id="qi59">59</a>
+<a href="#q60" id="qi60">60</a>
+<a href="#q61" id="qi61">61</a>
+<a href="#q62" id="qi62">62</a>
+<a href="#q63" id="qi63">63</a>
+<a href="#q64" id="qi64">64</a>
+<a href="#q65" id="qi65">65</a>
+<a href="#q66" id="qi66">66</a>
+<a href="#q67" id="qi67">67</a>
+<a href="#q68" id="qi68">68</a>
+<a href="#q69" id="qi69">69</a>
+<a href="#q70" id="qi70">70</a>
+<a href="#q71" id="qi71">71</a>
+<a href="#q72" id="qi72">72</a>
+<a href="#q73" id="qi73">73</a>
+<a href="#q74" id="qi74">74</a>
+<a href="#q75" id="qi75">75</a>
+<a href="#q76" id="qi76">76</a>
+<a href="#q77" id="qi77">77</a>
+<a href="#q78" id="qi78">78</a>
+<a href="#q79" id="qi79">79</a>
+<a href="#q80" id="qi80">80</a>
+<a href="#q81" id="qi81">81</a>
+<a href="#q82" id="qi82">82</a>
+<a href="#q83" id="qi83">83</a>
+<a href="#q84" id="qi84">84</a>
+<a href="#q85" id="qi85">85</a>
+<a href="#q86" id="qi86">86</a>
+<a href="#q87" id="qi87">87</a>
+<a href="#q88" id="qi88">88</a>
+<a href="#q89" id="qi89">89</a>
+<a href="#q90" id="qi90">90</a>
+<a href="#q91" id="qi91">91</a>
+<a href="#q92" id="qi92">92</a>
+<a href="#q93" id="qi93">93</a>
+<a href="#q94" id="qi94">94</a>
+<a href="#q95" id="qi95">95</a>
+<a href="#q96" id="qi96">96</a>
+<a href="#q97" id="qi97">97</a>
+<a href="#q98" id="qi98">98</a>
+<a href="#q99" id="qi99">99</a>
+<a href="#q100" id="qi100">100</a>
+<a href="#q101" id="qi101">101</a>
+<a href="#q102" id="qi102">102</a>
+<a href="#q103" id="qi103">103</a>
+<a href="#q104" id="qi104">104</a>
+<a href="#q105" id="qi105">105</a>
+<a href="#q106" id="qi106">106</a>
+<a href="#q107" id="qi107">107</a>
+<a href="#q108" id="qi108">108</a>
+<a href="#q109" id="qi109">109</a>
+<a href="#q110" id="qi110">110</a>
+<a href="#q111" id="qi111">111</a>
+<a href="#q112" id="qi112">112</a>
+<a href="#q113" id="qi113">113</a>
+<a href="#q114" id="qi114">114</a>
+<a href="#q115" id="qi115">115</a>
+<a href="#q116" id="qi116">116</a>
+<a href="#q117" id="qi117">117</a>
+<a href="#q118" id="qi118">118</a>
+<a href="#q119" id="qi119">119</a>
+<a href="#q120" id="qi120">120</a>
+<a href="#q121" id="qi121">121</a>
+<a href="#q122" id="qi122">122</a>
+<a href="#q123" id="qi123">123</a>
+<a href="#q124" id="qi124">124</a>
+<a href="#q125" id="qi125">125</a>
+<a href="#q126" id="qi126">126</a>
+<a href="#q127" id="qi127">127</a>
+<a href="#q128" id="qi128">128</a>
+<a href="#q129" id="qi129">129</a>
+<a href="#q130" id="qi130">130</a>
+<a href="#q131" id="qi131">131</a>
+<a href="#q132" id="qi132">132</a>
+</div></nav>
+<main class="main">
+<div class="ch-progress-wrap" style="margin-bottom:18px;color:var(--text-soft);font-size:14px;">
+  本章进度：<span id="ch-progress-text">0 / 132</span>
+  <div class="progress-bar" id="ch-progress" data-ch-count="132" style="margin:6px 0 0;"><i></i></div>
+</div>
+<h2 class="sec-h" id="sec-s1">1. 函数</h2>
+<div class="sec-intro">1．函数的概念 设有两个变量 $x$ 与 $y$，如果变量 $x$ 在其变化范围 $D$ 内任取一个确定的数值时，变量 $y$ 按照一定的规则 $f$ 总有唯一确定的数值和它对应，则称变量 $y$ 是变量 $x$ 的函数，记为 $y=f(x)$．$x$ 称为自变量，$y$ 称为因变量，$D$ 称为函数的定义域，$f$ 表示由 $x$ 确定 $y$ 的对应规则．2．函数的主要性质 (1) 有界性 设函数 $f(x)$ 在集合 $D$ 上有定义，如果存在一个正常数 $M$，使得对于 $x$ 在 $D$ 上的任意取值，均有 $|f(x)|&lt;M$，则称函数 $f(x)$ 在 $D$ 上有界，否则称 $f(x)$ 在 $D$ 上无界．(2) 单调性 设函数 $f(x)$ 在某区间 $D$ 上有定义，如果对于 $D$ 上任意两点 $x_{1},x_{2}$，且 $x_{1}&lt;x_{2}$，均有 $f(x_{1})&lt;f(x_{2})$（或 $f(x_{1})&gt;f(x_{2})$），则称函数 $f(x)$ 在 $D$ 上单调增加（或单调减少）．单调增加与单调减少函数统称为单调函数．(3) 奇偶性 设函数 $f(x)$ 在关于原点对称的区间 $D$ 上有定义，如果对 $D$ 上任意点 $x$，均有 $f(-x)=f(x)$（或 $f(-x)=-f(x)$），则称函数 $f(x)$ 为偶函数（或奇函数）．(4) 周期性 设函数 $f(x)$ 在集合 $D$ 上有定义，如果存在正常数 $T$，使得对于 $D$ 上任意 $x$，均有 $f(x+T)=f(x)$，则称 $f(x)$ 为周期函数，使上式成立的最小正数为周期函数的周期．3．基本初等函数与初等函数 常数函数 $y=c$（$c$ 为常数），幂函数 $y=x^{a}$（$a\in R$），指数函数 $y=a^{x}$（$a\neq1,a&gt;0$），对数函数 $y=\log_{a}x$（$a\neq1,a&gt;0$），三角函数和反三角函数称为基本初等函数．由基本初等函数经过有限次四则运算或有限次复合，并由一个式子表示的函数称为初等函数．</div>
+<h3 class="grp-h">求一元函数的定义域</h3>
+<article class="problem" id="q1" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="1">【1】</span>
+<span class="q-group">求一元函数的定义域</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $y=\dfrac{1}{\sqrt{25-x^{2}}}+\arcsin\dfrac{x-1}{5}$ 的定义域为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 要使函数有意义，变量 $x$ 必须同时满足 $\begin{cases}25-x^{2}&gt;0\\ \left|\dfrac{x-1}{5}\right|\leqslant1\end{cases}$，即 $\begin{cases}25-x^{2}&gt;0\\ -1\leqslant\dfrac{x-1}{5}\leqslant1\end{cases}$．解得 $-4\leqslant x&lt;5$，因此定义域为 $[-4,5)$．故应填 $[-4,5)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $[-4,5)$</span></div>
+</div>
+</article>
+<article class="problem" id="q2" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="2">【2】</span>
+<span class="q-group">求一元函数的定义域</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $f(x)=\dfrac{1}{1+\dfrac{1}{1+\dfrac{1}{x}}}$ 的定义域为________．(A) $x\in R$，但 $x\neq0$　(B) $x\in R$，但 $1+\dfrac{1}{x}\neq0$　(C) $x\in R$，但 $x\neq0$，$-1$，$-\dfrac{1}{2}$　(D) $x\in R$，但 $x\neq0$，$-1$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $x\neq0$，$1+\dfrac{1}{x}\neq0$，$1+\dfrac{1}{1+\dfrac{1}{x}}\neq0$，得 $x\neq0$，$-1$，$-\dfrac{1}{2}$．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q3" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="3">【3】</span>
+<span class="q-group">求一元函数的定义域</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f(x)=\sin x$，$f[\varphi(x)]=1-x^{2}$，则 $\varphi(x)$ 的定义域为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\sin\varphi(x)=1-x^{2}$，所以 $\varphi(x)=\arcsin(1-x^{2})$．从而 $-1\leqslant1-x^{2}\leqslant1$，所以 $-\sqrt{2}\leqslant x\leqslant\sqrt{2}$．故应填 $[-\sqrt{2},\sqrt{2}]$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $[-\sqrt{2},\sqrt{2}]$</span></div>
+</div>
+</article>
+<article class="problem" id="q4" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="4">【4】</span>
+<span class="q-group">求一元函数的定义域</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f(x)=e^{x^{2}}$，$f[\varphi(x)]=1-x$，且 $\varphi(x)\geqslant0$，则 $\varphi(x)=$________，定义域为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f(x)=e^{x^{2}}$，所以 $f[\varphi(x)]=e^{[\varphi(x)]^{2}}$，而 $f[\varphi(x)]=1-x$，因此 $e^{[\varphi(x)]^{2}}=1-x$．对上式两端取对数，得 $\varphi(x)=\sqrt{\ln(1-x)}$．由 $\ln(1-x)\geqslant0$，有 $1-x\geqslant1$，即 $x\leqslant0$．故应填 $\sqrt{\ln(1-x)}$，$(-\infty,0]$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\sqrt{\ln(1-x)}$，$(-\infty,0]$</span></div>
+</div>
+</article>
+<article class="problem" id="q5" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="5">【5】</span>
+<span class="q-group">求一元函数的定义域</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知函数 $f(\log_{a}x)=\sqrt{x}$，则 $f(x)=$________，其定义域为________，其中 $a\neq1$，且 $a&gt;0$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $\log_{a}x=t$，则 $x=a^{t}$．函数 $f(\log_{a}x)=\sqrt{x}$ 可化为 $f(t)=a^{\frac{t}{2}}$，从而 $f(x)=a^{\frac{x}{2}}$．定义域为 $(-\infty,+\infty)$．故应填 $a^{\frac{x}{2}}$，$(-\infty,+\infty)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $a^{\frac{x}{2}}$，$(-\infty,+\infty)$</span></div>
+</div>
+</article>
+<article class="problem" id="q6" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="6">【6】</span>
+<span class="q-group">求一元函数的定义域</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\tan x$，$f[g(x)]=x^{2}-2$，且 $|g(x)|\leqslant\dfrac{\pi}{4}$，则 $g(x)$ 的定义域为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f[g(x)]=\tan g(x)=x^{2}-2$，所以 $g(x)=\arctan(x^{2}-2)$．因为 $|g(x)|\leqslant\dfrac{\pi}{4}$，所以 $-1\leqslant x^{2}-2\leqslant1$，因此 $-\sqrt{3}\leqslant x\leqslant-1$ 或 $1\leqslant x\leqslant\sqrt{3}$．故应填 $[-\sqrt{3},-1]\cup[1,\sqrt{3}]$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $[-\sqrt{3},-1]\cup[1,\sqrt{3}]$</span></div>
+</div>
+</article>
+<h3 class="grp-h">求初等函数的表达式</h3>
+<article class="problem" id="q7" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="7">【7】</span>
+<span class="q-group">求初等函数的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f\left(x+\dfrac{1}{x}\right)=\dfrac{x^{2}}{x^{4}+1}$，求 $f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f\left(x+\dfrac{1}{x}\right)=\dfrac{x^{2}}{x^{4}+1}=\dfrac{1}{x^{2}+\dfrac{1}{x^{2}}}=\dfrac{1}{\left(x+\dfrac{1}{x}\right)^{2}-2}$．所以 $f(x)=\dfrac{1}{x^{2}-2}$，$x\neq\pm\sqrt{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以 $f(x)=\dfrac{1}{x^{2}-2}$（$x\neq\pm\sqrt{2}$）</span></div>
+</div>
+</article>
+<article class="problem" id="q8" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="8">【8】</span>
+<span class="q-group">求初等函数的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f\left(\dfrac{x+1}{x-1}\right)=3f(x)-2x$，求 $f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $\dfrac{x+1}{x-1}=t$，则 $x=\dfrac{t+1}{t-1}$，于是 $f(t)=3f\left(\dfrac{t+1}{t-1}\right)-\dfrac{2t+2}{t-1}=3[3f(t)-2t]-\dfrac{2t+2}{t-1}$，整理得 $8f(t)=6t+2\dfrac{t+1}{t-1}$，所以 $f(x)=\dfrac{3}{4}x+\dfrac{1}{4}\cdot\dfrac{x+1}{x-1}$，$x\neq1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以 $f(x)=\dfrac{3}{4}x+\dfrac{1}{4}\cdot\dfrac{x+1}{x-1}$（$x\neq1$）</span></div>
+</div>
+</article>
+<article class="problem" id="q9" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="9">【9】</span>
+<span class="q-group">求初等函数的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\dfrac{x}{\sqrt{1+x^{2}}}$，$f_{1}(x)=f[f(x)]$，$f_{2}(x)=f[f_{1}(x)]$，$\cdots$，$f_{n+1}(x)=f[f_{n}(x)]$（$n=1,2,\cdots$）．则 $f_{n}(x)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f(x)=\dfrac{x}{\sqrt{1+x^{2}}}$，$f_{1}(x)=f[f(x)]=\dfrac{f(x)}{\sqrt{1+f^{2}(x)}}=\dfrac{x}{\sqrt{1+2x^{2}}}$，$f_{2}(x)=f[f_{1}(x)]=\dfrac{f_{1}(x)}{\sqrt{1+f_{1}^{2}(x)}}=\dfrac{x}{\sqrt{1+3x^{2}}}$，一般地，可用数学归纳法证明 $f_{n}(x)=f[f_{n-1}(x)]=\dfrac{x}{\sqrt{1+(n+1)x^{2}}}$（$n=2,3,4,\cdots$）．故应填 $\dfrac{x}{\sqrt{1+(n+1)x^{2}}}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{x}{\sqrt{1+(n+1)x^{2}}}$</span></div>
+</div>
+</article>
+<article class="problem" id="q10" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="10">【10】</span>
+<span class="q-group">求初等函数的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $a_{0}+a_{1}x+a_{2}x^{2}+\cdots+a_{8}x^{8}=(2x-1)^{8}$，求 $a_{1}+a_{2}+\cdots+a_{7}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $f(x)=a_{0}+a_{1}x+a_{2}x^{2}+\cdots+a_{8}x^{8}=(2x-1)^{8}$，则 $f(0)=a_{0}=1$，$f(1)=a_{0}+a_{1}+\cdots+a_{8}=1$．比较两边 $x^{8}$ 的系数 $a_{8}=2^{8}$．故 $a_{1}+a_{2}+\cdots+a_{7}=1-a_{0}-a_{8}=-256$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $a_{1}+a_{2}+\cdots+a_{7}=1-a_{0}-a_{8}=-256$</span></div>
+</div>
+</article>
+<article class="problem" id="q11" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="11">【11】</span>
+<span class="q-group">求初等函数的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 满足 $f^{2}(\ln x)-2xf(\ln x)+x^{2}\ln x=0$，且 $f(0)=0$，求 $f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $t=\ln x$，即 $x=e^{t}$，则有 $f^{2}(t)-2e^{t}f(t)+te^{2t}=0$，由此可解得 $f(t)=e^{t}\pm\sqrt{e^{2t}-te^{2t}}=e^{t}(1\pm\sqrt{1-t})$．因为 $f(0)=0$，由上式可得 $f(t)=e^{t}(1-\sqrt{1-t})$，$t\leqslant1$．即所求的函数为 $f(x)=e^{x}(1-\sqrt{1-x})$，$x\leqslant1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">即所求的函数为 $f(x)=e^{x}(1-\sqrt{1-x})$（$x\leqslant1$）</span></div>
+</div>
+</article>
+<h3 class="grp-h">求分段函数的表达式</h3>
+<article class="problem" id="q12" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="12">【12】</span>
+<span class="q-group">求分段函数的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}e^{-x}, &amp; x\leqslant0\\ \cos x, &amp; x&gt;0\end{cases}$，则 $f(-x)=$________．(A) $f(-x)=\begin{cases}-e^{-x}, &amp; x\leqslant0\\ -\cos x, &amp; x&gt;0\end{cases}$　(B) $f(-x)=\begin{cases}e^{-x}, &amp; x\leqslant0\\ \cos x, &amp; x&gt;0\end{cases}$　(C) $f(-x)=\begin{cases}-\cos x, &amp; x&lt;0\\ e^{-x}, &amp; x\geqslant0\end{cases}$　(D) $f(-x)=\begin{cases}\cos x, &amp; x&lt;0\\ e^{x}, &amp; x\geqslant0\end{cases}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $-x\leqslant0$ 时，$f(-x)=e^{-(-x)}=e^{x}$；当 $-x&gt;0$ 时，$f(-x)=\cos(-x)=\cos x$．所以 $f(-x)=\begin{cases}\cos x, &amp; x&lt;0\\ e^{x}, &amp; x\geqslant0\end{cases}$．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q13" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="13">【13】</span>
+<span class="q-group">求分段函数的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}1, &amp; |x|\leqslant1\\ 0, &amp; |x|&gt;1\end{cases}$，则 $f\{f[f(x)]\}$ 等于________．(A) $0$　(B) $1$　(C) $\begin{cases}1, &amp; |x|\leqslant1\\ 0, &amp; |x|&gt;1\end{cases}$　(D) $\begin{cases}0, &amp; |x|\leqslant1\\ 1, &amp; |x|&gt;1\end{cases}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $f[f(x)]=1$ 得 $f\{f[f(x)]\}=1$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q14" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="14">【14】</span>
+<span class="q-group">求分段函数的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $g(x)=\begin{cases}2-x, &amp; x\leqslant0\\ x+2, &amp; x&gt;0\end{cases}$，$f(x)=\begin{cases}x^{2}, &amp; x&lt;0\\ -x, &amp; x\geqslant0\end{cases}$，则 $g[f(x)]=$________．(A) $\begin{cases}2+x^{2}, &amp; x&lt;0\\ 2-x, &amp; x\geqslant0\end{cases}$　(B) $\begin{cases}2-x^{2}, &amp; x&lt;0\\ 2+x^{2}, &amp; x\geqslant0\end{cases}$　(C) $\begin{cases}2-x^{2}, &amp; x&lt;0\\ 2-x, &amp; x\geqslant0\end{cases}$　(D) $\begin{cases}2+x^{2}, &amp; x&lt;0\\ 2+x, &amp; x\geqslant0\end{cases}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $g[f(x)]=\begin{cases}2-f(x), &amp; f(x)\leqslant0\\ f(x)+2, &amp; f(x)&gt;0\end{cases}=\begin{cases}2+x, &amp; x\geqslant0\\ x^{2}+2, &amp; x&lt;0\end{cases}=\begin{cases}2+x^{2}, &amp; x&lt;0\\ 2+x, &amp; x\geqslant0\end{cases}$．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<h3 class="grp-h">判断函数的奇偶性</h3>
+<article class="problem" id="q15" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="15">【15】</span>
+<span class="q-group">判断函数的奇偶性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">下列函数中非奇非偶的函数是________．(A) $f(x)=3^{x}-3^{-x}$　(B) $f(x)=x(1-x)$　(C) $f(x)=\ln\dfrac{x+1}{x-1}$　(D) $f(x)=x^{2}\cos x$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 易验证 (A) 为奇函数，(B) 为非奇非偶函数，(C) 为奇函数，(D) 为偶函数．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q16" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="16">【16】</span>
+<span class="q-group">判断函数的奇偶性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 为奇函数，判断下列函数的奇偶性：(1) $xf(x)$　(2) $(x^{2}+1)f(x)$　(3) $|f(x)|$　(4) $-f(-x)$　(5) $f(x)\left(\dfrac{1}{2^{x}+1}-\dfrac{1}{2}\right)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 设 $F(x)=xf(x)$，则 $F(-x)=(-x)f(-x)=xf(x)=F(x)$，故 $xf(x)$ 为偶函数．同理可得：(2) $(x^{2}+1)f(x)$ 为奇函数；(3) $|f(x)|$ 为偶函数；(4) $-f(-x)$ 为奇函数；(5) $f(x)\left(\dfrac{1}{2^{x}+1}-\dfrac{1}{2}\right)$ 为偶函数．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) 偶函数；(2) 奇函数；(3) 偶函数；(4) 奇函数；(5) 偶函数</span></div>
+</div>
+</article>
+<article class="problem" id="q17" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="17">【17】</span>
+<span class="q-group">判断函数的奇偶性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">判定函数 $f(x)=\ln(x+\sqrt{1+x^{2}})$ 的奇偶性．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 判定一个函数的奇偶性，关键是确定 $f(-x)$ 与 $f(x)$ 的关系．这样的问题通常分两步解决．第一步是求出 $f(-x)$，第二步是确定 $f(-x)$ 与 $f(x)$ 的关系．<strong>解</strong> $f(-x)=\ln(-x+\sqrt{1+(-x)^{2}})=\ln(\sqrt{1+x^{2}}-x)=\ln\dfrac{(\sqrt{1+x^{2}}-x)(\sqrt{1+x^{2}}+x)}{\sqrt{1+x^{2}}+x}=\ln\dfrac{1}{\sqrt{1+x^{2}}+x}=-\ln(\sqrt{1+x^{2}}+x)=-f(x)$．所以函数 $f(x)=\ln(x+\sqrt{1+x^{2}})$ 是奇函数．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以函数 $f(x)=\ln(x+\sqrt{1+x^{2}})$ 是奇函数</span></div>
+</div>
+</article>
+<article class="problem" id="q18" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="18">【18】</span>
+<span class="q-group">判断函数的奇偶性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 为奇函数，$g(x)$ 为偶函数，且它们可以构成复合函数 $f[f(x)]$，$g[f(x)]$，$f[g(x)]$，$g[g(x)]$，则其中为奇函数的是________．(A) $f[f(x)]$　(B) $g[f(x)]$　(C) $f[g(x)]$　(D) $g[g(x)]$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由已知条件知 $f(-x)=-f(x)$，$g(-x)=g(x)$．设 $F(x)=f[f(x)]$，则 $F(-x)=f[f(-x)]=f[-f(x)]=-f[f(x)]$．所以 $f[f(x)]$ 为奇函数．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<h3 class="grp-h">讨论函数的单调性</h3>
+<article class="problem" id="q19" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="19">【19】</span>
+<span class="q-group">讨论函数的单调性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $(-\infty,+\infty)$ 上有定义，且对任意 $x,y\in(-\infty,+\infty)$（$x\neq y$）有 $|f(x)-f(y)|&lt;|x-y|$，证明 $F(x)=f(x)+x$ 在 $(-\infty,+\infty)$ 上单调增加．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 任意 $x_{1},x_{2}\in(-\infty,+\infty)$，$x_{2}&gt;x_{1}$，有 $|f(x_{2})-f(x_{1})|&lt;|x_{2}-x_{1}|=x_{2}-x_{1}$，而 $f(x_{1})-f(x_{2})\leqslant|f(x_{2})-f(x_{1})|&lt;x_{2}-x_{1}$，因而 $f(x_{1})+x_{1}&lt;f(x_{2})+x_{2}$，所以 $F(x_{1})&lt;F(x_{2})$，即 $F(x)$ 在 $(-\infty,+\infty)$ 上单调增加．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">即 $F(x)$ 在 $(-\infty,+\infty)$ 上单调增加</span></div>
+</div>
+</article>
+<article class="problem" id="q20" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="20">【20】</span>
+<span class="q-group">讨论函数的单调性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$，$g(x)$，$h(x)$ 是定义在 $(-\infty,+\infty)$ 上的单调增加函数，且 $f(x)\leqslant g(x)\leqslant h(x)$，证明 $f[f(x)]\leqslant g[g(x)]\leqslant h[h(x)]$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $f(x)$，$g(x)$，$h(x)$ 在 $(-\infty,+\infty)$ 上单增，所以对任意 $x_{1},x_{2}\in(-\infty,+\infty)$，$x_{2}&gt;x_{1}$，有 $f(x_{1})\leqslant f(x_{2})$，$g(x_{1})\leqslant g(x_{2})$，$h(x_{1})\leqslant h(x_{2})$．又对任意 $x\in(-\infty,+\infty)$，有 $f(x)\leqslant g(x)\leqslant h(x)$，所以 $f[f(x)]\leqslant f[g(x)]\leqslant g[g(x)]$，$g[g(x)]\leqslant g[h(x)]\leqslant h[h(x)]$，即 $f[f(x)]\leqslant g[g(x)]\leqslant h[h(x)]$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">即 $f[f(x)]\leqslant g[g(x)]\leqslant h[h(x)]$</span></div>
+</div>
+</article>
+<h3 class="grp-h">一元函数周期性的讨论</h3>
+<article class="problem" id="q21" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="21">【21】</span>
+<span class="q-group">一元函数周期性的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $[x]$ 是表示不超过 $x$ 的最大整数，则 $y=x-[x]$ 是________．(A) 无界函数　(B) 周期为 1 的周期函数　(C) 单调函数　(D) 偶函数</div>
+<div class="figure-note">锯齿形周期图象：在横轴（$x$，标 $-5$ 至 $5$）的每个区间 $[n,n+1)$（$n$ 为整数）上，图象为从轴上点 $(n,0)$（实点，函数值取 $0$）向右上方升至高度 $1$ 的斜线段，在点 $(n+1,1)$ 处为空心圆圈（函数值取不到 $1$）；图象以 $1$ 为周期重复，函数值始终在 $[0,1)$ 内；纵轴标 $y$，原点 $O$。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y=x-[x]$ 的图象如图 21 所示．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q22" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="22">【22】</span>
+<span class="q-group">一元函数周期性的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设对任何 $x\in(-\infty,+\infty)$，存在常数 $c\neq0$，使 $f(x+c)=-f(x)$，证明 $f(x)$ 是周期函数．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 对任意 $x\in(-\infty,+\infty)$，有 $f(x+c)=-f(x)$，所以 $f(x+2c)=f[(x+c)+c]=-f(x+c)=f(x)$，故 $f(x)$ 为周期函数．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $f(x)$ 为周期函数</span></div>
+</div>
+</article>
+<h3 class="grp-h">求反函数</h3>
+<article class="problem" id="q23" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="23">【23】</span>
+<span class="q-group">求反函数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $y=\dfrac{1+\sqrt{1-x}}{1-\sqrt{1-x}}$ 的反函数为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $t=\sqrt{1-x}$，则 $y=\dfrac{1+t}{1-t}$，所以 $t=\dfrac{y-1}{y+1}$，即 $\sqrt{1-x}=\dfrac{y-1}{y+1}$，从而 $x=1-\left(\dfrac{y-1}{y+1}\right)^{2}=\dfrac{4y}{(y+1)^{2}}$，因此反函数为 $y=\dfrac{4x}{(x+1)^{2}}$．故应填 $y=\dfrac{4x}{(x+1)^{2}}$，$(-\infty,-1)\cup[1,+\infty)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $y=\dfrac{4x}{(x+1)^{2}}$，$(-\infty,-1)\cup[1,+\infty)$</span></div>
+</div>
+</article>
+<h3 class="grp-h">讨论一元函数的值域</h3>
+<article class="problem" id="q24" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="24">【24】</span>
+<span class="q-group">讨论一元函数的值域</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $f(x)=\dfrac{\sin x}{1+x^{2}}$ 的值域是________．(A) $\left(-\dfrac{1}{2},\dfrac{1}{2}\right)$　(B) $[0,1]$　(C) $[-1,0]$　(D) $[-1,1]$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $|f(x)|=\left|\dfrac{\sin x}{1+x^{2}}\right|\leqslant\dfrac{|x|}{1+x^{2}}\leqslant\dfrac{|x|}{2|x|}=\dfrac{1}{2}$，所以 $-\dfrac{1}{2}&lt;f(x)&lt;\dfrac{1}{2}$．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<article class="problem" id="q25" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="25">【25】</span>
+<span class="q-group">讨论一元函数的值域</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $y=\sin\dfrac{\pi x}{2(1+x^{2})}$ 的值域是________．(A) $[-1,1]$　(B) $\left[-\dfrac{\sqrt{2}}{2},\dfrac{\sqrt{2}}{2}\right]$　(C) $[0,1]$　(D) $\left[-\dfrac{1}{2},\dfrac{1}{2}\right]$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $1+x^{2}\geqslant2|x|$，所以 $-\dfrac{1}{2}\leqslant\dfrac{x}{1+x^{2}}\leqslant\dfrac{1}{2}$，因此 $-\dfrac{\pi}{4}\leqslant\dfrac{\pi x}{2(1+x^{2})}\leqslant\dfrac{\pi}{4}$，从而 $-\dfrac{\sqrt{2}}{2}\leqslant\sin\dfrac{\pi x}{2(1+x^{2})}\leqslant\dfrac{\sqrt{2}}{2}$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q26" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="26">【26】</span>
+<span class="q-group">讨论一元函数的值域</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $y=f(x)=\begin{cases}3-x^{3}, &amp; x&lt;-2\\ 5-x, &amp; -2\leqslant x\leqslant2\\ 1-(x-2)^{2}, &amp; x&gt;2\end{cases}$ 的值域，并求它的反函数．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x&lt;-2$ 时，$y=3-x^{3}$，$x=\sqrt[3]{3-y}$，且 $y&gt;3+8=11$；当 $-2\leqslant x\leqslant2$ 时，$y=5-x$，$x=5-y$，且 $3\leqslant y\leqslant7$；当 $x&gt;2$ 时，$y=1-(x-2)^{2}$，$x=2+\sqrt{1-y}$，且 $y&lt;1$；所以 $y=f(x)$ 的值域为 $(-\infty,1)\cup[3,7]\cup(11,+\infty)$．$y=f(x)$ 的反函数为 $y=\begin{cases}2+\sqrt{1-x}, &amp; x&lt;1\\ 5-x, &amp; 3\leqslant x\leqslant7\\ \sqrt[3]{3-x}, &amp; x&gt;11\end{cases}$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">值域为 $(-\infty,1)\cup[3,7]\cup(11,+\infty)$；反函数为 $y=\begin{cases}2+\sqrt{1-x}, &amp; x&lt;1\\ 5-x, &amp; 3\leqslant x\leqslant7\\ \sqrt[3]{3-x}, &amp; x&gt;11\end{cases}$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s2">2. 数列的极限</h2>
+<div class="sec-intro">1．数列 一个定义在正整数集合上的函数 $a_{n}=f(n)$（称为整标函数），当自变量 $n$ 按正整数 $1,2,3,\cdots$ 依次增大的顺序取值时，函数按相应的顺序排成一串数：$f(1),f(2),f(3),\cdots,f(n),\cdots$ 称为一个无穷数列，简称数列．数列中的每一个数称为数列的项，$f(n)$ 称为数列的一般项或通项．2．数列极限的定义 (1) 设 $\{a_{n}\}$ 是一数列，如果存在常数 $a$，当 $n$ 无限增大时，$a_{n}$ 无限接近（或趋近）于 $a$，则称数列 $\{a_{n}\}$ 收敛，$a$ 称为数列 $\{a_{n}\}$ 的极限，或称数列 $\{a_{n}\}$ 收敛于 $a$，记为 $\lim\limits_{n\to\infty}a_{n}=a$，或 $n\to\infty$，$a_{n}\to a$．当 $n\to\infty$ 时，若不存在这样的常数 $a$，则称数列 $\{a_{n}\}$ 发散或不收敛，也可以说极限 $\lim\limits_{n\to\infty}a_{n}$ 不存在．(2) 设 $\{a_{n}\}$ 为一个数列，$a$ 为一个常数．若对任意给定的 $\epsilon&gt;0$，都存在一个正整数 $N$，使得 $n&gt;N$ 的一切 $a_{n}$ 都满足不等式 $|a_{n}-a|&lt;\epsilon$，则称 $a$ 为数列 $\{a_{n}\}$ 当 $n\to\infty$ 时的极限，记为 $\lim\limits_{n\to\infty}a_{n}=a$．3．数列极限的性质 唯一性：收敛数列的极限是唯一的．即若数列 $\{a_{n}\}$ 收敛，且 $\lim\limits_{n\to\infty}a_{n}=a$ 和 $\lim\limits_{n\to\infty}a_{n}=b$，则 $a=b$．有界性：假设数列 $\{a_{n}\}$ 收敛，则数列 $\{a_{n}\}$ 必有界，即存在常数 $M&gt;0$，使 $|a_{n}|&lt;M$（任意 $n\in N$）．这个性质中的 $M$ 显然不是唯一的，重要的是它的存在性．保号性：假设数列 $\{a_{n}\}$ 收敛，其极限为 $a$．(1) 若有正整数 $N$，使得当 $n&gt;N$ 时 $a_{n}&gt;0$（或 $&lt;0$），则 $a\geqslant0$（或 $\leqslant0$）．(2) 若 $a&gt;0$（或 $&lt;0$），则有正整数 $N$，使得当 $n&gt;N$ 时，$a_{n}&gt;0$（或 $&lt;0$）．</div>
+<h3 class="grp-h">有关数列极限存在性的判定</h3>
+<article class="problem" id="q27" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="27">【27】</span>
+<span class="q-group">有关数列极限存在性的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">"对任意给定的 $\epsilon\in(0,1)$，总存在正整数 $N$，当 $n\geqslant N$ 时，恒有 $|x_{n}-a|\leqslant2\epsilon$" 是数列 $\{a_{n}\}$ 收敛于 $a$ 的________．(A) 充分条件但非必要条件　(B) 必要条件但非充分条件　(C) 充分必要条件　(D) 既非充分条件又非必要条件</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 本题应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">本题应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q28" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="28">【28】</span>
+<span class="q-group">有关数列极限存在性的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\{a_{n}\}$，$\{b_{n}\}$，$\{c_{n}\}$ 均为非负数列，且 $\lim\limits_{n\to\infty}a_{n}=0$，$\lim\limits_{n\to\infty}b_{n}=1$，$\lim\limits_{n\to\infty}c_{n}=\infty$，则必有________．(A) $a_{n}&lt;b_{n}$ 对任意 $n$ 成立　(B) $b_{n}&lt;c_{n}$ 对任意 $n$ 成立　(C) 极限 $\lim\limits_{n\to\infty}a_{n}c_{n}$ 不存在　(D) 极限 $\lim\limits_{n\to\infty}b_{n}c_{n}$ 不存在</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 取 $a_{n}=\dfrac{2}{n}$，$b_{n}=1$，$c_{n}=\dfrac{n}{2}$（$n=1,2,\cdots$），则选项 (A)、(B)、(C) 均可排除．对于选项 (D)，由 $\lim\limits_{n\to\infty}b_{n}=1$，$\lim\limits_{n\to\infty}c_{n}=\infty$ 知 $\lim\limits_{n\to\infty}\dfrac{1}{b_{n}c_{n}}=\lim\limits_{n\to\infty}\dfrac{1}{b_{n}}\cdot\lim\limits_{n\to\infty}\dfrac{1}{c_{n}}=0$，从而 $\lim\limits_{n\to\infty}b_{n}c_{n}=\infty$，即 $\lim\limits_{n\to\infty}b_{n}c_{n}$ 不存在．故应选 (D)．<strong>点评</strong> 为了正确而迅速的解答选择题，首先要对题意和备选项进行整体的对比考查，弄清题目的考查目标，从题干和备选项中获得解决问题的充分信息，其次选择适当的解题方法，下面归纳几种解题方法，供读者参考．直接法：直接从题目的已知条件出发，经过严密的推导、合理的运算从而得出结果和判断的方法，其选择过程是先计算，然后将计算的结果与备选项对照，找到正确选项，当题目中给出已知条件，备选答案已出所需求的结果时，一般首先考虑直接法．验证法：把可供选择的各备选项带入题目中已知条件或将题干中的条件带入备选项进行验算，从而得到正确选项的方法．图象法：通过画出直观的几何图形，帮助分析，便于作出正确选择的方法．每种方法都不是孤立的，有时同一试题可用多种方法求解，有时需借用几种方法综合求解．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<h3 class="grp-h">证明数列没有极限</h3>
+<article class="problem" id="q29" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="29">【29】</span>
+<span class="q-group">证明数列没有极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $a_{n}=\left(1+\dfrac{1}{n}\right)\sin\dfrac{n\pi}{2}$，证明数列 $\{a_{n}\}$ 没有极限．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 若数列 $\{a_{n}\}$ 有极限，则由极限性质知道极限应是唯一的，要证明 $\{a_{n}\}$ 没有极限，只要找到两个子列分别收敛到不同的值即可．<strong>证</strong> 设 $k$ 为正整数，若 $n=4k$，则 $a_{4k}=\left(1+\dfrac{1}{4k}\right)\sin\dfrac{4k\pi}{2}=\left(1+\dfrac{1}{4k}\right)\sin 2k\pi=0$；若 $n=4k+1$，则 $a_{4k+1}=\left(1+\dfrac{1}{4k+1}\right)\sin\left(\dfrac{4k\pi}{2}+\dfrac{\pi}{2}\right)=\left(1+\dfrac{1}{4k+1}\right)\sin\dfrac{\pi}{2}=1+\dfrac{1}{4k+1}\to1$（$k\to+\infty$）．因此 $\{a_{n}\}$ 没有极限．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">因此 $\{a_{n}\}$ 没有极限</span></div>
+</div>
+</article>
+<article class="problem" id="q30" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="30">【30】</span>
+<span class="q-group">证明数列没有极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明：数列 $x_{n}=(-1)^{n}\cdot\dfrac{n+1}{n}$ 是发散的．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 考察子序列 $x_{2n}=\dfrac{2n+1}{2n}=1+\dfrac{1}{2n}\to1$（$n\to+\infty$），$x_{2n+1}=-\dfrac{2n+2}{2n+1}=-1-\dfrac{1}{2n+1}\to-1$（$n\to+\infty$）．由于子列的收敛性，可知 $\lim\limits_{n\to\infty}x_{n}$ 不存在．<strong>点评</strong> 在证明数列发散时，可采用下列两种方法：① 找两个极限不同的子数列．② 找一个发散的子数列．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">由于子列的收敛性，可知 $\lim\limits_{n\to\infty}x_{n}$ 不存在，即数列发散</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s3">3. 函数的极限</h2>
+<div class="sec-intro">1．函数极限的定义 设函数 $f(x)$ 在点 $x_{0}$ 的邻域内（点 $x_{0}$ 可除外）有定义，$A$ 为一个常数．若对任意给定的 $\epsilon&gt;0$，都存在一个正数 $\delta$，使得满足 $0&lt;|x-x_{0}|&lt;\delta$ 的一切 $x$ 所对应的 $f(x)$ 都满足不等式 $|f(x)-A|&lt;\epsilon$，则称 $A$ 为函数 $f(x)$ 当 $x\to x_{0}$ 时的极限，记为 $\lim\limits_{x\to x_{0}}f(x)=A$ 2．左极限和右极限的定义 若对于满足 $0&lt;x_{0}-x&lt;\delta$（$0&lt;x-x_{0}&lt;\delta$）的一切 $x$ 所对应的 $f(x)$ 都满足不等式 $|f(x)-A|&lt;\epsilon$，则称 $A$ 为函数 $f(x)$ 当 $x$ 自 $x_{0}$ 左（右）侧趋于 $x_{0}$ 时的极限，即左（右）极限，分别记为 $\lim\limits_{x\to x_{0}^{-}}f(x)=f(x_{0}-0)=A$（$\lim\limits_{x\to x_{0}^{+}}f(x)=f(x_{0}+0)=A$）类似地，可以给出当 $x\to\infty$，$x\to+\infty$，$x\to-\infty$ 时，$f(x)$ 的极限为 $A$ 的定义．3．极限的性质 (1) 唯一性 若 $\lim\limits_{x\to x_{0}}f(x)=A$，则 $A$ 必唯一．(2) 有界性 若 $\lim\limits_{x\to x_{0}}f(x)=A$，则 $f(x)$ 在 $x_{0}$ 的某一邻域（$x_{0}$ 除外）内是有界的．(3) 保号性 设 $f(x)$ 在 $x_{0}$ 的某邻域（$x_{0}$ 除外）内均有 $f(x)\geqslant0$（或 $f(x)\leqslant0$），且 $\lim\limits_{x\to x_{0}}f(x)=A$，则 $A\geqslant0$（或 $A\leqslant0$）．4．充要条件 $\lim\limits_{x\to x_{0}}f(x)=A\Leftrightarrow f(x_{0}-0)=f(x_{0}+0)=A$．</div>
+<h3 class="grp-h">讨论函数极限的存在性</h3>
+<article class="problem" id="q31" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="31">【31】</span>
+<span class="q-group">讨论函数极限的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设对任意的 $x$，总有 $\varphi(x)\leqslant f(x)\leqslant g(x)$，且 $\lim\limits_{x\to\infty}[g(x)-\varphi(x)]=0$，则 $\lim\limits_{x\to\infty}f(x)$ ________．(A) 存在且等于零　(B) 存在但不一定为零　(C) 一定不存在　(D) 不一定存在</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 若取 $\varphi(x)=x$，$f(x)=x+e^{-|x|}$，$g(x)=x+2e^{-|x|}$．此时 $\lim\limits_{x\to\infty}[g(x)-\varphi(x)]=0$，但 $\lim\limits_{x\to\infty}f(x)$ 不存在；若取 $\varphi(x)=0$，$f(x)=e^{-|x|}$，$g(x)=2e^{-|x|}$，此时 $\lim\limits_{x\to\infty}[g(x)-\varphi(x)]=0$，$\lim\limits_{x\to\infty}f(x)=0$ 存在．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q32" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="32">【32】</span>
+<span class="q-group">讨论函数极限的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}x, &amp; |x|\leqslant1\\ x-2, &amp; |x|&gt;1\end{cases}$．试讨论 $\lim\limits_{x\to1}f(x)$ 及 $\lim\limits_{x\to-1}f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 本题中函数是分段表达的，因此要讨论 $x\to1$ 时 $f(x)$ 的极限值必须从左、右极限入手．<strong>解</strong> (1) 由题目条件知 $f(x)=\begin{cases}x-2, &amp; x&lt;-1\\ x, &amp; -1\leqslant x\leqslant1\\ x-2, &amp; x&gt;1\end{cases}$．因为 $\lim\limits_{x\to1^{+}}f(x)=\lim\limits_{x\to1^{+}}(x-2)=-1$，$\lim\limits_{x\to1^{-}}f(x)=\lim\limits_{x\to1^{-}}x=1$，从而 $\lim\limits_{x\to1^{+}}f(x)\neq\lim\limits_{x\to1^{-}}f(x)$，所以 $\lim\limits_{x\to1}f(x)$ 不存在．(2) 因为 $\lim\limits_{x\to-1^{+}}f(x)=\lim\limits_{x\to-1^{+}}x=-1$，$\lim\limits_{x\to-1^{-}}f(x)=\lim\limits_{x\to-1^{-}}(x-2)=-3$．从而 $\lim\limits_{x\to-1^{+}}f(x)\neq\lim\limits_{x\to-1^{-}}f(x)$，所以 $\lim\limits_{x\to-1}f(x)$ 不存在．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\lim\limits_{x\to1}f(x)$ 不存在；$\lim\limits_{x\to-1}f(x)$ 不存在</span></div>
+</div>
+</article>
+<article class="problem" id="q33" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="33">【33】</span>
+<span class="q-group">讨论函数极限的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明 $\lim\limits_{x\to+\infty}x\sin x$ 不存在．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $f(x)=x\sin x$，取 $x_{n}=n\pi$ 及 $y_{n}=2n\pi+\dfrac{\pi}{2}$，显然 $n\to+\infty$ 时有 $x_{n}\to+\infty$，$y_{n}\to+\infty$，但是 $\lim\limits_{n\to+\infty}f(x_{n})=\lim\limits_{n\to+\infty}n\pi\cdot\sin n\pi=0$，$\lim\limits_{n\to+\infty}f(y_{n})=\lim\limits_{n\to+\infty}\left(2n\pi+\dfrac{\pi}{2}\right)\sin\left(2n\pi+\dfrac{\pi}{2}\right)=+\infty$．故 $\lim\limits_{x\to+\infty}x\cdot\sin x$ 不存在．<strong>点评</strong> 证明极限不存在常用的办法就是从证明左、右极限入手，或者说明一个极限不存在，或者说明二者存在但不相等．为了简化过程，这时通常取特殊子列进行讨论．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $\lim\limits_{x\to+\infty}x\sin x$ 不存在</span></div>
+</div>
+</article>
+<article class="problem" id="q34" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="34">【34】</span>
+<span class="q-group">讨论函数极限的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $f(x)=\dfrac{|x|}{x}$，$g(x)=\dfrac{1-a^{\frac{1}{x}}}{1+a^{\frac{1}{x}}}$（$a&gt;1$）当 $x\to0$ 时的左、右极限，并说明 $x\to0$ 时极限是否存在．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to0^{+}}f(x)=\lim\limits_{x\to0^{+}}\dfrac{x}{x}=1$，$\lim\limits_{x\to0^{-}}f(x)=\lim\limits_{x\to0^{-}}\dfrac{-x}{x}=-1$．$\lim\limits_{x\to0^{+}}g(x)=\lim\limits_{x\to0^{+}}\dfrac{1-a^{\frac{1}{x}}}{1+a^{\frac{1}{x}}}=\lim\limits_{x\to0^{+}}\dfrac{a^{-\frac{1}{x}}-1}{a^{-\frac{1}{x}}+1}=-1$，$\lim\limits_{x\to0^{-}}g(x)=\lim\limits_{x\to0^{-}}\dfrac{1-a^{\frac{1}{x}}}{1+a^{\frac{1}{x}}}=1$．所以 $\lim\limits_{x\to0}f(x)$，$\lim\limits_{x\to0}g(x)$ 都不存在．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以 $\lim\limits_{x\to0}f(x)$，$\lim\limits_{x\to0}g(x)$ 都不存在</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s4">4. 无穷小与无穷大</h2>
+<div class="sec-intro">1．无穷小与无穷大的定义 (1) 无穷小的定义 若 $\lim\limits_{x\to x_{0}(x\to\infty)}f(x)=0$，则称 $f(x)$ 当 $x\to x_{0}$（$x\to\infty$）时为无穷小．(2) 无穷大的定义 若对任意给定的 $M&gt;0$，都存在一个正数 $\delta(N)$，使得满足 $0&lt;|x-x_{0}|&lt;\delta$（$|x|&gt;N$）的一切 $x$ 所对应的 $f(x)$ 都满足不等式 $|f(x)|&gt;M$，则称 $f(x)$ 当 $x\to x_{0}$（$x\to\infty$）时为无穷大，记为 $\lim\limits_{x\to x_{0}(x\to\infty)}f(x)=\infty$ 2．无穷小与无穷大的关系（以下所讨论的极限，都是在自变量同一变化过程中的极限）若 $\lim f(x)=0$（$f(x)\neq0$），则 $\lim\dfrac{1}{f(x)}=\infty$；若 $\lim f(x)=\infty$，则 $\lim\dfrac{1}{f(x)}=0$．</div>
+<h3 class="grp-h">有关无穷小与无穷大的定义</h3>
+<article class="problem" id="q35" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="35">【35】</span>
+<span class="q-group">有关无穷小与无穷大的定义</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">当 $x\to0$ 时，变量 $\dfrac{1}{x^{2}}\sin\dfrac{1}{x}$ 是________．(A) 无穷小　(B) 无穷大</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body">[本批未含解答，题干与选项 (A)(B) 见本页末，其后内容接下一批页面]
+<strong>解</strong> 取 $x_k=\dfrac{1}{2k\pi}$，则 $f(x_k)=(2k\pi)^{2}\sin(2k\pi)=0$．故 $x\to0$ 时，$f(x)$ 不是无穷大，排除 (B)．显然，$x\to0$ 时，$\dfrac{1}{x^{2}}\sin\dfrac{1}{x}$ 不是无穷小，排除 (A)．取 $x_k=\dfrac{1}{2k\pi+\dfrac{\pi}{2}}$，则 $f(x_k)=\left(2k\pi+\dfrac{\pi}{2}\right)^{2}\sin\left(2k\pi+\dfrac{\pi}{2}\right)=\left(2k\pi+\dfrac{\pi}{2}\right)^{2}\to\infty$．故 $\dfrac{1}{x^{2}}\sin\dfrac{1}{x}$ 不是有界的，排除 (C)．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q36" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="36">【36】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $f(x)=x\sin x$________．(A) 当 $x\to\infty$ 时为无穷大　(B) 在 $(-\infty,+\infty)$ 内有界　(C) 在 $(-\infty,+\infty)$ 内无界　(D) 当 $x\to\infty$ 时有有限极限</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 只要正确理解当 $x\to\infty$ 时，$f(x)$ 为无穷大与 $f(x)$ 无界两个概念之间的区别，就容易作出正确选择．验证法　可直接验算 (C) 为正确选项．根据 $x\to\infty$ 时 $f(x)$ 无界的定义，无论给定 $M$ 多么大，均存在 $x_{0}$ 使得 $f(x_{0})&gt;M$．现取正整数 $k$，使 $\left(2k+\dfrac{1}{2}\right)\pi&gt;M$，并令 $x_{0}=\left(2k+\dfrac{1}{2}\right)\pi$，则 $f(x_{0})=\left(2k+\dfrac{1}{2}\right)\pi\sin\left[\left(2k+\dfrac{1}{2}\right)\pi\right]=\left(2k+\dfrac{1}{2}\right)\pi&gt;M$．排除法　若取 $x_k=2k\pi$，则 $f(x_k)=2k\pi\sin2k\pi=0$，故 $x\to\infty$ 时，$f(x)$ 不是无穷大量，从而排除 (A)．分别取 $x_{k}^{(1)}=2k\pi$，$x_{k}^{(2)}=\left(2k+\dfrac{1}{2}\right)\pi$，则当 $k\to\infty$ 时 $f(x_{k}^{(1)})=0$，而 $f(x_{k}^{(2)})\to\infty$，因此，$x\to\infty$ 时 $f(x)$ 不存在有限极限，且在 $(-\infty,+\infty)$ 内 $f(x)$ 也不是有界的，于是 (B)、(D) 不成立．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q37" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="37">【37】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设数列 $x_n$ 与 $y_n$ 满足 $\lim\limits_{n\to\infty}x_ny_n=0$，则下列断言正确的是________．(A) 若 $x_n$ 发散，则 $y_n$ 必发散　(B) 若 $x_n$ 无界，则 $y_n$ 必有界　(C) 若 $x_n$ 有界，则 $y_n$ 必为无穷小　(D) 若 $\dfrac{1}{x_n}$ 为无穷小，则 $y_n$ 必为无穷小</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (A)，(B) 显然不对．若 $x_n$ 有界，且 $y_n$ 为无穷小，则 $\lim\limits_{n\to\infty}x_ny_n=0$．但反之不一定，故 (C) 也不对．(D) 正确．因为，若 $\dfrac{1}{x_n}$ 为无穷小，则 $\lim\limits_{n\to\infty}\dfrac{1}{x_n}=0$．而 $\lim\limits_{n\to\infty}x_ny_n=\lim\limits_{n\to\infty}\dfrac{y_n}{\dfrac{1}{x_n}}=0$，所以必有 $\lim\limits_{n\to\infty}y_n=0$．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s5">5. 极限运算法则</h2>
+<div class="sec-intro">1．运算法则 设 $\lim f(x)$ 与 $\lim g(x)$ 均存在，则 $\lim[f(x)\pm g(x)]=\lim f(x)\pm\lim g(x)$，$\lim[f(x)\cdot g(x)]=\lim f(x)\cdot\lim g(x)$，$\lim\dfrac{f(x)}{g(x)}=\dfrac{\lim f(x)}{\lim g(x)}$（$\lim g(x)\neq0$）．2．无穷小运算法则 (1) 有限多个无穷小之和仍是无穷小；(2) 有限多个无穷小之积仍是无穷小；(3) 有界变量与无穷小之积仍为无穷小．所谓变量 $u$ 有界是指，存在常数 $M&gt;0$，$u$ 在其变化过程中总有 $|u|&lt;M$．3．无穷小与函数极限之间的关系 在一个极限过程中，函数 $f(x)$ 的极限为 $A$ 的充分必要条件是 $f(x)=A+\alpha$，其中 $\alpha$ 为这个极限过程中的无穷小量（即 $\lim\alpha=0$）．</div>
+<h3 class="grp-h">利用极限存在的充要条件求极限</h3>
+<article class="problem" id="q38" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="38">【38】</span>
+<span class="q-group">利用极限存在的充要条件求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">当 $x\to1$ 时，函数 $\dfrac{x^{2}-1}{x-1}e^{\frac{1}{x-1}}$ 的极限________．(A) 等于 $2$　(B) 等于 $0$　(C) 为 $\infty$　(D) 不存在但不为 $\infty$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 函数在某一点的极限存在的充分必要条件是函数在该点的左、右极限都存在并且相等．因为若函数 $\dfrac{x^{2}-1}{x-1}e^{\frac{1}{x-1}}$ 的极限存在，则 $\lim\limits_{x\to1^{+}}\dfrac{x^{2}-1}{x-1}e^{\frac{1}{x-1}}=\lim\limits_{x\to1^{-}}\dfrac{x^{2}-1}{x-1}e^{\frac{1}{x-1}}$．然而，$\lim\limits_{x\to1^{+}}\dfrac{x^{2}-1}{x-1}e^{\frac{1}{x-1}}=\lim\limits_{x\to1^{+}}2e^{\frac{1}{x-1}}=+\infty$，$\lim\limits_{x\to1^{-}}\dfrac{x^{2}-1}{x-1}e^{\frac{1}{x-1}}=\lim\limits_{x\to1^{-}}2e^{\frac{1}{x-1}}=0$．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q39" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="39">【39】</span>
+<span class="q-group">利用极限存在的充要条件求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}e^{\frac{1}{x}}+1, &amp; x&lt;0\\ 1, &amp; x=0\\ 1+x\sin\dfrac{1}{x}, &amp; x&gt;0\end{cases}$，求 $\lim\limits_{x\to0}f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to0^{-}}f(x)=\lim\limits_{x\to0^{-}}\left(e^{\frac{1}{x}}+1\right)=1$，$\lim\limits_{x\to0^{+}}f(x)=\lim\limits_{x\to0^{+}}\left(1+x\sin\dfrac{1}{x}\right)=1$．于是 $\lim\limits_{x\to0}f(x)=1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">于是 $\lim\limits_{x\to0}f(x)=1$</span></div>
+</div>
+</article>
+<article class="problem" id="q40" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="40">【40】</span>
+<span class="q-group">利用极限存在的充要条件求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to0}\left(\dfrac{2+e^{\frac{1}{x}}}{1+e^{\frac{4}{x}}}+\dfrac{\sin x}{|x|}\right)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因 $\lim\limits_{x\to0^{+}}\left(\dfrac{2+e^{\frac{1}{x}}}{1+e^{\frac{4}{x}}}+\dfrac{\sin x}{|x|}\right)=\lim\limits_{x\to0^{+}}\left(\dfrac{2e^{-\frac{4}{x}}+e^{-\frac{3}{x}}}{e^{-\frac{4}{x}}+1}+\dfrac{\sin x}{x}\right)=1$，$\lim\limits_{x\to0^{-}}\left(\dfrac{2+e^{\frac{1}{x}}}{1+e^{\frac{4}{x}}}+\dfrac{\sin x}{|x|}\right)=\lim\limits_{x\to0^{-}}\left(\dfrac{2+e^{\frac{1}{x}}}{1+e^{\frac{4}{x}}}-\dfrac{\sin x}{x}\right)=2-1=1$，故极限 $\lim\limits_{x\to0}\left(\dfrac{2+e^{\frac{1}{x}}}{1+e^{\frac{4}{x}}}+\dfrac{\sin x}{|x|}\right)=1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故极限 $\lim\limits_{x\to0}\left(\dfrac{2+e^{\frac{1}{x}}}{1+e^{\frac{4}{x}}}+\dfrac{\sin x}{|x|}\right)=1$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用分子或分母有理化求极限</h3>
+<article class="problem" id="q41" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="41">【41】</span>
+<span class="q-group">利用分子或分母有理化求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{n\to\infty}\left[\sqrt{1+2+\cdots+n}-\sqrt{1+2+\cdots+(n-1)}\right]=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{n\to\infty}\dfrac{n}{\sqrt{1+2+\cdots+n}+\sqrt{1+2+\cdots+(n-1)}}=\lim\limits_{n\to\infty}\dfrac{n}{\sqrt{\dfrac{n(n+1)}{2}}+\sqrt{\dfrac{n(n-1)}{2}}}=\lim\limits_{n\to\infty}\dfrac{\sqrt{2}}{\sqrt{1+\dfrac{1}{n}}+\sqrt{1-\dfrac{1}{n}}}=\dfrac{\sqrt{2}}{2}$．故应填 $\dfrac{\sqrt{2}}{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{\sqrt{2}}{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q42" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="42">【42】</span>
+<span class="q-group">利用分子或分母有理化求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">极限 $\lim\limits_{n\to\infty}\left(\sqrt{n+3\sqrt{n}}-\sqrt{n-\sqrt{n}}\right)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 本题是求形如 $\lim\limits_{n\to\infty}\left(\sqrt{a_n}-\sqrt{b_n}\right)$ 的极限，一种常用的方法是将 $\sqrt{a_n}-\sqrt{b_n}$ 有理化，将所给极限化为 $\lim\limits_{n\to\infty}\dfrac{a_n-b_n}{\sqrt{a_n}+\sqrt{b_n}}$，从而求得所给极限．<strong>解</strong> 原式 $=\lim\limits_{n\to\infty}\dfrac{4n^{\frac{1}{2}}}{\sqrt{n+3\sqrt{n}}+\sqrt{n-\sqrt{n}}}=\lim\limits_{n\to\infty}\dfrac{4}{\sqrt{1+\dfrac{3}{\sqrt{n}}}+\sqrt{1-\dfrac{1}{\sqrt{n}}}}=2$．故应填 $2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2$</span></div>
+</div>
+</article>
+<article class="problem" id="q43" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="43">【43】</span>
+<span class="q-group">利用分子或分母有理化求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to-\infty}\left(\sqrt{x^{2}+100}+x\right)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to-\infty}\dfrac{100x}{\sqrt{x^{2}+100}-x}=\lim\limits_{x\to-\infty}\dfrac{100}{-\sqrt{1+\dfrac{100}{x^{2}}}-1}=-50$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$-50$）</span></div>
+</div>
+</article>
+<article class="problem" id="q44" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="44">【44】</span>
+<span class="q-group">利用分子或分母有理化求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to1}\dfrac{\sqrt{3-x}-\sqrt{1+x}}{x^{2}+x-2}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to1}\dfrac{\sqrt{3-x}-\sqrt{1+x}}{(x+2)(x-1)}=\lim\limits_{x\to1}\dfrac{2(1-x)}{(x+2)(x-1)}\cdot\lim\limits_{x\to1}\dfrac{1}{\sqrt{3-x}+\sqrt{1+x}}=\lim\limits_{x\to1}\dfrac{-2}{x+2}\cdot\lim\limits_{x\to1}\dfrac{1}{\sqrt{3-x}+\sqrt{1+x}}=-\dfrac{\sqrt{2}}{6}$．故应填 $-\dfrac{\sqrt{2}}{6}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-\dfrac{\sqrt{2}}{6}$</span></div>
+</div>
+</article>
+<article class="problem" id="q45" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="45">【45】</span>
+<span class="q-group">利用分子或分母有理化求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to-\infty}\dfrac{\sqrt{4x^{2}+x-1}+x+1}{\sqrt{x^{2}+\sin x}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to-\infty}\dfrac{3x^{2}-x-2}{\sqrt{x^{2}+\sin x}\left(\sqrt{4x^{2}+x-1}-x-1\right)}=\lim\limits_{x\to-\infty}\dfrac{3-\dfrac{1}{x}-\dfrac{2}{x^{2}}}{\sqrt{1+\dfrac{\sin x}{x^{2}}}\left(\sqrt{4+\dfrac{1}{x}-\dfrac{1}{x^{2}}}+1+\dfrac{1}{x}\right)}=1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$1$）</span></div>
+</div>
+</article>
+<h3 class="grp-h">先求和，再求极限</h3>
+<article class="problem" id="q46" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="46">【46】</span>
+<span class="q-group">先求和，再求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x_n=\dfrac{1}{3}+\dfrac{1}{15}+\cdots+\dfrac{1}{4n^{2}-1}$，求 $\lim\limits_{n\to\infty}x_n$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{1}{4n^{2}-1}=\dfrac{1}{2}\left(\dfrac{1}{2n-1}-\dfrac{1}{2n+1}\right)$，$x_n=\dfrac{1}{2}\left[\left(1-\dfrac{1}{3}\right)+\left(\dfrac{1}{3}-\dfrac{1}{5}\right)+\cdots+\left(\dfrac{1}{2n-1}-\dfrac{1}{2n+1}\right)\right]=\dfrac{1}{2}\left(1-\dfrac{1}{2n+1}\right)$，故 $\lim\limits_{n\to\infty}x_n=\dfrac{1}{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $\lim\limits_{n\to\infty}x_n=\dfrac{1}{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q47" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="47">【47】</span>
+<span class="q-group">先求和，再求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{n\to\infty}\left(\dfrac{1}{4}+\dfrac{1}{28}+\cdots+\dfrac{1}{9n^{2}-3n-2}\right)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{n\to\infty}\left[\dfrac{1}{1\cdot4}+\dfrac{1}{4\cdot7}+\dfrac{1}{7\cdot10}+\cdots+\dfrac{1}{(3n-2)(3n+1)}\right]=\dfrac{1}{3}\lim\limits_{n\to\infty}\left[\left(1-\dfrac{1}{4}\right)+\left(\dfrac{1}{4}-\dfrac{1}{7}\right)+\cdots+\left(\dfrac{1}{3n-2}-\dfrac{1}{3n+1}\right)\right]=\dfrac{1}{3}\lim\limits_{n\to\infty}\left(1-\dfrac{1}{3n+1}\right)=\dfrac{1}{3}$．故应填 $\dfrac{1}{3}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{3}$</span></div>
+</div>
+</article>
+<article class="problem" id="q48" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="48">【48】</span>
+<span class="q-group">先求和，再求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=a^{x}$（$a&gt;0$，$a\neq1$），则 $\lim\limits_{n\to\infty}\dfrac{1}{n^{2}}\ln[f(1)f(2)\cdots f(n)]=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{n\to\infty}\dfrac{1}{n^{2}}\cdot\ln[a^{1}\cdot a^{2}\cdot\cdots\cdot a^{n}]=\lim\limits_{n\to\infty}\dfrac{1}{n^{2}}\ln a^{\frac{n(n+1)}{2}}=\lim\limits_{n\to\infty}\dfrac{\dfrac{n(n+1)}{2}}{n^{2}}\ln a=\dfrac{1}{2}\ln a$．故应填 $\dfrac{1}{2}\ln a$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{2}\ln a$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用极限与无穷小的关系求极限</h3>
+<article class="problem" id="q49" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="49">【49】</span>
+<span class="q-group">利用极限与无穷小的关系求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $\lim\limits_{x\to0}\dfrac{\sin6x+xf(x)}{x^{3}}=0$，则 $\lim\limits_{x\to0}\dfrac{6+f(x)}{x^{2}}$ 为________．(A) $0$　(B) $6$　(C) $36$　(D) $\infty$</div>
+<div class="book-note">※ 原书题号带星号&quot;【49】＊&quot;；页脚注照录：＊ 此题用到的洛必达法则将在本书 P78 给出详细表述．</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\lim\limits_{x\to0}\dfrac{\sin6x+xf(x)}{x^{3}}=0$，根据极限与无穷小的关系知 $\dfrac{\sin6x+xf(x)}{x^{3}}=\alpha(x)$，其中 $\alpha(x)$ 为 $x\to0$ 时的无穷小量．故 $f(x)=x^{2}\alpha(x)-\dfrac{\sin6x}{x}$，$\lim\limits_{x\to0}\dfrac{6+f(x)}{x^{2}}=\lim\limits_{x\to0}\dfrac{6+x^{2}\alpha(x)-\dfrac{\sin6x}{x}}{x^{2}}=\lim\limits_{x\to0}\alpha(x)+\lim\limits_{x\to0}\dfrac{6x-\sin6x}{x^{3}}=0+\lim\limits_{x\to0}\dfrac{6-6\cos6x}{3x^{2}}=2\lim\limits_{x\to0}\dfrac{1-\cos6x}{x^{2}}=2\cdot\lim\limits_{x\to0}\dfrac{6\sin6x}{2x}=36$．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q50" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="50">【50】</span>
+<span class="q-group">利用极限与无穷小的关系求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\lim\limits_{x\to0}\dfrac{\ln\left(1+\dfrac{f(x)}{\sin x}\right)}{a^{x}-1}=A$（$a&gt;0$，$a\neq1$），求 $\lim\limits_{x\to0}\dfrac{f(x)}{x^{2}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\lim\limits_{x\to0}\dfrac{\ln\left(1+\frac{f(x)}{\sin x}\right)}{a^{x}-1}=A$，所以 $\dfrac{\ln\left(1+\frac{f(x)}{\sin x}\right)}{a^{x}-1}=A+\alpha$，其中 $\lim\limits_{x\to0}\alpha=0$．又因为 $a^{x}-1=e^{x\ln a}-1\sim x\ln a$（当 $x\to0$），所以 $\ln\left(1+\dfrac{f(x)}{\sin x}\right)\sim Ax\ln a+\alpha x\ln a$，因此 $1+\dfrac{f(x)}{\sin x}\sim a^{(A+\alpha)x}$，$f(x)\sim\left(a^{(A+\alpha)x}-1\right)\sin x\sim(A+\alpha)x\ln a\cdot\sin x$，所以 $\lim\limits_{x\to0}\dfrac{f(x)}{x^{2}}=\lim\limits_{x\to0}\dfrac{(A+\alpha)\ln a\cdot x\sin x}{x^{2}}=A\ln a$．【点评】这类由已知的极限表示求解新的极限的命题，切忌用洛必达法则．一般来讲，这类题是利用"逐步分析法"，使用函数的极限与无穷小的关系定理，等价无穷小代换定理等方法来解决．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以 $\lim\limits_{x\to0}\dfrac{f(x)}{x^{2}}=A\ln a$</span></div>
+</div>
+</article>
+<h3 class="grp-h">先求积，再求极限</h3>
+<article class="problem" id="q51" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="51">【51】</span>
+<span class="q-group">先求积，再求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{n\to\infty}(1+x)(1+x^{2})(1+x^{4})\cdots(1+x^{2^{n}})$，$(|x|&lt;1)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{n\to\infty}\dfrac{(1-x)(1+x)(1+x^{2})(1+x^{4})\cdots(1+x^{2^{n}})}{1-x}=\lim\limits_{n\to\infty}\dfrac{(1-x^{2})(1+x^{2})(1+x^{4})\cdots(1+x^{2^{n}})}{1-x}=\lim\limits_{n\to\infty}\dfrac{(1-x^{4})(1+x^{4})\cdots(1+x^{2^{n}})}{1-x}=\cdots=\lim\limits_{n\to\infty}\dfrac{1-\left(x^{2^{n}}\right)^{2}}{1-x}=\dfrac{1}{1-x}$．$(|x|&lt;1)$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{1}{1-x}$，$|x|&lt;1$）</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s6">6. 极限存在准则　两个重要极限</h2>
+<div class="sec-intro">1．两个准则 准则Ⅰ（夹逼准则） 如果数列 $\{x_n\}$，$\{y_n\}$ 及 $\{z_n\}$ 满足下列条件 (1) $y_n\leqslant x_n\leqslant z_n$，$n=1,2,\cdots$；(2) $\lim\limits_{n\to\infty}y_n=\lim\limits_{n\to\infty}z_n=a$，则数列 $\{x_n\}$ 的极限存在，且 $\lim\limits_{n\to\infty}x_n=a$．准则Ⅰ′ 设函数 $f(x)$、$g(x)$、$h(x)$ 有定义，且满足下列条件：(1) 当 $x\in\{x\mid 0&lt;|x-x_{0}|&lt;h\}$（或 $|x|&gt;M$）时，有 $g(x)\leqslant f(x)\leqslant h(x)$ 成立；(2) $\lim\limits_{\substack{x\to x_{0}\\(x\to\infty)}}g(x)=\lim\limits_{\substack{x\to x_{0}\\(x\to\infty)}}h(x)=a$，则 $\lim\limits_{\substack{x\to x_{0}\\(x\to\infty)}}f(x)$ 存在，且 $\lim\limits_{\substack{x\to x_{0}\\(x\to\infty)}}f(x)=a$．准则Ⅱ 单调有界数列必有极限．2．两个重要极限 (1) $\lim\limits_{x\to0}\dfrac{\sin x}{x}=1$；(2) $\lim\limits_{x\to0}(1+x)^{\frac{1}{x}}=e$　或　$\lim\limits_{x\to\infty}\left(1+\dfrac{1}{x}\right)^{x}=e$．</div>
+<h3 class="grp-h">利用夹逼准则求极限</h3>
+<article class="problem" id="q52" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="52">【52】</span>
+<span class="q-group">利用夹逼准则求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">利用极限存在准则证明：$\lim\limits_{n\to\infty}\left(\dfrac{n}{n^{2}+\pi}+\dfrac{n}{n^{2}+2\pi}+\cdots+\dfrac{n}{n^{2}+n\pi}\right)=1$．问：本题能否用求极限的四则运算法则求解？</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{n^{2}}{n^{2}+n\pi}\leqslant\dfrac{n}{n^{2}+\pi}+\dfrac{n}{n^{2}+2\pi}+\cdots+\dfrac{n}{n^{2}+n\pi}\leqslant\dfrac{n^{2}}{n^{2}+\pi}$，而 $\lim\limits_{n\to\infty}\dfrac{n^{2}}{n^{2}+n\pi}=1$，$\lim\limits_{n\to\infty}\dfrac{n^{2}}{n^{2}+\pi}=1$，所以由夹逼准则得 $\lim\limits_{n\to\infty}\left(\dfrac{n}{n^{2}+\pi}+\dfrac{n}{n^{2}+2\pi}+\cdots+\dfrac{n}{n^{2}+n\pi}\right)=1$．本题不能使用求极限的四则运算法则求解，因为当 $n\to\infty$ 时，本题实际为无穷项相加求和，而求极限的四则运算法则中指的是有限项相加求极限可以分别求极限相加．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">已证极限为 $1$；本题不能用求极限的四则运算法则求解</span></div>
+</div>
+</article>
+<article class="problem" id="q53" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="53">【53】</span>
+<span class="q-group">利用夹逼准则求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{n\to\infty}\left(\dfrac{1}{n^{2}+n+1}+\dfrac{2}{n^{2}+n+2}+\cdots+\dfrac{n}{n^{2}+n+n}\right)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{1+2+\cdots+n}{n^{2}+n+n}\leqslant\dfrac{1}{n^{2}+n+1}+\dfrac{2}{n^{2}+n+2}+\cdots+\dfrac{n}{n^{2}+n+n}\leqslant\dfrac{1+2+\cdots+n}{n^{2}+n+1}$，而 $\lim\limits_{n\to\infty}\dfrac{1+2+\cdots+n}{n^{2}+n+n}=\lim\limits_{n\to\infty}\dfrac{\dfrac{n(n+1)}{2}}{n^{2}+n+n}=\dfrac{1}{2}$，$\lim\limits_{n\to\infty}\dfrac{1+2+\cdots+n}{n^{2}+n+1}=\lim\limits_{n\to\infty}\dfrac{\dfrac{n(n+1)}{2}}{n^{2}+n+1}=\dfrac{1}{2}$，所以由夹逼准则得：原式 $=\dfrac{1}{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以由夹逼准则得：原式 $=\dfrac{1}{2}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用单调有界数列必有极限求极限</h3>
+<article class="problem" id="q54" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="54">【54】</span>
+<span class="q-group">利用单调有界数列必有极限求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x_{n+1}=\dfrac{1}{2}\left(x_n+\dfrac{a}{x_n}\right)$，其中 $a&gt;0$，$x_{0}&gt;0$，求 $\lim\limits_{n\to\infty}x_n$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $x_{n+1}=\dfrac{1}{2}\left(x_n+\dfrac{a}{x_n}\right)\geqslant\sqrt{x_n\cdot\dfrac{a}{x_n}}=\sqrt{a}$，所以 $\{x_n\}$ 下方有界，又因为 $\dfrac{x_{n+1}}{x_n}=\dfrac{1}{2}\left(1+\dfrac{a}{x_n^{2}}\right)\leqslant\dfrac{1}{2}\left(1+\dfrac{a}{(\sqrt{a})^{2}}\right)=1$，所以 $\{x_n\}$ 单调减少．根据单调有界数列必有极限知 $\lim\limits_{n\to\infty}x_n$ 存在．令 $\lim\limits_{n\to\infty}x_n=l$，则 $\lim\limits_{n\to\infty}x_{n+1}=\lim\limits_{n\to\infty}\dfrac{1}{2}\left(x_n+\dfrac{a}{x_n}\right)$，即 $l=\dfrac{1}{2}\left(l+\dfrac{a}{l}\right)$，所以 $l=\sqrt{a}$，也即 $\lim\limits_{n\to\infty}x_n=\sqrt{a}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">也即 $\lim\limits_{n\to\infty}x_n=\sqrt{a}$</span></div>
+</div>
+</article>
+<article class="problem" id="q55" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="55">【55】</span>
+<span class="q-group">利用单调有界数列必有极限求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明数列 $\sqrt{2}$，$\sqrt{2+\sqrt{2}}$，$\sqrt{2+\sqrt{2+\sqrt{2}}}$，$\cdots$ 的极限存在，并求该极限．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $x_1=\sqrt{2}$，$x_2=\sqrt{2+x_1}$，$\cdots$，$x_n=\sqrt{2+x_{n-1}}$．首先，$0&lt;x_n&lt;\sqrt{2+2}=2$，即数列 $\{x_n\}$ 是有界的；其次，由于 $x_1&gt;0$，所以 $x_2=\sqrt{2+x_1}&gt;\sqrt{2}=x_1$；假设 $x_k&gt;x_{k-1}$，则有 $x_{k+1}=\sqrt{2+x_k}&gt;\sqrt{2+x_{k-1}}=x_k$．故由归纳法知 $\{x_n\}$ 是单调递增数列．根据单调有界数列必有极限知数列 $\{x_n\}$ 极限存在．设 $\lim\limits_{n\to\infty}x_n=a$，对 $x_n=\sqrt{2+x_{n-1}}$ 等式两端同时取极限得 $a=\sqrt{2+a}$，解得 $a=2$ 或 $a=-1$（舍去）．故 $\lim\limits_{n\to\infty}x_n=2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $\lim\limits_{n\to\infty}x_n=2$</span></div>
+</div>
+</article>
+<article class="problem" id="q56" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="56">【56】</span>
+<span class="q-group">利用单调有界数列必有极限求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $a_{0}=0$，$a_{n+1}=1+\sin(a_n-1)$（$n\geqslant0$）．求 $\lim\limits_{n\to\infty}a_n$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题可知，$a_1=1-\sin1$，$a_2=1-\sin(\sin1)$，$\cdots$，$a_n=1-\underbrace{\sin(\sin\cdots(\sin1))}_{n\text{个}}$，$\cdots$ 于是有 $0\leqslant a_n\leqslant2$，即数列 $\{a_n\}$ 有界．当 $0&lt;x&lt;\dfrac{\pi}{2}$ 时 $\sin x&lt;x$，故可得 $\underbrace{\sin(\sin\cdots(\sin1))}_{(n+1)\text{个}}&lt;\underbrace{\sin(\sin\cdots(\sin1))}_{n\text{个}}$．$\therefore\ a_{n+1}-a_n=\underbrace{\sin(\sin\cdots(\sin1))}_{n\text{个}}-\underbrace{\sin(\sin\cdots(\sin1))}_{(n+1)\text{个}}\geqslant\underbrace{\sin(\sin\cdots(\sin1))}_{n\text{个}}-\underbrace{\sin(\sin\cdots(\sin1))}_{n\text{个}}=0$．因此数列 $\{a_n\}$ 单调增加，根据单调有界数列必有极限可知 $\lim\limits_{n\to\infty}a_n$ 存在．设 $\lim\limits_{n\to\infty}a_n=A$，对 $a_{n+1}=1+\sin(a_n-1)$ 等式两端同时取极限得 $A=1+\sin(A-1)$　即　$\sin(A-1)=A-1$．解得 $A-1=0$，故 $A=1$．亦即 $\lim\limits_{n\to\infty}a_n=1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">亦即 $\lim\limits_{n\to\infty}a_n=1$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用第一个重要极限求极限</h3>
+<article class="problem" id="q57" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="57">【57】</span>
+<span class="q-group">利用第一个重要极限求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to\infty}\dfrac{3x^{2}+5}{5x+3}\sin\dfrac{2}{x}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to\infty}\dfrac{(3x^{2}+5)2}{(5x+3)x}\cdot\dfrac{\sin\dfrac{2}{x}}{\dfrac{2}{x}}=\dfrac{6}{5}$．故应填 $\dfrac{6}{5}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{6}{5}$</span></div>
+</div>
+</article>
+<article class="problem" id="q58" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="58">【58】</span>
+<span class="q-group">利用第一个重要极限求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to0}\dfrac{3\sin x+x^{2}\cos\dfrac{1}{x}}{(1+\cos x)\ln(1+x)}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to0}\dfrac{1}{1+\cos x}\cdot\lim\limits_{x\to0}\dfrac{3\sin x+x^{2}\cos\dfrac{1}{x}}{\ln(1+x)}=\dfrac{1}{2}\cdot\lim\limits_{x\to0}\dfrac{3\sin x+x^{2}\cos\dfrac{1}{x}}{x}=\dfrac{1}{2}\left[\lim\limits_{x\to0}\dfrac{3\sin x}{x}+\lim\limits_{x\to0}x\cos\dfrac{1}{x}\right]=\dfrac{3}{2}$．故应填 $\dfrac{3}{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{3}{2}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用第二个重要极限求极限</h3>
+<article class="problem" id="q59" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="59">【59】</span>
+<span class="q-group">利用第二个重要极限求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to0}(1+x)^{\frac{2}{x}}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to0}\left[(1+x)^{\frac{1}{x}}\right]^{2}=\left[\lim\limits_{x\to0}(1+x)^{\frac{1}{x}}\right]^{2}=e^{2}$．故应填 $e^{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $e^{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q60" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="60">【60】</span>
+<span class="q-group">利用第二个重要极限求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\lim\limits_{x\to\infty}\left(\dfrac{x+2a}{x-a}\right)^{x}=8$，则 $a=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 左边 $=\lim\limits_{x\to\infty}\left(1+\dfrac{3a}{x-a}\right)^{\frac{x-a}{3a}\cdot3a+a}=\left[\lim\limits_{x\to\infty}\left(1+\dfrac{3a}{x-a}\right)^{\frac{x-a}{3a}}\right]^{3a}\cdot\lim\limits_{x\to\infty}\left(1+\dfrac{3a}{x-a}\right)^{a}=e^{3a}$．由 $e^{3a}=8$，得 $a=\ln2$．故应填 $\ln2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\ln2$</span></div>
+</div>
+</article>
+<article class="problem" id="q61" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="61">【61】</span>
+<span class="q-group">利用第二个重要极限求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设常数 $a\neq\dfrac{1}{2}$，则 $\lim\limits_{n\to\infty}\ln\left[\dfrac{n-2na+1}{n(1-2a)}\right]^{n}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{n\to\infty}n\ln\dfrac{1-2a+\dfrac{1}{n}}{1-2a}=\lim\limits_{n\to\infty}n\ln\left(1+\dfrac{1}{1-2a}\cdot\dfrac{1}{n}\right)=\ln\lim\limits_{n\to\infty}\left(1+\dfrac{1}{1-2a}\cdot\dfrac{1}{n}\right)^{n}=\ln e^{\frac{1}{1-2a}}=\dfrac{1}{1-2a}$．故应填 $\dfrac{1}{1-2a}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{1-2a}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">极限中参数的确定</h3>
+<article class="problem" id="q62" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="62">【62】</span>
+<span class="q-group">极限中参数的确定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$n$ 为正整数，$a$ 为某实数，$a\neq0$，且 $\lim\limits_{x\to+\infty}\dfrac{x^{1999}}{x^{n}-(x-1)^{n}}=\dfrac{1}{a}$，则 $n=$________，并且 $a=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\lim\limits_{x\to+\infty}\dfrac{x^{1999}}{x^{n}-(x-1)^{n}}=\lim\limits_{x\to+\infty}\dfrac{x^{1999}}{nx^{n-1}-\dfrac{n(n-1)}{2}x^{n-2}+\cdots+(-1)^{n+1}}$ 存在知 $x^{n-1}$ 与 $x^{1999}$ 同阶，从而 $n=2000$．并由此时极限值 $\dfrac{1}{n}=\dfrac{1}{a}$ 得：$a=2000$．故应填 $2000$，$2000$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2000$，$2000$</span></div>
+</div>
+</article>
+<article class="problem" id="q63" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="63">【63】</span>
+<span class="q-group">极限中参数的确定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $\lim\limits_{x\to\infty}\left(\dfrac{x^{2}}{x+1}-ax-b\right)=0$，其中 $a$，$b$ 是常数，则 (A) $a=1$，$b=1$　(B) $a=-1$，$b=1$　(C) $a=1$，$b=-1$　(D) $a=-1$，$b=-1$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to\infty}\left(\dfrac{x^{2}}{x+1}-ax-b\right)=\lim\limits_{x\to\infty}\left[\dfrac{1+(x^{2}-1)}{x+1}-ax-b\right]=\lim\limits_{x\to\infty}\dfrac{1}{x+1}+\lim\limits_{x\to\infty}(x-ax-1-b)=\lim\limits_{x\to\infty}(1-a)x-(1+b)=0$．知 $\lim\limits_{x\to\infty}(1-a)x=(1+b)$，由于 $a$，$b$ 是常数，故当且仅当 $\begin{cases}1-a=0\\ 1+b=0\end{cases}$ 时上式成立，因此 $a=1$，$b=-1$．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q64" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="64">【64】</span>
+<span class="q-group">极限中参数的确定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $\lim\limits_{x\to0}\dfrac{\sin x}{e^{x}-a}(\cos x-b)=5$，则 $a=$________，$b=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\lim\limits_{x\to0}\sin x(\cos x-b)=0$ 知 $\lim\limits_{x\to0}(e^{x}-a)=0$，从而 $a=1$．而 $\lim\limits_{x\to0}\dfrac{\sin x}{e^{x}-a}(\cos x-b)=\lim\limits_{x\to0}\dfrac{\sin x}{e^{x}-1}(\cos x-b)=1-b=5$，得 $b=-4$．故应填 $1$，$-4$．点评　讨论极限的问题，首先要确定极限的类型，本题为"$\dfrac{0}{0}$"型，由此可确定参数的值．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $1$，$-4$</span></div>
+</div>
+</article>
+<article class="problem" id="q65" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="65">【65】</span>
+<span class="q-group">极限中参数的确定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">试确定常数 $a$ 和 $b$ 使下式成立 $\lim\limits_{x\to\infty}\left(\sqrt[3]{1-x^{6}}-ax^{2}-b\right)=0$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\sqrt[3]{1-x^{6}}-ax^{2}-b=x^{2}\left(\sqrt[3]{x^{-6}-1}-a-bx^{-2}\right)$，而 $\lim\limits_{x\to\infty}\left(\sqrt[3]{1-x^{6}}-ax^{2}-b\right)=0$，$\lim\limits_{x\to\infty}x^{2}=\infty$．所以 $\lim\limits_{x\to\infty}\left(\sqrt[3]{x^{-6}-1}-a-bx^{-2}\right)=0$，故 $a=-1$．从而 $b=\lim\limits_{x\to\infty}\left(\sqrt[3]{1-x^{6}}+x^{2}\right)=\lim\limits_{x\to\infty}\dfrac{1}{\sqrt{(1-x^{6})^{2}}-x^{2}\sqrt[3]{1-x^{6}}+x^{4}}=0$．故 $a=-1$，$b=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $a=-1$，$b=0$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s7">7. 无穷小的比较</h2>
+<div class="sec-intro">1．无穷小的阶 设 $\alpha$，$\beta$ 都是无穷小．若 $\lim\dfrac{\beta}{\alpha}=0$，则称 $\beta$ 是比 $\alpha$ 高阶的无穷小，记作 $\beta=o(\alpha)$；若 $\lim\dfrac{\beta}{\alpha}=\infty$，则称 $\beta$ 是比 $\alpha$ 低阶的无穷小；若 $\lim\dfrac{\beta}{\alpha}=c\neq0$，则称 $\beta$ 与 $\alpha$ 是同阶无穷小，记作 $\beta=O(\alpha)$，特别地，当 $c=1$ 时，则称 $\beta$ 与 $\alpha$ 是等价无穷小，记作 $\alpha\sim\beta$．给定无穷小 $\beta$，若存在无穷小 $\alpha$，使它们的差 $\beta-\alpha$ 是比 $\alpha$ 较高阶的无穷小，即 $\beta-\alpha=o(\alpha)$　或　$\beta=\alpha+o(\alpha)$，则称 $\alpha$ 是无穷小 $\beta$ 的主部；若 $\beta$ 和 $\alpha^{k}$（$k&gt;0$）是同阶无穷小，则称 $\beta$ 是 $\alpha$ 的 $k$ 阶无穷小．2．等价无穷小代换定理 若 $\alpha\sim\alpha'$，$\beta\sim\beta'$，且 $\lim\dfrac{\alpha'}{\beta'}=A$，则 $\lim\dfrac{\alpha}{\beta}=\lim\dfrac{\alpha'}{\beta'}=A$．3．常见的等价无穷小 设 $\alpha(x)\to0$，则 $\sin\alpha(x)\sim\tan\alpha(x)\sim\arctan\alpha(x)\sim\arcsin\alpha(x)\sim\left[e^{\alpha(x)}-1\right]\sim\ln[1+\alpha(x)]\sim\alpha(x)$，$[1-\cos\alpha(x)]\sim\dfrac{1}{2}[\alpha(x)]^{2}$，$[1+\alpha(x)]^{k}-1\sim k\alpha(x)$（$k\neq0$）．</div>
+<h3 class="grp-h">无穷小的比较</h3>
+<article class="problem" id="q66" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="66">【66】</span>
+<span class="q-group">无穷小的比较</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">当 $x\to0$ 时，下列 4 个无穷小量中比其他 3 个更高阶的无穷小量是________．(A) $\ln(1+x)$　(B) $e^{x}-1$　(C) $\tan x-\sin x$　(D) $1-\cos x$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $x\to0$ 时，$\ln(1+x)\sim x$，$e^{x}-1\sim x$，$1-\cos x\sim\dfrac{1}{2}x^{2}$，$\tan x-\sin x\sim\dfrac{1}{2}x^{3}$．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q67" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="67">【67】</span>
+<span class="q-group">无穷小的比较</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $x\to0$ 时，$(1-ax^{2})^{\frac{1}{4}}-1$ 与 $x\sin x$ 是等价无穷小，则 $a=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x\to0$ 时，$(1-ax^{2})^{\frac{1}{4}}-1\sim-\dfrac{1}{4}ax^{2}$，$x\sin x\sim x^{2}$．于是，根据题设有 $\lim\limits_{x\to0}\dfrac{(1-ax^{2})^{\frac{1}{4}}-1}{x\sin x}=\lim\limits_{x\to0}\dfrac{-\dfrac{1}{4}ax^{2}}{x^{2}}=-\dfrac{1}{4}a=1$，所以 $a=-4$．故应填 $-4$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-4$</span></div>
+</div>
+</article>
+<article class="problem" id="q68" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="68">【68】</span>
+<span class="q-group">无穷小的比较</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x\to0$ 时，$e^{x\cos x^{2}}-e^{x}$ 与 $x^{n}$ 是同阶无穷小，则 $n$ 为________．(A) $5$　(B) $4$　(C) $\dfrac{5}{2}$　(D) $2$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $e^{x\cos x^{2}}-e^{x}=e^{x}\left[e^{x(\cos x^{2}-1)}-1\right]$，当 $x\to0$ 时，$e^{x(\cos x^{2}-1)}-1\sim x(\cos x^{2}-1)\sim x\left(-\dfrac{x^{2}}{2}\right)$，所以 $n=5$．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<article class="problem" id="q69" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="69">【69】</span>
+<span class="q-group">无穷小的比较</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设当 $x\to0$ 时，$(1-\cos x)\ln(1+x^{2})$ 是比 $x\sin x^{n}$ 高阶的无穷小，而 $x\sin x^{n}$ 是比 $\left(e^{x^{2}}-1\right)$ 高阶的无穷小，则正整数 $n=$________．(A) $1$　(B) $2$　(C) $3$　(D) $4$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to0}\dfrac{(1-\cos x)\ln(1+x^{2})}{x\sin x^{n}}=\lim\limits_{x\to0}\dfrac{\dfrac{1}{2}x^{2}\cdot x^{2}}{x^{n+1}}=\dfrac{1}{2}\lim\limits_{x\to0}\dfrac{x^{4}}{x^{n+1}}=\dfrac{1}{2}\lim\limits_{x\to0}\dfrac{1}{x^{n-3}}=0$，故 $n&lt;3$．而 $\lim\limits_{x\to0}\dfrac{x\sin x^{n}}{e^{x^{2}}-1}=\lim\limits_{x\to0}\dfrac{x^{n+1}}{x^{2}}=\lim\limits_{x\to0}x^{n-1}=0$，故 $n&gt;1$．综上，$n=2$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用等价无穷小代换求极限</h3>
+<article class="problem" id="q70" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="70">【70】</span>
+<span class="q-group">利用等价无穷小代换求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">极限 $\lim\limits_{x\to\infty}x\sin\dfrac{2x}{x^{2}+1}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to\infty}x\sin\dfrac{2x}{x^{2}+1}=\lim\limits_{x\to\infty}x\cdot\dfrac{2x}{x^{2}+1}=2$．故应填 $2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2$</span></div>
+</div>
+</article>
+<article class="problem" id="q71" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="71">【71】</span>
+<span class="q-group">利用等价无穷小代换求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to0}\dfrac{x\ln(1+x)}{1-\cos x}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to0}\dfrac{x\cdot\ln(1+x)}{1-\cos x}=\lim\limits_{x\to0}\dfrac{x^{2}}{\dfrac{1}{2}x^{2}}=2$．故应填 $2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2$</span></div>
+</div>
+</article>
+<article class="problem" id="q72" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="72">【72】</span>
+<span class="q-group">利用等价无穷小代换求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to0}(1+3x)^{\frac{2}{\sin x}}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=e^{\lim\limits_{x\to0}\frac{2}{\sin x}\ln(1+3x)}=e^{2\lim\limits_{x\to0}\frac{3x}{\sin x}}=e^{6}$．故应填 $e^{6}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $e^{6}$</span></div>
+</div>
+</article>
+<article class="problem" id="q73" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="73">【73】</span>
+<span class="q-group">利用等价无穷小代换求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to0^{+}}\dfrac{1-\sqrt{\cos x}}{x\left(1-\cos\sqrt{x}\right)}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to0^{+}}\dfrac{1-\cos x}{x\left(1-\cos\sqrt{x}\right)\left(1+\sqrt{\cos x}\right)}=\lim\limits_{x\to0^{+}}\dfrac{\dfrac{1}{2}x^{2}}{x\cdot\dfrac{1}{2}x\cdot\left(1+\sqrt{\cos x}\right)}=\dfrac{1}{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{1}{2}$）</span></div>
+</div>
+</article>
+<article class="problem" id="q74" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="74">【74】</span>
+<span class="q-group">利用等价无穷小代换求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to+\infty}\ln(1+2^{x})\ln\left(1+\dfrac{3}{x}\right)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to+\infty}\ln(1+2^{x})\ln\left(1+\dfrac{3}{x}\right)=\lim\limits_{x\to+\infty}\left[\ln2^{x}\left(2^{-x}+1\right)\right]\cdot\dfrac{3}{x}=\lim\limits_{x\to+\infty}\left[x\ln2+\ln(1+2^{-x})\right]\cdot\dfrac{3}{x}=3\ln2+\lim\limits_{x\to+\infty}2^{-x}\cdot\dfrac{3}{x}=3\ln2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$3\ln2$）</span></div>
+</div>
+</article>
+<h3 class="grp-h">幂指数函数求极限</h3>
+<article class="problem" id="q75" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="75">【75】</span>
+<span class="q-group">幂指数函数求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{n\to\infty}\left(\dfrac{n+1}{n}\right)^{(-1)^{n}}=$ ________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\mathrm{e}^{\lim\limits_{n\to\infty}(-1)^{n}\ln\left(1+\frac{1}{n}\right)}=\mathrm{e}^{\lim\limits_{n\to\infty}(-1)^{n}\frac{1}{n}}=\mathrm{e}^{0}=1$．故应填 $1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$1$</span></div>
+</div>
+</article>
+<article class="problem" id="q76" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="76">【76】</span>
+<span class="q-group">幂指数函数求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">极限 $\lim\limits_{x\to 0}\left[1+\ln(1+x)\right]^{\frac{2}{x}}=$ ________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $y=\left[1+\ln(1+x)\right]^{\frac{2}{x}}$，则 $\lim\limits_{x\to 0}\ln y=\lim\limits_{x\to 0}\dfrac{2\ln[1+\ln(1+x)]}{x}=2\lim\limits_{x\to 0}\dfrac{\ln(1+x)}{x}=2$，所以 原式 $=\lim\limits_{x\to 0}y=\lim\limits_{x\to 0}\exp(\ln y)=\exp(\lim\limits_{x\to 0}\ln y)=\mathrm{e}^{2}$，故应填 $\mathrm{e}^{2}$．点评 幂指数函数求极限常用对数法，即 $\lim\limits_{x\to 0}f(x)^{g(x)}=\exp(\lim\limits_{x\to 0}g(x)\ln f(x))$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\mathrm{e}^{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q77" data-secanchor="s7">
+<div class="q-head">
+<span class="q-no" data-n="77">【77】</span>
+<span class="q-group">幂指数函数求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求极限 $\lim\limits_{x\to 0}x^{-3}\left[\left(\dfrac{2+\cos x}{3}\right)^{x}-1\right]$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to 0}\dfrac{\exp\left(x\ln\frac{2+\cos x}{3}\right)-1}{x^{3}}=\lim\limits_{x\to 0}\dfrac{\ln\left(\frac{2+\cos x}{3}\right)}{x^{2}}=\lim\limits_{x\to 0}\dfrac{\ln\left(1+\frac{\cos x-1}{3}\right)}{x^{2}}=\lim\limits_{x\to 0}\dfrac{\cos x-1}{3x^{2}}=-\dfrac{1}{6}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-\dfrac{1}{6}$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s8">8. 连续函数的运算与初等函数的连续性</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">有关连续的定义</h3>
+<article class="problem" id="q78" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="78">【78】</span>
+<span class="q-group">有关连续的定义</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $x=2$ 连续，且 $\lim\limits_{x\to 2}\dfrac{f(x)-3}{x-2}$ 存在，则 $f(2)=$ ________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\lim\limits_{x\to 2}\dfrac{f(x)-3}{x-2}$ 存在知 $\lim\limits_{x\to 2}[f(x)-3]=0$，从而 $\lim\limits_{x\to 2}f(x)=3$．另一方面，由 $f(x)$ 在 $x=2$ 连续，根据连续的定义得 $f(2)=\lim\limits_{x\to 2}f(x)$．所以 $f(2)=3$．故应填 $3$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$3$</span></div>
+</div>
+</article>
+<article class="problem" id="q79" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="79">【79】</span>
+<span class="q-group">有关连续的定义</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\ln(9-x^{2})$，则 $f(x)$ 的连续区间为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $9-x^{2}&gt;0$，所以 $-3&lt;x&lt;3$．故应填 $(-3,3)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$(-3,3)$</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关分段函数的连续性</h3>
+<article class="problem" id="q80" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="80">【80】</span>
+<span class="q-group">有关分段函数的连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">讨论 $f(x)=\begin{cases}\dfrac{x}{1+\mathrm{e}^{\frac{1}{x}}}, &amp; x\neq 0\\ 0, &amp; x=0\end{cases}$ 的连续性．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x\neq 0$ 时，显然 $f(x)$ 连续．因此只须考虑 $x=0$ 处的连续性．因为 $\lim\limits_{x\to 0}f(x)=\lim\limits_{x\to 0}\dfrac{x}{1+\mathrm{e}^{\frac{1}{x}}}=0$，而 $f(0)=0$．所以 $\lim\limits_{x\to 0}f(x)=f(0)$，即 $f(x)$ 在 $x=0$ 点连续，因此，$f(x)$ 在 $(-\infty,+\infty)$ 内连续．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x)$ 在 $(-\infty,+\infty)$ 内连续</span></div>
+</div>
+</article>
+<article class="problem" id="q81" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="81">【81】</span>
+<span class="q-group">有关分段函数的连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $f(x)=\begin{cases}\mathrm{e}^{\frac{1}{x}}, &amp; x&lt;0\\ 3x, &amp; 0\leqslant x&lt;1\\ \mathrm{e}^{2ax}-\mathrm{e}^{ax}+1, &amp; x\geqslant 1\end{cases}$ 在 $x=1$ 处连续，求 $a$ 的值．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to 1^{-}}f(x)=\lim\limits_{x\to 1^{-}}3x=3$，$\lim\limits_{x\to 1^{+}}f(x)=\lim\limits_{x\to 1^{+}}(\mathrm{e}^{2ax}-\mathrm{e}^{ax}+1)=\mathrm{e}^{2a}-\mathrm{e}^{a}+1$，要使 $f(x)$ 在 $x=1$ 处连续，则 $\mathrm{e}^{2a}-\mathrm{e}^{a}+1=3$．故 $a=\ln 2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$a=\ln 2$</span></div>
+</div>
+</article>
+<article class="problem" id="q82" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="82">【82】</span>
+<span class="q-group">有关分段函数的连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=\begin{cases}\dfrac{1-\mathrm{e}^{\tan x}}{\arcsin\frac{x}{2}}, &amp; x&gt;0\\ a\mathrm{e}^{2x}, &amp; x\leqslant 0\end{cases}$ 在 $x=0$ 处连续，则 $a=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to 0^{+}}f(x)=\lim\limits_{x\to 0^{+}}\dfrac{1-\mathrm{e}^{\tan x}}{\arcsin\frac{x}{2}}=-\lim\limits_{x\to 0^{+}}\dfrac{\tan x}{\frac{x}{2}}=-2$，$\lim\limits_{x\to 0^{-}}f(x)=\lim\limits_{x\to 0^{-}}a\mathrm{e}^{2x}=a$．由连续定义知：$a=-2$．故应填 $-2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-2$</span></div>
+</div>
+</article>
+<article class="problem" id="q83" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="83">【83】</span>
+<span class="q-group">有关分段函数的连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=\begin{cases}\dfrac{x^{2}\sin\frac{1}{x}}{\mathrm{e}^{x}-1}, &amp; x&lt;0\\ b, &amp; x=0\\ \dfrac{\ln(1+2x)}{x}+a, &amp; x&gt;0\end{cases}$ 当 $a=$________，$b=$________ 时，$f(x)$ 在 $(-\infty,+\infty)$ 内连续．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x&lt;0$ 时，$\dfrac{x^{2}\sin\frac{1}{x}}{\mathrm{e}^{x}-1}$ 有定义，函数 $f(x)$ 连续；$x&gt;0$ 时，$\dfrac{\ln(1+2x)}{x}+a$ 有定义，函数 $f(x)$ 也连续；而在 $x=0$ 处，因为 $\lim\limits_{x\to 0^{-}}f(x)=\lim\limits_{x\to 0^{-}}\dfrac{x^{2}\sin\frac{1}{x}}{\mathrm{e}^{x}-1}=\lim\limits_{x\to 0^{-}}\dfrac{x}{\mathrm{e}^{x}-1}\cdot\lim\limits_{x\to 0^{-}}x\sin\dfrac{1}{x}=0$，$\lim\limits_{x\to 0^{+}}f(x)=\lim\limits_{x\to 0^{+}}\left[\dfrac{\ln(1+2x)}{x}+a\right]=\lim\limits_{x\to 0^{+}}\dfrac{2x}{x}+a=2+a$，因此，当 $a=-2$，$b=0$ 时，$f(x)$ 在 $x=0$ 处连续．故应填 $-2,0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-2,0$</span></div>
+</div>
+</article>
+<h3 class="grp-h">证明函数为连续函数</h3>
+<article class="problem" id="q84" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="84">【84】</span>
+<span class="q-group">证明函数为连续函数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $f(x)$ 在 $x=0$ 点连续，且 $f(x+y)=f(x)+f(y)$ 对任意的 $x,y\in(-\infty,+\infty)$ 都成立，试证 $f(x)$ 为 $(-\infty,+\infty)$ 上的连续函数．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 由已知条件知，对任意的 $x\in(-\infty,+\infty)$ 有 $f(x)=f(x+0)=f(x)+f(0)$，所以 $f(0)=0$，又因为 $f(x)$ 在 $x=0$ 点连续，即有 $\lim\limits_{x\to 0}f(x)=f(0)=0$，从而，对任意 $x\in(-\infty,+\infty)$，有 $\lim\limits_{\Delta x\to 0}[f(x+\Delta x)]=\lim\limits_{\Delta x\to 0}[f(x)+f(\Delta x)]=f(x)$．可见 $f(x)$ 在 $(-\infty,+\infty)$ 上连续．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x)$ 在 $(-\infty,+\infty)$ 上连续</span></div>
+</div>
+</article>
+<h3 class="grp-h">求函数的表达式并确定其连续性</h3>
+<article class="problem" id="q85" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="85">【85】</span>
+<span class="q-group">求函数的表达式并确定其连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">讨论函数 $f(x)=\lim\limits_{n\to\infty}\dfrac{1-x^{2n}}{1+x^{2n}}\cdot x$ 的连续性．若有间断点，判别其类型．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题意知 $f(x)=\lim\limits_{n\to\infty}\dfrac{1-x^{2n}}{1+x^{2n}}\cdot x=\begin{cases}x, &amp; |x|&lt;1\\ 0, &amp; |x|=1\\ -x, &amp; |x|&gt;1\end{cases}$，在 $x\neq -1,1$ 处，$f(x)$ 连续．在 $x=1$ 处，$\lim\limits_{x\to 1^{-}}f(x)=1$，$\lim\limits_{x\to 1^{+}}f(x)=-1$，因此 $x=1$ 为第一类间断点．在 $x=-1$ 处，$\lim\limits_{x\to -1^{-}}f(x)=1$，$\lim\limits_{x\to -1^{+}}f(x)=-1$，因此 $x=-1$ 为第一类间断点．</div>
+
+</div>
+</article>
+<article class="problem" id="q86" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="86">【86】</span>
+<span class="q-group">求函数的表达式并确定其连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\lim\limits_{n\to\infty}\dfrac{\mathrm{e}^{nx}-1}{\mathrm{e}^{nx}+1}$，讨论 $f(x)$ 的连续性．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 先求出 $f(x)$ 的解析表达式．当 $x&gt;0$ 时，$\mathrm{e}^{nx}\to+\infty\ (n\to\infty)$，则 $f(x)=1$；当 $x&lt;0$ 时，$\mathrm{e}^{nx}\to 0\ (n\to\infty)$，则 $f(x)=-1$．又 $x=0$ 时，$f(0)=0$．于是 $f(x)=\begin{cases}-1, &amp; x&lt;0\\ 0, &amp; x=0\\ 1, &amp; x&gt;0\end{cases}$ 显然，当 $x\neq 0$ 时，$f(x)$ 连续；而当 $x=0$ 时，函数的左、右极限不相等，从而 $f(x)$ 间断．</div>
+
+</div>
+</article>
+<article class="problem" id="q87" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="87">【87】</span>
+<span class="q-group">求函数的表达式并确定其连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f(x)=\lim\limits_{n\to\infty}\dfrac{\ln(\mathrm{e}^{n}+x^{n})}{n}$，$(x&gt;0)$．(1) 求 $f(x)$；(2) 函数 $f(x)$ 在定义域内是否连续．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 当 $x&lt;\mathrm{e}$ 时，$f(x)=\lim\limits_{n\to\infty}\dfrac{\ln\mathrm{e}^{n}+\ln\left[1+\left(\frac{x}{\mathrm{e}}\right)^{n}\right]}{n}=1+\lim\limits_{n\to\infty}\dfrac{\left(\frac{x}{\mathrm{e}}\right)^{n}}{n}=1$；当 $x&gt;\mathrm{e}$ 时，$f(x)=\lim\limits_{n\to\infty}\dfrac{\ln x^{n}+\ln\left[1+\left(\frac{\mathrm{e}}{x}\right)^{n}\right]}{n}=\ln x+\lim\limits_{n\to\infty}\dfrac{\left(\frac{\mathrm{e}}{x}\right)^{n}}{n}=\ln x$；当 $x=\mathrm{e}$ 时，$f(\mathrm{e})=\lim\limits_{n\to\infty}\dfrac{\ln 2+n}{n}=1$，所以 $f(x)=\begin{cases}1, &amp; 0&lt;x\leqslant \mathrm{e}\\ \ln x, &amp; x&gt;\mathrm{e}\end{cases}$ (2) 由 $\lim\limits_{x\to \mathrm{e}^{-}}f(x)=\lim\limits_{x\to \mathrm{e}^{+}}f(x)=f(\mathrm{e})$，知 $f(x)$ 在 $x=\mathrm{e}$ 连续；又当 $0&lt;x&lt;\mathrm{e}$ 时，$f(x)=1$ 连续；当 $x&gt;\mathrm{e}$ 时，$f(x)=\ln x$ 连续．故 $f(x)$ 在 $(0,+\infty)$ 内连续．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x)$ 在 $(0,+\infty)$ 内连续</span></div>
+</div>
+</article>
+<h3 class="grp-h">求函数的间断点并判断类型</h3>
+<article class="problem" id="q88" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="88">【88】</span>
+<span class="q-group">求函数的间断点并判断类型</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=\dfrac{1}{\mathrm{e}^{\frac{x}{x-1}}-1}$，则________．(A) $x=0,x=1$ 都是 $f(x)$ 的第一类间断点 (B) $x=0,x=1$ 都是 $f(x)$ 的第二类间断点 (C) $x=0$ 是 $f(x)$ 的第一类间断点，$x=1$ 是 $f(x)$ 的第二类间断点 (D) $x=0$ 是 $f(x)$ 的第二类间断点，$x=1$ 是 $f(x)$ 的第一类间断点</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由于函数 $f(x)$ 在 $x=0,x=1$ 处无定义，因此是间断点．又因 $\lim\limits_{x\to 0}f(x)=\infty$，所以 $x=0$ 为第二类间断点；而 $\lim\limits_{x\to 1^{+}}f(x)=0$，$\lim\limits_{x\to 1^{-}}f(x)=-1$，所以 $x=1$ 为第一类间断点．故应选 (D)．点评 求函数的间断点并判定其类型的做题步骤为 (1) 找出间断点 $x_1,x_2,\cdots,x_k$；(2) 对每一个间断点 $x_i$，求极限 $\lim\limits_{x\to x_i^{-}}f(x)$ 及 $\lim\limits_{x\to x_i^{+}}f(x)$；(3) 判断类型：极限为常数时，属于第一类间断点，且为可去间断点；左、右极限存在但不相等时，属于第一类间断点，且为跳跃间断点；左、右极限至少有一个不存在时，属于第二类间断点；极限为 $\infty$ 时，属于第二类间断点，且为无穷间断点．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(D)</span></div>
+</div>
+</article>
+<article class="problem" id="q89" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="89">【89】</span>
+<span class="q-group">求函数的间断点并判断类型</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\lim\limits_{n\to\infty}\dfrac{(n-1)x}{nx^{2}+1}$，则 $f(x)$ 的间断点为 $x=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f(x)=\lim\limits_{n\to\infty}\dfrac{(n-1)x}{nx^{2}+1}=\lim\limits_{n\to\infty}\dfrac{\left(1-\frac{1}{n}\right)x}{x^{2}+\frac{1}{n}}=\dfrac{1}{x}$，所以 $f(x)$ 的间断点为 $x=0$．故应填 $0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$0$</span></div>
+</div>
+</article>
+<article class="problem" id="q90" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="90">【90】</span>
+<span class="q-group">求函数的间断点并判断类型</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">指出下列函数在指定点处间断点的类型，如果是可去间断点，则补充或改变函数的定义使之连续．(1) $y=\dfrac{x^{2}-1}{x^{2}-3x+2}$，$x=1$，$x=2$；(2) $y=\dfrac{x}{\tan x}$，$x=k\pi$，$x=k\pi+\dfrac{\pi}{2}$，$(k=0,\pm 1,\pm 2,\cdots)$；(3) $y=\cos^{2}\dfrac{1}{x}$，$x=0$；(4) $y=\begin{cases}\mathrm{e}^{\frac{1}{x-1}}, &amp; x&gt;0\\ \ln(1+x), &amp; -1&lt;x\leqslant 0\end{cases}$ $x=0,x=1$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 由于 $\lim\limits_{x\to 1}\dfrac{x^{2}-1}{x^{2}-3x+2}=\lim\limits_{x\to 1}\dfrac{x+1}{x-2}=-2$，所以 $x=1$ 为第一类间断点中的可去间断点．可补充定义 $y(1)=-2$，使之连续；由于 $\lim\limits_{x\to 2}\dfrac{x^{2}-1}{x^{2}-3x+2}=\infty$，所以 $x=2$ 为第二类间断点（无穷）；(2) 由于 $\lim\limits_{x\to 0}\dfrac{x}{\tan x}=1$，所以 $x=0$ 为第一类间断点中的可去间断点．可补充定义 $y(0)=1$ 使之连续；当 $k\neq 0$ 时，由于 $\lim\limits_{x\to k\pi}\dfrac{x}{\tan x}=\infty$，所以 $x=k\pi\,(k=\pm 1,\pm 2,\cdots)$ 为第二类间断点（无穷）；由于 $\lim\limits_{x\to k\pi+\frac{\pi}{2}}\dfrac{x}{\tan x}=0$，所以 $x=k\pi+\dfrac{\pi}{2}\ (k=0,\pm 1,\pm 2,\cdots)$ 为第一类间断点中的可去间断点．可补充定义 $y\left(k\pi+\dfrac{\pi}{2}\right)=0$ 使之连续；(3) 由于 $\lim\limits_{x\to 0}\cos^{2}\dfrac{1}{x}$ 不存在，所以 $x=0$ 为第二类间断点（振荡）；(4) 由于 $\lim\limits_{x\to 0^{-}}y=\lim\limits_{x\to 0^{-}}\ln(1+x)=0$，$\lim\limits_{x\to 0^{+}}y=\lim\limits_{x\to 0^{+}}\mathrm{e}^{\frac{1}{x-1}}=\mathrm{e}^{-1}$，所以 $x=0$ 为第一类间断点（跳跃）；由于 $x=1$ 时，$\lim\limits_{x\to 1^{-}}y=\lim\limits_{x\to 1^{-}}\mathrm{e}^{\frac{1}{x-1}}=0$，$\lim\limits_{x\to 1^{+}}y=\lim\limits_{x\to 1^{+}}\mathrm{e}^{\frac{1}{x-1}}=+\infty$，所以 $x=1$ 为第二类间断点．</div>
+
+</div>
+</article>
+<article class="problem" id="q91" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="91">【91】</span>
+<span class="q-group">求函数的间断点并判断类型</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=\begin{cases}1-2x^{2}, &amp; x&lt;-1\\ x^{3}, &amp; -1\leqslant x\leqslant 2\\ 12x-16, &amp; x&gt;2\end{cases}$ (1) 求反函数 $f^{-1}(x)$；(2) 问函数 $f^{-1}(x)$ 是否有间断点，并指出其在何处．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) $f^{-1}(x)=\begin{cases}-\sqrt{\dfrac{1-x}{2}}, &amp; x&lt;-1\\ \sqrt[3]{x}, &amp; -1\leqslant x\leqslant 8\\ \dfrac{x+16}{12}, &amp; x&gt;8\end{cases}$ (2) 讨论 $x=-1$ 及 $x=8$ 点处的左、右极限得 $f^{-1}(x)$ 在 $x=-1$ 及 $x=8$ 均连续，故函数 $f^{-1}(x)$ 无间断点．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">函数 $f^{-1}(x)$ 无间断点</span></div>
+</div>
+</article>
+<article class="problem" id="q92" data-secanchor="s8">
+<div class="q-head">
+<span class="q-no" data-n="92">【92】</span>
+<span class="q-group">求函数的间断点并判断类型</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=\lim\limits_{n\to\infty}\dfrac{1+x}{1+x^{2n}}$，讨论函数 $f(x)$ 的间断点，其结论为________．(A) 不存在间断点 (B) 存在间断点 $x=1$ (C) 存在间断点 $x=0$ (D) 存在间断点 $x=-1$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $|x|&lt;1$ 时，$\lim\limits_{n\to\infty}\dfrac{1+x}{1+x^{2n}}=1+x$；当 $|x|&gt;1$ 时，$\lim\limits_{n\to\infty}\dfrac{1+x}{1+x^{2n}}=0$．故 $f(x)=\begin{cases}0, &amp; x\leqslant -1\\ 1+x, &amp; -1&lt;x&lt;1\\ 1, &amp; x=1\\ 0, &amp; x&gt;1\end{cases}$ 由于 $\lim\limits_{x\to -1^{-}}f(x)=\lim\limits_{x\to -1^{+}}f(x)=f(-1)=0$，所以 $x=-1$ 为连续点．而 $\lim\limits_{x\to 1^{-}}f(x)=2$，$\lim\limits_{x\to 1^{+}}f(x)=0$，所以 $x=1$ 为间断点．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(B)</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s9">9. 闭区间上连续函数的性质</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">讨论函数的有界性</h3>
+<article class="problem" id="q93" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="93">【93】</span>
+<span class="q-group">讨论函数的有界性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $f(x)=\dfrac{|x|\sin(x-2)}{x(x-1)(x-2)^{2}}$ 在下列哪个区间内有界________．(A) $(-1,0)$ (B) $(0,1)$ (C) $(1,2)$ (D) $(2,3)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x\neq 0,1,2$ 时，$f(x)$ 连续，而 $\lim\limits_{x\to 0^{-}}f(x)=-\dfrac{\sin 2}{4}$，$\lim\limits_{x\to 0^{+}}f(x)=\dfrac{\sin 2}{4}$，$\lim\limits_{x\to 1}f(x)=\infty$，$\lim\limits_{x\to 2}f(x)=\infty$，所以函数 $f(x)$ 在 $(-1,0)$ 内有界．故应选 (A)．点评 一般地，若函数 $f(x)$ 在闭区间 $[a,b]$ 上连续，则 $f(x)$ 在 $[a,b]$ 上有界；若函数 $f(x)$ 在开区间 $(a,b)$ 内连续，且 $\lim\limits_{x\to a^{+}}f(x)$ 与 $\lim\limits_{x\to b^{-}}f(x)$ 存在，则函数 $f(x)$ 在 $(a,b)$ 内有界．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(A)</span></div>
+</div>
+</article>
+<article class="problem" id="q94" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="94">【94】</span>
+<span class="q-group">讨论函数的有界性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $(a,b]$ 上连续，且 $x\to a^{+}$ 时函数 $f(x)$ 的极限存在，则函数 $f(x)$ 在 $(a,b]$ 上有界．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $\lim\limits_{x\to a^{+}}f(x)=A$，由极限的定义知，对于 $\varepsilon=1$，存在正数 $\delta$，使当 $0&lt;x-a&lt;\delta$ 时，有 $|f(x)-A|&lt;\varepsilon$，也就是 $A-1&lt;f(x)&lt;A+1$．对于闭区间 $[a+\delta,b]$，由函数 $f(x)$ 的连续性，必存在常数 $K$，使对任一 $x\in[a+\delta,b]$ 有 $|f(x)|\leqslant K$．取 $M=\max\left\{K,|A+1|,|A-1|\right\}$，则对任何 $x\in(a,b]$ 有 $|f(x)|\leqslant M$．这表明函数 $f(x)$ 在 $(a,b]$ 上有界．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">函数 $f(x)$ 在 $(a,b]$ 上有界</span></div>
+</div>
+</article>
+<article class="problem" id="q95" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="95">【95】</span>
+<span class="q-group">讨论函数的有界性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[a,+\infty)$ 上连续，且 $\lim\limits_{x\to+\infty}f(x)$ 存在，证明：$f(x)$ 在 $[a,+\infty)$ 上有界．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $\lim\limits_{x\to+\infty}f(x)=A$，所以对任意的 $\varepsilon&gt;0$，存在 $X&gt;0$，当 $x&gt;X$ 时，$|f(x)-A|&lt;\varepsilon$．取 $\varepsilon=1$，则存在 $X_1$，使 $x&gt;X_1$ 时，$|f(x)-A|&lt;1$，即 $A-1&lt;f(x)&lt;A+1$．因为 $f(x)$ 在 $[a,+\infty)$ 上连续，所以 $f(x)$ 在 $[-X_1,X_1]$ 上有最大、小值，即存在 $a,b$ 使 $a\leqslant f(x)\leqslant b$．取 $m=\min\{A-1,a\}$，$M=\max\{A+1,b\}$，则 $x\in[a,+\infty)$ 时，$m&lt;f(x)&lt;M$，即 $f(x)$ 有界．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x)$ 有界</span></div>
+</div>
+</article>
+<h3 class="grp-h">证明根的存在性</h3>
+<article class="problem" id="q96" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="96">【96】</span>
+<span class="q-group">证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明方程 $x^{3}-9x-1=0$ 恰有 3 个实根．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 令 $f(x)=x^{3}-9x-1$．因为 $f(-3)=-1&lt;0$，$f(-2)=9&gt;0$，$f(0)=-1&lt;0$，$f(4)=27&gt;0$，又 $f(x)$ 在 $[-3,4]$ 上连续，所以 $f(x)$ 在 $(-3,-2),(-2,0),(0,4)$ 各区间内至少有一零点，又因为它是一元三次方程，即 $x^{3}-9x-1=0$ 至多有 3 个实根，所以方程恰有 3 个实根．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">方程 $x^{3}-9x-1=0$ 恰有 3 个实根</span></div>
+</div>
+</article>
+<article class="problem" id="q97" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="97">【97】</span>
+<span class="q-group">证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $f(x)$ 在 $[a,b]$ 上连续，且 $f(a)&lt;a$，$f(b)&gt;b$，证明：在 $(a,b)$ 内至少存在一点 $\xi$，使得 $f(\xi)=\xi$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 欲证 $f(\xi)=\xi$，即证 $f(x)-x$ 以 $\xi$ 为零点．<strong>证</strong> 设 $F(x)=f(x)-x$，显然 $F(x)$ 在 $[a,b]$ 上连续，又 $F(a)=f(a)-a&lt;0$，而 $F(b)=f(b)-b&gt;0$，根据零点定理，至少存在一个 $\xi\in(a,b)$，使得 $F(\xi)=0$，即 $f(\xi)=\xi$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">至少存在一个 $\xi\in(a,b)$，使得 $f(\xi)=\xi$</span></div>
+</div>
+</article>
+<article class="problem" id="q98" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="98">【98】</span>
+<span class="q-group">证明根的存在性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明：奇次多项式 $p(x)=a_{0}x^{2n+1}+a_{1}x^{2n}+\cdots+a_{2n+1}\quad(a_{0}\neq 0)$ 至少存在一个零点．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 不妨设 $a_{0}&gt;0$，因为 $\lim\limits_{x\to+\infty}p(x)=\lim\limits_{x\to+\infty}x^{2n+1}\left(a_{0}+\dfrac{a_{1}}{x}+\cdots+\dfrac{a_{2n+1}}{x^{2n+1}}\right)=+\infty$，$\lim\limits_{x\to-\infty}p(x)=\lim\limits_{x\to-\infty}x^{2n+1}\left(a_{0}+\dfrac{a_{1}}{x}+\cdots+\dfrac{a_{2n+1}}{x^{2n+1}}\right)=-\infty$．所以存在 $X&gt;0$，使 $p(X)&gt;0$，$p(-X)&lt;0$，又因为 $p(x)$ 在 $[-X,X]$ 上连续，由连续函数的零点定理知，在 $(-X,X)$ 内至少存在一点 $\xi$，使 $p(\xi)=0$，即奇次多项式 $p(x)$ 至少有一个零点．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">奇次多项式 $p(x)$ 至少有一个零点</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用介值定理证明</h3>
+<article class="problem" id="q99" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="99">【99】</span>
+<span class="q-group">利用介值定理证明</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[a,b]$ 上连续，$a&lt;x_1&lt;x_2&lt;\cdots&lt;x_n&lt;b$，证明：在 $[a,b]$ 内至少存在一个 $\xi$，使 $f(\xi)=\dfrac{f(x_1)+f(x_2)+\cdots+f(x_n)}{n}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为函数 $f(x)$ 在闭区间 $[a,b]$ 上连续，则一定存在 $M$ 与 $m$，使得对于 $[a,b]$ 上任一 $x$，都有 $m\leqslant f(x)\leqslant M$，因为 $a&lt;x_1&lt;x_2&lt;\cdots&lt;x_n&lt;b$，则 $m\leqslant f(x_1)\leqslant M$，$m\leqslant f(x_2)\leqslant M$，$\cdots$，$m\leqslant f(x_n)\leqslant M$，则 $nm\leqslant f(x_1)+f(x_2)+\cdots+f(x_n)\leqslant nM$，即 $m\leqslant\dfrac{f(x_1)+f(x_2)+\cdots+f(x_n)}{n}\leqslant M$．由介值定理可知必存在一 $\xi$，使得 $f(\xi)=\dfrac{f(x_1)+f(x_2)+\cdots+f(x_n)}{n}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">必存在一 $\xi$，使得 $f(\xi)=\dfrac{f(x_1)+f(x_2)+\cdots+f(x_n)}{n}$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s10">10. 综合提高题型</h2>
+<h3 class="grp-h">利用函数的奇偶性求解</h3>
+<article class="problem" id="q100" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="100">【100】</span>
+<span class="q-group">利用函数的奇偶性求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $c$ 的一个值，使 $(b+c)\sin(b+c)-(a+c)\sin(a+c)=0$，这里 $b&gt;a$，均为常数．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $f(x)=x\sin x$，则 $f(x)$ 为偶函数．由已知 $f(b+c)=f(a+c)$，则有 $a+c=-(b+c)$．所以 $c=-\dfrac{1}{2}(a+b)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$c=-\dfrac{1}{2}(a+b)$</span></div>
+</div>
+</article>
+<article class="problem" id="q101" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="101">【101】</span>
+<span class="q-group">利用函数的奇偶性求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $b&gt;a$ 均为常数，求方程 $\sin(x+b)\ln\left[(x+b)+\sqrt{(x+b)^{2}+1}\right]=\sin(x+a)\ln\left[(x+a)+\sqrt{(x+a)^{2}+1}\right]$ 的一个解．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\sin t$ 和 $\ln(t+\sqrt{t^{2}+1})$ 均为奇函数，所以 $f(t)=\sin t\ln(t+\sqrt{t^{2}+1})$ 是偶函数．如果 $x+b=-(x+a)$，则 $f(x+b)=f(x+a)$ 方程成立．因此 $x=-\dfrac{1}{2}(a+b)$ 是方程的一个解．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$x=-\dfrac{1}{2}(a+b)$</span></div>
+</div>
+</article>
+<h3 class="grp-h">求函数表达式</h3>
+<article class="problem" id="q102" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="102">【102】</span>
+<span class="q-group">求函数表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $x=0$ 附近有界，且满足方程 $f(x)-\dfrac{1}{2}f\left(\dfrac{x}{2}\right)=x^{2}$，求 $f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f(x)-\dfrac{1}{2}f\left(\dfrac{x}{2}\right)=x^{2}$，$\dfrac{1}{2}f\left(\dfrac{x}{2}\right)-\dfrac{1}{2^{2}}f\left(\dfrac{x}{2^{2}}\right)=\dfrac{x^{2}}{2^{3}}$，$\dfrac{1}{2^{2}}f\left(\dfrac{x}{2^{2}}\right)-\dfrac{1}{2^{3}}f\left(\dfrac{x}{2^{3}}\right)=\dfrac{x^{2}}{2^{6}}$，$\cdots$，$\dfrac{1}{2^{n-1}}f\left(\dfrac{x}{2^{n-1}}\right)-\dfrac{1}{2^{n}}f\left(\dfrac{x}{2^{n}}\right)=\dfrac{1}{2^{n-1}}\cdot\left(\dfrac{x}{2^{n-1}}\right)^{2}$．以上诸式相加得 $f(x)-\dfrac{1}{2^{n}}f\left(\dfrac{x}{2^{n}}\right)=x^{2}+\dfrac{x^{2}}{2^{3}}+\dfrac{x^{2}}{2^{6}}+\cdots+\dfrac{1}{2^{n-1}}\cdot\left(\dfrac{x}{2^{n-1}}\right)^{2}$，即 $f(x)=\dfrac{1}{2^{n}}f\left(\dfrac{x}{2^{n}}\right)+x^{2}\cdot\dfrac{1}{1-\frac{1}{2^{3}}}\left[1-\left(\dfrac{1}{2^{3}}\right)^{n}\right]$．当 $n\to\infty$ 时，$\dfrac{x}{2^{n}}\to 0$，而 $f(x)$ 在 $x=0$ 附近有界，所以 $f(x)=x^{2}\cdot\dfrac{1}{1-\frac{1}{2^{3}}}=\dfrac{8}{7}x^{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x)=\dfrac{8}{7}x^{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q103" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="103">【103】</span>
+<span class="q-group">求函数表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 满足 $\sin f(x)-\dfrac{1}{3}\sin f\left(\dfrac{1}{3}x\right)=x$，求 $f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $g(x)=\sin f(x)$，则 $g(x)-\dfrac{1}{3}g\left(\dfrac{1}{3}x\right)=x$，$\dfrac{1}{3}g\left(\dfrac{1}{3}x\right)-\dfrac{1}{3^{2}}g\left(\dfrac{1}{3^{2}}x\right)=\dfrac{1}{3^{2}}x$，$\dfrac{1}{3^{2}}g\left(\dfrac{1}{3^{2}}x\right)-\dfrac{1}{3^{3}}g\left(\dfrac{1}{3^{3}}x\right)=\dfrac{1}{3^{4}}x$，$\cdots\cdots$，$\dfrac{1}{3^{n-1}}g\left(\dfrac{1}{3^{n-1}}x\right)-\dfrac{1}{3^{n}}g\left(\dfrac{1}{3^{n}}x\right)=\dfrac{1}{3^{2(n-1)}}x$．以上各式相加，得 $g(x)-\dfrac{1}{3^{n}}g\left(\dfrac{1}{3^{n}}x\right)=x\left(1+\dfrac{1}{9}+\dfrac{1}{9^{2}}+\cdots+\dfrac{1}{9^{n-1}}\right)$．因为 $|g(x)|\leqslant 1$，所以 $\lim\limits_{n\to\infty}\dfrac{1}{3^{n}}g\left(\dfrac{1}{3^{n}}x\right)=0$，而 $\lim\limits_{n\to\infty}\left(1+\dfrac{1}{9}+\dfrac{1}{9^{2}}+\cdots+\dfrac{1}{9^{n-1}}\right)=\dfrac{1}{1-\frac{1}{9}}=\dfrac{9}{8}$，因此 $g(x)=\dfrac{9}{8}x$，于是 $f(x)=2k\pi+\arcsin\dfrac{9}{8}x$ 或 $f(x)=(2k-1)\pi-\arcsin\dfrac{9}{8}x\ (k\in\mathbf{Z})$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x)=2k\pi+\arcsin\dfrac{9}{8}x$ 或 $f(x)=(2k-1)\pi-\arcsin\dfrac{9}{8}x\ (k\in\mathbf{Z})$</span></div>
+</div>
+</article>
+<h3 class="grp-h">先化简，再求极限</h3>
+<article class="problem" id="q104" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="104">【104】</span>
+<span class="q-group">先化简，再求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\sum\limits_{k=1}^{n}a_k=0$，求 $\lim\limits_{x\to+\infty}\sum\limits_{k=1}^{n}a_k\sqrt{k+x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x&gt;0$ 时，由于 $\sum\limits_{k=1}^{n}a_k\sqrt{x}=0$．所以 $\lim\limits_{x\to+\infty}\sum\limits_{k=1}^{n}a_k\sqrt{k+x}=\lim\limits_{x\to+\infty}\sum\limits_{k=1}^{n}\left(a_k\sqrt{k+x}-a_k\sqrt{x}\right)=\lim\limits_{x\to+\infty}\sum\limits_{k=1}^{n}\dfrac{a_k k}{\sqrt{k+x}+\sqrt{x}}=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$0$</span></div>
+</div>
+</article>
+<article class="problem" id="q105" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="105">【105】</span>
+<span class="q-group">先化简，再求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to 0}\dfrac{\cos x+\cos^{2}x+\cdots+\cos^{n}x-n}{\cos x-1}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to 0}\dfrac{(\cos x-1)+(\cos^{2}x-1)+\cdots+(\cos^{n}x-1)}{\cos x-1}=\lim\limits_{x\to 0}\left[1+(\cos x+1)+\cdots+(\cos^{n-1}x+\cos^{n-2}x+\cdots+1)\right]=1+2+\cdots+n=\dfrac{n(n+1)}{2}$．故应填 $\dfrac{n(n+1)}{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{n(n+1)}{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q106" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="106">【106】</span>
+<span class="q-group">先化简，再求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求极限 $\lim\limits_{n\to\infty}\left[\arctan(n!)\times(\sqrt{n+1}-\sqrt{n})^{2}-\left(\dfrac{1}{2}+\dfrac{1}{2\times 3}+\cdots+\dfrac{1}{(n-1)n}\right)\dfrac{3n^{2}+1}{n^{2}-1}\right]$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\left|\arctan(n!)\right|\leqslant\dfrac{\pi}{2}$，$\lim\limits_{n\to\infty}(\sqrt{n+1}-\sqrt{n})^{2}=\lim\limits_{n\to\infty}\dfrac{1}{(\sqrt{n+1}+\sqrt{n})^{2}}=0$，所以 $\lim\limits_{n\to\infty}\arctan(n!)\cdot(\sqrt{n+1}-\sqrt{n})^{2}=0$；又 $\lim\limits_{n\to\infty}\left[\dfrac{1}{2}+\dfrac{1}{2\times 3}+\cdots+\dfrac{1}{(n-1)n}\right]=\lim\limits_{n\to\infty}\left(1-\dfrac{1}{n}\right)=1$，$\lim\limits_{n\to\infty}\dfrac{3n^{2}+1}{n^{2}-1}=3$．故原式 $=-3$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-3$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用等价无穷小代换定理求极限</h3>
+<article class="problem" id="q107" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="107">【107】</span>
+<span class="q-group">利用等价无穷小代换定理求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to 0}\dfrac{\mathrm{e}^{x}-\mathrm{e}^{\sin x}}{(x+x^{2})\ln(1+x)\arcsin x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 利用等价无穷小代换定理，并提出因子 $\mathrm{e}^{\sin x}$，再应用洛必达法则得 $\lim\limits_{x\to 0}\dfrac{\mathrm{e}^{x}-\mathrm{e}^{\sin x}}{(x+x^{2})\ln(1+x)\arcsin x}=\lim\limits_{x\to 0}\dfrac{\mathrm{e}^{\sin x}\left(\mathrm{e}^{x-\sin x}-1\right)}{x^{3}+x^{4}}=\lim\limits_{x\to 0}\mathrm{e}^{\sin x}\cdot\lim\limits_{x\to 0}\dfrac{x-\sin x}{x^{3}+x^{4}}=\lim\limits_{x\to 0}\dfrac{1-\cos x}{3x^{2}+4x^{3}}=\dfrac{1}{6}$．点评 若 $\lim\limits_{x\to x_0}\alpha(x)=a$，$\lim\limits_{x\to x_0}\beta(x)=a$，则对下列形式的极限，宜提取公因子，然后利用极限的运算法则与等价无穷小代换定理计算，有 $\lim\limits_{x\to x_0}\dfrac{\mathrm{e}^{\alpha(x)}-\mathrm{e}^{\beta(x)}}{\alpha(x)-\beta(x)}=\lim\limits_{x\to x_0}\mathrm{e}^{\beta(x)}\lim\limits_{x\to x_0}\dfrac{\mathrm{e}^{\alpha(x)-\beta(x)}-1}{\alpha(x)-\beta(x)}=\mathrm{e}^{a}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{1}{6}$</span></div>
+</div>
+</article>
+<article class="problem" id="q108" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="108">【108】</span>
+<span class="q-group">利用等价无穷小代换定理求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to 0}\dfrac{\mathrm{e}^{x^{2}}-\cos x}{\ln\cos x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to 0}\left[\dfrac{\mathrm{e}^{x^{2}}-1}{\ln[1+(\cos x-1)]}+\dfrac{1-\cos x}{\ln[1+(\cos x-1)]}\right]=\lim\limits_{x\to 0}\dfrac{\mathrm{e}^{x^{2}}-1}{\ln[1+(\cos x-1)]}+\lim\limits_{x\to 0}\dfrac{1-\cos x}{\ln[1+(\cos x-1)]}=\lim\limits_{x\to 0}\dfrac{x^{2}}{\cos x-1}+\lim\limits_{x\to 0}\dfrac{1-\cos x}{\cos x-1}=-3$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-3$</span></div>
+</div>
+</article>
+<article class="problem" id="q109" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="109">【109】</span>
+<span class="q-group">利用等价无穷小代换定理求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to 0}\dfrac{\ln(\sin^{2}x+\mathrm{e}^{x})-x}{\ln(x^{2}+\mathrm{e}^{2x})-2x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 本题应先恒等变形，然后再利用等价无穷小代换定理 $\lim\limits_{x\to 0}\dfrac{\ln(\sin^{2}x+\mathrm{e}^{x})-x}{\ln(x^{2}+\mathrm{e}^{2x})-2x}=\lim\limits_{x\to 0}\dfrac{\ln[\mathrm{e}^{x}(1+\mathrm{e}^{-x}\sin^{2}x)]-x}{\ln[\mathrm{e}^{2x}(1+\mathrm{e}^{-2x}x^{2})]-2x}=\lim\limits_{x\to 0}\dfrac{\ln(1+\mathrm{e}^{-x}\sin^{2}x)}{\ln(1+\mathrm{e}^{-2x}x^{2})}=\lim\limits_{x\to 0}\dfrac{\mathrm{e}^{-x}\sin^{2}x}{\mathrm{e}^{-2x}x^{2}}=1$．故应填 $1$．点评 在应用等价无穷小代换定理求极限时要特别小心，一般情况下强调对分子或分母的乘积因子可以应用等价无穷小代换，从而简化极限运算，否则会导致错误的结果．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$1$</span></div>
+</div>
+</article>
+<article class="problem" id="q110" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="110">【110】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to 0}\cot x\left(\dfrac{1}{\sin x}-\dfrac{1}{x}\right)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to 0}\cot x\left(\dfrac{1}{\sin x}-\dfrac{1}{x}\right)=\lim\limits_{x\to 0}\dfrac{\cos x}{\sin x}\cdot\dfrac{x-\sin x}{x\sin x}=\lim\limits_{x\to 0}\dfrac{x-\sin x}{x^{3}}=\lim\limits_{x\to 0}\dfrac{1-\cos x}{3x^{2}}=\lim\limits_{x\to 0}\dfrac{\dfrac{1}{2}x^{2}}{3x^{2}}=\dfrac{1}{6}$．故应填 $\dfrac{1}{6}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{6}$</span></div>
+</div>
+</article>
+<article class="problem" id="q111" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="111">【111】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\lim\limits_{x\to\infty}x\left[\sin\ln\left(1+\dfrac{3}{x}\right)-\sin\ln\left(1+\dfrac{1}{x}\right)\right]$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=2\lim\limits_{x\to\infty}x\cdot\cos\dfrac{\ln\left(1+\dfrac{3}{x}\right)+\ln\left(1+\dfrac{1}{x}\right)}{2}\cdot\sin\dfrac{\ln\left(1+\dfrac{3}{x}\right)-\ln\left(1+\dfrac{1}{x}\right)}{2}=2\lim\limits_{x\to\infty}x\cdot\sin\dfrac{\ln\dfrac{3+x}{1+x}}{2}=\dfrac{2}{2}\lim\limits_{x\to\infty}x\ln\left(1+\dfrac{2}{1+x}\right)=\lim\limits_{x\to\infty}x\cdot\dfrac{2}{1+x}=2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\lim\limits_{x\to\infty}x\left[\sin\ln\left(1+\dfrac{3}{x}\right)-\sin\ln\left(1+\dfrac{1}{x}\right)\right]=2$</span></div>
+</div>
+</article>
+<article class="problem" id="q112" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="112">【112】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to 0}\dfrac{1-\cos x\ \sqrt{\cos 2x}\ \sqrt[3]{\cos 3x}}{x^{2}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式$=\lim\limits_{x\to 0}\left[\dfrac{1-\cos x}{x^{2}}+\dfrac{\cos x\left(1-\sqrt{\cos 2x}\cdot\sqrt[3]{\cos 3x}\right)}{x^{2}}\right]=\dfrac{1}{2}+\lim\limits_{x\to 0}\dfrac{1-\sqrt{\cos 2x}\cdot\sqrt[3]{\cos 3x}}{x^{2}}=\dfrac{1}{2}+\lim\limits_{x\to 0}\left[\dfrac{1-\sqrt{\cos 2x}}{x^{2}}+\dfrac{\sqrt{\cos 2x}\left(1-\sqrt[3]{\cos 3x}\right)}{x^{2}}\right]=\dfrac{1}{2}+\lim\limits_{x\to 0}\dfrac{1-\sqrt{(\cos 2x-1)+1}}{x^{2}}+\lim\limits_{x\to 0}\dfrac{1-\sqrt[3]{(\cos 3x-1)+1}}{x^{2}}=\dfrac{1}{2}+\lim\limits_{x\to 0}\dfrac{1-\cos 2x}{2x^{2}}+\lim\limits_{x\to 0}\dfrac{1-\cos 3x}{3x^{2}}=\dfrac{1}{2}+1+\dfrac{3}{2}=3$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$3$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用单调有界数列必有极限证明极限存在</h3>
+<article class="problem" id="q113" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="113">【113】</span>
+<span class="q-group">利用单调有界数列必有极限证明极限存在</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $0&lt;x_{1}&lt;3$，$x_{n+1}=\sqrt{x_{n}\left(3-x_{n}\right)}$（$n=1,2,\cdots$），证明数列 $\{x_{n}\}$ 的极限存在，并求此极限．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $0&lt;x_{1}&lt;3$，知 $x_{1}$，$3-x_{1}$ 均为正数，故 $0&lt;x_{2}=\sqrt{x_{1}\left(3-x_{1}\right)}\leqslant\dfrac{1}{2}\left(x_{1}+3-x_{1}\right)=\dfrac{3}{2}$，设 $0&lt;x_{k}\leqslant\dfrac{3}{2}$（$k&gt;1$），则 $0&lt;x_{k+1}=\sqrt{x_{k}\left(3-x_{k}\right)}\leqslant\dfrac{1}{2}\left(x_{k}+3-x_{k}\right)=\dfrac{3}{2}$，由数学归纳法知，对任意正整数 $n&gt;1$ 均有 $0&lt;x_{n}\leqslant\dfrac{3}{2}$，因而数列 $\{x_{n}\}$ 有界．又当 $n&gt;1$ 时，$x_{n+1}-x_{n}=\sqrt{x_{n}\left(3-x_{n}\right)}-x_{n}=\sqrt{x_{n}}\left(\sqrt{3-x_{n}}-\sqrt{x_{n}}\right)=\dfrac{\sqrt{x_{n}}\left(3-2x_{n}\right)}{\sqrt{3-x_{n}}+\sqrt{x_{n}}}\geqslant 0$，因而有 $x_{n+1}\geqslant x_{n}$（$n&gt;1$），即数列 $\{x_{n}\}$ 单调增加．由单调有界数列必有极限知 $\lim\limits_{n\to\infty}x_{n}$ 存在．设 $\lim\limits_{n\to\infty}x_{n}=a$，在 $x_{n+1}=\sqrt{x_{n}\left(3-x_{n}\right)}$ 两边取极限，得 $a=\sqrt{a(3-a)}$，解之得 $a=\dfrac{3}{2}$，$a=0$（舍去）．故 $\lim\limits_{n\to\infty}x_{n}=\dfrac{3}{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $\lim\limits_{n\to\infty}x_{n}=\dfrac{3}{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q114" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="114">【114】</span>
+<span class="q-group">利用单调有界数列必有极限证明极限存在</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x_{n}=\sum\limits_{k=1}^{n}\dfrac{1}{n+k}$，证明 $\{x_{n}\}$ 收敛．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> $x_{n+1}-x_{n}=\dfrac{1}{2(2n+1)(n+1)}&gt;0$，所以 $\{x_{n}\}$ 单增．又 $x_{n}=\sum\limits_{k=1}^{n}\dfrac{1}{n+k}\leqslant\sum\limits_{k=1}^{n}\dfrac{1}{n}=1$，所以 $\{x_{n}\}$ 有上界．故 $\{x_{n}\}$ 收敛．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $\{x_{n}\}$ 收敛</span></div>
+</div>
+</article>
+<article class="problem" id="q115" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="115">【115】</span>
+<span class="q-group">利用单调有界数列必有极限证明极限存在</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x_{0}=\sqrt{2}$，$x_{n}=\sqrt{2}+\dfrac{x_{n-1}-1}{\sqrt{2}+x_{n-1}}$（$n=1,2,\cdots$），证明 $\{x_{n}\}$ 收敛，并求极限．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> $x_{0}=\sqrt{2}$，$x_{1}&gt;\sqrt{2}$，故 $x_{n}&gt;\sqrt{2}$，则 $x_{n+1}=\sqrt{2}+\dfrac{x_{n}-1}{x_{n}+\sqrt{2}}&lt;\sqrt{2}+\dfrac{x_{n}+\sqrt{2}-\sqrt{2}-1}{x_{n}+\sqrt{2}}=\sqrt{2}+1-\dfrac{\sqrt{2}+1}{x_{n}+\sqrt{2}}&lt;\sqrt{2}+1$，故 $\{x_{n}\}$ 有上界，而 $x_{n+1}-x_{n}=\dfrac{(\sqrt{2}+1)\left(x_{n}-x_{n-1}\right)}{\left(\sqrt{2}+x_{n}\right)\left(\sqrt{2}+x_{n-1}\right)}&gt;0$（用数学归纳法），由 $\{x_{n}\}$ 单调递增且有上界 $\sqrt{2}+1$ 可知其极限存在，设为 $A$，可得 $A=\sqrt{2}+\dfrac{A-1}{\sqrt{2}+A}$，可得 $A=\dfrac{1+\sqrt{5}}{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\{x_{n}\}$ 收敛，且极限 $A=\dfrac{1+\sqrt{5}}{2}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用夹逼准则求极限</h3>
+<article class="problem" id="q116" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="116">【116】</span>
+<span class="q-group">利用夹逼准则求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">极限 $\lim\limits_{n\to\infty}\sin\left(\pi\sqrt{n^{2}+1}\right)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 本题似乎无法下手，我们先将原式恒等变形后再利用无穷小量的性质来求．$\sin\left(\pi\sqrt{n^{2}+1}\right)=\sin\left[n\pi+\pi\left(\sqrt{n^{2}+1}-n\right)\right]=(-1)^{n}\sin\left(\pi\sqrt{n^{2}+1}-\pi n\right)$，$\left\{(-1)^{n}\right\}$ 是个有界量，而 $0&lt;\pi\left(\sqrt{n^{2}+1}-n\right)=\dfrac{\pi}{\sqrt{n^{2}+1}+n}&lt;\dfrac{2}{n}$．因 $0&lt;\sin\left(\pi\sqrt{n^{2}+1}-\pi n\right)&lt;\sin\dfrac{2}{n}&lt;\dfrac{2}{n}$，且 $\lim\limits_{n\to\infty}\dfrac{2}{n}=0$，由夹逼准则知 $\lim\limits_{n\to\infty}\sin\left(\pi\sqrt{n^{2}+1}-\pi n\right)=0$，所以 $\lim\limits_{n\to\infty}\sin\left(\pi\sqrt{n^{2}+1}\right)=0$．故应填 $0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $0$</span></div>
+</div>
+</article>
+<article class="problem" id="q117" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="117">【117】</span>
+<span class="q-group">利用夹逼准则求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">极限 $\lim\limits_{x\to+\infty}\left(\cos\sqrt{x+1}-\cos\sqrt{x}\right)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 利用三角函数的和、差化积公式 $\cos\sqrt{x+1}-\cos\sqrt{x}=-2\sin\dfrac{\sqrt{x+1}+\sqrt{x}}{2}\cdot\sin\dfrac{\sqrt{x+1}-\sqrt{x}}{2}$．当 $x\to+\infty$ 时，$\left|\sin\dfrac{\sqrt{x+1}+\sqrt{x}}{2}\right|\leqslant 1$，$0\leqslant\left|\sin\dfrac{\sqrt{x+1}-\sqrt{x}}{2}\right|=\left|\sin\dfrac{1}{2\left(\sqrt{x+1}+\sqrt{x}\right)}\right|\leqslant\dfrac{1}{2\left(\sqrt{x+1}+\sqrt{x}\right)}\to 0$．根据有界函数与无穷小的乘积仍是无穷小，所以 $\lim\limits_{x\to+\infty}\left(\cos\sqrt{x+1}-\cos\sqrt{x}\right)=0$．故应填 $0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $0$</span></div>
+</div>
+</article>
+<article class="problem" id="q118" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="118">【118】</span>
+<span class="q-group">利用夹逼准则求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{x\to 0}x\left[\dfrac{2}{x}\right]$（$[x]$ 表示 $x$ 的取整函数）．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{2}{x}-1&lt;\left[\dfrac{2}{x}\right]\leqslant\dfrac{2}{x}$，所以当 $x&gt;0$ 时，$2-x&lt;x\left[\dfrac{2}{x}\right]\leqslant 2$；当 $x&lt;0$ 时，$2-x&gt;x\left[\dfrac{2}{x}\right]\geqslant 2$；但 $\lim\limits_{x\to 0}(2-x)=2$，所以 $\lim\limits_{x\to 0}x\left[\dfrac{2}{x}\right]=2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以 $\lim\limits_{x\to 0}x\left[\dfrac{2}{x}\right]=2$</span></div>
+</div>
+</article>
+<article class="problem" id="q119" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="119">【119】</span>
+<span class="q-group">利用夹逼准则求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $a_{i}\geqslant 0$，$i=1,2,\cdots,k$，$a=\max\left\{a_{1},a_{2},\cdots,a_{k}\right\}$，证明：$\lim\limits_{n\to\infty}\sqrt[n]{a_{1}^{n}+a_{2}^{n}+\cdots+a_{k}^{n}}=a$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 由于 $a=\max\left\{a_{1},a_{2},\cdots,a_{k}\right\}$，所以 $a^{n}\leqslant a_{1}^{n}+a_{2}^{n}+\cdots+a_{k}^{n}\leqslant ka^{n}$，有 $a\leqslant\sqrt[n]{a_{1}^{n}+a_{2}^{n}+\cdots+a_{k}^{n}}\leqslant a\sqrt[n]{k}$，又 $\lim\limits_{n\to\infty}\sqrt[n]{k}=1$，所以由夹逼准则得 $\lim\limits_{n\to\infty}\sqrt[n]{a_{1}^{n}+a_{2}^{n}+\cdots+a_{k}^{n}}=a$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\lim\limits_{n\to\infty}\sqrt[n]{a_{1}^{n}+a_{2}^{n}+\cdots+a_{k}^{n}}=a$</span></div>
+</div>
+</article>
+<article class="problem" id="q120" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="120">【120】</span>
+<span class="q-group">利用夹逼准则求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{n\to\infty}\left(1+\dfrac{1}{n^{2}}\right)\cdot\left(1+\dfrac{2}{n^{2}}\right)\cdots\left(1+\dfrac{n}{n^{2}}\right)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{n\to\infty}\ln x_{n}=\lim\limits_{n\to\infty}\left[\ln\left(1+\dfrac{1}{n^{2}}\right)+\ln\left(1+\dfrac{2}{n^{2}}\right)+\cdots+\ln\left(1+\dfrac{n}{n^{2}}\right)\right]$，当 $x&gt;0$ 时，$x-\dfrac{x^{2}}{2}&lt;\ln(1+x)&lt;x$，$\ln x_{n}&lt;\dfrac{1}{n^{2}}+\dfrac{2}{n^{2}}+\cdots+\dfrac{n}{n^{2}}=\dfrac{\dfrac{n(n+1)}{2}}{n^{2}}\to\dfrac{1}{2}$（$n\to\infty$），$\ln x_{n}&gt;\dfrac{1}{n^{2}}-\dfrac{1}{2}\cdot\dfrac{1}{n^{4}}+\dfrac{2}{n^{2}}-\dfrac{1}{2}\cdot\dfrac{4}{n^{4}}+\cdots+\dfrac{n}{n^{2}}-\dfrac{1}{2}\cdot\dfrac{n^{2}}{n^{4}}=\dfrac{\dfrac{n(n+1)}{2}}{n^{2}}-\dfrac{1}{2}\cdot\dfrac{\dfrac{n(n+1)(2n+1)}{6}}{n^{4}}\to\dfrac{1}{2}$（$n\to\infty$）．所以由夹逼准则知 $\lim\limits_{n\to\infty}\ln x_{n}=\dfrac{1}{2}$，即 $\lim\limits_{n\to\infty}x_{n}=e^{\frac{1}{2}}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\lim\limits_{n\to\infty}x_{n}=e^{\frac{1}{2}}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">确定极限式子中的常数</h3>
+<article class="problem" id="q121" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="121">【121】</span>
+<span class="q-group">确定极限式子中的常数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\lim\limits_{x\to+\infty}\left[\left(x^{5}+7x^{4}+2\right)^{a}-x\right]=b$，$b\neq 0$，试求常数 $a,b$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $t=x^{-1}$，则 $\lim\limits_{x\to+\infty}\left[\left(x^{5}+7x^{4}+2\right)^{a}-x\right]=\lim\limits_{t\to 0^{+}}\dfrac{t^{1-5a}\left(1+7t+2t^{5}\right)^{a}-1}{t}$．由于分母是无穷小量，根据极限存在的条件，必有 $\lim\limits_{t\to 0^{+}}\left[t^{1-5a}\left(1+7t+2t^{5}\right)^{a}-1\right]=0$．要使该极限存在，必须取 $5a=1$．把 $5a=1$ 代入原极限，并利用等价无穷小代换定理得 $\lim\limits_{x\to+\infty}\left[\left(x^{5}+7x^{4}+2\right)^{a}-x\right]=\lim\limits_{t\to 0^{+}}\dfrac{\left[1+\left(7t+2t^{5}\right)\right]^{a}-1}{t}=\lim\limits_{t\to 0^{+}}\dfrac{a\left(7t+2t^{5}\right)}{t}=7a$．根据原极限等于 $b$ 的条件得 $7a=b$．所以 $a=\dfrac{1}{5}$，$b=\dfrac{7}{5}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$a=\dfrac{1}{5}$，$b=\dfrac{7}{5}$</span></div>
+</div>
+</article>
+<article class="problem" id="q122" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="122">【122】</span>
+<span class="q-group">确定极限式子中的常数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\lim\limits_{n\to\infty}\dfrac{x^{2n-1}+ax^{2}+bx}{x^{2n}+1}$ 为连续函数，试确定 $a$ 和 $b$ 的值．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $|x|&lt;1$ 时，$f(x)=ax^{2}+bx$；当 $|x|&gt;1$ 时，$f(x)=\dfrac{1}{x}$；当 $x=1$ 时，$f(1)=\dfrac{a+b+1}{2}$；当 $x=-1$ 时，$f(-1)=\dfrac{a-b-1}{2}$．故 $f(x)=\begin{cases}\dfrac{1}{x}, &amp; x&lt;-1\\ \dfrac{a-b-1}{2}, &amp; x=-1\\ ax^{2}+bx, &amp; -1&lt;x&lt;1\\ \dfrac{a+b+1}{2}, &amp; x=1\\ \dfrac{1}{x}, &amp; x&gt;1\end{cases}$．由连续的定义知 $\begin{cases}f(-1)=\lim\limits_{x\to-1^{-}}f(x)\\ f(1)=\lim\limits_{x\to 1^{+}}f(x)\end{cases}$，即 $\begin{cases}\dfrac{a-b-1}{2}=-1\\ \dfrac{a+b+1}{2}=1\end{cases}$．所以 $a=0$，$b=1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所以 $a=0$，$b=1$</span></div>
+</div>
+</article>
+<article class="problem" id="q123" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="123">【123】</span>
+<span class="q-group">确定极限式子中的常数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}x, &amp; x&lt;1\\ a, &amp; x\geqslant 1\end{cases}$，$\psi(x)=\begin{cases}b, &amp; x\leqslant 0\\ x+1, &amp; x&gt;0\end{cases}$，求 $a,b$ 使 $f(x)+\psi(x)$ 在 $(-\infty,+\infty)$ 上连续．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f(x)+\psi(x)=\begin{cases}x+b, &amp; x\leqslant 0\\ 2x+1, &amp; 0&lt;x&lt;1\\ x+a+1, &amp; x\geqslant 1\end{cases}$，所以当 $a=b=1$ 时，$f(x)+\psi(x)$ 在 $(-\infty,+\infty)$ 上连续．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">当 $a=b=1$ 时，$f(x)+\psi(x)$ 在 $(-\infty,+\infty)$ 上连续</span></div>
+</div>
+</article>
+<article class="problem" id="q124" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="124">【124】</span>
+<span class="q-group">确定极限式子中的常数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=\dfrac{x}{a+e^{bx}}$ 在 $(-\infty,+\infty)$ 内连续，且 $\lim\limits_{x\to-\infty}f(x)=0$，则常数 $a,b$ 满足________．(A) $a&lt;0$，$b&lt;0$　　(B) $a&gt;0$，$b&gt;0$　　(C) $a\leqslant 0$，$b&gt;0$　　(D) $a\geqslant 0$，$b&lt;0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\lim\limits_{x\to-\infty}\dfrac{x}{a+e^{bx}}=0$ 知：$a+e^{bx}$ 应为 $\infty$，故 $x\to-\infty$ 时，$b&lt;0$．若 $a&lt;0$，则 $f(x)$ 应有间断点 $x=\dfrac{\ln(-a)}{b}$，与 $f(x)$ 在 $(-\infty,+\infty)$ 连续矛盾，所以 $a\geqslant 0$．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<h3 class="grp-h">判断函数的连续性</h3>
+<article class="problem" id="q125" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="125">【125】</span>
+<span class="q-group">判断函数的连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=\begin{cases}\dfrac{\ln\cos(x-1)}{1-\sin\dfrac{\pi}{2}x}, &amp; x\neq 1\\ 1, &amp; x=1\end{cases}$，问函数 $f(x)$ 在 $x=1$ 处是否连续？若不连续，修改函数在 $x=1$ 处的定义，使之连续．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\lim\limits_{x\to 1}f(x)=\lim\limits_{x\to 1}\dfrac{\ln\cos(x-1)}{1-\sin\dfrac{\pi}{2}x}=\lim\limits_{x\to 1}\dfrac{\dfrac{-\sin(x-1)}{\cos(x-1)}}{-\dfrac{\pi}{2}\cos\dfrac{\pi}{2}x}=\dfrac{2}{\pi}\lim\limits_{x\to 1}\dfrac{\tan(x-1)}{\cos\dfrac{\pi}{2}x}=\dfrac{2}{\pi}\lim\limits_{x\to 1}\dfrac{\sec^{2}(x-1)}{-\dfrac{\pi}{2}\sin\dfrac{\pi}{2}x}=-\dfrac{4}{\pi^{2}}$，所以函数 $f(x)$ 在 $x=1$ 处不连续，$x=1$ 是 $f(x)$ 的可去间断点．将函数 $f(x)$ 在 $x=1$ 处的函数值改为 $-\dfrac{4}{\pi^{2}}$，则该函数即为连续函数．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x)$ 在 $x=1$ 处不连续（$x=1$ 为可去间断点）；将 $x=1$ 处的函数值改为 $-\dfrac{4}{\pi^{2}}$ 即为连续函数</span></div>
+</div>
+</article>
+<h3 class="grp-h">讨论间断点</h3>
+<article class="problem" id="q126" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="126">【126】</span>
+<span class="q-group">讨论间断点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $f(x)=(1+x)^{\frac{x}{\tan\left(x-\frac{\pi}{4}\right)}}$ 在区间 $(0,2\pi)$ 内的间断点，并判断其类型．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f(x)$ 在 $(0,2\pi)$ 内的间断点为 $x=\dfrac{\pi}{4},\dfrac{3\pi}{4},\dfrac{5\pi}{4},\dfrac{7\pi}{4}$．在 $x=\dfrac{\pi}{4}$ 处，$f\left(\dfrac{\pi}{4}+0\right)=+\infty$，在 $x=\dfrac{5\pi}{4}$ 处，$f\left(\dfrac{5\pi}{4}+0\right)=+\infty$，故 $x=\dfrac{\pi}{4},\dfrac{5}{4}\pi$ 为第二类（或无穷）间断点；在 $x=\dfrac{3\pi}{4}$ 处，$\lim\limits_{x\to\frac{3}{4}\pi}f(x)=1$，在 $x=\dfrac{7\pi}{4}$ 处，$\lim\limits_{x\to\frac{7}{4}\pi}f(x)=1$，故 $x=\dfrac{3\pi}{4},\dfrac{7}{4}\pi$ 为第一类（或可去）间断点．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$x=\dfrac{\pi}{4},\dfrac{5}{4}\pi$ 为第二类（或无穷）间断点；$x=\dfrac{3\pi}{4},\dfrac{7}{4}\pi$ 为第一类（或可去）间断点</span></div>
+</div>
+</article>
+<article class="problem" id="q127" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="127">【127】</span>
+<span class="q-group">讨论间断点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 和 $\varphi(x)$ 在 $(-\infty,+\infty)$ 内有定义，$f(x)$ 为连续函数，且 $f(x)\neq 0$，$\varphi(x)$ 有间断点，则________．(A) $\varphi[f(x)]$ 必有间断点　　(B) $[\varphi(x)]^{2}$ 必有间断点　　(C) $f[\varphi(x)]$ 必有间断点　　(D) $\dfrac{\varphi(x)}{f(x)}$ 必有间断点</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 采用排除法．若取 $\varphi(x)=\begin{cases}1, &amp; x\geqslant 0\\ -1, &amp; x&lt;0\end{cases}$，$\varphi(x)$ 有间断点 $x=0$．但 $[\varphi(x)]^{2}=1$ 没有间断点，所以 (B) 不正确；取 $\varphi(x)=\begin{cases}1, &amp; x\geqslant 0\\ -1, &amp; x&lt;0\end{cases}$，$f(x)=x^{2}$，则 $\varphi[f(x)]=1$ 没有间断点，(A) 不正确；取 $f(x)=x^{2}$，$\varphi(x)=\begin{cases}1, &amp; x\geqslant 0\\ -1, &amp; x&lt;0\end{cases}$，则 $f[\varphi(x)]=1$ 没有间断点，所以 (C) 不正确．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q128" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="128">【128】</span>
+<span class="q-group">讨论间断点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $(-\infty,+\infty)$ 内有定义，且 $\lim\limits_{x\to\infty}f(x)=a$，$g(x)=\begin{cases}f\left(\dfrac{1}{x}\right), &amp; x\neq 0\\ 0, &amp; x=0\end{cases}$，则________．(A) $x=0$ 必是 $g(x)$ 的第一类间断点　　(B) $x=0$ 必是 $g(x)$ 的第二类间断点　　(C) $x=0$ 必是 $g(x)$ 的连续点　　(D) $g(x)$ 在点 $x=0$ 处的连续性与 $a$ 的取值有关</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 若 $a=0$，则 $\lim\limits_{x\to 0}g(x)=\lim\limits_{x\to 0}f\left(\dfrac{1}{x}\right)=0=g(0)$，从而 $g(x)$ 在 $x=0$ 处连续；若 $a\neq 0$，则 $\lim\limits_{x\to 0}g(x)=\lim\limits_{x\to 0}f\left(\dfrac{1}{x}\right)=a\neq g(0)$，从而 $g(x)$ 在 $x=0$ 处不连续．故应选 (D)．<strong>点评</strong> 本题主要考察的是分段函数在分界点处的连续性，函数 $f(x)$ 在点 $x_{0}$ 处的连续性应满足三个条件：(1) 在 $x=x_{0}$ 有定义；(2) $\lim\limits_{x\to x_{0}}f(x)$ 存在；(3) $\lim\limits_{x\to x_{0}}f(x)=f(x_{0})$．不满足上述任一条，则导致函数 $f(x)$ 在 $x=x_{0}$ 点处间断．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<h3 class="grp-h">使用介值定理证明相关结论</h3>
+<article class="problem" id="q129" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="129">【129】</span>
+<span class="q-group">使用介值定理证明相关结论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[0,1]$ 上连续，且 $f(0)=f(1)$，求证：(1) 存在 $x\in[0,1]$，使 $f(x)=f\left(x+\dfrac{1}{2}\right)$；(2) 对任何正整数 $n$，存在 $x\in[0,1]$，使 $f(x)=f\left(x+\dfrac{1}{n}\right)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 设 $g(x)=f(x)-f\left(x+\dfrac{1}{2}\right)$，则 $g(0)=f(0)-f\left(\dfrac{1}{2}\right)$，$g\left(\dfrac{1}{2}\right)=f\left(\dfrac{1}{2}\right)-f(1)$，故 $g(0)+g\left(\dfrac{1}{2}\right)=f(0)-f(1)=0$．而另一方面，$m\leqslant\dfrac{g(0)+g\left(\dfrac{1}{2}\right)}{2}\leqslant M$．由介值定理知，存在 $x\in[0,1]$，使 $g(x)=\dfrac{g(0)+g\left(\dfrac{1}{2}\right)}{2}=0$．(2) 设 $h(x)=f(x)-f\left(x+\dfrac{1}{n}\right)$，则 $h(0)=f(0)-f\left(\dfrac{1}{n}\right)$，$h\left(\dfrac{1}{n}\right)=f\left(\dfrac{1}{n}\right)-f\left(\dfrac{2}{n}\right)$，$h\left(\dfrac{2}{n}\right)=f\left(\dfrac{2}{n}\right)-f\left(\dfrac{3}{n}\right)$，$\cdots$，$h\left(\dfrac{n-1}{n}\right)=f\left(\dfrac{n-1}{n}\right)-f(1)$．以上诸式相加得 $\sum\limits_{i=0}^{n-1}h\left(\dfrac{i}{n}\right)=f(0)-f(1)=0$．而另一方面 $nm\leqslant\sum\limits_{i=0}^{n-1}h\left(\dfrac{i}{n}\right)\leqslant nM$，即 $m\leqslant\dfrac{1}{n}\sum\limits_{i=0}^{n-1}h\left(\dfrac{i}{n}\right)\leqslant M$．由闭区间上连续函数的介值定理知存在 $x\in[0,1]$，使 $h(x)=\dfrac{1}{n}\sum\limits_{i=0}^{n-1}h\left(\dfrac{i}{n}\right)=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">得证：存在 $x\in[0,1]$ 使 $f(x)=f\left(x+\dfrac{1}{2}\right)$；对任何正整数 $n$，存在 $x\in[0,1]$ 使 $f(x)=f\left(x+\dfrac{1}{n}\right)$</span></div>
+</div>
+</article>
+<article class="problem" id="q130" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="130">【130】</span>
+<span class="q-group">使用介值定理证明相关结论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[a,b]$ 连续，且 $a&lt;c&lt;d&lt;b$，证明：在 $(a,b)$ 内至少存在一点 $\xi$，使得 $pf(c)+qf(d)=(p+q)f(\xi)$，其中 $p,q$ 为任意正常数．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证法一</strong> 令 $F(x)=(p+q)f(x)-pf(c)-qf(d)$，可知 $F(x)$ 在 $[c,d]$ 上连续，注意到 $F(c)=(p+q)f(c)-pf(c)-qf(d)=q[f(c)-f(d)]$，$F(d)=(p+q)f(d)-pf(c)-qf(d)=p[f(d)-f(c)]$，故当 $f(c)-f(d)=0$ 时，可知 $c,d$ 均可取作 $\xi$；而当 $f(c)-f(d)\neq 0$ 时，又 $p&gt;0$，$q&gt;0$，于是有 $F(c)F(d)=-pq[f(c)-f(d)]^{2}&lt;0$，由零点定理可知，至少存在一点 $\xi\in(c,d)\subset(a,b)$，使得 $F(\xi)=0$，即 $pf(c)+qf(d)=(p+q)f(\xi)$．<strong>证法二</strong> 因为 $f(x)$ 在 $[a,b]$ 上连续，故 $f(x)$ 在 $[a,b]$ 上有最大值 $M$ 与最小值 $m$，且有 $m\leqslant f(x)\leqslant M$，由于 $c,d\in[a,b]$，也有 $pm\leqslant pf(c)\leqslant pM$，$qm\leqslant qf(d)\leqslant qM$，两式相加得 $(p+q)m\leqslant pf(c)+qf(d)\leqslant(p+q)M$，即 $m\leqslant\dfrac{pf(c)+qf(d)}{p+q}\leqslant M$．由介值定理知，在 $(a,b)$ 内至少存在一点 $\xi$，使得 $\dfrac{pf(c)+qf(d)}{p+q}=f(\xi)$，即 $pf(c)+qf(d)=(p+q)f(\xi)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">得证：在 $(a,b)$ 内至少存在一点 $\xi$，使 $pf(c)+qf(d)=(p+q)f(\xi)$</span></div>
+</div>
+</article>
+<article class="problem" id="q131" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="131">【131】</span>
+<span class="q-group">使用介值定理证明相关结论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[0,n]$（$n$ 为自然数，$n\geqslant 2$）上连续，$f(0)=f(n)$，证明：存在 $\xi,\xi+1\in[0,n]$，使 $f(\xi)=f(\xi+1)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $g(x)=f(x+1)-f(x)$，$x\in[0,n-1]$，则 $g(0)=f(1)-f(0)$，$g(1)=f(2)-f(1)$，$g(2)=f(3)-f(2)$，$\cdots$，$g(n-1)=f(n)-f(n-1)$．以上诸式相加得 $\sum\limits_{i=0}^{n-1}g(i)=f(n)-f(0)=0$．而另一方面 $nm\leqslant\sum\limits_{i=0}^{n-1}g(i)\leqslant nM$，即 $m\leqslant\dfrac{1}{n}\sum\limits_{i=0}^{n-1}g(i)\leqslant M$，由闭区间上连续函数的介值定理知存在 $\xi\in(0,n-1)$，使 $g(\xi)=\dfrac{1}{n}\sum\limits_{i=0}^{n-1}g(i)=0$，即 $g(\xi)=f(\xi+1)-f(\xi)=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">得证：存在 $\xi,\xi+1\in[0,n]$，使 $f(\xi)=f(\xi+1)$</span></div>
+</div>
+</article>
+<article class="problem" id="q132" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="132">【132】</span>
+<span class="q-group">使用介值定理证明相关结论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $[a,b]$ 上连续，$x_{i}\in[a,b]$，$t_{i}&gt;0$（$i=1,2,\cdots,n$），且 $\sum\limits_{i=1}^{n}t_{i}=1$，试证至少存在一点 $\xi\in[a,b]$，使 $f(\xi)=t_{1}f(x_{1})+t_{2}f(x_{2})+\cdots+t_{n}f(x_{n})$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $f(x)$ 在 $[a,b]$ 上连续，所以 $m\leqslant f(x)\leqslant M$，其中 $m,M$ 分别为最小值与最大值．又 $x_{i}\in[a,b]$，$t_{i}&gt;0$（$i=1,2,\cdots,n$），所以 $m=\sum\limits_{i=1}^{n}mt_{i}\leqslant\sum\limits_{i=1}^{n}t_{i}f(x_{i})\leqslant\sum\limits_{i=1}^{n}Mt_{i}=M$．从而至少存在一点 $\xi\in[a,b]$，使 $f(\xi)=t_{1}f(x_{1})+t_{2}f(x_{2})+\cdots+t_{n}f(x_{n})$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">得证：至少存在一点 $\xi\in[a,b]$，使 $f(\xi)=t_{1}f(x_{1})+t_{2}f(x_{2})+\cdots+t_{n}f(x_{n})$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s11">1. 导数的概念</h2>
+<div class="sec-intro">1．导数定义　设函数 $y=f(x)$ 在 $x_{0}$ 点的某邻域内有定义，当自变量 $x$ 在 $x_{0}$ 点处取得增量 $\Delta x(\Delta x\neq0)$ 时，相应地，函数 $y$ 取得增量 $\Delta y=f(x_{0}+\Delta x)-f(x_{0})$，如果极限 $$\lim_{\Delta x\to0}\frac{\Delta y}{\Delta x}=\lim_{\Delta x\to0}\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}$$ 存在，则称函数 $y=f(x)$ 在 $x_{0}$ 点可导，并称这个极限值为函数 $y=f(x)$ 在 $x_{0}$ 点处的导数，记为 $f'(x_{0})$，$y'(x_{0})$，$\left.\dfrac{dy}{dx}\right|_{x=x_{0}}$．如果记 $x=x_{0}+\Delta x$，则导数又可表示为 $$f'(x_{0})=\lim_{x\to x_{0}}\frac{f(x)-f(x_{0})}{x-x_{0}}.$$ 若极限 $$\lim_{\Delta x\to0^{-}}\frac{\Delta y}{\Delta x}=\lim_{\Delta x\to0^{-}}\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}$$ 存在，则该极限值称为 $f(x)$ 在 $x_{0}$ 点的左导数，记作 $$f_{-}'(x_{0})\ \text{或}\ f_{-}'(x_{0})=\lim_{x\to x_{0}^{-}}\frac{f(x)-f(x_{0})}{x-x_{0}}.$$ 若极限 $$\lim_{\Delta x\to0^{+}}\frac{\Delta y}{\Delta x}=\lim_{\Delta x\to0^{+}}\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}$$ 存在，则该极限值称为 $f(x)$ 在 $x_{0}$ 点的右导数，记作 $$f_{+}'(x_{0})\ \text{或}\ f_{+}'(x_{0})=\lim_{x\to x_{0}^{+}}\frac{f(x)-f(x_{0})}{x-x_{0}}.$$ 函数 $f(x)$ 在 $x_{0}$ 点可导，且导数为 $A$ 的充要条件是 $$f'(x_{0})=f_{-}'(x_{0})=f_{+}'(x_{0})=A.$$ 2．导数的几何意义　导数 $f'(x_{0})$ 在几何上表示曲线 $y=f(x)$ 在 $M(x_{0},f(x_{0}))$ 点处的切线斜率．曲线 $y=f(x)$ 在点 $M$ 的切线方程是 $$y=f'(x_{0})(x-x_{0})+f(x_{0}),$$ 曲线 $y=f(x)$ 在点 $M$ 的法线方程是 $$y=-\dfrac{1}{f'(x_{0})}(x-x_{0})+f(x_{0})\quad(\text{当 } f'(x_{0})\neq0 \text{ 时}).$$ 3．函数的可导性与连续性　若函数 $y=f(x)$ 在 $x_{0}$ 点可导，则 $y=f(x)$ 在 $x_{0}$ 点必连续．但连续不一定可导．</div>
+<h3 class="grp-h">利用导数定义求初等函数的导数</h3>
+</main>
+</div>
+<div class="qnav">
+  <button id="qnav-prev" title="上一题">↑</button>
+  <button id="qnav-next" title="下一题">↓</button>
+</div>
+<footer>
+  内容来自《吉米多维奇高等数学习题精选精解》（张天德、蒋晓云主编）· 仅供个人学习使用<br>
+  <a href="../index.html" style="color:var(--accent);">返回总目录</a> <a class="icon-btn" href="chapter-02.html">下一章</a>
+</footer>
+</body>
+</html>

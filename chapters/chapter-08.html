@@ -1,0 +1,2396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第8章 第八章 多元函数微分法及其应用 · 吉米多维奇高等数学刷题版</title>
+<meta name="description" content="吉米多维奇高等数学习题精选精解第8章第八章 多元函数微分法及其应用题目与详解，共131题">
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+<script defer src="../assets/katex/katex.min.js"></script>
+<script defer src="../assets/katex/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</head>
+<body data-chapter="8" data-lazy="1">
+<header class="topbar">
+  <a class="back" href="../index.html">← 总目录</a>
+  <button class="icon-btn sidebar-toggle" id="sidebar-toggle">☰ 目录</button>
+  <span class="title">第8章 第八章 多元函数微分法及其应用 · 共131题</span>
+  <button class="icon-btn" id="theme-btn">🌙 夜间</button>
+</header>
+<div class="sidebar-mask" id="sidebar-mask"></div>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<h3>本章节选</h3>
+<a class="sec" href="#sec-s1">§2. 偏导数</a>
+<a class="sec" href="#sec-s2">1. 偏导数的定义</a>
+<a class="sec" href="#sec-s3">2. 高阶偏导数</a>
+<a class="sec" href="#sec-s4">§3. 全微分</a>
+<a class="sec" href="#sec-s5">1. 全微分的定义</a>
+<a class="sec" href="#sec-s6">2. 全微分的形式不变性</a>
+<a class="sec" href="#sec-s7">§4. 多元复合函数的求导法则</a>
+<a class="sec" href="#sec-s8">1. 复合函数的偏导数</a>
+<a class="sec" href="#sec-s9">2. 全导数</a>
+<a class="sec" href="#sec-s10">§5. 隐函数的求导法则</a>
+<a class="sec" href="#sec-s11">1. 一元隐函数求导法则</a>
+<a class="sec" href="#sec-s12">2. 二元隐函数求导法则</a>
+<a class="sec" href="#sec-s13">§6. 多元函数微分学的几何应用</a>
+<a class="sec" href="#sec-s14">1. 空间曲线的切线与法平面</a>
+<a class="sec" href="#sec-s15">2. 曲面的切平面与法线</a>
+<a class="sec" href="#sec-s16">§7. 方向导数与梯度</a>
+<a class="sec" href="#sec-s17">1. 方向导数</a>
+<a class="sec" href="#sec-s18">2. 梯度</a>
+<a class="sec" href="#sec-s19">§8. 多元函数的极值及其求法</a>
+<a class="sec" href="#sec-s20">1. 极值</a>
+<a class="sec" href="#sec-s21">2. 条件极值、拉格朗日乘数法</a>
+<a class="sec" href="#sec-s22">3. 函数的最大值和最小值</a>
+<a class="sec" href="#sec-s23">9. 二元函数的泰勒公式</a>
+<a class="sec" href="#sec-s24">10. 综合提高题型</a>
+<a class="sec" href="#sec-s25">§1. 二重积分</a>
+<a class="sec" href="#sec-s26">1. 二重积分的概念</a>
+<a class="sec" href="#sec-s27">2. 二重积分的性质</a>
+<a class="sec" href="#sec-s28">3. 二重积分计算法</a>
+<h3>题号</h3><div class="qindex">
+<a href="#q710" id="qi710">710</a>
+<a href="#q711" id="qi711">711</a>
+<a href="#q712" id="qi712">712</a>
+<a href="#q713" id="qi713">713</a>
+<a href="#q714" id="qi714">714</a>
+<a href="#q715" id="qi715">715</a>
+<a href="#q716" id="qi716">716</a>
+<a href="#q717" id="qi717">717</a>
+<a href="#q718" id="qi718">718</a>
+<a href="#q719" id="qi719">719</a>
+<a href="#q720" id="qi720">720</a>
+<a href="#q721" id="qi721">721</a>
+<a href="#q722" id="qi722">722</a>
+<a href="#q723" id="qi723">723</a>
+<a href="#q724" id="qi724">724</a>
+<a href="#q725" id="qi725">725</a>
+<a href="#q726" id="qi726">726</a>
+<a href="#q727" id="qi727">727</a>
+<a href="#q728" id="qi728">728</a>
+<a href="#q729" id="qi729">729</a>
+<a href="#q730" id="qi730">730</a>
+<a href="#q731" id="qi731">731</a>
+<a href="#q732" id="qi732">732</a>
+<a href="#q733" id="qi733">733</a>
+<a href="#q734" id="qi734">734</a>
+<a href="#q735" id="qi735">735</a>
+<a href="#q736" id="qi736">736</a>
+<a href="#q737" id="qi737">737</a>
+<a href="#q738" id="qi738">738</a>
+<a href="#q739" id="qi739">739</a>
+<a href="#q740" id="qi740">740</a>
+<a href="#q741" id="qi741">741</a>
+<a href="#q742" id="qi742">742</a>
+<a href="#q743" id="qi743">743</a>
+<a href="#q744" id="qi744">744</a>
+<a href="#q745" id="qi745">745</a>
+<a href="#q746" id="qi746">746</a>
+<a href="#q747" id="qi747">747</a>
+<a href="#q748" id="qi748">748</a>
+<a href="#q749" id="qi749">749</a>
+<a href="#q750" id="qi750">750</a>
+<a href="#q751" id="qi751">751</a>
+<a href="#q752" id="qi752">752</a>
+<a href="#q753" id="qi753">753</a>
+<a href="#q754" id="qi754">754</a>
+<a href="#q755" id="qi755">755</a>
+<a href="#q756" id="qi756">756</a>
+<a href="#q757" id="qi757">757</a>
+<a href="#q758" id="qi758">758</a>
+<a href="#q759" id="qi759">759</a>
+<a href="#q760" id="qi760">760</a>
+<a href="#q761" id="qi761">761</a>
+<a href="#q762" id="qi762">762</a>
+<a href="#q763" id="qi763">763</a>
+<a href="#q764" id="qi764">764</a>
+<a href="#q765" id="qi765">765</a>
+<a href="#q766" id="qi766">766</a>
+<a href="#q767" id="qi767">767</a>
+<a href="#q768" id="qi768">768</a>
+<a href="#q769" id="qi769">769</a>
+<a href="#q770" id="qi770">770</a>
+<a href="#q771" id="qi771">771</a>
+<a href="#q772" id="qi772">772</a>
+<a href="#q773" id="qi773">773</a>
+<a href="#q774" id="qi774">774</a>
+<a href="#q775" id="qi775">775</a>
+<a href="#q776" id="qi776">776</a>
+<a href="#q777" id="qi777">777</a>
+<a href="#q778" id="qi778">778</a>
+<a href="#q779" id="qi779">779</a>
+<a href="#q780" id="qi780">780</a>
+<a href="#q781" id="qi781">781</a>
+<a href="#q782" id="qi782">782</a>
+<a href="#q783" id="qi783">783</a>
+<a href="#q784" id="qi784">784</a>
+<a href="#q785" id="qi785">785</a>
+<a href="#q786" id="qi786">786</a>
+<a href="#q787" id="qi787">787</a>
+<a href="#q788" id="qi788">788</a>
+<a href="#q789" id="qi789">789</a>
+<a href="#q790" id="qi790">790</a>
+<a href="#q791" id="qi791">791</a>
+<a href="#q792" id="qi792">792</a>
+<a href="#q793" id="qi793">793</a>
+<a href="#q794" id="qi794">794</a>
+<a href="#q795" id="qi795">795</a>
+<a href="#q796" id="qi796">796</a>
+<a href="#q797" id="qi797">797</a>
+<a href="#q798" id="qi798">798</a>
+<a href="#q799" id="qi799">799</a>
+<a href="#q800" id="qi800">800</a>
+<a href="#q801" id="qi801">801</a>
+<a href="#q802" id="qi802">802</a>
+<a href="#q803" id="qi803">803</a>
+<a href="#q804" id="qi804">804</a>
+<a href="#q805" id="qi805">805</a>
+<a href="#q806" id="qi806">806</a>
+<a href="#q807" id="qi807">807</a>
+<a href="#q808" id="qi808">808</a>
+<a href="#q809" id="qi809">809</a>
+<a href="#q810" id="qi810">810</a>
+<a href="#q811" id="qi811">811</a>
+<a href="#q812" id="qi812">812</a>
+<a href="#q813" id="qi813">813</a>
+<a href="#q814" id="qi814">814</a>
+<a href="#q815" id="qi815">815</a>
+<a href="#q816" id="qi816">816</a>
+<a href="#q817" id="qi817">817</a>
+<a href="#q818" id="qi818">818</a>
+<a href="#q819" id="qi819">819</a>
+<a href="#q820" id="qi820">820</a>
+<a href="#q821" id="qi821">821</a>
+<a href="#q822" id="qi822">822</a>
+<a href="#q823" id="qi823">823</a>
+<a href="#q824" id="qi824">824</a>
+<a href="#q825" id="qi825">825</a>
+<a href="#q826" id="qi826">826</a>
+<a href="#q827" id="qi827">827</a>
+<a href="#q828" id="qi828">828</a>
+<a href="#q829" id="qi829">829</a>
+<a href="#q830" id="qi830">830</a>
+<a href="#q831" id="qi831">831</a>
+<a href="#q832" id="qi832">832</a>
+<a href="#q833" id="qi833">833</a>
+<a href="#q834" id="qi834">834</a>
+<a href="#q835" id="qi835">835</a>
+<a href="#q836" id="qi836">836</a>
+<a href="#q837" id="qi837">837</a>
+<a href="#q838" id="qi838">838</a>
+<a href="#q839" id="qi839">839</a>
+<a href="#q840" id="qi840">840</a>
+</div></nav>
+<main class="main">
+<div class="ch-progress-wrap" style="margin-bottom:18px;color:var(--text-soft);font-size:14px;">
+  本章进度：<span id="ch-progress-text">0 / 131</span>
+  <div class="progress-bar" id="ch-progress" data-ch-count="131" style="margin:6px 0 0;"><i></i></div>
+</div>
+<article class="problem" id="q710">
+<div class="q-head">
+<span class="q-no" data-n="710">【710】</span>
+<span class="q-group">求多元函数的定义域</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $z=\arcsin(2x)+\dfrac{\sqrt{4x-y^{2}}}{\ln(1-x^{2}-y^{2})}$ 的定义域.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 求多元函数的定义域, 就是要求出使其表达式有意义的点的全体. 首先, 要写出构成各部分的简单函数的定义域, 再解联立不等式组, 即得所求定义域. <strong>解</strong> $z_{1}=\arcsin(2x)$ 的定义域为 $|2x|\leqslant 1$, $z_{2}=\sqrt{4x-y^{2}}$ 的定义域为 $4x-y^{2}\geqslant 0$, $z_{3}=\dfrac{1}{\ln(1-x^{2}-y^{2})}$ 的定义域为 $1-x^{2}-y^{2}&gt;0$ 且 $1-x^{2}-y^{2}\neq 1$. 故得联立方程组: $$\begin{cases} |2x|\leqslant 1 \\ 4x-y^{2}\geqslant 0 \\ 1-x^{2}-y^{2}&gt;0 \\ 1-x^{2}-y^{2}\neq 1 \end{cases}$$ 因此, 所求函数的定义域为 $$\left\{(x,y)\ \middle|\ -\frac{1}{2}\leqslant x\leqslant\frac{1}{2},\ y^{2}\leqslant 4x,\ 0&lt;x^{2}+y^{2}&lt;1\right\}.$$ <strong>点评</strong> 与求一元函数的定义域相仿, 需考虑: 分式的分母不能为零; 偶次方根号下的表达式非负; 对数的真数大于零; 反正弦、反余弦中的表达式的绝对值小于等于 1, 等等. 再解联立不等式组, 即得定义域.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所求函数的定义域为 $\left\{(x,y)\mid -\frac{1}{2}\leqslant x\leqslant\frac{1}{2},\ y^{2}\leqslant 4x,\ 0&lt;x^{2}+y^{2}&lt;1\right\}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">求函数表达式</h3>
+<article class="problem" id="q711">
+<div class="q-head">
+<span class="q-no" data-n="711">【711】</span>
+<span class="q-group">求函数表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=\sqrt{y}+f(\sqrt{x}-1)$, 且当 $y=1$ 时 $z=x$, 则 $f(y)=$ ______.
+(A) $\sqrt{y}-1$  (B) $y$  (C) $y+2$  (D) $y(y+2)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $y=1$ 时 $z=x$ 有 $x=1+f(\sqrt{x}-1)$, 即 $f(\sqrt{x}-1)=x-1=(\sqrt{x}-1)^{2}+2(\sqrt{x}-1)$, 所以 $f(y)=y^{2}+2y=y(y+2)$. 故应选(D).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(D)</span></div>
+</div>
+</article>
+<article class="problem" id="q712">
+<div class="q-head">
+<span class="q-no" data-n="712">【712】</span>
+<span class="q-group">求函数表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x,y)$ 可微, 则 $f_x'(x,y)=-f(x,y)$, $f(0,\dfrac{\pi}{2})=1$, 且满足 $$\lim_{n\to\infty}\left[\frac{f(0,y+\frac{1}{n})}{f(0,y)}\right]^{n}=\text{e}^{\cot y},$$ 求 $f(x,y)$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解法一</strong> 先计算极限 $$\lim_{n\to\infty}\left[\frac{f(0,y+\frac{1}{n})}{f(0,y)}\right]^{n}=\lim_{n\to\infty}\left[1+\frac{f(0,y+\frac{1}{n})-f(0,y)}{f(0,y)}\right]^{n}=\text{e}^{\lim\limits_{n\to\infty}\frac{\frac{f(0,y+\frac{1}{n})-f(0,y)}{\frac{1}{n}}}{f(0,y)}}=\text{e}^{\frac{f_y'(0,y)}{f(0,y)}},$$ 依题意, 得 $\dfrac{f_y'(0,y)}{f(0,y)}=\dfrac{\mathrm{d}\ln f(0,y)}{\mathrm{d}y}=\cot y$, 对 $y$ 积分得 $\ln f(0,y)=\ln\sin y+\ln C$, 故 $f(0,y)=C\sin y$. 代入 $f(0,\frac{\pi}{2})=1$ 得 $C=1$, 即 $f(0,y)=\sin y$. 又由 $\dfrac{\partial f}{\partial x}=-f$ 积分得 $f(x,y)=\varphi(y)\text{e}^{-x}$, 由 $f(0,y)=\sin y$ 知 $\varphi(y)=\sin y$, 所以 $f(x,y)=\text{e}^{-x}\sin y$. <strong>解法二</strong> 视 $y$ 为常数, 求解分离变量方程 $\dfrac{\mathrm{d}f(x,y)}{f(x,y)}=-\mathrm{d}x$, 得 $$\ln f(x,y)=-x+\ln\varphi(y),\ \text{即}\ f(x,y)=\varphi(y)\text{e}^{-x}.$$ 依题意, 得 $$\text{e}^{\cot y}=\lim_{n\to\infty}\left[\frac{\varphi(y+\frac{1}{n})}{\varphi(y)}\right]^{n}=\lim_{n\to\infty}\left[1+\frac{\varphi(y+\frac{1}{n})-\varphi(y)}{\varphi(y)}\right]^{n}=\text{e}^{\frac{\varphi'(y)}{\varphi(y)}}\ \text{及}\ \varphi\left(\frac{\pi}{2}\right)=1.$$ 于是, 有 $\dfrac{\varphi'(y)}{\varphi(y)}=\cot y$, 两边积分并整理得 $\varphi(y)=C\sin y$, 代入初始条件得 $C=1$, 所以, $f(x,y)=\text{e}^{-x}\sin y$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x,y)=\text{e}^{-x}\sin y$</span></div>
+</div>
+</article>
+<h3 class="grp-h">已知二元函数 $f(x,y)$ 的表达式, 求复合函数 $f[u(x,y),v(x,y)]$ 的表达式</h3>
+<article class="problem" id="q713">
+<div class="q-head">
+<span class="q-no" data-n="713">【713】</span>
+<span class="q-group">已知二元函数 $f(x,y)$ 的表达式, 求复合函数 $f[u(x,y),v(x,y)]$ 的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x,y)=\dfrac{xy}{x^{2}+y}$, 求 $f\left(xy,\dfrac{x}{y}\right)$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 求复合函数 $f\left(xy,\dfrac{x}{y}\right)$ 的表达式, 可适当引入中间变量, 令 $u=xy$, $v=\dfrac{x}{y}$. 这样把 $f\left(xy,\dfrac{x}{y}\right)$ 转化为 $f(u,v)$, 而函数的对应关系与所用字母无关, 故 $f(u,v)=\dfrac{uv}{u^{2}+v}$, 最后再把中间变量 $u,v$ 还原为 $x,y$ 的表达式. <strong>解</strong> 令 $u=xy$, $v=\dfrac{x}{y}$. 则 $$f\left(xy,\frac{x}{y}\right)=f(u,v)=\frac{uv}{u^{2}+v}=\frac{xy\cdot\frac{x}{y}}{(xy)^{2}+\frac{x}{y}}=\frac{xy}{xy^{3}+1}.$$ <strong>点评</strong> 这类问题的关键在于分清楚复合函数的复合结构, 在解题过程中适当引入中间变量, 最后再把中间变量还原回去.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f\left(xy,\frac{x}{y}\right)=\frac{xy}{xy^{3}+1}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">已知复合函数 $f[u(x,y),v(x,y)]$ 的表达式, 求 $f(x,y)$ 的表达式</h3>
+<article class="problem" id="q714">
+<div class="q-head">
+<span class="q-no" data-n="714">【714】</span>
+<span class="q-group">已知复合函数 $f[u(x,y),v(x,y)]$ 的表达式, 求 $f(x,y)$ 的表达式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x-y,\ln x)=\left(1-\dfrac{y}{x}\right)\dfrac{\text{e}^{x}}{\text{e}^{y}\ln x^{x}}$, 求 $f(x,y)$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 此类问题解决的关键是恰当引入中间变量, 令 $u=x-y$, $v=\ln x$, 原表达式再相应凑成关于 $u,v$ 的表达式. 由于函数与所用字母无关, 因此求得 $f(u,v)=f(x,y)$. <strong>解</strong> 令 $u=x-y$, $v=\ln x$. 则 $$f(u,v)=\frac{x-y}{x}\cdot\frac{\text{e}^{x-y}}{x\ln x}=\frac{u}{\text{e}^{v}}\cdot\frac{\text{e}^{u}}{\text{e}^{v}\cdot v}=\frac{u\text{e}^{u}}{v\text{e}^{2v}}.$$ 所以 $f(x,y)=\dfrac{x\text{e}^{x}}{y\text{e}^{2y}}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x,y)=\frac{x\text{e}^{x}}{y\text{e}^{2y}}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">证明多元函数极限存在</h3>
+<article class="problem" id="q715">
+<div class="q-head">
+<span class="q-no" data-n="715">【715】</span>
+<span class="q-group">证明多元函数极限存在</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明 $\lim\limits_{(x,y)\to(0,0)}\dfrac{x^{2}y^{2}}{x^{2}+y^{2}}=0$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 若已知多元函数极限存在, 要证明该极限, 一般采用定义直接证明. 在证明过程中, 可适当放大 $|f(x,y)-A|$, 然后找到相应的 $\delta$ 或利用夹逼定理证明. <strong>解法一</strong> 因为 $\left|\dfrac{x^{2}y^{2}}{x^{2}+y^{2}}\right|\leqslant|y^{2}|$ 故对任意的 $\epsilon&gt;0$, 存在 $\delta=\sqrt{\epsilon}&gt;0$, 当 $|x-0|&lt;\delta$, $|y-0|&lt;\delta$ 且 $(x,y)\neq(0,0)$ 时, 有 $$\left|\frac{x^{2}y^{2}}{x^{2}+y^{2}}-0\right|\leqslant|y^{2}|&lt;\delta^{2}=\epsilon$$ 由极限的定义有 $\lim\limits_{(x,y)\to(0,0)}\dfrac{x^{2}y^{2}}{x^{2}+y^{2}}=0$. <strong>解法二</strong> 因为 $x^{2}+y^{2}\geqslant 2|xy|$ 所以 $0\leqslant\left|\dfrac{x^{2}y^{2}}{x^{2}+y^{2}}\right|\leqslant\dfrac{|xy|}{2}$, 又因为 $\lim\limits_{(x,y)\to(0,0)}\dfrac{|xy|}{2}=0$ 所以由夹逼定理知 $\lim\limits_{(x,y)\to(0,0)}\dfrac{x^{2}y^{2}}{x^{2}+y^{2}}=0$. <strong>点评</strong> 常用的不等式有 $x^{2}+y^{2}\geqslant 2|xy|$, $|\sin\theta|\leqslant 1$, $\left|\dfrac{x^{2}}{x^{2}+y^{2}}\right|\leqslant 1$ 等. 证明极限存在的关键是寻找合适的 $\delta$ 或适当放缩不等式以利用夹逼定理来证明.</div>
+
+</div>
+</article>
+<h3 class="grp-h">证明 $\lim\limits_{\substack{x\to x_{0}\\ y\to y_{0}}}f(x,y)$ 不存在</h3>
+<article class="problem" id="q716">
+<div class="q-head">
+<span class="q-no" data-n="716">【716】</span>
+<span class="q-group">证明 $\lim\limits_{\substack{x\to x_{0}\\ y\to y_{0}}}f(x,y)$ 不存在</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">极限 $\lim\limits_{\substack{x\to0\\ y\to0}}\dfrac{xy}{x^{2}+y^{2}}$ 是否存在?</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\lim\limits_{\substack{x\to0\\ y=kx\to0}}\dfrac{x\cdot kx}{x^{2}+k^{2}x^{2}}=\dfrac{k}{1+k^{2}}$, 根据极限存在的唯一性知, 极限 $\lim\limits_{\substack{x\to0\\ y\to0}}\dfrac{xy}{x^{2}+y^{2}}$ 不存在.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">极限不存在</span></div>
+</div>
+</article>
+<article class="problem" id="q717">
+<div class="q-head">
+<span class="q-no" data-n="717">【717】</span>
+<span class="q-group">证明 $\lim\limits_{\substack{x\to x_{0}\\ y\to y_{0}}}f(x,y)$ 不存在</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">极限 $\lim\limits_{\substack{x\to0\\ y\to0}}\dfrac{x^{3}y}{x^{6}+y^{2}}$ 是否存在?</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\lim\limits_{\substack{x\to0\\ y=kx^{3}\to0}}\dfrac{x^{3}\cdot kx^{3}}{x^{6}+k^{2}x^{6}}=\dfrac{k}{1+k^{2}}$, 根据极限存在的唯一性知, 极限 $\lim\limits_{\substack{x\to0\\ y\to0}}\dfrac{x^{3}y}{x^{6}+y^{2}}$ 不存在.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">极限不存在</span></div>
+</div>
+</article>
+<h3 class="grp-h">求多元函数的极限</h3>
+<article class="problem" id="q718">
+<div class="q-head">
+<span class="q-no" data-n="718">【718】</span>
+<span class="q-group">求多元函数的极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">计算极限 $\lim\limits_{(x,y)\to(0,0)}\dfrac{\sin xy}{x}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 本题可利用夹逼定理来求解, 但要注意这里不能将 $\dfrac{\sin xy}{x}$ 转化为 $\dfrac{\sin xy}{xy}\cdot y$, 因为前者的定义域为 $\{(x,y)\,|\,x\neq 0\}$, 而后者的定义域为 $\{(x,y)\,|\,x\neq 0$ 且 $y\neq 0\}$. 如果条件变为 $y\to a$ ($a\neq 0$), 这时便可利用重要极限求解. <strong>解</strong> 因为 $|\sin xy|\leqslant|xy|$, 所以 $0\leqslant\left|\dfrac{\sin xy}{x}\right|\leqslant|y|$. 又因为 $\lim\limits_{(x,y)\to(0,0)}|y|=0$, 所以由夹逼定理知 $\lim\limits_{(x,y)\to(0,0)}\dfrac{\sin xy}{x}=0$. <strong>点评</strong> 计算二重极限时, 常把二元函数极限转化为一元函数极限问题, 再利用四则运算性质、夹逼定理、作变量代换、两个重要极限、无穷小代换、对函数作恒等变换约去零因子、洛必达法则等, 或者利用函数连续的定义及多元初等函数的连续性.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$0$</span></div>
+</div>
+</article>
+<article class="problem" id="q719">
+<div class="q-head">
+<span class="q-no" data-n="719">【719】</span>
+<span class="q-group">求多元函数的极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\lim\limits_{(x,y)\to(0,0)}\dfrac{xy}{\sqrt{xy+4}-2}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 将分母有理化, 从而消去“零因子”. <strong>解</strong> $$\lim_{(x,y)\to(0,0)}\frac{xy}{\sqrt{xy+4}-2}=\lim_{(x,y)\to(0,0)}\frac{xy(\sqrt{xy+4}+2)}{xy+4-4}=\lim_{(x,y)\to(0,0)}(\sqrt{xy+4}+2)=2+2=4.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$4$</span></div>
+</div>
+</article>
+<article class="problem" id="q720">
+<div class="q-head">
+<span class="q-no" data-n="720">【720】</span>
+<span class="q-group">求多元函数的极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x,y)=\dfrac{y}{1+xy}-\dfrac{1-y\sin\dfrac{\pi x}{y}}{\arctan x}$, $x&gt;0$, $y&gt;0$. 求 (1) $g(x)=\lim\limits_{y\to+\infty}f(x,y)$; (2) $\lim\limits_{x\to0^{+}}g(x)$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) $g(x)=\lim\limits_{y\to+\infty}f(x,y)=\dfrac{1}{x}-\dfrac{1-\pi x}{\arctan x}$. (2) $\lim\limits_{x\to0^{+}}g(x)=\lim\limits_{x\to0^{+}}\left(\dfrac{1}{x}-\dfrac{1-\pi x}{\arctan x}\right)=\lim\limits_{x\to0^{+}}\dfrac{\arctan x-x+\pi x^{2}}{x^{2}}$ $$=\lim_{x\to0^{+}}\frac{\frac{1}{1+x^{2}}-1+2\pi x}{2x}=\lim_{x\to0^{+}}\frac{2\pi-x+2\pi x^{2}}{2(1+x^{2})}=\pi.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $g(x)=\frac{1}{x}-\frac{1-\pi x}{\arctan x}$; (2) $\pi$</span></div>
+</div>
+</article>
+<h3 class="grp-h">讨论二元函数的连续性</h3>
+<article class="problem" id="q721">
+<div class="q-head">
+<span class="q-no" data-n="721">【721】</span>
+<span class="q-group">讨论二元函数的连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">讨论 $f(x,y)=\begin{cases}\dfrac{x^{2}\sin\dfrac{1}{x^{2}+y^{2}}+y^{2}}{x^{2}+y^{2}}, &amp; (x,y)\neq(0,0)\\[3mm] 0, &amp; (x,y)=(0,0)\end{cases}$ 在 $(0,0)$ 点的连续性.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $y=0$, $x\to0$ 时, 即动点 $P(x,y)$ 沿 $x$ 轴趋于 $(0,0)$ 点, $$\lim_{\substack{y=0\\ x\to0}}\frac{x^{2}\sin\frac{1}{x^{2}+y^{2}}+y^{2}}{x^{2}+y^{2}}=\lim_{x\to0}\frac{x^{2}\sin\frac{1}{x^{2}}}{x^{2}}=\lim_{x\to0}\sin\frac{1}{x^{2}}\ \text{不存在}$$ 故 $f(x,y)$ 在 $(0,0)$ 点不连续.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x,y)$ 在 $(0,0)$ 点不连续</span></div>
+</div>
+</article>
+<article class="problem" id="q722">
+<div class="q-head">
+<span class="q-no" data-n="722">【722】</span>
+<span class="q-group">讨论二元函数的连续性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">讨论 $f(x,y)=\begin{cases}(x^{2}+y^{2})\ln(x^{2}+y^{2}), &amp; x^{2}+y^{2}\neq 0\\ 0, &amp; x^{2}+y^{2}=0\end{cases}$ 在 $(0,0)$ 点的连续性.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $\begin{cases}x=r\cos\theta\\ y=r\sin\theta\end{cases}$, 则当 $(x,y)\to(0,0)$ 时, 有 $$r=\sqrt{x^{2}+y^{2}}\to 0.$$ 故 $$\lim_{(x,y)\to(0,0)}f(x,y)=\lim_{(x,y)\to(0,0)}(x^{2}+y^{2})\ln(x^{2}+y^{2})=\lim_{r\to0}r^{2}\ln r^{2}=0=f(0,0),$$ 所以 $f(x,y)$ 在点 $(0,0)$ 连续. <strong>点评</strong> 当 $f(x,y)$ 的表达式中有 $x^{2}+y^{2}$ 时, 常作变换 $x=r\cos\theta$, $y=r\sin\theta$. 这样 $x^{2}+y^{2}=r^{2}$, 且 $(x,y)\to(0,0)$ 变为 $r\to0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x,y)$ 在点 $(0,0)$ 连续</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s1">§2. 偏导数</h2>
+<h2 class="sec-h" id="sec-s2">1. 偏导数的定义</h2>
+<h2 class="sec-h" id="sec-s3">2. 高阶偏导数</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">利用一元函数的求导公式及求导法则求偏导数</h3>
+<article class="problem" id="q723" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="723">【723】</span>
+<span class="q-group">利用一元函数的求导公式及求导法则求偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $f(x,y)=x+y-\sqrt{x^{2}+y^{2}}$ 在 $(3,4)$ 处的偏导数.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> $f(x,y)$ 关于 $x$ 求偏导时, 将 $y$ 看作常数, 利用一元函数的求导法则及公式进行运算可求出 $f_x'$, 同理, 可求出 $f_y'$, 要求 $f_x'(3,4)$, $f_y'(3,4)$, 只须将 $(3,4)$ 点代入 $f_x'$, $f_y'$ 中即可求解. <strong>解</strong> 将 $y$ 当作常数, 对 $x$ 求导, 得 $$f_x'(x,y)=1-\frac{1}{2}(x^{2}+y^{2})^{-\frac{1}{2}}\cdot 2x=1-\frac{x}{\sqrt{x^{2}+y^{2}}},$$ 同理, 将 $x$ 当作常数, 对 $y$ 求导, 得 $$f_y'(x,y)=1-\frac{1}{2}(x^{2}+y^{2})^{-\frac{1}{2}}\cdot 2y=1-\frac{y}{\sqrt{x^{2}+y^{2}}}$$ 所以 $f_x'(3,4)=1-\dfrac{3}{\sqrt{3^{2}+4^{2}}}=1-\dfrac{3}{5}=\dfrac{2}{5}$, $$f_y'(3,4)=1-\frac{4}{\sqrt{3^{2}+4^{2}}}=1-\frac{4}{5}=\frac{1}{5}.$$ <strong>点评</strong> 多元函数求偏导问题实质仍是一元函数的求导问题, 故一元函数的求导公式、法则均可直接应用. 求偏导时, 关键是要分清对哪个变量求导, 把哪个变量暂时当作常量. 另外, 一元函数的求导公式应熟练掌握.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f_x'(3,4)=\frac{2}{5}$, $f_y'(3,4)=\frac{1}{5}$</span></div>
+</div>
+</article>
+<article class="problem" id="q724" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="724">【724】</span>
+<span class="q-group">利用一元函数的求导公式及求导法则求偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求下列函数的偏导数: (1) $z=\ln\sin(x-2y)$; (2) $z=\dfrac{x\text{e}^{y}}{y^{2}}$; (3) $u=\left(\dfrac{x}{y}\right)^{z}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) $z_x'=\dfrac{1}{\sin(x-2y)}\cdot\cos(x-2y)=\cot(x-2y)$, $$z_y'=\frac{1}{\sin(x-2y)}\cdot\cos(x-2y)\cdot(-2)=-2\cot(x-2y);$$ (2) $z_x'=\dfrac{\text{e}^{y}}{y^{2}}$, $$z_y'=x\cdot\frac{\text{e}^{y}\cdot y^{2}-\text{e}^{y}\cdot 2y}{y^{4}}=\frac{x\text{e}^{y}(y-2)}{y^{3}};$$ (3) $\dfrac{\partial u}{\partial x}=z\left(\dfrac{x}{y}\right)^{z-1}\cdot\dfrac{1}{y}=\dfrac{zx^{z-1}}{y^{z}}$, $$\frac{\partial u}{\partial y}=z\left(\frac{x}{y}\right)^{z-1}\left(-\frac{x}{y^{2}}\right)=-\frac{zx^{z}}{y^{z+1}},$$ $$\frac{\partial u}{\partial z}=\left(\frac{x}{y}\right)^{z}\ln\frac{x}{y}.$$</div>
+
+</div>
+</article>
+<article class="problem" id="q725" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="725">【725】</span>
+<span class="q-group">利用一元函数的求导公式及求导法则求偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=(xy+1)^{x}$, 则 $\dfrac{\partial z}{\partial x}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 两边取对数, 有 $$\ln z=x\ln(xy+1),$$ 将上式两边对 $x$ 求偏导数, 得 $$\frac{1}{z}\cdot\frac{\partial z}{\partial x}=\ln(xy+1)+x\frac{y}{xy+1},$$ 所以 $\dfrac{\partial z}{\partial x}=(xy+1)^{x}\left[\ln(xy+1)+\dfrac{xy}{xy+1}\right]$ 故应填 $(xy+1)^{x}\left[\ln(xy+1)+\dfrac{xy}{xy+1}\right]$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$(xy+1)^{x}\left[\ln(xy+1)+\frac{xy}{xy+1}\right]$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用偏导数定义讨论具体点的偏导数</h3>
+<article class="problem" id="q726" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="726">【726】</span>
+<span class="q-group">利用偏导数定义讨论具体点的偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $z=f(x,y)$ 在点 $(x_{0},y_{0})$ 处存在对 $x,y$ 的偏导数, 则 $f_x'(x_{0},y_{0})=$ ______.
+(A) $\lim\limits_{\Delta x\to0}\dfrac{f(x_{0}-2\Delta x,y_{0})-f(x_{0},y_{0})}{\Delta x}$  (B) $\lim\limits_{\Delta x\to0}\dfrac{f(x_{0},y_{0})-f(x_{0}-\Delta x,y_{0})}{\Delta x}$
+(C) $\lim\limits_{\Delta x\to0}\dfrac{f(x_{0}+\Delta x,y_{0}+\Delta y)-f(x_{0},y_{0})}{\Delta x}$  (D) $\lim\limits_{x\to x_{0}}\dfrac{f(x,y)-f(x_{0},y_{0})}{x-x_{0}}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 根据偏导数的定义, 对于选项(A), 有 $$\lim_{\Delta x\to0}\frac{f(x_{0}-2\Delta x,y_{0})-f(x_{0},y_{0})}{\Delta x}=-2\lim_{\Delta x\to0}\frac{f(x_{0}-2\Delta x,y_{0})-f(x_{0},y_{0})}{-2\Delta x}=-2f_x'(x_{0},y_{0})$$ 对于选项(B) $$\lim_{\Delta x\to0}\frac{f(x_{0},y_{0})-f(x_{0}-\Delta x,y_{0})}{\Delta x}=\lim_{\Delta x\to0}\frac{f(x_{0}-\Delta x,y_{0})-f(x_{0},y_{0})}{-\Delta x}=f_x'(x_{0},y_{0}),$$ 类似的分析可知选项(C)、(D)均不正确. 故应选(B).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(B)</span></div>
+</div>
+</article>
+<article class="problem" id="q727" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="727">【727】</span>
+<span class="q-group">利用偏导数定义讨论具体点的偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x,y)=\text{e}^{\arctan\frac{y}{x}}\cdot\ln(x^{2}+y^{2})$, 求 $f_x'(1,0)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如果先求偏导数函数 $f_x'(x,y)$, 运算较为繁琐. 由偏导数定义, 可以先将 $y$ 固定在 $y=0$, 则有 $f(x,0)=2\ln|x|$. 从而 $f_x'(x,0)=\dfrac{2}{x}$, 则 $f_x'(1,0)=2$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$2$</span></div>
+</div>
+</article>
+<article class="problem" id="q728" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="728">【728】</span>
+<span class="q-group">利用偏导数定义讨论具体点的偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x,y)=\sqrt[3]{x^{5}-y^{3}}$, 求 $f_x'(0,0)$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 由于 $f_x'(x,y)=\dfrac{1}{3}(x^{5}-y^{3})^{-\frac{2}{3}}\cdot 5x^{4}=\dfrac{5x^{4}}{3\sqrt[3]{(x^{5}-y^{3})^{2}}}$, 显然上式在 $(0,0)$ 处没有意义, 故应按偏导数定义去求 $f_x'(0,0)$. <strong>解</strong> $f_x'(0,0)=\lim\limits_{\Delta x\to0}\dfrac{f(0+\Delta x,0)-f(0,0)}{\Delta x}=\lim\limits_{\Delta x\to0}\dfrac{\sqrt[3]{(\Delta x)^{5}}}{\Delta x}=0$. <strong>点评</strong> 当用公式求出的偏导数在所给点处无意义而恰好又要求所给点处的偏导数时, 应使用定义计算.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$0$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用偏导数定义讨论分段函数的偏导数</h3>
+<article class="problem" id="q729" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="729">【729】</span>
+<span class="q-group">利用偏导数定义讨论分段函数的偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x,y)=\begin{cases}\dfrac{xy}{\sqrt{x^{2}+y^{2}}}, &amp; (x,y)\neq(0,0)\\[2mm] 0, &amp; (x,y)=(0,0)\end{cases}$, 求偏导数 $f_x'(x,y)$, $f_y'(x,y)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 由于 $(0,0)$ 为 $f(x,y)$ 的分界点, 故需按偏导数定义单独求 $f_x'(0,0)$ 及 $f_y'(0,0)$. <strong>解</strong> 当 $(x,y)\neq(0,0)$ 时, 由商的求导法则得: $$f_x'(x,y)=\frac{y\sqrt{x^{2}+y^{2}}-xy\cdot\frac{1}{2}(x^{2}+y^{2})^{-\frac{1}{2}}\cdot 2x}{x^{2}+y^{2}}=\frac{y^{3}}{(x^{2}+y^{2})^{\frac{3}{2}}},$$ $$f_y'(x,y)=\frac{x\sqrt{x^{2}+y^{2}}-xy\cdot\frac{1}{2}(x^{2}+y^{2})^{-\frac{1}{2}}\cdot 2y}{x^{2}+y^{2}}=\frac{x^{3}}{(x^{2}+y^{2})^{\frac{3}{2}}}.$$ 当 $(x,y)=(0,0)$ 时, 由定义求导得: $$f_x'(0,0)=\lim_{\Delta x\to0}\frac{f(0+\Delta x,0)-f(0,0)}{\Delta x}=\lim_{\Delta x\to0}\frac{0-0}{\Delta x}=0,$$ $$f_y'(0,0)=\lim_{\Delta y\to0}\frac{f(0,0+\Delta y)-f(0,0)}{\Delta y}=\lim_{\Delta y\to0}\frac{0-0}{\Delta y}=0$$ 故 $$f_x'(x,y)=\begin{cases}\dfrac{y^{3}}{(x^{2}+y^{2})^{\frac{3}{2}}}, &amp; (x,y)\neq(0,0)\\[2mm] 0, &amp; (x,y)=(0,0)\end{cases},\quad f_y'(x,y)=\begin{cases}\dfrac{x^{3}}{(x^{2}+y^{2})^{\frac{3}{2}}}, &amp; (x,y)\neq(0,0)\\[2mm] 0, &amp; (x,y)=(0,0)\end{cases}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f_x'(x,y)=\begin{cases}\frac{y^{3}}{(x^{2}+y^{2})^{3/2}}, &amp; (x,y)\neq(0,0)\\ 0, &amp; (x,y)=(0,0)\end{cases}$, $f_y'(x,y)=\begin{cases}\frac{x^{3}}{(x^{2}+y^{2})^{3/2}}, &amp; (x,y)\neq(0,0)\\ 0, &amp; (x,y)=(0,0)\end{cases}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">多元函数偏导数存在与连续之间的关系</h3>
+<article class="problem" id="q730" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="730">【730】</span>
+<span class="q-group">多元函数偏导数存在与连续之间的关系</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">二元函数 $f(x,y)=\begin{cases}\dfrac{xy}{x^{2}+y^{2}}, &amp; (x,y)\neq(0,0)\\ 0, &amp; (x,y)=(0,0)\end{cases}$ 在点 $(0,0)$ 处 ______.
+(A) 连续, 偏导数存在  (B) 连续, 偏导数不存在
+(C) 不连续, 偏导数存在  (D) 不连续, 偏导数不存在</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\lim\limits_{(x,y)\to(0,0)}\dfrac{xy}{x^{2}+y^{2}}$ 不存在知, $f(x,y)$ 在 $(0,0)$ 处不连续. $$f_x'(0,0)=\lim_{\Delta x\to0}\frac{f(0+\Delta x,0)-f(0,0)}{\Delta x}=\lim_{\Delta x\to0}0=0,$$ $$f_y'(0,0)=\lim_{\Delta y\to0}\frac{f(0,0+\Delta y)-f(0,0)}{\Delta y}=\lim_{\Delta y\to0}0=0,$$ 因此 $f(x,y)$ 在 $(0,0)$ 处偏导数存在. 故应选(C). <strong>点评</strong> 对于一元函数来说可导一定连续, 但对于多元函数来说偏导数存在不一定连续.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(C)</span></div>
+</div>
+</article>
+<article class="problem" id="q731" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="731">【731】</span>
+<span class="q-group">多元函数偏导数存在与连续之间的关系</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">二元函数 $f(x,y)$ 在点 $(x_{0},y_{0})$ 处两个偏导数 $f_x'(x_{0},y_{0})$, $f_y'(x_{0},y_{0})$ 存在是 $f(x,y)$ 在该点连续的 ______.
+(A) 充分条件而非必要条件  (B) 必要条件而非充分条件
+(C) 充分必要条件  (D) 既非充分条件又非必要条件</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由于对于多元函数, 连续与偏导数的存在之间没有必然联系, 所以(D)正确. 故应选(D).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(D)</span></div>
+</div>
+</article>
+<article class="problem" id="q732" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="732">【732】</span>
+<span class="q-group">多元函数偏导数存在与连续之间的关系</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $f(x,y)$ 在点 $(x_{0},y_{0})$ 处偏导数存在, 是 $f(x,y)$ 在该点处 ______.
+(A) 连续的充分条件  (B) 连续的必要条件
+(C) 可微的必要条件  (D) 可微的充分条件</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (A)不正确, 例如函数 $$f(x,y)=\begin{cases}\dfrac{xy}{x^{2}+y^{2}}, &amp; (x,y)\neq(0,0)\\ 0, &amp; (x,y)=(0,0)\end{cases}$$ 显然有 $f_x'(0,0)=f_y'(0,0)=0$, 但 $(x,y)$ 在点 $(0,0)$ 处不连续. (B)不正确, 例如函数 $f(x,y)=|xy|$ 在点 $(0,1)$ 处连续, 但偏导数 $f_y'(0,1)$ 不存在. (D)不正确, 例如函数 $$f(x,y)=\begin{cases}\dfrac{xy}{\sqrt{x^{2}+y^{2}}}, &amp; x^{2}+y^{2}\neq 0\\ 0, &amp; x^{2}+y^{2}=0\end{cases}$$ 在点 $(0,0)$ 处有 $f_x'(0,0)=0$ 及 $f_y'(0,0)=0$, 但 $f(x,y)$ 在点 $(0,0)$ 处不可微; 若函数 $z=f(x,y)$ 在点 $(x,y)$ 处可微, 则函数 $z=f(x,y)$ 在点 $(x,y)$ 的偏导数 $\dfrac{\partial z}{\partial x}$, $\dfrac{\partial z}{\partial y}$ 必存在, 且 $\mathrm{d}z=\dfrac{\partial z}{\partial x}\mathrm{d}x+\dfrac{\partial z}{\partial y}\mathrm{d}y$. 故应选(C).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(C)</span></div>
+</div>
+</article>
+<h3 class="grp-h">偏导数的几何意义</h3>
+<article class="problem" id="q733" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="733">【733】</span>
+<span class="q-group">偏导数的几何意义</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲线 $\begin{cases}z=\sqrt{1+x^{2}+y^{2}}\\ x=1\end{cases}$ 在点 $(1,1,\sqrt{3})$ 处的切线与 $y$ 轴的倾角.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 偏导数 $f_y'(1,1)$ 的几何意义是曲线 $\begin{cases}z=\sqrt{1+x^{2}+y^{2}}\\ x=1\end{cases}$ 在点 $(1,1,\sqrt{3})$ 处的切线对 $y$ 轴的斜率. 因此, 只要求出 $f_y'(1,1)$, 由斜率与倾角的关系, 便可求出倾角. <strong>解</strong> 设所求倾角为 $\beta$, 由偏导数的几何意义可知, $$\tan\beta=\left.\frac{\partial z}{\partial y}\right|_{(1,1,\sqrt{3})}=\frac{1}{2}(1+x^{2}+y^{2})^{-\frac{1}{2}}\cdot 2y\bigg|_{(1,1,\sqrt{3})}=\frac{y}{\sqrt{1+x^{2}+y^{2}}}\bigg|_{(1,1,\sqrt{3})}=\frac{1}{\sqrt{3}},$$ 所以 $\beta=\dfrac{\pi}{6}$. <strong>点评</strong> 求解此类问题的关键是理解偏导数的几何意义. $f_x'(x_{0},y_{0})$ 为曲面 $z=f(x,y)$ 与平面 $y=y_{0}$ 的交线在 $P_{0}(x_{0},y_{0})$ 处的切线关于 $x$ 轴的斜率; $f_y'(x_{0},y_{0})$ 为曲面 $z=f(x,y)$ 与平面 $x=x_{0}$ 的交线在 $P_{0}(x_{0},y_{0})$ 处的切线关于 $y$ 轴的斜率.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\beta=\frac{\pi}{6}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">求多元函数的高阶偏导数</h3>
+<article class="problem" id="q734" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="734">【734】</span>
+<span class="q-group">求多元函数的高阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f(x,y)=x^{2}\arctan\dfrac{y}{x}-y^{2}\arctan\dfrac{x}{y}$, 求 $\dfrac{\partial^{2}f}{\partial x\partial y}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\frac{\partial f}{\partial x}=2x\arctan\frac{y}{x}+\frac{x^{2}}{1+(\frac{y}{x})^{2}}\cdot\left(-\frac{y}{x^{2}}\right)-\frac{y^{2}}{1+(\frac{x}{y})^{2}}\cdot\frac{1}{y}$$ $$=2x\arctan\frac{y}{x}-\frac{x^{2}y}{x^{2}+y^{2}}-\frac{y^{3}}{x^{2}+y^{2}},$$ $$\frac{\partial^{2}f}{\partial x\partial y}=\frac{2x}{1+(\frac{y}{x})^{2}}\cdot\frac{1}{x}-\frac{x^{2}(x^{2}+y^{2})-x^{2}y\cdot 2y}{(x^{2}+y^{2})^{2}}-\frac{3y^{2}(x^{2}+y^{2})-y^{3}\cdot 2y}{(x^{2}+y^{2})^{2}}=\frac{x^{2}-y^{2}}{x^{2}+y^{2}}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\frac{\partial^{2}f}{\partial x\partial y}=\frac{x^{2}-y^{2}}{x^{2}+y^{2}}$</span></div>
+</div>
+</article>
+<article class="problem" id="q735" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="735">【735】</span>
+<span class="q-group">求多元函数的高阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $u=\text{e}^{-x}\sin\dfrac{x}{y}$, 则 $\dfrac{\partial^{2}u}{\partial x\partial y}$ 在点 $(2,\dfrac{1}{\pi})$ 处的值为 ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\frac{\partial u}{\partial x}=-\text{e}^{-x}\sin\frac{x}{y}+\frac{1}{y}\text{e}^{-x}\cos\frac{x}{y},$$ $$\frac{\partial^{2}u}{\partial x\partial y}=-\text{e}^{-x}\cos\frac{x}{y}\cdot\left(-\frac{x}{y^{2}}\right)+\left(-\frac{1}{y^{2}}\right)\text{e}^{-x}\cos\frac{x}{y}+\frac{1}{y}\text{e}^{-x}\left(-\sin\frac{x}{y}\right)\cdot\left(-\frac{x}{y^{2}}\right)$$ $$=\text{e}^{-x}\left[\left(\frac{x}{y^{2}}-\frac{1}{y^{2}}\right)\cos\frac{x}{y}+\frac{x}{y^{3}}\sin\frac{x}{y}\right]$$ $$\left.\frac{\partial^{2}u}{\partial x\partial y}\right|_{(2,\frac{1}{\pi})}=\left(\frac{\pi}{\text{e}}\right)^{2}$$ 故应填 $\left(\dfrac{\pi}{\text{e}}\right)^{2}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\left(\frac{\pi}{\text{e}}\right)^{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q736" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="736">【736】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">验证函数 $z=\sin(x-ay)$ 满足波动方程 $\dfrac{\partial^2 z}{\partial y^2}=a^2\dfrac{\partial^2 z}{\partial x^2}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $\dfrac{\partial z}{\partial x}=\cos(x-ay)$，$\dfrac{\partial^2 z}{\partial x^2}=-\sin(x-ay)$，$\dfrac{\partial z}{\partial y}=-a\cos(x-ay)$，$\dfrac{\partial^2 z}{\partial y^2}=-a^2\sin(x-ay)$，所以有 $\dfrac{\partial^2 z}{\partial y^2}=a^2\dfrac{\partial^2 z}{\partial x^2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{\partial^2 z}{\partial y^2}=a^2\dfrac{\partial^2 z}{\partial x^2}$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q737" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="737">【737】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x,y)=\displaystyle\int_0^{xy}\mathrm{e}^{-t^2}\,\mathrm{d}t$，求 $\dfrac{x}{y}\cdot\dfrac{\partial^2 f}{\partial x^2}-2\dfrac{\partial^2 f}{\partial x\partial y}+\dfrac{y}{x}\cdot\dfrac{\partial^2 f}{\partial y^2}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial f}{\partial x}=y\mathrm{e}^{-x^2y^2}$，$\dfrac{\partial f}{\partial y}=x\mathrm{e}^{-x^2y^2}$；$\dfrac{\partial^2 f}{\partial x^2}=-2xy^3\mathrm{e}^{-x^2y^2}$，$\dfrac{\partial^2 f}{\partial y^2}=-2x^3y\mathrm{e}^{-x^2y^2}$，$\dfrac{\partial^2 f}{\partial x\partial y}=(1-2x^2y^2)\mathrm{e}^{-x^2y^2}$；于是 $$\dfrac{x}{y}\cdot\dfrac{\partial^2 f}{\partial x^2}-2\dfrac{\partial^2 f}{\partial x\partial y}+\dfrac{y}{x}\cdot\dfrac{\partial^2 f}{\partial y^2}=-2\mathrm{e}^{-x^2y^2}.$$ <strong>点评</strong> 本题为基本题型，考查了复合函数求导法则及变上限函数的求导公式．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（原式 $=-2\mathrm{e}^{-x^2y^2}$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q738" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="738">【738】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x,y,z)=xy^2+yz^2+zx^2$，求 $f''_{xx}(0,0,1)$，$f''_{xz}(1,0,2)$，$f''_{yz}(0,-1,0)$ 及 $f'''_{zzx}(2,0,1)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f'_x(x,y,z)=y^2+2xz$，$f''_{xx}(x,y,z)=2z$，$f''_{xz}(x,y,z)=2x$，所以 $f''_{xx}(0,0,1)=2$，$f''_{xz}(1,0,2)=2$．因为 $f'_y(x,y,z)=2xy+z^2$，$f''_{yz}(x,y,z)=2z$，所以 $f''_{yz}(0,-1,0)=0$．因为 $f'_z(x,y,z)=2yz+x^2$，$f''_{zz}(x,y,z)=2y$，$f'''_{zzx}(x,y,z)=0$，所以 $f'''_{zzx}(2,0,1)=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f''_{xx}(0,0,1)=2$，$f''_{xz}(1,0,2)=2$，$f''_{yz}(0,-1,0)=0$，$f'''_{zzx}(2,0,1)=0$.</span></div>
+</div>
+</article>
+<article class="problem" id="q739" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="739">【739】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明 $r=\sqrt{x^2+y^2+z^2}$ 满足 $\dfrac{\partial^2 r}{\partial x^2}+\dfrac{\partial^2 r}{\partial y^2}+\dfrac{\partial^2 r}{\partial z^2}=\dfrac{2}{r}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> $\dfrac{\partial r}{\partial x}=\dfrac{1}{2\sqrt{x^2+y^2+z^2}}\cdot 2x=\dfrac{x}{r}$，由对称性知，$\dfrac{\partial r}{\partial y}=\dfrac{y}{r}$，$\dfrac{\partial r}{\partial z}=\dfrac{z}{r}$，$\dfrac{\partial^2 r}{\partial x^2}=\dfrac{r-x\dfrac{\partial r}{\partial x}}{r^2}=\dfrac{r-x\cdot\dfrac{x}{r}}{r^2}=\dfrac{r^2-x^2}{r^3}$．同理，$\dfrac{\partial^2 r}{\partial y^2}=\dfrac{r^2-y^2}{r^3}$，$\dfrac{\partial^2 r}{\partial z^2}=\dfrac{r^2-z^2}{r^3}$，则 $\dfrac{\partial^2 r}{\partial x^2}+\dfrac{\partial^2 r}{\partial y^2}+\dfrac{\partial^2 r}{\partial z^2}=\dfrac{3r^2-(x^2+y^2+z^2)}{r^3}=\dfrac{2r^2}{r^3}=\dfrac{2}{r}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{\partial^2 r}{\partial x^2}+\dfrac{\partial^2 r}{\partial y^2}+\dfrac{\partial^2 r}{\partial z^2}=\dfrac{2}{r}$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q740" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="740">【740】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x,y)=\begin{cases}xy\cdot\dfrac{x^2-y^2}{x^2+y^2}, &amp; (x,y)\neq(0,0)\\ 0, &amp; (x,y)=(0,0)\end{cases}$，证明 $f''_{xy}(0,0)\neq f''_{yx}(0,0)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 要求 $f''_{xy}(0,0)$，由其定义 $f''_{xy}(0,0)=\lim\limits_{\Delta y\to 0}\dfrac{f'_x(0,0+\Delta y)-f'_x(0,0)}{\Delta y}$ 知，应先求出 $f'_x(x,y)$（$(x,y)\neq(0,0)$）及 $f'_x(0,0)$，而当 $(x,y)\neq(0,0)$ 时，$f'_x(x,y)$ 用一元函数的求导公式，将 $y$ 看作常数对 $x$ 求导即可求出，$f'_x(0,0)$ 则需按照偏导数定义去求，同理可求出 $f''_{yx}(0,0)$．<strong>证</strong> 当 $(x,y)\neq(0,0)$ 时，$f'_x(x,y)=y\cdot\dfrac{x^2-y^2}{x^2+y^2}+xy\cdot\dfrac{2x(x^2+y^2)-2x(x^2-y^2)}{(x^2+y^2)^2}=\dfrac{y(x^4-y^4+4x^2y^2)}{(x^2+y^2)^2}$，$f'_y(x,y)=\dfrac{x(x^4-y^4-4x^2y^2)}{(x^2+y^2)^2}$．当 $(x,y)=(0,0)$ 时，由定义得 $f'_x(0,0)=\lim\limits_{\Delta x\to 0}\dfrac{f(0+\Delta x,0)-f(0,0)}{\Delta x}=\lim\limits_{\Delta x\to 0}\dfrac{0-0}{\Delta x}=0$，$f'_y(0,0)=\lim\limits_{\Delta y\to 0}\dfrac{f(0,0+\Delta y)-f(0,0)}{\Delta y}=\lim\limits_{\Delta y\to 0}\dfrac{0-0}{\Delta y}=0$．所以 $f''_{xy}(0,0)=\lim\limits_{\Delta y\to 0}\dfrac{f'_x(0,0+\Delta y)-f'_x(0,0)}{\Delta y}=\lim\limits_{\Delta y\to 0}\dfrac{\dfrac{\Delta y(-\Delta y^4)}{\Delta y^4}-0}{\Delta y}=-1$，$f''_{yx}(0,0)=\lim\limits_{\Delta x\to 0}\dfrac{f'_y(0+\Delta x,0)-f'_y(0,0)}{\Delta x}=\lim\limits_{\Delta x\to 0}\dfrac{\dfrac{\Delta x\cdot\Delta x^4}{\Delta x^4}-0}{\Delta x}=1$．显然，$f''_{xy}(0,0)\neq f''_{yx}(0,0)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$f''_{xy}(0,0)\neq f''_{yx}(0,0)$）.</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s4">§3. 全微分</h2>
+<h2 class="sec-h" id="sec-s5">1. 全微分的定义</h2>
+<h2 class="sec-h" id="sec-s6">2. 全微分的形式不变性</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">计算多元函数的全微分</h3>
+<article class="problem" id="q741" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="741">【741】</span>
+<span class="q-group">计算多元函数的全微分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设二元函数 $z=x\mathrm{e}^{x+y}+(x+1)\ln(1+y)$，则 $\mathrm{d}z\big|_{(1,0)}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial z}{\partial x}=\mathrm{e}^{x+y}+x\mathrm{e}^{x+y}+\ln(1+y)$，$\dfrac{\partial z}{\partial y}=x\mathrm{e}^{x+y}+\dfrac{x+1}{1+y}$，于是 $$\mathrm{d}z\big|_{(1,0)}=2\mathrm{e}\,\mathrm{d}x+(\mathrm{e}+2)\,\mathrm{d}y.$$ 故应填 $2\mathrm{e}\,\mathrm{d}x+(\mathrm{e}+2)\,\mathrm{d}y$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2\mathrm{e}\,\mathrm{d}x+(\mathrm{e}+2)\,\mathrm{d}y$.</span></div>
+</div>
+</article>
+<article class="problem" id="q742" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="742">【742】</span>
+<span class="q-group">计算多元函数的全微分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=(x^2+y^2)\mathrm{e}^{-\arctan\frac{y}{x}}$，求 $\mathrm{d}z$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial z}{\partial x}=2x\mathrm{e}^{-\arctan\frac{y}{x}}-(x^2+y^2)\mathrm{e}^{-\arctan\frac{y}{x}}\cdot\dfrac{1}{1+\left(\frac{y}{x}\right)^2}\cdot\left(-\dfrac{y}{x^2}\right)=(2x+y)\mathrm{e}^{-\arctan\frac{y}{x}}$，$\dfrac{\partial z}{\partial y}=2y\mathrm{e}^{-\arctan\frac{y}{x}}-(x^2+y^2)\mathrm{e}^{-\arctan\frac{y}{x}}\cdot\dfrac{1}{1+\left(\frac{y}{x}\right)^2}\cdot\left(\dfrac{1}{x}\right)=(2y-x)\mathrm{e}^{-\arctan\frac{y}{x}}$．所以 $\mathrm{d}z=\mathrm{e}^{-\arctan\frac{y}{x}}\left[(2x+y)\mathrm{d}x+(2y-x)\mathrm{d}y\right]$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\mathrm{d}z=\mathrm{e}^{-\arctan\frac{y}{x}}\left[(2x+y)\mathrm{d}x+(2y-x)\mathrm{d}y\right]$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q743" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="743">【743】</span>
+<span class="q-group">计算多元函数的全微分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $u=\arcsin\dfrac{z}{x+y}$，则 $\mathrm{d}u=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\mathrm{d}u=\dfrac{1}{\sqrt{1-\left(\dfrac{z}{x+y}\right)^2}}\cdot\dfrac{(x+y)\mathrm{d}z-z(\mathrm{d}x+\mathrm{d}y)}{(x+y)^2}=\dfrac{1}{\sqrt{(x+y)^2-z^2}}\left[\dfrac{-z}{x+y}(\mathrm{d}x+\mathrm{d}y)+\mathrm{d}z\right].$$ 故应填 $\dfrac{1}{\sqrt{(x+y)^2-z^2}}\left[\dfrac{-z}{x+y}(\mathrm{d}x+\mathrm{d}y)+\mathrm{d}z\right]$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{\sqrt{(x+y)^2-z^2}}\left[\dfrac{-z}{x+y}(\mathrm{d}x+\mathrm{d}y)+\mathrm{d}z\right]$.</span></div>
+</div>
+</article>
+<article class="problem" id="q744" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="744">【744】</span>
+<span class="q-group">计算多元函数的全微分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $Z=u^v$，$u=\ln\sqrt{x^2+y^2}$，$v=\arctan\dfrac{y}{x}$，求 $\mathrm{d}Z$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\dfrac{\partial Z}{\partial x}=\dfrac{\partial Z}{\partial u}\cdot\dfrac{\partial u}{\partial x}+\dfrac{\partial Z}{\partial v}\cdot\dfrac{\partial v}{\partial x}=(vu^{v-1})\cdot\dfrac{1}{2}\cdot\dfrac{2x}{x^2+y^2}+(u^v\ln u)\cdot\dfrac{1}{1+\left(\frac{y}{x}\right)^2}\cdot\left(-\dfrac{y}{x^2}\right)=\dfrac{u^v}{x^2+y^2}\left(\dfrac{xv}{u}-y\ln u\right),$$ $$\dfrac{\partial Z}{\partial y}=\dfrac{\partial Z}{\partial u}\cdot\dfrac{\partial u}{\partial y}+\dfrac{\partial Z}{\partial v}\cdot\dfrac{\partial v}{\partial y}=(vu^{v-1})\cdot\dfrac{1}{2}\cdot\dfrac{2y}{x^2+y^2}+(u^v\ln u)\cdot\dfrac{1}{1+\left(\frac{y}{x}\right)^2}\cdot\dfrac{1}{x}=\dfrac{u^v}{x^2+y^2}\left(\dfrac{yv}{u}+x\ln u\right),$$ $$\mathrm{d}Z=\dfrac{u^v}{x^2+y^2}\left[\left(\dfrac{xv}{u}-y\ln u\right)\mathrm{d}x+\left(\dfrac{yv}{u}+x\ln u\right)\mathrm{d}y\right].$$ <strong>点评</strong> 若 $z=z(x,y)$，则 $\mathrm{d}z=\dfrac{\partial z}{\partial x}\mathrm{d}x+\dfrac{\partial z}{\partial y}\mathrm{d}y$．本题在求 $\dfrac{\partial z}{\partial x}$，$\dfrac{\partial z}{\partial y}$ 时，使用了多元复合函数求导法则．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\mathrm{d}Z=\dfrac{u^v}{x^2+y^2}\left[\left(\dfrac{xv}{u}-y\ln u\right)\mathrm{d}x+\left(\dfrac{yv}{u}+x\ln u\right)\mathrm{d}y\right]$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q745" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="745">【745】</span>
+<span class="q-group">计算多元函数的全微分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(u)$ 可微，且 $f'(0)=\dfrac{1}{2}$，则 $z=f(4x^2-y^2)$ 在点 $(1,2)$ 处的全微分 $\mathrm{d}z\big|_{(1,2)}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\dfrac{\partial z}{\partial x}=f'(4x^2-y^2)\cdot 8x$，$\dfrac{\partial z}{\partial y}=f'(4x^2-y^2)\cdot(-2y)$，所以 $$\mathrm{d}z\big|_{(1,2)}=\dfrac{\partial z}{\partial x}\Big|_{(1,2)}\mathrm{d}x+\dfrac{\partial z}{\partial y}\Big|_{(1,2)}\mathrm{d}y=f'(0)\cdot 8\mathrm{d}x+f'(0)\cdot(-4)\mathrm{d}y=4\mathrm{d}x-2\mathrm{d}y.$$ 故应填 $4\mathrm{d}x-2\mathrm{d}y$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $4\mathrm{d}x-2\mathrm{d}y$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">求隐函数的全微分</h3>
+<article class="problem" id="q746" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="746">【746】</span>
+<span class="q-group">求隐函数的全微分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=f(x,y)$ 是由方程 $z-y-x+x\mathrm{e}^{z-y-x}=0$ 所确定的二元函数，求 $\mathrm{d}z$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 把方程两端微分，得 $$\mathrm{d}z-\mathrm{d}y-\mathrm{d}x+x\mathrm{e}^{z-y-x}\mathrm{d}x+x\mathrm{e}^{z-y-x}(\mathrm{d}z-\mathrm{d}y-\mathrm{d}x)=0.$$ 整理得 $(1+x\mathrm{e}^{z-y-x})\mathrm{d}z=(1+x\mathrm{e}^{z-y-x}-\mathrm{e}^{z-y-x})\mathrm{d}x+(1+x\mathrm{e}^{z-y-x})\mathrm{d}y$，由此得 $\mathrm{d}z=\dfrac{1+(x-1)\mathrm{e}^{z-y-x}}{1+x\mathrm{e}^{z-y-x}}\mathrm{d}x+\mathrm{d}y$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\mathrm{d}z=\dfrac{1+(x-1)\mathrm{e}^{z-y-x}}{1+x\mathrm{e}^{z-y-x}}\mathrm{d}x+\mathrm{d}y$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q747" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="747">【747】</span>
+<span class="q-group">求隐函数的全微分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">由方程 $xyz+\sqrt{x^2+y^2+z^2}=\sqrt{2}$ 所确定的函数 $z=z(x,y)$ 在点 $(1,0,-1)$ 处的全微分 $\mathrm{d}z=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 对方程两边同时微分得 $$\mathrm{d}(xyz)+\mathrm{d}\left(\sqrt{x^2+y^2+z^2}\right)=0,$$ $$yz\mathrm{d}x+xz\mathrm{d}y+xy\mathrm{d}z+\dfrac{x\mathrm{d}x+y\mathrm{d}y+z\mathrm{d}z}{\sqrt{x^2+y^2+z^2}}=0.$$ 将 $x=1$，$y=0$，$z=-1$ 代入上式，化简并整理后得 $\mathrm{d}z=\mathrm{d}x-\sqrt{2}\,\mathrm{d}y$．故应填 $\mathrm{d}x-\sqrt{2}\,\mathrm{d}y$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\mathrm{d}x-\sqrt{2}\,\mathrm{d}y$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">讨论多元函数的可微、连续及偏导数存在之间的关系</h3>
+<article class="problem" id="q748" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="748">【748】</span>
+<span class="q-group">讨论多元函数的可微、连续及偏导数存在之间的关系</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">考虑二元函数 $f(x,y)$ 的下面 4 条性质：① $f(x,y)$ 在点 $(x_0,y_0)$ 处连续，② $f(x,y)$ 在点 $(x_0,y_0)$ 处的两个偏导数连续，③ $f(x,y)$ 在点 $(x_0,y_0)$ 处可微，④ $f(x,y)$ 在点 $(x_0,y_0)$ 处的两个偏导数存在，若用“$P\Rightarrow Q$”表示可由性质 $P$ 推出性质 $Q$，则有 ______.
+(A) ② $\Rightarrow$ ③ $\Rightarrow$ ①　　(B) ③ $\Rightarrow$ ② $\Rightarrow$ ①
+(C) ③ $\Rightarrow$ ④ $\Rightarrow$ ①　　(D) ③ $\Rightarrow$ ① $\Rightarrow$ ④</div>
+<div class="figure-note">关系示意图——“偏导数连续” $\to$ “可微”；再由“可微”分出两个箭头，分别指向“连续”与“偏导数存在”（即偏导数连续可推出可微，可微可推出连续、也可推出偏导数存在）.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 根据二元函数的连续、偏导数存在及可微之间的关系知选项 (A) 正确．故应选 (A)．<strong>点评</strong> 本题考查如下的关系</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A).</span></div>
+</div>
+</article>
+<article class="problem" id="q749" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="749">【749】</span>
+<span class="q-group">讨论多元函数的可微、连续及偏导数存在之间的关系</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x,y)=\begin{cases}\dfrac{xy}{\sqrt{x^2+y^2}}, &amp; x^2+y^2\neq 0\\ 0, &amp; x^2+y^2=0\end{cases}$，讨论 $f(x,y)$ 在 $(0,0)$ 处是否可微．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 在点 $(0,0)$ 处有 $$f'_x(0,0)=\lim_{\Delta x\to 0}\dfrac{f(0+\Delta x,0)-f(0,0)}{\Delta x}=\lim_{\Delta x\to 0}\dfrac{\dfrac{\Delta x\cdot 0}{\sqrt{(\Delta x)^2+0^2}}-0}{\Delta x}=0,$$ $$f'_y(0,0)=\lim_{\Delta y\to 0}\dfrac{f(0,0+\Delta y)-f(0,0)}{\Delta y}=\lim_{\Delta y\to 0}\dfrac{\dfrac{0\cdot\Delta y}{\sqrt{0^2+(\Delta y)^2}}-0}{\Delta y}=0,$$ 而 $\Delta z-\left[f'_x(0,0)\cdot\Delta x+f'_y(0,0)\cdot\Delta y\right]=\dfrac{\Delta x\cdot\Delta y}{\sqrt{(\Delta x)^2+(\Delta y)^2}}$，如果考虑点 $P'(\Delta x,\Delta y)$ 沿着直线 $y=x$ 趋近于 $(0,0)$，则 $$\dfrac{\dfrac{\Delta x\cdot\Delta y}{\sqrt{(\Delta x)^2+(\Delta y)^2}}}{\rho}=\dfrac{\Delta x\cdot\Delta x}{(\Delta x)^2+(\Delta x)^2}=\dfrac{1}{2},$$ 说明它不能随 $\rho\to 0$ 而趋于 0，故函数在点 $(0,0)$ 处不可微．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（函数在点 $(0,0)$ 处不可微）.</span></div>
+</div>
+</article>
+<article class="problem" id="q750" data-secanchor="s6">
+<div class="q-head">
+<span class="q-no" data-n="750">【750】</span>
+<span class="q-group">讨论多元函数的可微、连续及偏导数存在之间的关系</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">讨论函数 $z=f(x,y)=\begin{cases}(x^2+y^2)\sin\dfrac{1}{\sqrt{x^2+y^2}}, &amp; x^2+y^2\neq 0\\ 0, &amp; x^2+y^2=0\end{cases}$ 在坐标原点处 (1) 是否连续；(2) 偏导数是否存在；(3) 是否可微；(4) 偏导数是否连续．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 当 $(x,y)\neq(0,0)$ 时，$|f(x,y)|\leqslant x^2+y^2$，故 $\lim\limits_{\substack{x\to 0\\ y\to 0}}f(x,y)=0$，所以函数在原点连续．(2) 在 $(0,0)$ 点，$\dfrac{f(x,0)-f(0,0)}{x}=\dfrac{x^2\sin\frac{1}{\sqrt{x^2}}}{x}$，所以 $\lim\limits_{x\to 0}\dfrac{f(x,0)-f(0,0)}{x}=\lim\limits_{x\to 0}x\cdot\sin\dfrac{1}{\sqrt{x^2}}=0$，即偏导数 $\dfrac{\partial f(0,0)}{\partial x}$ 存在，且 $\dfrac{\partial f(0,0)}{\partial x}=0$．同理 $\dfrac{\partial f(0,0)}{\partial y}$ 也存在，其值为零．(3) 由 (2) 知，$\dfrac{\partial f(0,0)}{\partial x}=\dfrac{\partial f(0,0)}{\partial y}=0$，故 $$\Delta z-\left[\dfrac{\partial f(0,0)}{\partial x}\cdot\Delta x+\dfrac{\partial f(0,0)}{\partial y}\cdot\Delta y\right]=f(\Delta x,\Delta y)-f(0,0)-\left[0\cdot\Delta x+0\cdot\Delta y\right]=\left[(\Delta x)^2+(\Delta y)^2\right]\sin\dfrac{1}{\sqrt{(\Delta x)^2+(\Delta y)^2}},$$ 因为 $$\lim_{\rho\to 0^+}\dfrac{\Delta z-\left[\dfrac{\partial f(0,0)}{\partial x}\cdot\Delta x+\dfrac{\partial f(0,0)}{\partial y}\cdot\Delta y\right]}{\rho}=\lim_{\rho\to 0^+}\rho\sin\dfrac{1}{\rho}=0,$$ 故函数 $f(x,y)$ 在 $(0,0)$ 点可微，且 $\mathrm{d}z=0\cdot\mathrm{d}x+0\cdot\mathrm{d}y=0$．(4) 当 $(x,y)\neq(0,0)$ 时 $$\dfrac{\partial z}{\partial x}=2x\sin\dfrac{1}{\sqrt{x^2+y^2}}-\dfrac{x}{\sqrt{x^2+y^2}}\cos\dfrac{1}{\sqrt{x^2+y^2}},\quad \dfrac{\partial z}{\partial y}=2y\sin\dfrac{1}{\sqrt{x^2+y^2}}-\dfrac{y}{\sqrt{x^2+y^2}}\cos\dfrac{1}{\sqrt{x^2+y^2}}.$$ 由于 $\lim\limits_{\substack{x\to 0\\ y\to 0}}2x\sin\dfrac{1}{\sqrt{x^2+y^2}}=0$，$$\lim_{\substack{x\to 0\\ y=x\to 0}}\dfrac{x}{\sqrt{x^2+y^2}}\cos\dfrac{1}{\sqrt{x^2+y^2}}=\lim_{x\to 0}\dfrac{\mathrm{sgn}\,x}{\sqrt{2}}\cdot\cos\dfrac{1}{\sqrt{2}|x|}$$ 不存在，故偏导数 $\dfrac{\partial f(x,y)}{\partial x}$ 在原点不连续，同样也可说明 $\dfrac{\partial f(x,y)}{\partial y}$ 在原点不连续．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（(1) 在原点连续；(2) 两个偏导数均存在且为 0；(3) 在原点可微；(4) 偏导数在原点不连续）.</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s7">§4. 多元复合函数的求导法则</h2>
+<h2 class="sec-h" id="sec-s8">1. 复合函数的偏导数</h2>
+<h2 class="sec-h" id="sec-s9">2. 全导数</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">利用一元函数求导法则求偏导数</h3>
+<article class="problem" id="q751" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="751">【751】</span>
+<span class="q-group">利用一元函数求导法则求偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=\mathrm{e}^{-x}-f(x-2y)$，且当 $y=0$ 时，$z=x^2$，则 $\dfrac{\partial z}{\partial x}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 把 $y=0$ 时，$z=x^2$ 代入函数表达式得 $x^2=\mathrm{e}^{-x}-f(x)$，即 $f(x)=\mathrm{e}^{-x}-x^2$，从而 $z=\mathrm{e}^{-x}-\mathrm{e}^{-x+2y}+(x-2y)^2$，$\dfrac{\partial z}{\partial x}=2(x-2y)-\mathrm{e}^{-x}+\mathrm{e}^{-x+2y}$．故应填 $2(x-2y)-\mathrm{e}^{-x}+\mathrm{e}^{-x+2y}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2(x-2y)-\mathrm{e}^{-x}+\mathrm{e}^{-x+2y}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q752" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="752">【752】</span>
+<span class="q-group">利用一元函数求导法则求偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=xyf\left(\dfrac{y}{x}\right)$，$f(u)$ 可导，则 $xz_x+yz_y=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$z_x=yf\left(\dfrac{y}{x}\right)+xyf'\left(\dfrac{y}{x}\right)\cdot\left(-\dfrac{y}{x^2}\right)=yf\left(\dfrac{y}{x}\right)-\dfrac{y^2}{x}f'\left(\dfrac{y}{x}\right),\quad z_y=xf\left(\dfrac{y}{x}\right)+xyf'\left(\dfrac{y}{x}\right)\cdot\left(\dfrac{1}{x}\right)=xf\left(\dfrac{y}{x}\right)+yf'\left(\dfrac{y}{x}\right),$$ 则 $xz_x+yz_y=xyf\left(\dfrac{y}{x}\right)-y^2f'\left(\dfrac{y}{x}\right)+xyf\left(\dfrac{y}{x}\right)+y^2f'\left(\dfrac{y}{x}\right)=2xyf\left(\dfrac{y}{x}\right)=2z$．故应填 $2z$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2z$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用一元函数求导法则求二阶偏导数</h3>
+<article class="problem" id="q753" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="753">【753】</span>
+<span class="q-group">利用一元函数求导法则求二阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=\dfrac{1}{x}f(xy)+y\varphi(x+y)$，$f$、$\varphi$ 具有二阶连续导数，则 $\dfrac{\partial^2 z}{\partial x\partial y}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial z}{\partial x}=-\dfrac{1}{x^2}f(xy)+\dfrac{y}{x}f'(xy)+y\varphi'(x+y)$，$$\dfrac{\partial^2 z}{\partial x\partial y}=-\dfrac{1}{x^2}f'(xy)\cdot x+\dfrac{1}{x}f'(xy)+\dfrac{y}{x}f''(xy)\cdot x+\varphi'(x+y)+y\varphi''(x+y)=yf''(xy)+\varphi'(x+y)+y\varphi''(x+y).$$ 故应填 $yf''(xy)+\varphi'(x+y)+y\varphi''(x+y)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $yf''(xy)+\varphi'(x+y)+y\varphi''(x+y)$.</span></div>
+</div>
+</article>
+<article class="problem" id="q754" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="754">【754】</span>
+<span class="q-group">利用一元函数求导法则求二阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(u)$ 具有二阶连续导数，且 $g(x,y)=f\left(\dfrac{y}{x}\right)+yf\left(\dfrac{x}{y}\right)$，求 $x^2\dfrac{\partial^2 g}{\partial x^2}-y^2\dfrac{\partial^2 g}{\partial y^2}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由已知条件可得 $$\dfrac{\partial g}{\partial x}=-\dfrac{y}{x^2}f'\left(\dfrac{y}{x}\right)+f'\left(\dfrac{x}{y}\right),$$ $$\dfrac{\partial^2 g}{\partial x^2}=\dfrac{2y}{x^3}f'\left(\dfrac{y}{x}\right)+\dfrac{y^2}{x^4}f''\left(\dfrac{y}{x}\right)+\dfrac{1}{y}f''\left(\dfrac{x}{y}\right),$$ $$\dfrac{\partial g}{\partial y}=\dfrac{1}{x}f'\left(\dfrac{y}{x}\right)+f\left(\dfrac{x}{y}\right)-\dfrac{x}{y}f'\left(\dfrac{x}{y}\right),$$ $$\dfrac{\partial^2 g}{\partial y^2}=\dfrac{1}{x^2}f''\left(\dfrac{y}{x}\right)-\dfrac{x}{y^2}f'\left(\dfrac{x}{y}\right)+\dfrac{x}{y^2}f'\left(\dfrac{x}{y}\right)+\dfrac{x^2}{y^3}f''\left(\dfrac{x}{y}\right)=\dfrac{1}{x^2}f''\left(\dfrac{y}{x}\right)+\dfrac{x^2}{y^3}f''\left(\dfrac{x}{y}\right),$$ 所以 $$x^2\dfrac{\partial^2 g}{\partial x^2}-y^2\dfrac{\partial^2 g}{\partial y^2}=\dfrac{2y}{x}f'\left(\dfrac{y}{x}\right)+\dfrac{y^2}{x^2}f''\left(\dfrac{y}{x}\right)+\dfrac{x^2}{y}f''\left(\dfrac{x}{y}\right)-\dfrac{y^2}{x^2}f''\left(\dfrac{y}{x}\right)-\dfrac{x^2}{y}f''\left(\dfrac{x}{y}\right)=\dfrac{2y}{x}f'\left(\dfrac{y}{x}\right).$$ <strong>点评</strong> 本题采用的是一元复合函数的求导法则，计算时还应注意关于 $x$ 求偏导时，把 $y$ 视为常数；关于 $y$ 求偏导时，把 $x$ 视为常数．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$x^2\dfrac{\partial^2 g}{\partial x^2}-y^2\dfrac{\partial^2 g}{\partial y^2}=\dfrac{2y}{x}f'\left(\dfrac{y}{x}\right)$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q755" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="755">【755】</span>
+<span class="q-group">利用一元函数求导法则求二阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $u(x,y)=\varphi(x+y)+\varphi(x-y)+\displaystyle\int_{x-y}^{x+y}\psi(t)\,\mathrm{d}t$，其中函数 $\varphi$ 具有二阶导数，$\psi$ 具有一阶导数，则必有 ______.
+(A) $\dfrac{\partial^2 u}{\partial x^2}=-\dfrac{\partial^2 u}{\partial y^2}$　　(B) $\dfrac{\partial^2 u}{\partial x^2}=\dfrac{\partial^2 u}{\partial y^2}$　　(C) $\dfrac{\partial^2 u}{\partial x\partial y}=\dfrac{\partial^2 u}{\partial y^2}$　　(D) $\dfrac{\partial^2 u}{\partial x\partial y}=\dfrac{\partial^2 u}{\partial x^2}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\dfrac{\partial u}{\partial x}=\varphi'(x+y)+\varphi'(x-y)+\psi(x+y)-\psi(x-y)$，$\dfrac{\partial u}{\partial y}=\varphi'(x+y)-\varphi'(x-y)+\psi(x+y)+\psi(x-y)$．于是 $\dfrac{\partial^2 u}{\partial x^2}=\varphi''(x+y)+\varphi''(x-y)+\psi'(x+y)-\psi'(x-y)$，$\dfrac{\partial^2 u}{\partial x\partial y}=\varphi''(x+y)-\varphi''(x-y)+\psi'(x+y)+\psi'(x-y)$，$\dfrac{\partial^2 u}{\partial y^2}=\varphi''(x+y)+\varphi''(x-y)+\psi'(x+y)-\psi'(x-y)$．可见有 $\dfrac{\partial^2 u}{\partial x^2}=\dfrac{\partial^2 u}{\partial y^2}$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B).</span></div>
+</div>
+</article>
+<article class="problem" id="q756" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="756">【756】</span>
+<span class="q-group">利用一元函数求导法则求二阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $z=\displaystyle\int_0^{\sqrt{x^2+y^2}}tf(x^2+y^2-t^2)\,\mathrm{d}t$，其中函数 $f$ 有连续的导数，求 $\dfrac{\partial^2 z}{\partial x\partial y}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $u=x^2+y^2-t^2$，则 $$z=\int_0^{\sqrt{x^2+y^2}}tf(x^2+y^2-t^2)\,\mathrm{d}t=-\dfrac{1}{2}\int_{x^2+y^2}^{0}f(u)\,\mathrm{d}u=\dfrac{1}{2}\int_0^{x^2+y^2}f(u)\,\mathrm{d}u.$$ 由 $\dfrac{\partial}{\partial x}\left(\dfrac{1}{2}\int_0^{x^2+y^2}f(u)\,\mathrm{d}u\right)=\dfrac{1}{2}\cdot f(x^2+y^2)\cdot 2x=xf(x^2+y^2)$，得 $$\dfrac{\partial^2 z}{\partial x\partial y}=xf'(x^2+y^2)\cdot 2y=2xyf'(x^2+y^2).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{\partial^2 z}{\partial x\partial y}=2xyf'(x^2+y^2)$）.</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用多元复合函数求导法则求偏导数</h3>
+<article class="problem" id="q757" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="757">【757】</span>
+<span class="q-group">利用多元复合函数求导法则求偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=u\cdot v$，$x=\mathrm{e}^u\cos v$，$y=\mathrm{e}^u\sin v$，求 $\dfrac{\partial z}{\partial x}$，$\dfrac{\partial z}{\partial y}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 按复合函数求导法则有 $$\dfrac{\partial z}{\partial x}=\dfrac{\partial z}{\partial u}\cdot\dfrac{\partial u}{\partial x}+\dfrac{\partial z}{\partial v}\cdot\dfrac{\partial v}{\partial x}=v\cdot\dfrac{\partial u}{\partial x}+u\cdot\dfrac{\partial v}{\partial x},$$ $$\dfrac{\partial z}{\partial y}=\dfrac{\partial z}{\partial u}\cdot\dfrac{\partial u}{\partial y}+\dfrac{\partial z}{\partial v}\cdot\dfrac{\partial v}{\partial y}=v\cdot\dfrac{\partial u}{\partial y}+u\cdot\dfrac{\partial v}{\partial y},$$ 将 $x=\mathrm{e}^u\cos v$，$y=\mathrm{e}^u\sin v$ 两边对 $x$ 求导，得 $$\begin{cases}1=\mathrm{e}^u\dfrac{\partial u}{\partial x}\cos v-\mathrm{e}^u\sin v\cdot\dfrac{\partial v}{\partial x}\\ 0=\mathrm{e}^u\dfrac{\partial u}{\partial x}\sin v+\mathrm{e}^u\cos v\cdot\dfrac{\partial v}{\partial x}\end{cases}$$ 解此方程组得：$\dfrac{\partial u}{\partial x}=\dfrac{\cos v}{\mathrm{e}^u}$，$\dfrac{\partial v}{\partial x}=-\dfrac{\sin v}{\mathrm{e}^u}$．再将 $x=\mathrm{e}^u\cos v$，$y=\mathrm{e}^u\sin v$ 两边对 $y$ 求导，得 $$\begin{cases}0=\mathrm{e}^u\dfrac{\partial u}{\partial y}\cos v-\mathrm{e}^u\sin v\cdot\dfrac{\partial v}{\partial y}\\ 1=\mathrm{e}^u\dfrac{\partial u}{\partial y}\sin v+\mathrm{e}^u\cos v\cdot\dfrac{\partial v}{\partial y}\end{cases}$$ 解此方程组得：$\dfrac{\partial u}{\partial y}=\dfrac{\sin v}{\mathrm{e}^u}$，$\dfrac{\partial v}{\partial y}=\dfrac{\cos v}{\mathrm{e}^u}$．所以 $\dfrac{\partial z}{\partial x}=v\dfrac{\cos v}{\mathrm{e}^u}+u\left(-\dfrac{\sin v}{\mathrm{e}^u}\right)=\dfrac{v\cos v-u\sin v}{\mathrm{e}^u}$，$\dfrac{\partial z}{\partial y}=v\dfrac{\sin v}{\mathrm{e}^u}+u\dfrac{\cos v}{\mathrm{e}^u}=\dfrac{v\sin v+u\cos v}{\mathrm{e}^u}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{\partial z}{\partial x}=\dfrac{v\cos v-u\sin v}{\mathrm{e}^u}$，$\dfrac{\partial z}{\partial y}=\dfrac{v\sin v+u\cos v}{\mathrm{e}^u}$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q758" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="758">【758】</span>
+<span class="q-group">利用多元复合函数求导法则求偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $z=f\left(\dfrac{\sin x}{y},\dfrac{y}{\ln x}\right)$，其中 $f$ 是可微函数，则 $\dfrac{\partial z}{\partial x}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $u=\dfrac{\sin x}{y}$，$v=\dfrac{y}{\ln x}$，则 $z=f(u,v)$，于是 $$\dfrac{\partial z}{\partial x}=\dfrac{\partial f}{\partial u}\cdot\dfrac{\partial u}{\partial x}+\dfrac{\partial f}{\partial v}\cdot\dfrac{\partial v}{\partial x}=\dfrac{\cos x}{y}\cdot\dfrac{\partial f}{\partial u}+\left(-\dfrac{y}{x\ln^2 x}\right)\cdot\dfrac{\partial f}{\partial v}.$$ 故应填 $\dfrac{\cos x}{y}\cdot\dfrac{\partial f}{\partial u}-\dfrac{y}{x\ln^2 x}\cdot\dfrac{\partial f}{\partial v}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{\cos x}{y}\cdot\dfrac{\partial f}{\partial u}-\dfrac{y}{x\ln^2 x}\cdot\dfrac{\partial f}{\partial v}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q759" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="759">【759】</span>
+<span class="q-group">利用多元复合函数求导法则求偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=f\left(xy,\dfrac{x}{y}\right)+g\left(\dfrac{y}{x}\right)$，其中 $f$，$g$ 均可微，则 $\dfrac{\partial z}{\partial x}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial z}{\partial x}=f'_1\cdot y+f'_2\cdot\dfrac{1}{y}+g'\cdot\left(-\dfrac{y}{x^2}\right)=yf'_1+\dfrac{1}{y}f'_2-\dfrac{y}{x^2}g'$．故应填 $yf'_1+\dfrac{1}{y}f'_2-\dfrac{y}{x^2}g'$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $yf'_1+\dfrac{1}{y}f'_2-\dfrac{y}{x^2}g'$.</span></div>
+</div>
+</article>
+<article class="problem" id="q760" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="760">【760】</span>
+<span class="q-group">利用多元复合函数求导法则求偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">利用变量替换 $u=x$，$v=\dfrac{y}{x}$，一定可以把方程 $x\dfrac{\partial z}{\partial x}+y\dfrac{\partial z}{\partial y}=z$ 化为新方程
+(A) $u\dfrac{\partial z}{\partial u}=z$　　(B) $v\dfrac{\partial z}{\partial v}=z$　　(C) $u\dfrac{\partial z}{\partial v}=z$　　(D) $v\dfrac{\partial z}{\partial u}=z$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由多元复合函数求导法则知 $$\dfrac{\partial z}{\partial x}=\dfrac{\partial z}{\partial u}\cdot\dfrac{\partial u}{\partial x}+\dfrac{\partial z}{\partial v}\cdot\dfrac{\partial v}{\partial x}=\dfrac{\partial z}{\partial u}-\dfrac{y}{x^2}\cdot\dfrac{\partial z}{\partial v},\quad \dfrac{\partial z}{\partial y}=\dfrac{\partial z}{\partial u}\cdot\dfrac{\partial u}{\partial y}+\dfrac{\partial z}{\partial v}\cdot\dfrac{\partial v}{\partial y}=\dfrac{1}{x}\cdot\dfrac{\partial z}{\partial v},$$ 代入原方程得 $x\dfrac{\partial z}{\partial u}=z$，即 $u\dfrac{\partial z}{\partial u}=z$．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A).</span></div>
+</div>
+</article>
+<article class="problem" id="q761" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="761">【761】</span>
+<span class="q-group">利用多元复合函数求导法则求偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x,y,z)$ 是 $k$ 次齐次函数，即 $f(tx,ty,tz)=t^k f(x,y,z)$，$\lambda$ 为某一常数，则结论正确的是 ______.
+(A) $x\cdot\dfrac{\partial f}{\partial x}+y\cdot\dfrac{\partial f}{\partial y}+z\cdot\dfrac{\partial f}{\partial z}=k^\lambda f(x,y,z)$　　(B) $x\cdot\dfrac{\partial f}{\partial x}+y\cdot\dfrac{\partial f}{\partial y}+z\cdot\dfrac{\partial f}{\partial z}=\lambda^k f(x,y,z)$
+(C) $x\cdot\dfrac{\partial f}{\partial x}+y\cdot\dfrac{\partial f}{\partial y}+z\cdot\dfrac{\partial f}{\partial z}=kf(x,y,z)$　　(D) $x\cdot\dfrac{\partial f}{\partial x}+y\cdot\dfrac{\partial f}{\partial y}+z\cdot\dfrac{\partial f}{\partial z}=f(x,y,z)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $u=tx$，$v=ty$，$w=tz$，则 $f(tx,ty,tz)=t^k f(x,y,z)$，$f(u,v,w)=t^k f(x,y,z)$．上式两边对 $t$ 求导，得 $$\dfrac{\partial f}{\partial u}\cdot\dfrac{\partial u}{\partial t}+\dfrac{\partial f}{\partial v}\cdot\dfrac{\partial v}{\partial t}+\dfrac{\partial f}{\partial w}\cdot\dfrac{\partial w}{\partial t}=kt^{k-1}f(x,y,z),$$ $$x\cdot\dfrac{\partial f}{\partial u}+y\cdot\dfrac{\partial f}{\partial v}+z\cdot\dfrac{\partial f}{\partial w}=kt^{k-1}f(x,y,z),$$ $$tx\cdot\dfrac{\partial f}{\partial u}+ty\cdot\dfrac{\partial f}{\partial v}+tz\cdot\dfrac{\partial f}{\partial w}=kt^k f(x,y,z)=kf(u,v,w),$$ $$u\cdot\dfrac{\partial f}{\partial u}+v\cdot\dfrac{\partial f}{\partial v}+w\cdot\dfrac{\partial f}{\partial w}=kf(u,v,w),$$ 所以 $x\cdot\dfrac{\partial f}{\partial x}+y\cdot\dfrac{\partial f}{\partial y}+z\cdot\dfrac{\partial f}{\partial z}=kf(x,y,z)$．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C).</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用多元复合函数求导法则求二阶偏导数</h3>
+<article class="problem" id="q762" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="762">【762】</span>
+<span class="q-group">利用多元复合函数求导法则求二阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=f(x^2-y^2,\mathrm{e}^{xy})$，其中 $f$ 具有二阶连续偏导数，求 $\dfrac{\partial z}{\partial x}$，$\dfrac{\partial z}{\partial y}$，$\dfrac{\partial^2 z}{\partial x\partial y}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\dfrac{\partial z}{\partial x}=2xf'_1+y\mathrm{e}^{xy}f'_2,\quad \dfrac{\partial z}{\partial y}=-2yf'_1+x\mathrm{e}^{xy}f'_2,$$ $$\dfrac{\partial^2 z}{\partial x\partial y}=2x\left[f''_{11}\cdot(-2y)+f''_{12}\cdot x\mathrm{e}^{xy}\right]+\mathrm{e}^{xy}f'_2+xy\mathrm{e}^{xy}f'_2+y\mathrm{e}^{xy}\left[f''_{21}\cdot(-2y)+f''_{22}\cdot x\mathrm{e}^{xy}\right]$$ $$=-4xyf''_{11}+2(x^2-y^2)\mathrm{e}^{xy}f''_{12}+xy\mathrm{e}^{2xy}f''_{22}+\mathrm{e}^{xy}(1+xy)f'_2.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{\partial^2 z}{\partial x\partial y}=-4xyf''_{11}+2(x^2-y^2)\mathrm{e}^{xy}f''_{12}+xy\mathrm{e}^{2xy}f''_{22}+\mathrm{e}^{xy}(1+xy)f'_2$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q763" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="763">【763】</span>
+<span class="q-group">利用多元复合函数求导法则求二阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=x^3 f\left(xy,\dfrac{y}{x}\right)$，$f$ 具有二阶连续偏导数，求 $\dfrac{\partial z}{\partial y}$，$\dfrac{\partial^2 z}{\partial y^2}$ 及 $\dfrac{\partial^2 z}{\partial x\partial y}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial z}{\partial y}=x^4 f'_1+x^2 f'_2$，$$\dfrac{\partial^2 z}{\partial y^2}=x^5 f''_{11}+x^3 f''_{12}+x^3 f''_{21}+xf''_{22}=x^5 f''_{11}+2x^3 f''_{12}+xf''_{22},$$ $$\dfrac{\partial^2 z}{\partial x\partial y}=4x^3 f'_1+x^4 y f''_{11}-x^2 y f''_{12}+2xf'_2+x^2 y f''_{21}-yf''_{22}=4x^3 f'_1+2xf'_2+x^4 y f''_{11}-yf''_{22}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{\partial^2 z}{\partial y^2}=x^5 f''_{11}+2x^3 f''_{12}+xf''_{22}$，$\dfrac{\partial^2 z}{\partial x\partial y}=4x^3 f'_1+2xf'_2+x^4 y f''_{11}-yf''_{22}$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q764" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="764">【764】</span>
+<span class="q-group">利用多元复合函数求导法则求二阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(u,v)$ 具有二阶连续偏导数，且满足 $\dfrac{\partial^2 f}{\partial u^2}+\dfrac{\partial^2 f}{\partial v^2}=1$，又 $g(x,y)=f\left[xy,\dfrac{1}{2}(x^2-y^2)\right]$，求 $\dfrac{\partial^2 g}{\partial x^2}+\dfrac{\partial^2 g}{\partial y^2}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial g}{\partial x}=y\dfrac{\partial f}{\partial u}+x\dfrac{\partial f}{\partial v}$，$\dfrac{\partial g}{\partial y}=x\dfrac{\partial f}{\partial u}-y\dfrac{\partial f}{\partial v}$．故 $$\dfrac{\partial^2 g}{\partial x^2}=y^2\dfrac{\partial^2 f}{\partial u^2}+2xy\dfrac{\partial^2 f}{\partial u\partial v}+x^2\dfrac{\partial^2 f}{\partial v^2}+\dfrac{\partial f}{\partial v},\quad \dfrac{\partial^2 g}{\partial y^2}=x^2\dfrac{\partial^2 f}{\partial u^2}-2xy\dfrac{\partial^2 f}{\partial u\partial v}+y^2\dfrac{\partial^2 f}{\partial v^2}-\dfrac{\partial f}{\partial v}.$$ 所以 $$\dfrac{\partial^2 g}{\partial x^2}+\dfrac{\partial^2 g}{\partial y^2}=(x^2+y^2)\dfrac{\partial^2 f}{\partial u^2}+(x^2+y^2)\dfrac{\partial^2 f}{\partial v^2}=x^2+y^2.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{\partial^2 g}{\partial x^2}+\dfrac{\partial^2 g}{\partial y^2}=x^2+y^2$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q765" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="765">【765】</span>
+<span class="q-group">利用多元复合函数求导法则求二阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=f\left(xy,\dfrac{x}{y}\right)+g\left(\dfrac{y}{x}\right)$，其中 $f$ 具有二阶连续偏导数，$g$ 具有二阶连续导数，求 $\dfrac{\partial^2 z}{\partial x\partial y}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial z}{\partial x}=yf'_1+\dfrac{1}{y}f'_2-\dfrac{y}{x^2}g'$，$$\dfrac{\partial^2 z}{\partial x\partial y}=f'_1+y\left(xf''_{11}-\dfrac{x}{y^2}f''_{12}\right)-\dfrac{1}{y^2}f'_2+\dfrac{1}{y}\left(xf''_{21}-\dfrac{x}{y^2}f''_{22}\right)-\dfrac{1}{x^2}g'-\dfrac{y}{x^3}g''$$ $$=f'_1-\dfrac{1}{y^2}f'_2+xyf''_{11}-\dfrac{x}{y^3}f''_{22}-\dfrac{1}{x^2}g'-\dfrac{y}{x^3}g''.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{\partial^2 z}{\partial x\partial y}=f'_1-\dfrac{1}{y^2}f'_2+xyf''_{11}-\dfrac{x}{y^3}f''_{22}-\dfrac{1}{x^2}g'-\dfrac{y}{x^3}g''$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q766" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="766">【766】</span>
+<span class="q-group">利用多元复合函数求导法则求二阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设变换 $\begin{cases}u=x-2y\\ v=x+ay\end{cases}$ 可把方程 $6\dfrac{\partial^2 z}{\partial x^2}+\dfrac{\partial^2 z}{\partial x\partial y}-\dfrac{\partial^2 z}{\partial y^2}=0$ 化简为 $\dfrac{\partial^2 z}{\partial u\partial v}=0$，求常数 $a$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial z}{\partial x}=\dfrac{\partial z}{\partial u}+\dfrac{\partial z}{\partial v}$，$\dfrac{\partial z}{\partial y}=-2\dfrac{\partial z}{\partial u}+a\dfrac{\partial z}{\partial v}$，$\dfrac{\partial^2 z}{\partial x^2}=\dfrac{\partial^2 z}{\partial u^2}+2\dfrac{\partial^2 z}{\partial u\partial v}+\dfrac{\partial^2 z}{\partial v^2}$，$\dfrac{\partial^2 z}{\partial x\partial y}=-2\dfrac{\partial^2 z}{\partial u^2}+(a-2)\dfrac{\partial^2 z}{\partial u\partial v}+a\dfrac{\partial^2 z}{\partial v^2}$，$\dfrac{\partial^2 z}{\partial y^2}=4\dfrac{\partial^2 z}{\partial u^2}-4a\dfrac{\partial^2 z}{\partial u\partial v}+a^2\dfrac{\partial^2 z}{\partial v^2}$．将上述结果代入原方程，经整理后得 $$(10+5a)\dfrac{\partial^2 z}{\partial u\partial v}+(6+a-a^2)\dfrac{\partial^2 z}{\partial v^2}=0$$ 依题意 $a$ 应满足 $6+a-a^2=0$，且 $10+5a\neq 0$．解之得 $a=3$．<strong>点评</strong> 本题为多元复合函数求偏导的基本题型，计算时应注意参数 $a$ 的取值是根据 $6+a-a^2=0$ 及 $10+5a\neq 0$ 得到．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$a=3$.</span></div>
+</div>
+</article>
+<article class="problem" id="q767" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="767">【767】</span>
+<span class="q-group">利用多元复合函数求导法则求二阶偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $u=f(x,xy,xyz)$ 具有连续的二阶偏导数，则 $\dfrac{\partial^2 u}{\partial x\partial y}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $v=xy$，$w=xyz$，则 $u=f(x,v,w)$，于是 $$\dfrac{\partial u}{\partial x}=f'_x+f'_v\cdot v'_x+f'_w\cdot w'_x=f'_x+yf'_v+yzf'_w,$$ （解答未完，接下批）
+<strong>解</strong>（承上页）$$\frac{\partial^2 u}{\partial x\partial y}=(f''_{xv}\cdot v'_y+f''_{xw}\cdot w'_y)+y(f''_{vv}\cdot v'_y+f''_{vw}\cdot w'_y)+f'_v+yz(f''_{wv}\cdot v'_y+f''_{ww}\cdot w'_y)$$ $$+zf'_w$$ $$=xf''_{xv}+xzf''_{xw}+xyf''_{vv}+2xyzf''_{vw}+xyz^2f''_{ww}+f'_v+zf'_w.$$ 故应填 $xf''_{xv}+xzf''_{xw}+xyf''_{vv}+2xyzf''_{vw}+xyz^2f''_{ww}+f'_v+zf'_w.$ <strong>点评</strong> 对于中间变量或自变量多于两个的情况，复合函数求导法则可进行相应推广. 原则为：函数对某个自变量求偏导数时，必须通过一切有关的中间变量，有几个中间变量，公式中就应有几项相加. 其中每一项都应是函数对某个中间变量的偏导数与这个中间变量对该自变量偏导数的乘积，此法则也称为链式法则.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$xf''_{xv}+xzf''_{xw}+xyf''_{vv}+2xyzf''_{vw}+xyz^2f''_{ww}+f'_v+zf'_w$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s10">§5. 隐函数的求导法则</h2>
+<h2 class="sec-h" id="sec-s11">1. 一元隐函数求导法则</h2>
+<h2 class="sec-h" id="sec-s12">2. 二元隐函数求导法则</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">隐函数存在性的讨论</h3>
+<article class="problem" id="q768" data-secanchor="s12">
+<div class="q-head">
+<span class="q-no" data-n="768">【768】</span>
+<span class="q-group">隐函数存在性的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设有三元方程 $xy-z\ln y+\mathrm{e}^{xz}=1$，根据隐函数存在定理，存在点 $(0,1,1)$ 的一个邻域，在此邻域内该方程________. (A)只能确定一个具有连续偏导数的隐函数 $z=z(x,y)$ (B)可确定两个具有连续偏导数的隐函数 $y=y(x,z)$ 和 $z=z(x,y)$ (C)可确定两个具有连续偏导数的隐函数 $x=x(y,z)$ 和 $z=z(x,y)$ (D)可确定两个具有连续偏导数的隐函数 $x=x(y,z)$ 和 $y=y(x,z)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $F(x,y,z)=xy-z\ln y+\mathrm{e}^{xz}-1$，显然 $F(0,1,1)=0$. 且 $\dfrac{\partial F}{\partial x}=y+z\mathrm{e}^{xz}$，$\dfrac{\partial F}{\partial y}=x-\dfrac{z}{y}$，$\dfrac{\partial F}{\partial z}=-\ln y+x\mathrm{e}^{xz}$ 在点 $(0,1,1)$ 的某邻域内连续，又 $F'_x(0,1,1)=\left.(y+z\mathrm{e}^{xz})\right|_{(0,1,1)}=2\neq 0$，$F'_y(0,1,1)=-1\neq 0$，根据隐函数存在定理知，方程 $F(x,y,z)=0$ 可以确定具有连续偏导数的隐函数 $x=x(y,z)$ 和 $y=y(x,z)$. 因为 $F'_z(0,1,1)=0$，所以未必能确定隐函数 $z=z(x,y)$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（D）.</span></div>
+</div>
+</article>
+<h3 class="grp-h">求多元隐函数的偏导数</h3>
+<article class="problem" id="q769" data-secanchor="s12">
+<div class="q-head">
+<span class="q-no" data-n="769">【769】</span>
+<span class="q-group">求多元隐函数的偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $z=z(x,y)$ 由方程 $z=\mathrm{e}^{2x-3z}+2y$ 确定，则 $3\dfrac{\partial z}{\partial x}+\dfrac{\partial z}{\partial y}=$________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 对方程两边关于 $x$ 求偏导数，得 $$\frac{\partial z}{\partial x}=\mathrm{e}^{2x-3z}\left(2-3\frac{\partial z}{\partial x}\right),$$ 解得 $\dfrac{\partial z}{\partial x}=\dfrac{2\mathrm{e}^{2x-3z}}{1+3\mathrm{e}^{2x-3z}}$. 同理，对方程两边关于 $y$ 求偏导数，得 $$\frac{\partial z}{\partial y}=\mathrm{e}^{2x-3z}\left(-3\frac{\partial z}{\partial y}\right)+2,$$ 解得 $\dfrac{\partial z}{\partial y}=\dfrac{2}{1+3\mathrm{e}^{2x-3z}}$，所以 $3\dfrac{\partial z}{\partial x}+\dfrac{\partial z}{\partial y}=\dfrac{6\mathrm{e}^{2x-3z}+2}{1+3\mathrm{e}^{2x-3z}}=2$. <strong>点评</strong> 本题也可直接使用隐函数求偏导公式计算.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2$.</span></div>
+</div>
+</article>
+<article class="problem" id="q770" data-secanchor="s12">
+<div class="q-head">
+<span class="q-no" data-n="770">【770】</span>
+<span class="q-group">求多元隐函数的偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=z(x,y)$ 是由方程 $\dfrac{x}{z}=\ln\dfrac{z}{y}$ 所确定的函数，则 $\dfrac{\partial z}{\partial y}=$________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 将所给方程两边对 $y$ 求导，得 $$-\frac{x}{z^2}\cdot\frac{\partial z}{\partial y}=\frac{y}{z}\cdot\frac{y\cdot\dfrac{\partial z}{\partial y}-z}{y^2},$$ 因此 $\dfrac{\partial z}{\partial y}=\dfrac{z^2}{y(x+z)}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{z^2}{y(x+z)}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q771" data-secanchor="s12">
+<div class="q-head">
+<span class="q-no" data-n="771">【771】</span>
+<span class="q-group">求多元隐函数的偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x\cdot\cos y+y\cdot\cos z+z\cdot\cos x=1$，求 $\dfrac{\partial z}{\partial x}$，$\dfrac{\partial z}{\partial y}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 将方程 $x\cdot\cos y+y\cdot\cos z+z\cdot\cos x=1$ 两端分别对 $x$，$y$ 求导（其中 $z$ 是 $x$，$y$ 的函数）得 $$\cos y-y\cdot\sin z\cdot\frac{\partial z}{\partial x}-z\sin x+\frac{\partial z}{\partial x}\cos x=0$$ $$-x\sin y+\cos z-y\sin z\frac{\partial z}{\partial y}+\frac{\partial z}{\partial y}\cos x=0$$ 由此解得 $\dfrac{\partial z}{\partial x}=\dfrac{\cos y-z\sin x}{y\sin z-\cos x}$，$\dfrac{\partial z}{\partial y}=\dfrac{\cos z-x\sin y}{y\sin z-\cos x}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\partial z}{\partial x}=\dfrac{\cos y-z\sin x}{y\sin z-\cos x}$，$\dfrac{\partial z}{\partial y}=\dfrac{\cos z-x\sin y}{y\sin z-\cos x}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q772" data-secanchor="s12">
+<div class="q-head">
+<span class="q-no" data-n="772">【772】</span>
+<span class="q-group">求多元隐函数的偏导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $u=f(x,y,z)$ 有连续偏导数，且 $z=z(x,y)$ 由方程 $x\mathrm{e}^x-y\mathrm{e}^y=z\mathrm{e}^z$ 所确定，求 $\mathrm{d}u$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $F(x,y,z)=x\mathrm{e}^x-y\mathrm{e}^y-z\mathrm{e}^z$，则 $$F'_x=(x+1)\mathrm{e}^x,\ F'_y=-(y+1)\mathrm{e}^y,\ F'_z=-(z+1)\mathrm{e}^z$$ 故 $\dfrac{\partial z}{\partial x}=-\dfrac{F'_x}{F'_z}=\dfrac{x+1}{z+1}\mathrm{e}^{x-z}$，$\dfrac{\partial z}{\partial y}=-\dfrac{F'_y}{F'_z}=-\dfrac{y+1}{z+1}\mathrm{e}^{y-z}$，而 $\dfrac{\partial u}{\partial x}=f'_x+f'_z\dfrac{\partial z}{\partial x}=f'_x+f'_z\dfrac{x+1}{z+1}\mathrm{e}^{x-z}$，$\dfrac{\partial u}{\partial y}=f'_y+f'_z\dfrac{\partial z}{\partial y}=f'_y-f'_z\dfrac{y+1}{z+1}\mathrm{e}^{y-z}$. 所以 $$\mathrm{d}u=\frac{\partial u}{\partial x}\mathrm{d}x+\frac{\partial u}{\partial y}\mathrm{d}y=\left(f'_x+f'_z\frac{x+1}{z+1}\mathrm{e}^{x-z}\right)\mathrm{d}x+\left(f'_y-f'_z\frac{y+1}{z+1}\mathrm{e}^{y-z}\right)\mathrm{d}y.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\mathrm{d}u=\left(f'_x+f'_z\dfrac{x+1}{z+1}\mathrm{e}^{x-z}\right)\mathrm{d}x+\left(f'_y-f'_z\dfrac{y+1}{z+1}\mathrm{e}^{y-z}\right)\mathrm{d}y$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">由方程组确定的隐函数的求导</h3>
+<article class="problem" id="q773" data-secanchor="s12">
+<div class="q-head">
+<span class="q-no" data-n="773">【773】</span>
+<span class="q-group">由方程组确定的隐函数的求导</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $z(x,y)$ 由方程 $F\left(x+\dfrac{z}{y},y+\dfrac{z}{x}\right)=0$ 给出，$F,z$ 都是可微函数，则有等式 $$x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=z-xy.$$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $x+\dfrac{z}{y}=u$，$y+\dfrac{z}{x}=v$，则有 $F(u,v)=0$ 将它两边分别对 $x$，$y$ 求偏导数，再将 $z$ 视为 $x$，$y$ 的函数，得 $$F'_u\left(1+y^{-1}\frac{\partial z}{\partial x}\right)+F'_v\left(\frac{\partial z}{\partial x}x^{-1}-x^{-2}z\right)=0\tag{①}$$ $$F'_u\left(\frac{\partial z}{\partial y}y^{-1}-y^{-2}z\right)+F'_v\left(1+x^{-1}\frac{\partial z}{\partial y}\right)=0\tag{②}$$ 将①、②联立，解得 $$\frac{\partial z}{\partial x}=\frac{x^{-2}zF'_v-F'_u}{y^{-1}F'_u+x^{-1}F'_v},\qquad \frac{\partial z}{\partial y}=\frac{y^{-2}zF'_u-F'_v}{y^{-1}F'_u+x^{-1}F'_v}$$ 于是 $$x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=x\,\frac{x^{-2}zF'_v-F'_u}{y^{-1}F'_u+x^{-1}F'_v}+y\,\frac{y^{-2}zF'_u-F'_v}{y^{-1}F'_u+x^{-1}F'_v}=z-xy.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$x\dfrac{\partial z}{\partial x}+y\dfrac{\partial z}{\partial y}=z-xy$（证毕）.</span></div>
+</div>
+</article>
+<article class="problem" id="q774" data-secanchor="s12">
+<div class="q-head">
+<span class="q-no" data-n="774">【774】</span>
+<span class="q-group">由方程组确定的隐函数的求导</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $u=f(x,y,z)$ 有连续偏导数，$y=y(x)$ 和 $z=z(x)$ 分别由方程 $\mathrm{e}^{xy}-y=0$ 和 $\mathrm{e}^z-xz=0$ 所确定，求 $\dfrac{\mathrm{d}u}{\mathrm{d}x}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\mathrm{d}u}{\mathrm{d}x}=\dfrac{\partial f}{\partial x}+\dfrac{\partial f}{\partial y}\dfrac{\mathrm{d}y}{\mathrm{d}x}+\dfrac{\partial f}{\partial z}\dfrac{\mathrm{d}z}{\mathrm{d}x}$. 由 $\mathrm{e}^{xy}-y=0$ 得 $\mathrm{e}^{xy}\left(y+x\dfrac{\mathrm{d}y}{\mathrm{d}x}\right)-\dfrac{\mathrm{d}y}{\mathrm{d}x}=0$，$\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{y\mathrm{e}^{xy}}{1-x\mathrm{e}^{xy}}=\dfrac{y^2}{1-xy}$；由 $\mathrm{e}^z-xz=0$ 得 $\mathrm{e}^z\dfrac{\mathrm{d}z}{\mathrm{d}x}-z-x\dfrac{\mathrm{d}z}{\mathrm{d}x}=0$，$\dfrac{\mathrm{d}z}{\mathrm{d}x}=\dfrac{\mathrm{e}^z}{\mathrm{e}^z-x}=\dfrac{z}{xz-x}$. 于是 $\dfrac{\mathrm{d}u}{\mathrm{d}x}=\dfrac{\partial f}{\partial x}+\dfrac{y^2}{1-xy}\dfrac{\partial f}{\partial y}+\dfrac{z}{xz-x}\dfrac{\partial f}{\partial z}$. <strong>点评</strong> 本题为多元复合函数求导及隐函数求导的综合题. $\dfrac{\mathrm{d}u}{\mathrm{d}x}$ 为全导数，计算的关键为求出 $\dfrac{\mathrm{d}y}{\mathrm{d}x}$ 及 $\dfrac{\mathrm{d}z}{\mathrm{d}x}$，它们可由隐函数求导法则得出.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\mathrm{d}u}{\mathrm{d}x}=\dfrac{\partial f}{\partial x}+\dfrac{y^2}{1-xy}\dfrac{\partial f}{\partial y}+\dfrac{z}{xz-x}\dfrac{\partial f}{\partial z}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q775" data-secanchor="s12">
+<div class="q-head">
+<span class="q-no" data-n="775">【775】</span>
+<span class="q-group">由方程组确定的隐函数的求导</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $u=f(x,y,z)$ 有连续的一阶偏导数，又函数 $y=y(x)$ 及 $z=z(x)$ 分别由下列两式确定：$\mathrm{e}^{xy}-xy=2$ 和 $\mathrm{e}^z=\displaystyle\int_0^{x-z}\dfrac{\sin t}{t}\,\mathrm{d}t$，求 $\dfrac{\mathrm{d}u}{\mathrm{d}x}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\frac{\mathrm{d}u}{\mathrm{d}x}=\frac{\partial f}{\partial x}+\frac{\partial f}{\partial y}\frac{\mathrm{d}y}{\mathrm{d}x}+\frac{\partial f}{\partial z}\frac{\mathrm{d}z}{\mathrm{d}x},\tag{①}$$ 由 $\mathrm{e}^{xy}-xy=2$ 两边对 $x$ 求导，得 $$\mathrm{e}^{xy}\left(y+x\frac{\mathrm{d}y}{\mathrm{d}x}\right)-\left(y+x\frac{\mathrm{d}y}{\mathrm{d}x}\right)=0,\qquad \text{即 } \frac{\mathrm{d}y}{\mathrm{d}x}=-\frac{y}{x}.$$ 又由 $\mathrm{e}^z=\displaystyle\int_0^{x-z}\dfrac{\sin t}{t}\,\mathrm{d}t$ 两边对 $x$ 求导，得 $$\mathrm{e}^z=\frac{\sin(x-z)}{x-z}\cdot\left(1-\frac{\mathrm{d}z}{\mathrm{d}x}\right),\qquad \text{即 } \frac{\mathrm{d}z}{\mathrm{d}x}=1-\frac{\mathrm{e}^z(x-z)}{\sin(x-z)}.$$ 将其代入①式，得 $$\frac{\mathrm{d}u}{\mathrm{d}x}=\frac{\partial f}{\partial x}-\frac{y}{x}\frac{\partial f}{\partial y}+\left[1-\frac{\mathrm{e}^z(x-z)}{\sin(x-z)}\right]\frac{\partial f}{\partial z}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\mathrm{d}u}{\mathrm{d}x}=\dfrac{\partial f}{\partial x}-\dfrac{y}{x}\dfrac{\partial f}{\partial y}+\left[1-\dfrac{\mathrm{e}^z(x-z)}{\sin(x-z)}\right]\dfrac{\partial f}{\partial z}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q776" data-secanchor="s12">
+<div class="q-head">
+<span class="q-no" data-n="776">【776】</span>
+<span class="q-group">由方程组确定的隐函数的求导</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=y(x)$，$z=z(x)$ 是由方程 $z=xf(x+y)$ 和 $F(x,y,z)=0$ 所确定的函数，其中 $f$ 和 $F$ 分别具有一阶连续导数和一阶连续偏导数，求 $\dfrac{\mathrm{d}z}{\mathrm{d}x}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 分别在 $z=xf(x+y)$ 和 $F(x,y,z)=0$ 的两端对 $x$ 求导，得 $$\begin{cases}\dfrac{\mathrm{d}z}{\mathrm{d}x}=f+x\left(1+\dfrac{\mathrm{d}y}{\mathrm{d}x}\right)f'\\ F'_x+F'_y\dfrac{\mathrm{d}y}{\mathrm{d}x}+F'_z\dfrac{\mathrm{d}z}{\mathrm{d}x}=0\end{cases}$$ 整理后得 $$\begin{cases}-xf'\dfrac{\mathrm{d}y}{\mathrm{d}x}+\dfrac{\mathrm{d}z}{\mathrm{d}x}=f+xf'\\ F'_y\dfrac{\mathrm{d}y}{\mathrm{d}x}+F'_z\dfrac{\mathrm{d}z}{\mathrm{d}x}=-F'_x\end{cases}$$ 由此解得 $$\frac{\mathrm{d}z}{\mathrm{d}x}=\frac{(f+xf')F'_y-xf'F'_x}{F'_y+xf'F'_z}\qquad (F'_y+xf'F'_z\neq 0).$$ <strong>点评</strong> 本题需通过含有导数的方程组求得其解.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\mathrm{d}z}{\mathrm{d}x}=\dfrac{(f+xf')F'_y-xf'F'_x}{F'_y+xf'F'_z}$（$F'_y+xf'F'_z\neq 0$）.</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s13">§6. 多元函数微分学的几何应用</h2>
+<h2 class="sec-h" id="sec-s14">1. 空间曲线的切线与法平面</h2>
+<h2 class="sec-h" id="sec-s15">2. 曲面的切平面与法线</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">求参数方程确定的空间曲线的切线与法平面</h3>
+<article class="problem" id="q777" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="777">【777】</span>
+<span class="q-group">求参数方程确定的空间曲线的切线与法平面</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">在曲线 $\begin{cases}x=t\\ y=-t^2\\ z=t^3\end{cases}$ 的所有切线中，与平面 $x+2y+z=-4$ 平行的切线________. (A)只有一条 (B)只有两条 (C)至少有三条 (D)不存在</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 曲线 $\begin{cases}x=x(t)\\ y=y(t)\\ z=z(t)\end{cases}$ 的切线方向向量为 $(x'(t),y'(t),z'(t))$. 曲线的切线与平面平行，即曲线切线的方向向量与平面的法向量垂直. 根据向量垂直的充要条件，即可求解. <strong>解</strong> 曲线的切线方向向量为 $(x'(t),y'(t),z'(t))=(1,-2t,3t^2)$. 依题意知，切线的方向向量应与平面 $x+2y+z=-4$ 的法向量垂直，于是有 $$(1,-2t,3t^2)\cdot(1,2,1)=1-4t+3t^2=0,$$ 解得 $t_1=\dfrac{1}{3}$，$t_2=1$. 所以与平面 $x+2y+z=-4$ 平行的切线应有两条. 故应选（B）.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（B）.</span></div>
+</div>
+</article>
+<article class="problem" id="q778" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="778">【778】</span>
+<span class="q-group">求参数方程确定的空间曲线的切线与法平面</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $\begin{cases}x=t\\ y=t^2\\ z=t^3\end{cases}$ 上点 $M$ 处的切线平行于平面 $x+2y+z=4$，则点 $M$ 的坐标可以是 (A)$(1,1,1)$ (B)$\left(-\dfrac{1}{3},\dfrac{1}{9},-\dfrac{1}{27}\right)$ (C)$\left(\dfrac{1}{3},\dfrac{1}{9},\dfrac{1}{27}\right)$ (D)$(-3,9,-27)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\dfrac{\mathrm{d}x}{\mathrm{d}t}=1$，$\dfrac{\mathrm{d}y}{\mathrm{d}t}=2t$，$\dfrac{\mathrm{d}z}{\mathrm{d}t}=3t^2$，故曲线上点 $M(x,y,z)$ 处切线的方向向量是 $\boldsymbol{s}=\{1,2t,3t^2\}$，而平面 $x+2y+z=4$ 的法向量 $\boldsymbol{n}=\{1,2,1\}$，由于切线平行于已知平面，因此，$\boldsymbol{s}\cdot\boldsymbol{n}=0$ 即 $1+4t+3t^2=0$. 解此方程得 $t=-1$ 或 $t=-\dfrac{1}{3}$，当 $t=-1$ 时，$x=-1$，$y=1$，$z=-1$；当 $t=-\dfrac{1}{3}$ 时，$x=-\dfrac{1}{3}$，$y=\dfrac{1}{9}$，$z=-\dfrac{1}{27}$. 于是点 $M$ 的坐标是 $\left(-\dfrac{1}{3},\dfrac{1}{9},-\dfrac{1}{27}\right)$ 或 $(-1,1,-1)$. 故应选（B）.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（B）.</span></div>
+</div>
+</article>
+<h3 class="grp-h">求曲线方程为一般方程的空间曲线的切线与法平面</h3>
+<article class="problem" id="q779" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="779">【779】</span>
+<span class="q-group">求曲线方程为一般方程的空间曲线的切线与法平面</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $\begin{cases}x^2+y^2+z^2=6\\ z=x^2+y^2\end{cases}$ 在 $(-1,1,2)$ 处的切线方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 方程组两边对 $x$ 求导，得 $$\begin{cases}2x+2y\dfrac{\mathrm{d}y}{\mathrm{d}x}+2z\dfrac{\mathrm{d}z}{\mathrm{d}x}=0\\ \dfrac{\mathrm{d}z}{\mathrm{d}x}=2x+2y\dfrac{\mathrm{d}y}{\mathrm{d}x}\end{cases}.$$ 解得 $\dfrac{\mathrm{d}y}{\mathrm{d}x}=-\dfrac{x}{y}$，$\dfrac{\mathrm{d}z}{\mathrm{d}x}=0$. 所以在 $(-1,1,2)$ 处的切线方向向量为 $\boldsymbol{T}=\left.\left\{1,\dfrac{\mathrm{d}y}{\mathrm{d}x},\dfrac{\mathrm{d}z}{\mathrm{d}x}\right\}\right|_{(-1,1,2)}=\{1,1,0\}$. 所以切线方程为 $\dfrac{x+1}{1}=\dfrac{y-1}{1}=\dfrac{z-2}{0}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">切线方程 $\dfrac{x+1}{1}=\dfrac{y-1}{1}=\dfrac{z-2}{0}$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">由 z=f(x,y) 确定的曲面求切平面与法线</h3>
+<article class="problem" id="q780" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="780">【780】</span>
+<span class="q-group">由 z=f(x,y) 确定的曲面求切平面与法线</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲面 $z=\dfrac{x^2}{2}+y^2$ 平行于平面 $2x+2y-z=0$ 的切平面方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设切点为 $P(x_0,y_0,z_0)$，于是曲面 $z=\dfrac{x^2}{2}+y^2$ 在点 $P$ 的法向量为 $\{x_0,2y_0,-1\}$，所给平面的法向量为 $\{2,2,-1\}$. 由条件知 $\dfrac{x_0}{2}=\dfrac{2y_0}{2}=\dfrac{-1}{-1}$ 所以切点坐标为 $$x_0=2,\qquad y_0=1,\qquad z_0=\frac{x_0^2}{2}+y_0^2=3$$ 于是，所求切平面方程为 $$2(x-2)+2(y-1)-(z-3)=0,\qquad \text{即 } 2x+2y-z-3=0.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$2x+2y-z-3=0$.</span></div>
+</div>
+</article>
+<article class="problem" id="q781" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="781">【781】</span>
+<span class="q-group">由 z=f(x,y) 确定的曲面求切平面与法线</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">试证：锥面 $z=\sqrt{x^2+y^2}+3$ 的所有切平面都通过锥面的顶点.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $\dfrac{\partial z}{\partial x}=\dfrac{x}{\sqrt{x^2+y^2}}$，$\dfrac{\partial z}{\partial y}=\dfrac{y}{\sqrt{x^2+y^2}}$ 故锥面上任一点 $(x_0,y_0,z_0)$ 处的切平面方程为 $$z-z_0=\frac{x_0}{\sqrt{x_0^2+y_0^2}}(x-x_0)+\frac{y_0}{\sqrt{x_0^2+y_0^2}}(y-y_0)$$ 将 $z_0-3=\sqrt{x_0^2+y_0^2}$ 代入上述方程，整理后得 $$x_0x+y_0y-(z_0-3)(z-3)=0$$ 而锥面顶点的坐标 $(0,0,3)$ 满足上述方程，所以锥面 $z=\sqrt{x^2+y^2}+3$ 的所有切平面都通过锥面的顶点.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">锥面 $z=\sqrt{x^2+y^2}+3$ 的所有切平面都通过锥面的顶点（证毕）.</span></div>
+</div>
+</article>
+<h3 class="grp-h">由 F(x,y,z)=0 确定的曲面求切平面及法线</h3>
+<article class="problem" id="q782" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="782">【782】</span>
+<span class="q-group">由 F(x,y,z)=0 确定的曲面求切平面及法线</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲面 $z-\mathrm{e}^z+2xy=3$ 在点 $(1,2,0)$ 处的切平面方程为________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $F(x,y,z)=z-\mathrm{e}^z+2xy-3$，则 $F'_x=2y$，$F'_y=2x$，$F'_z=1-\mathrm{e}^z$ 在点 $(1,2,0)$ 处切平面的法向量为 $\{4,2,0\}$. 则切平面方程为 $$4(x-1)+2(y-2)+0(z-0)=0,\qquad \text{即 } 2x+y-4=0.$$ 故应填 $2x+y-4=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2x+y-4=0$.</span></div>
+</div>
+</article>
+<article class="problem" id="q783" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="783">【783】</span>
+<span class="q-group">由 F(x,y,z)=0 确定的曲面求切平面及法线</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">由曲线 $\begin{cases}3x^2+2y^2=12\\ z=0\end{cases}$ 绕 $y$ 轴旋转一周得到的旋转面在点 $(0,\sqrt{3},\sqrt{2})$ 处的指向外侧的单位法向量为________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 旋转曲面方程为 $3x^2+2y^2+3z^2=12$，令 $F(x,y,z)=3x^2+2y^2+3z^2-12$，则 $F'_x=6x$，$F'_y=4y$，$F'_z=6z$ 在点 $(0,\sqrt{3},\sqrt{2})$ 处指向外侧的法向量为 $\{0,4\sqrt{3},6\sqrt{2}\}$，单位化得 $\dfrac{1}{\sqrt{5}}\{0,\sqrt{2},\sqrt{3}\}$. 故应填 $\dfrac{1}{\sqrt{5}}\{0,\sqrt{2},\sqrt{3}\}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{\sqrt{5}}\{0,\sqrt{2},\sqrt{3}\}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q784" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="784">【784】</span>
+<span class="q-group">由 F(x,y,z)=0 确定的曲面求切平面及法线</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲面 $x^2+2y^2+3z^2=21$ 在点 $(1,-2,2)$ 的法线方程为________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 记 $F(x,y,z)=x^2+2y^2+3z^2-21$，$M_0(1,-2,2)$，则 $$F'_x=2x,\qquad F'_y=4y,\qquad F'_z=6z,$$ $$F'_x\big|_{M_0}=2,\qquad F'_y\big|_{M_0}=-8,\qquad F'_z\big|_{M_0}=12,$$ 取 $\boldsymbol{n}=\{1,-4,6\}$ 所求法线方程为：$\dfrac{x-1}{1}=\dfrac{y+2}{-4}=\dfrac{z-2}{6}$. <strong>点评</strong> 本题应先求出法线的方向向量，再用直线的对称式写出法线方程. 空间曲线的切线和法平面方程以及曲面的法线和切平面方程是几何应用常考题型，我们应熟记相关公式.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{x-1}{1}=\dfrac{y+2}{-4}=\dfrac{z-2}{6}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q785" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="785">【785】</span>
+<span class="q-group">由 F(x,y,z)=0 确定的曲面求切平面及法线</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">试证曲面 $\sqrt{x}+\sqrt{y}+\sqrt{z}=\sqrt{a}$（$a&gt;0$）在任一点 $(x_0,y_0,z_0)$ 处（其中 $x_0&gt;0$，$y_0&gt;0$，$z_0&gt;0$）的切平面，在三个坐标轴上的截距之和为常数.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 曲面上任一点 $(x_0,y_0,z_0)$ 处的切平面方程为 $$\frac{1}{\sqrt{x_0}}(x-x_0)+\frac{1}{\sqrt{y_0}}(y-y_0)+\frac{1}{\sqrt{z_0}}(z-z_0)=0,$$ 其截距式方程为 $\dfrac{1}{\sqrt{ax_0}}x+\dfrac{1}{\sqrt{ay_0}}y+\dfrac{1}{\sqrt{az_0}}z=1$. 故在三个坐标轴上的截距之和为 $$\sqrt{ax_0}+\sqrt{ay_0}+\sqrt{az_0}=\sqrt{a}\left(\sqrt{x_0}+\sqrt{y_0}+\sqrt{z_0}\right)=a.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">三个坐标轴上的截距之和为常数 $a$（证毕）.</span></div>
+</div>
+</article>
+<article class="problem" id="q786" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="786">【786】</span>
+<span class="q-group">由 F(x,y,z)=0 确定的曲面求切平面及法线</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">在椭球面 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}+\dfrac{z^2}{c^2}=1$ 上哪一点处的切平面在坐标轴上的三个截距相等？</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设所求的点为 $(x_0,y_0,z_0)$，令 $$F(x,y,z)=\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}-1,$$ 则 $$F'_x(x_0,y_0,z_0)=\frac{2x_0}{a^2},\quad F'_y(x_0,y_0,z_0)=\frac{2y_0}{b^2},\quad F'_z(x_0,y_0,z_0)=\frac{2z_0}{c^2},$$ 代入切平面方程得 $$\frac{x_0}{a^2}(x-x_0)+\frac{y_0}{b^2}(y-y_0)+\frac{z_0}{c^2}(z-z_0)=0$$ 令 $y=0$，$z=0$ 得 $x$ 轴上的截距为 $\dfrac{a^2}{x_0}$，类似可得 $y$ 轴上，$z$ 轴上的截距为 $\dfrac{b^2}{y_0}$，$\dfrac{c^2}{z_0}$. 由题设截距相等有 $\dfrac{a^2}{x_0}=\dfrac{b^2}{y_0}=\dfrac{c^2}{z_0}$ 即 $$y_0=\frac{b^2}{a^2}x_0,\qquad z_0=\frac{c^2}{a^2}x_0\tag{①}$$ 又 $$\frac{x_0^2}{a^2}+\frac{y_0^2}{b^2}+\frac{z_0^2}{c^2}=1\tag{②}$$ 由式①、②解得 $$x_0=\frac{\pm a^2}{\sqrt{a^2+b^2+c^2}},\qquad y_0=\frac{\pm b^2}{\sqrt{a^2+b^2+c^2}},\qquad z_0=\frac{\pm c^2}{\sqrt{a^2+b^2+c^2}}$$ 所以点 $\left(\dfrac{a^2}{\sqrt{a^2+b^2+c^2}},\dfrac{b^2}{\sqrt{a^2+b^2+c^2}},\dfrac{c^2}{\sqrt{a^2+b^2+c^2}}\right)$ 与点 $\left(\dfrac{-a^2}{\sqrt{a^2+b^2+c^2}},\dfrac{-b^2}{\sqrt{a^2+b^2+c^2}},\dfrac{-c^2}{\sqrt{a^2+b^2+c^2}}\right)$ 处的切平面在三坐标轴上的截距相等.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">点 $\left(\dfrac{a^2}{\sqrt{a^2+b^2+c^2}},\dfrac{b^2}{\sqrt{a^2+b^2+c^2}},\dfrac{c^2}{\sqrt{a^2+b^2+c^2}}\right)$ 与点 $\left(\dfrac{-a^2}{\sqrt{a^2+b^2+c^2}},\dfrac{-b^2}{\sqrt{a^2+b^2+c^2}},\dfrac{-c^2}{\sqrt{a^2+b^2+c^2}}\right)$.</span></div>
+</div>
+</article>
+<article class="problem" id="q787" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="787">【787】</span>
+<span class="q-group">由 F(x,y,z)=0 确定的曲面求切平面及法线</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x,y)$ 在点 $(0,0)$ 附近有定义，且 $f'_x(0,0)=3$，$f'_y(0,0)=1$，则 (A)$\mathrm{d}z\Big|_{(0,0)}=3\,\mathrm{d}x+\mathrm{d}y$ (B)曲面 $z=f(x,y)$ 在点 $(0,0,f(0,0))$ 的法向量为 $\{3,1,1\}$ (C)曲线 $\begin{cases}z=f(x,y)\\ y=0\end{cases}$ 在点 $(0,0,f(0,0))$ 的切向量为 $\{1,0,3\}$ (D)曲线 $\begin{cases}z=f(x,y)\\ y=0\end{cases}$ 在点 $(0,0,f(0,0))$ 的切向量为 $\{3,0,1\}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 对于选项（C），$xOz$ 面上曲线 $z=f(x,0)$ 在点 $(0,0,f(0,0))$ 处导数 $$\left.\frac{\mathrm{d}z}{\mathrm{d}x}\right|_{(0,0)}=f'_x(0,0)=3,$$ 且 $xOz$ 面上的向量在 $y$ 轴上的分量为零，故切线的方向向量为 $\{1,0,3\}$. 故应选（C）. <strong>点评</strong> 选项（A）不对. 因为函数 $z=f(x,y)$ 在点 $M_0(x_0,y_0)$ 处存在偏导数 $\left.\dfrac{\partial z}{\partial x}\right|_{M_0}$，$\left.\dfrac{\partial z}{\partial y}\right|_{M_0}$ 并不能保证 $z=f(x,y)$ 在点 $M_0$ 处可微. 选项（B）不对. 因为偏导数存在不一定能保证函数可微，所以也不一定能保证曲面 $z=f(x,y)$ 在相应点 $(x_0,y_0,f(x_0,y_0))$ 处存在切平面.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（C）.</span></div>
+</div>
+</article>
+<article class="problem" id="q788" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="788">【788】</span>
+<span class="q-group">由 F(x,y,z)=0 确定的曲面求切平面及法线</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">试证曲面 $z=xf\left(\dfrac{y}{x}\right)$ 上任一点处的切平面都过原点（其中 $f$ 具有一阶连续导数）.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial z}{\partial x}=f-\dfrac{y}{x}f'$，$\dfrac{\partial z}{\partial y}=f'$. 曲面上 $(x_0,y_0,z_0)$ 处切平面方程为 $$\left[f\left(\frac{y_0}{x_0}\right)-\frac{y_0}{x_0}f'\left(\frac{y_0}{x_0}\right)\right](x-x_0)+f'\left(\frac{y_0}{x_0}\right)(y-y_0)-(z-z_0)=0,$$ 整理得 $$\left[f\left(\frac{y_0}{x_0}\right)-\frac{y_0}{x_0}f'\left(\frac{y_0}{x_0}\right)\right]x+f'\left(\frac{y_0}{x_0}\right)y-z=0,$$ 故切平面过原点.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">曲面 $z=xf\left(\dfrac{y}{x}\right)$ 上任一点处的切平面都过原点（证毕）.</span></div>
+</div>
+</article>
+<article class="problem" id="q789" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="789">【789】</span>
+<span class="q-group">由 F(x,y,z)=0 确定的曲面求切平面及法线</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明曲面 $f(x-az,y-bz)=0$ 上任一点处的切平面均与直线 $\dfrac{x}{a}=\dfrac{y}{b}=z$ 平行.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 只需证明曲面上任一点处切平面的法向量 $\boldsymbol{n}$ 与所给直线的方向向量 $\boldsymbol{s}=\{a,b,1\}$ 垂直即可. <strong>证</strong> 设 $F(x,y,z)=f(x-az,y-bz)$ 则 $F'_x(x,y,z)=f'_1$，$F'_y(x,y,z)=f'_2$，$F'_z(x,y,z)=-af'_1-bf'_2$ 所以 $\boldsymbol{n}=\{f'_1,f'_2,-af'_1-bf'_2\}$ 而所给直线 $\dfrac{x}{a}=\dfrac{y}{b}=z$ 的方向向量 $\boldsymbol{s}=\{a,b,1\}$ 于是 $\boldsymbol{n}\cdot\boldsymbol{s}=af'_1+bf'_2-af'_1-bf'_2=0$，所以，曲面 $f(x-az,y-bz)=0$ 上任一点处的切平面均与直线 $\dfrac{x}{a}=\dfrac{y}{b}=z$ 平行.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">曲面 $f(x-az,y-bz)=0$ 上任一点处的切平面均与直线 $\dfrac{x}{a}=\dfrac{y}{b}=z$ 平行（证毕）.</span></div>
+</div>
+</article>
+<h3 class="grp-h">切平面的夹角问题</h3>
+<article class="problem" id="q790" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="790">【790】</span>
+<span class="q-group">切平面的夹角问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲面 $3x^2+y^2+z^2=12$ 上点 $M(-1,0,3)$ 处的切平面与平面 $z=0$ 的夹角是________. (A)$\dfrac{\pi}{6}$ (B)$\dfrac{\pi}{4}$ (C)$\dfrac{\pi}{3}$ (D)$\dfrac{\pi}{2}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $F(x,y,z)=3x^2+y^2+z^2-12$，则 $$F'_x(-1,0,3)=-6,\qquad F'_y(-1,0,3)=0,\qquad F'_z(-1,0,3)=6,$$ 曲面在点 $M$ 处切平面的法向量 $\boldsymbol{n}_1=\{-6,0,6\}$. 平面 $z=0$ 即 $xOy$ 坐标平面，其法向量可取为 $\boldsymbol{n}_2=\{0,0,1\}$. 于是切平面与平面 $z=0$ 的夹角 $\theta$ 的余弦是 $$\cos\theta=\frac{|\boldsymbol{n}_1\cdot\boldsymbol{n}_2|}{|\boldsymbol{n}_1|\ \cdot\ |\boldsymbol{n}_2|}=\frac{0+0+6}{\sqrt{(-6)^2+0^2+6^2}}\cdot\frac{1}{\sqrt{0^2+0^2+1^2}}=\frac{\sqrt{2}}{2},$$ 所以 $\theta=\dfrac{\pi}{4}$. 故应选（B）.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（B）.</span></div>
+</div>
+</article>
+<article class="problem" id="q791" data-secanchor="s15">
+<div class="q-head">
+<span class="q-no" data-n="791">【791】</span>
+<span class="q-group">切平面的夹角问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求球面 $x^2+y^2+z^2=14$ 与椭球面 $3x^2+y^2+z^2=16$ 在点 $P(-1,-2,3)$ 处的交角（即交点处两个切平面的夹角）.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $F(x,y,z)=x^2+y^2+z^2-14$，$G(x,y,z)=3x^2+y^2+z^2-16$，则 $$F'_x=2x,\qquad F'_y=2y,\qquad F'_z=2z,$$ $$G'_x=6x,\qquad G'_y=2y,\qquad G'_z=2z.$$ 所以曲面 $F(x,y,z)=0$ 和 $G(x,y,z)=0$ 在点 $P(-1,-2,3)$ 处切平面的法向量分别为：$\boldsymbol{n}_1=\{-2,-4,6\}$，$\boldsymbol{n}_2=\{-6,-4,6\}$. 设两个法向量的夹角为 $\varphi$，则 $$\cos\varphi=\frac{|\boldsymbol{n}_1\cdot\boldsymbol{n}_2|}{|\boldsymbol{n}_1|\ \cdot\ |\boldsymbol{n}_2|}=\frac{-2\times(-6)+(-4)\times(-4)+6\times 6}{\sqrt{(-2)^2+(-4)^2+6^2}\cdot\sqrt{(-6)^2+(-4)^2+6^2}}$$ $$=\frac{64}{\sqrt{56}\cdot\sqrt{88}}=\frac{8}{\sqrt{77}},$$ 因此，$\varphi=\arccos\dfrac{8}{\sqrt{77}}$ 为所给两个曲面在点 $P(-1,-2,3)$ 处的夹角.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\varphi=\arccos\dfrac{8}{\sqrt{77}}$.</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s16">§7. 方向导数与梯度</h2>
+<h2 class="sec-h" id="sec-s17">1. 方向导数</h2>
+<h2 class="sec-h" id="sec-s18">2. 梯度</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">求函数在某点沿某方向的方向导数</h3>
+<article class="problem" id="q792" data-secanchor="s18">
+<div class="q-head">
+<span class="q-no" data-n="792">【792】</span>
+<span class="q-group">求函数在某点沿某方向的方向导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $u=\ln(x+\sqrt{y^2+z^2})$ 在 $A(1,0,1)$ 点处沿 $A$ 点指向 $B(3,-2,2)$ 点方向的方向导数为______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial u}{\partial x}=\dfrac{1}{x+\sqrt{y^2+z^2}}$，$\dfrac{\partial u}{\partial y}=\dfrac{\dfrac{y}{\sqrt{y^2+z^2}}}{x+\sqrt{y^2+z^2}}$，$\dfrac{\partial u}{\partial z}=\dfrac{\dfrac{z}{\sqrt{y^2+z^2}}}{x+\sqrt{y^2+z^2}}$，$\dfrac{\partial u}{\partial x}\Big|_A=\dfrac12$，$\dfrac{\partial u}{\partial y}\Big|_A=0$，$\dfrac{\partial u}{\partial z}\Big|_A=\dfrac12$. 而 $\boldsymbol{AB}=\{2,-2,1\}$，$\cos\alpha=\dfrac23$，$\cos\beta=-\dfrac23$，$\cos\gamma=\dfrac13$. 则 $$\dfrac{\partial u}{\partial l}\Big|_A=\dfrac{\partial u}{\partial x}\Big|_A\cos\alpha+\dfrac{\partial u}{\partial y}\Big|_A\cos\beta+\dfrac{\partial u}{\partial z}\Big|_A\cos\gamma=\dfrac12.$$ 故应填 $\dfrac12$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac12$.</span></div>
+</div>
+</article>
+<article class="problem" id="q793" data-secanchor="s18">
+<div class="q-head">
+<span class="q-no" data-n="793">【793】</span>
+<span class="q-group">求函数在某点沿某方向的方向导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\boldsymbol{n}$ 是曲面 $2x^2+3y^2+z^2=6$ 在点 $P(1,1,1)$ 处指向外侧的法向量，则 $u=\dfrac{\sqrt{6x^2+8y^2}}{z}$ 在 $P$ 点处沿 $\boldsymbol{n}$ 方向的方向导数为______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $F(x,y,z)=2x^2+3y^2+z^2-6$ 因为 $F'_x(1,1,1)=4$，$F'_y(1,1,1)=6$，$F'_z(1,1,1)=2$，所以 $\boldsymbol{n}=\{4,6,2\}$，其方向余弦分别为 $$\cos\alpha=\frac{2}{\sqrt{14}},\qquad \cos\beta=\frac{3}{\sqrt{14}},\qquad \cos\gamma=\frac{1}{\sqrt{14}}.$$ $$\dfrac{\partial u}{\partial x}\Big|_P=\dfrac{6x}{z\sqrt{6x^2+8y^2}}\Big|_P=\dfrac{6}{\sqrt{14}},$$ $$\dfrac{\partial u}{\partial y}\Big|_P=\dfrac{8y}{z\sqrt{6x^2+8y^2}}\Big|_P=\dfrac{8}{\sqrt{14}},$$ $$\dfrac{\partial u}{\partial z}\Big|_P=-\dfrac{\sqrt{6x^2+8y^2}}{z^2}\Big|_P=-\sqrt{14},$$ 故 $\dfrac{\partial u}{\partial \boldsymbol{n}}\Big|_P=\Big(\dfrac{\partial u}{\partial x}\cos\alpha+\dfrac{\partial u}{\partial y}\cos\beta+\dfrac{\partial u}{\partial z}\cos\gamma\Big)\Big|_P=\dfrac{11}{7}$. 故应填 $\dfrac{11}{7}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{11}{7}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q794" data-secanchor="s18">
+<div class="q-head">
+<span class="q-no" data-n="794">【794】</span>
+<span class="q-group">求函数在某点沿某方向的方向导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $u(x,y,z)=1+\dfrac{x^2}{6}+\dfrac{y^2}{12}+\dfrac{z^2}{18}$，单位向量 $\boldsymbol{n}=\dfrac{1}{\sqrt{3}}(1,1,1)$，则 $\dfrac{\partial u}{\partial \boldsymbol{n}}\Big|_{(1,2,3)}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial u}{\partial x}\Big|_{(1,2,3)}=\dfrac13$，$\dfrac{\partial u}{\partial y}\Big|_{(1,2,3)}=\dfrac13$，$\dfrac{\partial u}{\partial z}\Big|_{(1,2,3)}=\dfrac13$. 由单位向量 $\boldsymbol{n}$ 知，$\cos\alpha=\dfrac{1}{\sqrt3}$，$\cos\beta=\dfrac{1}{\sqrt3}$，$\cos\gamma=\dfrac{1}{\sqrt3}$，所以 $$\dfrac{\partial u}{\partial \boldsymbol{n}}\Big|_{(1,2,3)}=\dfrac{\partial u}{\partial x}\Big|_{(1,2,3)}\cos\alpha+\dfrac{\partial u}{\partial y}\Big|_{(1,2,3)}\cos\beta+\dfrac{\partial u}{\partial z}\Big|_{(1,2,3)}\cos\gamma$$ $$=\dfrac13\cdot\dfrac{1}{\sqrt3}+\dfrac13\cdot\dfrac{1}{\sqrt3}+\dfrac13\cdot\dfrac{1}{\sqrt3}=\dfrac{\sqrt3}{3}.$$ 故应填 $\dfrac{\sqrt3}{3}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{\sqrt3}{3}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q795" data-secanchor="s18">
+<div class="q-head">
+<span class="q-no" data-n="795">【795】</span>
+<span class="q-group">求函数在某点沿某方向的方向导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">数量场 $u=xy+yz+zx$ 在点 $P(1,2,3)$ 处沿其向径方向的方向导数 $\dfrac{\partial u}{\partial \boldsymbol{r}}\Big|_P=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 向径 $\boldsymbol{r}=\overrightarrow{OP}=\{1,2,3\}$，$|\overrightarrow{OP}|=\sqrt{1^2+2^2+3^2}=\sqrt{14}$，且向径 $\boldsymbol{r}$ 的方向余弦为 $$\cos\alpha=\frac{1}{\sqrt{14}},\qquad \cos\beta=\frac{2}{\sqrt{14}},\qquad \cos\gamma=\frac{3}{\sqrt{14}},$$ 因此 $$\dfrac{\partial u}{\partial \boldsymbol{r}}=\dfrac{\partial u}{\partial x}\cos\alpha+\dfrac{\partial u}{\partial y}\cos\beta+\dfrac{\partial u}{\partial z}\cos\gamma=(y+z)\cos\alpha+(x+z)\cos\beta+(x+y)\cos\gamma,$$ $$\dfrac{\partial u}{\partial \boldsymbol{r}}\Big|_P=(2+3)\dfrac{1}{\sqrt{14}}+(1+3)\dfrac{2}{\sqrt{14}}+(1+2)\dfrac{3}{\sqrt{14}}=\dfrac{22}{\sqrt{14}}.$$ 故应填 $\dfrac{22}{\sqrt{14}}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{22}{\sqrt{14}}$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">讨论函数在某点处的梯度</h3>
+<article class="problem" id="q796" data-secanchor="s18">
+<div class="q-head">
+<span class="q-no" data-n="796">【796】</span>
+<span class="q-group">讨论函数在某点处的梯度</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $u=\ln(x^2+y^2+z^2)$ 在点 $M(1,2,-2)$ 处的梯度 $\text{grad}u\big|_M=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因 $\text{grad}u=\dfrac{\partial u}{\partial x}\boldsymbol{i}+\dfrac{\partial u}{\partial y}\boldsymbol{j}+\dfrac{\partial u}{\partial z}\boldsymbol{k}=\dfrac{2x}{x^2+y^2+z^2}\boldsymbol{i}+\dfrac{2y}{x^2+y^2+z^2}\boldsymbol{j}+\dfrac{2z}{x^2+y^2+z^2}\boldsymbol{k}$，所以 $\text{grad}u\big|_{M(1,2,-2)}=\dfrac29\boldsymbol{i}+\dfrac49\boldsymbol{j}-\dfrac49\boldsymbol{k}$. 故应填 $\dfrac29\boldsymbol{i}+\dfrac49\boldsymbol{j}-\dfrac49\boldsymbol{k}$，或 $\dfrac29\{1,2,-2\}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac29\boldsymbol{i}+\dfrac49\boldsymbol{j}-\dfrac49\boldsymbol{k}$，或 $\dfrac29\{1,2,-2\}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q797" data-secanchor="s18">
+<div class="q-head">
+<span class="q-no" data-n="797">【797】</span>
+<span class="q-group">讨论函数在某点处的梯度</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">问函数 $u=xy^2z$ 在点 $P(1,-1,2)$ 处沿什么方向的方向导数最大？并求出此方向导数的最大值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 由梯度的几何意义可知，函数 $u$ 在点 $P$ 沿其梯度方向的方向导数值最大，且其最大值即为函数在该点处的梯度向量的模. <strong>解</strong> 由 $u=xy^2z$ 可知 $$\dfrac{\partial u}{\partial x}=y^2z,\qquad \dfrac{\partial u}{\partial y}=2xyz,\qquad \dfrac{\partial u}{\partial z}=xy^2.$$ 所以 $\text{grad}u\big|_P=\Big\{\dfrac{\partial u}{\partial x},\dfrac{\partial u}{\partial y},\dfrac{\partial u}{\partial z}\Big\}\Big|_P=\{2,-4,1\}$， $$\Big|\text{grad}u\big|_P\Big|=\sqrt{2^2+(-4)^2+1^2}=\sqrt{21}.$$ 所以方向 $\{2,-4,1\}$ 是函数 $u$ 在点 $P$ 处方向导数值最大的方向，其方向导数最大值为 $\sqrt{21}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">方向 $\{2,-4,1\}$ 是函数 $u$ 在点 $P$ 处方向导数值最大的方向，其方向导数最大值为 $\sqrt{21}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q798" data-secanchor="s18">
+<div class="q-head">
+<span class="q-no" data-n="798">【798】</span>
+<span class="q-group">讨论函数在某点处的梯度</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $u=x^2+y^2-z^2$ 在点 $M_1(1,0,1)$，$M_2(0,1,0)$ 的梯度之间的夹角.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 由于梯度是向量，故求梯度之间的夹角实际上是求两向量之间的夹角. 为此先求出两点的梯度，然后根据 $\cos\theta=\dfrac{\boldsymbol{n}_1\cdot\boldsymbol{n}_2}{|\boldsymbol{n}_1|\cdot|\boldsymbol{n}_2|}$（其中 $\boldsymbol{n}_1$、$\boldsymbol{n}_1$ 为两向量）来求出 $\theta$ 值. <strong>解</strong> $\text{grad}u\big|_{M_1}=\Big\{\dfrac{\partial u}{\partial x},\dfrac{\partial u}{\partial y},\dfrac{\partial u}{\partial z}\Big\}\Big|_{M_1}=\{2x,2y,-2z\}\Big|_{(1,0,1)}=\{2,0,-2\}$， $\text{grad}u\big|_{M_2}=\{2x,2y,-2z\}\Big|_{(0,1,0)}=\{0,2,0\}$. 又因为 $\{2,0,-2\}\cdot\{0,2,0\}=0$. 所以两梯度之间的夹角为 $\dfrac{\pi}{2}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\pi}{2}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关散度的计算</h3>
+<article class="problem" id="q799" data-secanchor="s18">
+<div class="q-head">
+<span class="q-no" data-n="799">【799】</span>
+<span class="q-group">有关散度的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设数量场 $u=\ln\sqrt{x^2+y^2+z^2}$，则 $\text{div}(\text{grad}u)=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial u}{\partial x}=\dfrac12\cdot\dfrac{2x}{x^2+y^2+z^2}=\dfrac{x}{x^2+y^2+z^2}$，$\dfrac{\partial u}{\partial y}=\dfrac{y}{x^2+y^2+z^2}$，$\dfrac{\partial u}{\partial z}=\dfrac{z}{x^2+y^2+z^2}$， 则 $\text{grad}u=\dfrac{\partial u}{\partial x}\boldsymbol{i}+\dfrac{\partial u}{\partial y}\boldsymbol{j}+\dfrac{\partial u}{\partial z}\boldsymbol{k}=\dfrac{x\boldsymbol{i}+y\boldsymbol{j}+z\boldsymbol{k}}{x^2+y^2+z^2}$， $$\text{div}(\text{grad}u)=\dfrac{\partial}{\partial x}\Big(\dfrac{x}{x^2+y^2+z^2}\Big)+\dfrac{\partial}{\partial y}\Big(\dfrac{y}{x^2+y^2+z^2}\Big)+\dfrac{\partial}{\partial z}\Big(\dfrac{z}{x^2+y^2+z^2}\Big)$$ $$=\dfrac{-x^2+y^2+z^2}{(x^2+y^2+z^2)^2}+\dfrac{x^2-y^2+z^2}{(x^2+y^2+z^2)^2}+\dfrac{x^2+y^2-z^2}{(x^2+y^2+z^2)^2}=\dfrac{1}{x^2+y^2+z^2}.$$ 故应填 $\dfrac{1}{x^2+y^2+z^2}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{x^2+y^2+z^2}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q800" data-secanchor="s18">
+<div class="q-head">
+<span class="q-no" data-n="800">【800】</span>
+<span class="q-group">有关散度的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $r=\sqrt{x^2+y^2+z^2}$，则 $\text{div}(\text{grad}\,r)\Big|_{(1,-2,2)}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\text{grad}\,r=\dfrac{\partial r}{\partial x}\boldsymbol{i}+\dfrac{\partial r}{\partial y}\boldsymbol{j}+\dfrac{\partial r}{\partial z}\boldsymbol{k}=\dfrac{x}{\sqrt{x^2+y^2+z^2}}\boldsymbol{i}+\dfrac{y}{\sqrt{x^2+y^2+z^2}}\boldsymbol{j}+\dfrac{z}{\sqrt{x^2+y^2+z^2}}\boldsymbol{k}$， $$\text{div}(\text{grad}\,r)\Big|_{(1,-2,2)}$$ $$=\Big[\dfrac{\partial}{\partial x}\Big(\dfrac{x}{\sqrt{x^2+y^2+z^2}}\Big)+\dfrac{\partial}{\partial y}\Big(\dfrac{y}{\sqrt{x^2+y^2+z^2}}\Big)+\dfrac{\partial}{\partial z}\Big(\dfrac{z}{\sqrt{x^2+y^2+z^2}}\Big)\Big]\Big|_{(1,-2,2)}$$ $$=\dfrac{2}{\sqrt{x^2+y^2+z^2}}\Big|_{(1,-2,2)}=\dfrac23.$$ 故应填 $\dfrac23$. <strong>点评</strong> 本题考查了梯度和散度的计算公式 $$\text{div}(\text{grad}\,r)=\dfrac{\partial}{\partial x}\Big(\dfrac{\partial r}{\partial x}\Big)+\dfrac{\partial}{\partial y}\Big(\dfrac{\partial r}{\partial y}\Big)+\dfrac{\partial}{\partial z}\Big(\dfrac{\partial r}{\partial z}\Big).$$ 注意 $\text{div}f$ 应为一个数.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac23$.</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s19">§8. 多元函数的极值及其求法</h2>
+<h2 class="sec-h" id="sec-s20">1. 极值</h2>
+<h2 class="sec-h" id="sec-s21">2. 条件极值、拉格朗日乘数法</h2>
+<h2 class="sec-h" id="sec-s22">3. 函数的最大值和最小值</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">极值点的判定</h3>
+<article class="problem" id="q801" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="801">【801】</span>
+<span class="q-group">极值点的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设可微函数 $f(x,y)$ 在点 $(x_0,y_0)$ 取得极小值，则下列结论正确的是______. (A) $f(x_0,y)$ 在 $y=y_0$ 处的导数大于零 (B) $f(x_0,y)$ 在 $y=y_0$ 处的导数等于零 (C) $f(x_0,y)$ 在 $y=y_0$ 处的导数小于零 (D) $f(x_0,y)$ 在 $y=y_0$ 处的导数不存在</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由可微函数极值存在的必要条件知，$f'_x(x_0,y_0)=0$，$f'_y(x_0,y_0)=0$，即 $$\dfrac{\mathrm{d}}{\mathrm{d}x}[f(x,y_0)]\Big|_{x=x_0}=0,\qquad \dfrac{\mathrm{d}}{\mathrm{d}y}[f(x_0,y)]\Big|_{y=y_0}=0.$$ 故应选 (B). <strong>点评</strong> 由可微函数 $f(x,y)$ 在点 $(x_0,y_0)$ 取得极小值知 $(x_0,y_0)$ 点应为驻点.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B).</span></div>
+</div>
+</article>
+<article class="problem" id="q802" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="802">【802】</span>
+<span class="q-group">极值点的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知函数 $f(x,y)$ 在点 $(0,0)$ 的某个邻域内连续，且 $\lim\limits_{\substack{x\to 0\\ y\to 0}}\dfrac{f(x,y)-xy}{(x^2+y^2)^2}=1$，则______. (A) 点 $(0,0)$ 不是 $f(x,y)$ 的极值点 (B) 点 $(0,0)$ 是 $f(x,y)$ 的极大值点 (C) 点 $(0,0)$ 是 $f(x,y)$ 的极小值点 (D) 根据所给条件无法判断点 $(0,0)$ 是否为 $f(x,y)$ 的极值点</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\lim\limits_{\substack{x\to 0\\ y\to 0}}\dfrac{f(x,y)-xy}{(x^2+y^2)^2}=1$ 知，分子的极限必为零，从而有 $f(0,0)=0$， 且 $f(x,y)-xy\approx(x^2+y^2)^2$（当 $|x|$、$|y|$ 充分小时）， 于是 $f(x,y)-f(0,0)\approx xy+(x^2+y^2)^2$. 可见当 $y=x$ 且 $|x|$ 充分小时， $$f(x,y)-f(0,0)\approx x^2+4x^4&gt;0;$$ 而当 $y=-x$ 且 $|x|$ 充分小时， $$f(x,y)-f(0,0)\approx -x^2+4x^4&lt;0.$$ 说明函数 $f(x,y)$ 在点 $(0,0)$ 的充分小的邻域内既不恒大于 $f(0,0)$，又不恒小于 $f(0,0)$，所以点 $(0,0)$ 不是 $f(x,y)$ 的极值点. 故应选 (A).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A).</span></div>
+</div>
+</article>
+<article class="problem" id="q803" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="803">【803】</span>
+<span class="q-group">极值点的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=e^{2x}(x+y^2+2y)$，则点 $\left(\dfrac12,-1\right)$ 是该函数的______. (A) 驻点，但不是极值点 (B) 驻点，且是极小值点 (C) 驻点，且是极大值点 (D) 驻点，偏导数不存在的点</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\begin{cases}\dfrac{\partial z}{\partial x}=(2x+2y^2+4y+1)e^{2x}=0\\[2mm] \dfrac{\partial z}{\partial y}=(2y+2)e^{2x}=0\end{cases}$ 把 $\left(\dfrac12,-1\right)$ 代入满足方程，是驻点. 且 $A=4(x+y^2+2y+1)e^{2x}\Big|_{(\frac12,-1)}=2e&gt;0$，$B=(4y+4)e^{2x}\Big|_{(\frac12,-1)}=0$，$C=2e^{2x}\Big|_{(\frac12,-1)}=2e$. 故应选 (B).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B).</span></div>
+</div>
+</article>
+<article class="problem" id="q804" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="804">【804】</span>
+<span class="q-group">极值点的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $z=xy(1-x-y)$ 的极值点是 (A) $(0,0)$ (B) $(0,1)$ (C) $(1,0)$ (D) $\left(\dfrac13,\dfrac13\right)$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\dfrac{\partial z}{\partial x}=y(1-2x-y)$，$\dfrac{\partial z}{\partial y}=x(1-x-2y)$ 令 $\begin{cases}y(1-2x-y)=0\\ x(1-x-2y)=0\end{cases}$ 解得 $\begin{cases}x=0\\ y=0\end{cases}$，$\begin{cases}x=0\\ y=1\end{cases}$，$\begin{cases}x=1\\ y=0\end{cases}$，$\begin{cases}x=\dfrac13\\[1mm] y=\dfrac13\end{cases}$ 而 $$\dfrac{\partial^2 z}{\partial x^2}=-2y,\qquad \dfrac{\partial^2 z}{\partial x\partial y}=1-2x-2y,\qquad \dfrac{\partial^2 z}{\partial y^2}=-2x$$ 当 $x=\dfrac13$，$y=\dfrac13$ 时， $$A=\dfrac{\partial^2 z}{\partial x^2}\Big|_{(\frac13,\frac13)}=-\dfrac23,\qquad B=\dfrac{\partial^2 z}{\partial x\partial y}\Big|_{(\frac13,\frac13)}=-\dfrac13,\qquad C=\dfrac{\partial^2 z}{\partial y^2}\Big|_{(\frac13,\frac13)}=-\dfrac23$$ $B^2-AC=\dfrac19-\dfrac49=-\dfrac13&lt;0$. 且 $A&lt;0$，因此点 $\left(\dfrac13,\dfrac13\right)$ 是函数的极大值点. 容易验证，点 $(0,0)$，$(0,1)$ 和 $(1,0)$ 都不是函数的极值点. 故应选 (D).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D).</span></div>
+</div>
+</article>
+<h3 class="grp-h">求多元函数的无条件极值</h3>
+<article class="problem" id="q805" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="805">【805】</span>
+<span class="q-group">求多元函数的无条件极值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $z=3axy-x^3-y^3$ ($a&gt;0$) 的极值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 解方程组 $$\begin{cases}\dfrac{\partial z}{\partial x}=3ay-3x^2=0\\[2mm] \dfrac{\partial z}{\partial y}=3ax-3y^2=0\end{cases}$$ 解得驻点：$(0,0)$，$(a,a)$. 又 $$\dfrac{\partial^2 z}{\partial x^2}=-6x,\qquad \dfrac{\partial^2 z}{\partial x\partial y}=3a,\qquad \dfrac{\partial^2 z}{\partial y^2}=-6y$$ 于是在点 $(0,0)$ 处有 $$A=0,\quad B=3a,\quad C=0,\quad AC-B^2=-9a^2&lt;0$$ 故 $(0,0)$ 不是函数的极值点. 又在点 $(a,a)$ 处有 $$A=-6a,\quad B=3a,\quad C=-6a,\quad AC-B^2=27a^2&gt;0$$ 又 $A=-6a&lt;0$，故所给函数在 $(a,a)$ 处有极大值 $z_{\max}=a^3$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$(0,0)$ 不是函数的极值点；函数在 $(a,a)$ 处有极大值 $z_{\max}=a^3$.</span></div>
+</div>
+</article>
+<article class="problem" id="q806" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="806">【806】</span>
+<span class="q-group">求多元函数的无条件极值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">某养殖场饲养两种鱼，若甲种鱼放养 $x$(万尾)，乙种鱼放养 $y$(万尾)，收获时两种鱼的收获量分别为 $$(3-\alpha x-\beta y)x \qquad\text{和}\qquad (4-\beta x-2\alpha y)y \qquad(\alpha&gt;\beta&gt;0)$$ 求使产鱼总量最大的放养数.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设产鱼总量为 $z$，则 $$z=3x+4y-\alpha x^2-2\alpha y^2-2\beta xy$$ 由极值的必要条件，得方程组 $$\begin{cases}\dfrac{\partial z}{\partial x}=3-2\alpha x-2\beta y=0\\[2mm] \dfrac{\partial z}{\partial y}=4-4\alpha y-2\beta x=0\end{cases}$$ 由于 $\alpha&gt;\beta&gt;0$，知其系数行列式 $\Delta=4(2\alpha^2-\beta^2)&gt;0$. 故方程组有唯一解 $$x_0=\dfrac{3\alpha-2\beta}{2\alpha^2-\beta^2}\qquad y_0=\dfrac{4\alpha-3\beta}{2(2\alpha^2-\beta^2)}$$ 记 $$A=\dfrac{\partial^2 z}{\partial x^2}=-2\alpha,\qquad B=\dfrac{\partial^2 z}{\partial x\partial y}=-2\beta,\qquad \dfrac{\partial^2 z}{\partial y^2}=-4\alpha$$ 有 $$B^2-AC=4\beta^2-8\alpha^2=-4(2\alpha^2-\beta^2)$$ 由条件知 $B^2-AC&lt;0$，且 $A&lt;0$，因此 $z$ 在 $(x_0,y_0)$ 处有极大值，即最大值. 容易验证 $x_0&gt;0$，$y_0&gt;0$，且 $$\begin{cases}(3-\alpha x_0-\beta y_0)x_0=\dfrac{3x_0}{2}&gt;0\\[2mm] (4-\beta x_0-2\alpha y_0)y_0=2y_0&gt;0\end{cases}$$ 综上所述，$x_0$ 和 $y_0$ 分别为所求甲和乙种鱼的放养数.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$x_0=\dfrac{3\alpha-2\beta}{2\alpha^2-\beta^2}$ 和 $y_0=\dfrac{4\alpha-3\beta}{2(2\alpha^2-\beta^2)}$ 分别为所求甲和乙种鱼的放养数.</span></div>
+</div>
+</article>
+<h3 class="grp-h">二元隐函数求无条件极值</h3>
+<article class="problem" id="q807" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="807">【807】</span>
+<span class="q-group">二元隐函数求无条件极值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=z(x,y)$ 是由 $x^2-6xy+10y^2-2yz-z^2+18=0$ 确定的函数，求 $z=z(x,y)$ 的极值点和极值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 方程 $x^2-6xy+10y^2-2yz-z^2+18=0$ 两边分别对 $x$，$y$ 求偏导数，得 $$\begin{cases}2x-6y-2y\dfrac{\partial z}{\partial x}-2z\dfrac{\partial z}{\partial x}=0.\\[2mm] -6x+20y-2z-2y\dfrac{\partial z}{\partial y}-2z\dfrac{\partial z}{\partial y}=0.\end{cases}\tag{①②}$$ 令 $\begin{cases}\dfrac{\partial z}{\partial x}=0\\[1mm] \dfrac{\partial z}{\partial y}=0\end{cases}$，得 $\begin{cases}x-3y=0\\ -3x+10y-z=0\end{cases}$，故 $\begin{cases}x=3y\\ z=y\end{cases}$. 将上式代入 $x^2-6xy+10y^2-2yz-z^2+18=0$，可得 $$\begin{cases}x=9\\ y=3\\ z=3\end{cases}\qquad\text{或}\qquad\begin{cases}x=-9\\ y=-3\\ z=-3\end{cases}$$ ①式关于 $x$ 求偏导得 $2-2y\dfrac{\partial^2 z}{\partial x^2}-2\Big(\dfrac{\partial z}{\partial x}\Big)^2-2z\dfrac{\partial^2 z}{\partial x^2}=0$， ①式关于 $y$ 求偏导得 $-6-2\dfrac{\partial z}{\partial x}-2y\dfrac{\partial^2 z}{\partial x\partial y}-2\dfrac{\partial z}{\partial y}\cdot\dfrac{\partial z}{\partial x}-2z\dfrac{\partial^2 z}{\partial x\partial y}=0$， ②式关于 $y$ 求偏导得 $20-2\dfrac{\partial z}{\partial y}-2\dfrac{\partial z}{\partial y}-2y\dfrac{\partial^2 z}{\partial y^2}-2\Big(\dfrac{\partial z}{\partial y}\Big)^2-2z\dfrac{\partial^2 z}{\partial y^2}=0$， 所以 $$A=\dfrac{\partial^2 z}{\partial x^2}\Big|_{(9,3,3)}=\dfrac16,\quad B=\dfrac{\partial^2 z}{\partial x\partial y}\Big|_{(9,3,3)}=-\dfrac12,\quad C=\dfrac{\partial^2 z}{\partial y^2}\Big|_{(9,3,3)}=\dfrac53,$$ 故 $B^2-AC=-\dfrac{1}{36}&lt;0$，又 $A=\dfrac16&gt;0$，从而点 $(9,3)$ 是 $z(x,y)$ 的极小值点，极小值为 $z(9,3)=3$. 类似地，由 $$A=\dfrac{\partial^2 z}{\partial x^2}\Big|_{(-9,-3,-3)}=-\dfrac16,$$ $$B=\dfrac{\partial^2 z}{\partial x\partial y}\Big|_{(-9,-3,-3)}=\dfrac12,$$ $$C=\dfrac{\partial^2 z}{\partial y^2}\Big|_{(-9,-3,-3)}=-\dfrac53,$$ 可知 $B^2-AC=-\dfrac{1}{36}&lt;0$，又 $A=-\dfrac16&lt;0$，所以点 $(-9,-3)$ 是 $z(x,y)$ 的极大值点，极大值为 $z(-9,-3)=-3$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">点 $(9,3)$ 是 $z(x,y)$ 的极小值点，极小值为 $z(9,3)=3$；点 $(-9,-3)$ 是 $z(x,y)$ 的极大值点，极大值为 $z(-9,-3)=-3$.</span></div>
+</div>
+</article>
+<article class="problem" id="q808" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="808">【808】</span>
+<span class="q-group">二元隐函数求无条件极值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=z(x,y)$ 是由方程 $$x^2+y^2+z^2-2x+4y-6z-11=0$$ 所确定的函数，求该函数的极值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 配方法　方程 $x^2+y^2+z^2-2x+4y-6z-11=0$ 可变形为 $$(x-1)^2+(y+2)^2+(z-3)^2=25$$ 于是 $$z=3\pm\sqrt{25-(x-1)^2-(y+2)^2}$$ 显然，当 $x=1$，$y=-2$ 时，根号中的极大值为 $5$. 由此可知，$z=3\pm5$ 为极值，$z=8$ 为极大值，$z=-2$ 为极小值.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$z=8$ 为极大值，$z=-2$ 为极小值.</span></div>
+</div>
+</article>
+<h3 class="grp-h">多元函数条件极值的判定</h3>
+<article class="problem" id="q809" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="809">【809】</span>
+<span class="q-group">多元函数条件极值的判定</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x,y)$ 与 $\varphi(x,y)$ 均为可微函数，且 $\varphi'_y(x,y)\neq0$. 已知 $(x_0,y_0)$ 是 $f(x,y)$ 在约束条件 $\varphi(x,y)=0$ 下的一个极值点，下列选项正确的是______. (A) 若 $f'_x(x_0,y_0)=0$，则 $f'_y(x_0,y_0)=0$ (B) 若 $f'_x(x_0,y_0)=0$，则 $f'_y(x_0,y_0)\neq0$ (C) 若 $f'_x(x_0,y_0)\neq0$，则 $f'_y(x_0,y_0)=0$ (D) 若 $f'_x(x_0,y_0)\neq0$，则 $f'_y(x_0,y_0)\neq0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $F(x,y,\lambda)=f(x,y)+\lambda\varphi(x,y)$，由题设知 $$\begin{cases}F'_x(x_0,y_0)=f'_x(x_0,y_0)+\lambda\varphi'_x(x_0,y_0)=0\\ F'_y(x_0,y_0)=f'_y(x_0,y_0)+\lambda\varphi'_y(x_0,y_0)=0\end{cases}$$ 消去 $\lambda$ 得 $$\varphi'_y(x_0,y_0)\cdot f'_x(x_0,y_0)=f'_y(x_0,y_0)\cdot\varphi'_x(x_0,y_0)$$ 又 $\varphi'_y(x_0,y_0)\neq0$，所以当 $f'_x(x_0,y_0)\neq0$ 时，$f'_y(x_0,y_0)\cdot\varphi'_x(x_0,y_0)\neq0$，从而 $f'_y(x_0,y_0)\neq0$. 故应选 (D).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D).</span></div>
+</div>
+</article>
+<h3 class="grp-h">求二元函数的最大(小)值</h3>
+<article class="problem" id="q810" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="810">【810】</span>
+<span class="q-group">求二元函数的最大(小)值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求二元函数 $z=f(x,y)=x^2y(4-x-y)$ 在由直线 $x+y=6$、$x$ 轴和 $y$ 轴所围成的闭区域 $D$ 上的极值、最大值与最小值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由方程组 $\begin{cases}f'_x(x,y)=2xy(4-x-y)-x^2y=0\\ f'_y(x,y)=x^2(4-x-y)-x^2y=0\end{cases}$ 得 $x=0$，$(0\leqslant y\leqslant 6)$ 及点 $(4,0)$，$(2,1)$. 点 $(4,0)$ 及线段 $x=0$ 在 $D$ 的边界上，只有点 $(2,1)$ 是可能的极值点 $$f''_{xx}=8y-6xy-2y^2,\qquad f''_{xy}=8x-3x^2-4xy,\qquad f''_{yy}=-2x^2$$ 在点 $(2,1)$ 处 $$A=f''_{xx}(2,1)=(8y-6xy-2y^2)\Big|_{\substack{x=2\\ y=1}}=-6&lt;0,$$ $$B=f''_{xy}(2,1)=(8x-3x^2-4xy)\Big|_{\substack{x=2\\ y=1}}=-4$$ $$C=f''_{yy}(2,1)=-2x^2\Big|_{\substack{x=2\\ y=1}}=-8,$$ 则 $$B^2-AC=16-48=-32&lt;0.$$ 因此点 $(2,1)$ 是极大值点，极大值 $f(2,1)=4$. 在边界 $x=0(0\leqslant y\leqslant 6)$ 和 $y=0(0\leqslant x\leqslant 6)$ 上 $f(x,y)=0$，在边界 $x+y=6$ 上，$y=6-x$，代入 $f(x,y)$ 中得 $z=2x^3-12x^2(0\leqslant x\leqslant 6)$. 由 $z'=6x^2-24x=0$ 得 $x=0$，$x=4$. $z''\big|_{x=4}=12x-24\big|_{x=4}=24&gt;0$，所以点 $(4,2)$ 是边界上的极小值点. 极小值为 $f(4,2)=-64$. 经比较得，最大值为 $f(2,1)=4$，最小值为 $f(4,2)=-64$. <strong>点评</strong> 求连续函数在有界闭域 $D$ 上最值的步骤： (1) 求 $D$ 内的驻点和不可导点； (2) 用求极值的方法求 $D$ 的边界上最值的可疑点； (3) 比较这些点的函数值的大小.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">极大值 $f(2,1)=4$；最大值为 $f(2,1)=4$，最小值为 $f(4,2)=-64$.</span></div>
+</div>
+</article>
+<article class="problem" id="q811" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="811">【811】</span>
+<span class="q-group">求二元函数的最大(小)值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求表面面积为 $a^2$ 的最大长方体的体积.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 以 $x$，$y$，$z$ 表示所求长方体各边的边长，则问题变为求函数 $v=xyz$ 的最大值，但其中 $x$，$y$，$z$ 应满足条件 $$2(xy+yz+zx)=a^2\quad\text{即}\quad z=\dfrac{a^2-2xy}{2(x+y)}$$ 因此，实质上是求二元函数 $$v=xy\dfrac{a^2-2xy}{2(x+y)}$$ 的最大值. 求出 $\dfrac{\partial v}{\partial x}$ 与 $\dfrac{\partial v}{\partial y}$，并令它们等于零得 $$\begin{cases}a^2-2x^2-4xy=0\\ a^2-2y^2-4xy=0\end{cases}$$ 解之得 $x=y=\dfrac{a}{\sqrt6}$，代入 $z=\dfrac{a^2-2xy}{2(x+y)}$ 得 $z=\dfrac{a}{\sqrt6}$，即表面面积为 $a^2$ 的最大长方体是边长为 $\dfrac{a}{\sqrt6}$ 的立方体，其体积为 $\dfrac{a^3}{6\sqrt6}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">表面面积为 $a^2$ 的最大长方体是边长为 $\dfrac{a}{\sqrt6}$ 的立方体，其体积为 $\dfrac{a^3}{6\sqrt6}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q812" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="812">【812】</span>
+<span class="q-group">求二元函数的最大(小)值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x$，$y$，$z$ 为实数，且满足关系式 $e^x+y^2+|z|=3$. 试证 $e^xy^2|z|\leqslant 1$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $f(x,y)=e^xy^2(3-e^x-y^2)$，因为 $|z|\geqslant 0$，故函数 $f(x,y)$ 的定义域是 $D:e^x+y^2\leqslant 3$，现求函数 $f(x,y)$ 在域 $D:e^x+y^2\leqslant 3$ 上的最大值. 令 $$\begin{cases}\dfrac{\partial f}{\partial x}=y^2e^x(3-2e^x-y^2)=0\\[2mm] \dfrac{\partial f}{\partial y}=ye^x(6-2e^x-4y^2)=0\end{cases}$$ 则 $y=0$，此时对域 $D$ 上的点来说，应有 $x\leqslant\ln 3$，或 $$\begin{cases}3-2e^x-y^2=0\\ 6-2e^x-4y^2=0\end{cases}$$ 解此方程组得 $$\begin{cases}x=0\\ y=1\end{cases}\qquad\text{或}\qquad\begin{cases}x=0\\ y=-1\end{cases},$$ 但当 $y=0$ 时，$f(x,y)=0$；而当 $x=0$，$y=\pm 1$ 时，$f(0,\pm 1)=1$. 此外，在域 $D$ 的边界上，即 $e^x+y^2=3$ 时， $$f(x,y)=e^xy^2(3-3)=0$$ 所以，$f(0,\pm 1)=1$ 为函数 $f(x,y)$ 在 $e^x+y^2\leqslant 3$ 上的最大值，即 $e^xy^2|z|\leqslant 1$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(0,\pm 1)=1$ 为函数 $f(x,y)$ 在 $e^x+y^2\leqslant 3$ 上的最大值，即 $e^xy^2|z|\leqslant 1$（证毕）.</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用条件极值求二元函数的最大(小)值</h3>
+<article class="problem" id="q813" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="813">【813】</span>
+<span class="q-group">利用条件极值求二元函数的最大(小)值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求 $f(x,y)=x^2-y^2+2$ 在椭圆域 $D=\left\{(x,y)\,\Big|\,x^2+\dfrac{y^2}{4}\leqslant 1\right\}$ 上的最大值和最小值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $$\begin{cases}f'_x(x,y)=2x=0\\ f'_y(x,y)=-2y=0\end{cases}$$ 可求得 $f(x,y)=x^2-y^2+2$ 在椭圆域 $x^2+\dfrac{y^2}{4}\leqslant 1$ 内的唯一驻点 $(0,0)$. 在椭圆 $x^2+\dfrac{y^2}{4}=1$ 上， $$f(x,y)=x^2-(4-4x^2)+2=5x^2-2,\quad(-1\leqslant x\leqslant 1)$$ 求得椭圆域 $D$ 上可能的最值 $$f(\pm 1,0)=3,\qquad f(0,\pm 2)=-2.$$ 又由于 $f(0,0)=2$，因此 $f(x,y)$ 在椭圆域 $D$ 上的最大值为 $3$，最小值为 $-2$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">最大值为 $3$，最小值为 $-2$.</span></div>
+</div>
+</article>
+<article class="problem" id="q814" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="814">【814】</span>
+<span class="q-group">利用条件极值求二元函数的最大(小)值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知函数 $z=f(x,y)$ 的全微分 $\mathrm{d}z=2x\mathrm{d}x-2y\mathrm{d}y$，并且 $f(1,1)=2$. 求 $f(x,y)$ 在椭圆域 $D=\left\{(x,y)\,\Big|\,x^2+\dfrac{y^2}{4}\leqslant 1\right\}$ 上的最大值和最小值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\mathrm{d}z=2x\mathrm{d}x-2y\mathrm{d}y$ 可知 $$z=f(x,y)=x^2-y^2+C.$$ 再由 $f(1,1)=2$，得 $C=2$， 故 $z=f(x,y)=x^2-y^2+2$. 令 $\dfrac{\partial f}{\partial x}=2x=0$，$\dfrac{\partial f}{\partial y}=-2y=0$， 解得驻点 $(0,0)$. 在椭圆 $x^2+\dfrac{y^2}{4}=1$ 上，$z=x^2-(4-4x^2)+2$，即 $z=5x^2-2\ (-1\leqslant x\leqslant 1)$， 其最大值为 $z\big|_{x=\pm 1}=3$，最小值为 $z\big|_{x=0}=-2$， 再与 $f(0,0)=2$ 比较，可知 $f(x,y)$ 在椭圆域 $D$ 上的最大值为 $3$，最小值为 $-2$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">最大值为 $3$，最小值为 $-2$.</span></div>
+</div>
+</article>
+<article class="problem" id="q815" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="815">【815】</span>
+<span class="q-group">利用条件极值求二元函数的最大(小)值</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">在椭圆 $x^2+4y^2=4$ 上求一点，使其到直线 $2x+3y-6=0$ 的距离最短.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $P(x,y)$ 为椭圆 $x^2+4y^2=4$ 上任意一点，则 $P$ 到直线 $2x+3y-6=0$ 的距离 $$d=\dfrac{|2x+3y-6|}{\sqrt{13}}$$ 求 $d$ 的最小值点即求 $d^2$ 的最小值点. 作 $$F(x,y,\lambda)=\dfrac{1}{13}(2x+3y-6)^2+\lambda(x^2+4y^2-4)$$ 由拉格朗日乘数法，有 $$\dfrac{\partial F}{\partial x}=0,\qquad \dfrac{\partial F}{\partial y}=0,\qquad \dfrac{\partial F}{\partial \lambda}=0$$ 即 $$\begin{cases}\dfrac{4}{13}(2x+3y-6)+2\lambda x=0\\[2mm] \dfrac{6}{13}(2x+3y-6)+8\lambda y=0\\ x^2+4y^2-4=0\end{cases}$$ 解之得 $$x_1=\dfrac85,\quad y_1=\dfrac35;\qquad x_2=-\dfrac85,\quad y_2=-\dfrac35$$ 于是 $$d\Big|_{(x_1,y_1)}=\dfrac{1}{\sqrt{13}},\qquad d\Big|_{(x_2,y_2)}=\dfrac{11}{\sqrt{13}}$$ （解答未完，续于下一批）
+<strong>解</strong>（接上批解答后段）由问题的实际意义知最短距离是存在的．因此 $\left(\dfrac{8}{5},\dfrac{3}{5}\right)$ 即为所求的点．点评 本题考查多元函数的条件极值，使用了拉格朗日乘数法求解．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\left(\dfrac{8}{5},\dfrac{3}{5}\right)$ 即为所求的点</span></div>
+</div>
+</article>
+<article class="problem" id="q816" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="816">【816】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求抛物线 $y=x^{2}$ 和直线 $x-y-2=0$ 之间的最短距离．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $(x_{1},y_{1})$ 为抛物线 $y=x^{2}$ 上任意点，而 $(x_{2},y_{2})$ 是直线 $x-y-2=0$ 上的任意点，求函数 $$d^{2}=(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}$$ 在条件 $y_{1}=x_{1}^{2}$，$x_{2}-y_{2}-2=0$ 下的极值．令 $$F(x_{1},x_{2},y_{1},y_{2},\lambda_{1},\lambda_{2})=(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}+\lambda_{1}(y_{1}-x_{1}^{2})+\lambda_{2}(x_{2}-y_{2}-2)$$ 解方程组 $$\begin{cases}\dfrac{\partial F}{\partial x_{1}}=-2(x_{2}-x_{1})-2\lambda_{1}x_{1}=0\\ \dfrac{\partial F}{\partial x_{2}}=2(x_{2}-x_{1})+\lambda_{2}=0\\ \dfrac{\partial F}{\partial y_{1}}=-2(y_{2}-y_{1})+\lambda_{1}=0\\ \dfrac{\partial F}{\partial y_{2}}=2(y_{2}-y_{1})-\lambda_{2}=0\\ y_{1}=x_{1}^{2}\\ x_{2}-y_{2}-2=0\end{cases}$$ 解此方程组得唯一一组解 $x_{1}=\dfrac{1}{2}$，$y_{1}=\dfrac{1}{4}$，$x_{2}=\dfrac{11}{8}$，$y_{2}=-\dfrac{5}{8}$．显然，当 $(x_{1},y_{1})$，$(x_{2},y_{2})$ 中至少有一个移向无穷远处时，$d\to+\infty$，故 $d$ 的最小值在有限点处达到，从而在点 $\left(\dfrac{1}{2},\dfrac{1}{4}\right)$，$\left(\dfrac{11}{8},-\dfrac{5}{8}\right)$ 处，取得最短距离 $d=\dfrac{7}{8}\sqrt{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">最短距离 $d=\dfrac{7}{8}\sqrt{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q817" data-secanchor="s22">
+<div class="q-head">
+<span class="q-no" data-n="817">【817】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">在已给的椭球面 $\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}}+\dfrac{z^{2}}{c^{2}}=1$ 内一切内接的长方体（各边分别平行坐标轴）中，求其体积最大者．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $x,y,z$ 为长方体在第一卦限中的顶点坐标，则长方体的体积为 $V=8xyz$．因为 $(x,y,z)$ 在椭球面上，所以它满足方程 $$\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}}+\dfrac{z^{2}}{c^{2}}=1$$ 问题是求函数 $V=8xyz$ 在满足条件 $\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}}+\dfrac{z^{2}}{c^{2}}=1$ 下的最大值，为此，引入下面的拉格朗日函数 $$F(x,y,z,\lambda)=8xyz+\lambda\left(\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}}+\dfrac{z^{2}}{c^{2}}-1\right)$$ 由 $$\dfrac{\partial F}{\partial x}=0,\quad \dfrac{\partial F}{\partial y}=0,\quad \dfrac{\partial F}{\partial z}=0,\quad \dfrac{\partial F}{\partial\lambda}=0$$ 得 $$\begin{cases}8yz+\dfrac{2x}{a^{2}}\lambda=0\\ 8zx+\dfrac{2y}{b^{2}}\lambda=0\\ 8xy+\dfrac{2z}{c^{2}}\lambda=0\\ \dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}}+\dfrac{z^{2}}{c^{2}}=1\end{cases}$$ 此方程组在第一卦限 $(x&gt;0,y&gt;0,z&gt;0)$ 只有一组解 $$x=\dfrac{a}{\sqrt{3}},\quad y=\dfrac{b}{\sqrt{3}},\quad z=\dfrac{c}{\sqrt{3}}$$ 下面说明这组解即为所求的解．事实上，这个问题是求连续函数 $$V=8xy\sqrt{1-\dfrac{x^{2}}{a^{2}}-\dfrac{y^{2}}{b^{2}}}$$ 在闭域 $x\geqslant 0,y\geqslant 0,\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}}\leqslant 1$ 上的最大值问题，因为在边界上函数 $V=0$，所以最大值不可能在边界上达到，又在开域 $x&gt;0,y&gt;0,\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}}&lt;1$ 内，只有一个可疑点 $\left(\dfrac{a}{\sqrt{3}},\dfrac{b}{\sqrt{3}},\dfrac{c}{\sqrt{3}}\right)$，故这个可疑点是最大值点．故长方体的最大体积为 $\dfrac{8abc}{3\sqrt{3}}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">长方体的最大体积为 $\dfrac{8abc}{3\sqrt{3}}$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s23">9. 二元函数的泰勒公式</h2>
+<div class="sec-intro">设函数 $z=f(x,y)$ 在点 $(x_{0},y_{0})$ 的某一邻域内连续且有直到 $(n+1)$ 阶的连续偏导数，并设 $(x=x_{0}+h,y=y_{0}+k)$ 为此邻域内任意一点，我们有二元函数的 $n$ 阶泰勒公式 $$f(x_{0}+h,y_{0}+k)=f(x_{0},y_{0})+\left(h\dfrac{\partial}{\partial x}+k\dfrac{\partial}{\partial y}\right)f(x_{0},y_{0})+\dfrac{1}{2!}\left(h\dfrac{\partial}{\partial x}+h\dfrac{\partial}{\partial y}\right)^{2}f(x_{0},y_{0})+\cdots+\dfrac{1}{n!}\left(h\dfrac{\partial}{\partial x}+h\dfrac{\partial}{\partial y}\right)^{n}f(x_{0},y_{0})+R_{n}\tag{①}$$ 其中 $$R_{n}=\dfrac{1}{(n+1)!}\left(h\dfrac{\partial}{\partial x}+k\dfrac{\partial}{\partial y}\right)^{n+1}f(x_{0}+\theta h,y+\theta k),\quad 0&lt;\theta&lt;1$$ 叫做拉格朗日形式的余项．特别地，当 $n=0$ 时，公式①成为 $$f(x_{0}+h,y_{0}+k)=f(x_{0},y_{0})+hf_{x}'(x_{0}+\theta h,y_{0}+\theta k)+kf_{y}'(x_{0}+\theta h,y_{0}+\theta k)$$ 它叫做二元函数的拉格朗日中值定理．又当 $n=1$ 时，公式①成为 $$f(x_{0}+h,y_{0}+k)=f(x_{0},y_{0})+hf_{x}'(x_{0},y_{0})+kf_{y}'(x_{0},y_{0})+\dfrac{1}{2!}\{h^{2}f_{xx}''(x_{0}+\theta h,y_{0}+\theta k)+2hkf_{xy}''(x_{0}+\theta h,y_{0}+\theta k)+k^{2}f_{yy}''(x_{0}+\theta h,y_{0}+\theta k)\},\quad 0&lt;\theta&lt;1$$（注：①式中 $\left(h\dfrac{\partial}{\partial x}+h\dfrac{\partial}{\partial y}\right)^{2}$ 与 $\left(h\dfrac{\partial}{\partial x}+h\dfrac{\partial}{\partial y}\right)^{n}$ 两处第二个算子前的系数原书排印为 $h$（依首项及余项通式应为 $k$），照录．）</div>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">求二元函数的麦克劳林公式</h3>
+<article class="problem" id="q818" data-secanchor="s23">
+<div class="q-head">
+<span class="q-no" data-n="818">【818】</span>
+<span class="q-group">求二元函数的麦克劳林公式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $f(x,y)=\ln(1+x+y)$ 的三阶麦克劳林公式．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $$f_{x}'(x,y)=f_{y}'(x,y)=\dfrac{1}{1+x+y},$$ $$f_{xx}''(x,y)=f_{xy}''(x,y)=f_{yy}''(x,y)=-\dfrac{1}{(1+x+y)^{2}},$$ $$\dfrac{\partial^{3}f}{\partial x^{p}\partial y^{3-p}}=\dfrac{2!}{(1+x+y)^{3}},\quad (p=0,1,2,3),$$ $$\dfrac{\partial^{4}f}{\partial x^{p}\partial y^{4-p}}=-\dfrac{3!}{(1+x+y)^{4}},\quad (p=0,1,2,3,4),$$ 所以 $$\left(x\dfrac{\partial}{\partial x}+y\dfrac{\partial}{\partial y}\right)f(0,0)=xf_{x}'(0,0)+yf_{y}'(0,0)=x+y,$$ $$\left(x\dfrac{\partial}{\partial x}+y\dfrac{\partial}{\partial y}\right)^{2}f(0,0)=x^{2}f_{xx}''(0,0)+2xyf_{xy}''(0,0)+y^{2}f_{yy}''(0,0)=-(x+y)^{2},$$ $$\left(x\dfrac{\partial}{\partial x}+y\dfrac{\partial}{\partial y}\right)^{3}f(0,0)=x^{3}f_{xxx}'''(0,0)+3x^{2}yf_{xxy}'''(0,0)+3xy^{2}f_{xyy}'''(0,0)+y^{3}f_{yyy}'''(0,0)=2(x+y)^{3}.$$ 又 $f(0,0)=0$，故 $$\ln(1+x+y)=x+y-\dfrac{1}{2}(x+y)^{2}+\dfrac{1}{3}(x+y)^{3}+R_{3},$$ 其中 $$R_{3}=\dfrac{1}{4!}\left(x\dfrac{\partial}{\partial x}+y\dfrac{\partial}{\partial y}\right)^{4}f(\theta x,\theta y)=-\dfrac{1}{4}\cdot\dfrac{(x+y)^{4}}{(1+\theta x+\theta y)^{4}},\quad (0&lt;\theta&lt;1).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\ln(1+x+y)=x+y-\dfrac{1}{2}(x+y)^{2}+\dfrac{1}{3}(x+y)^{3}+R_{3}$，其中 $R_{3}=-\dfrac{1}{4}\cdot\dfrac{(x+y)^{4}}{(1+\theta x+\theta y)^{4}}$（$0&lt;\theta&lt;1$）</span></div>
+</div>
+</article>
+<article class="problem" id="q819" data-secanchor="s23">
+<div class="q-head">
+<span class="q-no" data-n="819">【819】</span>
+<span class="q-group">求二元函数的麦克劳林公式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $f(x,y)=\mathrm{e}^{x}\ln(1+y)$ 的三阶麦克劳林公式．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f_{x}'=\mathrm{e}^{x}\ln(1+y)$，$$f_{y}'=\dfrac{\mathrm{e}^{x}}{1+y}$$ $$f_{xx}''=\mathrm{e}^{x}\ln(1+y),\quad f_{xy}''=\dfrac{\mathrm{e}^{x}}{1+y},\quad f_{yy}''=-\dfrac{\mathrm{e}^{x}}{(1+y)^{2}},$$ $$f_{xxx}'''=\mathrm{e}^{x}\ln(1+y),\quad f_{xxy}'''=\dfrac{\mathrm{e}^{x}}{1+y},\quad f_{xyy}'''=-\dfrac{\mathrm{e}^{x}}{(1+y)^{2}},\quad f_{yyy}'''=\dfrac{2\mathrm{e}^{x}}{(1+y)^{3}},$$ $$\left(x\dfrac{\partial}{\partial x}+y\dfrac{\partial}{\partial y}\right)f(0,0)=xf_{x}'(0,0)+yf_{y}'(0,0)=y,$$ $$\left(x\dfrac{\partial}{\partial x}+y\dfrac{\partial}{\partial y}\right)^{2}f(0,0)=x^{2}f_{xx}''(0,0)+2xyf_{xy}''(0,0)+y^{2}f_{yy}''(0,0)=2xy-y^{2},$$ $$\left(x\dfrac{\partial}{\partial x}+y\dfrac{\partial}{\partial y}\right)^{3}f(0,0)=x^{3}f_{xxx}'''(0,0)+3x^{2}yf_{xxy}'''(0,0)+3xy^{2}f_{xyy}'''(0,0)+y^{3}f_{yyy}'''(0,0)=3x^{2}y-3xy^{2}+2y^{3},$$ $$f(0,0)=0,$$ $$\mathrm{e}^{x}\ln(1+y)=f(0,0)+\left(x\dfrac{\partial}{\partial x}+y\dfrac{\partial}{\partial y}\right)f(0,0)+\dfrac{1}{2!}\left(x\dfrac{\partial}{\partial x}+y\dfrac{\partial}{\partial y}\right)^{2}f(0,0)+\dfrac{1}{3!}\left(x\dfrac{\partial}{\partial x}+y\dfrac{\partial}{\partial y}\right)^{3}f(0,0)+R_{3}$$ $$=y+\dfrac{1}{2!}(2xy-y^{2})+\dfrac{1}{3!}(3x^{2}y-3xy^{2}+2y^{3})+R_{3}$$ 其中 $$R_{3}=\dfrac{\mathrm{e}^{\theta x}}{24}\left[x^{4}\ln(1+\theta y)+\dfrac{4x^{3}y}{1+\theta y}-\dfrac{6x^{2}y^{2}}{(1+\theta y)^{2}}+\dfrac{8xy^{3}}{(1+\theta y)^{3}}-\dfrac{6y^{4}}{(1+\theta y)^{4}}\right]\quad (0&lt;\theta&lt;1).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\mathrm{e}^{x}\ln(1+y)=y+\dfrac{1}{2!}(2xy-y^{2})+\dfrac{1}{3!}(3x^{2}y-3xy^{2}+2y^{3})+R_{3}$，其中 $R_{3}=\dfrac{\mathrm{e}^{\theta x}}{24}\left[x^{4}\ln(1+\theta y)+\dfrac{4x^{3}y}{1+\theta y}-\dfrac{6x^{2}y^{2}}{(1+\theta y)^{2}}+\dfrac{8xy^{3}}{(1+\theta y)^{3}}-\dfrac{6y^{4}}{(1+\theta y)^{4}}\right]$（$0&lt;\theta&lt;1$）</span></div>
+</div>
+</article>
+<h3 class="grp-h">求二元函数的泰勒公式</h3>
+<article class="problem" id="q820" data-secanchor="s23">
+<div class="q-head">
+<span class="q-no" data-n="820">【820】</span>
+<span class="q-group">求二元函数的泰勒公式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $f(x,y)=2x^{2}-xy-y^{2}-6x-3y+5$ 在点 $(1,-2)$ 的泰勒公式．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f(1,-2)=5$，$$f_{x}'(1,-2)=(4x-y-6)\Big|_{(1,-2)}=0,\quad f_{y}'(1,-2)=(-x-2y-3)\Big|_{(1,-2)}=0,$$ $$f_{xx}''(1,-2)=4,\quad f_{xy}''(1,-2)=-1,\quad f_{yy}''(1,-2)=-2$$ 又阶数为 3 的各偏导函数为零，所以 $f(x,y)=f[1+(x-1),-2+(y+2)]$ $$=f(1,-2)+(x-1)f_{x}'(1,-2)+(y+2)f_{y}'(1,-2)+\dfrac{1}{2!}\big[(x-1)^{2}$$ $$f_{xx}''(1,-2)+2(x-1)(y+2)f_{xy}''(1,-2)+(y+2)^{2}f_{yy}''(1,-2)\big]$$ $$=5+\dfrac{1}{2!}\left[4(x-1)^{2}-2(x-1)(y+2)-2(y+2)^{2}\right]$$ $$=5+2(x-1)^{2}-(x-1)(y+2)-(y+2)^{2}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x,y)=5+2(x-1)^{2}-(x-1)(y+2)-(y+2)^{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q821" data-secanchor="s23">
+<div class="q-head">
+<span class="q-no" data-n="821">【821】</span>
+<span class="q-group">求二元函数的泰勒公式</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $f(x,y)=\sin x\sin y$ 在点 $\left(\dfrac{\pi}{4},\dfrac{\pi}{4}\right)$ 的二阶泰勒公式，并写出余项 $R_{2}$．</div>
+<div class="book-note">※ 末行第二个等式左端原书排印为 $y=\dfrac{\pi}{4}+\theta\left(y-\dfrac{\pi}{4}\right)$（依上文 $f(\xi,\eta)$ 应为 $\eta$），照录。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f_{x}'=\cos x\cdot\sin y$，$f_{y}'=\sin x\cdot\cos y$，$$f_{xx}''=-\sin x\sin y,\quad f_{xy}''=\cos x\cos y,\quad f_{yy}''=-\sin x\sin y,$$ $$f_{xxx}'''=-\cos x\sin y,\quad f_{xxy}'''=-\sin x\cos y,\quad f_{xyy}'''=-\cos x\sin y,\quad f_{yyy}'''=-\sin x\cos y,$$ $$\sin x\sin y=f\left[\dfrac{\pi}{4}+\left(x-\dfrac{\pi}{4}\right),\dfrac{\pi}{4}+\left(y-\dfrac{\pi}{4}\right)\right]$$ $$=f\left(\dfrac{\pi}{4},\dfrac{\pi}{4}\right)+\left[\left(x-\dfrac{\pi}{4}\right)\dfrac{\partial}{\partial x}+\left(y-\dfrac{\pi}{4}\right)\dfrac{\partial}{\partial y}\right]f\left(\dfrac{\pi}{4},\dfrac{\pi}{4}\right)+\dfrac{1}{2!}\left[\left(x-\dfrac{\pi}{4}\right)^{2}\left(-\dfrac{1}{2}\right)\right.$$ $$\left.+\ 2\left(x-\dfrac{\pi}{4}\right)\left(y-\dfrac{\pi}{4}\right)\cdot\dfrac{1}{2}+\left(y-\dfrac{\pi}{4}\right)^{2}\left(-\dfrac{1}{2}\right)\right]+R_{2}$$ $$=\dfrac{1}{2}+\dfrac{1}{2}\left(x-\dfrac{\pi}{4}\right)+\dfrac{1}{2}\left(y-\dfrac{\pi}{4}\right)-\dfrac{1}{2}\left[\left(x-\dfrac{\pi}{4}\right)^{2}\right.$$ $$\left.-\ 2\left(x-\dfrac{\pi}{4}\right)\left(y-\dfrac{\pi}{4}\right)+\left(y-\dfrac{\pi}{4}\right)^{2}\right]+R_{2},$$ 其中 $$R_{2}=\dfrac{1}{3!}\left[\left(x-\dfrac{\pi}{4}\right)\dfrac{\partial}{\partial x}+\left(y-\dfrac{\pi}{4}\right)\dfrac{\partial}{\partial y}\right]^{3}f(\xi,\eta)$$ $$=-\dfrac{1}{6}\left[\cos\xi\cdot\sin\eta\cdot\left(x-\dfrac{\pi}{4}\right)^{3}+3\sin\xi\cos\eta\cdot\left(x-\dfrac{\pi}{4}\right)^{2}\left(y-\dfrac{\pi}{4}\right)\right.$$ $$\left.+\ 3\cos\xi\cdot\sin\eta\cdot\left(x-\dfrac{\pi}{4}\right)\left(y-\dfrac{\pi}{4}\right)^{2}+\sin\xi\cos\eta\left(y-\dfrac{\pi}{4}\right)^{3}\right],$$ $$\xi=\dfrac{\pi}{4}+\theta\left(x-\dfrac{\pi}{4}\right),\quad y=\dfrac{\pi}{4}+\theta\left(y-\dfrac{\pi}{4}\right)\quad (0&lt;\theta&lt;1).$$</div>
+
+</div>
+</article>
+<h2 class="sec-h" id="sec-s24">10. 综合提高题型</h2>
+<h3 class="grp-h">利用一元函数微积分的知识求解多元函数问题</h3>
+<article class="problem" id="q822" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="822">【822】</span>
+<span class="q-group">利用一元函数微积分的知识求解多元函数问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $z=f(x,y)$，有 $\dfrac{\partial^{2}f}{\partial y^{2}}=2$，且 $f(x,0)=1$，$f_{y}'(x,0)=x$，则 $f(x,y)=$ ______． (A) $1-xy+y^{2}$　(B) $1+xy+y^{2}$　(C) $1-x^{2}y+y^{2}$　(D) $1+x^{2}y+y^{2}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial^{2}f}{\partial y^{2}}=2$ 的两边对 $y$ 积分，得 $$f_{y}'(x,y)=2y+\varphi(x)$$ 将 $f_{y}'(x,0)=x$ 代入上式，得 $\varphi(x)=x$，于是 $$f_{y}'(x,y)=2y+x,$$ 该式两边再对 $y$ 积分，得 $$f(x,y)=y^{2}+xy+\psi(x),$$ 将 $f(x,0)=1$ 代入上式，得 $\psi(x)=1$，故 $f(x,y)=y^{2}+xy+1$．故应选（B）．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（B）</span></div>
+</div>
+</article>
+<article class="problem" id="q823" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="823">【823】</span>
+<span class="q-group">利用一元函数微积分的知识求解多元函数问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z(x,y)=(1-y^{2})f(y-2x)$，且已知 $f'(y)=\dfrac{y\mathrm{e}^{y}}{(1+y)^{2}}$，$f(0)=1$，则 $\int_{0}^{2}z(1,y)\mathrm{d}y=$ ______． (A) $-1$　(B) $-2$　(C) $1$　(D) $2$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $f'(y)=\dfrac{y\mathrm{e}^{y}}{(1+y)^{2}}$，有 $$f(y)=\int\dfrac{y\mathrm{e}^{y}}{(1+y)^{2}}\mathrm{d}y=-\int y\mathrm{e}^{y}\,\mathrm{d}\left(\dfrac{1}{1+y}\right)=-\dfrac{y\mathrm{e}^{y}}{(1+y)}+\int\mathrm{e}^{y}\mathrm{d}y=\dfrac{\mathrm{e}^{y}}{(1+y)}+C$$ 再由 $f(0)=1$，得 $C=0$，故 $f(y)=\dfrac{\mathrm{e}^{y}}{1+y}$．于是 $$z(x,y)=(1-y^{2})\dfrac{\mathrm{e}^{y-2x}}{1+(y-2x)},\quad z(1,y)=-(1+y)\mathrm{e}^{y-2}$$ 所以 $$\int_{0}^{2}z(1,y)\mathrm{d}y=-\int_{0}^{2}(1+y)\mathrm{e}^{y-2}\,\mathrm{d}y=-\left.y\mathrm{e}^{y-2}\right|_{0}^{2}=-2.$$ 故应选（B）．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（B）</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用复合函数求导法则求解</h3>
+<article class="problem" id="q824" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="824">【824】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $z=f(x,y)$ 在点 $(1,1)$ 处可微，且 $f(1,1)=1$，$\dfrac{\partial f}{\partial x}\Big|_{(1,1)}=2$，$\dfrac{\partial f}{\partial y}\Big|_{(1,1)}=3$，$\varphi(x)=f(x,f(x,x))$．求 $\dfrac{\mathrm{d}}{\mathrm{d}x}\varphi^{3}(x)\Big|_{x=1}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\varphi(1)=f(1,f(1,1))=f(1,1)=1$，$$\dfrac{\mathrm{d}}{\mathrm{d}x}\varphi^{3}(x)\Big|_{x=1}=\left[3\varphi^{2}(x)\dfrac{\mathrm{d}\varphi(x)}{\mathrm{d}x}\right]\Big|_{x=1}$$ $$=3\varphi^{2}(x)\left[f_{1}'(x,f(x,x))+f_{2}'(x,f(x,x))\left(f_{1}'(x,x)+f_{2}'(x,x)\right)\right]\Big|_{x=1}$$ $$=3\cdot 1\cdot[2+3(2+3)]=51.$$ 点评 本题考查了一元函数的复合函数求导法则及多元函数的复合函数求导法则．正确求出 $\dfrac{\mathrm{d}\varphi(x)}{\mathrm{d}x}$ 是本题得分的关键．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$51$</span></div>
+</div>
+</article>
+<article class="problem" id="q825" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="825">【825】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知函数 $u=u(x,y)$ 满足方程 $$\dfrac{\partial^{2}u}{\partial x^{2}}-\dfrac{\partial^{2}u}{\partial y^{2}}+a\left(\dfrac{\partial u}{\partial x}+\dfrac{\partial u}{\partial y}\right)=0\tag{①}$$ （1）试选择参数 $\alpha,\beta$，利用变换 $u(x,y)=v(x,y)\mathrm{e}^{\alpha x+\beta y}$ 将原方程变形，使新方程中不出现一阶偏导数项；（2）再令 $\xi=x+y$，$\eta=x-y$，使新方程变换形式．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> （1）$$\dfrac{\partial u}{\partial x}=\dfrac{\partial v}{\partial x}\mathrm{e}^{\alpha x+\beta y}+v\alpha\mathrm{e}^{\alpha x+\beta y}=\left(\dfrac{\partial v}{\partial x}+\alpha\cdot v\right)\mathrm{e}^{\alpha x+\beta y}\tag{②}$$ $$\dfrac{\partial^{2}u}{\partial x^{2}}=\left(\dfrac{\partial^{2}v}{\partial x^{2}}+\alpha\cdot\dfrac{\partial v}{\partial x}\right)\mathrm{e}^{\alpha x+\beta y}+\left(\dfrac{\partial v}{\partial x}+\alpha\cdot v\right)\alpha\,\mathrm{e}^{\alpha x+\beta y}=\left(\dfrac{\partial^{2}v}{\partial x^{2}}+2\alpha\dfrac{\partial v}{\partial x}+\alpha^{2}v\right)\mathrm{e}^{\alpha x+\beta y}\tag{③}$$ $$\dfrac{\partial u}{\partial y}=\left(\dfrac{\partial v}{\partial y}+\beta v\right)\mathrm{e}^{\alpha x+\beta y}\tag{④}$$ $$\dfrac{\partial^{2}u}{\partial y^{2}}=\left(\dfrac{\partial^{2}v}{\partial y^{2}}+2\beta\dfrac{\partial v}{\partial y}+\beta^{2}v\right)\mathrm{e}^{\alpha x+\beta y}\tag{⑤}$$ 将②，③，④，⑤代入①并消去 $\mathrm{e}^{\alpha x+\beta y}$，得 $$\dfrac{\partial^{2}v}{\partial x^{2}}-\dfrac{\partial^{2}v}{\partial y^{2}}+(2\alpha+a)\dfrac{\partial v}{\partial x}+(-2\beta+a)\dfrac{\partial v}{\partial y}+(\alpha^{2}-\beta^{2}+a\cdot\alpha+a\cdot\beta)v=0$$ 由题意可知，应令 $$2\alpha+a=0,\quad -2\beta+a=0\qquad \alpha=-\dfrac{a}{2},\quad \beta=\dfrac{a}{2}$$ 故原方程变为 $$\dfrac{\partial^{2}v}{\partial x^{2}}-\dfrac{\partial^{2}v}{\partial y^{2}}=0;\tag{⑥}$$ （2）令 $\xi=x+y$，$\eta=x-y$，故 $$\dfrac{\partial v}{\partial x}=\dfrac{\partial v}{\partial\xi}+\dfrac{\partial v}{\partial\eta},\quad \dfrac{\partial v}{\partial y}=\dfrac{\partial v}{\partial\xi}-\dfrac{\partial v}{\partial\eta},$$ $$\dfrac{\partial^{2}v}{\partial x^{2}}=\dfrac{\partial^{2}v}{\partial\xi^{2}}+2\dfrac{\partial^{2}v}{\partial\xi\partial\eta}+\dfrac{\partial^{2}v}{\partial\eta^{2}},\quad \dfrac{\partial^{2}v}{\partial y^{2}}=\dfrac{\partial^{2}v}{\partial\xi^{2}}-2\dfrac{\partial^{2}v}{\partial\xi\partial\eta}+\dfrac{\partial^{2}v}{\partial\eta^{2}},$$ 代入⑥得 $\dfrac{\partial^{2}v}{\partial\xi\partial\eta}=0$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">新方程为 $\dfrac{\partial^{2}v}{\partial\xi\partial\eta}=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q826" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="826">【826】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $f(u,v)$ 由关系式 $f[xg(y),y]=x+g(y)$ 确定，其中函数 $g(y)$ 可微，且 $g(y)\neq 0$，则 $\dfrac{\partial^{2}f}{\partial u\,\partial v}=$ ______．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $f[xg(y),y]=x+g(y)$ 得 $f(u,v)=\dfrac{u}{g(v)}+g(v)$，从而 $\dfrac{\partial f}{\partial u}=\dfrac{1}{g(v)}$，$\dfrac{\partial^{2}f}{\partial u\,\partial v}=-\dfrac{g'(v)}{[g(v)]^{2}}$．故应填 $-\dfrac{g'(v)}{[g(v)]^{2}}$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-\dfrac{g'(v)}{[g(v)]^{2}}$</span></div>
+</div>
+</article>
+<article class="problem" id="q827" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="827">【827】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $z=f(u)$，方程 $u=\varphi(u)+\int_{y}^{x}p(t)\,\mathrm{d}t$ 确定 $u$ 是 $x,y$ 的函数，其中 $f(u),\varphi(u)$ 可微；$p(t),\varphi'(u)$ 连续，且 $\varphi'(u)\neq 1$．求 $p(y)\dfrac{\partial z}{\partial x}+p(x)\dfrac{\partial z}{\partial y}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $z=f(u)$ 可得 $\dfrac{\partial z}{\partial x}=f'(u)\dfrac{\partial u}{\partial x}$，$\dfrac{\partial z}{\partial y}=f'(u)\dfrac{\partial u}{\partial y}$；在方程 $u=\varphi(u)+\int_{y}^{x}p(t)\,\mathrm{d}t$ 两边分别对 $x,y$ 求偏导数，得 $$\dfrac{\partial u}{\partial x}=\varphi'(u)\dfrac{\partial u}{\partial x}+p(x),\quad \dfrac{\partial u}{\partial y}=\varphi'(u)\dfrac{\partial u}{\partial y}-p(y)$$ 所以 $$\dfrac{\partial u}{\partial x}=\dfrac{p(x)}{1-\varphi'(u)},\quad \dfrac{\partial u}{\partial y}=\dfrac{-p(y)}{1-\varphi'(u)};$$ 于是 $$p(y)\dfrac{\partial z}{\partial x}+p(x)\dfrac{\partial z}{\partial y}=\left[\dfrac{p(x)p(y)}{1-\varphi'(u)}-\dfrac{p(x)p(y)}{1-\varphi'(u)}\right]f'(u)=0.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$0$</span></div>
+</div>
+</article>
+<article class="problem" id="q828" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="828">【828】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x,y,z)=\mathrm{e}^{x}yz^{2}$，其中 $z=z(x,y)$ 是由 $x+y+z+xyz=0$ 确定的隐函数，则 $f_{x}'(0,1,-1)=$ ______．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$f_{x}'=\mathrm{e}^{x}yz^{2}+\mathrm{e}^{x}y\cdot 2z\dfrac{\partial z}{\partial x}=\mathrm{e}^{x}\left(yz^{2}+2yz\dfrac{\partial z}{\partial x}\right)$$ 由 $x+y+z+xyz=0$，两边关于 $x$ 求导得 $$1+\dfrac{\partial z}{\partial x}+yz+xy\dfrac{\partial z}{\partial x}=0$$ 把 $(0,1,-1)$ 代入得，$$\dfrac{\partial z}{\partial x}\Big|_{(0,1,-1)}=0$$ 所以 $f_{x}'(0,1,-1)=1$．故应填 $1$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $1$</span></div>
+</div>
+</article>
+<article class="problem" id="q829" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="829">【829】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $z=z(x,y)$ 是由方程 $x^{2}+y^{2}-z=\varphi(x+y+z)$ 所确定的函数，其中 $\varphi$ 具有二阶导数，且 $\varphi'\neq -1$．（1）求 $\mathrm{d}z$；（2）记 $u(x,y)=\dfrac{1}{x-y}\left(\dfrac{\partial z}{\partial x}-\dfrac{\partial z}{\partial y}\right)$，求 $\dfrac{\partial u}{\partial x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> （1）令 $F(x,y,z)=x^{2}+y^{2}-z-\varphi(x+y+z)$，则 $F_{x}'=2x-\varphi'$，$F_{y}'=2y-\varphi'$，$F_{z}'=-1-\varphi'\neq 0$．由公式 $\dfrac{\partial z}{\partial x}=-\dfrac{F_{x}'}{F_{z}'}$，$\dfrac{\partial z}{\partial y}=-\dfrac{F_{y}'}{F_{z}'}$，得 $\dfrac{\partial z}{\partial x}=\dfrac{2x-\varphi'}{1+\varphi'}$，$\dfrac{\partial z}{\partial y}=\dfrac{2y-\varphi'}{1+\varphi'}$．所以 $\mathrm{d}z=\dfrac{\partial z}{\partial x}\mathrm{d}x+\dfrac{\partial z}{\partial y}\mathrm{d}y=\dfrac{1}{1+\varphi'}\left[(2x-\varphi')\mathrm{d}x+(2y-\varphi')\mathrm{d}y\right]$．（2）由于 $\dfrac{\partial z}{\partial x}-\dfrac{\partial z}{\partial y}=\dfrac{2(x-y)}{1+\varphi'}$，则 $u(x,y)=\dfrac{2}{1+\varphi'}$，所以 $\dfrac{\partial u}{\partial x}=\dfrac{-2}{(1+\varphi')^{2}}\left(1+\dfrac{\partial z}{\partial x}\right)\varphi''=-\dfrac{2(1+2x)\varphi''}{(1+\varphi')^{3}}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">（1）$\mathrm{d}z=\dfrac{1}{1+\varphi'}\left[(2x-\varphi')\mathrm{d}x+(2y-\varphi')\mathrm{d}y\right]$；（2）$\dfrac{\partial u}{\partial x}=-\dfrac{2(1+2x)\varphi''}{(1+\varphi')^{3}}$</span></div>
+</div>
+</article>
+<article class="problem" id="q830" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="830">【830】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $x+y-z=\mathrm{e}^{x}$，$x\mathrm{e}^{x}=\tan t$，$y=\cos t$，求 $\dfrac{\mathrm{d}^{2}z}{\mathrm{d}t^{2}}\Big|_{t=0}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由方程 $x+y-z=\mathrm{e}^{x}$ 两边对 $t$ 求导，得 $$\dfrac{\mathrm{d}x}{\mathrm{d}t}+\dfrac{\mathrm{d}y}{\mathrm{d}t}-\dfrac{\mathrm{d}z}{\mathrm{d}t}=\mathrm{e}^{x}\dfrac{\mathrm{d}z}{\mathrm{d}t}$$ 于是 $$\dfrac{\mathrm{d}z}{\mathrm{d}t}=\dfrac{1}{1+\mathrm{e}^{x}}\left(\dfrac{\mathrm{d}x}{\mathrm{d}t}+\dfrac{\mathrm{d}y}{\mathrm{d}t}\right)$$ $$\dfrac{\mathrm{d}^{2}z}{\mathrm{d}t^{2}}=\dfrac{1}{1+\mathrm{e}^{x}}\left(\dfrac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}}+\dfrac{\mathrm{d}^{2}y}{\mathrm{d}t^{2}}\right)-\dfrac{\mathrm{e}^{x}}{(1+\mathrm{e}^{x})^{2}}\cdot\dfrac{\mathrm{d}z}{\mathrm{d}t}\left(\dfrac{\mathrm{d}x}{\mathrm{d}t}+\dfrac{\mathrm{d}y}{\mathrm{d}t}\right)=\dfrac{1}{1+\mathrm{e}^{x}}\left(\dfrac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}}+\dfrac{\mathrm{d}^{2}y}{\mathrm{d}t^{2}}\right)-\dfrac{\mathrm{e}^{x}}{1+\mathrm{e}^{x}}\left(\dfrac{\mathrm{d}z}{\mathrm{d}t}\right)^{2}$$ 由 $x\mathrm{e}^{x}=\tan t$ 两边对 $t$ 求导，有 $$\mathrm{e}^{x}\cdot\dfrac{\mathrm{d}x}{\mathrm{d}t}+x\mathrm{e}^{x}\dfrac{\mathrm{d}x}{\mathrm{d}t}=\sec^{2}t,\quad \text{即}\ \dfrac{\mathrm{d}x}{\mathrm{d}t}=\dfrac{\sec^{2}t}{(1+x)\mathrm{e}^{x}}$$ 于是 $$\dfrac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}}=\dfrac{(2\sec^{2}t\cdot\tan t)(1+x)\mathrm{e}^{x}-(\sec^{2}t)(2+x)\mathrm{e}^{x}\cdot\dfrac{\mathrm{d}x}{\mathrm{d}t}}{(1+x)^{2}\mathrm{e}^{2x}}$$ 由 $y=\cos t$ 有 $\dfrac{\mathrm{d}y}{\mathrm{d}t}=-\sin t$，$\dfrac{\mathrm{d}^{2}y}{\mathrm{d}t^{2}}=-\cos t$ 而当 $t=0$ 时，$x=0$，$y=1$，代入方程 $x+y-z=\mathrm{e}^{x}$ 又可得 $z=0$ 于是 $$\dfrac{\mathrm{d}x}{\mathrm{d}t}\Big|_{t=0}=1,\quad \dfrac{\mathrm{d}y}{\mathrm{d}t}\Big|_{t=0}=0,\quad \dfrac{\mathrm{d}z}{\mathrm{d}t}\Big|_{t=0}=\dfrac{1}{2},\quad \dfrac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}}\Big|_{t=0}=-2,\quad \dfrac{\mathrm{d}^{2}y}{\mathrm{d}t^{2}}\Big|_{t=0}=-1$$ 所以 $$\dfrac{\mathrm{d}^{2}z}{\mathrm{d}t^{2}}\Big|_{t=0}=\dfrac{1}{2}(-2-1)-\dfrac{1}{2}\left(\dfrac{1}{2}\right)^{2}=-\dfrac{3}{2}-\dfrac{1}{8}=-\dfrac{13}{8}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$-\dfrac{13}{8}$</span></div>
+</div>
+</article>
+<article class="problem" id="q831" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="831">【831】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $u=f(x,y,z)$，$\varphi(x^{2},\mathrm{e}^{y},z)=0$，$y=\sin x$，其中 $f,\varphi$ 都具有一阶连续偏导数，且 $\dfrac{\partial\varphi}{\partial z}\neq 0$，求 $\dfrac{\mathrm{d}u}{\mathrm{d}x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\mathrm{d}u}{\mathrm{d}x}=\dfrac{\partial f}{\partial x}+\dfrac{\partial f}{\partial y}\cdot\dfrac{\mathrm{d}y}{\mathrm{d}x}+\dfrac{\partial f}{\partial z}\cdot\dfrac{\mathrm{d}z}{\mathrm{d}x}$，$\dfrac{\mathrm{d}y}{\mathrm{d}x}=\cos x$，$\dfrac{\mathrm{d}z}{\mathrm{d}x}=-\dfrac{1}{\varphi_{3}'}\left(2x\varphi_{1}'+\mathrm{e}^{y}\cos x\cdot\varphi_{2}'\right)$，故 $$\dfrac{\mathrm{d}u}{\mathrm{d}x}=\dfrac{\partial f}{\partial x}+\dfrac{\partial f}{\partial y}\cos x-\dfrac{\partial f}{\partial z}\cdot\dfrac{1}{\varphi_{3}'}\left(2x\varphi_{1}'+\mathrm{e}^{y}\cos x\cdot\varphi_{2}'\right).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\mathrm{d}u}{\mathrm{d}x}=\dfrac{\partial f}{\partial x}+\dfrac{\partial f}{\partial y}\cos x-\dfrac{\partial f}{\partial z}\cdot\dfrac{1}{\varphi_{3}'}\left(2x\varphi_{1}'+\mathrm{e}^{y}\cos x\cdot\varphi_{2}'\right)$</span></div>
+</div>
+</article>
+<article class="problem" id="q832" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="832">【832】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(u)$ 具有二阶连续导数，而 $z=f(\mathrm{e}^{x}\sin y)$ 满足方程 $\dfrac{\partial^{2}z}{\partial x^{2}}+\dfrac{\partial^{2}z}{\partial y^{2}}=\mathrm{e}^{2x}z$，求 $f(u)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\partial z}{\partial x}=f'(u)\mathrm{e}^{x}\sin y$，$\dfrac{\partial z}{\partial y}=f'(u)\mathrm{e}^{x}\cos y$；$$\dfrac{\partial^{2}z}{\partial x^{2}}=f'(u)\mathrm{e}^{x}\sin y+f''(u)\mathrm{e}^{2x}\sin^{2}y,\quad \dfrac{\partial^{2}z}{\partial y^{2}}=-f'(u)\mathrm{e}^{x}\sin y+f''(u)\mathrm{e}^{2x}\cos^{2}y;$$ 代入原方程得 $f''(u)-f(u)=0$ 由此解得 $f(u)=C_{1}\mathrm{e}^{u}+C_{2}\mathrm{e}^{-u}$，其中 $C_{1},C_{2}$ 为任意常数．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(u)=C_{1}\mathrm{e}^{u}+C_{2}\mathrm{e}^{-u}$（$C_{1},C_{2}$ 为任意常数）</span></div>
+</div>
+</article>
+<article class="problem" id="q833" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="833">【833】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(u)$ 在 $(0,+\infty)$ 内具有二阶导数，且 $z=f\left(\sqrt{x^{2}+y^{2}}\right)$ 满足等式 $$\dfrac{\partial^{2}z}{\partial x^{2}}+\dfrac{\partial^{2}z}{\partial y^{2}}=0.$$ （1）验证 $f''(u)+\dfrac{f'(u)}{u}=0$；（2）若 $f(1)=0$，$f'(1)=1$，求函数 $f(u)$ 的表达式．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> （1）由 $z=f(u)$，$u=\sqrt{x^{2}+y^{2}}$，得 $$\dfrac{\partial z}{\partial x}=f'\cdot\dfrac{x}{\sqrt{x^{2}+y^{2}}},\quad \dfrac{\partial^{2}z}{\partial x^{2}}=f''\cdot\dfrac{x^{2}}{x^{2}+y^{2}}+f'\cdot\dfrac{y^{2}}{(x^{2}+y^{2})^{\frac{3}{2}}},$$ $$\dfrac{\partial z}{\partial y}=f'\cdot\dfrac{y}{\sqrt{x^{2}+y^{2}}},\quad \dfrac{\partial^{2}z}{\partial y^{2}}=f''\cdot\dfrac{y^{2}}{x^{2}+y^{2}}+f'\cdot\dfrac{x^{2}}{(x^{2}+y^{2})^{\frac{3}{2}}},$$ 所以根据题设条件可得 $$f''+\dfrac{1}{\sqrt{x^{2}+y^{2}}}\cdot f'=0,\quad \text{即}\ f''(u)+\dfrac{f'(u)}{u}=0.$$ （2）由（1）及 $f'(1)=1$，得 $f'(u)=\dfrac{1}{u}$，所以 $f(u)=\ln u+C$．由 $f(1)=0$，得 $C=0$，因此 $f(u)=\ln u$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">（1）见解；（2）$f(u)=\ln u$</span></div>
+</div>
+</article>
+<article class="problem" id="q834" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="834">【834】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设直线 $L:\begin{cases}x+y+b=0\\ x+ay-z-3=0\end{cases}$ 在平面 $\pi$ 上，而平面 $\pi$ 与曲面 $z=x^{2}+y^{2}$ 相切于点 $(1,-2,5)$，求 $a,b$ 之值．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 在点 $(1,-2,5)$ 处曲面的法向量 $\boldsymbol{n}=\{2,-4,-1\}$，于是切平面方程为 $$2(x-1)-4(y+2)-(z-5)=0,$$ 即 $$2x-4y-z-5=0,\tag{①}$$ 由 $L:\begin{cases}x+y+b=0\\ x+ay-z-3=0\end{cases}$ 得 $y=-x-b$，$z=x-3+a(-x-b)$．代入方程①得 $$2x+4x+4b-x+3+ax+ab-5=0,$$ 因而有 $$5+a=0,\quad 4b+ab-2=0.$$ 由此解得 $a=-5$，$b=-2$．点评 本题也可用平面束求解．平面 $\pi$ 的方程为 $2x-4y-z-5=0$．过直线 $L$ 的平面束方程为 $$x+y+b+\lambda(x+ay-z-3)=0,\quad \text{即}\quad (1+\lambda)x+(1+a\lambda)y-\lambda z+b-3\lambda=0.$$ 其与平面 $\pi$ 重合，则有 $$\dfrac{1+\lambda}{2}=\dfrac{1+a\lambda}{-4}=\dfrac{-\lambda}{-1}=\dfrac{b-3\lambda}{-5}$$ 解得 $\lambda=1$，$a=-5$，$b=-2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$a=-5$，$b=-2$</span></div>
+</div>
+</article>
+<article class="problem" id="q835" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="835">【835】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">作一平面与直线 $L:\begin{cases}x-y+z=0\\ 2x-y+3z-2=0\end{cases}$ 垂直，且与球面 $x^{2}+y^{2}+z^{2}=4$ 相切．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 直线 $L$ 的方向向量为 $$\boldsymbol{s}=\begin{vmatrix}\boldsymbol{i}&amp;\boldsymbol{j}&amp;\boldsymbol{k}\\ 1&amp;-1&amp;1\\ 2&amp;-1&amp;3\end{vmatrix}=-2\boldsymbol{i}-\boldsymbol{j}+\boldsymbol{k}=\{-2,-1,1\}$$ 令 $$F(x,y,z)=x^{2}+y^{2}+z^{2}-4,$$ 球面方程为 $F(x,y,z)=0$，$$F_{x}'(x,y,z)=2x,\quad F_{y}'(x,y,z)=2y,\quad F_{z}'(x,y,z)=2z,$$ 球面上任一点处切平面的法向量为 $$\boldsymbol{n}=\{F_{x}',F_{y}',F_{z}'\}=\{2x,2y,2z\}.$$ 设所求平面与球面切于点 $(x_{0},y_{0},z_{0})$ 则有 $\boldsymbol{n}\parallel\boldsymbol{s}$，于是有 $$\begin{cases}\dfrac{2x_{0}}{-2}=\dfrac{2y_{0}}{-1}=\dfrac{2z_{0}}{1}\\ x_{0}^{2}+y_{0}^{2}+z_{0}^{2}=4\end{cases}$$ 解得 $$\begin{cases}x_{0}=\dfrac{2\sqrt{6}}{3}\\ y_{0}=\dfrac{\sqrt{6}}{3}\\ z_{0}=-\dfrac{\sqrt{6}}{3}\end{cases}\quad\text{与}\quad \begin{cases}x_{0}=-\dfrac{2\sqrt{6}}{3}\\ y_{0}=-\dfrac{\sqrt{6}}{3}\\ z_{0}=\dfrac{\sqrt{6}}{3}\end{cases}$$ 所以所求平面有两个，其方程分别为 $$-2\left(x-\dfrac{2\sqrt{6}}{3}\right)-\left(y-\dfrac{\sqrt{6}}{3}\right)+\left(z+\dfrac{\sqrt{6}}{3}\right)=0,$$ 与 $$-2\left(x+\dfrac{2\sqrt{6}}{3}\right)-\left(y+\dfrac{\sqrt{6}}{3}\right)+\left(z-\dfrac{\sqrt{6}}{3}\right)=0.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所求平面为 $-2\left(x-\dfrac{2\sqrt{6}}{3}\right)-\left(y-\dfrac{\sqrt{6}}{3}\right)+\left(z+\dfrac{\sqrt{6}}{3}\right)=0$ 与 $-2\left(x+\dfrac{2\sqrt{6}}{3}\right)-\left(y+\dfrac{\sqrt{6}}{3}\right)+\left(z-\dfrac{\sqrt{6}}{3}\right)=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q836" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="836">【836】</span>
+<span class="q-group">利用复合函数求导法则求解</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $z=f(x,y)=x^{3}+mx^{2}+2pxy+ny^{2}+2n^{-1}(px+ny)$（$n\neq 0$）．试证当 $m\cdot n\neq p^{2}$ 时，函数 $z=f(x,y)$ 有且只有一个极值；又若 $m&lt;0$ 时，这个极值必为极大值．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 令 $$\begin{cases}\dfrac{\partial z}{\partial x}=3x^{2}+2mx+2py+2n^{-1}p=0\\ \dfrac{\partial z}{\partial y}=2px+2ny+2=0\end{cases}$$ 解得 $x_{1}=0$，$x_{2}=\dfrac{-2(mn-p^{2})}{3n}$，而 $$\dfrac{\partial^{2}z}{\partial x^{2}}=6x+2m,\quad \dfrac{\partial^{2}z}{\partial x\,\partial y}=2p,\quad \dfrac{\partial^{2}z}{\partial y^{2}}=2n,$$ 当 $x_{1}=0$ 时，$A=2m$，$B=2p$，$C=2n$，$$B^{2}-AC=4(p^{2}-m\cdot n)$$ 当 $x_{2}=\dfrac{-2(m\cdot n-p^{2})}{3n}$ 时，$$A=-\dfrac{4(m\cdot n-p^{2})}{n}+2m=\dfrac{2(2p^{2}-m\cdot n)}{n}$$ $$B^{2}-AC=4p^{2}-\dfrac{2(2p^{2}-m\cdot n)}{n}\cdot 2n=-4(p^{2}-m\cdot n)$$ 因为 $m\cdot n\neq p^{2}$，故 $B^{2}-AC\neq 0$，对于 $x=x_{1}$ 或 $x=x_{2}$，$B^{2}-AC$ 符号相反，从而 $B^{2}-AC$ 有且只 [接下批]
+<strong>解</strong> 有一个是负值，即 $z=f(x,y)$ 有且只有一个极值，又若 $m&lt;0$，则 $A=2m&lt;0$，所以这个极值必为极大值．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">这个极值必为极大值（解完）</span></div>
+</div>
+</article>
+<article class="problem" id="q837" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="837">【837】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设在部分球面 $x^{2}+y^{2}+z^{2}=5R^{2}$，$x&gt;0$，$y&gt;0$，$z&gt;0$ 上函数 $f(x,y,z)=\ln x+\ln y+3\ln z$ 有极大值，试求此极大值，并利用上述结果证明对任意正数 $a,b,c$ 总满足 $$abc^{3}\leqslant 27\left(\frac{a+b+c}{5}\right)^{5}.$$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $F(x,y,z,\lambda)=\ln x+\ln y+3\ln z+\lambda(x^{2}+y^{2}+z^{2}-5R^{2})$，则 $$\begin{cases}F'_{x}=\dfrac{1}{x}+2\lambda x=0\\ F'_{y}=\dfrac{1}{y}+2\lambda y=0\\ F'_{z}=\dfrac{3}{z}+2\lambda z=0\\ x^{2}+y^{2}+z^{2}=5R^{2}\end{cases}$$ 解得 $\begin{cases}x=R\\ y=R\\ z=\sqrt{3}R\end{cases}$，故 $\ln xyz^{3}\leqslant \ln 3\sqrt{3}R^{5}$，即 $F_{\max}=\ln 3\sqrt{3}R^{5}$．由上式 $xyz^{3}\leqslant 3\sqrt{3}R^{5}$，即 $x^{2}y^{2}z^{6}\leqslant 27R^{10}$．令 $a=x^{2},b=y^{2},c=z^{2}$，则 $$abc^{3}\leqslant 27(R^{2})^{5}=27\left(\frac{x^{2}+y^{2}+z^{2}}{5}\right)^{5}=27\left(\frac{a+b+c}{5}\right)^{5}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$F_{\max}=\ln 3\sqrt{3}R^{5}$；且对任意正数 $a,b,c$ 有 $abc^{3}\leqslant 27\left(\frac{a+b+c}{5}\right)^{5}$</span></div>
+</div>
+</article>
+<article class="problem" id="q838" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="838">【838】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">在第一卦限内作球面 $x^{2}+y^{2}+z^{2}=1$ 的切平面，使得切平面与三个坐标面所围的四面体的体积最小，求切点坐标．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设切点为 $(x_{0},y_{0},z_{0})\ (x_{0}&gt;0,y_{0}&gt;0,z_{0}&gt;0)$．则切平面方程为 $$x_{0}(x-x_{0})+y_{0}(y-y_{0})+z_{0}(z-z_{0})=0,\quad\text{即 } x_{0}x+y_{0}y+z_{0}z=1.$$ 所求体积为 $$V=\frac{1}{6}\cdot\frac{1}{x_{0}y_{0}z_{0}}$$ 设 $F(x,y,z,\lambda)=\dfrac{1}{xyz}+\lambda(x^{2}+y^{2}+z^{2}-1)$，则 $$\begin{cases}F'_{x}=-\dfrac{1}{x^{2}yz}+2\lambda x=0\\ F'_{y}=-\dfrac{1}{xy^{2}z}+2\lambda y=0\\ F'_{z}=-\dfrac{1}{xyz^{2}}+2\lambda z=0\\ x^{2}+y^{2}+z^{2}=1\end{cases}$$ 解得 $x_{0}=y_{0}=z_{0}=\dfrac{1}{\sqrt{3}}$．此时 $V$ 取得最小值．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">切点坐标为 $\left(\dfrac{1}{\sqrt{3}},\dfrac{1}{\sqrt{3}},\dfrac{1}{\sqrt{3}}\right)$</span></div>
+</div>
+</article>
+<article class="problem" id="q839" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="839">【839】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设曲线 $\Gamma$ 的方程为 $\varphi(x,y)=0$，其中 $\varphi(x,y)$ 具有一阶连续偏导数，点 $P$ 为 $\Gamma$ 外一点，$PQ$ 为点 $P$ 到曲线 $\Gamma$ 的最短距离（$Q$ 点在 $\Gamma$ 上），试证明：$PQ$ 必位于曲线 $\Gamma$ 在点 $Q$ 处的法线上．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $P,Q$ 两点的坐标分别为 $P(a,b)$，$Q(x_{0},y_{0})$，由隐函数求导公式知 $\Gamma$ 在 $Q$ 点处切线的斜率为 $$k_{QT}=\left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{(x_{0},y_{0})}=-\frac{\varphi'_{x}(x_{0},y_{0})}{\varphi'_{y}(x_{0},y_{0})}$$ 另一方面，记 $\Gamma$ 上任意一点为 $M(x,y)$，并设 $$f(x,y)=|PM|^{2}=(x-a)^{2}+(y-b)^{2}.$$ 由题设知，$PQ$ 之值应是 $f(x,y)$ 在曲线 $\Gamma$ 方程 $\varphi(x,y)=0$ 条件下的极小值，应用拉格朗日乘数法，引入函数 $$F(x,y,\lambda)=(x-a)^{2}+(y-b)^{2}+\lambda\varphi(x,y)$$ 那么 $Q(x_{0},y_{0})$ 应满足 $$\begin{cases}\dfrac{\partial F}{\partial x}=2(x_{0}-a)+\lambda\varphi'_{x}(x_{0},y_{0})=0\\[2mm] \dfrac{\partial F}{\partial y}=2(y_{0}-b)+\lambda\varphi'_{y}(x_{0},y_{0})=0\\[2mm] \dfrac{\partial F}{\partial \lambda}=\varphi(x_{0},y_{0})=0\end{cases}$$ 从而有 $$\frac{y_{0}-b}{x_{0}-a}=\frac{\varphi'_{y}(x_{0},y_{0})}{\varphi'_{x}(x_{0},y_{0})}=k_{PQ}\quad(PQ\text{ 的斜率})$$ 于是得证 $$k_{PQ}\cdot k_{QT}=\frac{\varphi'_{y}(x_{0},y_{0})}{\varphi'_{x}(x_{0},y_{0})}\left(-\frac{\varphi'_{x}(x_{0},y_{0})}{\varphi'_{y}(x_{0},y_{0})}\right)=-1.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">得证 $k_{PQ}\cdot k_{QT}=-1$，即 $PQ$ 必位于曲线 $\Gamma$ 在点 $Q$ 处的法线上（证毕）</span></div>
+</div>
+</article>
+<article class="problem" id="q840" data-secanchor="s24">
+<div class="q-head">
+<span class="q-no" data-n="840">【840】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设有一小山，取它的底面所在的平面为 $xOy$ 坐标面，其底部所占的区域为 $D=\{(x,y)\mid x^{2}+y^{2}-xy\leqslant 75\}$，小山的高度函数为 $$h(x,y)=75-x^{2}-y^{2}+xy.$$ （1）设 $M(x_{0},y_{0})$ 为区域 $D$ 上一点，问 $h(x,y)$ 在该点沿平面上什么方向的方向导数最大？若记此方向导数的最大值为 $g(x_{0},y_{0})$，试写出 $g(x_{0},y_{0})$ 的表达式．（2）现欲利用此小山开展攀岩活动，为此需要在山脚寻找一上山坡度最大的点作为攀登的起点．也就是说，要在 $D$ 的边界线 $x^{2}+y^{2}-xy=75$ 上找出使（1）中的 $g(x,y)$ 达到最大值的点．试确定攀登起点的位置．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> （1）由梯度的几何意义，$h(x,y)$ 在点 $M(x_{0},y_{0})$ 处沿梯度 $$\operatorname{grad}h(x,y)\Big|_{(x_{0},y_{0})}=(y_{0}-2x_{0})\boldsymbol{i}+(x_{0}-2y_{0})\boldsymbol{j}$$ 方向的方向导数最大，方向导数的最大值为该梯度的模，所以 $$g(x_{0},y_{0})=\sqrt{(y_{0}-2x_{0})^{2}+(x_{0}-2y_{0})^{2}}=\sqrt{5x_{0}^{2}+5y_{0}^{2}-8x_{0}y_{0}}.$$ （2）令 $f(x,y)=g^{2}(x,y)=5x^{2}+5y^{2}-8xy$，由题意，只需求 $f(x,y)$ 在约束条件 $75-x^{2}-y^{2}+xy=0$ 下的最大值点．令 $L(x,y,\lambda)=5x^{2}+5y^{2}-8xy+\lambda(75-x^{2}-y^{2}+xy)$，则 $$\begin{cases}L'_{x}=10x-8y+\lambda(y-2x)=0, &amp; \text{①}\\ L'_{y}=10y-8x+\lambda(x-2y)=0, &amp; \text{②}\\ L'_{\lambda}=75-x^{2}-y^{2}+xy=0, &amp; \text{③}\end{cases}$$ ①式与②式相加可得 $(x+y)(2-\lambda)=0$，从而得 $y=-x$ 或 $\lambda=2$．若 $\lambda=2$，则由①式得 $y=x$，再由③式得 $x=\pm 5\sqrt{3}$，$y=\pm 5\sqrt{3}$．若 $y=-x$，则由③式得 $x=\pm 5$，$y=\mp 5$．于是得到 4 个可能的极值点 $$M_{1}(5,-5),\quad M_{2}(-5,5),\quad M_{3}(5\sqrt{3},5\sqrt{3}),\quad M_{4}(-5\sqrt{3},-5\sqrt{3}).$$ 由于 $$f(M_{1})=f(M_{2})=450,\qquad f(M_{3})=f(M_{4})=150,$$ 故 $M_{1}(5,-5)$ 或 $M_{2}(-5,5)$ 可作为攀登的起点．<strong>点评</strong> 本题综合考查了梯度的概念，方向导数与梯度的关系，使用拉格朗日乘数法求条件极值．因 $g(x,y)$ 在求导运算中较麻烦，故在构造拉格朗日函数时先将其平方，以便于求偏导．另外，还应明确 $\big|\operatorname{grad}h(x,y)\big|_{(x_{0},y_{0})}$ 就是所要求的方向导数的最大值．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">攀登起点为 $M_{1}(5,-5)$ 或 $M_{2}(-5,5)$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s25">§1. 二重积分</h2>
+<h2 class="sec-h" id="sec-s26">1. 二重积分的概念</h2>
+<h2 class="sec-h" id="sec-s27">2. 二重积分的性质</h2>
+<h2 class="sec-h" id="sec-s28">3. 二重积分计算法</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">利用重积分性质讨论</h3>
+</main>
+</div>
+<div class="qnav">
+  <button id="qnav-prev" title="上一题">↑</button>
+  <button id="qnav-next" title="下一题">↓</button>
+</div>
+<footer>
+  内容来自《吉米多维奇高等数学习题精选精解》（张天德、蒋晓云主编）· 仅供个人学习使用<br>
+  <a href="../index.html" style="color:var(--accent);">返回总目录</a> <a class="icon-btn" href="chapter-07.html">上一章</a> <a class="icon-btn" href="chapter-09.html">下一章</a>
+</footer>
+</body>
+</html>

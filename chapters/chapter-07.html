@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第7章 第七章 向量代数与空间解析几何 · 吉米多维奇高等数学刷题版</title>
+<meta name="description" content="吉米多维奇高等数学习题精选精解第7章第七章 向量代数与空间解析几何题目与详解，共59题">
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+<script defer src="../assets/katex/katex.min.js"></script>
+<script defer src="../assets/katex/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</head>
+<body data-chapter="7" data-lazy="1">
+<header class="topbar">
+  <a class="back" href="../index.html">← 总目录</a>
+  <button class="icon-btn sidebar-toggle" id="sidebar-toggle">☰ 目录</button>
+  <span class="title">第7章 第七章 向量代数与空间解析几何 · 共59题</span>
+  <button class="icon-btn" id="theme-btn">🌙 夜间</button>
+</header>
+<div class="sidebar-mask" id="sidebar-mask"></div>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<h3>本章节选</h3>
+<a class="sec" href="#sec-s1">§2. 空间的平面和直线</a>
+<a class="sec" href="#sec-s2">1. 平面及其方程</a>
+<a class="sec" href="#sec-s3">2. 空间直线及其方程</a>
+<a class="sec" href="#sec-s4">3. 直线、平面之间的相对位置关系</a>
+<a class="sec" href="#sec-s5">4. 距离公式</a>
+<a class="sec" href="#sec-s6">§3. 空间曲面与空间曲线</a>
+<a class="sec" href="#sec-s7">1. 空间曲面方程</a>
+<a class="sec" href="#sec-s8">2. 旋转曲面方程</a>
+<a class="sec" href="#sec-s9">3. 柱面方程</a>
+<a class="sec" href="#sec-s10">§4. 综合提高题型</a>
+<a class="sec" href="#sec-s11">§1. 多元函数的基本概念</a>
+<a class="sec" href="#sec-s12">1. 二元函数的概念</a>
+<a class="sec" href="#sec-s13">2. 二元函数的极限</a>
+<a class="sec" href="#sec-s14">3. 二元函数的连续性</a>
+<a class="sec" href="#sec-s15">4. 有界闭区域上二元连续函数的性质</a>
+<h3>题号</h3><div class="qindex">
+<a href="#q651" id="qi651">651</a>
+<a href="#q652" id="qi652">652</a>
+<a href="#q653" id="qi653">653</a>
+<a href="#q654" id="qi654">654</a>
+<a href="#q655" id="qi655">655</a>
+<a href="#q656" id="qi656">656</a>
+<a href="#q657" id="qi657">657</a>
+<a href="#q658" id="qi658">658</a>
+<a href="#q659" id="qi659">659</a>
+<a href="#q660" id="qi660">660</a>
+<a href="#q661" id="qi661">661</a>
+<a href="#q662" id="qi662">662</a>
+<a href="#q663" id="qi663">663</a>
+<a href="#q664" id="qi664">664</a>
+<a href="#q665" id="qi665">665</a>
+<a href="#q666" id="qi666">666</a>
+<a href="#q667" id="qi667">667</a>
+<a href="#q668" id="qi668">668</a>
+<a href="#q669" id="qi669">669</a>
+<a href="#q670" id="qi670">670</a>
+<a href="#q671" id="qi671">671</a>
+<a href="#q672" id="qi672">672</a>
+<a href="#q673" id="qi673">673</a>
+<a href="#q674" id="qi674">674</a>
+<a href="#q675" id="qi675">675</a>
+<a href="#q676" id="qi676">676</a>
+<a href="#q677" id="qi677">677</a>
+<a href="#q678" id="qi678">678</a>
+<a href="#q679" id="qi679">679</a>
+<a href="#q680" id="qi680">680</a>
+<a href="#q681" id="qi681">681</a>
+<a href="#q682" id="qi682">682</a>
+<a href="#q683" id="qi683">683</a>
+<a href="#q684" id="qi684">684</a>
+<a href="#q685" id="qi685">685</a>
+<a href="#q686" id="qi686">686</a>
+<a href="#q687" id="qi687">687</a>
+<a href="#q688" id="qi688">688</a>
+<a href="#q689" id="qi689">689</a>
+<a href="#q690" id="qi690">690</a>
+<a href="#q691" id="qi691">691</a>
+<a href="#q692" id="qi692">692</a>
+<a href="#q693" id="qi693">693</a>
+<a href="#q694" id="qi694">694</a>
+<a href="#q695" id="qi695">695</a>
+<a href="#q696" id="qi696">696</a>
+<a href="#q697" id="qi697">697</a>
+<a href="#q698" id="qi698">698</a>
+<a href="#q699" id="qi699">699</a>
+<a href="#q700" id="qi700">700</a>
+<a href="#q701" id="qi701">701</a>
+<a href="#q702" id="qi702">702</a>
+<a href="#q703" id="qi703">703</a>
+<a href="#q704" id="qi704">704</a>
+<a href="#q705" id="qi705">705</a>
+<a href="#q706" id="qi706">706</a>
+<a href="#q707" id="qi707">707</a>
+<a href="#q708" id="qi708">708</a>
+<a href="#q709" id="qi709">709</a>
+</div></nav>
+<main class="main">
+<div class="ch-progress-wrap" style="margin-bottom:18px;color:var(--text-soft);font-size:14px;">
+  本章进度：<span id="ch-progress-text">0 / 59</span>
+  <div class="progress-bar" id="ch-progress" data-ch-count="59" style="margin:6px 0 0;"><i></i></div>
+</div>
+<article class="problem" id="q651">
+<div class="q-head">
+<span class="q-no" data-n="651">【651】</span>
+<span class="q-group">向量的数量积、向量积运算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}$ 都是单位向量，且满足 $\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c}=0$，则 $\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{b}\cdot\boldsymbol{c}+\boldsymbol{c}\cdot\boldsymbol{a}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 利用数量积的运算规律和单位向量的概念求解 $0=(\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c})\cdot(\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c})=\boldsymbol{a}\cdot\boldsymbol{a}+\boldsymbol{b}\cdot\boldsymbol{b}+\boldsymbol{c}\cdot\boldsymbol{c}+2(\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{b}\cdot\boldsymbol{c}+\boldsymbol{c}\cdot\boldsymbol{a})=3+2(\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{b}\cdot\boldsymbol{c}+\boldsymbol{c}\cdot\boldsymbol{a})$. 于是 $\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{b}\cdot\boldsymbol{c}+\boldsymbol{c}\cdot\boldsymbol{a}=-\dfrac{3}{2}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-\dfrac{3}{2}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q652">
+<div class="q-head">
+<span class="q-no" data-n="652">【652】</span>
+<span class="q-group">向量的数量积、向量积运算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $|\boldsymbol{a}|=\sqrt{13}$，$|\boldsymbol{b}|=\sqrt{5}$，$|\boldsymbol{c}|=\sqrt{10}$ 及 $\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c}=3\boldsymbol{i}+\boldsymbol{j}-2\boldsymbol{k}$，则 $\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{b}\cdot\boldsymbol{c}+\boldsymbol{c}\cdot\boldsymbol{a}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c}=\{3,1,-2\}$ 知 $|\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c}|^2=(\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c})^2=14$，另一方面 $(\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c})^2=(\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c})\cdot(\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c})=|\boldsymbol{a}|^2+|\boldsymbol{b}|^2+|\boldsymbol{c}|^2+2(\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{b}\cdot\boldsymbol{a}+\boldsymbol{c}\cdot\boldsymbol{a})=28+2(\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{b}\cdot\boldsymbol{a}+\boldsymbol{c}\cdot\boldsymbol{a})$，所以 $\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{b}\cdot\boldsymbol{c}+\boldsymbol{c}\cdot\boldsymbol{a}=\dfrac{1}{2}(14-28)=-7$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-7$.</span></div>
+</div>
+</article>
+<article class="problem" id="q653">
+<div class="q-head">
+<span class="q-no" data-n="653">【653】</span>
+<span class="q-group">向量的数量积、向量积运算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知向量 $\boldsymbol{a}=a_x\boldsymbol{i}+3\boldsymbol{j}+4\boldsymbol{k}$，$\boldsymbol{b}=4\boldsymbol{i}+a_x\boldsymbol{j}-7\boldsymbol{k}$，则当 $a_x=$ ______ 时，$\boldsymbol{a}$ 垂直于 $\boldsymbol{b}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\boldsymbol{a}\perp\boldsymbol{b}\Leftrightarrow\boldsymbol{a}\cdot\boldsymbol{b}=0\Leftrightarrow 4a_x+3a_x-28=0$. 所以 $a_x=4$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $4$.</span></div>
+</div>
+</article>
+<article class="problem" id="q654">
+<div class="q-head">
+<span class="q-no" data-n="654">【654】</span>
+<span class="q-group">向量的数量积、向量积运算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设向量 $\boldsymbol{x}$ 与向量 $\boldsymbol{a}=2\boldsymbol{i}-\boldsymbol{j}+3\boldsymbol{k}$ 平行，且满足方程 $\boldsymbol{a}\cdot\boldsymbol{x}=7$，则向量 $\boldsymbol{x}=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $\boldsymbol{x}=\{x_1,x_2,x_3\}$，由 $\boldsymbol{x}\parallel\boldsymbol{a}$ 得 $\dfrac{x_1}{2}=\dfrac{x_2}{-1}=\dfrac{x_3}{3}$，由 $\boldsymbol{a}\cdot\boldsymbol{x}=7$，得 $2x_1-x_2+3x_3=7$，解得 $x_1=1,\ x_2=-\dfrac{1}{2},\ x_3=\dfrac{3}{2}$. 所以 $\boldsymbol{x}=\boldsymbol{i}-\dfrac{1}{2}\boldsymbol{j}+\dfrac{3}{2}\boldsymbol{k}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\boldsymbol{i}-\dfrac{1}{2}\boldsymbol{j}+\dfrac{3}{2}\boldsymbol{k}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q655">
+<div class="q-head">
+<span class="q-no" data-n="655">【655】</span>
+<span class="q-group">向量的数量积、向量积运算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">下列等式正确的是 ______. (A)$|\boldsymbol{a}|\boldsymbol{a}=\boldsymbol{a}^2$ (B)$\boldsymbol{a}\cdot(\boldsymbol{b}\cdot\boldsymbol{b})=-\boldsymbol{a}\boldsymbol{b}^2$ (C)$\boldsymbol{a}\cdot\boldsymbol{b}=\boldsymbol{b}\cdot\boldsymbol{a}$ (D)$\boldsymbol{a}\times\boldsymbol{b}=\boldsymbol{b}\times\boldsymbol{a}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 选项(A)错误：因 $\boldsymbol{a}^2=\boldsymbol{a}\cdot\boldsymbol{a}=|\boldsymbol{a}|^2$；选项(B)错误：因 $\boldsymbol{a}\cdot(\boldsymbol{b}\cdot\boldsymbol{b})$ 无意义；选项(D)错误：因 $\boldsymbol{a}\times\boldsymbol{b}=-\boldsymbol{b}\times\boldsymbol{a}$；选项(C)正确：因 $\boldsymbol{a}\cdot\boldsymbol{b}=|\boldsymbol{a}|\cdot|\boldsymbol{b}|\cdot\cos\left(\widehat{\boldsymbol{a},\boldsymbol{b}}\right)=\boldsymbol{b}\cdot\boldsymbol{a}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选(C).</span></div>
+</div>
+</article>
+<article class="problem" id="q656">
+<div class="q-head">
+<span class="q-no" data-n="656">【656】</span>
+<span class="q-group">向量的数量积、向量积运算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设向量 $\boldsymbol{a}=\{1,-1,1\}$，$\boldsymbol{b}=\{3,-4,5\}$，$\boldsymbol{x}=\boldsymbol{a}+\lambda\boldsymbol{b}$，$\lambda$ 为实数，试证：使模 $|\boldsymbol{x}|$ 最小的向量 $\boldsymbol{x}$ 垂直于向量 $\boldsymbol{b}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $|\boldsymbol{x}|^2=(\boldsymbol{a}+\lambda\boldsymbol{b})\cdot(\boldsymbol{a}+\lambda\boldsymbol{b})=|\boldsymbol{a}|^2+\lambda^2|\boldsymbol{b}|^2+2\lambda\boldsymbol{a}\cdot\boldsymbol{b}=3+24\lambda+50\lambda^2$. $\lambda=-\dfrac{6}{25}$ 时，$|\boldsymbol{x}|$ 最小. 此时，$\boldsymbol{x}_0=\boldsymbol{a}-\dfrac{6}{25}\boldsymbol{b}=\left\{\dfrac{7}{25},-\dfrac{1}{25},-\dfrac{5}{25}\right\}$. 因为 $\boldsymbol{x}_0\cdot\boldsymbol{b}=\dfrac{7}{25}\cdot 3+\dfrac{1}{25}\cdot 4-\dfrac{5}{25}\cdot 5=0$，所以 $\boldsymbol{x}_0\perp\boldsymbol{b}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（使模 $|\boldsymbol{x}|$ 最小的向量 $\boldsymbol{x}_0$ 垂直于向量 $\boldsymbol{b}$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q657">
+<div class="q-head">
+<span class="q-no" data-n="657">【657】</span>
+<span class="q-group">向量的数量积、向量积运算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}$ 均为非零向量，其中任意两个向量不共线，但 $\boldsymbol{a}+\boldsymbol{b}$ 与 $\boldsymbol{c}$ 共线，$\boldsymbol{b}+\boldsymbol{c}$ 与 $\boldsymbol{a}$ 共线，试证：$\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c}=\boldsymbol{0}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $\boldsymbol{a}+\boldsymbol{b}$ 与 $\boldsymbol{c}$ 共线，$\boldsymbol{b}+\boldsymbol{c}$ 与 $\boldsymbol{a}$ 共线，所以 $\boldsymbol{a}+\boldsymbol{b}=\lambda\boldsymbol{c}$，$\boldsymbol{b}+\boldsymbol{c}=\mu\boldsymbol{a}$，两式相减得 $\boldsymbol{a}-\boldsymbol{c}=\lambda\boldsymbol{c}-\mu\boldsymbol{a}$ 即 $(1+\mu)\boldsymbol{a}=(1+\lambda)\boldsymbol{c}$. 因为 $\boldsymbol{a},\boldsymbol{c}$ 均为非零向量，且不共线，所以只有 $\mu=-1,\lambda=-1$. 代入即得 $\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c}=\boldsymbol{0}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（证得 $\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c}=\boldsymbol{0}$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q658">
+<div class="q-head">
+<span class="q-no" data-n="658">【658】</span>
+<span class="q-group">向量的数量积、向量积运算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设有一力 $\boldsymbol{F}=\boldsymbol{i}-2\boldsymbol{j}+2\boldsymbol{k}$，求 $\boldsymbol{F}$ 在 $\boldsymbol{a}=\boldsymbol{i}+\boldsymbol{j}+\boldsymbol{k}$ 方向上的分力.</div>
+<div class="figure-note">图658：从原点 O 出发两条射线，向量 a 沿水平方向向右，向量 F 指向右上方，两向量之间标注夹角 θ.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 容易误认为 $\boldsymbol{F}$ 在 $\boldsymbol{a}$ 方向的分力为 $\boldsymbol{F}\cos\left(\widehat{\boldsymbol{F},\boldsymbol{a}}\right)$，其实这并不是 $\boldsymbol{F}$ 在 $\boldsymbol{a}$ 方向的分力，因为 $|\boldsymbol{F}|\cos\theta$ 的方向平行 $\boldsymbol{F}$ 的方向，不在 $\boldsymbol{a}$ 的方向上. <strong>解</strong> $P_{r_j\boldsymbol{a}}\boldsymbol{F}=\dfrac{\boldsymbol{F}\cdot\boldsymbol{a}}{|\boldsymbol{a}|}=\dfrac{1-2+2}{\sqrt{3}}=\dfrac{1}{\sqrt{3}}$. 设 $\boldsymbol{a}^0$ 为 $\boldsymbol{a}$ 方向上的单位向量 $\boldsymbol{a}^0=\dfrac{\boldsymbol{a}}{|\boldsymbol{a}|}=\dfrac{1}{\sqrt{3}}(\boldsymbol{i}+\boldsymbol{j}+\boldsymbol{k})$，则 $\boldsymbol{F}$ 在 $\boldsymbol{a}$ 方向的分力为 $(P_{r_j\boldsymbol{a}}\boldsymbol{F})\boldsymbol{a}^0=\dfrac{1}{\sqrt{3}}\dfrac{\boldsymbol{i}+\boldsymbol{j}+\boldsymbol{k}}{\sqrt{3}}=\dfrac{1}{3}(\boldsymbol{i}+\boldsymbol{j}+\boldsymbol{k})$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\boldsymbol{F}$ 在 $\boldsymbol{a}$ 方向的分力为 $\dfrac{1}{3}(\boldsymbol{i}+\boldsymbol{j}+\boldsymbol{k})$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q659">
+<div class="q-head">
+<span class="q-no" data-n="659">【659】</span>
+<span class="q-group">向量的数量积、向量积运算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\boldsymbol{a}=\boldsymbol{i}+\boldsymbol{j}$，$\boldsymbol{b}=\boldsymbol{j}+\boldsymbol{k}$，且三向量 $\boldsymbol{a},\boldsymbol{b}$ 和 $\boldsymbol{c}$ 长度相等，两两的夹角相等，求 $\boldsymbol{c}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 向量 $\boldsymbol{c}$ 的模容易计算，但其方向却难以确定；因此，我们改用计算坐标的办法来确定向量 $\boldsymbol{c}$. <strong>解</strong> 设 $\boldsymbol{c}=\{x,y,z\}$，由题意有 $x^2+y^2+z^2=2$，① $\dfrac{x+y}{\sqrt{2}\sqrt{x^2+y^2+z^2}}=\dfrac{1}{2}$，② $\dfrac{y+z}{\sqrt{2}\sqrt{x^2+y^2+z^2}}=\dfrac{1}{2}$. ③ 将①式代入②、③式得 $\begin{cases}x+y=1\\y+z=1\end{cases}$，再与①式联立解得 $\begin{cases}x=1\\y=0\\z=1\end{cases}$ 和 $\begin{cases}x=-\dfrac{1}{3}\\y=\dfrac{4}{3}\\z=-\dfrac{1}{3}\end{cases}$. 于是 $\boldsymbol{c}=\{1,0,1\}$ 或 $\left\{-\dfrac{1}{3},\dfrac{4}{3},-\dfrac{1}{3}\right\}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\boldsymbol{c}=\{1,0,1\}$ 或 $\left\{-\dfrac{1}{3},\dfrac{4}{3},-\dfrac{1}{3}\right\}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q660">
+<div class="q-head">
+<span class="q-no" data-n="660">【660】</span>
+<span class="q-group">向量的数量积、向量积运算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $\boldsymbol{a},\boldsymbol{b}$ 均为非零向量，而 $|\boldsymbol{a}+\boldsymbol{b}|=|\boldsymbol{a}-\boldsymbol{b}|$，则 (A)$\boldsymbol{a}-\boldsymbol{b}=0$ (B)$\boldsymbol{a}+\boldsymbol{b}=0$ (C)$\boldsymbol{a}\cdot\boldsymbol{b}=0$ (D)$\boldsymbol{a}\times\boldsymbol{b}=0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\boldsymbol{a}\neq 0,\boldsymbol{b}\neq 0$ 及 $|\boldsymbol{a}+\boldsymbol{b}|=|\boldsymbol{a}-\boldsymbol{b}|$ 知 $(\boldsymbol{a}+\boldsymbol{b})\cdot(\boldsymbol{a}+\boldsymbol{b})=(\boldsymbol{a}-\boldsymbol{b})\cdot(\boldsymbol{a}-\boldsymbol{b})$ 即 $2\boldsymbol{a}\cdot\boldsymbol{b}=-2\boldsymbol{a}\cdot\boldsymbol{b}$. 所以 $\boldsymbol{a}\cdot\boldsymbol{b}=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选(C).</span></div>
+</div>
+</article>
+<article class="problem" id="q661">
+<div class="q-head">
+<span class="q-no" data-n="661">【661】</span>
+<span class="q-group">向量的数量积、向量积运算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知向量 $\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}$ 满足 $\boldsymbol{a}+\boldsymbol{b}+\boldsymbol{c}=\boldsymbol{0}$，证明：$\boldsymbol{a}\times\boldsymbol{b}=\boldsymbol{b}\times\boldsymbol{c}=\boldsymbol{c}\times\boldsymbol{a}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $\boldsymbol{a}=-(\boldsymbol{b}+\boldsymbol{c})$，$\boldsymbol{b}=-(\boldsymbol{a}+\boldsymbol{c})$，所以 $\boldsymbol{a}\times\boldsymbol{b}=-(\boldsymbol{b}+\boldsymbol{c})\times\boldsymbol{b}=-(\boldsymbol{b}\times\boldsymbol{b}+\boldsymbol{c}\times\boldsymbol{b})=-\boldsymbol{c}\times\boldsymbol{b}=\boldsymbol{b}\times\boldsymbol{c}$，$\boldsymbol{b}\times\boldsymbol{c}=-(\boldsymbol{a}+\boldsymbol{c})\times\boldsymbol{c}=-(\boldsymbol{a}\times\boldsymbol{c}+\boldsymbol{c}\times\boldsymbol{c})=-\boldsymbol{a}\times\boldsymbol{c}=\boldsymbol{c}\times\boldsymbol{a}$. 所以 $\boldsymbol{a}\times\boldsymbol{b}=\boldsymbol{b}\times\boldsymbol{c}=\boldsymbol{c}\times\boldsymbol{a}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（证得 $\boldsymbol{a}\times\boldsymbol{b}=\boldsymbol{b}\times\boldsymbol{c}=\boldsymbol{c}\times\boldsymbol{a}$）.</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关混合积的计算</h3>
+<article class="problem" id="q662">
+<div class="q-head">
+<span class="q-no" data-n="662">【662】</span>
+<span class="q-group">有关混合积的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $(\boldsymbol{a}\times\boldsymbol{b})\cdot\boldsymbol{c}=2$，则 $[(\boldsymbol{a}+\boldsymbol{b})\times(\boldsymbol{b}+\boldsymbol{c})]\cdot(\boldsymbol{c}+\boldsymbol{a})=$ ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=[\boldsymbol{a}\times\boldsymbol{b}+\boldsymbol{a}\times\boldsymbol{c}+\boldsymbol{b}\times\boldsymbol{c}]\cdot(\boldsymbol{c}+\boldsymbol{a})=(\boldsymbol{a}\times\boldsymbol{b})\cdot\boldsymbol{c}+(\boldsymbol{a}\times\boldsymbol{c})\cdot\boldsymbol{c}+(\boldsymbol{b}\times\boldsymbol{c})\cdot\boldsymbol{c}+(\boldsymbol{a}\times\boldsymbol{b})\cdot\boldsymbol{a}+(\boldsymbol{a}\times\boldsymbol{c})\cdot\boldsymbol{a}+(\boldsymbol{b}\times\boldsymbol{c})\cdot\boldsymbol{a}=(\boldsymbol{a}\times\boldsymbol{b})\cdot\boldsymbol{c}+(\boldsymbol{b}\times\boldsymbol{c})\cdot\boldsymbol{a}=2(\boldsymbol{a}\times\boldsymbol{b})\cdot\boldsymbol{c}=4$. <strong>点评</strong> 本题综合考查向量的数量积、向量积及混合积的定义，直接利用其运算性质可得结果. 有关混合积的性质为 $(\boldsymbol{a}\times\boldsymbol{b})\cdot\boldsymbol{c}=(\boldsymbol{c}\times\boldsymbol{a})\cdot\boldsymbol{b}=(\boldsymbol{b}\times\boldsymbol{c})\cdot\boldsymbol{a}$ 其中混合积中的三个向量若有两个向量是重合或平行时，则其混合积为零.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $4$.</span></div>
+</div>
+</article>
+<article class="problem" id="q663">
+<div class="q-head">
+<span class="q-no" data-n="663">【663】</span>
+<span class="q-group">有关混合积的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $|\boldsymbol{a}|=6$，$|\boldsymbol{b}|=3$，$|\boldsymbol{c}|=3$，$\left(\widehat{\boldsymbol{a},\boldsymbol{b}}\right)=\dfrac{\pi}{6}$，$\boldsymbol{c}\perp\boldsymbol{a}$，$\boldsymbol{c}\perp\boldsymbol{b}$，求 $[\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}]$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 由混合积的定义，$[\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}]=(\boldsymbol{a}\times\boldsymbol{b})\cdot\boldsymbol{c}=|\boldsymbol{a}\times\boldsymbol{b}|\cdot|\boldsymbol{c}|\cdot\cos\left(\widehat{\boldsymbol{a}\times\boldsymbol{b},\boldsymbol{c}}\right)$，故应先求 $|\boldsymbol{a}\times\boldsymbol{b}|$ 及 $\cos\left(\widehat{\boldsymbol{a}\times\boldsymbol{b},\boldsymbol{c}}\right)$. <strong>解</strong> $|\boldsymbol{a}\times\boldsymbol{b}|=|\boldsymbol{a}|\cdot|\boldsymbol{b}|\cdot\sin\left(\widehat{\boldsymbol{a},\boldsymbol{b}}\right)=6\times 3\times\sin\dfrac{\pi}{6}=9$，又因为 $\boldsymbol{c}\perp\boldsymbol{a}$，$\boldsymbol{c}\perp\boldsymbol{b}$，所以 $\boldsymbol{c}\parallel(\boldsymbol{a}\times\boldsymbol{b})$. 故 $\boldsymbol{c}$ 与 $(\boldsymbol{a}\times\boldsymbol{b})$ 的夹角 $\theta=0$ 或 $\pi$. 因此，$[\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}]=(\boldsymbol{a}\times\boldsymbol{b})\cdot\boldsymbol{c}=|\boldsymbol{a}\times\boldsymbol{b}|\cdot|\boldsymbol{c}|\cdot\cos\theta=\pm 27$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$[\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}]=\pm 27$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">关于向量的平行、垂直、共面及夹角问题</h3>
+<article class="problem" id="q664">
+<div class="q-head">
+<span class="q-no" data-n="664">【664】</span>
+<span class="q-group">关于向量的平行、垂直、共面及夹角问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $\boldsymbol{a}=\{3,-2,1\}$，$\boldsymbol{b}=\{2,1,2\}$，$\boldsymbol{c}=\{3,-1,2\}$，判断向量 $\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}$ 是否共面.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 三个向量 $\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}$ 共面的充要条件是 $(\boldsymbol{a}\times\boldsymbol{b})\cdot\boldsymbol{c}=0$，而 $(\boldsymbol{a}\times\boldsymbol{b})\cdot\boldsymbol{c}=\begin{vmatrix}3&amp;-2&amp;1\\2&amp;1&amp;2\\3&amp;-1&amp;2\end{vmatrix}=3\neq 0$，所以 $\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}$ 不共面.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\boldsymbol{a},\boldsymbol{b},\boldsymbol{c}$ 不共面）.</span></div>
+</div>
+</article>
+<article class="problem" id="q665">
+<div class="q-head">
+<span class="q-no" data-n="665">【665】</span>
+<span class="q-group">关于向量的平行、垂直、共面及夹角问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $\boldsymbol{a}=\boldsymbol{i}$，$\boldsymbol{b}=\boldsymbol{j}-2\boldsymbol{k}$，$\boldsymbol{c}=2\boldsymbol{i}-2\boldsymbol{j}+\boldsymbol{k}$，求一单位向量 $\boldsymbol{m}$，使 $\boldsymbol{m}\perp\boldsymbol{c}$，且 $\boldsymbol{m}$ 与 $\boldsymbol{a},\boldsymbol{b}$ 共面.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设所求向量 $\boldsymbol{m}=\{x,y,z\}$，依题意，有 $|\boldsymbol{m}|=1\Rightarrow x^2+y^2+z^2=1$，$\boldsymbol{m}\perp\boldsymbol{c}\Rightarrow\boldsymbol{m}\cdot\boldsymbol{c}=0\Rightarrow 2x-2y+z=0$，$\boldsymbol{m}$ 与 $\boldsymbol{a},\boldsymbol{b}$ 共面 $\Rightarrow[\boldsymbol{m},\boldsymbol{a},\boldsymbol{b}]=0$，即 $\begin{vmatrix}x&amp;y&amp;z\\1&amp;0&amp;0\\0&amp;1&amp;-2\end{vmatrix}=2y+z=0$. 以上三式联立，解得 $x=\dfrac{2}{3},y=\dfrac{1}{3},z=-\dfrac{2}{3}$，或 $x=-\dfrac{2}{3},y=-\dfrac{1}{3},z=\dfrac{2}{3}$. 所以 $\boldsymbol{m}=\pm\left(\dfrac{2}{3},\dfrac{1}{3},-\dfrac{2}{3}\right)$. <strong>点评</strong> 涉及到共面问题时，常用混合积.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\boldsymbol{m}=\pm\left(\dfrac{2}{3},\dfrac{1}{3},-\dfrac{2}{3}\right)$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关向量运算应用题</h3>
+<article class="problem" id="q666">
+<div class="q-head">
+<span class="q-no" data-n="666">【666】</span>
+<span class="q-group">有关向量运算应用题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\boldsymbol{a}$ 是非零向量，计算极限 $\lim\limits_{x\to 0}\dfrac{|\boldsymbol{a}+x\boldsymbol{b}|-|\boldsymbol{a}-x\boldsymbol{b}|}{x}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to 0}\dfrac{|\boldsymbol{a}+x\boldsymbol{b}|-|\boldsymbol{a}-x\boldsymbol{b}|}{x}=\lim\limits_{x\to 0}\dfrac{|\boldsymbol{a}+x\boldsymbol{b}|^2-|\boldsymbol{a}-x\boldsymbol{b}|^2}{x(|\boldsymbol{a}+x\boldsymbol{b}|+|\boldsymbol{a}-x\boldsymbol{b}|)}=\lim\limits_{x\to 0}\dfrac{4x\boldsymbol{a}\cdot\boldsymbol{b}}{x\cdot 2|\boldsymbol{a}|}=2\dfrac{\boldsymbol{a}\cdot\boldsymbol{b}}{|\boldsymbol{a}|}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（极限为 $2\dfrac{\boldsymbol{a}\cdot\boldsymbol{b}}{|\boldsymbol{a}|}$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q667">
+<div class="q-head">
+<span class="q-no" data-n="667">【667】</span>
+<span class="q-group">有关向量运算应用题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">$\boldsymbol{a},\boldsymbol{b}$ 为非零向量，且 $|\boldsymbol{b}|=1$，$\left(\widehat{\boldsymbol{a},\boldsymbol{b}}\right)=\dfrac{\pi}{4}$，求极限 $\lim\limits_{x\to 0}\dfrac{|\boldsymbol{a}+x\boldsymbol{b}|-|\boldsymbol{a}|}{x}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\lim\limits_{x\to 0}\dfrac{|\boldsymbol{a}+x\boldsymbol{b}|-|\boldsymbol{a}|}{x}=\lim\limits_{x\to 0}\dfrac{|\boldsymbol{a}+x\boldsymbol{b}|^2-|\boldsymbol{a}|^2}{x(|\boldsymbol{a}+x\boldsymbol{b}|+|\boldsymbol{a}|)}=\lim\limits_{x\to 0}\dfrac{|\boldsymbol{a}|^2+2x\boldsymbol{a}\cdot\boldsymbol{b}+x^2|\boldsymbol{b}|^2-|\boldsymbol{a}|^2}{x\cdot 2|\boldsymbol{a}|}=\lim\limits_{x\to 0}\dfrac{2\boldsymbol{a}\cdot\boldsymbol{b}+x|\boldsymbol{b}|^2}{2|\boldsymbol{a}|}=\dfrac{2\boldsymbol{a}\cdot\boldsymbol{b}}{2|\boldsymbol{a}|}=|\boldsymbol{b}|\cos\left(\widehat{\boldsymbol{a},\boldsymbol{b}}\right)=\dfrac{\sqrt{2}}{2}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（极限为 $\dfrac{\sqrt{2}}{2}$）.</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用向量计算面积</h3>
+<article class="problem" id="q668">
+<div class="q-head">
+<span class="q-no" data-n="668">【668】</span>
+<span class="q-group">利用向量计算面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">以向量 $\boldsymbol{a}=\boldsymbol{m}+2\boldsymbol{n}$ 和 $\boldsymbol{b}=\boldsymbol{m}-3\boldsymbol{n}$ 为边的三角形的面积为 ______，其中 $|\boldsymbol{m}|=5$，$|\boldsymbol{n}|=3$，$\left(\widehat{\boldsymbol{m},\boldsymbol{n}}\right)=\dfrac{\pi}{6}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设三角形面积为 $A$，则 $A=\dfrac{1}{2}|\boldsymbol{a}\times\boldsymbol{b}|$，而 $\boldsymbol{a}\times\boldsymbol{b}=(\boldsymbol{m}+2\boldsymbol{n})\times(\boldsymbol{m}-3\boldsymbol{n})=\boldsymbol{m}\times\boldsymbol{m}-3\boldsymbol{m}\times\boldsymbol{n}+2\boldsymbol{n}\times\boldsymbol{m}-6\boldsymbol{n}\times\boldsymbol{n}=0+3\boldsymbol{n}\times\boldsymbol{m}+2\boldsymbol{n}\times\boldsymbol{m}-0=5\boldsymbol{n}\times\boldsymbol{m}$，因此 $A=\dfrac{1}{2}|\boldsymbol{a}\times\boldsymbol{b}|=\dfrac{5}{2}|\boldsymbol{n}\times\boldsymbol{m}|=\dfrac{5}{2}|\boldsymbol{n}|\cdot|\boldsymbol{m}|\sin\left(\widehat{\boldsymbol{n},\boldsymbol{m}}\right)=\dfrac{75}{4}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{75}{4}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q669">
+<div class="q-head">
+<span class="q-no" data-n="669">【669】</span>
+<span class="q-group">利用向量计算面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知向量 $\overrightarrow{OA}=\boldsymbol{a}$，$\overrightarrow{OB}=\boldsymbol{b}$，$\angle ODA=\dfrac{\pi}{2}$，如图 669 所示. (1)求证：$\triangle ODA$ 的面积等于 $\dfrac{|\boldsymbol{a}\cdot\boldsymbol{b}|\cdot|\boldsymbol{a}\times\boldsymbol{b}|}{2|\boldsymbol{b}|^2}$； (2)当 $\boldsymbol{a},\boldsymbol{b}$ 的夹角 $\theta$ 为何值时，$\triangle ODA$ 的面积最大.</div>
+<div class="figure-note">图669：直角三角形 OAD——O 为左下顶点，射线 OB 水平向右，D 在射线 OB 上且 D 处有直角记号，A 在 D 正上方；斜边 OA 标注 a，线段 OD 标注 b，O 处标注角 θ.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> (1)设 $\triangle ODA$ 的面积为 $S$，则 $S=\dfrac{1}{2}OD\cdot AD=\dfrac{1}{2}|\boldsymbol{a}|\cos\theta\cdot|\boldsymbol{a}|\sin\theta=\dfrac{1}{4}|\boldsymbol{a}|^2\sin 2\theta$. 由于 $\dfrac{|\boldsymbol{a}\cdot\boldsymbol{b}|\cdot|\boldsymbol{a}\times\boldsymbol{b}|}{2|\boldsymbol{b}|^2}=\dfrac{|\boldsymbol{a}|^2|\boldsymbol{b}|^2\sin\theta\cos\theta}{2|\boldsymbol{b}|^2}=\dfrac{1}{4}|\boldsymbol{a}|^2\sin 2\theta$，故 $S=\dfrac{|\boldsymbol{a}\cdot\boldsymbol{b}|\cdot|\boldsymbol{a}\times\boldsymbol{b}|}{2|\boldsymbol{b}|^2}$. (2)由 $S=\dfrac{1}{4}|\boldsymbol{a}|^2\sin 2\theta$，$\dfrac{\mathrm{d}S}{\mathrm{d}\theta}=\dfrac{1}{2}|\boldsymbol{a}|^2\cos 2\theta$，令 $\dfrac{\mathrm{d}S}{\mathrm{d}\theta}=0$ 可得 $\theta=\dfrac{\pi}{4}$ 是 $\left[0,\dfrac{\pi}{2}\right]$ 内唯一驻点，又 $\left.\dfrac{\mathrm{d}^2S}{\mathrm{d}\theta^2}\right|_{\theta=\frac{\pi}{4}}=-|\boldsymbol{a}|^2\sin 2\theta\Big|_{\theta=\frac{\pi}{4}}=-|\boldsymbol{a}|^2&lt;0$，故当 $\theta=\dfrac{\pi}{4}$ 时，$\triangle ODA$ 的面积 $S=\dfrac{1}{4}|\boldsymbol{a}|^2$ 最大.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（当 $\theta=\dfrac{\pi}{4}$ 时，$\triangle ODA$ 的面积 $S=\dfrac{1}{4}|\boldsymbol{a}|^2$ 最大）.</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s1">§2. 空间的平面和直线</h2>
+<h2 class="sec-h" id="sec-s2">1. 平面及其方程</h2>
+<h2 class="sec-h" id="sec-s3">2. 空间直线及其方程</h2>
+<h2 class="sec-h" id="sec-s4">3. 直线、平面之间的相对位置关系</h2>
+<h2 class="sec-h" id="sec-s5">4. 距离公式</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">求平面方程</h3>
+<article class="problem" id="q670" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="670">【670】</span>
+<span class="q-group">求平面方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">一平面过 $M_1(1,1,1)$ 和 $M_2(0,1,-1)$，且垂直于平面 $x+y+z=0$，求其方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解法一</strong> 设所求平面方程为 $Ax+By+Cz+D=0$，将 $M_1,M_2$ 点的坐标代入得 $\begin{cases}A+B+C+D=0\\B-C+D=0\end{cases}$ 又由 $\{A,B,C\}$ 垂直于 $(1,1,1)$ 得 $A+B+C=0$，三方程联立解得 $D=0,B=C,A=-2C$，于是所求平面方程为 $2x-y-z=0$. <strong>解法二</strong> 由 $\{A,B,C\}$ 与 $(1,1,1)$ 及 $\overrightarrow{M_1M_2}=\{-1,0,-2\}$ 垂直有 $A+B+C=0$ 和 $-A-2C=0$. 令 $C=1$，解得 $A=-2,B=1$，于是所求平面方程为 $-2(x-1)+y-1+z-1=0$. 即 $2x-y-z=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（所求平面方程为 $2x-y-z=0$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q671" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="671">【671】</span>
+<span class="q-group">求平面方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">过三个点 $P(2,3,0),Q(-2,-3,4),R(0,6,0)$ 的平面方程是 ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设该平面的方程为 $Ax+By+Cz+D=0$，则因点 $P,Q,R$ 在此平面上，故有 $\begin{cases}2A+3B+D=0\\-2A-3B+4C+D=0\\6B+D=0\end{cases}$ 解此方程组，得 $A=-\dfrac{D}{4},B=-\dfrac{D}{6},C=-\dfrac{D}{2}$. 所以该平面的方程是 $3x+2y+6z-12=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$3x+2y+6z-12=0$.</span></div>
+</div>
+</article>
+<article class="problem" id="q672" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="672">【672】</span>
+<span class="q-group">求平面方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求过 $z$ 轴及点 $(1,1,1)$ 的平面方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解法一</strong> 因平面过 $z$ 轴（可看成母线平行于 $z$ 轴的柱面，且过原点），故其方程为 $Ax+By=0$. 将点 $(1,1,1)$ 代入解得 $B=-A$，再代入上式得平面方程 $x-y=0$. <strong>解法二</strong> 平面过向径 $\{0,0,1\}$ 和 $\{1,1,1\}$，故可取 $\boldsymbol{n}=\boldsymbol{k}\times(\boldsymbol{i}+\boldsymbol{j}+\boldsymbol{k})=\boldsymbol{j}-\boldsymbol{i}$. 又平面过点 $(0,0,0)$，得其方程为 $-x+y=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$x-y=0$ 或 $-x+y=0$）.</span></div>
+</div>
+</article>
+<article class="problem" id="q673" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="673">【673】</span>
+<span class="q-group">求平面方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设平面经过原点及点 $(6,-3,2)$，且与平面 $4x-y+2z=8$ 垂直，则此平面方程为 ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由平面过原点可设其方程为 $Ax+By+Cz=0$. 则 $\begin{cases}6A-3B+2C=0\\4A-B+2C=0\end{cases}$，解得 $\begin{cases}B=A\\C=-\dfrac{3}{2}A\end{cases}$. 所以平面方程为 $2x+2y-3z=0$. 故应填 $2x+2y-3z=0$. <strong>点评</strong> 所求平面的法向向量既与平面 $4x-y+2z=8$ 的法向向量垂直，又与原点及点 $(6,-3,2)$ 的连线的方向向量垂直.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2x+2y-3z=0$.</span></div>
+</div>
+</article>
+<article class="problem" id="q674" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="674">【674】</span>
+<span class="q-group">求平面方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">一平面与原点的距离为 6，且在三坐标轴上的截距之比 $a:b:c=1:3:2$，求该平面方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 由题意，可设平面方程为截距式，再利用原点到平面的距离及截距之间的关系求出平面在三个坐标轴上的截距，即可得此平面方程. <strong>解</strong> 因为截距之比 $a:b:c=1:3:2$，故可设截距 $a=t,b=3t,c=2t$，则平面方程为 $\dfrac{x}{t}+\dfrac{y}{3t}+\dfrac{z}{2t}=1$，此平面与原点的距离 $d=\dfrac{|-1|}{\sqrt{\left(\dfrac{1}{t}\right)^2+\left(\dfrac{1}{3t}\right)^2+\left(\dfrac{1}{2t}\right)^2}}=6$，解得 $t=\pm 7$. 则所求平面的方程为 $\dfrac{x}{7}+\dfrac{y}{21}+\dfrac{z}{14}=\pm 1$，即 $6x+2y+3z\pm 42=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$6x+2y+3z\pm 42=0$.</span></div>
+</div>
+</article>
+<article class="problem" id="q675" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="675">【675】</span>
+<span class="q-group">求平面方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求与平面 $6x+3y+2z+12=0$ 平行，而使点 $(0,2,-1)$ 与这两平面的距离相等的平面方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 由于所求平面与已知平面平行，故可令已知平面的法向量 $(6,3,2)$ 作为所求平面的法向量. 于是，设所求方程为一般式 $6x+3y+2z+D=0$，再根据点到这两个平面的距离相等，可求出 $D$，即可求出所求平面方程. <strong>解</strong> 因为平面 $6x+3y+2z+12=0$，所以法向量为 $(6,3,2)$. 由题意，所求平面方程可设为 $6x+3y+2z+D=0$. 又点 $(0,2,-1)$ 到这两个平面的距离相等，即 $\dfrac{|0\times 6+2\times 3-1\times 2+D|}{\sqrt{6^2+3^2+2^2}}=\dfrac{|0\times 6+2\times 3-1\times 2+12|}{\sqrt{6^2+3^2+2^2}}$，即 $|4+D|=16$，所以 $D=12$ 或 $-20$. 从而所求平面的方程为：$6x+3y+2z+12=0$（与已知平面重合）或 $6x+3y+2z-20=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$6x+3y+2z+12=0$（与已知平面重合）或 $6x+3y+2z-20=0$.</span></div>
+</div>
+</article>
+<article class="problem" id="q676" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="676">【676】</span>
+<span class="q-group">求平面方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">平面过 $z$ 轴，且与平面 $2x+y-\sqrt{5}z=0$ 的夹角为 $\dfrac{\pi}{3}$，求此平面方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 平面过 $z$ 轴，则点 $O(0,0,0)$ 是所求平面上的点. 设所求平面的法向量为 $\boldsymbol{n}=\{A,B,C\}$，所求平面过 $z$ 轴，则 $\boldsymbol{n}\cdot\boldsymbol{k}=0$ 得 $C=0$，所求平面和已知平面夹角为 $\dfrac{\pi}{3}$，则 $\left(\widehat{\boldsymbol{n},\boldsymbol{n}_1}\right)=\dfrac{\pi}{3}$ 或 $\left(\widehat{\boldsymbol{n},\boldsymbol{n}_1}\right)=\dfrac{2\pi}{3}$. 因 $\boldsymbol{n}\cdot\boldsymbol{n}_1=|\boldsymbol{n}||\boldsymbol{n}_1|\cos\left(\widehat{\boldsymbol{n},\boldsymbol{n}_1}\right)$，由 $\boldsymbol{n}_1=\{2,1,-\sqrt{5}\}$，得 $2A+B-\sqrt{5}C=\pm\sqrt{A^2+B^2+C^2}\cdot\sqrt{2^2+1+5}\cdot\dfrac{1}{2}$. 将 $C=0$ 代入且两边平方得 $4A^2+4AB+B^2=\dfrac{5}{2}(A^2+B^2)$，即 $3A^2+8AB-3B^2=0,\ (3A-B)(A+3B)=0$，故 $A=\dfrac{B}{3}$ 或 $A=-3B$. 即所求平面方程的法向量为 $\boldsymbol{n}=\left\{\dfrac{1}{3},1,0\right\}$ 或 $\boldsymbol{n}=\{-3,1,0\}$，故所求平面方程为 $x+3y=0$ 或 $-3x+y=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$x+3y=0$ 或 $-3x+y=0$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">空间直线方程的建立</h3>
+<article class="problem" id="q677" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="677">【677】</span>
+<span class="q-group">空间直线方程的建立</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">过点 $M_0(2,4,0)$ 且与直线 $L_1:\begin{cases}x+2z-1=0\\y-3z-2=0\end{cases}$ 平行的直线方程是 ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 直线 $L_1$ 的方向向量为 $\boldsymbol{s}=\begin{vmatrix}\boldsymbol{i}&amp;\boldsymbol{j}&amp;\boldsymbol{k}\\1&amp;0&amp;2\\0&amp;1&amp;-3\end{vmatrix}=\{-2,3,1\}$，故所求直线的方程是 $\dfrac{x-2}{-2}=\dfrac{y-4}{3}=\dfrac{z}{1}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{x-2}{-2}=\dfrac{y-4}{3}=\dfrac{z}{1}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q678" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="678">【678】</span>
+<span class="q-group">空间直线方程的建立</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知直线 $L$ 过点 $M_0(-1,0,4)$，且与直线 $L_1:\begin{cases}x+2y-z=0\\x+2y+2z+4=0\end{cases}$ 垂直，又与平面 $\pi:3x-4y+z-10=0$ 平行，则直线 $L$ 的方程是 ______.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 直线 $L_1$ 的方向向量 $\boldsymbol{s}_1=\begin{vmatrix}\boldsymbol{i}&amp;\boldsymbol{j}&amp;\boldsymbol{k}\\1&amp;2&amp;-1\\1&amp;2&amp;2\end{vmatrix}=\{6,-3,0\}$ 平面 $\pi$ 的法向量 $\boldsymbol{n}=\{3,-4,1\}$. 因为直线 $L$ 的方向向量 $\boldsymbol{s}$ 既垂直于 $\boldsymbol{s}_1$，又垂直于 $\boldsymbol{n}$，故可取 $\boldsymbol{s}=\dfrac{\boldsymbol{s}_1\times\boldsymbol{n}}{3}=\dfrac{1}{3}\begin{vmatrix}\boldsymbol{i}&amp;\boldsymbol{j}&amp;\boldsymbol{k}\\6&amp;-3&amp;0\\3&amp;-4&amp;1\end{vmatrix}=\{-1,-2,-5\}$，所以，直线 $L$ 的方程是 $\dfrac{x+1}{1}=\dfrac{y}{2}=\dfrac{z-4}{5}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{x+1}{1}=\dfrac{y}{2}=\dfrac{z-4}{5}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q679" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="679">【679】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求过点 $M_0(0,2,4)$，且与两个平面 $\pi_1,\pi_2$ 都平行的直线方程，其中 $\pi_1:x+y-2z-1=0$；$\pi_2:x+2y-z+1=0$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设直线的方向向量为 $\boldsymbol{s}$. 根据题设条件知，$\boldsymbol{s}$ 与 $\pi_1$ 和 $\pi_2$ 的法向量都垂直. 可取 $$\boldsymbol{s}=\boldsymbol{n}_1\times\boldsymbol{n}_2=\begin{vmatrix}\boldsymbol{i}&amp;\boldsymbol{j}&amp;\boldsymbol{k}\\1&amp;1&amp;-2\\1&amp;2&amp;-1\end{vmatrix}=\{3,-1,1\}.$$ 由对称式方程知，所求直线方程为 $\dfrac{x}{3}=\dfrac{y-2}{-1}=\dfrac{z-4}{1}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{x}{3}=\dfrac{y-2}{-1}=\dfrac{z-4}{1}$）</span></div>
+</div>
+</article>
+<article class="problem" id="q680" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="680">【680】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求过点 $M_1(-1,0,4)$，且与平面 $\pi_1:3x-4y+z-10=0$ 平行，又与直线 $L_1:\dfrac{x+1}{3}=\dfrac{y-3}{1}=\dfrac{z}{2}$ 相交的直线 $L$ 的方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 平面 $\pi_1$ 的法向量为 $\boldsymbol{n}_1=\{3,-4,1\}$，故过点 $M_1(-1,0,4)$ 且平行于平面 $\pi_1$ 的平面方程为 $$3(x+1)-4y+(z-4)=0\text{，即 }3x-4y+z-1=0.$$ 再作过点 $M_1(-1,0,4)$ 且过直线 $L_1$ 的平面 $\pi_2$，它的法向量为 $\boldsymbol{n}_2$，因为直线 $L_1$ 上的点 $M_2(-1,3,0)$ 与点 $M_1$ 均在平面 $\pi_2$ 上，$\overrightarrow{M_1M_2}=\{0,3,-4\}$，故 $\boldsymbol{n}_2\perp\overrightarrow{M_1M_2}$，又法向量 $\boldsymbol{n}_2$ 还垂直于直线 $L_1$ 的方向向量 $\boldsymbol{s}_1=\{3,1,2\}$，故可取 $$\boldsymbol{n}_2=\boldsymbol{s}_1\times\overrightarrow{M_1M_2}=\begin{vmatrix}\boldsymbol{i}&amp;\boldsymbol{j}&amp;\boldsymbol{k}\\3&amp;1&amp;2\\0&amp;3&amp;-4\end{vmatrix}=\{-10,12,9\}$$ 于是，平面 $\pi_2$ 的方程为 $$10(x+1)-12y-9(z-4)=0\text{，即 }10x-12y-9z+46=0.$$ 因此，所求直线 $L$ 的方程为 $$\begin{cases}3x-4y+z-1=0\\10x-12y-9z+46=0\end{cases}$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\begin{cases}3x-4y+z-1=0\\10x-12y-9z+46=0\end{cases}$）</span></div>
+</div>
+</article>
+<article class="problem" id="q681" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="681">【681】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设直线 $L$ 过点 $P_0(1,1,1)$，并且与直线 $L_1:x=\dfrac{y}{2}=\dfrac{z}{3}$ 相交，与直线 $L_2:\dfrac{x-1}{2}=\dfrac{y-2}{1}=\dfrac{z-3}{4}$ 垂直，试求直线 $L$ 的方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 直线 $L_2$ 的方向向量为 $\boldsymbol{s}_2=\{2,1,4\}$，过 $P_0(1,1,1)$ 以 $\boldsymbol{s}_2$ 为法向量的平面方程为：$$\pi:2(x-1)+(y-1)+4(z-1)=0.$$ 由题意知，所求直线 $L$ 在此平面 $\pi$ 上. 因直线 $L_1$ 与直线 $L$ 相交，故 $L_1$ 与平面 $\pi$ 也相交，我们可求出 $L_1$ 与 $\pi$ 的交点 $Q(x,y,z)$，将 $L_1$ 转化为参数式 $$\begin{cases}x=t\\y=2t\\z=3t\end{cases}$$ 代入平面方程，得 $t=\dfrac{7}{16}$. 直线 $L$ 过点 $P_0(1,1,1)$ 与 $Q\left(\dfrac{7}{16},\dfrac{7}{8},\dfrac{21}{16}\right)$，由两点式可得直线 $L$ 方程为 $$\dfrac{x-1}{\frac{9}{16}}=\dfrac{y-1}{\frac{1}{8}}=\dfrac{z-1}{-\frac{5}{16}}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{x-1}{\frac{9}{16}}=\dfrac{y-1}{\frac{1}{8}}=\dfrac{z-1}{-\frac{5}{16}}$）</span></div>
+</div>
+</article>
+<article class="problem" id="q682" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="682">【682】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求与已知直线 $L_1:\dfrac{x+3}{2}=\dfrac{y-5}{1}=\dfrac{z}{1}$ 和 $L_2:\dfrac{x-3}{1}=\dfrac{y+1}{4}=\dfrac{z}{1}$ 都相交，且与 $L_3:\dfrac{x+2}{3}=\dfrac{y-1}{2}=\dfrac{z-3}{1}$ 平行的直线方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 所求直线 $L$ 的方向向量为 $\boldsymbol{s}=(3,2,1)$，只要在 $L$ 上找到一个定点 $P$，即可使问题获解，$P$ 最好选择 $L$ 与 $L_1$ 或 $L$ 与 $L_2$ 的交点. <strong>解</strong> 将 $L_1$ 和 $L_2$ 化为参数方程：$$L_1:\begin{cases}x=2t-3\\y=t+5\\z=t\end{cases}\text{， }L_2:\begin{cases}x=t+3\\y=4t-1\\z=t\end{cases}$$ 设 $L$ 与 $L_1$ 和 $L_2$ 的交点分别对应参数 $t_1$ 和 $t_2$，则知交点分别为 $$P(2t_1-3,t_1+5,t_1)\text{， }Q(t_2+3,4t_2-1,t_2).$$ 由于 $\overrightarrow{PQ}\parallel\boldsymbol{s}$，故 $$\dfrac{(2t_1-3)-(t_2+3)}{3}=\dfrac{(t_1+5)-(4t_2-1)}{2}=\dfrac{t_1-t_2}{1}$$ 整理成方程组 $\begin{cases}t_1-2t_2=-6\\t_1+2t_2=6\end{cases}$，解出 $t_1=0$. 所以 $P$ 的坐标为 $(-3,5,0)$. 故所求直线方程为：$$\dfrac{x+3}{3}=\dfrac{y-5}{2}=\dfrac{z}{1}.$$ <strong>点评</strong> 通过对以上例题的解析，可以看出建立直线方程的主要方法是采用对称式方程. 为此需确定直线上一点 $M_0(x_0,y_0,z_0)$ 和直线的方向向量 $\boldsymbol{s}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{x+3}{3}=\dfrac{y-5}{2}=\dfrac{z}{1}$）</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关平面、直线相互关系的问题</h3>
+<article class="problem" id="q683" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="683">【683】</span>
+<span class="q-group">有关平面、直线相互关系的问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设有直线 $$L_1:\dfrac{x-1}{1}=\dfrac{y-5}{-2}=\dfrac{z+8}{1}\quad\text{与}\quad L_2:\begin{cases}x-y=6\\2y+z=3\end{cases}\text{，}$$ 则 $L_1$ 与 $L_2$ 的夹角为 ________.
+(A) $\dfrac{\pi}{6}$　　(B) $\dfrac{\pi}{4}$　　(C) $\dfrac{\pi}{3}$　　(D) $\dfrac{\pi}{2}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\boldsymbol{s}_1=\{1,-2,1\}$，$\boldsymbol{s}_2=\begin{vmatrix}\boldsymbol{i}&amp;\boldsymbol{j}&amp;\boldsymbol{k}\\1&amp;-1&amp;0\\0&amp;2&amp;1\end{vmatrix}=\{-1,-1,2\}$，则 $\cos\left(\widehat{\boldsymbol{s}_1,\boldsymbol{s}_2}\right)=\dfrac{|\boldsymbol{s}_1\cdot\boldsymbol{s}_2|}{|\boldsymbol{s}_1|\cdot|\boldsymbol{s}_2|}=\dfrac{1}{2}$. 故应选 (C).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q684" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="684">【684】</span>
+<span class="q-group">有关平面、直线相互关系的问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设有直线 $L:\begin{cases}x+3y+2z+1=0\\2x-y-10z+3=0\end{cases}$ 及平面 $\pi:4x-2y+z-2=0$，则直线 $L$ ________.
+(A) 平行于 $\pi$　　(B) 在 $\pi$ 上　　(C) 垂直于 $\pi$　　(D) 与 $\pi$ 斜交</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 直线 $L$ 的方向向量为 $\boldsymbol{s}=\{-28,14,-7\}$，平面 $\pi$ 的法向量为 $\boldsymbol{n}=\{4,-2,1\}$，由 $\dfrac{-28}{4}=\dfrac{14}{-2}=\dfrac{-7}{1}$ 知 $\boldsymbol{s}\parallel\boldsymbol{n}$，则直线 $L$ 垂直于平面 $\pi$. 故应选 (C). <strong>点评</strong> 直线与平面间的位置关系可转化为直线的方向向量与平面的法向量之间的关系. 若直线的方向向量平行于平面的法向量，则表明直线与平面垂直.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<h3 class="grp-h">求点到平面或直线的距离</h3>
+<article class="problem" id="q685" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="685">【685】</span>
+<span class="q-group">求点到平面或直线的距离</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">点 $(2,1,0)$ 到平面 $3x+4y+5z=0$ 的距离 $d=$ ________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $d=\dfrac{|2\times3+1\times4+0\times5|}{\sqrt{3^2+4^2+5^2}}=\dfrac{10}{5\sqrt2}=\sqrt2$. 故应填 $\sqrt2$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\sqrt2$</span></div>
+</div>
+</article>
+<article class="problem" id="q686" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="686">【686】</span>
+<span class="q-group">求点到平面或直线的距离</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求点 $P(3,-1,2)$ 到直线 $L:\begin{cases}x+y-z+1=0\\2x-y+z-4=0\end{cases}$ 的距离.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 直线方程 $L$ 的对称式方程为 $\dfrac{x-1}{0}=\dfrac{y+2}{1}=\dfrac{z-0}{1}$，过点 $P$ 且垂直于直线 $L$ 的平面 $\pi$ 的方程为 $$0\cdot(x-3)+1\cdot(y+1)+1\cdot(z-2)=0\text{，即 }y+z-1=0.$$ 把直线 $L$ 的参数方程 $$\begin{cases}x=1\\y=-2+t\\z=t\end{cases}$$ 代入平面 $\pi$ 方程，求直线 $L$ 与平面 $\pi$ 的交点 $$-2+t+t-1=0\Rightarrow t=\dfrac{3}{2}\text{，}$$ 交点为 $M\left(1,-\dfrac{1}{2},\dfrac{3}{2}\right)$. $$d=|\overrightarrow{PM}|=\sqrt{(1-3)^2+\left(-\dfrac{1}{2}+1\right)^2+\left(\dfrac{3}{2}-2\right)^2}=\dfrac{3}{2}\sqrt2.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$d=\dfrac{3}{2}\sqrt2$）</span></div>
+</div>
+</article>
+<article class="problem" id="q687" data-secanchor="s5">
+<div class="q-head">
+<span class="q-no" data-n="687">【687】</span>
+<span class="q-group">求点到平面或直线的距离</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求点 $P(1,2,-1)$ 到直线 $L:\dfrac{x-1}{2}=\dfrac{y+1}{-1}=\dfrac{z-2}{3}$ 的距离.</div>
+<div class="figure-note">图687：直线 $l$ 自左下向右上延伸，点 $P_0$ 在 $l$ 上，点 $P$ 位于 $l$ 的右下方；线段 $P_0P$ 与 $l$ 的夹角 $\theta$ 标注在 $P_0$ 处；自 $P$ 向 $l$ 引垂线，垂足处有直角记号，垂线段标注 $d$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解法一</strong> 过点 $P(1,2,-1)$ 且垂直于直线 $L$ 的平面的方程为 $$2(x-1)-(y-2)+3(z+1)=0\text{，即 }2x-y+3z+3=0.$$ 该平面与直线 $L$ 相交于点 $Q\left(-\dfrac{5}{7},-\dfrac{1}{7},-\dfrac{4}{7}\right)$，所以，所求的距离 $$d=|\overrightarrow{PQ}|=\sqrt{\left(1+\dfrac{5}{7}\right)^2+\left(2+\dfrac{1}{7}\right)^2+\left(\dfrac{4}{7}-1\right)^2}=\dfrac{3}{7}\sqrt{42}.$$ <strong>解法二</strong> 直线 $L$ 的方向向量是 $\boldsymbol{s}=\{2,-1,3\}$，而点 $P_0(1,-1,2)$ 在直线 $L$ 上，所以，点 $P(1,2,-1)$ 到直线 $L$ 的距离为 $$d=|\overrightarrow{PP_0}|\sin\left(\widehat{\overrightarrow{PP_0},\boldsymbol{s}}\right)=\dfrac{|\overrightarrow{PP_0}\times\boldsymbol{s}|}{|\boldsymbol{s}|}$$ 如图 687 所示，而 $$\overrightarrow{PP_0}\times\boldsymbol{s}=\begin{vmatrix}\boldsymbol{i}&amp;\boldsymbol{j}&amp;\boldsymbol{k}\\0&amp;-3&amp;3\\2&amp;-1&amp;3\end{vmatrix}=\{-6,6,6\}$$ 因此 $$d=\dfrac{1}{\sqrt{14}}\sqrt{(-6)^2+6^2+6^2}=\sqrt{\dfrac{108}{14}}=\dfrac{3}{7}\sqrt{42}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$d=\dfrac{3}{7}\sqrt{42}$）</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s6">§3. 空间曲面与空间曲线</h2>
+<h2 class="sec-h" id="sec-s7">1. 空间曲面方程</h2>
+<h2 class="sec-h" id="sec-s8">2. 旋转曲面方程</h2>
+<h2 class="sec-h" id="sec-s9">3. 柱面方程</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">关于常见二次曲面的标准方程及作图的问题</h3>
+<article class="problem" id="q688" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="688">【688】</span>
+<span class="q-group">关于常见二次曲面的标准方程及作图的问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">请指出下列二次曲面的名称，并作草图：
+(1) $16x^2-9y^2-9z^2=-25$；
+(2) $16x^2-9y^2-9z^2=25$；
+(3) $y^2+z^2=4x$；
+(4) $2(x-1)^2+(y-2)^2-(z-3)^2=0$</div>
+<div class="figure-note">图688(1)：空间坐标系，$z$ 轴竖直向上、$x$ 轴水平向右、$y$ 轴斜向右上，原点 $O$；单叶双曲面管沿 $x$ 轴方向放置，腰部在 $O$ 处收缩（腰部椭圆以虚线画出），沿 $x$ 轴向两端逐渐扩宽呈喇叭状.</div><div class="figure-note">图688(2)：空间坐标系，$z$ 轴竖直向上、$x$ 轴水平、$y$ 轴斜向右上，原点 $O$；双叶双曲面的两叶分别张在 $x$ 轴负、正半轴上，顶点位于 $x=-\dfrac{5}{4}$ 与 $x=\dfrac{5}{4}$（$x$ 轴上标注 $-\dfrac{5}{4}$ 与 $\dfrac{5}{4}$），两叶开口分别朝 $x$ 轴负向与正向.</div><div class="figure-note">图688(3)：空间坐标系，$z$ 轴竖直向上、$x$ 轴水平向右、$y$ 轴斜向右上，原点 $O$；椭圆抛物面顶点在 $O$，开口朝 $x$ 轴正向，轮廓呈抛物线形碗状.</div><div class="figure-note">图688(4)：空间坐标系，$z$ 轴竖直向上、$y$ 轴水平向右、$x$ 轴斜向左下，原点 $O$；椭圆锥面顶点在点 $(1,2,3)$（标注在 $O$ 右上方），锥体沿 $z$ 轴向上、下两个方向张开，上、下口为椭圆.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 对已给出的二次曲面方程，要求判断曲面性质的题型，应先进行简化运算，将方程转化成常见的曲面方程的形式，然后再进行判断. <strong>解</strong> （1）可以将方程写成如下的标准形式：$$-\dfrac{x^2}{\left(\dfrac{5}{4}\right)^2}+\dfrac{y^2}{\left(\dfrac{5}{3}\right)^2}+\dfrac{z^2}{\left(\dfrac{5}{3}\right)^2}=1.$$ 该方程表示单叶双曲面，如图 688(1) 所示； （2）方程可以写成如下的标准形式：$$\dfrac{x^2}{\left(\dfrac{5}{4}\right)^2}-\dfrac{y^2}{\left(\dfrac{5}{3}\right)^2}-\dfrac{z^2}{\left(\dfrac{5}{3}\right)^2}=1$$ 该方程表示双叶双曲面，如图 688(2) 所示； （3）方程可写成如下的标准形式：$$x=\dfrac{y^2}{2^2}+\dfrac{z^2}{2^2}$$ 该方程表示椭圆抛物面，如图 688(3) 所示； （4）方程可写成如下的标准形式：$$\dfrac{(x-1)^2}{\left(\dfrac{\sqrt2}{2}\right)^2}+\dfrac{(y-2)^2}{1^2}=(z-3)^2.$$ 该方程表示椭圆锥面，它是由标准椭圆锥面 $\dfrac{x^2}{\left(\dfrac{\sqrt2}{2}\right)^2}+\dfrac{y^2}{1^2}=z^2$ 的图形平移到使锥面的顶点为 $(1,2,3)$ 时得到的. 如图 688(4) 所示.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（(1) 单叶双曲面；(2) 双叶双曲面；(3) 椭圆抛物面；(4) 椭圆锥面）</span></div>
+</div>
+</article>
+<article class="problem" id="q689" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="689">【689】</span>
+<span class="q-group">关于常见二次曲面的标准方程及作图的问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">就 $p$、$q$ 的各种情况说明二次曲面 $z=x^2+py^2+qz^2$ 的类型.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> （1）当 $p=q=0$ 时，$z=x^2$ 是抛物柱面. （2）当 $q=0,p\neq0$ 时，若 $p&gt;0$，$z=x^2+py^2$ 是椭圆抛物面；若 $p&lt;0$，$z=x^2+py^2$ 是双曲抛物面. （3）当 $p=0,q\neq0$ 时，若 $q=a^2&gt;0$，则方程可化为 $x^2+\left(az-\dfrac{1}{2a}\right)^2=\dfrac{1}{4a^2}$ 是椭圆柱面；若 $q=-a^2&lt;0$，则方程可化为 $\left(az+\dfrac{1}{2a}\right)^2-x^2=\dfrac{1}{4a^2}$ 是双曲柱面. （4）当 $p\cdot q\neq0$ 时，若 $p=a^2&gt;0,q=b^2&gt;0$，方程可化为 $$x^2+a^2y^2+\left(bz+\dfrac{1}{2b}\right)^2=\left(\dfrac{1}{2b}\right)^2\quad\text{是椭球面；}$$ 若 $p=-a^2&lt;0,q=-b^2&lt;0$，方程可化为 $$a^2y^2+\left(bz-\dfrac{1}{2b}\right)^2-x^2=\left(\dfrac{1}{2b}\right)^2\quad\text{是单叶双曲面；}$$ 若 $p=a^2&gt;0,q=-b^2&lt;0$，方程可化为 $$x^2+a^2y^2-\left(bz+\dfrac{1}{2b}\right)^2=-\left(\dfrac{1}{2b}\right)^2\quad\text{是双叶双曲面；}$$ 若 $p=-a^2&lt;0,q=b^2&gt;0$，方程可化为 $$x^2-a^2y^2+\left(bz-\dfrac{1}{2b}\right)^2=\left(\dfrac{1}{2b}\right)^2\quad\text{是单叶双曲面.}$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$p=q=0$ 抛物柱面；$q=0$：$p&gt;0$ 椭圆抛物面、$p&lt;0$ 双曲抛物面；$p=0$：$q&gt;0$ 椭圆柱面、$q&lt;0$ 双曲柱面；$p\cdot q\neq0$ 时依次为椭球面、单叶双曲面、双叶双曲面、单叶双曲面）</span></div>
+</div>
+</article>
+<article class="problem" id="q690" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="690">【690】</span>
+<span class="q-group">关于常见二次曲面的标准方程及作图的问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">试求到球面 $$\Sigma_1:(x-4)^2+y^2+z^2=9\quad\text{与}\quad \Sigma_2:(x+1)^2+(y+1)^2+(z+1)^2=4$$ 的距离比为 $3:2$ 的点的轨迹，并指出曲面的类型.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 在所求曲面上任取一点 $M(x,y,z)$，根据已知曲面的条件，建立动点 $M$ 的坐标应满足的方程 $F(x,y,z)=0$，则此方程即为所求曲面的方程. <strong>解</strong> 设所求曲面上的动点为 $M(x,y,z)$，点 $M$ 到 $\Sigma_1$ 的球心 $(4,0,0)$ 的距离为 $$d_1=\sqrt{(x-4)^2+y^2+z^2},$$ 点 $M$ 到 $\Sigma_2$ 的球心 $(-1,-1,-1)$ 的距离为 $$d_2=\sqrt{(x+1)^2+(y+1)^2+(z+1)^2}.$$ 则点 $M$ 到 $\Sigma_1$ 的球面距离为 $$d_1-3=\sqrt{(x-4)^2+y^2+z^2}-3,$$ 点 $M$ 到 $\Sigma_2$ 的球面距离为 $$d_2-2=\sqrt{(x+1)^2+(y+1)^2+(z+1)^2}-2.$$ 由已知 $\dfrac{d_1-3}{d_2-2}=\dfrac{3}{2}$，得 $2d_1=3d_2$. 两边平方，得 $$4[(x-4)^2+y^2+z^2]=9[(x+1)^2+(y+1)^2+(z+1)^2],$$ 化简得 $5(x^2+y^2+z^2)+50x+18y+18z-37=0$. 这是一个球面方程.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$5(x^2+y^2+z^2)+50x+18y+18z-37=0$，这是一个球面方程）</span></div>
+</div>
+</article>
+<article class="problem" id="q691" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="691">【691】</span>
+<span class="q-group">关于常见二次曲面的标准方程及作图的问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设空间曲面 $\Sigma$ 由双参数方程 $$\begin{cases}x=a(u+\lambda)\\y=b(u-\lambda)\\z=2u\lambda\end{cases}\quad\lambda,u\in(-\infty,+\infty)\text{， }a,b&gt;0$$ 给出，试求曲面 $\Sigma$ 的一般式方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 利用三个联立方程消去参数 $u$ 和 $\lambda$，即可建立 $x,y,z$ 之间的关系，得到曲面的一般方程. <strong>解</strong> 由参数方程可得：$u+\lambda=\dfrac{x}{a}$，$u-\lambda=\dfrac{y}{b}$，解出：$$u=\dfrac{1}{2}\left(\dfrac{x}{a}+\dfrac{y}{b}\right)\text{，}\quad\lambda=\dfrac{1}{2}\left(\dfrac{x}{a}-\dfrac{y}{b}\right)\text{，}$$ 所以 $$z=2u\lambda=2\cdot\dfrac{1}{2}\left(\dfrac{x}{a}+\dfrac{y}{b}\right)\cdot\dfrac{1}{2}\left(\dfrac{x}{a}-\dfrac{y}{b}\right)=\dfrac{1}{2}\left[\left(\dfrac{x}{a}\right)^2-\left(\dfrac{y}{b}\right)^2\right].$$ 上述方程表示双曲抛物面. 以上表明曲面 $\Sigma$ 包含在这个双曲抛物面上，下面来说明这个双曲抛物面也包含在曲面 $\Sigma$ 上，即双曲抛物面的点可表示成参数方程的形式. 因为 $$z=\dfrac{x^2}{2a^2}-\dfrac{y^2}{2b^2}=2\cdot\dfrac{1}{2}\left(\dfrac{x}{a}+\dfrac{y}{b}\right)\cdot\dfrac{1}{2}\left(\dfrac{x}{a}-\dfrac{y}{b}\right),$$ 令 $\dfrac{1}{2}\left(\dfrac{x}{a}+\dfrac{y}{b}\right)=u$，$\dfrac{1}{2}\left(\dfrac{x}{a}-\dfrac{y}{b}\right)=\lambda$，从而得 $$\begin{cases}x=a(u+\lambda)\\y=b(u-\lambda)\\z=2u\lambda\end{cases}$$ 所以 $\Sigma$ 的一般方程为 $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=2z$. 这是双曲抛物面.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=2z$，这是双曲抛物面）</span></div>
+</div>
+</article>
+<h3 class="grp-h">求旋转曲面的方程</h3>
+<article class="problem" id="q692" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="692">【692】</span>
+<span class="q-group">求旋转曲面的方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">直线 $L:\dfrac{x-1}{0}=\dfrac{y}{1}=\dfrac{z}{1}$ 绕 $z$ 轴旋转一周，求旋转曲面的方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $P_0(x_0,y_0,z_0)$ 为直线 $L$ 上的一点，故 $x_0=1$，即 $P_0$ 点的坐标为 $(1,y_0,z_0)$，当直线 $L$ 绕 $z$ 轴旋转时，$z=z_0$ 保持不变；动点 $P$ 到 $z$ 轴的距离保持不变，即 $r^2=1+y_0^2=x^2+y^2$，又由直线方程 $y_0=z_0$，因此 $r^2=x^2+y^2=1+y_0^2=1+z_0^2=1+z^2$，故此旋转曲面为单叶双曲面，其方程为：$x^2+y^2-z^2=1$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$x^2+y^2-z^2=1$，单叶双曲面）</span></div>
+</div>
+</article>
+<article class="problem" id="q693" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="693">【693】</span>
+<span class="q-group">求旋转曲面的方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知点 $A$ 与 $B$ 的直角坐标分别为 $(1,0,0)$ 与 $(0,1,1)$. 线段 $AB$ 绕 $z$ 轴旋转一周所成的旋转曲面为 $S$. 求由 $S$ 及两平面 $z=0,z=1$ 所围成的立体体积.</div>
+<div class="figure-note">图693：空间坐标系，$z$ 轴竖直向上、$x$ 轴斜向左下、$y$ 轴水平向右，原点 $O$；线段 $AB$ 绕 $z$ 轴旋转所得的旋转面介于 $z=0$ 与 $z=1$ 之间，呈腰部收拢的单叶双曲面状；$A(1,0,0)$ 位于前下方、$B(0,1,1)$ 位于右上方；中部高度 $z$ 处画有带阴影线的水平圆截面，截面与 $z$ 轴交于 $Q$、与 $AB$ 交于 $M$，附近标注 $M_1$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 693 所示. 直线 $AB$ 的方程为 $\dfrac{x-1}{-1}=\dfrac{y}{1}=\dfrac{z}{1}$，即 $\begin{cases}x=1-z\\y=z\end{cases}$. 在 $z$ 轴上截距为 $z$ 的水平面截此旋转体所得截面为一个圆，此截面与 $z$ 轴交于点 $Q(0,0,z)$，与 $AB$ 交于点 $M(1-z,z,z)$，故圆截面半径 $$r(z)=\sqrt{(1-z)^2+z^2}=\sqrt{1-2z+2z^2},$$ 从而截面面积 $S(z)=\pi(1-2z+2z^2)$，旋转体体积 $$V=\pi\int_0^1(1-2z+2z^2)\,\mathrm{d}z=\dfrac{2}{3}\pi.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$V=\dfrac{2}{3}\pi$）</span></div>
+</div>
+</article>
+<article class="problem" id="q694" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="694">【694】</span>
+<span class="q-group">求旋转曲面的方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求直线 $L:\dfrac{x-1}{1}=\dfrac{y}{1}=\dfrac{z-1}{-1}$ 在平面 $\pi:x-y+2z-1=0$ 上的投影直线 $L_0$ 的方程，并求 $L_0$ 绕 $y$ 轴旋转一周所成曲面的方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设经过 $L$ 且垂直于平面 $\pi$ 的平面方程为 $$\pi_1:A(x-1)+By+C(z-1)=0,$$ 则由条件可知 $A-B+2C=0$，$A+B-C=0$，由此解得 $A:B:C=-1:3:2$，于是 $\pi_1$ 的方程为 $$x-3y-2z+1=0.$$ 从而 $L_0$ 的方程为 $$L_0:\begin{cases}x-y+2z-1=0\\x-3y-2z+1=0\end{cases}\text{，即}\begin{cases}x=2y\\z=-\dfrac{1}{2}(y-1)\end{cases}.$$ 于是 $L_0$ 绕 $y$ 轴旋转一周所成曲面的方程为 $$x^2+z^2=4y^2+\dfrac{1}{4}(y-1)^2\text{，即 }4x^2-17y^2+4z^2+2y-1=0.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$4x^2-17y^2+4z^2+2y-1=0$）</span></div>
+</div>
+</article>
+<h3 class="grp-h">空间曲线方程的建立</h3>
+<article class="problem" id="q695" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="695">【695】</span>
+<span class="q-group">空间曲线方程的建立</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">一动点 $M$ 到平面 $x-1=0$ 的距离等于它与 $x$ 轴距离的两倍，又点 $M$ 到 $A(0,-1,2)$ 的距离为 $1$，求动点 $M$ 的轨迹方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设点 $M$ 的坐标为 $(x,y,z)$，则 $M$ 到平面 $x-1=0$ 的距离为 $|x-1|$，到 $x$ 轴的距离为 $\sqrt{y^2+z^2}$，由题设条件，有 $|x-1|=2\sqrt{y^2+z^2}$，即 $(x-1)^2=4(y^2+z^2)$. 又 $M$ 到 $A(0,-1,2)$ 的距离为 $1$，即 $$x^2+(y+1)^2+(z-2)^2=1^2,$$ 所以动点 $M$ 的轨迹方程满足 $$\begin{cases}(x-1)^2=4(y^2+z^2)\\x^2+(y+1)^2+(z-2)^2=1\end{cases}.$$ <strong>点评</strong> 此类问题常用到距离公式及向量代数的工具. 由所给条件确定动点的坐标所满足的约束方程. 如方程是一个，则轨迹为曲面；如方程有两个，则轨迹为曲线. 另外，也可以设定参数求动点的轨迹方程. 若参数有两个，则轨迹为曲面；若参数只有一个，则轨迹是曲线.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\begin{cases}(x-1)^2=4(y^2+z^2)\\x^2+(y+1)^2+(z-2)^2=1\end{cases}$）</span></div>
+</div>
+</article>
+<article class="problem" id="q696" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="696">【696】</span>
+<span class="q-group">空间曲线方程的建立</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求二次曲面 $y=\dfrac{x^2}{a^2}-\dfrac{z^2}{c^2}$ 与三个坐标平面的交线.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 求解空间曲面与坐标平面的交线，只须将已知曲面方程与坐标平面方程联立. <strong>解</strong> 此二次曲面为双曲抛物面. 它与 $xOy$ 面的交线为 $$\begin{cases}y=\dfrac{x^2}{a^2}-\dfrac{z^2}{c^2}\\z=0\end{cases}\text{，即}\begin{cases}y=\dfrac{x^2}{a^2}\\z=0\end{cases}$$ 这是 $xOy$ 面上的抛物线 $y=\dfrac{x^2}{a^2}$. 曲面与 $zOx$ 面的交线为 $$\begin{cases}y=\dfrac{x^2}{a^2}-\dfrac{z^2}{c^2}\\y=0\end{cases}\text{，即}\begin{cases}\left(\dfrac{x}{a}-\dfrac{z}{c}\right)\left(\dfrac{x}{a}+\dfrac{z}{c}\right)=0\\y=0\end{cases}\text{，}$$ 这说明曲面与 $zOx$ 面的交线是 $zOx$ 面上的两条相交直线 $z=\dfrac{c}{a}x$ 和 $z=-\dfrac{c}{a}x$. 曲面与 $yOz$ 面的交线为 $$\begin{cases}y=\dfrac{x^2}{a^2}-\dfrac{z^2}{c^2}\\x=0\end{cases}\text{，即}\begin{cases}y=-\dfrac{z^2}{c^2}\\x=0\end{cases}$$ 这是 $yOz$ 面上的抛物线.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（与 $xOy$ 面的交线为抛物线 $y=\dfrac{x^2}{a^2}$；与 $zOx$ 面的交线为两条相交直线 $z=\dfrac{c}{a}x$ 和 $z=-\dfrac{c}{a}x$；与 $yOz$ 面的交线为抛物线 $y=-\dfrac{z^2}{c^2}$）</span></div>
+</div>
+</article>
+<h3 class="grp-h">建立投影曲线方程</h3>
+<article class="problem" id="q697" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="697">【697】</span>
+<span class="q-group">建立投影曲线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲线 $C:\begin{cases}x=y^2+z^2\\x+2y-z=0\end{cases}$ 在三个坐标平面上的投影曲线方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 从空间曲线 $C$ 的方程 $\begin{cases}x=y^2+z^2\\x+2y-z=0\end{cases}$ 中分别消去 $x,y,z$ 即可得曲线 $C$ 在三个坐标面上的投影柱面方程，再与坐标面方程联立方程组，即得投影曲线方程. <strong>解</strong> $\begin{cases}x=y^2+z^2\\x+2y-z=0\end{cases}$ 两式联立，消去 $x$，得 $y^2+z^2+2y-z=0$. 这是曲线 $C$ 向 $yOz$ 面的投影柱面. 此投影柱面与 $yOz$ 面的交线即为曲线 $C$ 在 $yOz$ 面上的投影曲线. 故 $$\begin{cases}y^2+z^2+2y-z=0\\x=0\end{cases}$$ 即为所求. 同理，消去 $y$ 可得曲线 $C$ 向 $zOx$ 面的投影曲线 $\begin{cases}x=\dfrac{1}{4}(z-x)^2+z^2\\y=0\end{cases}$. 消去 $z$ 可得曲线 $C$ 向 $xOy$ 面的投影曲线 $\begin{cases}x=y^2+(x+2y)^2\\z=0\end{cases}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（向 $yOz$ 面：$\begin{cases}y^2+z^2+2y-z=0\\x=0\end{cases}$；向 $zOx$ 面：$\begin{cases}x=\dfrac{1}{4}(z-x)^2+z^2\\y=0\end{cases}$；向 $xOy$ 面：$\begin{cases}x=y^2+(x+2y)^2\\z=0\end{cases}$）</span></div>
+</div>
+</article>
+<article class="problem" id="q698" data-secanchor="s9">
+<div class="q-head">
+<span class="q-no" data-n="698">【698】</span>
+<span class="q-group">建立投影曲线方程</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求旋转抛物面 $z=x^2+y^2$ 与平面 $y+z=1$ 的交线在 $xOy$ 面上的投影方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 从曲线方程 $\begin{cases}z=x^2+y^2\\y+z=1\end{cases}$ 中消去 $z$，得曲线向 $xOy$ 面的投影柱面方程为 $x^2+y^2+y=1$. 于是，曲线在 $xOy$ 面上的投影曲线方程为 $\begin{cases}x^2+\left(y+\dfrac{1}{2}\right)^2=\dfrac{5}{4}\\z=0\end{cases}$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$\begin{cases}x^2+\left(y+\dfrac{1}{2}\right)^2=\dfrac{5}{4}\\z=0\end{cases}$）</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s10">§4. 综合提高题型</h2>
+<h3 class="grp-h">有关向量夹角的题目</h3>
+<article class="problem" id="q699" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="699">【699】</span>
+<span class="q-group">有关向量夹角的题目</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设一向量与三个坐标平面的夹角分别是 $\theta,\varphi,\psi$，试证：$\cos^2\theta+\cos^2\varphi+\cos^2\psi=2$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $\boldsymbol{a}=\{a_x,a_y,a_z\}$，$\theta,\varphi,\psi$ 分别为 $\boldsymbol{a}$ 与 $xOy$ 面，$yOz$ 面，$zOx$ 面的夹角，则 $$\cos\theta=\dfrac{\sqrt{a_x^2+a_y^2}}{\sqrt{a_x^2+a_y^2+a_z^2}}\text{，}\quad\cos\varphi=\dfrac{\sqrt{a_y^2+a_z^2}}{\sqrt{a_x^2+a_y^2+a_z^2}}\text{，}\quad\cos\psi=\dfrac{\sqrt{a_z^2+a_x^2}}{\sqrt{a_x^2+a_y^2+a_z^2}}.$$ 所以 $\cos^2\theta+\cos^2\varphi+\cos^2\psi=\dfrac{2(a_x^2+a_y^2+a_z^2)}{a_x^2+a_y^2+a_z^2}=2$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（证得 $\cos^2\theta+\cos^2\varphi+\cos^2\psi=2$）</span></div>
+</div>
+</article>
+<h3 class="grp-h">求平面方程的综合题</h3>
+<article class="problem" id="q700" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="700">【700】</span>
+<span class="q-group">求平面方程的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求经过直线 $\begin{cases}x+5y+z=0\\x-z+4=0\end{cases}$ 且与平面 $x-4y-8z+12=0$ 交成 $\dfrac{\pi}{4}$ 角的平面方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 过直线 $L$ 的平面束方程为 $$\lambda(x+5y+z)+\mu(x-z+4)=0\text{，即 }(\lambda+\mu)x+5\lambda y+(\lambda-\mu)z+4\mu=0\text{，}$$ 则所求平面的法向向量为 $\boldsymbol{n}_1=\{\lambda+\mu,5\lambda,\lambda-\mu\}$， 而已知平面的法向向量为 $\boldsymbol{n}_2=\{1,-4,-8\}$，所以 $$\cos\dfrac{\pi}{4}=\dfrac{|\boldsymbol{n}_1\cdot\boldsymbol{n}_1|}{|\boldsymbol{n}_1|\cdot|\boldsymbol{n}_2|}=\dfrac{|3\lambda-\mu|}{\sqrt{27\lambda^2+2\mu^2}}=\dfrac{\sqrt2}{2},$$ 解得 $\lambda=0$ 或 $\dfrac{\lambda}{\mu}=-\dfrac{4}{3}$. 故所求平面方程为 $$x-z+4=0\text{，或 }x+20y+7z-12=0.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$x-z+4=0$，或 $x+20y+7z-12=0$）</span></div>
+</div>
+</article>
+<article class="problem" id="q701" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="701">【701】</span>
+<span class="q-group">求平面方程的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知两条直线的方程是 $$L_1:\dfrac{x-1}{1}=\dfrac{y-2}{0}=\dfrac{z-3}{-1}\text{，}L_2:\dfrac{x+2}{2}=\dfrac{y-1}{1}=\dfrac{z}{1}\text{，}$$ 则过 $L_1$ 且平行于 $L_2$ 的平面方程是 ________.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 根据题意，所求平面应过直线 $L_1$，从而过直线 $L_1$ 上的点 $(1,2,3)$，另一方面所求平面的法向量 $\boldsymbol{n}$ 与已知直线 $L_1$ 及 $L_2$ 的方向向量都垂直，从而可取 $$\boldsymbol{n}=\begin{vmatrix}\boldsymbol{i}&amp;\boldsymbol{j}&amp;\boldsymbol{k}\\1&amp;0&amp;-1\\2&amp;1&amp;1\end{vmatrix}=\boldsymbol{i}-3\boldsymbol{j}+\boldsymbol{k}$$ 于是所求平面方程为 $$1\cdot(x-1)-3\cdot(y-2)+1\cdot(z-3)=0.$$ 故应填 $x-3y+z+2=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $x-3y+z+2=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q702" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="702">【702】</span>
+<span class="q-group">求平面方程的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">点 $P(2,-1,-1)$ 关于平面 $\pi$ 的对称点为 $P_1(-2,3,11)$. 求 $\pi$ 的方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\overrightarrow{PP_1}$ 的中点坐标为 $M_0(0,1,5)$. 取法向量 $\boldsymbol{n}=\overrightarrow{PP_1}=\{-4,4,12\}$，则 $\pi$ 的方程为 $$-4(x-0)+4(y-1)+12(z-5)=0\text{，即 }x-y-3z+16=0.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$x-y-3z+16=0$）</span></div>
+</div>
+</article>
+<article class="problem" id="q703" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="703">【703】</span>
+<span class="q-group">求平面方程的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">通过直线 $$L_1:\begin{cases}x=2t-1\\y=3t+2\\z=2t-3\end{cases}\text{和 }L_2:\begin{cases}x=2t+3\\y=3t-1\\z=2t+1\end{cases}$$ 的平面方程是 ________.</div>
+<div class="figure-note">图703：两条平行直线，$L_2$ 在右上方、$L_1$ 在左下方，均斜向右上；$M_2$ 在 $L_2$ 上，$M_1$ 在 $L_1$ 左下端，$M$ 位于 $M_1M_2$ 连线上；自 $M_1$ 引出两个向量箭头分别指向 $M_2$ 与 $M$；沿 $L_1$ 方向标注向量 $\boldsymbol{S}$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $L_1$ 和 $L_2$ 是两平行直线，先化为标准式 $$L_1:\dfrac{x+1}{2}=\dfrac{y-2}{3}=\dfrac{z+3}{2}\text{，}L_2:\dfrac{x-3}{2}=\dfrac{y+1}{3}=\dfrac{z-1}{2}.$$ 利用三向量共面（如图 703），得 $$\begin{vmatrix}x+1&amp;y-2&amp;z+3\\3-(-1)&amp;-1-2&amp;1-(-3)\\2&amp;3&amp;2\end{vmatrix}=0.\text{ 即 }x-z-2=0.$$ 故应填 $x-z-2=0$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $x-z-2=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q704" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="704">【704】</span>
+<span class="q-group">求平面方程的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设两直线 $$L_1:\begin{cases}x-3y+z=0\\2x-4y+z+1=0\end{cases}\text{；}L_2:\dfrac{x}{1}=\dfrac{y+1}{3}=\dfrac{z-2}{4}\text{，}$$ （1）证明 $L_1$ 与 $L_2$ 是异面直线； （2）求 $L_1$ 与 $L_2$ 之间的距离； （3）求过 $L_1$ 且平行于 $L_2$ 的平面方程.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body">（本页至此中断，解答接下一批）
+<strong>解</strong> (1) $L_1$ 上取点 $P_1(0,1,3)$，$L_2$ 上取点 $P_2(0,-1,2)$，$$\boldsymbol{s}_1=\{1,-3,1\}\times\{2,-4,1\}=\{1,1,2\},\quad \boldsymbol{s}_2=\{1,3,4\}.$$ 因为 $$[\overrightarrow{P_1P_2},\boldsymbol{s}_1,\boldsymbol{s}_2]=(\overrightarrow{P_1P_2}\times\boldsymbol{s}_1)\cdot\boldsymbol{s}_2=\begin{vmatrix}0&amp;-2&amp;-1\\1&amp;1&amp;2\\1&amp;3&amp;4\end{vmatrix}=2\neq 0,$$ 所以，$\overrightarrow{P_1P_2},\boldsymbol{s}_1,\boldsymbol{s}_2$ 不共面，从而 $L_1$ 与 $L_2$ 是异面直线．(2) 取公垂向量 $\boldsymbol{s}=\boldsymbol{s}_1\times\boldsymbol{s}_2=\{-2,-2,2\}$，则 $L_1$ 与 $L_2$ 之间的距离为 $$d=\left|pr_{\boldsymbol{js}}\overrightarrow{P_1P_2}\right|=\left|\overrightarrow{P_1P_2}\cdot\frac{\boldsymbol{s}}{|\boldsymbol{s}|}\right|=\frac{1}{\sqrt{3}}.$$ (3) $-2(x-0)-2(y-1)+2(z-3)=0$，即 $x+y-z+2=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $L_1$ 与 $L_2$ 是异面直线；(2) $d=\frac{1}{\sqrt{3}}$；(3) $x+y-z+2=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q705" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="705">【705】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求直线 $L:\begin{cases}2x-y+z-1=0\\ x+y-z+1=0\end{cases}$ 在平面 $\pi:x+2y-z=0$ 上的投影直线方程．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 过直线 $L$ 的平面束方程为 $$\lambda(2x-y+z-1)+\mu(x+y-z+1)=0,$$ 即 $$(2\lambda+\mu)x+(-\lambda+\mu)y+(\lambda-\mu)z+(-\lambda+\mu)=0,\tag{①}$$ 则与平面 $\pi$ 垂直的平面 $\pi_1$ 的法向量为 $\boldsymbol{n}_1=\{2\lambda+\mu,-\lambda+\mu,\lambda-\mu\}$．由题意知 $\boldsymbol{n}_1\perp\boldsymbol{n}$，其中 $\boldsymbol{n}=\{1,2,-1\}$，从而 $$1\cdot(2\lambda+\mu)+2\cdot(-\lambda+\mu)-1\cdot(\lambda-\mu)=0,$$ 解得 $\lambda=4\mu$．代回①得与平面 $\pi$ 垂直的平面方程为 $3x-y+z-1=0$．所求直线 $L$ 在平面 $\pi$ 上的投影直线应为平面 $\pi$ 与平面 $\pi_1$ 的交线，即 $\begin{cases}x+2y-z=0\\ 3x-y+z-1=0\end{cases}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\begin{cases}x+2y-z=0\\ 3x-y+z-1=0\end{cases}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">曲面方程的建立</h3>
+<article class="problem" id="q706" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="706">【706】</span>
+<span class="q-group">曲面方程的建立</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设直线 $L:\begin{cases}x+y-z-1=0\\ x-y+z+1=0\end{cases}$ 及平面 $\pi:x+y+z=0$．(1) 求直线 $L$ 在平面 $\pi$ 上的投影直线 $L_0$ 的方程；(2) 求直线 $L_0$ 绕 $z$ 轴旋转一周所成的曲面方程．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 设过直线 $L$ 且垂直于平面 $\pi$ 的平面为 $\pi_1$，$L$ 的方向向量 $\boldsymbol{S}=(1,1,-1)\times(1,-1,1)=(0,-2,-2)$，$\pi_1$ 的法向量 $\boldsymbol{n}_1=\boldsymbol{S}\times\boldsymbol{n}=(0,-2,-2)\times(1,1,1)=(0,-2,2)$．在 $L$ 上取点 $(0,0,-1)$，则平面 $\pi_1$ 的方程 $$-2(y-0)+2(z+1)=0,\quad\text{即 } y-z-1=0.$$ 平面 $\pi$ 与 $\pi_1$ 的交线即为 $L_0:\begin{cases}x+y+z=0\\ y-z-1=0\end{cases}$．(2) 在 $L_0$ 上取点 $(-1,1,0)$，$L_0$ 的方向向量 $\boldsymbol{S}_0=(1,1,1)\times(0,1,-1)=(-2,1,1)$，直线 $L_0$ 的对称式 $\frac{x+1}{-2}=\frac{y-1}{1}=\frac{z}{1}$，参数式 $\begin{cases}x=-1-2t\\ y=1+t\\ z=t\end{cases}$，绕 $z$ 轴旋转所得的旋转曲面方程为 $$\begin{cases}x^2+y^2=(-1-2t)^2+(1+t)^2\\ z=t\end{cases},$$ 消去 $t$，得 $x^2+y^2-5z^2-6z-2=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $L_0:\begin{cases}x+y+z=0\\ y-z-1=0\end{cases}$；(2) $x^2+y^2-5z^2-6z-2=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q707" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="707">【707】</span>
+<span class="q-group">曲面方程的建立</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求到点 $(a,0,0)$ 与平面 $x=-a$ 距离相等的点的轨迹所满足的方程．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设动点为 $M(x,y,z)$．依题意，有 $$\sqrt{(x-a)^2+y^2+z^2}=|x+a|,\quad\text{即 } 4ax=y^2+z^2.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$4ax=y^2+z^2$</span></div>
+</div>
+</article>
+<article class="problem" id="q708" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="708">【708】</span>
+<span class="q-group">曲面方程的建立</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $a,b,c$ 为一平面在坐标轴上的截距，$P$ 为原点与该平面之间的距离，证明 $\frac{1}{a^2}+\frac{1}{b^2}+\frac{1}{c^2}=\frac{1}{P^2}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 由已知平面 $\pi$ 方程为 $\frac{x}{a}+\frac{y}{b}+\frac{z}{c}=1$，即 $bcx+acy+abz-abc=0$．原点 $O(0,0,0)$ 到平面 $\pi$ 的距离 $$P=\frac{|bc\cdot 0+ac\cdot 0+ab\cdot 0-abc|}{\sqrt{(bc)^2+(ac)^2+(ab)^2}},$$ 即 $P^2=\frac{(abc)^2}{(bc)^2+(ac)^2+(ab)^2}$，从而 $\frac{1}{a^2}+\frac{1}{b^2}+\frac{1}{c^2}=\frac{1}{P^2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\frac{1}{a^2}+\frac{1}{b^2}+\frac{1}{c^2}=\frac{1}{P^2}$（证毕）</span></div>
+</div>
+</article>
+<article class="problem" id="q709" data-secanchor="s10">
+<div class="q-head">
+<span class="q-no" data-n="709">【709】</span>
+<span class="q-group">曲面方程的建立</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">证明 $f\left(\frac{y}{m}-\frac{z}{n},\frac{z}{n}-\frac{x}{l},\frac{x}{l}-\frac{y}{m}\right)=0$（其中 $l,m,n$ 不为 $0$）表示母线平行 $\frac{x}{l}=\frac{y}{m}=\frac{z}{n}$ 的柱面．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 只需证明过曲面上的点且平行于 $\frac{x}{l}=\frac{y}{m}=\frac{z}{n}$ 的直线位于该曲面上．<strong>证</strong> 设 $P_0(x_0,y_0,z_0)$ 是曲面上的点，则 $$f\left(\frac{y_0}{m}-\frac{z_0}{n},\frac{z_0}{n}-\frac{x_0}{l},\frac{x_0}{l}-\frac{y_0}{m}\right)=0.$$ 过 $P_0$ 且平行于 $\frac{x}{l}=\frac{y}{m}=\frac{z}{n}$ 的直线方程是 $\frac{x-x_0}{l}=\frac{y-y_0}{m}=\frac{z-z_0}{n}$，从而得到 $$\frac{y_0}{m}-\frac{z_0}{n}=\frac{y}{m}-\frac{z}{n},\quad \frac{z_0}{n}-\frac{x_0}{l}=\frac{z}{n}-\frac{x}{l},\quad \frac{x_0}{l}-\frac{y_0}{m}=\frac{x}{l}-\frac{y}{m}.$$ 于是 $f\left(\frac{y}{m}-\frac{z}{n},\frac{z}{n}-\frac{x}{l},\frac{x}{l}-\frac{y}{m}\right)=0$．因此，方程 $f\left(\frac{y}{m}-\frac{z}{n},\frac{z}{n}-\frac{x}{l},\frac{x}{l}-\frac{y}{m}\right)=0$ 表示母线平行于 $\frac{x}{l}=\frac{y}{m}=\frac{z}{n}$ 的柱面．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">方程 $f\left(\frac{y}{m}-\frac{z}{n},\frac{z}{n}-\frac{x}{l},\frac{x}{l}-\frac{y}{m}\right)=0$ 表示母线平行于 $\frac{x}{l}=\frac{y}{m}=\frac{z}{n}$ 的柱面（证毕）</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s11">§1. 多元函数的基本概念</h2>
+<h2 class="sec-h" id="sec-s12">1. 二元函数的概念</h2>
+<h2 class="sec-h" id="sec-s13">2. 二元函数的极限</h2>
+<h2 class="sec-h" id="sec-s14">3. 二元函数的连续性</h2>
+<h2 class="sec-h" id="sec-s15">4. 有界闭区域上二元连续函数的性质</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">求多元函数的定义域</h3>
+</main>
+</div>
+<div class="qnav">
+  <button id="qnav-prev" title="上一题">↑</button>
+  <button id="qnav-next" title="下一题">↓</button>
+</div>
+<footer>
+  内容来自《吉米多维奇高等数学习题精选精解》（张天德、蒋晓云主编）· 仅供个人学习使用<br>
+  <a href="../index.html" style="color:var(--accent);">返回总目录</a> <a class="icon-btn" href="chapter-06.html">上一章</a> <a class="icon-btn" href="chapter-08.html">下一章</a>
+</footer>
+</body>
+</html>

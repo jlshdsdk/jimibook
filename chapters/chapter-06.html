@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第6章 第六章 定积分的应用 · 吉米多维奇高等数学刷题版</title>
+<meta name="description" content="吉米多维奇高等数学习题精选精解第6章第六章 定积分的应用题目与详解，共59题">
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+<script defer src="../assets/katex/katex.min.js"></script>
+<script defer src="../assets/katex/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</head>
+<body data-chapter="6" data-lazy="1">
+<header class="topbar">
+  <a class="back" href="../index.html">← 总目录</a>
+  <button class="icon-btn sidebar-toggle" id="sidebar-toggle">☰ 目录</button>
+  <span class="title">第6章 第六章 定积分的应用 · 共59题</span>
+  <button class="icon-btn" id="theme-btn">🌙 夜间</button>
+</header>
+<div class="sidebar-mask" id="sidebar-mask"></div>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<h3>本章节选</h3>
+<a class="sec" href="#sec-s1">§2. 定积分在物理学上的应用</a>
+<a class="sec" href="#sec-s2">3. 综合提高题型</a>
+<a class="sec" href="#sec-s3">§1. 向量及其运算</a>
+<a class="sec" href="#sec-s4">1. 向量的数量积（点乘积或内积）</a>
+<a class="sec" href="#sec-s5">2. 向量的向量积（叉乘积或外积）</a>
+<a class="sec" href="#sec-s6">3. 向量的混合积</a>
+<h3>题号</h3><div class="qindex">
+<a href="#q592" id="qi592">592</a>
+<a href="#q593" id="qi593">593</a>
+<a href="#q594" id="qi594">594</a>
+<a href="#q595" id="qi595">595</a>
+<a href="#q596" id="qi596">596</a>
+<a href="#q597" id="qi597">597</a>
+<a href="#q598" id="qi598">598</a>
+<a href="#q599" id="qi599">599</a>
+<a href="#q600" id="qi600">600</a>
+<a href="#q601" id="qi601">601</a>
+<a href="#q602" id="qi602">602</a>
+<a href="#q603" id="qi603">603</a>
+<a href="#q604" id="qi604">604</a>
+<a href="#q605" id="qi605">605</a>
+<a href="#q606" id="qi606">606</a>
+<a href="#q607" id="qi607">607</a>
+<a href="#q608" id="qi608">608</a>
+<a href="#q609" id="qi609">609</a>
+<a href="#q610" id="qi610">610</a>
+<a href="#q611" id="qi611">611</a>
+<a href="#q612" id="qi612">612</a>
+<a href="#q613" id="qi613">613</a>
+<a href="#q614" id="qi614">614</a>
+<a href="#q615" id="qi615">615</a>
+<a href="#q616" id="qi616">616</a>
+<a href="#q617" id="qi617">617</a>
+<a href="#q618" id="qi618">618</a>
+<a href="#q619" id="qi619">619</a>
+<a href="#q620" id="qi620">620</a>
+<a href="#q621" id="qi621">621</a>
+<a href="#q622" id="qi622">622</a>
+<a href="#q623" id="qi623">623</a>
+<a href="#q624" id="qi624">624</a>
+<a href="#q625" id="qi625">625</a>
+<a href="#q626" id="qi626">626</a>
+<a href="#q627" id="qi627">627</a>
+<a href="#q628" id="qi628">628</a>
+<a href="#q629" id="qi629">629</a>
+<a href="#q630" id="qi630">630</a>
+<a href="#q631" id="qi631">631</a>
+<a href="#q632" id="qi632">632</a>
+<a href="#q633" id="qi633">633</a>
+<a href="#q634" id="qi634">634</a>
+<a href="#q635" id="qi635">635</a>
+<a href="#q636" id="qi636">636</a>
+<a href="#q637" id="qi637">637</a>
+<a href="#q638" id="qi638">638</a>
+<a href="#q639" id="qi639">639</a>
+<a href="#q640" id="qi640">640</a>
+<a href="#q641" id="qi641">641</a>
+<a href="#q642" id="qi642">642</a>
+<a href="#q643" id="qi643">643</a>
+<a href="#q644" id="qi644">644</a>
+<a href="#q645" id="qi645">645</a>
+<a href="#q646" id="qi646">646</a>
+<a href="#q647" id="qi647">647</a>
+<a href="#q648" id="qi648">648</a>
+<a href="#q649" id="qi649">649</a>
+<a href="#q650" id="qi650">650</a>
+</div></nav>
+<main class="main">
+<div class="ch-progress-wrap" style="margin-bottom:18px;color:var(--text-soft);font-size:14px;">
+  本章进度：<span id="ch-progress-text">0 / 59</span>
+  <div class="progress-bar" id="ch-progress" data-ch-count="59" style="margin:6px 0 0;"><i></i></div>
+</div>
+<article class="problem" id="q592">
+<div class="q-head">
+<span class="q-no" data-n="592">【592】</span>
+<span class="q-group">直角坐标系下利用定积分求平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设在区间 $[a,b]$ 上 $f(x)&gt;0$，$f'(x)&lt;0$，$f''(x)&gt;0$．令 $S_1=\int_a^b f(x)\,\mathrm{d}x$，$S_2=f(b)(b-a)$，$S_3=\dfrac{1}{2}\left[f(a)+f(b)\right](b-a)$，则________．(A) $S_1&lt;S_2&lt;S_3$　(B) $S_2&lt;S_1&lt;S_3$　(C) $S_3&lt;S_1&lt;S_2$　(D) $S_2&lt;S_3&lt;S_1$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $f(x)&gt;0$，$f'(x)&lt;0$，$f''(x)&gt;0$ 知曲线 $y=f(x)$ 在 $[a,b]$ 上单调减少且是凹的，于是有 $f(x)&gt;f(b)$，$f(x)&lt;f(a)+\dfrac{f(b)-f(a)}{b-a}(x-a)$，$a&lt;x&lt;b$．从而 $S_1=\int_a^b f(x)\,\mathrm{d}x&gt;f(b)(b-a)=S_2$，$$S_1=\int_a^b f(x)\,\mathrm{d}x&lt;\int_a^b\left[f(a)+\frac{f(b)-f(a)}{b-a}(x-a)\right]\mathrm{d}x=\frac{1}{2}\left[f(a)+f(b)\right](b-a)=S_3.$$ 即 $S_2&lt;S_1&lt;S_3$．故应选（B）．<strong>点评</strong> 由题设条件及定积分的几何意义和比较性质可得正确选项．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（B）</span></div>
+</div>
+</article>
+<article class="problem" id="q593">
+<div class="q-head">
+<span class="q-no" data-n="593">【593】</span>
+<span class="q-group">直角坐标系下利用定积分求平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">由曲线 $y=x+\dfrac{1}{x}$，$x=2$ 及 $y=2$ 所围图形的面积 $S=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $S=\int_1^2\left(x+\dfrac{1}{x}-2\right)\mathrm{d}x=\ln 2-\dfrac{1}{2}$．故应填 $\ln 2-\dfrac{1}{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\ln 2-\dfrac{1}{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q594">
+<div class="q-head">
+<span class="q-no" data-n="594">【594】</span>
+<span class="q-group">直角坐标系下利用定积分求平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $y=x(x-1)(2-x)$ 与 $x$ 轴所围图形的面积可表示为________．(A) $-\int_0^2 x(x-1)(2-x)\,\mathrm{d}x$　(B) $\int_0^1 x(x-1)(2-x)\,\mathrm{d}x-\int_1^2 x(x-1)(2-x)\,\mathrm{d}x$　(C) $-\int_0^1 x(x-1)(2-x)\,\mathrm{d}x+\int_1^2 x(x-1)(2-x)\,\mathrm{d}x$　(D) $\int_0^2 x(x-1)(2-x)\,\mathrm{d}x$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 曲线 $y=x(x-1)(2-x)$ 与 $x$ 轴交点为 $x=0$，$x=1$，$x=2$；当 $0&lt;x&lt;1$ 时，$y&lt;0$；当 $1&lt;x&lt;2$ 时，$y&gt;0$．$$A=\int_0^2|y|\,\mathrm{d}x=-\int_0^1 x(x-1)(2-x)\,\mathrm{d}x+\int_1^2 x(x-1)(2-x)\,\mathrm{d}x.$$ 故应选（C）．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（C）</span></div>
+</div>
+</article>
+<article class="problem" id="q595">
+<div class="q-head">
+<span class="q-no" data-n="595">【595】</span>
+<span class="q-group">直角坐标系下利用定积分求平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $y=-x^3+x^2+2x$ 与 $x$ 轴所围的图形的面积 $A=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $y=0$ 得，$x=-1,0,2$．且 $-1&lt;x&lt;0$ 时，$y&lt;0$；$0&lt;x&lt;2$ 时，$y&gt;0$．所以 $$A=\int_{-1}^{2}|y|\,\mathrm{d}x=-\int_{-1}^{0}y\,\mathrm{d}x+\int_0^2 y\,\mathrm{d}x=\frac{37}{12}.$$ 故应填 $\dfrac{37}{12}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{37}{12}$</span></div>
+</div>
+</article>
+<article class="problem" id="q596">
+<div class="q-head">
+<span class="q-no" data-n="596">【596】</span>
+<span class="q-group">直角坐标系下利用定积分求平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲线 $y=|\ln x|$ 与直线 $x=\dfrac{1}{\mathrm{e}}$，$x=\mathrm{e}$ 及 $y=0$ 所围成的区域的面积 $S$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y=|\ln x|=\begin{cases}\ln x, &amp; x\geqslant 1\\ -\ln x, &amp; 0&lt;x&lt;1\end{cases}$ $$S=\int_{\frac{1}{\mathrm{e}}}^{1}(-\ln x)\,\mathrm{d}x+\int_1^{\mathrm{e}}\ln x\,\mathrm{d}x=-\left[x\ln x-x\right]_{\frac{1}{\mathrm{e}}}^{1}+\left[x\ln x-x\right]_1^{\mathrm{e}}=2-\frac{2}{\mathrm{e}}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$S=2-\dfrac{2}{\mathrm{e}}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">与平面图形面积有关的应用题</h3>
+<article class="problem" id="q597">
+<div class="q-head">
+<span class="q-no" data-n="597">【597】</span>
+<span class="q-group">与平面图形面积有关的应用题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">从点 $(2,0)$ 引两条直线与曲线 $y=x^3$ 相切，求由此两条切线与曲线 $y=x^3$ 所围图形的面积 $S$．</div>
+<div class="figure-note">图597：第一象限内过原点的三次曲线（图中曲线标注为 $y=x$，照原书，即题中的 $y=x^3$），曲线在原点处与 $x$ 轴相切后上升；从点 $(2,0)$（图上已标注）引出的两条切线：一条为 $x$ 轴（切点为原点），另一条切曲线于点 $(3,27)$；曲线与 $x$ 轴及斜切线之间的区域以竖细线阴影标出。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 597 所示，设切点为 $(\alpha,\alpha^3)$ 则过切点的切线方程为 $$Y-\alpha^3=3\alpha^2(X-\alpha),$$ 因为它通过点 $(2,0)$，即满足 $$0-\alpha^3=3\alpha^2(2-\alpha),\ \text{即}\ \alpha^3+3\alpha^2(2-\alpha)=0.$$ 可得 $\alpha=0$ 或 $\alpha=3$，即两切点坐标为：$(0,0)$ 与 $(3,27)$，相应的两条切线方程为 $$Y=0\quad \text{与}\quad 27X-Y-54=0.$$ 选取 $y$ 为积分变量，则有 $$S=\int_0^{27}\left(\frac{y}{27}+2-\sqrt[3]{y}\right)\mathrm{d}y=\left(\frac{y^2}{54}+2y-\frac{3}{4}y^{\frac{4}{3}}\right)\bigg|_0^{27}=\frac{27}{4}.$$ <strong>点评</strong> 求面积问题与利用导数求切线方程问题相结合，增加了问题的综合性，读者应提高解决这种综合问题的能力．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$S=\dfrac{27}{4}$</span></div>
+</div>
+</article>
+<article class="problem" id="q598">
+<div class="q-head">
+<span class="q-no" data-n="598">【598】</span>
+<span class="q-group">与平面图形面积有关的应用题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">在第一象限内，求曲线 $y=-x^2+1$ 上的一点，使该点处的切线与所给曲线及两坐标轴围成的图形面积为最小，并求此最小面积．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设所求点 $P(x,y)$，因为 $y'=-2x\,(x&gt;0)$，故过点 $P(x,y)$ 的切线方程为：$$Y-y=-2x(X-x).$$ 当 $X=0$ 时，得切线在 $y$ 轴上的截面距：$b=x^2+1$，当 $Y=0$ 时，得切线在 $x$ 轴上的截距：$a=\dfrac{x^2+1}{2x}$．故所求面积为：$$S(x)=\frac{1}{2}ab-\int_0^1(-x^2+1)\,\mathrm{d}x=\frac{1}{4}\left(x^3+2x+\frac{1}{x}\right)-\frac{2}{3},$$ $$S'(x)=\frac{1}{4}\left(3x-\frac{1}{x}\right)\cdot\left(x+\frac{1}{x}\right)\overset{\text{令}}{=}0,\ \text{得驻点}:x_0=\frac{1}{\sqrt{3}},$$ 再由 $S''\left(\dfrac{1}{\sqrt{3}}\right)&gt;0$ 知，$S(x_0)$ 取得极小值，且当 $0&lt;x&lt;1$ 时，仅有此一个极小值点，故此极小值点即为 $S(x)$ 在 $0&lt;x&lt;1$ 上的最小值．又 $x_0=\dfrac{1}{\sqrt{3}}$ 时，$y_0=\dfrac{2}{3}$，$S\left(\dfrac{1}{\sqrt{3}}\right)=\dfrac{2}{9}(2\sqrt{3}-3)$．故所求点为 $\left(\dfrac{1}{\sqrt{3}},\dfrac{2}{3}\right)$，所求最小面积为 $\dfrac{2}{9}(2\sqrt{3}-3)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所求点为 $\left(\dfrac{1}{\sqrt{3}},\dfrac{2}{3}\right)$，最小面积为 $\dfrac{2}{9}(2\sqrt{3}-3)$</span></div>
+</div>
+</article>
+<article class="problem" id="q599">
+<div class="q-head">
+<span class="q-no" data-n="599">【599】</span>
+<span class="q-group">与平面图形面积有关的应用题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知曲线 $y=a\sqrt{x}$（$a&gt;0$）与曲线 $y=\ln\sqrt{x}$ 在点 $(x_0,y_0)$ 处有公共切线，求 (1) 常数 $a$ 及切点 $(x_0,y_0)$；(2) 两曲线与 $x$ 轴围成的平面图形的面积 $S$．</div>
+<div class="figure-note">图599：第一象限内，曲线 $y=\mathrm{e}^{-1}\sqrt{x}$（自原点上升，在上方）与曲线 $y=\ln\sqrt{x}$（自 $(1,0)$ 上升，在下方）相切于点 $(\mathrm{e}^2,1)$；两曲线与 $x$ 轴（及 $y$ 轴附近）围成的新月形区域以斜线阴影标出；图中画有水平线 $y=1$（$y$ 轴上标 $1$）与竖直线（垂足 $x$ 轴上标 $\mathrm{e}^2$）。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 分别对 $y=a\sqrt{x}$ 和 $y=\ln\sqrt{x}$ 求导，得 $$y'=\frac{a}{2\sqrt{x}}\ \text{和}\ y'=\frac{1}{2x}.$$ 由于两曲线在 $(x_0,y_0)$ 处有公切线，可见 $$\frac{a}{2\sqrt{x_0}}=\frac{1}{2x_0},\ \text{得}\ x_0=\frac{1}{a^2};$$ 将 $x_0=\dfrac{1}{a^2}$ 分别代入两曲线方程，有 $$y_0=a\sqrt{\frac{1}{a^2}}=\frac{1}{2}\ln\frac{1}{a^2},$$ 于是 $a=\dfrac{1}{\mathrm{e}}$；$x_0=\dfrac{1}{a^2}=\mathrm{e}^2$，$y_0=a\sqrt{x_0}=\dfrac{1}{\mathrm{e}}\cdot\sqrt{\mathrm{e}^2}=1$．从而切点为 $(\mathrm{e}^2,1)$．(2) 两曲线与 $x$ 轴围成的平面图形的面积 $$S=\int_0^1\left(\mathrm{e}^{2y}-\mathrm{e}^2y^2\right)\mathrm{d}y=\dfrac{1}{2}\mathrm{e}^{2y}\bigg|_0^1-\dfrac{1}{3}\mathrm{e}^2y^3\bigg|_0^1=\dfrac{1}{6}\mathrm{e}^2-\dfrac{1}{2}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $a=\dfrac{1}{\mathrm{e}}$，切点为 $(\mathrm{e}^2,1)$；(2) $S=\dfrac{1}{6}\mathrm{e}^2-\dfrac{1}{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q600">
+<div class="q-head">
+<span class="q-no" data-n="600">【600】</span>
+<span class="q-group">与平面图形面积有关的应用题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知抛物线 $y=px^2+qx$（其中 $p&lt;0,q&gt;0$）在第一象限内与直线 $x+y=5$ 相切，且此抛物线与 $x$ 轴所围成的平面图形的面积为 $S$．(1) 问：$p$ 和 $q$ 为何值时，$S$ 达到最大值？(2) 求出此最大值．</div>
+<div class="figure-note">图600：第一象限内，开口向下的抛物线过原点、顶点在第一象限，与直线 $x+y=5$（两坐标轴截距均为 $5$，图上 $y$ 轴标 $5$）相切；抛物线另一零点在 $x$ 轴上标 $-\dfrac{q}{p}$ 处（介于 $0$ 与 $5$ 之间）；抛物线弧与 $x$ 轴之间的区域标 $S$。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 依题意知，抛物线如图 600 所示，求得它与 $x$ 轴交点的横坐标为：$x_1=0$，$x_2=-\dfrac{q}{p}$．面积 $$S=\int_0^{-\frac{q}{p}}\left(px^2+qx\right)\mathrm{d}x=\left(\frac{p}{3}x^3+\frac{q}{2}x^2\right)\bigg|_0^{-\frac{q}{p}}=\frac{q^3}{6p^2},\quad (1)$$ 因直线 $x+y=5$ 与抛物线 $y=px^2+qx$ 相切，故它们有唯一公共点．由方程组 $$\begin{cases}x+y=5\\ y=px^2+qx\end{cases}$$ 得 $px^2+(q+1)x-5=0$，其判别式必等于零，即 $$\Delta=(q+1)^2+20p=0,\ \text{解得}\ p=-\frac{1}{20}(1+q)^2.$$ 将 $p$ 代入(1)式得 $$S(q)=\frac{200q^3}{3(q+1)^4},\ \text{令}\ S'(q)=\frac{200q^2(3-q)}{3(q+1)^5}=0,$$ 得驻点 $q=3$．当 $0&lt;q&lt;3$ 时，$S'(q)&gt;0$；当 $q&gt;3$ 时，$S'(q)&lt;0$．于是，当 $q=3$ 时，$S(q)$ 取极大值，即最大值．此时，$p=-\dfrac{4}{5}$，从而最大值 $S=\dfrac{225}{32}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$q=3$，$p=-\dfrac{4}{5}$ 时 $S$ 取最大值，最大值 $S=\dfrac{225}{32}$</span></div>
+</div>
+</article>
+<article class="problem" id="q601">
+<div class="q-head">
+<span class="q-no" data-n="601">【601】</span>
+<span class="q-group">与平面图形面积有关的应用题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设曲线 $y=x^2$ 与它两条相互垂直的切线所围平面图形的面积为 $S$，其中一条切线与曲线相切于点 $A(a,a^2)$，$a&gt;0$ 试证：当 $a=\dfrac{1}{2}$ 时，面积 $S$ 最小．</div>
+<div class="figure-note">图601：抛物线 $y=x^2$（图上标注）；切点 $A$ 在右支第一象限处，另一切点 $B$ 在左支近原点处（$b=-\frac{1}{4a}&lt;0$），过 $A$、$B$ 的两条相互垂直的切线相交于原点右下方的点 $C$（$C$ 在 $x$ 轴下方）；抛物线弧与两切线所围小区域介于 $A$、$B$、$C$ 之间。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 利用定积分求出面积 $S$ 与 $a$ 的函数关系，再验证 $a=\dfrac{1}{2}$ 时 $S$ 最小即可．<strong>证</strong> 设另一切线的切点为 $B(b,b^2)$，则因 $y'=2x$，故此两切线的方程分别为 $$y-a^2=2a(x-a),\qquad y-b^2=2b(x-b),$$ 由于此两切线相互垂直，故有 $$2a\cdot 2b=-1,\ \text{即}\ b=-\frac{1}{4a}.$$ 解方程组 $$\begin{cases}y-a^2=2a(x-a)\\ y-b^2=2b(x-b)\end{cases}$$ 得两切线的交点为 $C\left(\dfrac{a+b}{2},ab\right)$．因此，曲线 $y=x^2$ 与此两切线所围平面图形的面积为 $$S=\int_b^{\frac{a+b}{2}}\left[x^2-(2bx-b^2)\right]\mathrm{d}x+\int_{\frac{a+b}{2}}^{a}\left[x^2-(2ax-a^2)\right]\mathrm{d}x$$ $$=\int_b^{\frac{a+b}{2}}(x-b)^2\,\mathrm{d}x+\int_{\frac{a+b}{2}}^{a}(x-a)^2\,\mathrm{d}x=\frac{(a-b)^3}{12}=\frac{1}{12}\left(a+\frac{1}{4a}\right)^3.$$ 因 $a&gt;0$，故当 $a+\dfrac{1}{4a}$ 取最小值时，$S$ 也取最小值．为此，令 $\varphi(a)=a+\dfrac{1}{4a}$，于是，$\varphi'(a)=1-\dfrac{1}{4a^2}$，$\varphi''(a)=\dfrac{1}{2a^3}&gt;0$，且当 $\varphi'(a)=0$ 时有 $a=\dfrac{1}{2}$．所以 $a=\dfrac{1}{2}$ 是 $\varphi(a)$ 的极小值点．并因 $a&gt;0$ 时，$\varphi(a)$ 仅有一个极小值点 $a=\dfrac{1}{2}$，故 $\varphi(a)$ 在 $a=\dfrac{1}{2}$ 时取得最小值．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">当 $a=\dfrac{1}{2}$ 时，面积 $S$ 最小（得证）</span></div>
+</div>
+</article>
+<h3 class="grp-h">用广义积分表示平面图形的面积</h3>
+<article class="problem" id="q602">
+<div class="q-head">
+<span class="q-no" data-n="602">【602】</span>
+<span class="q-group">用广义积分表示平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">位于曲线 $y=x\mathrm{e}^{-x}$（$0\leqslant x&lt;+\infty$）下方，$x$ 轴上方的无界图形的面积是________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $A=\int_0^{+\infty}x\mathrm{e}^{-x}\,\mathrm{d}x=-(x+1)\mathrm{e}^{-x}\bigg|_0^{+\infty}=1$．故应填 $1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $1$</span></div>
+</div>
+</article>
+<article class="problem" id="q603">
+<div class="q-head">
+<span class="q-no" data-n="603">【603】</span>
+<span class="q-group">用广义积分表示平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $F(x)=\begin{cases}\mathrm{e}^{2x}, &amp; x\leqslant 0\\ \mathrm{e}^{-2x}, &amp; x&gt;0\end{cases}$，$S$ 表示夹在 $x$ 轴与曲线 $y=F(x)$ 之间的面积．对任何 $t&gt;0$，$S_1(t)$ 表示矩形 $-t\leqslant x\leqslant t$，$0\leqslant y\leqslant F(t)$ 的面积，求 (1) $S(t)=S-S_1(t)$ 的表达式；(2) $S(t)$ 的最小值．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) $S=\int_0^{+\infty}\mathrm{e}^{-2x}\,\mathrm{d}x=-\mathrm{e}^{-2x}\bigg|_0^{+\infty}=1$，$S_1(t)=2t\mathrm{e}^{-2t}$，因此 $$S(t)=1-2t\mathrm{e}^{-2t},\ t\in(0,+\infty).$$ (2) 由于 $S'(t)=-2(1-2t)\mathrm{e}^{-2t}$，故 $S(t)$ 的唯一驻点为 $t=\dfrac{1}{2}$．又 $$S''(t)=8(1-t)\mathrm{e}^{-2t},\quad S''\left(\frac{1}{2}\right)=\frac{4}{\mathrm{e}}&gt;0,$$ 所以 $S\left(\dfrac{1}{2}\right)=1-\dfrac{1}{\mathrm{e}}$ 为极小值，它也是最小值．<strong>点评</strong> 由于 $S$ 是一无界区域，所以需要通过广义积分表示，本题欲求面积的区域左方及右方延伸无穷，而 $F(x)$ 是用两个表达式定义的分段函数．因此，所求的面积 $S$ 是两个广义积分的和．在求出 $S$ 及 $S_1(t)$ 后，函数 $S-S_1(t)$ 的最小值可用通常的求最值的方法求得．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $S(t)=1-2t\mathrm{e}^{-2t}$，$t\in(0,+\infty)$；(2) 最小值 $S\left(\dfrac{1}{2}\right)=1-\dfrac{1}{\mathrm{e}}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">极坐标系下求平面图形的面积</h3>
+<article class="problem" id="q604">
+<div class="q-head">
+<span class="q-no" data-n="604">【604】</span>
+<span class="q-group">极坐标系下求平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">双纽线 $(x^2+y^2)^2=x^2-y^2$ 所围成的区域面积可用定积分表示为________．(A) $2\int_0^{\frac{\pi}{4}}\cos 2\theta\,\mathrm{d}\theta$　(B) $4\int_0^{\frac{\pi}{4}}\cos 2\theta\,\mathrm{d}\theta$　(C) $2\int_0^{\frac{\pi}{4}}\sqrt{\cos 2\theta}\,\mathrm{d}\theta$　(D) $\dfrac{1}{2}\int_0^{\frac{\pi}{4}}(\cos 2\theta)^2\,\mathrm{d}\theta$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 双纽线的极坐标方程为 $r^2=\cos 2\theta$．根据对称性，$$A=4\cdot\frac{1}{2}\int_0^{\frac{\pi}{4}}r^2\,\mathrm{d}\theta=2\int_0^{\frac{\pi}{4}}\cos 2\theta\,\mathrm{d}\theta.$$ 故应选（A）．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选（A）</span></div>
+</div>
+</article>
+<article class="problem" id="q605">
+<div class="q-head">
+<span class="q-no" data-n="605">【605】</span>
+<span class="q-group">极坐标系下求平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设曲线的极坐标方程为 $\rho=\mathrm{e}^{a\theta}$（$a&gt;0$），则该曲线上相应于 $\theta$ 从 $0$ 变到 $2\pi$ 的一段弧与极轴所围成的图形的面积为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 所求面积为 $S=\dfrac{1}{2}\int_0^{2\pi}\rho^2(\theta)\,\mathrm{d}\theta=\dfrac{1}{2}\int_0^{2\pi}\mathrm{e}^{2a\theta}\,\mathrm{d}\theta=\dfrac{1}{4a}\mathrm{e}^{2a\theta}\bigg|_0^{2\pi}=\dfrac{1}{4a}\left(\mathrm{e}^{4\pi a}-1\right)$．故应填 $\dfrac{1}{4a}\left(\mathrm{e}^{4\pi a}-1\right)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{4a}\left(\mathrm{e}^{4\pi a}-1\right)$</span></div>
+</div>
+</article>
+<article class="problem" id="q606">
+<div class="q-head">
+<span class="q-no" data-n="606">【606】</span>
+<span class="q-group">极坐标系下求平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求心脏线 $\rho=a(1+\cos\varphi)$ 与圆 $\rho=a$ 所围成各部分的面积（$a&gt;0$）．</div>
+<div class="figure-note">图606：圆 $\rho=a$（圆心在 $(a,0)$，过极点，最右点标 $2a$）与心脏线 $\rho=a(1+\cos\varphi)$（最右点 $2a$，关于极轴对称）相交；$A_1$ 为两曲线内部的公共部分（极点右侧，斜线阴影），$A_2$ 为圆内、心脏线外的左侧月牙部分，$A_3$ 为圆外、心脏线内的右侧部分；$x$ 轴上标 $a$ 与 $2a$，$y$ 轴过极点。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 606 所示，所求面积分别为三部分：(1) 圆内，心脏线内部分 $A_1$；(2) 圆内，心脏线外部分 $A_2$；(3) 圆外，心脏线内部分 $A_3$．(1) $A_1=2\int_{\frac{\pi}{2}}^{\pi}\dfrac{1}{2}\rho^2(\varphi)\,\mathrm{d}\varphi+\dfrac{\pi}{2}a^2$ $$=a^2\int_{\frac{\pi}{2}}^{\pi}(1+\cos\varphi)^2\,\mathrm{d}\varphi+\frac{\pi}{2}a^2$$ $$=\frac{\pi}{2}a^2+a^2\int_{\frac{\pi}{2}}^{\pi}\left[1+2\cos\varphi+\frac{1+\cos 2\varphi}{2}\right]\mathrm{d}\varphi$$ $$=\frac{\pi}{2}a^2+a^2\left(\frac{3}{2}\varphi+2\sin\varphi+\frac{1}{4}\sin 2\varphi\right)\bigg|_{\frac{\pi}{2}}^{\pi}$$ $$=\frac{\pi}{2}a^2+a^2\left(\frac{3}{4}\pi-2\right)=a^2\left(\frac{5}{4}\pi-2\right);$$ (2) $A_2=\pi a^2-A_1=a^2\left(2-\dfrac{\pi}{4}\right)$；(3) $A_3=2\int_0^{\frac{\pi}{2}}\dfrac{1}{2}\left[a^2(1+\cos\varphi)^2-a^2\right]\mathrm{d}\varphi=a^2\int_0^{\frac{\pi}{2}}(1+2\cos\varphi+\cos^2\varphi-1)\,\mathrm{d}\varphi$ $$=a^2\int_0^{\frac{\pi}{2}}(2\cos\varphi+\cos^2\varphi)\,\mathrm{d}\varphi=a^2\left(2+\frac{\pi}{4}\right).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$A_1=a^2\left(\dfrac{5}{4}\pi-2\right)$，$A_2=a^2\left(2-\dfrac{\pi}{4}\right)$，$A_3=a^2\left(2+\dfrac{\pi}{4}\right)$</span></div>
+</div>
+</article>
+<article class="problem" id="q607">
+<div class="q-head">
+<span class="q-no" data-n="607">【607】</span>
+<span class="q-group">极坐标系下求平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲线 $r=3\cos\theta$ 及 $r=1+\cos\theta$ 所围图形的公共部分的面积．</div>
+<div class="figure-note">图607：圆 $r=3\cos\theta$（圆心 $(\frac{3}{2},0)$，过极点与 $x$ 轴上 $3$）与心脏线 $r=1+\cos\theta$（过极点与 $x$ 轴上 $2$）相交，交点 $A\left(\frac{3}{2},\frac{\pi}{3}\right)$ 已标注；公共部分（上半平面）被分为 $A_1$（心脏线内、靠近 $x$ 轴的部分）与 $A_2$（圆内、以虚线段 $OA$ 为界的部分），下半部分对称；$x$ 轴上标 $1,2,3$。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 607 所示，公共部分为心脏线与圆周所围成，解方程组 $$\begin{cases}r=3\cos\theta,\\ r=1+\cos\theta,\end{cases}$$ 得交点 $\left(\dfrac{3}{2},\pm\dfrac{\pi}{3}\right)$，再由对称性，所求面积为 $$A=2\left(A_1+A_2\right)$$ $$=2\left[\dfrac{1}{2}\int_0^{\frac{\pi}{3}}(1+\cos\theta)^2\,\mathrm{d}\theta+\dfrac{1}{2}\int_{\frac{\pi}{3}}^{\frac{\pi}{2}}(3\cos\theta)^2\,\mathrm{d}\theta\right]$$ $$=\int_0^{\frac{\pi}{3}}\left(1+2\cos\theta+\frac{1+\cos 2\theta}{2}\right)\mathrm{d}\theta+9\int_{\frac{\pi}{3}}^{\frac{\pi}{2}}\frac{1+\cos 2\theta}{2}\,\mathrm{d}\theta$$ $$=\left(\frac{3}{2}\theta+2\sin\theta+\frac{1}{4}\sin 2\theta\right)\bigg|_0^{\frac{\pi}{3}}+9\left(\frac{\theta}{2}+\frac{1}{4}\sin 2\theta\right)\bigg|_{\frac{\pi}{3}}^{\frac{\pi}{2}}=\frac{5}{4}\pi+\sqrt{3}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$A=\dfrac{5}{4}\pi+\sqrt{3}$</span></div>
+</div>
+</article>
+<article class="problem" id="q608">
+<div class="q-head">
+<span class="q-no" data-n="608">【608】</span>
+<span class="q-group">极坐标系下求平面图形的面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲线 $r=\sqrt{2}\sin\theta$ 及 $r^2=\cos 2\theta$ 所围成的图形的公共部分的面积．</div>
+<div class="figure-note">图608：圆 $r=\sqrt{2}\sin\theta$（圆心在 $y$ 轴上 $(0,\frac{\sqrt{2}}{2})$，过极点，最高点标 $\sqrt{2}$）位于上半平面；双纽线 $r^2=\cos 2\theta$ 两瓣沿 $x$ 轴（右瓣过 $x=1$，图上标 $1$）；公共部分为右瓣与圆相交的月牙形域，分为 $A_1$（靠近极轴）与其上方的 $A_2$，以虚线射线为界；极点标 $O$。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 608，公共部分由圆周与双纽线围成，解方程组 $$\begin{cases}r=\sqrt{2}\sin\theta\\ r^2=\cos 2\theta,\end{cases}$$ 得交点 $A\left(\dfrac{\sqrt{2}}{2},\dfrac{\pi}{6}\right),B\left(\dfrac{\sqrt{2}}{2},\dfrac{5}{6}\pi\right)$，由 $$r^2=\cos 2\theta\geqslant 0\ \text{和}\ r=\sqrt{2}\sin\theta\geqslant 0,$$ 有 $\ 0\leqslant\theta\leqslant\dfrac{\pi}{4},\dfrac{3\pi}{4}\leqslant\theta\leqslant\pi$，由对称性，所求面积 $$A=2\left(A_1+A_2\right)$$ $$=2\left[\dfrac{1}{2}\int_0^{\frac{\pi}{6}}(\sqrt{2}\sin\theta)^2\,\mathrm{d}\theta+\dfrac{1}{2}\int_{\frac{\pi}{6}}^{\frac{\pi}{4}}\cos 2\theta\,\mathrm{d}\theta\right]$$ $$=2\int_0^{\frac{\pi}{6}}\frac{1-\cos 2\theta}{2}\,\mathrm{d}\theta+\frac{1}{2}\sin 2\theta\bigg|_{\frac{\pi}{6}}^{\frac{\pi}{4}}=\left(\theta-\frac{1}{2}\sin 2\theta\right)\bigg|_0^{\frac{\pi}{6}}+\frac{1}{2}\left(1-\frac{\sqrt{3}}{2}\right)=\frac{\pi}{6}+\frac{1-\sqrt{3}}{2}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$A=\dfrac{\pi}{6}+\dfrac{1-\sqrt{3}}{2}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">平行截面面积为已知的立体体积的计算</h3>
+<article class="problem" id="q609">
+<div class="q-head">
+<span class="q-no" data-n="609">【609】</span>
+<span class="q-group">平行截面面积为已知的立体体积的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">某立体上、下底面平行，且与 $x$ 轴垂直，若平行于底面的截面面积 $A(x)$ 是 $x$ 的不高于二次的多项式，试证该立体体积为：$V=\dfrac{h}{6}(B_1+4M+B_2)$，其中 $h$ 为立体的高，$B_1,B_2$ 分别是底面面积，$M$ 为中截面面积．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $x$ 处的截面面积为 $A(x)=a_0x^2+a_1x+a_2$．由 $B_1=A(0)$，$B_2=A(h)$，$M=A\left(\dfrac{h}{2}\right)$ 得 $$a_2=B_1,\quad a_1=(4M-3B_1-B_2)/h,\quad a_0=(2B_1+2B_2-4M)/h^2,$$ 则 $$V=\int_0^h(a_0x^2+a_1x+a_2)\,\mathrm{d}x=\int_0^h\left(\frac{2B_1+2B_2-4M}{h^2}x^2+\frac{4M-3B_1-B_2}{h}x+B_1\right)\mathrm{d}x$$ $$=\frac{h}{6}(B_1+4M+B_2).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$V=\dfrac{h}{6}(B_1+4M+B_2)$（得证）</span></div>
+</div>
+</article>
+<article class="problem" id="q610">
+<div class="q-head">
+<span class="q-no" data-n="610">【610】</span>
+<span class="q-group">平行截面面积为已知的立体体积的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设有一正椭圆柱体，其底面长、短轴分别为 $2a,2b$，用过此柱体底面的短轴且与底面成 $\alpha$ 角（$0&lt;\alpha&lt;\dfrac{\pi}{2}$）的平面截此柱体，得一楔形体（如图 610），求此楔形体的体积 $V$．</div>
+<div class="figure-note">图610：底面椭圆（长轴 $2a$ 沿 $x$ 轴、短轴沿 $y$ 轴方向）上的正椭圆柱被过短轴、与底面成 $\alpha$ 角的斜平面所截，得一顶为椭圆弧拱的楔形体；图中 $\alpha$ 角标在底面斜线与底面之间，最右端的直角三角形截面以斜线阴影标出，$x$ 轴沿斜面上方方向。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 底面椭圆的方程为 $\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1$，以垂直于 $y$ 轴的平行平面截此楔形体所得的截面为直角三角形，其一直角边长为 $a\sqrt{1-\dfrac{y^2}{b^2}}$，另一直角边长为 $a\sqrt{1-\dfrac{y^2}{b^2}}\tan\alpha$，故截面面积 $$S(y)=\frac{a^2}{2}\left(1-\frac{y^2}{b^2}\right)\tan\alpha.$$ 楔形体的体积 $$V=2\int_0^b\dfrac{a^2}{2}\left(1-\dfrac{y^2}{b^2}\right)\tan\alpha\,\mathrm{d}y=\dfrac{2a^2b}{3}\tan\alpha.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$V=\dfrac{2a^2b}{3}\tan\alpha$</span></div>
+</div>
+</article>
+<h3 class="grp-h">绕坐标轴旋转所得旋转体体积的计算</h3>
+<article class="problem" id="q611">
+<div class="q-head">
+<span class="q-no" data-n="611">【611】</span>
+<span class="q-group">绕坐标轴旋转所得旋转体体积的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲线 $y=x^2-2x$，$y=0$，$x=1$，$x=3$ 所围成的平面图形的面积 $S$，并求该平面图形绕 $y$ 轴旋转一周所得旋转体的体积 $V$．</div>
+<div class="figure-note">图611：抛物线 $y=x^2-2x$（零点 $x=0,2$，顶点 $(1,-1)$，图上标注）；$S_1$ 为 $x=1$ 与 $x=2$ 两竖直线、抛物线及 $x$ 轴所围的下方区域（横线阴影），$S_2$ 为 $x=2$ 与 $x=3$ 之间抛物线右上方的三角形区域（横线阴影）；$x$ 轴上标 $1,2,3$。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 611 所示，所求面积 $S=S_1+S_2$．易见 $$S_1=\int_1^2(2x-x^2)\,\mathrm{d}x=x^2\bigg|_1^2-\frac{1}{3}x^3\bigg|_1^2=\frac{2}{3},$$ $$S_2=\int_2^3(x^2-2x)\,\mathrm{d}x=\frac{1}{3}x^3\bigg|_2^3-x^2\bigg|_2^3=\frac{4}{3}.$$ 故所求图形的面积 $S=S_1+S_2=2$．平面图形 $S_1$ 绕 $y$ 轴旋转一周所得旋转体体积 $$V_1=\pi\int_{-1}^{0}\left(1+\sqrt{1+y}\right)^2\mathrm{d}y-\pi=\frac{11\pi}{6}.$$ 平面图形 $S_2$ 绕 $y$ 轴旋转一周所得旋转体体积 $$V_2=27\pi-\pi\int_0^3\left(1+\sqrt{1+y}\right)^2\mathrm{d}y=\frac{43\pi}{6}.$$ 故所求旋转体体积 $V=V_1+V_2=9\pi$．<strong>点评</strong> 对于几何应用题均应先画出草图，再用有关公式进行计算．画图时应尽可能画出相关的平面图形，这对选取面积、体积公式及确定积分上下限都非常有用．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$S=2$，$V=9\pi$</span></div>
+</div>
+</article>
+<article class="problem" id="q612">
+<div class="q-head">
+<span class="q-no" data-n="612">【612】</span>
+<span class="q-group">绕坐标轴旋转所得旋转体体积的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">星形线 $x^{\frac{2}{3}}+y^{\frac{2}{3}}=a^{\frac{2}{3}}$ 绕 $x$ 轴旋转所得立体体积．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 星形线的参数方程是 $x=a\cos^3t$，$y=a\sin^3t$，又由对称性 $$V_x=2\pi\int_{\frac{\pi}{2}}^{0}\left(a\sin^3t\right)^2\mathrm{d}(a\cos^3t)=2\pi\int_0^{\frac{\pi}{2}}a^2\sin^6t\cdot 3a\cos^2t\sin t\,\mathrm{d}t$$ $$=6\pi a^3\int_0^{\frac{\pi}{2}}\left(\sin^7t-\sin^9t\right)\mathrm{d}t=\frac{32}{105}\pi a^3.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$V_x=\dfrac{32}{105}\pi a^3$</span></div>
+</div>
+</article>
+<article class="problem" id="q613">
+<div class="q-head">
+<span class="q-no" data-n="613">【613】</span>
+<span class="q-group">绕坐标轴旋转所得旋转体体积的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知一抛物线通过 $x$ 轴上的两点 $A(1,0),B(3,0)$．(1) 求证：两坐标轴与该抛物线所围图形的面积等于 $x$ 轴与该抛物线所围图形的面积；(2) 计算上述两个平面图形绕 $x$ 轴旋转一周所产生的两个旋转体体积之比．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 设过 $A,B$ 两点的抛物线方程为 $y=a(x-1)(x-3)$，则抛物线与两坐标轴所围图形的面积为 $$S_1=\int_0^1|a(x-1)(x-3)|\,\mathrm{d}x=|a|\int_0^1(x^2-4x+3)\,\mathrm{d}x=\frac{4}{3}|a|,$$ 抛物线与 $x$ 轴所围图形的的面积为 $$S_2=\int_1^3|a(x-1)(x-3)|\,\mathrm{d}x=|a|\int_1^3(4x-x^2-3)\,\mathrm{d}x=\frac{4}{3}|a|,$$ 所以 $S_1=S_2$．(2) 抛物线与两坐标轴所围图形绕 $x$ 轴旋转所得旋转体体积为 $$V_1=\pi\int_0^1a^2\left[(x-1)(x-3)\right]^2\mathrm{d}x=\pi a^2\int_0^1\left[(x-1)^4-4(x-1)^3+4(x-1)^2\right]\mathrm{d}x$$ $$=\pi a^2\left[\frac{(x-1)^5}{5}-(x-1)^4+\frac{4}{3}(x-1)^3\right]\bigg|_0^1=\frac{38}{15}\pi a^2.$$ 抛物线与 $x$ 轴所围图形绕 $x$ 轴旋转所得旋转体体积为 $$V_2=\pi\int_1^3a^2\left[(x-1)(x-3)\right]^2\mathrm{d}x=\pi a^2\left[\frac{(x-1)^5}{5}-(x-1)^4+\frac{4}{3}(x-1)^3\right]\bigg|_1^3=\frac{16}{15}\pi a^2.$$ 所以 $\dfrac{V_1}{V_2}=\dfrac{19}{8}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $S_1=S_2=\dfrac{4}{3}|a|$；(2) $\dfrac{V_1}{V_2}=\dfrac{19}{8}$</span></div>
+</div>
+</article>
+<article class="problem" id="q614">
+<div class="q-head">
+<span class="q-no" data-n="614">【614】</span>
+<span class="q-group">绕坐标轴旋转所得旋转体体积的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲线 $x^2+y^2=1$ 与 $y^2=\dfrac{3}{2}x$ 所围成的两个图形中较小的一块分别绕 $x$ 轴、$y$ 轴旋转所产生的立体的体积．</div>
+<div class="figure-note">图614：单位圆 $x^2+y^2=1$ 与开口向右的抛物线 $y^2=\frac{3}{2}x$（图上标注）相交于 $\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)$ 与 $\left(\frac{1}{2},-\frac{\sqrt{3}}{2}\right)$（交点坐标均已标注）；较小的一块为两曲线围成的、关于 $x$ 轴对称的尖月形区域（抛物线在左、圆弧在右），以斜线阴影标出，区域内画有竖直虚线。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 614 所示，绕 $x$ 轴旋转所产生的立体的体积为 $$V_x=\pi\int_0^{\frac{1}{2}}\frac{3}{2}x\,\mathrm{d}x+\pi\int_{\frac{1}{2}}^{1}\left(1-x^2\right)\mathrm{d}x$$ $$=\frac{3}{4}\pi x^2\bigg|_0^{\frac{1}{2}}+\pi\left(x-\frac{x^3}{3}\right)\bigg|_{\frac{1}{2}}^{1}=\frac{19}{48}\pi;$$ 绕 $y$ 轴旋转所产生的立体的体积为 $$V_y=\pi\int_{-\frac{\sqrt{3}}{2}}^{\frac{\sqrt{3}}{2}}\left[\left(\sqrt{1-y^2}\right)^2-\left(\frac{2}{3}y^2\right)^2\right]\mathrm{d}y$$ $$=2\pi\int_0^{\frac{\sqrt{3}}{2}}\left(1-y^2-\frac{4}{9}y^4\right)\mathrm{d}y=2\pi\left(y-\frac{y^3}{3}-\frac{4}{9}\cdot\frac{y^5}{5}\right)\bigg|_0^{\frac{\sqrt{3}}{2}}=\frac{7}{10}\sqrt{3}\pi.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$V_x=\dfrac{19}{48}\pi$，$V_y=\dfrac{7}{10}\sqrt{3}\pi$</span></div>
+</div>
+</article>
+<article class="problem" id="q615">
+<div class="q-head">
+<span class="q-no" data-n="615">【615】</span>
+<span class="q-group">绕坐标轴旋转所得旋转体体积的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲线 $y=\mathrm{e}^x$，$y=\sin x$，$x=0$ 和 $x=1$ 所围成的图形绕 $x$ 轴旋转所成立体的体积．</div>
+<div class="figure-note">图615：第一象限内，曲线 $y=\mathrm{e}^x$（图上标注）过点 $(0,1)$（已标注）上升，$y=\sin x$（图上标注）为过原点的半拱；竖直线 $x=1$（图上标注）；$y=\mathrm{e}^x$ 与 $y=\sin x$ 之间、$x=0$ 与 $x=1$ 之间的区域以横线阴影标出。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 615 所示，因为 $$V_x=\pi\int_a^b f^2(x)\,\mathrm{d}x,$$ 所以 $$V_x=\pi\int_0^1\left(\mathrm{e}^{2x}-\sin^2x\right)\mathrm{d}x$$ $$=\pi\left[\frac{1}{2}\mathrm{e}^{2x}-\frac{1}{2}x+\frac{1}{4}\sin 2x\right]\bigg|_0^1$$ $$=\pi\left[\frac{1}{2}\left(\mathrm{e}^2-1\right)-\frac{1}{2}+\frac{1}{4}\sin 2\right]$$ $$=\pi\left[\frac{1}{2}\left(\mathrm{e}^2+\frac{1}{2}\sin 2\right)-1\right].$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$V_x=\pi\left[\dfrac{1}{2}\left(\mathrm{e}^2+\dfrac{1}{2}\sin 2\right)-1\right]$</span></div>
+</div>
+</article>
+<article class="problem" id="q616">
+<div class="q-head">
+<span class="q-no" data-n="616">【616】</span>
+<span class="q-group">绕坐标轴旋转所得旋转体体积的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求平面上的圆盘 $(x-b)^2+y^2\leqslant a^2$（$0&lt;a&lt;b$）绕 $y$ 轴旋转所得之圆环体的体积（如图 616 所示）．</div>
+<div class="figure-note">图616：圆心 $(b,0)$、半径 $a$ 的圆盘（斜线阴影）整个位于 $y$ 轴右侧、与 $y$ 轴不相交；过圆的最高点与最低点画水平线 $y=a$（$y$ 轴上标 $a$）与 $y=-a$（$y$ 轴上标 $-a$）；圆盘内标注半径 $a$ 与圆心横坐标 $b$。</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 从圆的方程 $(x-b)^2+y^2=a^2$ 解出 $x$，得 $$x=b\pm\sqrt{a^2-y^2}\ \ \left(|y|\leqslant a\right),$$ 其中取“$+$”时表示右半圆，取“$-$”时表示左半圆．设由右(左)半圆和 $y$ 轴及直线 $y=a$，$y=-a$ 所围成的平面区域为 $D_1(D_2)$，由 $D_1(D_2)$ 绕 $y$ 轴旋转所得的旋转体的体积记为 $V_{y_1}(V_{y_2})$，则由公式有 $$V_{y_1}=\int_{-a}^{a}\pi\left(b+\sqrt{a^2-y^2}\right)^2\mathrm{d}y=2\int_0^{a}\pi\left(b+\sqrt{a^2-y^2}\right)^2\mathrm{d}y,$$ $$V_{y_2}=\int_{-a}^{a}\pi\left(b-\sqrt{a^2-y^2}\right)^2\mathrm{d}y=2\int_0^{a}\pi\left(b-\sqrt{a^2-y^2}\right)^2\mathrm{d}y.$$ 此圆环体的体积 $V_y=V_{y_1}-V_{y_2}$，所以 $$V_y=2\pi\left[\int_0^{a}\left(b+\sqrt{a^2-y^2}\right)^2\mathrm{d}y-\int_0^{a}\left(b-\sqrt{a^2-y^2}\right)^2\mathrm{d}y\right]$$ $$=2\pi\int_0^{a}\left[\left(b+\sqrt{a^2-y^2}\right)^2-\left(b-\sqrt{a^2-y^2}\right)^2\right]\mathrm{d}y=2\pi\int_0^{a}4b\sqrt{a^2-y^2}\,\mathrm{d}y$$ $$=8\pi b\int_0^{a}\sqrt{a^2-y^2}\,\mathrm{d}y=8\pi b\left(\frac{y}{2}\sqrt{a^2-y^2}+\frac{a^2}{2}\arcsin\frac{y}{a}\right)\bigg|_0^{a}$$ $$=4\pi a^2b\arcsin 1=4\pi a^2b\cdot\frac{\pi}{2}=2\pi^2a^2b.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$V_y=2\pi^2a^2b$</span></div>
+</div>
+</article>
+<article class="problem" id="q617">
+<div class="q-head">
+<span class="q-no" data-n="617">【617】</span>
+<span class="q-group">绕坐标轴旋转所得旋转体体积的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知曲线 $y=a\sqrt{x}$（$a&gt;0$）与曲线 $y=\ln\sqrt{x}$ 在点 $(x_0,y_0)$ 处有公共切线，求 (1) 常数 $a$ 及切点 $(x_0,y_0)$；(2) 两曲线与 $x$ 轴围成的平面图形绕 $x$ 轴旋转所得旋转体的体积 $V_x$．</div>
+<div class="figure-note">图 617 —— 坐标系 $xOy$：曲线 $y=\mathrm{e}^{-1}\sqrt{x}$（标注在右上）自原点 $O$ 向右上升，曲线 $y=\ln\sqrt{x}$（标注在下方）自下而上，两曲线在点 $(\mathrm{e}^2,1)$ 处相切（有公切线）；$y$ 轴上标 $1$，并有水平虚线自 $(0,1)$ 至切点；$x$ 轴上标 $\mathrm{e}^2$，切点处画有竖直的窄长封闭弧线（示意旋转体盘沿）.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 如图 617 所示．分别对 $y=a\sqrt{x}$ 和 $y=\ln\sqrt{x}$ 求导，得
+<strong>解</strong>（接上批）
+$y'=\dfrac{a}{2\sqrt{x}}$ 和 $y'=\dfrac{1}{2x}$.
+由于两条曲线在点 $(x_0,y_0)$ 处有公切线，可见
+$$\dfrac{a}{2\sqrt{x_0}}=\dfrac{1}{2x_0}，$$
+得 $x_0=\dfrac{1}{a^2}$.
+将 $x_0=\dfrac{1}{a^2}$ 分别代入两曲线方程，有
+$$y_0=a\sqrt{\dfrac{1}{a^2}}=\dfrac{1}{2}\ln\dfrac{1}{a^2}.$$
+于是 $a=\dfrac{1}{\mathrm{e}}$；$x_0=\dfrac{1}{a^2}=\mathrm{e}^2$，$y_0=a\sqrt{x_0}=\dfrac{1}{\mathrm{e}}\cdot\sqrt{\mathrm{e}^2}=1$.
+从而切点为 $(\mathrm{e}^2,1)$.
+(2)旋转体的体积为
+$$V_x=\int_0^{\mathrm{e}^2}\pi\Big(\dfrac{1}{\mathrm{e}}\sqrt{x}\Big)^2\mathrm{d}x-\int_1^{\mathrm{e}^2}\pi(\ln\sqrt{x})^2\mathrm{d}x$$
+$$=\dfrac{\pi x^2}{2\mathrm{e}^2}\Big|_0^{\mathrm{e}^2}-\dfrac{\pi}{4}\Big[x\ln^2x\Big|_1^{\mathrm{e}^2}-2\int_1^{\mathrm{e}^2}\ln x\,\mathrm{d}x\Big]$$
+$$=\dfrac{1}{2}\pi\mathrm{e}^2-\dfrac{\pi}{4}\Big[4\mathrm{e}^2-2x\ln x\Big|_1^{\mathrm{e}^2}+2\int_1^{\mathrm{e}^2}\mathrm{d}x\Big]=\dfrac{1}{2}\pi\mathrm{e}^2-\dfrac{\pi}{2}x\Big|_1^{\mathrm{e}^2}=\dfrac{\pi}{2}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（本批解答未完，接下一批）</span></div>
+</div>
+</article>
+<article class="problem" id="q618">
+<div class="q-head">
+<span class="q-no" data-n="618">【618】</span>
+
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">在曲线 $y=x^2$（$x\geqslant 0$）上某点 $A$ 处作一切线，使之与曲线以及 $x$ 轴所围成图形的面积为 $\dfrac{1}{12}$，试求：
+(1)切点 $A$ 的坐标；
+(2)过切点 $A$ 的切线方程；
+(3)由上述所围平面图形绕 $x$ 轴旋转一周所得旋转体的体积.</div>
+<div class="figure-note">图 618 —— 抛物线 $y=x^2$ 自原点 $O$ 上升；切线与 $x$ 轴交于 $\dfrac{a}{2}$，与抛物线切于点 $A(a,a^2)$（切点处有竖直虚线落到 $x$ 轴上的 $a$）；曲线、$x$ 轴与切线围成的区域打阴影.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)如图 618. 设切点 $A$ 的坐标为 $(a,a^2)$，则过点 $A$ 的切线方程的斜率为 $y'\Big|_{x=a}=2a$，切线方程为
+$$y-a^2=2a(x-a)，\quad 即\quad y=2ax-a^2.$$
+由此可见，切线与 $x$ 轴的交点为 $\Big(\dfrac{a}{2},0\Big)$. 曲线、$x$ 轴以及切线这三者所围图形的面积为
+$$S=\int_0^a x^2\,\mathrm{d}x-\dfrac{a^3}{4}=\dfrac{a^3}{3}-\dfrac{a^3}{4}=\dfrac{a^3}{12}.$$
+而由题设知 $S=\dfrac{1}{12}$，因此 $a=1$.
+于是，切点 $A$ 的坐标为 $(1,1)$.
+(2)过切点 $(1,1)$ 的切线方程为 $y=2x-1$.
+(3)由上述所围平面图形绕 $x$ 轴旋转一周所得旋转体的体积为
+$$V=\int_0^1\pi(x^2)^2\,\mathrm{d}x-\int_{\frac{1}{2}}^1\pi(2x-1)^2\,\mathrm{d}x=\dfrac{\pi}{30}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)切点 $A$ 的坐标为 $(1,1)$； (2)切线方程为 $y=2x-1$； (3)$V=\dfrac{\pi}{30}$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">绕平行于坐标轴的直线旋转而成的旋转体的体积</h3>
+<article class="problem" id="q619">
+<div class="q-head">
+<span class="q-no" data-n="619">【619】</span>
+<span class="q-group">绕平行于坐标轴的直线旋转而成的旋转体的体积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求曲线 $y=3-|x^2-1|$ 与 $x$ 轴围成的封闭图形绕直线 $y=3$ 旋转所得的旋转体体积.</div>
+<div class="figure-note">图 619 —— 曲线 $y=3-|x^2-1|$ 与 $x$ 轴所围的封闭区域（$-2\leqslant x\leqslant 2$，关于 $y$ 轴对称）打阴影：$y$ 轴上谷点 $A(0,2)$，右半支沿 $y=x^2+2$ 上升到峰点 $B(1,3)$（顶部有水平虚线 $y=3$），再沿 $y=4-x^2$ 下降交 $x$ 轴于 $C(2,0)$；$O$ 为原点.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 619 所示. $\widehat{AB}$ 与 $\widehat{BC}$ 的方程分别为
+$$y=x^2+2\ (0\leqslant x\leqslant 1)，\quad 与\quad y=4-x^2\ (1\leqslant x\leqslant 2).$$
+设旋转体在区间 $[0,1]$ 上的体积为 $V_1$，在区间 $[1,2]$ 上的体积为 $V_2$，则它们的体积元素分别为
+$$\mathrm{d}V_1=\pi\{3^2-[3-(x^2+2)]^2\}\,\mathrm{d}x，$$
+$$\mathrm{d}V_2=\pi\{3^2-[3-(4-x^2)]^2\}\,\mathrm{d}x.$$
+由对称性得
+$$V=2(V_1+V_2)$$
+$$=2\pi\int_0^1\{3^2-[3-(x^2+2)]^2\}\,\mathrm{d}x+2\pi\int_1^2\{3^2-[3-(4-x^2)]^2\}\,\mathrm{d}x$$
+$$=2\pi\int_0^2(8+2x^2-x^4)\,\mathrm{d}x$$
+$$=2\pi\Big(8x+\dfrac{2}{3}x^3-\dfrac{1}{5}x^5\Big)\Big|_0^2=\dfrac{448}{15}\pi.$$
+<strong>点评</strong> 本题应注意体积元素在不同区间上的表达式不一样.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$V=\dfrac{448}{15}\pi$.</span></div>
+</div>
+</article>
+<article class="problem" id="q620">
+<div class="q-head">
+<span class="q-no" data-n="620">【620】</span>
+<span class="q-group">绕平行于坐标轴的直线旋转而成的旋转体的体积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">过坐标原点作曲线 $y=\ln x$ 的切线，该切线与曲线 $y=\ln x$ 及 $x$ 轴围成平面图形 $D$.
+(1)求 $D$ 的面积 $A$；
+(2)求 $D$ 绕直线 $x=\mathrm{e}$ 旋转一周所得旋转体的体积 $V$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)设切点的横坐标为 $x_0$，则曲线 $y=\ln x$ 在点 $(x_0,\ln x_0)$ 处的切线方程是
+$$y=\ln x_0+\dfrac{1}{x_0}(x-x_0)，$$
+由该切线过原点知 $\ln x_0-1=0$，从而 $x_0=\mathrm{e}$，所以该切线的方程为 $y=\dfrac{1}{\mathrm{e}}x$.
+平面图形 $D$ 的面积 $A=\displaystyle\int_0^1(\mathrm{e}^y-\mathrm{e}y)\,\mathrm{d}y=\dfrac{1}{2}\mathrm{e}-1$.
+(2)切线 $y=\dfrac{1}{\mathrm{e}}x$ 与 $x$ 轴及直线 $x=\mathrm{e}$ 所围成的三角形绕直线 $x=\mathrm{e}$ 旋转所得的圆锥体体积为
+$$V_1=\dfrac{1}{3}\pi\mathrm{e}^2.$$
+曲线 $y=\ln x$ 与 $x$ 轴及直线 $x=\mathrm{e}$ 所围成的图形绕直线 $x=\mathrm{e}$ 旋转所得的旋转体体积为
+$$V_2=\int_0^1\pi(\mathrm{e}-\mathrm{e}^y)^2\,\mathrm{d}y.$$
+因此，所求旋转体体积为
+$$V=V_1-V_2=\dfrac{1}{3}\pi\mathrm{e}^2-\int_0^1\pi(\mathrm{e}-\mathrm{e}^y)^2\,\mathrm{d}y=\dfrac{\pi}{6}(5\mathrm{e}^2-12\mathrm{e}+3).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)$A=\dfrac{1}{2}\mathrm{e}-1$； (2)$V=\dfrac{\pi}{6}(5\mathrm{e}^2-12\mathrm{e}+3)$.</span></div>
+</div>
+</article>
+<article class="problem" id="q621">
+<div class="q-head">
+<span class="q-no" data-n="621">【621】</span>
+<span class="q-group">绕平行于坐标轴的直线旋转而成的旋转体的体积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设平面图形 $A$ 由 $x^2+y^2\leqslant 2x$ 与 $y\geqslant x$ 所确定，求图形 $A$ 绕直线 $x=2$ 旋转一周所得旋转体的体积.</div>
+<div class="figure-note">图 621 —— 圆 $x^2+y^2=2x$（圆心 $(1,0)$、半径 $1$）与直线 $y=x$ 所围的弓形区域 $A$（直线上方、圆内部分）打阴影；$x$ 轴上标 $O$、圆心 $1$ 与圆最右点 $2$；直线 $y=x$ 过 $O$ 与圆交于 $(1,1)$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $A$ 的图形如图 621 所示.
+取 $y$ 为积分变量，它的变化区间为 $[0,1]$，易见 $A$ 的两条边界曲线方程分别为
+$$x=1-\sqrt{1-y^2}\quad 及\quad x=y\ (0\leqslant y\leqslant 1).$$
+于是相应于 $[0,1]$ 区间上任一小区间 $[y,y+\mathrm{d}y]$ 的薄片的体积元素为
+$$\{\pi[2-(1-\sqrt{1-y^2})]^2-\pi(2-y)^2\}\,\mathrm{d}y=2\pi[\sqrt{1-y^2}-(1-y)^2]\,\mathrm{d}y，$$
+即有 $\mathrm{d}V=2\pi[\sqrt{1-y^2}-(1-y)^2]\,\mathrm{d}y$. 于是所求体积为
+$$V=\int_0^1 2\pi[\sqrt{1-y^2}-(1-y)^2]\,\mathrm{d}y$$
+$$=2\pi\Big[\dfrac{y}{2}\sqrt{1-y^2}+\dfrac{1}{2}\mathrm{arcsin}\,y+\dfrac{(1-y)^3}{3}\Big]\Big|_0^1=2\pi\Big(\dfrac{\pi}{4}-\dfrac{1}{3}\Big)=\dfrac{\pi^2}{2}-\dfrac{2\pi}{3}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$V=\dfrac{\pi^2}{2}-\dfrac{2\pi}{3}$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关旋转体体积的应用题</h3>
+<article class="problem" id="q622">
+<div class="q-head">
+<span class="q-no" data-n="622">【622】</span>
+<span class="q-group">有关旋转体体积的应用题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设曲线 $y=ax^2$（$a&gt;0$，$x\geqslant 0$）与 $y=1-x^2$ 交于点 $A$，过坐标原点 $O$ 和点 $A$ 的直线与曲线 $y=ax^2$ 围成一平面图形. 问 $a$ 为何值时，该图形绕 $x$ 轴旋转一周所得的旋转体体积最大？最大体积是多少？</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x\geqslant 0$ 时，由 $\begin{cases} y=ax^2 \\ y=1-x^2 \end{cases}$ 解得 $x=\dfrac{1}{\sqrt{1+a}}$，$y=\dfrac{a}{1+a}$，
+故直线 $OA$ 的方程为 $y=\dfrac{ax}{\sqrt{1+a}}$.
+旋转体的体积
+$$V=\pi\int_0^{\frac{1}{\sqrt{1+a}}}\Big(\dfrac{a^2x^2}{1+a}-a^2x^4\Big)\mathrm{d}x=\pi\Big[\dfrac{a^2}{3(1+a)}x^3-\dfrac{a^2}{5}x^5\Big]\Big|_0^{\frac{1}{\sqrt{1+a}}}=\dfrac{2\pi}{15}\cdot\dfrac{a^2}{(1+a)^{\frac{5}{2}}}，$$
+$$\dfrac{\mathrm{d}V}{\mathrm{d}a}=\dfrac{2\pi}{15}\cdot\dfrac{2a(1+a)^{\frac{5}{2}}-a^2\cdot\dfrac{5}{2}(1+a)^{\frac{3}{2}}}{(1+a)^5}=\dfrac{\pi(4a-a^2)}{15(1+a)^{\frac{7}{2}}}\ (a&gt;0).$$
+令 $\dfrac{\mathrm{d}V}{\mathrm{d}a}=0$，并由 $a&gt;0$ 得唯一驻点：$a=4$.
+由题意知此旋转体在 $a=4$ 时取最大值，其最大体积为
+$$V=\dfrac{2\pi}{15}\cdot\dfrac{16}{5^{\frac{5}{2}}}=\dfrac{32\sqrt{5}}{1875}\pi.$$
+<strong>点评</strong> 本题考查旋转体的体积公式及求最大值问题. 旋转体的体积依赖于两抛物线交点位置，而交点位置由参数 $a$ 确定，所以首先要求出两抛物线的交点坐标（参数 $a$ 的函数），再写出直线 $OA$ 的方程以及旋转体的体积（均为参数 $a$ 的函数），最后求出最大值.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$a=4$ 时旋转体体积最大，最大体积为 $V=\dfrac{32\sqrt{5}}{1875}\pi$.</span></div>
+</div>
+</article>
+<article class="problem" id="q623">
+<div class="q-head">
+<span class="q-no" data-n="623">【623】</span>
+<span class="q-group">有关旋转体体积的应用题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在闭区间 $[0,1]$ 上连续，在开区间 $(0,1)$ 内大于零，并满足 $xf'(x)=f(x)+\dfrac{3a}{2}x^2$（$a$ 为常数），又曲线 $y=f(x)$ 与 $x=1$，$y=0$ 所围的图形 $S$ 的面积值为 2，求函数 $y=f(x)$，并问 $a$ 为何值时，图形 $S$ 绕 $x$ 轴旋转一周所得的旋转体的体积最小.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题设知，当 $x\neq 0$ 时，
+$$\dfrac{xf'(x)-f(x)}{x^2}=\dfrac{3a}{2}，即 \dfrac{\mathrm{d}}{\mathrm{d}x}\Big[\dfrac{f(x)}{x}\Big]=\dfrac{3a}{2}，$$
+据此并由 $f(x)$ 在点 $x=0$ 处的连续性，得
+$$f(x)=\dfrac{3}{2}ax^2+Cx，\quad x\in[0,1].$$
+又由已知条件得
+$$2=\int_0^1\Big(\dfrac{3}{2}ax^2+Cx\Big)\mathrm{d}x=\Big(\dfrac{1}{2}ax^3+\dfrac{C}{2}x^2\Big)\Big|_0^1=\dfrac{1}{2}a+\dfrac{1}{2}C，$$
+即 $C=4-a$. 因此 $f(x)=\dfrac{3}{2}ax^2+(4-a)x$. 旋转体的体积为
+$$V(a)=\pi\int_0^1 f^2(x)\,\mathrm{d}x=\pi\int_0^1\Big[\dfrac{3}{2}ax^2+(4-a)x\Big]^2\mathrm{d}x=\Big(\dfrac{a^2}{30}+\dfrac{a}{3}+\dfrac{16}{3}\Big)\pi.$$
+由 $V'(a)=\Big(\dfrac{a}{15}+\dfrac{1}{3}\Big)\pi=0$，得 $a=-5$. 又因 $V''(a)=\dfrac{\pi}{15}&gt;0$，
+故 $a=-5$ 时，旋转体体积最小.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x)=\dfrac{3}{2}ax^2+(4-a)x$（$x\in[0,1]$）；$a=-5$ 时旋转体体积最小.</span></div>
+</div>
+</article>
+<article class="problem" id="q624">
+<div class="q-head">
+<span class="q-no" data-n="624">【624】</span>
+<span class="q-group">有关旋转体体积的应用题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $D_1$ 是由抛物线 $y=2x^2$ 和直线 $x=a$，$x=2$ 及 $y=0$ 所围成的平面区域；$D_2$ 是由抛物线 $y=2x^2$ 和直线 $y=0$，$x=a$ 所围成的平面区域，其中 $0&lt;a&lt;2$.
+(1)试求 $D_1$ 绕 $x$ 轴旋转而成的旋转体体积 $V_1$；$D_2$ 绕 $y$ 轴旋转而成的旋转体体积 $V_2$；
+(2)问当 $a$ 为何值时，$V_1+V_2$ 取得最大值？试求此最大值.</div>
+<div class="figure-note">图 624 —— 抛物线 $y=2x^2$ 自原点 $O$ 上升（右上标注 $y=2x^2$）；竖直线 $x=a$ 与 $x=2$，两区域打阴影并标注：$D_1$ 为 $a\leqslant x\leqslant 2$ 上抛物线下方的竖阴影条带，$D_2$ 为 $0\leqslant x\leqslant a$ 上抛物线下方的斜阴影区域；$x$ 轴上标 $O$、$a$、$2$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)如图 624.
+$$V_1=\pi\int_a^2(2x^2)^2\,\mathrm{d}x=\dfrac{4\pi}{5}(32-a^5)；$$
+$$V_2=\pi a^2\cdot 2a^2-\pi\int_0^{2a^2}\dfrac{y}{2}\,\mathrm{d}y=2\pi a^4-\pi a^4=\pi a^4.$$
+(2)设 $V=V_1+V_2=\dfrac{4\pi}{5}(32-a^5)+\pi a^4$. 由
+$$V'=4\pi a^3(1-a)=0，$$
+得区间 $(0,2)$ 内的唯一驻点 $a=1$.
+当 $0&lt;a&lt;1$ 时，$V'&gt;0$；当 $a&gt;1$ 时，$V'&lt;0$.
+因此 $a=1$ 是极大值点即最大值点. 此时，$V_1+V_2$ 取得最大值，等于 $\dfrac{129}{5}\pi$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)$V_1=\dfrac{4\pi}{5}(32-a^5)$，$V_2=\pi a^4$； (2)$a=1$ 时 $V_1+V_2$ 取得最大值 $\dfrac{129}{5}\pi$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">求旋转体的表面积</h3>
+<article class="problem" id="q625">
+<div class="q-head">
+<span class="q-no" data-n="625">【625】</span>
+<span class="q-group">求旋转体的表面积</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设有曲线 $y=\sqrt{x-1}$，过原点作其切线，求由此曲线、切线及 $x$ 轴围成的平面图形绕 $x$ 轴旋转一周所得到的旋转体的表面积.</div>
+<div class="figure-note">图 625 —— 曲线 $y=\sqrt{x-1}$ 自 $(1,0)$ 上升（右侧标注 $y=\sqrt{x-1}$）；过原点的切线与曲线切于点 $(x_0,\sqrt{x_0-1})$（标注在切点上方），$y$ 轴上标 $1$ 并有水平虚线至切点，切点处竖直虚线落到 $x$ 轴上的 $2$；曲线、切线与 $x$ 轴围成的区域打阴影；$x$ 轴上标 $O$、$1$、$2$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 625 所示.
+设切点为 $(x_0,\sqrt{x_0-1})$，则过原点的切线方程为
+$$y=\dfrac{1}{2\sqrt{x_0-1}}\,x.$$
+再以点 $(x_0,\sqrt{x_0-1})$ 代入，解得
+$$x_0=2，\quad y_0=\sqrt{x_0-1}=1，$$
+则上述切线方程为 $y=\dfrac{1}{2}x$.
+由曲线 $y=\sqrt{x-1}$（$1\leqslant x\leqslant 2$）绕 $x$ 轴旋转一周所得到的旋转面的面积
+$$S_1=\int_1^2 2\pi y\sqrt{1+y'^2}\,\mathrm{d}x=\pi\int_1^2\sqrt{4x-3}\,\mathrm{d}x=\dfrac{\pi}{6}(5\sqrt{5}-1)；$$
+由直线段 $y=\dfrac{1}{2}x$（$0\leqslant x\leqslant 2$）绕 $x$ 轴旋转一周所得到的旋转面的面积
+$$S_2=\int_0^2 2\pi\cdot\dfrac{1}{2}x\cdot\dfrac{\sqrt{5}}{2}\,\mathrm{d}x=\sqrt{5}\pi.$$
+因此，所求旋转体的表面积为
+$$S=S_1+S_2=\dfrac{\pi}{6}(11\sqrt{5}-1).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$S=S_1+S_2=\dfrac{\pi}{6}(11\sqrt{5}-1)$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">曲线为参数方程时弧长的计算</h3>
+<article class="problem" id="q626">
+<div class="q-head">
+<span class="q-no" data-n="626">【626】</span>
+<span class="q-group">曲线为参数方程时弧长的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求摆线 $\begin{cases} x=1-\cos t \\ y=t-\sin t \end{cases}$ 一拱（$0\leqslant t\leqslant 2\pi$）的弧长.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\mathrm{d}x}{\mathrm{d}t}=\sin t$，$\dfrac{\mathrm{d}y}{\mathrm{d}t}=1-\cos t$，所以
+$$\mathrm{d}s=\sqrt{\sin^2t+(1-\cos t)^2}\,\mathrm{d}t=\sqrt{2(1-\cos t)}\,\mathrm{d}t=2\sin\dfrac{t}{2}\,\mathrm{d}t\quad(0\leqslant t\leqslant 2\pi).$$
+从而 $s=\displaystyle\int_0^{2\pi}2\sin\dfrac{t}{2}\,\mathrm{d}t=8$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$s=8$.</span></div>
+</div>
+</article>
+<article class="problem" id="q627">
+<div class="q-head">
+<span class="q-no" data-n="627">【627】</span>
+<span class="q-group">曲线为参数方程时弧长的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">在摆线 $\begin{cases} x=a(t-\sin t) \\ y=a(1-\cos t) \end{cases}$ 上求分摆线第一拱成 $1:3$ 的点的坐标.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 第一拱总长为
+$$s=\int_0^{2\pi}a\sqrt{(1-\cos t)^2+\sin^2t}\,\mathrm{d}t=\sqrt{2}\,a\int_0^{2\pi}\sqrt{1-\cos t}\,\mathrm{d}t=2a\int_0^{2\pi}\sin\dfrac{t}{2}\,\mathrm{d}t=8a.$$
+设点 $M(x_0,y_0)$ 为摆线第一拱弧长为 $1:3$，显然 $\widehat{OM}=2a$，即
+$$2a\int_0^{t_0}\sin\dfrac{t}{2}\,\mathrm{d}t=2a，$$
+求得 $t_0=\dfrac{2}{3}\pi$. 于是 $x_0=a\Big(\dfrac{2}{3}\pi-\dfrac{\sqrt{3}}{2}\Big)$，$y_0=\dfrac{3}{2}a$.
+所求点为 $\Big[a\Big(\dfrac{2}{3}\pi-\dfrac{\sqrt{3}}{2}\Big),\dfrac{3}{2}a\Big]$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所求点为 $\Big[a\Big(\dfrac{2}{3}\pi-\dfrac{\sqrt{3}}{2}\Big),\dfrac{3}{2}a\Big]$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">曲线为极坐标方程时弧长的计算</h3>
+<article class="problem" id="q628">
+<div class="q-head">
+<span class="q-no" data-n="628">【628】</span>
+<span class="q-group">曲线为极坐标方程时弧长的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">对数螺线 $\rho=\mathrm{e}^{2\varphi}$ 上 $\varphi=0$ 到 $\varphi=2\pi$ 的一段弧.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $s=\displaystyle\int_0^{2\pi}\sqrt{\mathrm{e}^{4\varphi}+4\mathrm{e}^{4\varphi}}\,\mathrm{d}\varphi=\sqrt{5}\int_0^{2\pi}\mathrm{e}^{2\varphi}\,\mathrm{d}\varphi=\dfrac{\sqrt{5}}{2}(\mathrm{e}^{4\pi}-1)$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$s=\dfrac{\sqrt{5}}{2}(\mathrm{e}^{4\pi}-1)$.</span></div>
+</div>
+</article>
+<article class="problem" id="q629">
+<div class="q-head">
+<span class="q-no" data-n="629">【629】</span>
+<span class="q-group">曲线为极坐标方程时弧长的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求心脏线 $r=a(1+\cos\theta)$ 的全长，其中 $a&gt;0$ 是常数.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $r'(\theta)=-a\sin\theta$，
+$$\mathrm{d}s=\sqrt{r^2+(r')^2}\,\mathrm{d}\theta=a\sqrt{(1+\cos\theta)^2+(-\sin\theta)^2}\,\mathrm{d}\theta=2a\Big|\cos\dfrac{\theta}{2}\Big|\,\mathrm{d}\theta.$$
+利用对称性知，所求心脏线的全长
+$$s=2\int_0^{\pi}2a\cos\dfrac{\theta}{2}\,\mathrm{d}\theta=8a\sin\dfrac{\theta}{2}\Big|_0^{\pi}=8a.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$s=8a$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">曲线为一元显函数形式时弧长的计算</h3>
+<article class="problem" id="q630">
+<div class="q-head">
+<span class="q-no" data-n="630">【630】</span>
+<span class="q-group">曲线为一元显函数形式时弧长的计算</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设位于第一象限的曲线 $y=f(x)$ 过点 $\Big(\dfrac{\sqrt{2}}{2},\dfrac{1}{2}\Big)$，其上任一点 $P(x,y)$ 处的法线与 $y$ 轴的交点为 $Q$，且线段 $PQ$ 被 $x$ 轴平分.
+(1)求曲线 $y=f(x)$ 的方程；
+(2)已知曲线 $y=\sin x$ 在 $[0,\pi]$ 上的弧长为 $l$，试用 $l$ 表示曲线 $y=f(x)$ 的弧长 $s$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)曲线 $y=f(x)$ 在点 $P(x,y)$ 处的法线方程为
+$$Y-y=-\dfrac{1}{y}(X-x)，$$
+其中 $(X,Y)$ 为法线上任意一点的坐标. 令 $X=0$，则
+$$Y=y+\dfrac{x}{y}，$$
+故 $Q$ 点坐标为 $\Big(0,y+\dfrac{x}{y}\Big)$. 由题设知
+$$y+y+\dfrac{x}{y}=0，\quad 即\quad 2y\,\mathrm{d}y+x\,\mathrm{d}x=0.$$
+积分得 $x^2+2y^2=C$（$C$ 为任意常数）.
+由 $y\Big|_{x=\frac{\sqrt{2}}{2}}=\dfrac{1}{2}$ 知 $C=1$，故曲线 $y=f(x)$ 的方程为 $x^2+2y^2=1$.
+(2)曲线 $y=\sin x$ 在 $[0,\pi]$ 上的弧长为 $l=2\displaystyle\int_0^{\frac{\pi}{2}}\sqrt{1+\cos^2x}\,\mathrm{d}x$.
+曲线 $y=f(x)$ 的参数方程为 $\begin{cases} x=\cos\theta \\ y=\dfrac{\sqrt{2}}{2}\sin\theta \end{cases}$，故
+$$s=\int_0^{\frac{\pi}{2}}\sqrt{\sin^2\theta+\dfrac{1}{2}\cos^2\theta}\,\mathrm{d}\theta=\dfrac{1}{\sqrt{2}}\int_0^{\frac{\pi}{2}}\sqrt{1+\sin^2\theta}\,\mathrm{d}\theta.$$
+令 $\theta=\dfrac{\pi}{2}-t$，则
+$$s=\dfrac{1}{\sqrt{2}}\int_{\frac{\pi}{2}}^0\sqrt{1+\cos^2t}\,(-\mathrm{d}t)=\dfrac{1}{\sqrt{2}}\int_0^{\frac{\pi}{2}}\sqrt{1+\cos^2t}\,\mathrm{d}t=\dfrac{l}{2\sqrt{2}}=\dfrac{\sqrt{2}}{4}l.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)$x^2+2y^2=1$； (2)$s=\dfrac{l}{2\sqrt{2}}=\dfrac{\sqrt{2}}{4}l$.</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s1">§2. 定积分在物理学上的应用</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">有关变力作功问题</h3>
+<article class="problem" id="q631" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="631">【631】</span>
+<span class="q-group">有关变力作功问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">半径等于 $r$ m 的半球形水池，其中充满了水. 把池内的水完全吸尽，需作多少功？（水的密度 $\rho=1000\,\mathrm{kg/m^3}$，设重力加速度为 $g$）.</div>
+<div class="figure-note">图 631(1) —— 半球形水池的纵截面，碗口朝上、碗体在水平 $x$ 轴下方，$x$ 轴上标 $-r$、$O$、$r$；竖直 $h$ 轴过 $O$ 向上，上方有虚线辅助线；池内画一条水平阴影窄条表示水深 $h$ 处的薄水层，两条半径线段标 $r$.</div><div class="figure-note">图 631(2) —— 同一半球形水池截面，碗体在水轴下方，$x$ 轴过碗口，其上标 $-r$、$O$、$r$；竖直 $h$ 轴过 $O$ 铅直向下，池内在深度 $h$ 处画水平阴影窄条，半径线段标 $r$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解法一</strong> 建立坐标系如图 631(1) 所示.
+$$W=1000\pi g\int_r^0(r-h)[r^2-(r-h)^2]\,\mathrm{d}h$$
+$$=1000\pi g\int_r^0[r^2(r-h)-(r-h)^3]\,\mathrm{d}h$$
+$$=1000\pi g\cdot\Big[-\dfrac{r^2}{2}(r-h)^2+\dfrac{1}{4}(r-h)^4\Big]\Big|_r^0$$
+$$=250\pi gr^4.$$
+<strong>解法二</strong> 建立坐标系如图 631(2) 所示.
+$$W=1000\pi g\int_0^r(r^2-h^2)h\,\mathrm{d}h$$
+$$=1000\pi g\cdot\Big(\dfrac{r^2}{2}h^2-\dfrac{h^4}{4}\Big)\Big|_0^r$$
+$$=250\pi gr^4.$$
+故吸尽池内的水作的功为 $250\pi gr^4$ (J).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">吸尽池内的水作的功为 $250\pi gr^4$ (J).</span></div>
+</div>
+</article>
+<article class="problem" id="q632" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="632">【632】</span>
+<span class="q-group">有关变力作功问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">为清除井底的污泥，用缆绳将抓斗放入井底，抓起污泥后提出井口（如图 640 所示）. 已知井深 30m，抓斗自重 400N，缆绳每米重 50N，抓斗抓起的污泥重 2000N，提升速度为 3m/s，在提升过程中，污泥以 20N/s 的速率从抓斗缝隙中漏掉. 现将抓起污泥的抓斗提升至井口，问克服重力需作多少焦耳的功？
+（说明：①1N×1m=1J；m，N，s，J 分别表示米，牛顿，秒，焦耳. ②抓斗的高度及位于井口上方的缆绳长度忽略不计.）</div>
+<div class="figure-note">图 632 —— 井口地面横线，井为竖直深坑（两侧壁画剖面斜线），井口左上方画滑轮支架与两个滑轮，缆绳绕过滑轮垂入井底，末端挂一梯形抓斗（带爪齿）；右侧竖直 $x$ 轴自上而下标注 $30$、$x+\mathrm{d}x$、$x$，原点 $O$ 在井底.</div><div class="book-note">※ 题干中“（如图 640 所示）”系原书如此（按上下文应为图 632），照录未改.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 作 $x$ 轴如图 632 所示，将抓起污泥的抓斗提升至井口需作功
+$$w=w_1+w_2+w_3，$$
+其中 $w_1$ 是克服抓斗自重所作的功；$w_2$ 是克服缆绳重力所作的功；$w_3$ 是提出污泥所作的功. 由题意知
+$$w_1=400\times 30=12000.$$
+将抓斗由 $x$ 处提升至 $x+\mathrm{d}x$ 处，克服缆绳重力所作的功为
+$$\mathrm{d}w_2=50(30-x)\,\mathrm{d}x，$$
+从而
+$$w_2=\int_0^{30}50(30-x)\,\mathrm{d}x=22500，$$
+在时间间隔 $[t,t+\mathrm{d}t]$ 内提升污泥需作功为
+$$\mathrm{d}w_3=3(2000-20t)\,\mathrm{d}t，$$
+将污泥从井底提升至井口共需时间 $\dfrac{30}{3}=10$，所以
+$$w_3=\int_0^{10}3(2000-20t)\,\mathrm{d}t=57000.$$
+因此，共需作功 $w=12000+22500+57000=91500$ (J).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">共需作功 $w=91500$ (J).</span></div>
+</div>
+</article>
+<article class="problem" id="q633" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="633">【633】</span>
+<span class="q-group">有关变力作功问题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">某建筑工程打地基时，需用汽锤将桩打进土层. 汽锤每次击打，都将克服土层对桩的阻力而作功. 设土层对桩的阻力的大小与桩被打进地下的深度成正比（比例系数为 $k$，$k&gt;0$），汽锤第一次击打将桩打进地下 $a$ m. 根据设计方案，要求汽锤每次击打桩时所作的功与前一次击打时所作的功之比为常数 $r$（$0&lt;r&lt;1$）. 问：
+(1)汽锤击打桩 3 次后，可将桩打进地下多深？
+(2)若击打次数不限，汽锤至多能将桩打进地下多深？（注：m 表示长度，单位米）.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)设第 $n$ 次击打后，桩被打进地下 $x_n$，第 $n$ 次击打时，汽锤所作的功为 $W_n$（$n=1,2,3,\cdots$）. 由题设，当桩被打进地下的深度为 $x$ 时，土层对桩的阻力的大小为 $kx$，所以
+$$W_1=\int_0^{x_1}kx\,\mathrm{d}x=\dfrac{k}{2}x_1^2=\dfrac{k}{2}a^2，$$
+$$W_2=\int_{x_1}^{x_2}kx\,\mathrm{d}x=\dfrac{k}{2}(x_2^2-x_1^2)=\dfrac{k}{2}(x_2^2-a^2).$$
+由 $W_2=rW_1$ 得 $x_2^2-a^2=ra^2$，即 $x_2^2=(1+r)a^2$.
+$$W_3=\int_{x_2}^{x_3}kx\,\mathrm{d}x=\dfrac{k}{2}(x_3^2-x_2^2)=\dfrac{k}{2}[x_3^2-(1+r)a^2].$$
+由 $W_3=rW_2=r^2W_1$ 可得 $x_3^2-(1+r)a^2=r^2a^2$，从而 $x_3=\sqrt{1+r+r^2}\,a$，即汽锤击打 3 次后，可将桩打进地下 $\sqrt{1+r+r^2}\,a$ m.
+(2)由归纳法，设 $x_n=\sqrt{1+r+\cdots+r^{n-1}}\,a$，则
+$$W_{n+1}=\int_{x_n}^{x_{n+1}}kx\,\mathrm{d}x=\dfrac{k}{2}(x_{n+1}^2-x_n^2)=\dfrac{k}{2}[x_{n+1}^2-(1+r+\cdots+r^{n-1})a^2].$$
+由于 $W_{n+1}=rW_n=r^2W_{n-1}=\cdots=r^nW_1$，故得 $x_{n+1}^2-(1+r+\cdots+r^{n-1})a^2=r^na^2$，从而
+$$x_{n+1}=\sqrt{1+r+\cdots+r^n}\,a=\sqrt{\dfrac{1-r^{n+1}}{1-r}}\,a.$$
+于是 $\displaystyle\lim_{n\to\infty}x_{n+1}=\sqrt{\dfrac{1}{1-r}}\,a$，
+即若不限击打次数，汽锤至多能将桩打进地下 $\sqrt{\dfrac{1}{1-r}}\,a$ m.
+<strong>点评</strong> 本题将变力作功和数列极限两个知识点结合在一起，是有一定难度的综合计算题.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)$\sqrt{1+r+r^2}\,a$ m； (2)$\sqrt{\dfrac{1}{1-r}}\,a$ m.</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用定积分求水压力</h3>
+<article class="problem" id="q634" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="634">【634】</span>
+<span class="q-group">利用定积分求水压力</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">底为 8cm，高为 6cm 的等腰三角形片，铅直地淹没在水中，顶在上，底在下且与水面平行，而顶离水面 3cm. 试求它每面所受的压力（设重力加速度为 $g$）.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 所受压力 $F=g\displaystyle\int_0^6(3+x)\cdot\dfrac{4}{3}x\,\mathrm{d}x=g\int_0^6\Big(4x+\dfrac{4}{3}x^2\Big)\mathrm{d}x=g\Big(2x^2+\dfrac{4}{9}x^3\Big)\Big|_0^6=168g$.
+或 0.168N.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">每面所受的压力为 $168g$（或 0.168N）.</span></div>
+</div>
+</article>
+<article class="problem" id="q635" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="635">【635】</span>
+<span class="q-group">利用定积分求水压力</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">某闸门的形状与大小如图所示，其中直线 $l$ 为对称轴，闸门的上部为矩形 $ABCD$，下部由二次抛物线与线段 $AB$ 所围成. 当水面与闸门的上端相平时，欲使闸门矩形部分承受的水压力与闸门下部承受的水压力之比为 $5:4$，闸门矩形部分的高 $h$ 应为多少 m（米）？</div>
+<div class="figure-note">图 635(1) —— $y$ 轴竖直向上为对称轴，$x$ 轴水平且过抛物线顶点 $O$；上部矩形 $D$（左上、右上顶点标 $D$、$C$，下边 $AB$ 为水平虚线，$A$、$B$ 在 $y$ 轴两侧）；$y$ 轴上自 $O$ 向上依次标 $1$（至 $AB$ 边）与 $h+1$（至顶边 $DC$）；下部为抛物线 $y=x^2$ 与线段 $AB$ 所围的碗状区域.</div><div class="figure-note">图 635(2) —— 同一闸门换坐标系：$x$ 轴水平过闸门顶边 $DC$（即水面线），箭头向右；$y$ 轴竖直向下为对称轴，$D$、$C$ 在顶部两侧，$AB$ 为下方水平虚线；$y$ 轴上自 $O$ 向下依次标 $h$（至 $AB$ 边）与 $h+1$（至抛物线最低点）；下部为碗状抛物线区域.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解法一</strong> 建立坐标系如图 635(1) 所示，则抛物线的方程为
+$$y=x^2，$$
+闸门矩形部分承受的水压力
+$$P_1=2\int_1^{h+1}\rho g(h+1-y)\,\mathrm{d}y=2\rho g\Big[(h+1)y-\dfrac{y^2}{2}\Big]\Big|_1^{h+1}=\rho gh^2，$$
+其中 $\rho$ 为水的密度，$g$ 为重力加速度.
+闸门下部承受的水压力
+$$P_2=2\int_0^1\rho g(h+1-y)\sqrt{y}\,\mathrm{d}y=2\rho g\Big[\dfrac{2}{3}(h+1)y^{\frac{3}{2}}-\dfrac{2}{5}y^{\frac{5}{2}}\Big]\Big|_0^1=4\rho g\Big(\dfrac{1}{3}h+\dfrac{2}{15}\Big).$$
+由题意知
+$$\dfrac{P_1}{P_2}=\dfrac{5}{4}，即 \dfrac{h^2}{4\Big(\dfrac{1}{3}h+\dfrac{2}{15}\Big)}=\dfrac{5}{4}，$$
+解之得 $h=2$，$h=-\dfrac{1}{3}$（舍去），故 $h=2$.
+即闸门矩形部分的高应为 2m.
+<strong>解法二</strong> 建立坐标系如图 635(2) 所示，则抛物线方程为
+$$x=h+1-y^2.$$
+闸门矩形部分承受的水压力为 $P_1=2\displaystyle\int_0^h\rho gx\,\mathrm{d}x=\rho gh^2$，
+闸门下部承受的水压力为 $P_2=2\displaystyle\int_h^{h+1}\rho gx\sqrt{h+1-x}\,\mathrm{d}x$.
+设 $\sqrt{h+1-x}=t$，得
+$$P_2=4\rho g\int_0^1(h+1-t^2)t^2\,\mathrm{d}t=4\rho g\Big[(h+1)\dfrac{t^3}{3}-\dfrac{t^5}{5}\Big]\Big|_0^1=4\rho g\Big(\dfrac{1}{3}h+\dfrac{2}{15}\Big).$$
+以下同解法一.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">闸门矩形部分的高 $h=2$ m.</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关引力的讨论</h3>
+<article class="problem" id="q636" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="636">【636】</span>
+<span class="q-group">有关引力的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设星形线 $\begin{cases} x=a\cos^3 t \\ y=a\sin^3 t \end{cases}$ 上每一点处的线密度的大小等于该点到原点的距离的立方，在原点 $O$ 处有一单位质点，求星形线在第一象限的弧段对这质点的引力.</div>
+<div class="figure-note">图 636 —— 第一象限的星形线弧段，凹向原点，下端交 $x$ 轴于 $A$、左端交 $y$ 轴于 $B$；弧上取一小段标注 $\mathrm{d}s(x,y)$，该点与原点 $O$ 的连线与 $x$ 轴正向夹角标 $\alpha$；$O$、$A$ 标在 $x$ 轴上，$B$ 标在 $y$ 轴上.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 636 所示.
+在弧上取一小段 $\mathrm{d}s$，将其近似地看成质点 $(x,y)$，其质量为 $(x^2+y^2)^{\frac{3}{2}}\mathrm{d}s$，由两质点间的引力计算公式，此小段对在原点处的单位质点的引力 $\mathrm{d}F$ 的大小为
+$$\mathrm{d}F=k\dfrac{(x^2+y^2)^{\frac{3}{2}}\mathrm{d}s}{x^2+y^2}=k(x^2+y^2)^{\frac{1}{2}}\mathrm{d}s，$$
+（其中 $k$ 为引力系数）
+从而可求出 $\mathrm{d}F$ 在水平方向和垂直的分力分别为
+$$\mathrm{d}F_x=\mathrm{d}F\cdot\cos\alpha=k(x^2+y^2)^{\frac{1}{2}}\cdot\dfrac{x}{\sqrt{x^2+y^2}}\,\mathrm{d}s=kx\,\mathrm{d}s$$
+$$\mathrm{d}F_y=\mathrm{d}F\cdot\sin\alpha=k(x^2+y^2)^{\frac{1}{2}}\cdot\dfrac{y}{\sqrt{x^2+y^2}}\,\mathrm{d}s=ky\,\mathrm{d}s$$
+从而
+$$F_x=\int_A^B kx\,\mathrm{d}s=k\int_0^{\frac{\pi}{2}}a\cos^3t\sqrt{[3a\cos^2t\cdot(-\sin t)]^2+[3a\sin^2t\cdot\cos t]^2}\,\mathrm{d}t$$
+$$=3a^2k\int_0^{\frac{\pi}{2}}\cos^4t\cdot\sin t\,\mathrm{d}t=-3a^2k\int_0^{\frac{\pi}{2}}\cos^4t\,\mathrm{d}(\cos t)=\dfrac{3}{5}ka^2，$$
+$$F_y=\int_A^B ky\,\mathrm{d}s=k\int_0^{\frac{\pi}{2}}a\sin^3t\sqrt{[3a\cos^2t\cdot(-\sin t)]^2+[3a\sin^2t\cdot\cos t]^2}\,\mathrm{d}t$$
+$$=3a^2k\int_0^{\frac{\pi}{2}}\sin^4t\cdot\cos t\,\mathrm{d}t=3a^2k\int_0^{\frac{\pi}{2}}\sin^4t\,\mathrm{d}(\sin t)=\dfrac{3}{5}ka^2.$$
+所以星形线在第一象限的弧段对位于原点处的单位质点的引力为
+$$\boldsymbol{F}=\dfrac{3}{5}ka^2\boldsymbol{i}+\dfrac{3}{5}ka^2\boldsymbol{j}.$$
+<strong>点评</strong> 对于几何、物理学中的实际问题，定积分的微元法提供了一个解决问题的很好的途径. 在微元法的使用过程中，选取积分变量 $x$ 与积分区间 $[a,b]$ 及寻求所求量 $u$ 的积分元素 $\mathrm{d}u=f(x)\mathrm{d}x$ 的表达式是最为关键的两点. 特别是在确定积分元素的表达式时，需先把最简单的情况下如何计算相应的量搞清楚，例如变力作功的计算，就要先搞清楚质点沿直线运动时常力所作的功为 $\boldsymbol{F}\cdot\boldsymbol{S}$，这样才清楚变力在小曲线段上作功的近似值为 $\boldsymbol{F}\cdot\boldsymbol{n}\mathrm{d}s$，其中 $\boldsymbol{n}$ 为曲线的切向量，其它如面积、弧长、体积、引力、压力等都是如此.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\boldsymbol{F}=\dfrac{3}{5}ka^2\boldsymbol{i}+\dfrac{3}{5}ka^2\boldsymbol{j}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q637" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="637">【637】</span>
+<span class="q-group">有关引力的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设有质量均匀分布的细杆，线密度为常量 $\rho$，长为 $l$，在杆的中垂线上到杆距离为 $a$ 处有一单位质点 $M$，求杆对这单位质点的引力.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 根据万有引力定律，由微元法：
+$$\mathrm{d}F=\dfrac{k\rho}{\sqrt{a^2+\Big(\dfrac{l}{2}-x\Big)^2}^2}\,\mathrm{d}x，$$
+故
+$$F=\int_0^l\dfrac{k\rho}{\sqrt{a^2+\Big(\dfrac{l}{2}-x\Big)^2}^2}\,\mathrm{d}x=\dfrac{2k\rho l}{\sqrt{4a^4+l^4}}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$F=\dfrac{2k\rho l}{\sqrt{4a^4+l^4}}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q638" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="638">【638】</span>
+<span class="q-group">有关引力的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">一质量为 $M$，长为 $l$ 的均匀杆 $AB$ 吸引着质量为 $m$ 的一质点 $C$，此质点 $C$ 位于 $AB$ 杆的延长线上，并与较近的端点 $B$ 的距离为 $a$，试求：
+(1)杆与质点间的相互吸引力；
+(2)总质点在杆的延长线上从距离 $r_1$ 处移至 $r_2$ 处时，克服吸引力所作的功.</div>
+<div class="figure-note">图 638 —— 水平数轴，自左至右依次标点 $A$、$B$、$C$（$C$ 下方标 $m$）；原点 $O$ 在 $A$ 处，$x$ 轴箭头向右；$AB$ 段下方花括号标 $l$，$BC$ 段下方花括号标 $a$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 638 所示.
+<strong>解</strong>（接上批）
+(1)据万有引力定律，由微元法有
+$$\mathrm{d}F = \frac{km\cdot\dfrac{M}{l}\,\mathrm{d}x}{(l+a-x)^2} = \frac{kmM}{l}\frac{\mathrm{d}x}{(l+a-x)^2},\qquad F = \frac{kmM}{l}\int_0^l \frac{\mathrm{d}x}{(l+a-x)^2} = \frac{kmM}{a(a+l)},$$
+其中 $k$ 为常数.
+(2)由(1)知，位于 $B$、$C$ 间距 $B$ 端为 $x$ 的点与杆 $AB$ 的引力为 $F=\dfrac{kmM}{x(x+l)}$，所以
+$$W = \int_{r_1}^{r_2} \frac{kmM}{x(x+l)}\,\mathrm{d}x = \frac{kmM}{l}\ln\frac{r_2(r_1+l)}{r_1(r_2+l)}.$$</div>
+
+</div>
+</article>
+<h3 class="grp-h">计算吸入空气总量</h3>
+<article class="problem" id="q639" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="639">【639】</span>
+<span class="q-group">计算吸入空气总量</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设人呼出或吸入的气流的速率 $v(t)\,(\mathrm{m/s})$，可用一个正弦曲线 $v(t)=A\sin\dfrac{2\pi}{T}t$ 来描述，其中时间 $t$（单位为秒）从某次吸气开始时计算起，$A$ 是最大气流速率，$T$ 为一次呼吸所用时间. 当正弦曲线函数值为正时，人正在吸气；反之，正在呼气. 在吸气的某个时间段 $[t_1,t_2]$ 上，曲线 $y=v(t)$ 与 $t=t_1,t=t_2$ 及 $t$ 轴所围面积就是人在这个时间段上吸入空气总量. 试求人每次吸气时吸入空气的总量.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 人每次吸气时吸入空气总量为
+$$\int_{t_1}^{t_2} v(t)\,\mathrm{d}t = A\int_{t_1}^{t_2} \sin\frac{2\pi}{T}t\,\mathrm{d}t = \frac{AT}{2\pi}\Big[\cos\frac{2\pi}{T}t_1 - \cos\frac{2\pi}{T}t_2\Big].$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">人每次吸气时吸入空气总量为 $\displaystyle\int_{t_1}^{t_2} v(t)\,\mathrm{d}t=\frac{AT}{2\pi}\Big[\cos\frac{2\pi}{T}t_1-\cos\frac{2\pi}{T}t_2\Big]$.</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s2">3. 综合提高题型</h2>
+<h3 class="grp-h">有关利用定积分计算平面图形面积的综合题</h3>
+<article class="problem" id="q640" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="640">【640】</span>
+<span class="q-group">有关利用定积分计算平面图形面积的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $xOy$ 平面上有正方形 $D=\{(x,y)\,|\,0\leqslant x\leqslant 1,0\leqslant y\leqslant 1\}$ 及直线 $l: x+y=t$ $(t\geqslant 0)$. 若 $S(t)$ 表示正方形 $D$ 位于直线 $l$ 左下方部分的面积，试求 $\displaystyle\int_0^x S(t)\,\mathrm{d}t$ $(x\geqslant 0)$.</div>
+<div class="figure-note">图 640 —— 单位正方形，顶点 $(0,0),(1,0),(1,1),(0,1)$，坐标轴上标 $O$ 与 $1$；直线 $x+y=t$（$0&lt;t&lt;1$）与 $x$ 轴、$y$ 轴分别交于 $(t,0),(0,t)$，直线旁标注 $x+y=t$；正方形内该直线左下方的三角形区域 $(0,0),(t,0),(0,t)$ 打阴影.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 640 所示. 由题设知
+$$S(t)=\begin{cases} \dfrac{1}{2}t^2, &amp; 0\leqslant t\leqslant 1 \\[2mm] -\dfrac{1}{2}t^2+2t-1, &amp; 1&lt;t\leqslant 2 \\[2mm] 1, &amp; t&gt;2 \end{cases}$$
+所以，当 $0\leqslant x\leqslant 1$ 时，
+$$\int_0^x S(t)\,\mathrm{d}t = \int_0^x \frac{1}{2}t^2\,\mathrm{d}t = \frac{1}{6}x^3,$$
+当 $1&lt;x\leqslant 2$ 时
+$$\int_0^x S(t)\,\mathrm{d}t = \int_0^1 S(t)\,\mathrm{d}t + \int_1^x S(t)\,\mathrm{d}t = -\frac{x^3}{6} + x^2 - x + \frac{1}{3},$$
+当 $x&gt;2$ 时
+$$\int_0^x S(t)\,\mathrm{d}t = \int_0^2 S(t)\,\mathrm{d}t + \int_2^x S(t)\,\mathrm{d}t = x-1.$$
+因此
+$$\int_0^x S(t)\,\mathrm{d}t = \begin{cases} \dfrac{1}{6}x^3, &amp; 0\leqslant x\leqslant 1 \\[2mm] -\dfrac{1}{6}x^3 + x^2 - x + \dfrac{1}{3}, &amp; 1&lt;x\leqslant 2 \\[2mm] x-1, &amp; x&gt;2 \end{cases}$$
+<strong>点评</strong> 分段函数的积分，应根据不同区间上的函数表达式，利用定积分的可加性分段计算. 本题先根据 $t$ 的取值情况，求出 $S(t)$ 的表达式，然后根据 $x$ 的取值确定 $\displaystyle\int_0^x S(t)\,\mathrm{d}t$ $(x\geqslant 0)$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\displaystyle\int_0^x S(t)\,\mathrm{d}t=\begin{cases}\dfrac{1}{6}x^3, &amp; 0\leqslant x\leqslant 1\\[1mm] -\dfrac{1}{6}x^3+x^2-x+\dfrac{1}{3}, &amp; 1&lt;x\leqslant 2\\[1mm] x-1, &amp; x&gt;2\end{cases}$</span></div>
+</div>
+</article>
+<article class="problem" id="q641" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="641">【641】</span>
+<span class="q-group">有关利用定积分计算平面图形面积的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">如图 641 所示，$C_1$ 和 $C_2$ 分别是 $y=\dfrac{1}{2}(1+\mathrm{e}^x)$ 和 $y=\mathrm{e}^x$ 的图象，过点 $(0,1)$ 的曲线 $C_3$ 是一单调增函数的图象. 过 $C_2$ 上任一点 $M(x,y)$ 分别作垂直于 $x$ 轴和 $y$ 轴的直线 $l_x$ 和 $l_y$，记 $C_1$，$C_2$ 与 $l_x$ 所围图形的面积为 $S_1(x)$；$C_2$,$C_3$ 与 $l_y$ 所围图形的面积为 $S_2(y)$. 如果总有 $S_1(x)=S_2(y)$，求曲线 $C_3$ 的方程 $x=\varphi(y)$.</div>
+<div class="figure-note">图 641 —— 直角坐标系，原点 $O$，$y$ 轴上标 $1$，$x$ 轴上标 $1$；$C_1: y=\frac{1}{2}(1+\mathrm{e}^x)$ 与 $C_2: y=\mathrm{e}^x$ 均过 $(0,1)$，图示 $x&gt;0$ 区域 $C_2$ 位于 $C_1$ 上方；$C_3$ 为过 $(0,1)$ 的单调增曲线，位于 $C_2$ 左下方；$M(x,y)$ 为 $C_2$ 上一点，过 $M$ 的水平线 $l_y$ 与竖直线 $l_x$；$C_1$ 与 $C_2$ 之间（$x$ 从 $0$ 到 $l_x$）及 $C_3$ 与 $C_2$ 之间（$y$ 从 $1$ 到 $l_y$）两个区域均打斜线阴影.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题设 $S_1(x)=S_2(y)$，知
+$$\int_0^x \Big[\mathrm{e}^x - \frac{1}{2}(1+\mathrm{e}^x)\Big]\mathrm{d}x = \int_1^y [\ln y - \varphi(y)]\,\mathrm{d}y,$$
+即
+$$\int_0^x \Big(\frac{1}{2}\mathrm{e}^x - \frac{1}{2}\Big)\mathrm{d}x = \int_1^y [\ln y - \varphi(y)]\,\mathrm{d}y,$$
+两边对 $x$ 求导，得
+$$\frac{1}{2}\mathrm{e}^x - \frac{1}{2} = [\ln y - \varphi(y)]\frac{\mathrm{d}y}{\mathrm{d}x},$$
+由 $y=\mathrm{e}^x$ 得
+$$\frac{1}{2}\mathrm{e}^x - \frac{1}{2} = [x - \varphi(\mathrm{e}^x)]\,\mathrm{e}^x,$$
+于是 $\varphi(\mathrm{e}^x) = x + \dfrac{1}{2\mathrm{e}^x} - \dfrac{1}{2}$，从而 $\varphi(y) = \ln y + \dfrac{1}{2y} - \dfrac{1}{2}$.
+故曲线 $C_3$ 的方程为 $x = \ln y + \dfrac{1}{2y} - \dfrac{1}{2}$.
+<strong>点评</strong> 用定积分表示面积得到一个方程，再通过积分上限函数求导化为方程求解. 此题解题思路比较明显，根据题设条件逐步求解即可.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">曲线 $C_3$ 的方程为 $x=\ln y+\dfrac{1}{2y}-\dfrac{1}{2}$.</span></div>
+</div>
+</article>
+<article class="problem" id="q642" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="642">【642】</span>
+<span class="q-group">有关利用定积分计算平面图形面积的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$、$g(x)$ 满足条件：$f'(x)=g(x)$，$g'(x)=f(x)$. 又 $f(0)=0$，$g(x)\neq 0$. 试求由曲线 $y=\dfrac{f(x)}{g(x)}$ 与 $x=0$,$x=t\,(t&gt;0)$,$y=1$ 所围成平面图形的面积.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 要写出面积的积分公式，首先需知道曲线 $y=\dfrac{f(x)}{g(x)}$ 与 $y=1$ 的相对位置，而 $f'(x)=g(x)$,$g'(x)=f(x)$,$f(0)=0$,$g(x)\neq 0$ 实际上用常微分方程的形式给出了 $f(x)$ 与 $g(x)$ 的性质，因此可以求出曲线 $y=\dfrac{f(x)}{g(x)}$ 的具体表达式.
+<strong>解</strong> 由 $f'(x)=g(x)$,$g'(x)=f(x)$ 可得 $g''(x)=g(x)$，因此
+$$g(x)=C_1\mathrm{e}^x + C_2\mathrm{e}^{-x},\qquad f(x)=C_1\mathrm{e}^x - C_2\mathrm{e}^{-x}.$$
+又由 $f(0)=0$ 知 $C_1=C_2$，由 $g(x)\neq 0$ 知 $C_1=C_2\neq 0$，则
+$$y=\frac{f(x)}{g(x)} = \frac{C_1(\mathrm{e}^x - \mathrm{e}^{-x})}{C_1(\mathrm{e}^x + \mathrm{e}^{-x})} = \frac{\mathrm{e}^x - \mathrm{e}^{-x}}{\mathrm{e}^x + \mathrm{e}^{-x}} &lt; 1.\qquad (\text{当 } x&gt;0 \text{ 时})$$
+由此可得所求面积为
+$$A(t) = \int_0^t \Big(1 - \frac{f(x)}{g(x)}\Big)\mathrm{d}x = \int_0^t \Big(1 - \frac{\mathrm{e}^x - \mathrm{e}^{-x}}{\mathrm{e}^x + \mathrm{e}^{-x}}\Big)\mathrm{d}x = t - \ln(\mathrm{e}^x + \mathrm{e}^{-x})\Big|_0^t$$
+$$= t - \ln(\mathrm{e}^t + \mathrm{e}^{-t}) + \ln 2 = \ln 2 - \ln(1 + \mathrm{e}^{-2t}).$$
+<strong>点评</strong> 由于 $\lim\limits_{x\to+\infty}\dfrac{\mathrm{e}^x - \mathrm{e}^{-x}}{\mathrm{e}^x + \mathrm{e}^{-x}} = 1$，因此 $y=1$ 是 $y=\dfrac{\mathrm{e}^x - \mathrm{e}^{-x}}{\mathrm{e}^x + \mathrm{e}^{-x}}$ 的渐近线，这样由 $y=1$,$y=\dfrac{f(x)}{g(x)}$,$x=0$ 所围成的无穷区域的面积也可计算，实际上这无穷区域的面积为
+$$A = \lim_{t\to+\infty} A(t) = \lim_{t\to+\infty}\int_0^t \Big[1-\frac{f(x)}{g(x)}\Big]\mathrm{d}x = \lim_{t\to+\infty}[\ln 2 - \ln(1+\mathrm{e}^{-2t})] = \ln 2.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">所求面积 $A(t)=\ln 2 - \ln(1+\mathrm{e}^{-2t})$.</span></div>
+</div>
+</article>
+<article class="problem" id="q643" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="643">【643】</span>
+<span class="q-group">有关利用定积分计算平面图形面积的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设当 $x\in[2,4]$ 时，有不等式 $ax+b\geqslant \ln x$，其中 $a,b$ 为常数. 试求使得积分
+$$I = \int_2^4 (ax+b-\ln x)\,\mathrm{d}x$$
+取得最小值的 $a$ 和 $b$.</div>
+<div class="figure-note">图 643 —— 直角坐标系；曲线 $y_2=\ln x$ 自左下向右上延伸，直线 $y_1=ax+b$ 与曲线相切于一点 $P$（介于 $x=2$ 与 $x=4$ 之间），切点附近直线位于曲线上方；$x=2$ 与 $x=4$ 处有竖直虚线，两虚线间直线与曲线所夹部分即被积面积区域；$x$ 轴上标 $2$、$4$，曲线上方右侧标注 $y_1=ax+b$ 与 $y_2=\ln x$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 首先 $I$ 的值与 $a,b$ 有关；其次，由 $I$ 的表达式可知，$I$ 即为曲线 $y_1=ax+b$ 与 $y_2=\ln x$ 及 $x=2$,$x=4$ 所围图形的面积，其最小值应在 $y_1$ 与 $y_2$ 相切时取得，利用切点找出 $a,b$ 之间的关系（或 $a,b$ 用切点坐标表示）. 这样，问题就转化为：在曲线 $y=\ln x\,(2\leqslant x\leqslant 4)$ 上求一点 $P(x,y)$ 使该点的切线与 $y=\ln x$ 及 $x=2$,$x=4$ 所围图形的面积最小.
+<strong>解</strong> 如图 643 所示. 首先
+$$I = \int_2^4 (ax+b-\ln x)\,\mathrm{d}x = 6a + 2b - \int_2^4 \ln x\,\mathrm{d}x$$
+$$= 6a + 2b - A.\qquad \Big(A=\int_2^4 \ln x\,\mathrm{d}x \text{ 是常数}\Big)$$
+其次，设直线 $y_1=ax+b$ 与曲线 $y_2=\ln x$ 相切于点 $P(x,y)$，则有
+$$\begin{cases} ax+b=\ln x \\[1mm] a=\dfrac{1}{x} \end{cases}\ ,\quad \text{于是}\quad \begin{cases} a=\dfrac{1}{x} \\[1mm] b=\ln x - 1 \end{cases}\ .$$
+将上式代入 $I$ 的表达式，得
+$$I = I(x) = \frac{6}{x} + 2\ln x - A - 2,\quad x\in[2,4],$$
+于是 $I'(x) = -\dfrac{6}{x^2} + \dfrac{2}{x} = \dfrac{-6+2x}{x^2}$.
+令 $I'(x)=0$，得唯一驻点 $x=3$，又当 $2&lt;x&lt;3$ 时，$I'(x)&lt;0$；当 $3&lt;x&lt;4$ 时，$I'(x)&gt;0$，故 $x=3$ 为 $I(x)$ 的最小值点. 此时 $a=\dfrac{1}{3}$，$b=\ln 3 - 1$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$a=\dfrac{1}{3}$，$b=\ln 3 - 1$.</span></div>
+</div>
+</article>
+<article class="problem" id="q644" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="644">【644】</span>
+<span class="q-group">有关利用定积分计算平面图形面积的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=f(x)$ 是区间 $[0,1]$ 上的任一非负连续函数.
+(1) 试证：存在 $x_0\in(0,1)$，使得在区间 $[0,x_0]$ 上以 $f(x_0)$ 为高的矩形面积，等于在区间 $[x_0,1]$ 上以 $y=f(x)$ 为曲边的曲边梯形面积.
+(2) 又设 $f(x)$ 在区间 $(0,1)$ 内可导，且 $f'(x) &gt; -\dfrac{2f(x)}{x}$，证明 (1) 中的 $x_0$ 是唯一的.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证法一</strong> (1)设 $F(x) = x\displaystyle\int_x^1 f(t)\,\mathrm{d}t$，则 $F(0)=F(1)=0$，且 $F'(x) = \displaystyle\int_x^1 f(t)\,\mathrm{d}t - xf(x)$. 对 $F(x)$ 在区间 $[0,1]$ 上应用罗尔定理知，存在一点 $x_0\in(0,1)$，使 $F'(x_0)=0$，因而
+$$\int_{x_0}^1 f(x)\,\mathrm{d}x - x_0 f(x_0) = 0.$$
+即矩形面积 $x_0 f(x_0)$ 等于曲边梯形面积 $\displaystyle\int_{x_0}^1 f(x)\,\mathrm{d}x$.
+(2) 设 $\varphi(x) = \displaystyle\int_x^1 f(t)\,\mathrm{d}t - xf(x)$，则当 $x\in(0,1)$ 时，有
+$$\varphi'(x) = -f(x) - f(x) - xf'(x) &lt; 0.$$
+所以 $\varphi(x)$ 在区间 $(0,1)$ 内单调减少，故此时 (1) 中的 $x_0$ 是唯一的.
+<strong>证法二</strong> (1)设在区间 $(a,1)\,(a\geqslant \dfrac{1}{2})$ 内取 $x_1$. 若在区间 $[x_1,1]$ 上 $f(x)\equiv 0$，则 $(x_1,1)$ 内任一点都可作为 $x_0$，否则可设 $f(x_2)&gt;0$ 为连续函数 $f(x)$ 在区间 $[x_1,1]$ 上的最大值，$x_2\in[x_1,1]$.
+在区间 $[0,x_2]$ 上，作辅助函数
+$$\varphi(x) = \int_x^1 f(t)\,\mathrm{d}t - xf(x),$$
+则 $\varphi(x)$ 连续，且 $\varphi(0)&gt;0$. 又
+$$\varphi(x_2) = \int_{x_2}^1 f(t)\,\mathrm{d}t - x_2 f(x_2) \leqslant (1-2x_2)f(x_2) &lt; 0.$$
+因而由闭区间上连续函数的介值定理，存在一点 $x_0\in(0,x_2)\subset(0,1)$，使 $\varphi(x_0)=0$，即
+$$\int_{x_0}^1 f(t)\,\mathrm{d}t = x_0 f(x_0).$$
+(2) 同证法一.</div>
+
+</div>
+</article>
+<article class="problem" id="q645" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="645">【645】</span>
+<span class="q-group">有关利用定积分计算平面图形面积的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知曲线 $L$ 的方程为 $\begin{cases} x=t^2+1 \\ y=4t-t^2 \end{cases}$ $(t\geqslant 0)$.
+(1) 讨论 $L$ 的凹凸性；
+(2) 过点 $(-1,0)$ 引 $L$ 的切线，求切点 $(x_0,y_0)$，并写出切线的方程；
+(3) 求此切线与 $L$（对应于 $x\leqslant x_0$ 的部分）及 $x$ 轴所围成的平面图形的面积.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)由于 $\dfrac{\mathrm{d}y}{\mathrm{d}x} = \dfrac{2}{t} - 1$，$\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2} = -\dfrac{1}{t^2}$，当 $t&gt;0$ 时，$\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}&lt;0$，故 $L$ 是凸的.
+(2)因为当 $t=0$ 时，$L$ 在对应点处的切线方程为 $x=1$，不合题意，故设切点 $(x_0,y_0)$ 对应的参数为 $t_0&gt;0$，则 $L$ 在 $(x_0,y_0)$ 处的切线方程为
+$$y - (4t_0 - t_0^2) = \Big(\frac{2}{t_0} - 1\Big)(x - t_0^2 - 1),$$
+令 $x=-1$,$y=0$，得 $t_0^2 + t_0 - 2 = 0$，解得 $t_0=1$，或 $t_0=-2$（舍去）. 由 $t_0=1$ 知，切点为 $(2,3)$，且切线方程为 $y=x+1$.
+(3)由 $t=0$,$t=4$ 知 $L$ 与 $x$ 轴交点分别为 $(1,0)$ 和 $(17,0)$. 所求平面图形的面积为
+$$S = \int_{-1}^2 (x+1)\,\mathrm{d}x - \int_1^2 y\,\mathrm{d}x = \frac{9}{2} - \int_0^1 (4t - t^2)\,\mathrm{d}(t^2+1) = \frac{9}{2} - 2\int_0^1 (4t^2 - t^3)\,\mathrm{d}t = \frac{7}{3}.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $L$ 是凸的； (2) 切点 $(2,3)$，切线 $y=x+1$； (3) $S=\dfrac{7}{3}$.</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关旋转体体积的综合题</h3>
+<article class="problem" id="q646" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="646">【646】</span>
+<span class="q-group">有关旋转体体积的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$, $g(x)$ 在区间 $[a,b]$ 上连续，且 $g(x)&lt;f(x)&lt;m$（$m$ 为常数），则曲线 $y=g(x)$,$y=f(x)$,$x=a$ 及 $x=b$ 所围平面图形绕直线 $y=m$ 旋转而成的旋转体体积为
+(A) $\displaystyle\int_a^b \pi[2m - f(x) + g(x)][f(x) - g(x)]\,\mathrm{d}x$
+(B) $\displaystyle\int_a^b \pi[2m - f(x) - g(x)][f(x) - g(x)]\,\mathrm{d}x$
+(C) $\displaystyle\int_a^b \pi[m - f(x) + g(x)][f(x) - g(x)]\,\mathrm{d}x$
+(D) $\displaystyle\int_a^b \pi[m - f(x) - g(x)][f(x) - g(x)]\,\mathrm{d}x$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 本题可以看成曲边梯形
+$$\{(x,y)\,|\,f(x)\leqslant y\leqslant m,\ a\leqslant x\leqslant b\}$$
+与曲边梯形
+$$\{(x,y)\,|\,g(x)\leqslant y\leqslant m,\ a\leqslant x\leqslant b\}$$
+分别绕 $y=m$ 旋转所得体积的差，即
+$$V = \pi\int_a^b [m - g(x)]^2\,\mathrm{d}x - \pi\int_a^b [m - f(x)]^2\,\mathrm{d}x$$
+$$= \int_a^b \pi[2m - f(x) - g(x)][f(x) - g(x)]\,\mathrm{d}x,$$
+故应选 (B).</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(B)</span></div>
+</div>
+</article>
+<article class="problem" id="q647" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="647">【647】</span>
+<span class="q-group">有关旋转体体积的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知星形线 $\begin{cases} x=a\cos^3 t \\ y=a\sin^3 t \end{cases}$ $(a&gt;0)$，求：
+(1) 它所围的面积；
+(2) 它的弧长；
+(3) 它绕 $x$ 轴旋转而成的旋转体的表面积.</div>
+<div class="figure-note">图 647 —— 星形线：四个尖点位于 $(\pm a,0)$ 与 $(0,\pm a)$，曲线向内凹呈四角星形，外接圆 $x^2+y^2=a^2$ 一并画出；坐标系标注 $-a$、$O$、$a$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)如图 647 所示.
+$$A = 4\int_0^a y\,\mathrm{d}x = 4\int_0^{\frac{\pi}{2}} a\sin^3 t\cdot 3a\cos^2 t(-\sin t)\,\mathrm{d}t$$
+$$= 12\int_0^{\frac{\pi}{2}} a^2(\sin^4 t - \sin^6 t)\,\mathrm{d}t$$
+$$= 12a^2\Big[\frac{3}{4}\cdot\frac{1}{2}\cdot\frac{\pi}{2}\Big(1 - \frac{5}{6}\Big)\Big] = \frac{3}{8}\pi a^2.$$
+(2)
+$$L = 4\int_0^{\frac{\pi}{2}} \sqrt{(x')^2 + (y')^2}\,\mathrm{d}t = 4\int_0^{\frac{\pi}{2}} 3a\cos t\sin t\,\mathrm{d}t$$
+$$= 6a(\sin t)^2\Big|_0^{\frac{\pi}{2}} = 6a.$$
+(3)
+$$S = 2\int_0^a 2\pi y\sqrt{1 + y_x'^2}\,\mathrm{d}x = 4\pi\int_0^{\frac{\pi}{2}} a\sin^3 t\cdot 3a\cos t\sin t\,\mathrm{d}t = 12\pi a^2\cdot\frac{1}{5}\sin^5 t\Big|_0^{\frac{\pi}{2}} = \frac{12}{5}\pi a^2.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $A=\dfrac{3}{8}\pi a^2$； (2) $L=6a$； (3) $S=\dfrac{12}{5}\pi a^2$.</span></div>
+</div>
+</article>
+<article class="problem" id="q648" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="648">【648】</span>
+<span class="q-group">有关旋转体体积的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设直线 $y=ax$ 与抛物线 $y=x^2$ 所围成图形的面积为 $S_1$，它们与直线 $x=1$ 所围成的图形面积为 $S_2$，并且 $a&lt;1$.
+(1) 试确定 $a$ 的值，使 $S_1+S_2$ 达到最小，并求出最小值.
+(2) 求该最小值所对应的平面图形绕 $x$ 轴旋转一周所得旋转体的体积.</div>
+<div class="figure-note">图 648(1)（$0&lt;a&lt;1$ 情形）—— 第一象限内抛物线 $y=x^2$ 与过原点的直线 $y=ax$ 交于 $O(0,0)$ 和 $(a,a^2)$；$S_1$ 为 $[0,a]$ 上直线与抛物线之间区域（打斜线），$S_2$ 为 $[a,1]$ 上抛物线与直线之间区域（打交叉线）；$x=a$ 与 $x=1$ 处有竖直线，$x$ 轴标 $a$、$1$；曲线旁标注 $y=x^2$ 与 $y=ax$.</div><div class="figure-note">图 648(2)（$a\leqslant 0$ 情形）—— 直线 $y=ax$ 斜率为负并过原点，抛物线 $y=x^2$；$S_1$ 为 $[a,0]$ 上直线与抛物线之间区域（$x=a$ 处虚竖线），$S_2$ 为 $[0,1]$ 上抛物线与直线之间区域（$x=1$ 处竖直线）；$x$ 轴标 $a$、$O$、$1$.</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)当 $0&lt;a&lt;1$ 时（如图 648(1) 所示）
+$$S = S_1 + S_2 = \int_0^a (ax - x^2)\,\mathrm{d}x + \int_a^1 (x^2 - ax)\,\mathrm{d}x$$
+$$= \Big(\frac{ax^2}{2} - \frac{x^3}{3}\Big)\Big|_0^a + \Big(\frac{x^3}{3} - \frac{ax^2}{2}\Big)\Big|_a^1 = \frac{a^3}{3} - \frac{a}{2} + \frac{1}{3}.$$
+令 $S' = a^2 - \dfrac{1}{2} = 0$，得 $a = \dfrac{1}{\sqrt{2}}$. 又 $S''\Big(\dfrac{1}{\sqrt{2}}\Big) = \sqrt{2} &gt; 0$，
+则 $S\Big(\dfrac{1}{\sqrt{2}}\Big)$ 是极小值即最小值. 其值为
+$$S\Big(\frac{1}{\sqrt{2}}\Big) = \frac{1}{6\sqrt{2}} - \frac{1}{2\sqrt{2}} + \frac{1}{3} = \frac{2-\sqrt{2}}{6}.$$
+当 $a\leqslant 0$ 时，（如图 648(2) 所示）
+$$S = S_1 + S_2 = \int_a^0 (ax - x^2)\,\mathrm{d}x + \int_0^1 (x^2 - ax)\,\mathrm{d}x = -\frac{a^3}{6} - \frac{a}{2} + \frac{1}{3}.$$
+$$S' = -\frac{a^2}{2} - \frac{1}{2} = -\frac{1}{2}(a^2 + 1) &lt; 0,$$
+$S$ 单调减少，故 $a=0$ 时，$S$ 取得最小值，此时 $S = \dfrac{1}{3}$.
+综合上述，当 $a=\dfrac{1}{\sqrt{2}}$ 时，$S\Big(\dfrac{1}{\sqrt{2}}\Big)$ 为所求最小值，最小值为 $\dfrac{2-\sqrt{2}}{6}$.
+(2)
+$$V_x = \pi\int_0^{\frac{1}{\sqrt{2}}}\Big(\frac{1}{2}x^2 - x^4\Big)\mathrm{d}x + \pi\int_{\frac{1}{\sqrt{2}}}^1\Big(x^4 - \frac{1}{2}x^2\Big)\mathrm{d}x$$
+$$= \pi\Big(\frac{1}{6}x^3 - \frac{x^5}{5}\Big)\Big|_0^{\frac{1}{\sqrt{2}}} + \pi\Big(\frac{x^5}{5} - \frac{1}{6}x^3\Big)\Big|_{\frac{1}{\sqrt{2}}}^1 = \frac{\sqrt{2}+1}{30}\pi.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $a=\dfrac{1}{\sqrt{2}}$，最小值 $S=\dfrac{2-\sqrt{2}}{6}$； (2) $V_x=\dfrac{\sqrt{2}+1}{30}\pi$.</span></div>
+</div>
+</article>
+<article class="problem" id="q649" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="649">【649】</span>
+<span class="q-group">有关旋转体体积的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $y=\dfrac{\mathrm{e}^x + \mathrm{e}^{-x}}{2}$ 与直线 $x=0$,$x=t\,(t&gt;0)$ 及 $y=0$ 围成一曲边梯形，该曲边梯形绕 $x$ 轴旋转一周得一旋转体，其体积为 $V(t)$，侧面积为 $S(t)$，在 $x=t$ 处的底面积为 $F(t)$.
+(1) 求 $\dfrac{S(t)}{V(t)}$ 的值；
+(2) 计算极限 $\lim\limits_{t\to+\infty}\dfrac{S(t)}{F(t)}$.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)
+$$S(t) = \int_0^t 2\pi y\sqrt{1 + (y_x')^2}\,\mathrm{d}x = 2\pi\int_0^t \Big(\frac{\mathrm{e}^x + \mathrm{e}^{-x}}{2}\Big)\sqrt{1 + \frac{\mathrm{e}^{2x} - 2 + \mathrm{e}^{-2x}}{4}}\,\mathrm{d}x$$
+$$= 2\pi\int_0^t \Big(\frac{\mathrm{e}^x + \mathrm{e}^{-x}}{2}\Big)^2\mathrm{d}x,$$
+$$V(t) = \pi\int_0^t \Big(\frac{\mathrm{e}^x + \mathrm{e}^{-x}}{2}\Big)^2\mathrm{d}x,$$
+所以 $\dfrac{S(t)}{V(t)} = 2$.
+(2) $F(t) = \pi y^2\Big|_{x=t} = \pi\Big(\dfrac{\mathrm{e}^t + \mathrm{e}^{-t}}{2}\Big)^2$，
+$$\lim_{t\to+\infty}\frac{S(t)}{F(t)} = \lim_{t\to+\infty}\frac{2\pi\displaystyle\int_0^t\Big(\frac{\mathrm{e}^x + \mathrm{e}^{-x}}{2}\Big)^2\mathrm{d}x}{\pi\Big(\frac{\mathrm{e}^t + \mathrm{e}^{-t}}{2}\Big)^2} = \lim_{t\to+\infty}\frac{2\Big(\dfrac{\mathrm{e}^t + \mathrm{e}^{-t}}{2}\Big)^2}{2\Big(\dfrac{\mathrm{e}^t + \mathrm{e}^{-t}}{2}\Big)\Big(\dfrac{\mathrm{e}^t - \mathrm{e}^{-t}}{2}\Big)}$$
+$$= \lim_{t\to+\infty}\frac{\mathrm{e}^t + \mathrm{e}^{-t}}{\mathrm{e}^t - \mathrm{e}^{-t}} = 1.$$
+<strong>点评</strong> 曲线 $y=f(x)\geqslant 0$,$x=a$,$x=b$ 所围区域绕 $x$ 轴旋转所得旋转体的表面积公式为
+$$S = \int_a^b 2\pi f(x)\sqrt{1 + f'^2(x)}\,\mathrm{d}x.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $\dfrac{S(t)}{V(t)}=2$； (2) 极限为 $1$.</span></div>
+</div>
+</article>
+<article class="problem" id="q650" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="650">【650】</span>
+<span class="q-group">有关旋转体体积的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">在 $xOy$ 坐标平面上，连续曲线 $L$ 过点 $M(1,0)$，其上任意点 $P(x,y)\,(x\neq 0)$ 处的切线斜率与直线 $OP$ 的斜率之差等于 $ax$（常数 $a&gt;0$）.
+(1) 求 $L$ 的方程；
+(2) 当 $L$ 与直线 $y=ax$ 所围成平面图形的面积为 $\dfrac{8}{3}$ 时，确定 $a$ 的值.</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)依题意得 $y' - \dfrac{1}{x}y = ax$，
+求得其通解为
+$$y = \mathrm{e}^{\int\frac{1}{x}\mathrm{d}x}\Big(\int ax\,\mathrm{e}^{-\int\frac{1}{x}\mathrm{d}x}\,\mathrm{d}x + C\Big)$$
+$$= ax^2 + Cx\ ,$$
+将 $x=1$,$y=0$ 代入上式得 $C=-a$. 从而 $L$ 的方程为 $y=ax^2 - ax$.
+(2) $L$ 与直线 $y=ax$ 的交点坐标为 $(0,0)$ 和 $(2,2a)$，那么 $L$ 与直线 $y=ax$ 围成平面图形的面积
+$$S(a) = \int_0^2 (ax - ax^2 + ax)\,\mathrm{d}x = \int_0^2 (2ax - ax^2)\,\mathrm{d}x = \frac{4}{3}a.$$
+于是由题设知 $\dfrac{4}{3}a = \dfrac{8}{3}$，
+从而 $a=2$.</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $L$ 的方程为 $y=ax^2-ax$； (2) $a=2$.</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s3">§1. 向量及其运算</h2>
+<h2 class="sec-h" id="sec-s4">1. 向量的数量积（点乘积或内积）</h2>
+<h2 class="sec-h" id="sec-s5">2. 向量的向量积（叉乘积或外积）</h2>
+<h2 class="sec-h" id="sec-s6">3. 向量的混合积</h2>
+<h3 class="grp-h">基本题型</h3>
+<h3 class="grp-h">向量的数量积、向量积运算</h3>
+</main>
+</div>
+<div class="qnav">
+  <button id="qnav-prev" title="上一题">↑</button>
+  <button id="qnav-next" title="下一题">↓</button>
+</div>
+<footer>
+  内容来自《吉米多维奇高等数学习题精选精解》（张天德、蒋晓云主编）· 仅供个人学习使用<br>
+  <a href="../index.html" style="color:var(--accent);">返回总目录</a> <a class="icon-btn" href="chapter-05.html">上一章</a> <a class="icon-btn" href="chapter-07.html">下一章</a>
+</footer>
+</body>
+</html>

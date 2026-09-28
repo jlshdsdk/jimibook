@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第2章 第二章 导数与微分 · 吉米多维奇高等数学刷题版</title>
+<meta name="description" content="吉米多维奇高等数学习题精选精解第2章第二章 导数与微分题目与详解，共98题">
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+<script defer src="../assets/katex/katex.min.js"></script>
+<script defer src="../assets/katex/auto-render.min.js"></script>
+<script defer src="../assets/script.js"></script>
+</head>
+<body data-chapter="2" data-lazy="1">
+<header class="topbar">
+  <a class="back" href="../index.html">← 总目录</a>
+  <button class="icon-btn sidebar-toggle" id="sidebar-toggle">☰ 目录</button>
+  <span class="title">第2章 第二章 导数与微分 · 共98题</span>
+  <button class="icon-btn" id="theme-btn">🌙 夜间</button>
+</header>
+<div class="sidebar-mask" id="sidebar-mask"></div>
+<div class="layout">
+<nav class="sidebar" id="sidebar">
+<h3>本章节选</h3>
+<a class="sec" href="#sec-s1">2. 导数的基本公式与运算法则</a>
+<a class="sec" href="#sec-s2">3. 高阶导数　隐函数及参数方程求导</a>
+<a class="sec" href="#sec-s3">4. 微分</a>
+<a class="sec" href="#sec-s4">5. 综合提高题型</a>
+<a class="sec" href="#sec-s5">1. 微分中值定理</a>
+<h3>题号</h3><div class="qindex">
+<a href="#q133" id="qi133">133</a>
+<a href="#q134" id="qi134">134</a>
+<a href="#q135" id="qi135">135</a>
+<a href="#q136" id="qi136">136</a>
+<a href="#q137" id="qi137">137</a>
+<a href="#q138" id="qi138">138</a>
+<a href="#q139" id="qi139">139</a>
+<a href="#q140" id="qi140">140</a>
+<a href="#q141" id="qi141">141</a>
+<a href="#q142" id="qi142">142</a>
+<a href="#q143" id="qi143">143</a>
+<a href="#q144" id="qi144">144</a>
+<a href="#q145" id="qi145">145</a>
+<a href="#q146" id="qi146">146</a>
+<a href="#q147" id="qi147">147</a>
+<a href="#q148" id="qi148">148</a>
+<a href="#q149" id="qi149">149</a>
+<a href="#q150" id="qi150">150</a>
+<a href="#q151" id="qi151">151</a>
+<a href="#q152" id="qi152">152</a>
+<a href="#q153" id="qi153">153</a>
+<a href="#q154" id="qi154">154</a>
+<a href="#q155" id="qi155">155</a>
+<a href="#q156" id="qi156">156</a>
+<a href="#q157" id="qi157">157</a>
+<a href="#q158" id="qi158">158</a>
+<a href="#q159" id="qi159">159</a>
+<a href="#q160" id="qi160">160</a>
+<a href="#q161" id="qi161">161</a>
+<a href="#q162" id="qi162">162</a>
+<a href="#q163" id="qi163">163</a>
+<a href="#q164" id="qi164">164</a>
+<a href="#q165" id="qi165">165</a>
+<a href="#q166" id="qi166">166</a>
+<a href="#q167" id="qi167">167</a>
+<a href="#q168" id="qi168">168</a>
+<a href="#q169" id="qi169">169</a>
+<a href="#q170" id="qi170">170</a>
+<a href="#q171" id="qi171">171</a>
+<a href="#q172" id="qi172">172</a>
+<a href="#q173" id="qi173">173</a>
+<a href="#q174" id="qi174">174</a>
+<a href="#q175" id="qi175">175</a>
+<a href="#q176" id="qi176">176</a>
+<a href="#q177" id="qi177">177</a>
+<a href="#q178" id="qi178">178</a>
+<a href="#q179" id="qi179">179</a>
+<a href="#q180" id="qi180">180</a>
+<a href="#q181" id="qi181">181</a>
+<a href="#q182" id="qi182">182</a>
+<a href="#q183" id="qi183">183</a>
+<a href="#q184" id="qi184">184</a>
+<a href="#q185" id="qi185">185</a>
+<a href="#q186" id="qi186">186</a>
+<a href="#q187" id="qi187">187</a>
+<a href="#q188" id="qi188">188</a>
+<a href="#q189" id="qi189">189</a>
+<a href="#q190" id="qi190">190</a>
+<a href="#q191" id="qi191">191</a>
+<a href="#q192" id="qi192">192</a>
+<a href="#q193" id="qi193">193</a>
+<a href="#q194" id="qi194">194</a>
+<a href="#q195" id="qi195">195</a>
+<a href="#q196" id="qi196">196</a>
+<a href="#q197" id="qi197">197</a>
+<a href="#q198" id="qi198">198</a>
+<a href="#q199" id="qi199">199</a>
+<a href="#q200" id="qi200">200</a>
+<a href="#q201" id="qi201">201</a>
+<a href="#q202" id="qi202">202</a>
+<a href="#q203" id="qi203">203</a>
+<a href="#q204" id="qi204">204</a>
+<a href="#q205" id="qi205">205</a>
+<a href="#q206" id="qi206">206</a>
+<a href="#q207" id="qi207">207</a>
+<a href="#q208" id="qi208">208</a>
+<a href="#q209" id="qi209">209</a>
+<a href="#q210" id="qi210">210</a>
+<a href="#q211" id="qi211">211</a>
+<a href="#q212" id="qi212">212</a>
+<a href="#q213" id="qi213">213</a>
+<a href="#q214" id="qi214">214</a>
+<a href="#q215" id="qi215">215</a>
+<a href="#q216" id="qi216">216</a>
+<a href="#q217" id="qi217">217</a>
+<a href="#q218" id="qi218">218</a>
+<a href="#q219" id="qi219">219</a>
+<a href="#q220" id="qi220">220</a>
+<a href="#q221" id="qi221">221</a>
+<a href="#q222" id="qi222">222</a>
+<a href="#q223" id="qi223">223</a>
+<a href="#q224" id="qi224">224</a>
+<a href="#q225" id="qi225">225</a>
+<a href="#q226" id="qi226">226</a>
+<a href="#q227" id="qi227">227</a>
+<a href="#q228" id="qi228">228</a>
+<a href="#q229" id="qi229">229</a>
+<a href="#q230" id="qi230">230</a>
+</div></nav>
+<main class="main">
+<div class="ch-progress-wrap" style="margin-bottom:18px;color:var(--text-soft);font-size:14px;">
+  本章进度：<span id="ch-progress-text">0 / 98</span>
+  <div class="progress-bar" id="ch-progress" data-ch-count="98" style="margin:6px 0 0;"><i></i></div>
+</div>
+<article class="problem" id="q133">
+<div class="q-head">
+<span class="q-no" data-n="133">【133】</span>
+<span class="q-group">利用导数定义求初等函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=x(x+1)(x+2)\cdots(x+n)$，则 $f'(0)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 根据 $f(x)$ 在点 $x=0$ 导数的定义 $$f'(0)=\lim_{h\to0}\frac{f(h)-f(0)}{h}=\lim_{h\to0}(h+1)(h+2)\cdots(h+n)=n!.$$ 故应填 $n!$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $n!$</span></div>
+</div>
+</article>
+<article class="problem" id="q134">
+<div class="q-head">
+<span class="q-no" data-n="134">【134】</span>
+<span class="q-group">利用导数定义求初等函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=(x-a)\varphi(x)$，其中 $\varphi(x)$ 在 $x=a$ 连续，求 $f'(a)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 使用导数的定义 $$f'(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}=\lim_{x\to a}\frac{(x-a)\varphi(x)-0}{x-a}=\lim_{x\to a}\varphi(x),$$ 而根据函数连续的定义有 $\lim\limits_{x\to a}\varphi(x)=\varphi(a)$．故 $f'(a)=\varphi(a)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $f'(a)=\varphi(a)$</span></div>
+</div>
+</article>
+<article class="problem" id="q135">
+<div class="q-head">
+<span class="q-no" data-n="135">【135】</span>
+<span class="q-group">利用导数定义求初等函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $(-\infty,+\infty)$ 上有定义，在区间 $[0,2]$ 上，$f(x)=x(x^{2}-4)$，若对任意的 $x$ 都满足 $f(x)=kf(x+2)$，其中 $k$ 为常数．(1)写出 $f(x)$ 在 $[-2,0)$ 上的表达式；(2)问 $k$ 为何值时，$f(x)$ 在 $x=0$ 处可导．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)当 $-2\leqslant x&lt;0$，即 $0\leqslant x+2&lt;2$ 时，$$f(x)=kf(x+2)=k(x+2)[(x+2)^{2}-4]=kx(x+2)(x+4).$$ (2)由题设知 $f(0)=0$．$$f_{+}'(0)=\lim_{x\to0^{+}}\frac{f(x)-f(0)}{x-0}=\lim_{x\to0^{+}}\frac{x(x^{2}-4)}{x}=-4;$$ $$f_{-}'(0)=\lim_{x\to0^{-}}\frac{f(x)-f(0)}{x-0}=\lim_{x\to0^{-}}\frac{kx(x+2)(x+4)}{x}=8k.$$ 令 $f_{-}'(0)=f_{+}'(0)$，得 $k=-\dfrac{1}{2}$．即当 $k=-\dfrac{1}{2}$ 时，$f(x)$ 在 $x=0$ 处可导．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">当 $k=-\dfrac{1}{2}$ 时，$f(x)$ 在 $x=0$ 处可导</span></div>
+</div>
+</article>
+<h3 class="grp-h">分段函数讨论分段点处的可导性</h3>
+<article class="problem" id="q136">
+<div class="q-head">
+<span class="q-no" data-n="136">【136】</span>
+<span class="q-group">分段函数讨论分段点处的可导性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}\dfrac{2}{3}x^{3}, &amp; x\leqslant1\\ x^{2}, &amp; x&gt;1\end{cases}$，则 $f(x)$ 在 $x=1$ 处的________．
+(A)左、右导数都存在　(B)左导数存在，但右导数不存在　(C)左导数不存在，但右导数存在　(D)左、右导数都不存在</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f_{+}'(1)=\lim\limits_{x\to1^{+}}\dfrac{x^{2}-\frac{2}{3}}{x-1}=\infty$，$f_{-}'(1)=\lim\limits_{x\to1^{-}}\dfrac{\frac{2}{3}x^{3}-\frac{2}{3}}{x-1}=2$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q137">
+<div class="q-head">
+<span class="q-no" data-n="137">【137】</span>
+<span class="q-group">分段函数讨论分段点处的可导性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=\begin{cases}\dfrac{x}{1+e^{\frac{1}{x}}}, &amp; x&lt;0\\ 0, &amp; x=0\\ \dfrac{2x}{1+e^{x}}, &amp; x&gt;0\end{cases}$，则函数在点 $x=0$ 处的导数为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f(x)$ 是分段函数，按定义分别求 $f(x)$ 在点 $x=0$ 处的左、右导数．$$f_{-}'(0)=\lim_{x\to0^{-}}\frac{\dfrac{x}{1+e^{\frac{1}{x}}}-0}{x}=\lim_{x\to0^{-}}\frac{1}{1+e^{\frac{1}{x}}}=1,$$ $$f_{+}'(0)=\lim_{x\to0^{+}}\frac{\dfrac{2x}{1+e^{x}}-0}{x}=\lim_{x\to0^{+}}\frac{2}{1+e^{x}}=1,$$ 因以上左、右导数存在且相等，所以导数存在，$f'(0)=1$．故应填 $1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $1$</span></div>
+</div>
+</article>
+<article class="problem" id="q138">
+<div class="q-head">
+<span class="q-no" data-n="138">【138】</span>
+<span class="q-group">分段函数讨论分段点处的可导性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $f(x)=(x^{2}-x-2)|x^{3}-x|$ 不可导点的个数是________．
+(A)3　(B)2　(C)1　(D)0</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解法一</strong> $$f(x)=\begin{cases}-(x-2)x(x-1)(x+1)^{2}, &amp; x\leqslant-1\\ (x-2)x(x-1)(x+1)^{2}, &amp; -1&lt;x\leqslant0\\ -(x-2)x(x-1)(x+1)^{2}, &amp; 0&lt;x\leqslant1\\ (x-2)x(x-1)(x+1)^{2}, &amp; x&gt;1\end{cases}$$ $f(x)$ 的不可导的可能点为 $x=-1$，$x=0$，$x=1$．$$f_{-}'(-1)=\lim_{x\to-1^{-}}\frac{-(x-2)x(x-1)(x+1)^{2}}{x+1}=0$$ $$f_{+}'(-1)=\lim_{x\to-1^{+}}\frac{(x-2)x(x-1)(x+1)^{2}}{x+1}=0$$ 所以由 $f_{-}'(-1)=f_{+}'(-1)$ 得：$x=-1$ 为 $f(x)$ 的可导点．由 $$f_{-}'(0)=\lim_{x\to0^{-}}\frac{(x-2)x(x-1)(x+1)^{2}}{x}=2$$ $$f_{+}'(0)=\lim_{x\to0^{+}}\frac{-(x-2)x(x-1)(x+1)^{2}}{x}=-2$$ $$f_{-}'(1)=\lim_{x\to1^{-}}\frac{-(x-2)x(x-1)(x+1)^{2}}{x-1}=4$$ $$f_{+}'(1)=\lim_{x\to1^{+}}\frac{(x-2)x(x-1)(x+1)^{2}}{x-1}=-4$$ 因此 $f(x)$ 的不可导点有两个：$x=0$，$x=1$．故应选 (B)．<strong>解法二</strong> 因为 $f(x)=(x-2)(x+1)\cdot|x|\cdot|x+1|\cdot|x-1|$，由于含因子 $(x+1)\cdot|x+1|$，故 $f(x)$ 在 $x=-1$ 点可导．于是 $f(x)$ 有两个不可导点 $x=0$，$x=1$．故应选 (B)．<strong>点评</strong> 本题解法二使用下述结论讨论．若 $\varphi(x)$ 在点 $x=x_{0}$ 处连续，则 $f(x)=|x-x_{0}|\varphi(x)$ 在 $x=x_{0}$ 处可导的充要条件是 $\varphi(x_{0})=0$．特别地，$|x-x_{0}|$ 在 $x=x_{0}$ 处不可导，而 $(x-x_{0})|x-x_{0}|$ 在 $x=x_{0}$ 处可导．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q139">
+<div class="q-head">
+<span class="q-no" data-n="139">【139】</span>
+<span class="q-group">分段函数讨论分段点处的可导性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 可导，$F(x)=f(x)(1+|\sin x|)$，则 $f(0)=0$ 是 $F(x)$ 在 $x=0$ 处可导的________．
+(A)充分必要条件　(B)充分条件但非必要条件　(C)必要但非充分条件　(D)既非充分条件又非必要条件</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $F(x)=\begin{cases}f(x)(1-\sin x), &amp; x&lt;0\\ f(0), &amp; x=0\\ f(x)(1+\sin x), &amp; x&gt;0\end{cases}$ $$F_{-}'(0)=\lim_{x\to0^{-}}\frac{f(x)(1-\sin x)-f(0)}{x}=\lim_{x\to0^{-}}\frac{f(x)-f(0)}{x}-\lim_{x\to0^{-}}f(x)\cdot\frac{\sin x}{x}=f'(0)-f(0)$$ $$F_{+}'(0)=\lim_{x\to0^{+}}\frac{f(x)(1+\sin x)-f(0)}{x}=\lim_{x\to0^{+}}\frac{f(x)-f(0)}{x}+\lim_{x\to0^{+}}f(x)\cdot\frac{\sin x}{x}=f'(0)+f(0)$$ 若使 $F(x)$ 在 $x=0$ 处可导，则必须 $F_{-}'(0)=F_{+}'(0)$．则 $f(0)=0$．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<article class="problem" id="q140">
+<div class="q-head">
+<span class="q-no" data-n="140">【140】</span>
+<span class="q-group">分段函数讨论分段点处的可导性</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=|x^{3}-1|\varphi(x)$，其中 $\varphi(x)$ 在 $x=1$ 处连续，则 $\varphi(1)=0$ 是 $f(x)$ 在 $x=1$ 处可导的________．
+(A)充分必要条件　(B)必要但非充分条件　(C)充分但非必要条件　(D)既非充分也非必要条件</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $\lim\limits_{x\to1^{+}}\dfrac{f(x)-f(1)}{x-1}=\lim\limits_{x\to1^{+}}\dfrac{x^{3}-1}{x-1}\cdot\varphi(x)=3\varphi(1)$，$$\lim_{x\to1^{-}}\frac{f(x)-f(1)}{x-1}=-\lim_{x\to1^{-}}\frac{x^{3}-1}{x-1}\cdot\varphi(x)=-3\varphi(1),$$ 可见，$f(x)$ 在 $x=1$ 处可导的充分必要条件是 $3\varphi(1)=-3\varphi(1)$，即 $\varphi(1)=0$．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<h3 class="grp-h">根据导数定义，利用所给极限式子求导数</h3>
+<article class="problem" id="q141">
+<div class="q-head">
+<span class="q-no" data-n="141">【141】</span>
+<span class="q-group">根据导数定义，利用所给极限式子求导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $x=a$ 点可导，且 $\lim\limits_{h\to0}\dfrac{h}{f(a-2h)-f(a)}=\dfrac{1}{4}$，求 $f'(a)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $\Delta x=-2h$，则 $h\to0$，即 $\Delta x\to0$，所以根据导数的定义 $$f'(a)=\lim_{\Delta x\to0}\frac{f(a+\Delta x)-f(a)}{\Delta x}=\lim_{h\to0}\frac{f(a-2h)-f(a)}{-2h}=-\dfrac{1}{2}\lim_{h\to0}\frac{f(a-2h)-f(a)}{h}=-\dfrac{1}{2}\times4=-2.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f'(a)=-2$</span></div>
+</div>
+</article>
+<article class="problem" id="q142">
+<div class="q-head">
+<span class="q-no" data-n="142">【142】</span>
+<span class="q-group">根据导数定义，利用所给极限式子求导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $x=0$ 处连续，且 $\lim\limits_{h\to0}\dfrac{f(h^{2})}{h^{2}}=1$，则________．
+(A)$f(0)=0$ 且 $f_{-}'(0)$ 存在　(B)$f(0)=1$ 且 $f_{-}'(0)$ 存在　(C)$f(0)=0$ 且 $f_{+}'(0)$ 存在　(D)$f(0)=1$ 且 $f_{+}'(0)$ 存在</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $f(x)$ 在 $x=0$ 点连续且 $\lim\limits_{h\to0}\dfrac{f(h^{2})}{h^{2}}=1$ 知 $\lim\limits_{h\to0}f(h^{2})=0=f(0)$，令 $h^{2}=\Delta x$，则当 $h\to0$ 时，$\Delta x\to0^{+}$，$$1=\lim_{h\to0}\frac{f(h^{2})}{h^{2}}=\lim_{h\to0}\frac{f(h^{2})-f(0)}{h^{2}}=\lim_{\Delta x\to0^{+}}\frac{f(\Delta x)-f(0)}{\Delta x}=f_{+}'(0).$$ 故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q143">
+<div class="q-head">
+<span class="q-no" data-n="143">【143】</span>
+<span class="q-group">根据导数定义，利用所给极限式子求导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $f(x)$ 在 $x=0$ 点连续，且 $\lim\limits_{x\to0}\dfrac{f(x)}{x}$ 存在，证明 $f(x)$ 在 $x=0$ 点可导．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 设 $\lim\limits_{x\to0}\dfrac{f(x)}{x}=A$，所以 $\lim\limits_{x\to0}f(x)=\lim\limits_{x\to0}x\cdot\dfrac{f(x)}{x}=0\cdot A=0$．因为 $f(x)$ 在 $x=0$ 连续，所以 $\lim\limits_{x\to0}f(x)=f(0)=0$，从而导数定义有 $$f'(0)=\lim_{x\to0}\frac{f(x)-f(0)}{x-0}=\lim_{x\to0}\frac{f(x)}{x}=A.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（$f'(0)=A$，即 $f(x)$ 在 $x=0$ 点可导）</span></div>
+</div>
+</article>
+<article class="problem" id="q144">
+<div class="q-head">
+<span class="q-no" data-n="144">【144】</span>
+<span class="q-group">根据导数定义，利用所给极限式子求导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">当 $h\to0$ 时，$f(x_{0}-3h)-f(x_{0})+2h$ 是 $h$ 的高阶无穷小量，则 $f'(x_{0})=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 将已知条件写成等式有 $$f(x_{0}-3h)-f(x_{0})+2h=o(h)\quad(\text{当 } h\to0 \text{ 时}，o(h) \text{ 为 } h \text{ 的高阶无穷小})$$ 即 $$\frac{f(x_{0}-3h)-f(x_{0})}{h}=-2+\frac{o(h)}{h},$$ 等式两边取极限并利用导数定义得 $-3f'(x_{0})=-2$，即 $f'(x_{0})=\dfrac{2}{3}$．故应填 $\dfrac{2}{3}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{2}{3}$</span></div>
+</div>
+</article>
+<article class="problem" id="q145">
+<div class="q-head">
+<span class="q-no" data-n="145">【145】</span>
+<span class="q-group">根据导数定义，利用所给极限式子求导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $x=0$ 处可导（即 $f'(0)$ 存在），且 $f(x)=f(0)+2x+a(x)$，又 $\lim\limits_{x\to0}\dfrac{a(x)}{x}=0$，求 $f'(0)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由已知条件知当 $x\neq0$ 时，$$\frac{f(x)-f(0)}{x}=2+\frac{a(x)}{x},$$ 当 $x\to0$ 时取极限，则有 $\lim\limits_{x\to0}\dfrac{f(x)-f(0)}{x-0}=2+\lim\limits_{x\to0}\dfrac{a(x)}{x}=2$．由导数定义得 $f'(0)=2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f'(0)=2$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用导数定义求极限</h3>
+<article class="problem" id="q146">
+<div class="q-head">
+<span class="q-no" data-n="146">【146】</span>
+<span class="q-group">利用导数定义求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">下列各题中均假设 $f'(x_{0})$ 存在，按照导数定义，求出下列各题中的 $A$ 值．
+(1)$A=\lim\limits_{\Delta x\to0}\dfrac{f(x_{0}-\Delta x)-f(x_{0})}{\Delta x}$；
+(2)$A=\lim\limits_{x\to0}\dfrac{f(x)}{x}$，设 $f(0)=0$，且 $f'(0)$ 存在；
+(3)$A=\lim\limits_{h\to0}\dfrac{f(x_{0}+3h)-f(x_{0})}{h}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)$A=\lim\limits_{\Delta x\to0}\dfrac{f(x_{0}-\Delta x)-f(x_{0})}{-\Delta x}\cdot(-1)=-f'(x_{0})$；
+(2)$A=\lim\limits_{x\to0}\dfrac{f(x)-f(0)}{x-0}=f'(0)$；
+(3)$A=\lim\limits_{h\to0}\dfrac{f(x_{0}+3h)-f(x_{0})}{3h}\cdot3=3f'(x_{0})$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)$A=-f'(x_{0})$；(2)$A=f'(0)$；(3)$A=3f'(x_{0})$</span></div>
+</div>
+</article>
+<article class="problem" id="q147">
+<div class="q-head">
+<span class="q-no" data-n="147">【147】</span>
+<span class="q-group">利用导数定义求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在点 $x_{0}$ 处的导数 $f'(x_{0})$ 存在，$\alpha,\beta$ 是常数，求极限 $$\lim_{h\to0}\frac{f(x_{0}+\alpha h)-f(x_{0}-\beta h)}{h}.$$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因导数 $f'(x_{0})$ 存在，则由导数定义与极限的运算法则得 $$\lim_{h\to0}\frac{f(x_{0}+\alpha h)-f(x_{0}-\beta h)}{h}=\lim_{h\to0}\frac{[f(x_{0}+\alpha h)-f(x_{0})]-[f(x_{0}-\beta h)-f(x_{0})]}{h}$$ $$=\alpha\lim_{h\to0}\frac{f(x_{0}+\alpha h)-f(x_{0})}{\alpha h}+\beta\lim_{h\to0}\frac{f(x_{0}-\beta h)-f(x_{0})}{-\beta h}$$ $$=\alpha f'(x_{0})+\beta f'(x_{0}).$$ 特别地，当 $\alpha,\beta$ 至少有一个为零时，上述结果显然成立．<strong>点评</strong> 特别地，当 $\alpha=\beta=1$ 时，有 $$\lim_{h\to0}\frac{f(x_{0}+h)-f(x_{0}-h)}{2h}=f'(x_{0}).\tag{①}$$ 但是式①不能作为函数 $y=f(x)$ 在点 $x_{0}$ 的导数定义，因为它与导数定义式 $$\lim_{h\to0}\frac{f(x_{0}+h)-f(x_{0})}{h}=f'(x_{0})\tag{②}$$ 是不等价的．事实上，若式②成立，则式①左边的极限存在，且等于 $f'(x_{0})$．但是，反之不成立，即若式①左边的极限存在，并不能保证式②左边的极限存在．换言之，式①只是式②的必要条件，并不是充分条件．这是因为式①中以 $x_{0}$ 为中心的对称点 $x_{0}+h$，$x_{0}-h$ 处的函数值之差 $f(x_{0}+h)-f(x_{0}-h)$ 对点 $x_{0}$ 处的函数值没有任何要求．也就是说，极限 $\lim\limits_{h\to0}\dfrac{f(x_{0}+h)-f(x_{0}-h)}{2h}$ 存在与否跟点 $x_{0}$ 处的函数值 $f(x_{0})$ 无关．这不符合导数定义的要求．例如，对于任何偶函数 $f(x)$，它的极限 $$\lim_{h\to0}\frac{f(0+h)-f(0-h)}{2h}$$ 总是存在的，且为零，但是极限 $\lim\limits_{h\to0}\dfrac{f(0+h)-f(0)}{h}$ 却不一定存在．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\alpha f'(x_{0})+\beta f'(x_{0})$</span></div>
+</div>
+</article>
+<article class="problem" id="q148">
+<div class="q-head">
+<span class="q-no" data-n="148">【148】</span>
+<span class="q-group">利用导数定义求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f'(x_{0})=-1$，则 $\lim\limits_{x\to0}\dfrac{x}{f(x_{0}-2x)-f(x_{0}-x)}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\lim_{x\to0}\frac{f(x_{0}-2x)-f(x_{0}-x)}{x}=\lim_{x\to0}\frac{[f(x_{0}-2x)-f(x_{0})]-[f(x_{0}-x)-f(x_{0})]}{x}=-2f'(x_{0})+f'(x_{0})=1.$$ 故应填 $1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $1$</span></div>
+</div>
+</article>
+<article class="problem" id="q149">
+<div class="q-head">
+<span class="q-no" data-n="149">【149】</span>
+<span class="q-group">利用导数定义求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f'(0)=2$，则 $\lim\limits_{x\to0}\dfrac{f(3\sin x)-f(2\arctan x)}{x}=$________．
+(A)$\dfrac{1}{2}$　(B)$2$　(C)$\dfrac{1}{4}$　(D)$4$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to0}\dfrac{f(3\sin x)-f(0)}{3\sin x}\cdot\dfrac{3\sin x}{x}-\lim\limits_{x\to0}\dfrac{f(2\arctan x)-f(0)}{2\arctan x}\cdot\dfrac{2\arctan x}{x}=3f'(0)-2f'(0)=f'(0)=2$．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q150">
+<div class="q-head">
+<span class="q-no" data-n="150">【150】</span>
+<span class="q-group">利用导数定义求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $x=0$ 处可导，且 $f(0)=0$，则 $\lim\limits_{x\to0}\dfrac{f(tx)-f(x)}{x}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题设有 $f'(0)=\lim\limits_{x\to0}\dfrac{f(x)}{x}$，于是，当 $t=0$ 时，$\lim\limits_{x\to0}\dfrac{f(tx)-f(x)}{x}=\lim\limits_{x\to0}\left[-\dfrac{f(x)}{x}\right]=-f'(0)$；当 $t\neq0$ 时，$\lim\limits_{x\to0}\dfrac{f(tx)-f(x)}{x}=\lim\limits_{x\to0}\dfrac{tf(tx)}{tx}-\lim\limits_{x\to0}\dfrac{f(x)}{x}=(t-1)f'(0)$．故应填 $(t-1)f'(0)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $(t-1)f'(0)$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用导数定义求函数的表达式或导函数</h3>
+<article class="problem" id="q151">
+<div class="q-head">
+<span class="q-no" data-n="151">【151】</span>
+<span class="q-group">利用导数定义求函数的表达式或导函数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $f(x)$ 满足条件 $f(1+x)=af(x)$，且 $f'(0)=b$（常数 $a,b\neq0$），求 $f'(1)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题意得：$f(1)=af(0)$，$$f'(1)=\lim_{x\to0}\frac{f(1+x)-f(1)}{x}=\lim_{x\to0}\frac{af(x)-af(0)}{x}=a\lim_{x\to0}\frac{f(x)-f(0)}{x}=af'(0)=ab.$$ 即 $f'(1)=ab$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f'(1)=ab$</span></div>
+</div>
+</article>
+<article class="problem" id="q152">
+<div class="q-head">
+<span class="q-no" data-n="152">【152】</span>
+<span class="q-group">利用导数定义求函数的表达式或导函数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 在 $(-\infty,+\infty)$ 上有定义，对任意 $x,y\in(-\infty,+\infty)$ 有 $f(x+y)=f(x)+f(y)+2xy$，且 $f'(0)$ 存在，求 $f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 对 $f(x+y)=f(x)+f(y)+2xy$，令 $y=0$ 得 $f(x)=f(x)+f(0)$，即 $f(0)=0$．$$f'(x)=\lim_{\Delta x\to0}\frac{f(x+\Delta x)-f(x)}{\Delta x}=\lim_{\Delta x\to0}\frac{f(\Delta x)+2x\cdot\Delta x}{\Delta x}=\lim_{\Delta x\to0}\frac{f(\Delta x)-f(0)}{\Delta x}+2x=f'(0)+2x,$$ 所以 $f(x)=f'(0)x+x^{2}+c$．再由 $f(0)=0$ 得 $c=0$．故 $f(x)=f'(0)x+x^{2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $f(x)=f'(0)x+x^{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q153">
+<div class="q-head">
+<span class="q-no" data-n="153">【153】</span>
+<span class="q-group">利用导数定义求函数的表达式或导函数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 是 $(-\infty,+\infty)$ 上的非零函数，对任意 $x,y\in(-\infty,+\infty)$ 有 $f(x+y)=f(x)f(y)$，且 $f'(0)=1$，证明：$f'(x)=f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 因为 $f(x+y)=f(x)f(y)$，且 $f(x)$ 非零，令 $y=0$，便得 $f(x)=f(x)f(0)$，于是 $f(0)=1$．对任意 $x\in(-\infty,+\infty)$，$f(x+\Delta x)=f(x)\cdot f(\Delta x)$．根据导数的定义，$$f'(x)=\lim_{\Delta x\to0}\frac{f(x+\Delta x)-f(x)}{\Delta x}=\lim_{\Delta x\to0}\frac{f(x)[f(\Delta x)-1]}{\Delta x}=\lim_{\Delta x\to0}f(x)\cdot\frac{f(\Delta x)-f(0)}{\Delta x}=f(x)f'(0)=f(x).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（证得 $f'(x)=f(x)$）</span></div>
+</div>
+</article>
+<article class="problem" id="q154">
+<div class="q-head">
+<span class="q-no" data-n="154">【154】</span>
+<span class="q-group">利用导数定义求函数的表达式或导函数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 对任意非零 $x,y$ 有 $f(x\cdot y)=f(x)+f(y)$，且 $f'(1)=1$，求 $f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x\neq0$ 时，$$f'(x)=\lim_{\Delta x\to0}\frac{f(x+\Delta x)-f(x)}{\Delta x}=\lim_{\Delta x\to0}\frac{f\left[x\cdot\left(1+\frac{\Delta x}{x}\right)\right]-f(x\cdot1)}{\Delta x}$$ $$=\lim_{\Delta x\to0}\frac{f(x)+f\left(1+\frac{\Delta x}{x}\right)-f(x)-f(1)}{\Delta x}=\lim_{\Delta x\to0}\frac{f\left(1+\frac{\Delta x}{x}\right)-f(1)}{x\cdot\frac{\Delta x}{x}}=\dfrac{1}{x}f'(1)=\dfrac{1}{x},$$ 所以 $f(x)=\ln|x|+C$．由于 $f(1)=f(1)+f(1)$，所以 $f(1)=0$，即 $C=0$．故 $f(x)=\ln|x|$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $f(x)=\ln|x|$</span></div>
+</div>
+</article>
+<h3 class="grp-h">可导与连续之间的关系</h3>
+<article class="problem" id="q155">
+<div class="q-head">
+<span class="q-no" data-n="155">【155】</span>
+<span class="q-group">可导与连续之间的关系</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}\dfrac{1-\cos x}{\sqrt{x}}, &amp; x&gt;0\\ x^{2}g(x), &amp; x\leqslant0\end{cases}$，其中 $g(x)$ 是有界函数，则 $f(x)$ 在 $x=0$ 处________．
+(A)极限不存在　(B)极限存在，但不连续　(C)连续，但不可导　(D)可导</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\lim_{x\to0^{+}}f(x)=\lim_{x\to0^{+}}\frac{1-\cos x}{\sqrt{x}}=\lim_{x\to0^{+}}\frac{\frac{1}{2}x^{2}}{\sqrt{x}}=0=f(0),$$ $$\lim_{x\to0^{-}}f(x)=\lim_{x\to0^{-}}x^{2}g(x)=0=f(0),$$ 故 $f(x)$ 在 $x=0$ 处极限存在，且连续，(A)、(B)不正确．$$f_{-}'(0)=\lim_{x\to0^{-}}\frac{x^{2}g(x)-0}{x}=\lim_{x\to0^{-}}xg(x)=0,$$ $$f_{+}'(0)=\lim_{x\to0^{+}}\frac{\dfrac{1-\cos x}{\sqrt{x}}-0}{x}=\lim_{x\to0^{+}}\frac{\frac{1}{2}x^{2}}{x^{\frac{3}{2}}}=0$$ 故 $f(x)$ 在 $x=0$ 处可导．故应选 (D)．<strong>点评</strong> 分段函数在分界点的极限、连续和可导问题一般应采用定义通过左、右两端进行讨论．极限、连续和可导三者的关系是：可导 $\Rightarrow$ 连续 $\Rightarrow$ 极限存在，但反过来不成立．本题若 $f(x)$ 在 $x=0$ 处可导，则选项 (A)、(B)、(C) 可立即排除，因此也可直接从判断 $f(x)$ 在 $x=0$ 处是否可导入手讨论．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q156">
+<div class="q-head">
+<span class="q-no" data-n="156">【156】</span>
+<span class="q-group">可导与连续之间的关系</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}ax^{2}+b, &amp; x\geqslant1\\ x\cos\dfrac{\pi}{2}x, &amp; x&lt;1\end{cases}$，$f(x)$ 在 $x=1$ 可导，则 $a=$________，$b=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 要使 $f(x)$ 在 $x=1$ 可导，则 $f(x)$ 必须在 $x=1$ 连续，即 $$\lim_{x\to1^{-}}f(x)=\lim_{x\to1^{+}}f(x)=f(1),$$ 也即 $a+b=0$，从而 $b=-a$．$f(x)$ 在 $x=1$ 可导，则必有 $f_{-}'(1)=f_{+}'(1)$，$$f_{-}'(1)=\lim_{x\to1^{-}}\frac{x\cos\dfrac{\pi}{2}x-(a+b)}{x-1}=-\lim_{x\to1^{-}}\frac{x\sin\left[\dfrac{\pi}{2}(x-1)\right]}{x-1}=-\dfrac{\pi}{2},$$ $$f_{+}'(1)=\lim_{x\to1^{+}}\frac{ax^{2}+b-(a+b)}{x-1}=\lim_{x\to1^{+}}\frac{a(x^{2}-1)}{x-1}=2a,$$ 故 $2a=-\dfrac{\pi}{2}$，则 $a=-\dfrac{\pi}{4}$．故应填 $a=-\dfrac{\pi}{4}$，$b=\dfrac{\pi}{4}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $a=-\dfrac{\pi}{4}$，$b=\dfrac{\pi}{4}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用导数定义讨论有关函数的连续性、间断点</h3>
+<article class="problem" id="q157">
+<div class="q-head">
+<span class="q-no" data-n="157">【157】</span>
+<span class="q-group">利用导数定义讨论有关函数的连续性、间断点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 有连续的导函数，$f(0)=0$ 且 $f'(0)=b$，若函数 $$F(x)=\begin{cases}\dfrac{f(x)+a\sin x}{x}, &amp; x\neq0\\ A, &amp; x=0\end{cases}$$ 在 $x=0$ 处连续，则常数 $A=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $$\lim_{x\to0}F(x)=\lim_{x\to0}\frac{f(x)+a\sin x}{x}=\lim_{x\to0}\left[\frac{f(x)-f(0)}{x}+\frac{a\sin x}{x}\right]=f'(0)+a=b+a.$$ 由 $\lim\limits_{x\to0}F(x)=F(0)=A$，得 $A=a+b$．故应填 $A=a+b$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $A=a+b$</span></div>
+</div>
+</article>
+<article class="problem" id="q158">
+<div class="q-head">
+<span class="q-no" data-n="158">【158】</span>
+<span class="q-group">利用导数定义讨论有关函数的连续性、间断点</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $F(x)=\begin{cases}\dfrac{f(x)}{x}, &amp; x\neq0\\ f(0), &amp; x=0\end{cases}$，其中 $f(x)$ 在 $x=0$ 处可导，$f'(0)\neq0$，$f(0)=0$，则 $x=0$ 是 $F(x)$ 的________．
+(A)连续点　(B)第一类间断点　(C)第二类间断点　(D)连续点或间断点不能由此确定</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由于 $f(x)$ 在 $x=0$ 处可导，由导数定义知：$$\lim_{x\to0}\frac{f(x)-f(0)}{x}=f'(0).$$ 因为 $f(0)=0$，$f'(0)\neq0$，所以 $$\lim_{x\to0}F(x)=\lim_{x\to0}\frac{f(x)}{x}=f'(0)\neq F(0),$$ 因此 $x=0$ 是 $F(x)$ 的第一类间断点．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用导数定义计算切线斜率</h3>
+<article class="problem" id="q159">
+<div class="q-head">
+<span class="q-no" data-n="159">【159】</span>
+<span class="q-group">利用导数定义计算切线斜率</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 为可导函数，且满足条件 $\lim\limits_{x\to0}\dfrac{f(1)-f(1-x)}{2x}=-1$，则曲线 $y=f(x)$ 在点 $(1,f(1))$ 处的切线斜率为________．
+(A)$2$　(B)$-1$　(C)$\dfrac{1}{2}$　(D)$-2$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\lim_{x\to0}\frac{f(1)-f(1-x)}{2x}=\dfrac{1}{2}\lim_{x\to0}\frac{f(1-x)-f(1)}{-x}=\dfrac{1}{2}f'(1)=-1,$$ 则 $f'(1)=-2$，而曲线 $y=f(x)$ 在点 $(1,f(1))$ 处的切线斜率为 $f'(1)=-2$．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q160">
+<div class="q-head">
+<span class="q-no" data-n="160">【160】</span>
+<span class="q-group">利用导数定义计算切线斜率</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设周期函数 $f(x)$ 在 $(-\infty,+\infty)$ 内可导，周期为 $4$，又 $\lim\limits_{x\to0}\dfrac{f(1)-f(1-x)}{2x}=-1$，则曲线 $y=f(x)$ 在点 $(5,f(5))$ 处的切线斜率为________．
+(A)$\dfrac{1}{2}$　(B)$0$　(C)$-1$　(D)$-2$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $$\lim_{x\to0}\frac{f(1)-f(1-x)}{2x}=\dfrac{1}{2}f'(1)=-1.$$ 知 $f'(1)=-2$，而由题设 $f(x)$ 以 $4$ 为周期得 $$f'(5)=f'(4+1)=f'(1)=-2.$$ 故应选 (D)．<strong>点评</strong> 本题主要考察导数的定义、几何意义及周期函数的性质．一般地，若 $f(x)$ 是以 $T$ 为周期的可导函数，则 $f'(x)$ 也为以 $T$ 为周期的函数．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关物理意义方面的题目</h3>
+<article class="problem" id="q161">
+<div class="q-head">
+<span class="q-no" data-n="161">【161】</span>
+<span class="q-group">有关物理意义方面的题目</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">一质点的运动方程为 $s=t^{3}+10$，试求这质点在 $t=3$ 时的瞬时速度．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $t=3$ 时 $$V_{\text{瞬时}}=\lim_{\Delta t\to0}\frac{\Delta s}{\Delta t}=\lim_{\Delta t\to0}\frac{(3+\Delta t)^{3}+10-(3^{3}+10)}{\Delta t}=\lim_{\Delta t\to0}\left[27+9\Delta t+(\Delta t)^{2}\right]=27.$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">瞬时速度为 $27$</span></div>
+</div>
+</article>
+<article class="problem" id="q162">
+<div class="q-head">
+<span class="q-no" data-n="162">【162】</span>
+<span class="q-group">有关物理意义方面的题目</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">车轮运动，其转动角 $\varphi$ 决定于函数 $\varphi=a+bt-ct^{2}$，其中 $a$、$b$、$c$ 为常量，$t$ 为时间，试求其瞬时的角速度，并求车轮在何时停止转动．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1)设瞬时角速度为 $\omega(t)$，则 $$\omega(t)=\lim_{\Delta t\to0}\frac{\Delta\varphi}{\Delta t}=\lim_{\Delta t\to0}\frac{a+b(t+\Delta t)-c(t+\Delta t)^{2}-(a+bt-ct^{2})}{\Delta t}=b-2ct$$ (2)车轮停止转动时 $\omega=0$，即 $b-2ct=0$，所以 $t=\dfrac{b}{2c}$ 时，车轮停止转动．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)瞬时角速度 $\omega(t)=b-2ct$；(2)$t=\dfrac{b}{2c}$ 时车轮停止转动</span></div>
+</div>
+</article>
+<article class="problem" id="q163">
+<div class="q-head">
+<span class="q-no" data-n="163">【163】</span>
+<span class="q-group">有关物理意义方面的题目</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">有一非均匀的细轴 $AB$，其长 $L$ 为 $20\text{cm}$，$AM$ 段的质量与从点 $A$ 到 $M$ 的距离平方成正比例增加，并且已知一段 $AM=2$ 时的质量等于 $8\text{g}$，试求：(1)$AM=2\text{cm}$ 的一段轴上平均线密度；(2)全轴的平均线密度；(3)在 $M$ 点处的密度 $\rho_{m}$．</div>
+<div class="figure-note">（图 163，位于解答第二行右侧）一条由 $A$ 到 $B$ 的细轴，画成左端尖细、向右逐渐加粗的黑色楔形条：左端上方标 $A$，轴上依次有两个竖线刻度，分别标&quot;2&quot;和 $M(x)$，右端上方标 $B$；图形下方标注&quot;图 163&quot;．</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 163，设 $A$ 点到 $M$ 点的距离为 $x$，并设 $AM$ 段的质量为 $m$，则 $m=kx^{2}$．当 $x=2$ 时，$m=8$，所以 $k=2$，即 $m$ 与 $x$ 的函数关系为 $m=2x^{2}$．因为 $AM=2$，所以 $$\bar{\rho}=\dfrac{2(2^{2})}{2}=4(\text{g/cm}),$$ $$\bar{\rho}_{\text{全轴}}=\dfrac{2(20)^{2}}{20}=40(\text{g/cm}),$$ $$\rho_{m}=\lim_{\Delta x\to0}\dfrac{\Delta m}{\Delta x}=\lim_{\Delta x\to0}\dfrac{2(x+\Delta x)^{2}-2x^{2}}{\Delta x}=\lim_{\Delta x\to0}(4x+2\Delta x)=4x(\text{g/cm}).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1)$\bar{\rho}=4(\text{g/cm})$；(2)$\bar{\rho}_{\text{全轴}}=40(\text{g/cm})$；(3)$\rho_{m}=4x(\text{g/cm})$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s1">2. 导数的基本公式与运算法则</h2>
+<div class="sec-intro">1．基本初等函数的导数公式　(1)$(c)'=0$；(2)$(x^{\mu})'=\mu x^{\mu-1}$（$\mu$ 为实数）；(3)$(\sin x)'=\cos x$；(4)$(\cos x)'=-\sin x$；(5)$(\tan x)'=\sec^{2}x$；(6)$(\cot x)'=-\csc^{2}x$；(7)$(\sec x)'=\sec x\cdot\tan x$；(8)$(\csc x)'=-\csc x\cdot\cot x$；(9)$(a^{x})'=a^{x}\ln a$（$a&gt;0,a\neq1$）；(10)$(e^{x})'=e^{x}$；(11)$(\log_{a}x)'=\dfrac{1}{x\ln a}$（$a&gt;0,a\neq1$）；(12)$(\ln x)'=\dfrac{1}{x}$；(13)$(\arcsin x)'=\dfrac{1}{\sqrt{1-x^{2}}}$；(14)$(\arccos x)'=-\dfrac{1}{\sqrt{1-x^{2}}}$；(15)$(\arctan x)'=\dfrac{1}{1+x^{2}}$；(16)$(\operatorname{arccot}x)'=-\dfrac{1}{1+x^{2}}$．2．导数的四则运算法则　设函数 $u(x),v(x)$ 在 $x$ 点可导，则 (1)$[u(x)\pm v(x)]'=u'(x)\pm v'(x)$；(2)$[u(x)\cdot v(x)]'=u'(x)v(x)+u(x)v'(x)$；(3)$\left[\dfrac{u(x)}{v(x)}\right]'=\dfrac{u'(x)v(x)-u(x)v'(x)}{[v(x)]^{2}}$（$v(x)\neq0$）．</div>
+<h3 class="grp-h">利用求导公式及求导法则求具体函数的导数</h3>
+<article class="problem" id="q164" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="164">【164】</span>
+<span class="q-group">利用求导公式及求导法则求具体函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=(x+e^{-\frac{x}{2}})^{\frac{2}{3}}$，则 $y'\Big|_{x=0}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=\dfrac{2}{3}\Big(x+e^{-\frac{x}{2}}\Big)^{-\frac{1}{3}}\cdot\Big(1-\dfrac{1}{2}e^{-\frac{x}{2}}\Big)$，$y'\Big|_{x=0}=\dfrac{2}{3}\cdot1\cdot\dfrac{1}{2}=\dfrac{1}{3}$．故应填 $\dfrac{1}{3}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{3}$</span></div>
+</div>
+</article>
+<article class="problem" id="q165" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="165">【165】</span>
+<span class="q-group">利用求导公式及求导法则求具体函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=\arctan e^x-\ln\sqrt{\dfrac{e^{2x}}{e^{2x}+1}}$，则 $\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{x=1}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y=\arctan e^x-\dfrac{1}{2}\ln e^{2x}+\dfrac{1}{2}\ln(e^{2x}+1)=\arctan e^x-x+\dfrac{1}{2}\ln(e^{2x}+1)$，故 $\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{e^x}{1+e^{2x}}-1+\dfrac{e^{2x}}{e^{2x}+1}=\dfrac{e^x-1}{1+e^{2x}}$，从而 $\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{x=1}=\dfrac{e-1}{e^2+1}$．故应填 $\dfrac{e-1}{e^2+1}$．<strong>点评</strong> 一般初等函数在求导之前应先化简，将函数化成最简形式后再求导，可使求导过程大大简化，避免出错．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{e-1}{e^2+1}$</span></div>
+</div>
+</article>
+<article class="problem" id="q166" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="166">【166】</span>
+<span class="q-group">利用求导公式及求导法则求具体函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=e^{\tan\frac{1}{x}}\cdot\sin\dfrac{1}{x}$，则 $y'=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=e^{\tan\frac{1}{x}}\cdot\cos\dfrac{1}{x}\cdot\Big(-\dfrac{1}{x^2}\Big)+\sin\dfrac{1}{x}\cdot e^{\tan\frac{1}{x}}\cdot\sec^2\dfrac{1}{x}\cdot\Big(-\dfrac{1}{x^2}\Big)=-\dfrac{1}{x^2}e^{\tan\frac{1}{x}}\Big(\cos\dfrac{1}{x}+\tan\dfrac{1}{x}\cdot\sec\dfrac{1}{x}\Big)$．故应填 $-\dfrac{1}{x^2}e^{\tan\frac{1}{x}}\Big(\cos\dfrac{1}{x}+\tan\dfrac{1}{x}\cdot\sec\dfrac{1}{x}\Big)$．<strong>点评</strong> 这是一道有多重复合关系的函数的求导问题，要求读者熟悉基本初等函数的导数公式和复合函数求导法则．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-\dfrac{1}{x^2}e^{\tan\frac{1}{x}}\Big(\cos\dfrac{1}{x}+\tan\dfrac{1}{x}\cdot\sec\dfrac{1}{x}\Big)$</span></div>
+</div>
+</article>
+<article class="problem" id="q167" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="167">【167】</span>
+<span class="q-group">利用求导公式及求导法则求具体函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">若 $f(t)=\lim\limits_{x\to\infty}t\Big(1+\dfrac{1}{x}\Big)^{2tx}$，则 $f'(t)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 先利用重要极限 $\lim\limits_{x\to\infty}\Big(1+\dfrac{1}{x}\Big)^x=e$ 求出 $f(t)$ 的表达式，然后求 $f'(t)$．$f(t)=\lim\limits_{x\to\infty}t\Big(1+\dfrac{1}{x}\Big)^{2tx}=t\Big[\lim\limits_{x\to\infty}\Big(1+\dfrac{1}{x}\Big)^x\Big]^{2t}=te^{2t}$，$f'(t)=e^{2t}+2te^{2t}=(2t+1)e^{2t}$．故应填 $(2t+1)e^{2t}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $(2t+1)e^{2t}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">利用求导公式和求导法则求抽象复合函数的导数</h3>
+<article class="problem" id="q168" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="168">【168】</span>
+<span class="q-group">利用求导公式和求导法则求抽象复合函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $y=f\Big(\dfrac{3x-2}{3x+2}\Big)$，$f'(x)=\arctan x^2$，则 $\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{x=0}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $u=\dfrac{3x-2}{3x+2}$，则 $y=f[u(x)]$，由链式法则，$\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}y}{\mathrm{d}u}\cdot\dfrac{\mathrm{d}u}{\mathrm{d}x}=\arctan u^2\cdot\dfrac{12}{(3x+2)^2}$，$\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{x=0}=\dfrac{12}{(0+2)^2}\cdot\arctan 1=\dfrac{3\pi}{4}$．故应填 $\dfrac{3\pi}{4}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{3\pi}{4}$</span></div>
+</div>
+</article>
+<article class="problem" id="q169" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="169">【169】</span>
+<span class="q-group">利用求导公式和求导法则求抽象复合函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $g(x)$ 可微，$h(x)=e^{1+g(x)}$，$h'(1)=1$，$g'(1)=2$，则 $g(1)=$________．(A) $\ln3-1$　(B) $-\ln3-1$　(C) $-\ln2-1$　(D) $\ln2-1$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 在 $h(x)=e^{1+g(x)}$ 两端关于 $x$ 求导数得 $h'(x)=e^{1+g(x)}\cdot g'(x)$．将 $x=1$ 代入上式得 $h'(1)=e^{1+g(1)}\cdot g'(1)$，$e^{1+g(1)}=\dfrac{1}{2}$，$g(1)=-\ln2-1$．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q170" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="170">【170】</span>
+<span class="q-group">利用求导公式和求导法则求抽象复合函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $F(x)=\lim\limits_{t\to\infty}t^2\Big[f\Big(x+\dfrac{\pi}{t}\Big)-f(x)\Big]\sin\dfrac{x}{t}$，其中 $f(x)$ 二阶可导，求 $F'(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $F(x)=\lim\limits_{t\to\infty}t^2\Big[f\Big(x+\dfrac{\pi}{t}\Big)-f(x)\Big]\sin\dfrac{x}{t}=\lim\limits_{t\to\infty}\dfrac{f(x+\frac{\pi}{t})-f(x)}{\dfrac{1}{t}}\cdot\dfrac{\sin\frac{x}{t}}{\dfrac{1}{t}}=\pi\cdot\lim\limits_{\frac{\pi}{t}\to0}\dfrac{f(x+\frac{\pi}{t})-f(x)}{\dfrac{\pi}{t}}\cdot x\cdot\lim\limits_{\frac{1}{t}\to0}\dfrac{\sin\frac{x}{t}}{\dfrac{1}{t}}=\pi xf'(x)$．故 $F'(x)=\pi[f'(x)+xf''(x)]$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $F'(x)=\pi[f'(x)+xf''(x)]$</span></div>
+</div>
+</article>
+<article class="problem" id="q171" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="171">【171】</span>
+<span class="q-group">利用求导公式和求导法则求抽象复合函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设可导函数 $f(x)$ 满足 $af(x)+bf\Big(\dfrac{1}{x}\Big)=\dfrac{c}{x}$，式中 $a,b,c$ 为常数，且 $|a|\neq|b|$，求 $f'(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由已知得 $af\Big(\dfrac{1}{x}\Big)+bf(x)=cx$，解方程组 $\begin{cases}af(x)+bf\Big(\dfrac{1}{x}\Big)=\dfrac{c}{x}\\ bf(x)+af\Big(\dfrac{1}{x}\Big)=cx\end{cases}$ 得 $f(x)=\dfrac{\dfrac{ac}{x}-bcx}{a^2-b^2}$．则 $f'(x)=\dfrac{1}{a^2-b^2}\Big(-\dfrac{ac}{x^2}-bc\Big)=-\dfrac{bcx^2+ac}{x^2(a^2-b^2)}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f'(x)=-\dfrac{bcx^2+ac}{x^2(a^2-b^2)}$（同解末）</span></div>
+</div>
+</article>
+<article class="problem" id="q172" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="172">【172】</span>
+<span class="q-group">利用求导公式和求导法则求抽象复合函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $(-\infty,+\infty)$ 上满足 $2f(1+x)+f(1-x)=e^x$，试求 $f'(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 先求 $f(x)$ 的表达式，在等式 $2f(1+x)+f(1-x)=e^x$ ① 中令自变量为 $-x$，则有 $2f(1-x)+f(1+x)=e^{-x}$ ②．由①和②两式可解得 $3f(x+1)=2e^x-e^{-x}$，令 $t=x+1$，可得 $f(t)=\dfrac{2e^{t-1}-e^{1-t}}{3}$，即 $f(x)=\dfrac{2e^{x-1}-e^{1-x}}{3}$．从而 $f'(x)=\dfrac{2e^{x-1}+e^{1-x}}{3}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f'(x)=\dfrac{2e^{x-1}+e^{1-x}}{3}$（同解末）</span></div>
+</div>
+</article>
+<h3 class="grp-h">分段函数求导数</h3>
+<article class="problem" id="q173" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="173">【173】</span>
+<span class="q-group">分段函数求导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">讨论函数 $f(x)=\begin{cases}\dfrac{1}{\sin x}-\dfrac{\cos x}{x}, &amp; x\neq0\\ 0, &amp; x=0\end{cases}$：(1) 在 $x=0$ 处的连续性和可导性；(2) 求出导函数 $f'(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) $\lim\limits_{x\to0}f(x)=\lim\limits_{x\to0}\dfrac{x-\frac{1}{2}\sin2x}{x\sin x}=\lim\limits_{x\to0}\dfrac{x-\frac{1}{2}\sin2x}{x^2}\xlongequal{\frac{0}{0}}\lim\limits_{x\to0}\dfrac{1-\cos2x}{2x}=\lim\limits_{x\to0}\dfrac{\frac{1}{2}(2x)^2}{2x}=0=f(0)$，故 $f(x)$ 在 $x=0$ 连续．$f'(0)=\lim\limits_{x\to0}\dfrac{x-\frac{1}{2}\sin2x}{x^2\sin x}=\lim\limits_{x\to0}\dfrac{x-\frac{1}{2}\sin2x}{x^3}\xlongequal{\frac{0}{0}}\lim\limits_{x\to0}\dfrac{1-\cos2x}{3x^2}\xlongequal{\frac{0}{0}}\lim\limits_{x\to0}\dfrac{2\sin2x}{6x}=\dfrac{2}{3}$，故 $f(x)$ 在 $x=0$ 处可导．(2) 因为 $x\neq0$ 时，$f'(x)=-\dfrac{\cos x}{\sin^2x}+\dfrac{x\sin x+\cos x}{x^2}$，故 $f'(x)=\begin{cases}-\dfrac{\cos x}{\sin^2x}+\dfrac{x\sin x+\cos x}{x^2}, &amp; x\neq0\\ \dfrac{2}{3}, &amp; x=0\end{cases}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x)$ 在 $x=0$ 处连续且可导，$f'(0)=\dfrac{2}{3}$，$f'(x)=\begin{cases}-\dfrac{\cos x}{\sin^2x}+\dfrac{x\sin x+\cos x}{x^2}, &amp; x\neq0\\ \dfrac{2}{3}, &amp; x=0\end{cases}$（同解末）</span></div>
+</div>
+</article>
+<article class="problem" id="q174" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="174">【174】</span>
+<span class="q-group">分段函数求导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">试确定常数 $a,b$ 的值，使函数 $f(x)=\begin{cases}1+\ln(1-2x), &amp; x\leqslant0\\ a+be^x, &amp; x&gt;0\end{cases}$ 在 $x=0$ 处可导，并求出此时的 $f'(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因要使函数 $f(x)$ 在 $x=0$ 处可导，故 $f(x)$ 在 $x=0$ 处连续，即 $\lim\limits_{x\to0^-}f(x)=\lim\limits_{x\to0^+}f(x)=f(0)=1$，得 $a+b=1$，即当 $a+b=1$ 时，函数 $f(x)$ 在 $x=0$ 处连续．由导数定义及 $a+b=1$，有 $f'_-(0)=\lim\limits_{x\to0^-}\dfrac{f(x)-f(0)}{x-0}=\lim\limits_{x\to0^-}\dfrac{[1+\ln(1-2x)]-1}{x}=-2$，$f'_+(0)=\lim\limits_{x\to0^+}\dfrac{f(x)-f(0)}{x-0}=\lim\limits_{x\to0^+}\dfrac{(a+be^x)-1}{x}=\lim\limits_{x\to0^+}\dfrac{b(e^x-1)}{x}=b$．要使 $f(x)$ 在 $x=0$ 处可导，应有 $b=f'_+(0)=f'_-(0)=-2$，故 $a=3$．即当 $a=3,b=-2$ 时，函数 $f(x)$ 在 $x=0$ 处可导，且 $f'(0)=-2$．于是 $f'(x)=\begin{cases}-\dfrac{2}{1-2x}, &amp; x\leqslant0\\ -2e^x, &amp; x&gt;0\end{cases}$．<strong>点评</strong> 确定参数的值使分段函数可导的问题，通常一要利用函数在一点处可导的充要条件是在该点的左导数与右导数均存在且相等；二要利用函数可导必连续，而函数在一点处连续的充要条件是其在该点的左极限与右极限均存在且相等，又等于其函数值．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$a=3$，$b=-2$；$f'(x)=\begin{cases}-\dfrac{2}{1-2x}, &amp; x\leqslant0\\ -2e^x, &amp; x&gt;0\end{cases}$</span></div>
+</div>
+</article>
+<article class="problem" id="q175" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="175">【175】</span>
+<span class="q-group">分段函数求导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}x^{\lambda}\cos\dfrac{1}{x}, &amp; \text{若 } x\neq0\\ 0, &amp; \text{若 } x=0\end{cases}$，其导函数在 $x=0$ 处连续，则 $\lambda$ 的取值范围是________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $\lambda&gt;1$ 时，有 $f'(x)=\begin{cases}\lambda x^{\lambda-1}\cos\dfrac{1}{x}+x^{\lambda-2}\sin\dfrac{1}{x}, &amp; \text{若 } x\neq0\\ 0, &amp; \text{若 } x=0\end{cases}$，显然当 $\lambda&gt;2$ 时，有 $\lim\limits_{x\to0}f'(x)=0=f'(0)$，即其导函数在 $x=0$ 处连续．故应填 $\lambda&gt;2$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\lambda&gt;2$</span></div>
+</div>
+</article>
+<article class="problem" id="q176" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="176">【176】</span>
+<span class="q-group">分段函数求导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}x\arctan\dfrac{1}{x^2}, &amp; x\neq0\\ 0, &amp; x=0\end{cases}$，试讨论 $f'(x)$ 在 $x=0$ 处的连续性．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f'(0)=\lim\limits_{x\to0}\dfrac{x\arctan\frac{1}{x^2}-0}{x}=\dfrac{\pi}{2}$，$\lim\limits_{x\to0}f'(x)=\lim\limits_{x\to0}\Big(\arctan\dfrac{1}{x^2}-\dfrac{2x^2}{1+x^4}\Big)=\dfrac{\pi}{2}=f'(0)$．所以 $f'(x)$ 在 $x=0$ 处是连续的．<strong>点评</strong> 本题主要考查了导数的定义、初等函数的求导法则及导函数在某点处连续的定义．一般地，分段函数在分界点的导数应按导数定义计算，分段函数在区间上的导数可用求导法则计算．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f'(x)$ 在 $x=0$ 处连续（同解末）</span></div>
+</div>
+</article>
+<article class="problem" id="q177" data-secanchor="s1">
+<div class="q-head">
+<span class="q-no" data-n="177">【177】</span>
+<span class="q-group">分段函数求导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}\dfrac{g(x)-e^{-x}}{x}, &amp; x\neq0\\ 0, &amp; x=0\end{cases}$，其中 $g(x)$ 有二阶连续导数，且 $g(0)=1$，$g'(0)=-1$．(1) 求 $f'(x)$；(2) 讨论 $f'(x)$ 在 $(-\infty,+\infty)$ 上的连续性．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 当 $x\neq0$ 时，有 $f'(x)=\dfrac{x[g'(x)+e^{-x}]-g(x)+e^{-x}}{x^2}=\dfrac{xg'(x)-g(x)+(x+1)e^{-x}}{x^2}$，当 $x=0$ 时，由导数定义有 $f'(0)=\lim\limits_{x\to0}\dfrac{g(x)-e^{-x}}{x^2}=\lim\limits_{x\to0}\dfrac{g'(x)+e^{-x}}{2x}=\lim\limits_{x\to0}\dfrac{g''(x)-e^{-x}}{2}=\dfrac{g''(0)-1}{2}$，所以 $f'(x)=\begin{cases}\dfrac{xg'(x)-g(x)+(x+1)e^{-x}}{x^2}, &amp; x\neq0\\ \dfrac{g''(0)-1}{2}, &amp; x=0\end{cases}$．(2) 因为在 $x=0$ 处，有 $\lim\limits_{x\to0}f'(x)=\lim\limits_{x\to0}\dfrac{g'(x)+xg''(x)-g'(x)+e^{-x}-(x+1)e^{-x}}{2x}=\lim\limits_{x\to0}\dfrac{g''(x)-e^{-x}}{2}=\dfrac{g''(0)-1}{2}=f'(0)$，而 $f'(x)$ 在 $x\neq0$ 处是连续函数，所以 $f'(x)$ 在 $(-\infty,+\infty)$ 上为连续函数．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f'(x)=\begin{cases}\dfrac{xg'(x)-g(x)+(x+1)e^{-x}}{x^2}, &amp; x\neq0\\ \dfrac{g''(0)-1}{2}, &amp; x=0\end{cases}$；$f'(x)$ 在 $(-\infty,+\infty)$ 上为连续函数</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s2">3. 高阶导数　隐函数及参数方程求导</h2>
+<div class="sec-intro">1．高阶导数 函数 $y=f(x)$ 的导数的导数，即 $(y')'$，称为 $f(x)$ 的二阶导数，记为 $y''=f''(x)$；一般 $y=f(x)$ 的 $(n-1)$ 阶导数的导数称为 $f(x)$ 的 $n$ 阶导数，记为 $y^{(n)}=f^{(n)}(x)$．二阶及二阶以上的导数称为高阶导数．设函数 $u=u(x)$，$v=v(x)$ 具有 $n$ 阶导数，则 $[u\pm v]^{(n)}=u^{(n)}\pm v^{(n)}$，$[ku]^{(n)}=ku^{(n)}$，$[uv]^{(n)}=\sum\limits_{k=0}^{n}\mathrm{C}_n^k u^{(n-k)}v^{(k)}=u^{(n)}v+nu^{(n-1)}v'+\dfrac{n(n-1)}{2!}u^{(n-2)}v''+\cdots+nu'v^{(n-1)}+uv^{(n)}$，称为莱布尼兹 $n$ 阶导数公式．2．隐函数的导数 求由方程 $F(x,y)=0$ 所确定的隐函数 $y=y(x)$ 的导数 $y'(x)$，可将方程 $F(x,y)=0$ 两端对 $x$ 求导，并注意 $y$ 是 $x$ 的函数，最后解出 $y'(x)$．3．参数方程确定的函数的导数 设 $\begin{cases}x=\varphi(t)\\ y=\psi(t)\end{cases}$ 确定了 $y$ 是 $x$ 的函数，$t$ 为参数，则 $\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}=\dfrac{\psi'(t)}{\varphi'(t)}$．</div>
+<h3 class="grp-h">计算初等函数的二阶、三阶导数</h3>
+<article class="problem" id="q178" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="178">【178】</span>
+<span class="q-group">计算初等函数的二阶、三阶导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=\ln\sqrt{\dfrac{1-x}{1+x^2}}$，则 $y''\Big|_{x=0}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y=\dfrac{1}{2}[\ln(1-x)-\ln(1+x^2)]$，$y'=\dfrac{1}{2}\Big(\dfrac{-1}{1-x}-\dfrac{2x}{1+x^2}\Big)$，$y''=\dfrac{1}{2}\Big[-\dfrac{1}{(1-x)^2}-\dfrac{2(1-x^2)}{(1+x^2)^2}\Big]$，$y''\Big|_{x=0}=-\dfrac{3}{2}$．故应填 $-\dfrac{3}{2}$．<strong>点评</strong> 求导前先利用对数的性质把函数化简，可使求导运算简便．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-\dfrac{3}{2}$</span></div>
+</div>
+</article>
+<article class="problem" id="q179" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="179">【179】</span>
+<span class="q-group">计算初等函数的二阶、三阶导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=\sin[f(x^2)]$，其中 $f$ 具有二阶导数，求 $\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\mathrm{d}y}{\mathrm{d}x}=2xf'(x^2)\cos[f(x^2)]$，$\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=2f'(x^2)\cos[f(x^2)]+4x^2f''(x^2)\cos[f(x^2)]-4x^2[f'(x^2)]^2\sin[f(x^2)]=2f'(x^2)\cos[f(x^2)]+4x^2\{f''(x^2)\cos[f(x^2)]-[f'(x^2)]^2\sin[f(x^2)]\}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=2f'(x^2)\cos[f(x^2)]+4x^2\{f''(x^2)\cos[f(x^2)]-[f'(x^2)]^2\sin[f(x^2)]\}$（同解末）</span></div>
+</div>
+</article>
+<article class="problem" id="q180" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="180">【180】</span>
+<span class="q-group">计算初等函数的二阶、三阶导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=\ln(x+\sqrt{1+x^2})$，则 $y'''\Big|_{x=\sqrt{3}}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=\dfrac{1+\dfrac{2x}{2\sqrt{1+x^2}}}{x+\sqrt{1+x^2}}=\dfrac{1}{\sqrt{1+x^2}}=(1+x^2)^{-\frac{1}{2}}$，$y''=-\dfrac{1}{2}(1+x^2)^{-\frac{3}{2}}\cdot2x=-x(1+x^2)^{-\frac{3}{2}}$，$y'''=-(1+x^2)^{-\frac{3}{2}}-x\Big(-\dfrac{3}{2}\Big)(1+x^2)^{-\frac{5}{2}}\cdot2x=-\dfrac{1}{\sqrt{(1+x^2)^3}}+3\cdot\dfrac{x^2}{\sqrt{(1+x^2)^5}}$，$y'''\Big|_{x=\sqrt{3}}=\dfrac{5}{32}$．故应填 $\dfrac{5}{32}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{5}{32}$</span></div>
+</div>
+</article>
+<article class="problem" id="q181" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="181">【181】</span>
+<span class="q-group">计算初等函数的二阶、三阶导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在 $x=2$ 的某邻域内可导，且 $f'(x)=e^{f(x)}$，$f(2)=1$，则 $f'''(2)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $f'(x)=e^{f(x)}$，得 $f''(x)=e^{f(x)}f'(x)=[e^{f(x)}]^2$，$f'''(x)=e^{f(x)}[f'(x)]^2+e^{f(x)}f''(x)=e^{f(x)}[e^{f(x)}]^2+e^{f(x)}[e^{f(x)}]^2=2[e^{f(x)}]^3$，所以 $f'''(2)=2[e^{f(2)}]^3=2e^3$．故应填 $2e^3$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2e^3$</span></div>
+</div>
+</article>
+<article class="problem" id="q182" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="182">【182】</span>
+<span class="q-group">计算初等函数的二阶、三阶导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $x=f(y)$ 的反函数 $y=f^{-1}(x)$ 及 $f'[f^{-1}(x)]$，$f''[f^{-1}(x)]$ 均存在，且 $f'[f^{-1}(x)]\neq0$，则 $\dfrac{\mathrm{d}^2f^{-1}(x)}{\mathrm{d}x^2}$ 为________．(A) $-\dfrac{f''[f^{-1}(x)]}{\{f'[f^{-1}(x)]\}^2}$　(B) $\dfrac{f''[f^{-1}(x)]}{\{f'[f^{-1}(x)]\}^2}$　(C) $-\dfrac{f''[f^{-1}(x)]}{\{f'[f^{-1}(x)]\}^3}$　(D) $\dfrac{f''[f^{-1}(x)]}{\{f'[f^{-1}(x)]\}^3}$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f'[f^{-1}(x)]\neq0$，所以由反函数的导数公式有 $\dfrac{\mathrm{d}f^{-1}(x)}{\mathrm{d}x}=\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{1}{\dfrac{\mathrm{d}x}{\mathrm{d}y}}=\dfrac{1}{f'(y)}=\dfrac{1}{f'[f^{-1}(x)]}$，$\dfrac{\mathrm{d}^2f^{-1}(x)}{\mathrm{d}x^2}=\dfrac{\mathrm{d}}{\mathrm{d}x}\Big(\dfrac{1}{f'[f^{-1}(x)]}\Big)=\dfrac{-\{f'[f^{-1}(x)]\}'}{\{f'[f^{-1}(x)]\}^2}=\dfrac{-f''[f^{-1}(x)][f^{-1}(x)]'}{\{f'[f^{-1}(x)]\}^2}=\dfrac{-f''[f^{-1}(x)]}{\{f'[f^{-1}(x)]\}^2}\cdot\dfrac{1}{f'[f^{-1}(x)]}=\dfrac{-f''[f^{-1}(x)]}{\{f'[f^{-1}(x)]\}^3}$．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<h3 class="grp-h">求 n 阶导数的通项</h3>
+<article class="problem" id="q183" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="183">【183】</span>
+<span class="q-group">求 n 阶导数的通项</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\dfrac{1-x}{1+x}$，则 $f^{(n)}(x)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $f(x)=-1+2(1+x)^{-1}$，$f'(x)=2\cdot(-1)\cdot(1+x)^{-2}$，$f''(x)=2\cdot(-1)(-2)\cdot(1+x)^{-3}$，$f'''(x)=2\cdot(-1)(-2)(-3)\cdot(1+x)^{-4}\cdots$，$f^{(n)}(x)=2\cdot(-1)(-2)\cdot\cdots\cdot(-n)\cdot(1+x)^{-n-1}=\dfrac{(-1)^n\cdot2\cdot n!}{(1+x)^{n+1}}$．故应填 $\dfrac{(-1)^n\cdot2\cdot n!}{(1+x)^{n+1}}$．<strong>点评</strong> (1) 求 $f(x)$ 的 $n$ 阶导数时，一般先求出前几阶导数，从中找出规律，得出 $f(x)$ 的 $n$ 阶导数表达式．(2) 某些复杂函数求高阶导数，需先化简、变形，化为常见函数类，再求其 $n$ 阶导数．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{(-1)^n\cdot2\cdot n!}{(1+x)^{n+1}}$</span></div>
+</div>
+</article>
+<article class="problem" id="q184" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="184">【184】</span>
+<span class="q-group">求 n 阶导数的通项</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=\sin^4x-\cos^4x$，则 $y^{(n)}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y=\sin^4x-\cos^4x=(\sin^2x-\cos^2x)(\sin^2x+\cos^2x)=\sin^2x-\cos^2x=-\cos2x$，$y'=2\sin2x$，……，$y^{(n)}=2\cdot2^{n-1}\sin\Big(2x+\dfrac{n-1}{2}\pi\Big)=2^n\sin\Big(2x+\dfrac{n-1}{2}\pi\Big)$．故应填 $2^n\sin\Big(2x+\dfrac{n-1}{2}\pi\Big)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2^n\sin\Big(2x+\dfrac{n-1}{2}\pi\Big)$</span></div>
+</div>
+</article>
+<article class="problem" id="q185" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="185">【185】</span>
+<span class="q-group">求 n 阶导数的通项</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=\sin^3x+\sin x\cos x$，求 $y^{(n)}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>分析</strong> 利用三倍角公式 $\sin3x=3\sin x-4\sin^3x$，二倍角公式 $\sin2x=2\sin x\cos x$．<strong>解</strong> 因为 $y=\sin^3x+\sin x\cos x=\dfrac{3}{4}\sin x-\dfrac{1}{4}\sin3x+\dfrac{1}{2}\sin2x$，所以 $y^{(n)}=\dfrac{3}{4}\sin\Big(x+\dfrac{n}{2}\pi\Big)-\dfrac{3^n}{4}\sin\Big(3x+\dfrac{n}{2}\pi\Big)+2^{n-1}\sin\Big(2x+\dfrac{n}{2}\pi\Big)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$y^{(n)}=\dfrac{3}{4}\sin\Big(x+\dfrac{n}{2}\pi\Big)-\dfrac{3^n}{4}\sin\Big(3x+\dfrac{n}{2}\pi\Big)+2^{n-1}\sin\Big(2x+\dfrac{n}{2}\pi\Big)$（同解末）</span></div>
+</div>
+</article>
+<article class="problem" id="q186" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="186">【186】</span>
+<span class="q-group">求 n 阶导数的通项</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f(x)$ 具有任意阶导数，且 $f'(x)=[f(x)]^2$，求 $f^{(n)}(x)$（其中 $n\geqslant1$ 的整数）．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 记 $y=f(x)$，由 $y'=y^2$，逐次求导得 $y''=2yy'=2y^3$，$y'''=3!y^2\cdot y'=3!y^4$，……，不完全归纳得 $y^{(n)}=f^{(n)}(x)=n!y^{n+1}=n![f(x)]^{n+1}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f^{(n)}(x)=n!y^{n+1}=n![f(x)]^{n+1}$（同解末）</span></div>
+</div>
+</article>
+<article class="problem" id="q187" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="187">【187】</span>
+<span class="q-group">求 n 阶导数的通项</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=(x-a)^n\varphi(x)$，其中 $\varphi(x)$ 在 $a$ 点的一个邻域内有 $(n-1)$ 阶连续导数，则 $f^{(n)}(a)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 根据题设条件，由莱布尼兹公式有 $f^{(n-1)}(x)=[(x-a)^n\varphi(x)]^{(n-1)}=(x-a)^n\varphi^{(n-1)}(x)+\mathrm{C}_{n-1}^1 n(x-a)^{n-1}\varphi^{(n-2)}(x)+\cdots+\mathrm{C}_{n-1}^{n-2}n(n-1)\cdots3(x-a)^2\varphi'(x)+n!(x-a)\varphi(x)$，由此可知，$f^{(n-1)}(a)=0$，再由导数定义得 $f^{(n)}(a)=\lim\limits_{x\to a}\dfrac{f^{(n-1)}(x)-f^{(n-1)}(a)}{x-a}=\lim\limits_{x\to a}\Big[(x-a)^{n-1}\varphi^{(n-1)}(x)+\mathrm{C}_{n-1}^1n(x-a)^{n-2}\varphi^{(n-2)}(x)+\cdots+\mathrm{C}_{n-1}^{n-2}n(n-1)\cdots3(x-a)\varphi'(x)+n!\varphi(x)\Big]=n!\varphi(a)$．故应填 $n!\varphi(a)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $n!\varphi(a)$</span></div>
+</div>
+</article>
+<article class="problem" id="q188" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="188">【188】</span>
+<span class="q-group">求 n 阶导数的通项</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求函数 $f(x)=x^2\ln(1+x)$ 在 $x=0$ 处的 $n$ 阶导数 $f^{(n)}(0)$（$n\geqslant3$）．</div>
+<div class="book-note">※ 解法二第三行 $x^5$ 的系数原书印作 $\dfrac{x^5}{2}$（按前行展开式应为 $\dfrac{x^5}{3}$），照原文转录．</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解法一</strong> 由莱布尼兹公式 $(uv)^{(n)}=u^{(n)}v^{(0)}+\mathrm{C}_n^1u^{(n-1)}v'+\mathrm{C}_n^2u^{(n-2)}v''+\cdots+u^{(0)}v^{(n)}$ 及 $[\ln(1+x)]^{(k)}=\dfrac{(-1)^{k-1}(k-1)!}{(1+x)^k}$（$k$ 为正整数），得 $f^{(n)}(x)=x^2\dfrac{(-1)^{n-1}(n-1)!}{(1+x)^n}+2nx\dfrac{(-1)^{n-2}(n-2)!}{(1+x)^{n-1}}+n(n-1)\cdot\dfrac{(-1)^{n-3}(n-3)!}{(1+x)^{n-2}}$，所以 $f^{(n)}(0)=(-1)^{n-3}n(n-1)(n-3)!=\dfrac{(-1)^{n-1}n!}{n-2}$．<strong>解法二</strong> 由麦克劳林公式 $f(x)=f(0)+\dfrac{f'(0)}{1!}x+\cdots+\dfrac{f^{(n)}(0)}{n!}x^n+o(x^n)$ 及 $x^2\ln(1+x)=x^2\Big[x-\dfrac{x^2}{2}+\dfrac{x^3}{3}+\cdots+(-1)^{n-1}\dfrac{x^{n-2}}{n-2}+o(x^{n-2})\Big]=x^3-\dfrac{x^4}{2}+\dfrac{x^5}{2}+\cdots+(-1)^{n-1}\cdot\dfrac{x^n}{n-2}+o(x^n)$，比较 $x^n$ 的系数得 $\dfrac{f^{(n)}(0)}{n!}=\dfrac{(-1)^{n-1}}{n-2}$，所以 $f^{(n)}(0)=\dfrac{(-1)^{n-1}n!}{n-2}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f^{(n)}(0)=\dfrac{(-1)^{n-1}n!}{n-2}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">求隐函数的导数</h3>
+<article class="problem" id="q189" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="189">【189】</span>
+<span class="q-group">求隐函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $y=y(x)$ 由方程 $\ln(x^2+y)=x^3y+\sin x$ 确定，则 $\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{x=0}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 把 $x=0$ 代入方程 $\ln(x^2+y)=x^3y+\sin x$ 得 $\ln y=0$，则 $y=1$．方程两边关于 $x$ 求导得：$\dfrac{1}{x^2+y}\Big(2x+\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big)=3x^2y+x^3\dfrac{\mathrm{d}y}{\mathrm{d}x}+\cos x$．把 $x=0,y=1$ 代入上式，得：$\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{x=0}=1$．故应填 $1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $1$</span></div>
+</div>
+</article>
+<article class="problem" id="q190" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="190">【190】</span>
+<span class="q-group">求隐函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设方程 $e^{xy}+y^2=\cos x$ 确定 $y$ 为 $x$ 的函数，则 $\dfrac{\mathrm{d}y}{\mathrm{d}x}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 方程两端关于 $x$ 求导，得 $e^{xy}\Big(y+x\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big)+2y\dfrac{\mathrm{d}y}{\mathrm{d}x}=-\sin x$，整理得 $\dfrac{\mathrm{d}y}{\mathrm{d}x}=-\dfrac{ye^{xy}+\sin x}{xe^{xy}+2y}$．故应填 $-\dfrac{ye^{xy}+\sin x}{xe^{xy}+2y}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-\dfrac{ye^{xy}+\sin x}{xe^{xy}+2y}$</span></div>
+</div>
+</article>
+<article class="problem" id="q191" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="191">【191】</span>
+<span class="q-group">求隐函数的导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">函数 $y=y(x)$ 由方程 $\sin(x^2+y^2)+e^x-xy^2=0$ 所确定，则 $\dfrac{\mathrm{d}y}{\mathrm{d}x}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 对方程两端关于 $x$ 求导，得 $\cos(x^2+y^2)\cdot\Big(2x+2y\cdot\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big)+e^x-y^2-x\cdot2y\cdot\dfrac{\mathrm{d}y}{\mathrm{d}x}=0$，整理得 $\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{y^2-e^x-2x\cos(x^2+y^2)}{2y\cos(x^2+y^2)-2xy}$．故应填 $\dfrac{y^2-e^x-2x\cos(x^2+y^2)}{2y\cos(x^2+y^2)-2xy}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{y^2-e^x-2x\cos(x^2+y^2)}{2y\cos(x^2+y^2)-2xy}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">求隐函数的二阶导数</h3>
+<article class="problem" id="q192" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="192">【192】</span>
+<span class="q-group">求隐函数的二阶导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知函数 $y=y(x)$ 由方程 $e^y+6xy+x^2-1=0$ 确定，则 $y''(0)=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 方程两边关于 $x$ 求导，得 $e^y\cdot y'+6y+6xy'+2x=0$，$y'=-\dfrac{6y+2x}{e^y+6x}$，且 $y'(0)=y'\Big|_{x=0\atop y=0}=0$．对上式关于 $x$ 求导得，$y''=-\dfrac{(6y'+2)(e^y+6x)-(6y+2x)\cdot(e^y\cdot y'+6)}{(e^y+6x)^2}$，把 $x=0,y=0,y'(0)=0$ 代入得 $y''(0)=-2$．故应填 $-2$．<strong>点评</strong> (1) 欲求由方程 $F(x,y)=0$ 所确定的隐函数 $y=f(x)$ 的一阶导数，要把方程中的 $x$ 看作自变量，而将 $y$ 视为 $x$ 的函数，方程中关于 $y$ 的函数便是 $x$ 的复合函数，用复合函数的求导法则，便可得到关于 $y'$ 的一次方程，从中解得 $y'$ 即为所求．(2) 若求 $y'\Big|_{x=x_0}$，由于 (1) 中所得 $y'$ 的表达式通常是用隐函数 $y$ 及自变量 $x$ 表示的，所以，在计算 $x=x_0$ 时的导数时，通常由原方程解出相应的 $y_0$，然后将 $(x_0,y_0)$ 一起代入 $y'$ 的表达式中，便可求得 $y'\Big|_{x=x_0}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $-2$</span></div>
+</div>
+</article>
+<article class="problem" id="q193" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="193">【193】</span>
+<span class="q-group">求隐函数的二阶导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">方程 $\sqrt[x]{y}=\sqrt[y]{x}$（$x&gt;0,y&gt;0$）确定函数 $y=f(x)$，求 $\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y^{\frac{1}{x}}=x^{\frac{1}{y}}$，$\dfrac{1}{x}\ln y=\dfrac{1}{y}\ln x$，$y\ln y=x\ln x$，等式两边对 $x$ 求导，得 $(\ln y+1)\dfrac{\mathrm{d}y}{\mathrm{d}x}=\ln x+1$，即 $\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\ln x+1}{\ln y+1}$．所以 $\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=\dfrac{\dfrac{1}{x}(\ln y+1)-(\ln x+1)\cdot\dfrac{1}{y}\cdot\dfrac{\mathrm{d}y}{\mathrm{d}x}}{(\ln y+1)^2}=\dfrac{y(\ln y+1)^2-x(\ln x+1)^2}{xy(\ln y+1)^3}$．<strong>点评</strong> 求隐函数二阶导数的关键是一阶导数能得出较简洁的结果．注意此题是怎样得出的，不然求二阶导数非常繁琐．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=\dfrac{y(\ln y+1)^2-x(\ln x+1)^2}{xy(\ln y+1)^3}$（同解末）</span></div>
+</div>
+</article>
+<h3 class="grp-h">含有抽象函数的隐函数求二阶导数</h3>
+<article class="problem" id="q194" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="194">【194】</span>
+<span class="q-group">含有抽象函数的隐函数求二阶导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=f(x+y)$，其中 $f$ 具有二阶导数，且其一阶导数不等于 $1$，求 $\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=(1+y')f'$，$y'=\dfrac{f'}{1-f'}$，$y''=(1+y')^2f''+y''f'$，$y''=\dfrac{(1+y')^2f''}{1-f'}=\dfrac{f''}{(1-f')^3}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=\dfrac{f''}{(1-f')^3}$（同解末）</span></div>
+</div>
+</article>
+<article class="problem" id="q195" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="195">【195】</span>
+<span class="q-group">含有抽象函数的隐函数求二阶导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $y=y(x)$ 由方程 $xe^{f(y)}=e^y$ 确定，其中 $f$ 具有二阶导数，且 $f'\neq1$，求 $\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 方程两边取对数，得 $\ln x+f(y)=y$．关于 $x$ 求导，得 $\dfrac{1}{x}+f'(y)\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}y}{\mathrm{d}x}$，从而 $\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{1}{x[1-f'(y)]}$，$\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=-\dfrac{1-f'(y)-xf''(y)\cdot\dfrac{\mathrm{d}y}{\mathrm{d}x}}{x^2[1-f'(y)]^2}=-\dfrac{[1-f'(y)]^2-f''(y)}{x^2[1-f'(y)]^3}$．<strong>点评</strong> 求隐函数的二阶导数，一般有两种解法：(1) 先求出 $y'$（注意，结果中一般含有 $y$），再继续求二阶导数；(2) 对方程两边同时求导两次，然后再解出 $y''$．无论是哪一种解法，在求导时，都应该记住 $y$ 是 $x$ 的函数．在 $y''$ 的结果中，如果含有 $y'$，应用一阶导数的结果代入．总之最后结果中只能含有 $x$、$y$．如果要求点 $x_0$ 的二阶导数，应先求出对应的 $y_0$ 及 $y'\Big|_{(x_0,y_0)}$，然后代入求出的 $y''$ 中．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}=-\dfrac{[1-f'(y)]^2-f''(y)}{x^2[1-f'(y)]^3}$（同解末）</span></div>
+</div>
+</article>
+<h3 class="grp-h">使用对数求导法求导</h3>
+<article class="problem" id="q196" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="196">【196】</span>
+<span class="q-group">使用对数求导法求导</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=\sqrt{e^{\frac{1}{x}}\sqrt{x\sqrt{\sin x}}}$，求 $y'$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 等式两边取对数 $\ln y=\dfrac{1}{2x}+\dfrac{1}{4}\ln x+\dfrac{1}{8}\ln\sin x$，求导得 $\dfrac{y'}{y}=-\dfrac{1}{2x^2}+\dfrac{1}{4x}+\dfrac{\cos x}{8\sin x}$，所以 $y'=\dfrac{1}{8}\Big(\dfrac{2}{x}-\dfrac{4}{x^2}+\cot x\Big)\sqrt{e^{\frac{1}{x}}\sqrt{x\sqrt{\sin x}}}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$y'=\dfrac{1}{8}\Big(\dfrac{2}{x}-\dfrac{4}{x^2}+\cot x\Big)\sqrt{e^{\frac{1}{x}}\sqrt{x\sqrt{\sin x}}}$（同解末）</span></div>
+</div>
+</article>
+<article class="problem" id="q197" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="197">【197】</span>
+<span class="q-group">使用对数求导法求导</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=x^{x^x}$，求 $y'$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 两边取两次对数 $\ln\ln y=\ln[x^x\ln x]=x\ln x+\ln\ln x$，两边求导 $\dfrac{y'}{y\ln y}=\ln x+1+\dfrac{1}{x\ln x}$，$y'=y\ln y\cdot\Big(1+\ln x+\dfrac{1}{x\ln x}\Big)=x^{x^x+x-1}(x\ln^2x+x\ln x+1)$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$y'=x^{x^x+x-1}(x\ln^2x+x\ln x+1)$（同解末）</span></div>
+</div>
+</article>
+<h3 class="grp-h">参数方程确定函数的求导</h3>
+<article class="problem" id="q198" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="198">【198】</span>
+<span class="q-group">参数方程确定函数的求导</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $\begin{cases}x=e^t\sin2t\\ y=e^t\cos t\end{cases}$ 在点 $(0,1)$ 处的法线方程为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}=\dfrac{e^t\cos t-e^t\sin t}{e^t\sin2t+2e^t\cos2t}=\dfrac{\cos t-\sin t}{\sin2t+2\cos2t}$，$x=0$ 时，$t=0$，从而 $\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{t=0}=\dfrac{1}{2}$，所以法线斜率 $k=-2$，则曲线在 $(0,1)$ 处法线方程为 $y-1=-2x$，即 $2x+y-1=0$．故应填 $2x+y-1=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $2x+y-1=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q199" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="199">【199】</span>
+<span class="q-group">参数方程确定函数的求导</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\begin{cases}x=f(t)-\pi\\ y=f(e^{3t}-1)\end{cases}$，其中 $f$ 可导，且 $f'(0)\neq0$，则 $\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{t=0}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 这是一道参数方程所确定的函数的求导问题，其中 $y$ 又是关于 $t$ 的复合函数．令 $u=e^{3t}-1$，则……
+（接上批解答）$\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\dfrac{\mathrm{d}y}{\mathrm{d}t}}{\dfrac{\mathrm{d}x}{\mathrm{d}t}}=\dfrac{\dfrac{\mathrm{d}y}{\mathrm{d}u}\cdot\dfrac{\mathrm{d}u}{\mathrm{d}t}}{\dfrac{\mathrm{d}x}{\mathrm{d}t}}=\dfrac{[f'_{u}(u)]3e^{3t}}{f'_{t}(t)}$，当 $t=0$ 时，$u=0$，因此 $\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{t=0}=\dfrac{f'(0)\cdot3}{f'(0)}=3$．故应填 3．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 3</span></div>
+</div>
+</article>
+<h3 class="grp-h">参数方程确定函数的二阶导数</h3>
+<article class="problem" id="q200" data-secanchor="s2">
+<div class="q-head">
+<span class="q-no" data-n="200">【200】</span>
+<span class="q-group">参数方程确定函数的二阶导数</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $y=y(x)$ 由参数方程 $\begin{cases}x=t-\ln(1+t)\\ y=t^{3}+t^{2}\end{cases}$ 所确定，则 $\dfrac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}=\dfrac{3t^{2}+2t}{1-\dfrac{1}{1+t}}=(t+1)(3t+2)$，$$\dfrac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}\left(\dfrac{\mathrm{d}y}{\mathrm{d}x}\right)}{\dfrac{\mathrm{d}x}{\mathrm{d}t}}=\dfrac{6t+5}{1-\dfrac{1}{1+t}}=\dfrac{(6t+5)(t+1)}{t}.$$故应填 $\dfrac{(6t+5)(t+1)}{t}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{(6t+5)(t+1)}{t}$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s3">4. 微分</h2>
+<div class="sec-intro">1．微分定义 若函数 $f(x)$ 在 $x$ 点的增量 $\Delta y=f(x+\Delta x)-f(x)$，可表示为 $\Delta y=A\Delta x+o(\Delta x)$，其中，$A$ 是与 $\Delta x$ 无关的量；当 $\Delta x\to0$ 时，$o(\Delta x)$ 是比 $\Delta x$ 高阶的无穷小．则称 $y=f(x)$ 在 $x$ 点可微，而线性主部 $A\Delta x$ 称为 $y=f(x)$ 在 $x$ 点的微分，记为 $\mathrm{d}y$ 或 $\mathrm{d}f(x)$，即 $\mathrm{d}y=\mathrm{d}f(x)=A\cdot\Delta x$．当函数 $f(x)$ 可微时，微分中 $\Delta x$ 的系数 $A=f'(x)$，记 $\mathrm{d}x=\Delta x$，称之为自变量的微分，微分表达式通常写为对称形式 $\mathrm{d}y=f'(x)\mathrm{d}x$，而导数就是函数微分与自变量微分之商（微商）$f'(x)=\dfrac{\mathrm{d}y}{\mathrm{d}x}$．2．基本初等函数的微分公式 (1)$\mathrm{d}(c)=0$；(2)$\mathrm{d}(x^{\mu})=\mu x^{\mu-1}\mathrm{d}x$（$\mu$ 为实数）；(3)$\mathrm{d}(\sin x)=\cos x\,\mathrm{d}x$；(4)$\mathrm{d}(\cos x)=-\sin x\,\mathrm{d}x$；(5)$\mathrm{d}(\tan x)=\sec^{2}x\,\mathrm{d}x$；(6)$\mathrm{d}(\cot x)=-\csc^{2}x\,\mathrm{d}x$；(7)$\mathrm{d}(\sec x)=\sec x\cdot\tan x\,\mathrm{d}x$；(8)$\mathrm{d}(\csc x)=-\csc x\cdot\cot x\,\mathrm{d}x$；(9)$\mathrm{d}(a^{x})=a^{x}\ln a\,\mathrm{d}x$（$a&gt;0$，$a\neq1$）；(10)$\mathrm{d}(e^{x})=e^{x}\mathrm{d}x$；(11)$\mathrm{d}(\log_{a}x)=\dfrac{1}{x\ln a}\mathrm{d}x$（$a&gt;0$，$a\neq1$）；(12)$\mathrm{d}(\ln x)=\dfrac{1}{x}\mathrm{d}x$；(13)$\mathrm{d}(\arcsin x)=\dfrac{1}{\sqrt{1-x^{2}}}\mathrm{d}x$；(14)$\mathrm{d}(\arccos x)=-\dfrac{1}{\sqrt{1-x^{2}}}\mathrm{d}x$；(15)$\mathrm{d}(\arctan x)=\dfrac{1}{1+x^{2}}\mathrm{d}x$；(16)$\mathrm{d}(\mathrm{arccot}\,x)=-\dfrac{1}{1+x^{2}}\mathrm{d}x$．3．微分四则运算法则 设函数 $u(x)$，$v(x)$ 可微，则有 (1)$\mathrm{d}[u(x)\pm v(x)]=\mathrm{d}u(x)\pm\mathrm{d}v(x)$；(2)$\mathrm{d}[u(x)\cdot v(x)]=v(x)\mathrm{d}u(x)+u(x)\mathrm{d}v(x)$；(3)$\mathrm{d}\left[\dfrac{u(x)}{v(x)}\right]=\dfrac{v(x)\mathrm{d}u(x)-u(x)\mathrm{d}v(x)}{[v(x)]^{2}}$（$v(x)\neq0$）．4．微分的形式不变性 设函数 $u=\varphi(x)$ 在 $x$ 点可微，函数 $y=f(u)$ 在相应的点 $u=\varphi(x)$ 处可微，则复合函数 $y=f[\varphi(x)]$ 在 $x$ 点可微，且微分式 $\mathrm{d}y=f'[\varphi(x)]\cdot\varphi'(x)\mathrm{d}x=f'(u)\mathrm{d}u$．这表明，不论 $u$ 是自变量或中间变量，函数 $y=f(u)$ 的微分形式都是一样的，这个性质称为一阶微分形式的不变性．5．可微的充要条件 函数 $f(x)$ 在 $x_{0}$ 点可微的充分必要条件是 $f(x)$ 在 $x_{0}$ 点可导，且 $\mathrm{d}y=f'(x_{0})\mathrm{d}x$．6．可微的必要条件 函数 $f(x)$ 在 $x_{0}$ 点可微的必要条件是 $f(x)$ 在 $x_{0}$ 点连续．</div>
+<h3 class="grp-h">求函数的微分</h3>
+<article class="problem" id="q201" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="201">【201】</span>
+<span class="q-group">求函数的微分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(u)$ 可导，$y=f(x^{2})$ 当自变量 $x$ 在 $x=-1$ 处取得增量 $\Delta x=-0.1$ 时，相应的函数增量 $\Delta y$ 的线性主部为 $0.1$，则 $f'(1)=$________．(A) $-1$　(B) $0.1$　(C) $1$　(D) $0.5$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\mathrm{d}y=f'(x^{2})\cdot2x\,\mathrm{d}x$，即 $0.1=f'(1)\cdot(-2)\cdot(-0.1)$，解得 $f'(1)=0.5$．故应选 (D)．<strong>点评</strong> 函数微分是函数增量的线性主部，即已知条件为 $\mathrm{d}y=0.1$，使用的公式为 $\mathrm{d}y=y'\Delta x$，但应注意的是 $y'(x_{0})=f'(x_{0}^{2})\cdot2x_{0}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q202" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="202">【202】</span>
+<span class="q-group">求函数的微分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=f(\ln x)e^{f(x)}$，其中 $f$ 可微，则 $\mathrm{d}y=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=[f(\ln x)]'e^{f(x)}+f(\ln x)[e^{f(x)}]'=f'(\ln x)\cdot\dfrac{1}{x}\cdot e^{f(x)}+f(\ln x)e^{f(x)}\cdot f'(x)$，$\mathrm{d}y=y'\,\mathrm{d}x=e^{f(x)}\left[\dfrac{1}{x}f'(\ln x)+f'(x)f(\ln x)\right]\mathrm{d}x$．故应填 $e^{f(x)}\left[\dfrac{1}{x}f'(\ln x)+f'(x)f(\ln x)\right]\mathrm{d}x$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $e^{f(x)}\left[\dfrac{1}{x}f'(\ln x)+f'(x)f(\ln x)\right]\mathrm{d}x$</span></div>
+</div>
+</article>
+<article class="problem" id="q203" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="203">【203】</span>
+<span class="q-group">求函数的微分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $y=y(x)$ 由方程 $2^{xy}=x+y$ 所确定，则 $\mathrm{d}y\Big|_{x=0}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 把 $x=0$ 代入 $2^{xy}=x+y$ 得 $y=1$．对方程两端关于 $x$ 求导得 $2^{xy}\cdot\ln2\cdot(y+xy')=1+y'$．令 $x=0$，$y=1$，得 $y'\Big|_{x=0\atop y=1}=\ln2-1$，所以 $\mathrm{d}y\Big|_{x=0\atop y=1}=y'\,\mathrm{d}x\Big|_{x=0\atop y=1}=(\ln2-1)\,\mathrm{d}x$．故应填 $(\ln2-1)\,\mathrm{d}x$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $(\ln2-1)\,\mathrm{d}x$</span></div>
+</div>
+</article>
+<article class="problem" id="q204" data-secanchor="s3">
+<div class="q-head">
+<span class="q-no" data-n="204">【204】</span>
+<span class="q-group">求函数的微分</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设方程 $x=y^{y}$ 确定 $y$ 是 $x$ 的函数，则 $\mathrm{d}y=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 方程两边关于 $x$ 求导，得 $1=e^{y\ln y}\left[y'\ln y+y\cdot\dfrac{1}{y}y'\right]$，则 $y'=\dfrac{1}{y^{y}(1+\ln y)}=\dfrac{1}{x(1+\ln y)}$，$\mathrm{d}y=y'\,\mathrm{d}x=\dfrac{1}{x(1+\ln y)}\,\mathrm{d}x$．故应填 $\dfrac{1}{x(1+\ln y)}\,\mathrm{d}x$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{x(1+\ln y)}\,\mathrm{d}x$</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s4">5. 综合提高题型</h2>
+<h3 class="grp-h">利用导数定义求极限</h3>
+<article class="problem" id="q205" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="205">【205】</span>
+<span class="q-group">利用导数定义求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f'(x_{0})=-1$，则 $\lim\limits_{x\to0}\dfrac{x}{f(x_{0}-ax)-f(x_{0}-bx)}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 原式 $=\lim\limits_{x\to0}\dfrac{1}{-a\cdot\dfrac{f(x_{0}-ax)-f(x_{0})}{-ax}+b\cdot\dfrac{f(x_{0}-bx)-f(x_{0})}{-bx}}=\dfrac{1}{-af'(x_{0})+bf'(x_{0})}=\dfrac{1}{b-a}\cdot\dfrac{1}{f'(x_{0})}=\dfrac{1}{a-b}$．故应填 $\dfrac{1}{a-b}$ 且 $a\neq b$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $\dfrac{1}{a-b}$ 且 $a\neq b$</span></div>
+</div>
+</article>
+<article class="problem" id="q206" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="206">【206】</span>
+<span class="q-group">利用导数定义求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">求下列极限：(1)$\lim\limits_{x\to a}\dfrac{x^{x}-a^{a}}{x-a}$；(2)$\lim\limits_{x\to a}\dfrac{a^{x}-x^{a}}{x-a}$；(3)$\lim\limits_{x\to a}\dfrac{\tan x-\tan a}{x^{a}-a^{a}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由导数定义得 (1)$\lim\limits_{x\to a}\dfrac{x^{x}-a^{a}}{x-a}=(x^{x})'\Big|_{x=a}=x^{x}(1+\ln x)\Big|_{x=a}=a^{a}(1+\ln a)$；(2)$\lim\limits_{x\to a}\dfrac{a^{x}-x^{a}}{x-a}=\lim\limits_{x\to a}\dfrac{a^{x}-a^{a}}{x-a}-\lim\limits_{x\to a}\dfrac{x^{a}-a^{a}}{x-a}=(a^{x})'\Big|_{x=a}-(x^{a})'\Big|_{x=a}=a^{a}(\ln a-1)$；(3)$\lim\limits_{x\to a}\dfrac{\tan x-\tan a}{x^{a}-a^{a}}=\lim\limits_{x\to a}\dfrac{\tan x-\tan a}{x-a}\cdot\dfrac{x-a}{x^{a}-a^{a}}=\lim\limits_{x\to a}\dfrac{\tan x-\tan a}{x-a}\left(\lim\limits_{x\to a}\dfrac{x^{a}-a^{a}}{x-a}\right)^{-1}=\dfrac{(\tan x)'}{(x^{a})'}\Big|_{x=a}=\dfrac{\sec^{2}x}{ax^{a-1}}\Big|_{x=a}=\dfrac{1}{a^{a}\cos^{2}a}$．<strong>点评</strong> 这类极限一般可表达为：设函数 $f(x)$，$g(x)$ 在点 $x=a$ 处可导，且 $g(x)\neq0$，$g'(a)\neq0$，则 $\lim\limits_{x\to a}\dfrac{f(x)-f(a)}{g(x)-g(a)}=\lim\limits_{x\to a}\dfrac{f(x)-f(a)}{x-a}\left(\lim\limits_{x\to a}\dfrac{g(x)-g(a)}{x-a}\right)^{-1}=\dfrac{f'(a)}{g'(a)}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $a^{a}(1+\ln a)$；(2) $a^{a}(\ln a-1)$；(3) $\dfrac{1}{a^{a}\cos^{2}a}$</span></div>
+</div>
+</article>
+<article class="problem" id="q207" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="207">【207】</span>
+<span class="q-group">利用导数定义求极限</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知函数 $f(x)$ 在 $(0,+\infty)$ 内可导，$f(x)&gt;0$，$\lim\limits_{x\to+\infty}f(x)=1$，且满足 $$\lim_{h\to0}\left[\frac{f(x+hx)}{f(x)}\right]^{\frac{1}{h}}=e^{\frac{1}{x}},$$ 求 $f(x)$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 设 $y=\left[\dfrac{f(x+hx)}{f(x)}\right]^{\frac{1}{h}}$，则 $\ln y=\dfrac{1}{h}\ln\dfrac{f(x+hx)}{f(x)}$．因为 $\lim\limits_{h\to0}\ln y=\lim\limits_{h\to0}\dfrac{1}{h}\ln\dfrac{f(x+hx)}{f(x)}=\lim\limits_{h\to0}\dfrac{x[\ln f(x+hx)-\ln f(x)]}{hx}=x[\ln f(x)]'$，故 $\lim\limits_{h\to0}\left[\dfrac{f(x+hx)}{f(x)}\right]^{\frac{1}{h}}=e^{x[\ln f(x)]'}$．由已知条件得 $e^{x[\ln f(x)]'}=e^{\frac{1}{x}}$，因此 $x[\ln f(x)]'=\dfrac{1}{x}$，即 $[\ln f(x)]'=\dfrac{1}{x^{2}}$．解之得 $f(x)=Ce^{-\frac{1}{x}}$．由 $\lim\limits_{x\to+\infty}f(x)=1$，得 $C=1$，故 $f(x)=e^{-\frac{1}{x}}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故 $f(x)=e^{-\frac{1}{x}}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关导数定义的综合题</h3>
+<article class="problem" id="q208" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="208">【208】</span>
+<span class="q-group">有关导数定义的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 可导，$F(x)=f(x)(1+|\sin x|)$．若使 $F(x)$ 在 $x=0$ 处可导，则必有________．(A) $F(0)=0$　(B) $F'(0)=0$　(C) $F(0)+F'(0)=0$　(D) $F(0)-F'(0)=0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $F(x)=\begin{cases}f(x)(1-\sin x), &amp; -\dfrac{\pi}{2}&lt;x&lt;0\\ f(0), &amp; x=0\\ f(x)(1+\sin x), &amp; 0&lt;x&lt;\dfrac{\pi}{2}\end{cases}$，$F'_-(0)=\lim\limits_{x\to0^-}\dfrac{f(x)(1-\sin x)-f(0)}{x}=\lim\limits_{x\to0^-}\dfrac{f(x)-f(0)}{x}-\lim\limits_{x\to0^-}f(x)\cdot\dfrac{\sin x}{x}=f'(0)-f(0)$，$F'_+(0)=\lim\limits_{x\to0^+}\dfrac{f(x)(1+\sin x)-f(0)}{x}=\lim\limits_{x\to0^+}\dfrac{f(x)-f(0)}{x}+\lim\limits_{x\to0^+}f(x)\cdot\dfrac{\sin x}{x}=f'(0)+f(0)$．若使 $F(x)$ 在 $x=0$ 处可导，则必须 $F'_-(0)=F'_+(0)$．则 $f(0)=0$，$F(0)=0$．故应选 (A)．<strong>点评</strong> 含有绝对值的函数应作为分段函数对待，因此函数在分段点的导数应按导数定义，通过左、右导数进行分析．$f(x)$ 在 $x=x_{0}$ 处可导的充要条件是左、右导数存在且相等．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<article class="problem" id="q209" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="209">【209】</span>
+<span class="q-group">有关导数定义的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)$ 为不恒等于零的奇函数，且 $f'(0)$ 存在，则函数 $g(x)=\dfrac{f(x)}{x}$________．(A) 在 $x=0$ 处左极限不存在　(B) 有跳跃间断点 $x=0$　(C) 在 $x=0$ 处右极限不存在　(D) 有可去间断点 $x=0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题意可知 $f(0)=0$，$x=0$ 是 $g(x)$ 的间断点，则 $\lim\limits_{x\to0}g(x)=\lim\limits_{x\to0}\dfrac{f(x)}{x}=\lim\limits_{x\to0}\dfrac{f(x)-f(0)}{x-0}=f'(0)$ 存在，所以 $x=0$ 为可去间断点．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q210" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="210">【210】</span>
+<span class="q-group">有关导数定义的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(0)=0$，则 $f(x)$ 在点 $x=0$ 可导的充要条件为________．(A) $\lim\limits_{h\to0}\dfrac{1}{h^{2}}f(1-\cosh)$ 存在　(B) $\lim\limits_{h\to0}\dfrac{1}{h}f(1-e^{h})$ 存在　(C) $\lim\limits_{h\to0}\dfrac{1}{h^{2}}f(h-\sinh)$ 存在　(D) $\lim\limits_{h\to0}[f(2h)-f(h)]$ 存在</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 选项 (B)：$\lim\limits_{h\to0}\dfrac{1}{h}f(1-e^{h})=\lim\limits_{h\to0}\dfrac{f(1-e^{h})-f(0)}{1-e^{h}}\cdot\lim\limits_{h\to0}\dfrac{1-e^{h}}{h}=-\lim\limits_{\Delta x\to0}\dfrac{f(0+\Delta x)-f(0)}{\Delta x}=-f'(0)$．选项 (A)：$\lim\limits_{h\to0}\dfrac{1}{h^{2}}f(1-\cosh)=\lim\limits_{h\to0}\dfrac{f(1-\cosh)-f(0)}{1-\cosh}\cdot\lim\limits_{h\to0}\dfrac{1-\cosh}{h^{2}}=\dfrac{1}{2}\lim\limits_{\Delta x\to0^{+}}\dfrac{f(\Delta x)-f(0)}{\Delta x}=\dfrac{1}{2}f'_+(0)$．同理选项 (C) 也只能保证 $f(x)$ 在 $x=0$ 的导数存在，不能保证 $f(x)$ 在 $x=0$ 可导．选项 (D)：$\lim\limits_{h\to0}[f(2h)-f(h)]$ 存在，不能保证 $\lim\limits_{h\to0}\dfrac{f(h)-f(0)}{h}$ 存在，所以也不能保证 $f(x)$ 在 $x=0$ 可导．故应选 (B)．<strong>点评</strong> 本题主要考查导数的定义，同时也考查了某些无穷小的阶以及它们的正负号．由 $f(0)=0$ 知 $f(x)$ 在点 $x=0$ 处可导的充要条件是 $\lim\limits_{x\to0}\dfrac{f(x)}{x}$ 存在，关键是所给选项中哪一个与上述极限存在等价．事实上，由 $1-\cosh\geqslant0$ 知选项 (A) 不对；由 $h-\sinh=o(h^{2})$ 知选项 (C) 不对；由 $f(2h)-f(h)=f(2h)-f(0)-[f(h)-f(0)]$ 知选项 (D) 不对；由 $1-e^{h}\sim(-h)$ 知选项 (B) 正确．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q211" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="211">【211】</span>
+<span class="q-group">有关导数定义的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在区间 $(-\delta,\delta)$ 内有定义，若当 $x\in(-\delta,\delta)$ 时，恒有 $|f(x)|\leqslant x^{2}$，则 $x=0$ 必是 $f(x)$ 的________．(A) 间断点　(B) 连续而不可导的点　(C) 可导的点，且 $f'(0)=0$　(D) 可导的点，且 $f'(0)\neq0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 令 $x=0$，由 $|f(0)|\leqslant0$ 知 $f(0)=0$．而 $0\leqslant|f(x)-f(0)|=|f(x)|\leqslant x^{2}$，$\lim\limits_{x\to0}x^{2}=0$．由夹逼准则可知 $\lim\limits_{x\to0}[f(x)-f(0)]=0$，即 $\lim\limits_{x\to0}f(x)=f(0)$，所以 $f(x)$ 在 $x=0$ 处连续．再讨论 $f(x)$ 在 $x=0$ 处的左、右导数，$f'(0)=\lim\limits_{x\to0}\dfrac{f(x)-f(0)}{x}=\lim\limits_{x\to0}\dfrac{f(x)}{x}$．由 $|f(x)|\leqslant x^{2}$ 得 $-x^{2}\leqslant f(x)\leqslant x^{2}$，当 $x&gt;0$ 时，$-x\leqslant\dfrac{f(x)}{x}\leqslant x$．根据 $\lim\limits_{x\to0^{+}}(-x)=\lim\limits_{x\to0^{+}}x=0$ 及夹逼准则可知 $f'_+(0)=\lim\limits_{x\to0^{+}}\dfrac{f(x)}{x}=0$．同理，当 $x&lt;0$ 时，$x\leqslant\dfrac{f(x)}{x}\leqslant-x$，则 $f'_-(0)=\lim\limits_{x\to0^{-}}\dfrac{f(x)}{x}=0$，所以 $f'(0)=0$．故应选 (C)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (C)</span></div>
+</div>
+</article>
+<article class="problem" id="q212" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="212">【212】</span>
+<span class="q-group">有关导数定义的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 在点 $x=a$ 处可导，则函数 $|f(x)|$ 在点 $x=a$ 处不可导的充分条件是________．(A) $f(a)=0$ 且 $f'(a)=0$　(B) $f(a)=0$ 且 $f'(a)&gt;0$　(C) $f(a)&gt;0$ 且 $f'(a)&gt;0$　(D) $f(a)&lt;0$ 且 $f'(a)&lt;0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (A) 不正确．例如，若取 $f(x)=x^{2}$，$a=0$，则条件 (A) 成立，但 $|f(x)|=x^{2}$ 可导．(C) 不正确．例如，若取 $f(x)=x$，$a=1$，则条件 (C) 成立，但 $|f(x)|=|x|$ 在 $x=1$ 可导．(D) 不正确．例如，若取 $f(x)=-x$，$a=1$，则条件 (D) 成立，但 $|f(x)|=|x|$ 在 $x=1$ 可导．选项 (B) 中，由 $\lim\limits_{x\to a}\dfrac{f(x)}{x-a}=f'(a)&gt;0$ 知在 $x=a$ 点左侧，$f(x)&lt;0$；在 $x=a$ 点右侧，$f(x)&gt;0$．设 $g(x)=|f(x)|$，$g'_-(a)=\lim\limits_{x\to a^{-}}\dfrac{|f(x)|}{x-a}=-f'(a)$，$g'_+(a)=\lim\limits_{x\to a^{+}}\dfrac{|f(x)|}{x-a}=f'(a)$，故 $g'_+(a)\neq g'_-(a)$，即 $g(x)=|f(x)|$ 在 $x=a$ 处不可导．故应选 (B)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (B)</span></div>
+</div>
+</article>
+<article class="problem" id="q213" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="213">【213】</span>
+<span class="q-group">有关导数定义的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f'(x)$ 在 $[a,b]$ 上连续，且 $f'(a)&gt;0$，$f'(b)&lt;0$，则下列结论中错误的是________．(A) 至少存在一点 $x_{0}\in(a,b)$，使得 $f(x_{0})&gt;f(a)$　(B) 至少存在一点 $x_{0}\in(a,b)$，使得 $f(x_{0})&gt;f(b)$　(C) 至少存在一点 $x_{0}\in(a,b)$，使得 $f'(x_{0})=0$　(D) 至少存在一点 $x_{0}\in(a,b)$，使得 $f(x_{0})=0$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 首先，由已知 $f'(x)$ 在 $[a,b]$ 上连续，且 $f'(a)&gt;0$，$f'(b)&lt;0$，则由介值定理，至少存在一点 $x_{0}\in(a,b)$，使得 $f'(x_{0})=0$；另外，$f'(a)=\lim\limits_{x\to a^{+}}\dfrac{f(x)-f(a)}{x-a}&gt;0$，由极限的保号性，至少存在一点 $x_{0}\in(a,b)$，使得 $\dfrac{f(x_{0})-f(a)}{x_{0}-a}&gt;0$，即 $f(x_{0})&gt;f(a)$．同理，至少存在一点 $x_{0}\in(a,b)$ 使得 $f(x_{0})&gt;f(b)$．所以，选项 (A)、(B)、(C) 都正确．故应选 (D)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (D)</span></div>
+</div>
+</article>
+<article class="problem" id="q214" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="214">【214】</span>
+<span class="q-group">有关导数定义的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=\lim\limits_{n\to\infty}\sqrt[n]{1+|x|^{3n}}$，则 $f(x)$ 在 $(-\infty,+\infty)$ 内不可导点的个数为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 先求 $f(x)$ 的表达式．当 $|x|&lt;1$ 时，$\lim\limits_{n\to\infty}\sqrt[n]{1+|x|^{3n}}=\lim\limits_{n\to\infty}(1+|x|^{3n})^{\frac{1}{n}}=1$；当 $|x|=1$ 时，$\lim\limits_{n\to\infty}\sqrt[n]{1+|x|^{3n}}=\lim\limits_{n\to\infty}(1+1)^{\frac{1}{n}}=1$；当 $|x|&gt;1$ 时，$\lim\limits_{n\to\infty}\sqrt[n]{1+|x|^{3n}}=|x|^{3}\lim\limits_{n\to\infty}\left(1+\dfrac{1}{|x|^{3n}}\right)^{\frac{1}{n}}=|x|^{3}$，因此 $f(x)=\begin{cases}1, &amp; |x|\leqslant1\\ |x|^{3}, &amp; |x|&gt;1\end{cases}$．由 $y=f(x)$ 的表达式，易知 $f(x)$ 在 $x=\pm1$ 处不可导．故应填 2．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 2</span></div>
+</div>
+</article>
+<article class="problem" id="q215" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="215">【215】</span>
+<span class="q-group">有关导数定义的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)$ 具有一阶连续导数，且 $f''(0)$ 存在，$f(0)=0$，试证明函数 $$F(x)=\begin{cases}f'(0), &amp; x=0,\\ \dfrac{f(x)}{x}, &amp; x\neq0\end{cases}$$ 是连续的，且具有一阶连续导数．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>证</strong> 函数 $F(x)$ 在 $x\neq0$ 时显然连续．由导数定义，有 $\lim\limits_{x\to0}F(x)=\lim\limits_{x\to0}\dfrac{f(x)}{x}=\lim\limits_{x\to0}\dfrac{f(x)-f(0)}{x-0}=f'(0)=F(0)$，故 $F(x)$ 在 $x=0$ 处连续．当 $x\neq0$ 时，$F'(x)=\dfrac{xf'(x)-f(x)}{x^{2}}$ 显然是连续的．现证 $F(x)$ 在 $x=0$ 处是可导的．这是因为由导数定义及洛必达法则有 $$F'(0)=\lim_{x\to0}\frac{F(x)-F(0)}{x-0}=\lim_{x\to0}\frac{f(x)-xf'(0)}{x^{2}}=\lim_{x\to0}\frac{f'(x)-f'(0)}{2x}=\frac{1}{2}f''(0).$$ 再证明 $F'(x)$ 在 $x=0$ 处是连续的．事实上，由连续的定义有 $$\lim_{x\to0}F'(x)=\lim_{x\to0}\frac{xf'(x)-f(x)}{x^{2}}=\lim_{x\to0}\left\{\frac{x[f'(x)-f'(0)]}{x^{2}}-\frac{f(x)-xf'(0)}{x^{2}}\right\}=\lim_{x\to0}\frac{f'(x)-f'(0)}{x}-\lim_{x\to0}\frac{f'(x)-f'(0)}{2x}=f''(0)-\frac{1}{2}f''(0)=F'(0).$$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">即 $F(x)$ 是连续的，且具有一阶连续导数</span></div>
+</div>
+</article>
+<article class="problem" id="q216" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="216">【216】</span>
+<span class="q-group">有关导数定义的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $f(x)=\begin{cases}x^{a}\sin\dfrac{1}{x^{b}}, &amp; x\neq0\\ 0, &amp; x=0\end{cases}$（$a,b$ 为常数且 $b&gt;0$），问 $a,b$ 满足什么条件，才能使 (1)$f(x)$ 在 $[0,1]$ 上连续；(2)$f'(0)$ 存在；(3)$f'(x)$ 在 $[0,1]$ 上有界．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> (1) 由 $\lim\limits_{x\to0}f(x)=\lim\limits_{x\to0}x^{a}\sin\dfrac{1}{x^{b}}=f(0)=0$ 得 $a&gt;0$；(2) 由 $f'(0)=\lim\limits_{x\to0}\dfrac{f(x)-f(0)}{x}=\lim\limits_{x\to0}x^{a-1}\sin\dfrac{1}{x^{b}}$ 得 $a&gt;1$；(3) $f'(x)=\begin{cases}ax^{a-1}\sin\dfrac{1}{x^{b}}+(-b)x^{a-b-1}\cos\dfrac{1}{x^{b}}, &amp; x\neq0\\ 0, &amp; x=0\end{cases}$ 要使 $f'(x)$ 在 $[0,1]$ 上有界，则必须 $\begin{cases}a-1\geqslant0\\ a-b-1\geqslant0\end{cases}$，从而 $a\geqslant b+1$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(1) $a&gt;0$；(2) $a&gt;1$；(3) $a\geqslant b+1$</span></div>
+</div>
+</article>
+<h3 class="grp-h">有关高阶导数的综合题</h3>
+<article class="problem" id="q217" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="217">【217】</span>
+<span class="q-group">有关高阶导数的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $f(x)=\ln(1+ax^{2})-b\displaystyle\int\dfrac{\mathrm{d}x}{1+ax^{2}}$，试问 $a,b$ 为何值时，$f''(0)=4$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 因为 $f'(x)=\dfrac{2ax-b}{1+ax^{2}}$，所以有 $f''(x)=\dfrac{2a(1+ax^{2})-2ax(2ax-b)}{(1+ax^{2})^{2}}$．由 $4=f''(0)=2a$，可知 $a=2$，而 $b$ 可为任一实数．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$a=2$，$b$ 可为任一实数</span></div>
+</div>
+</article>
+<article class="problem" id="q218" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="218">【218】</span>
+<span class="q-group">有关高阶导数的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $\begin{cases}x=\displaystyle\int_{0}^{t}f(u^{2})\,\mathrm{d}u\\ y=[f(t^{2})]^{2}\end{cases}$，其中 $f(u)$ 具有二阶导数，且 $f(u)\neq0$，求 $\dfrac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}=\dfrac{4tf(t^{2})\cdot f'(t^{2})}{f(t^{2})}=4tf'(t^{2})$，$\dfrac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}\left(\dfrac{\mathrm{d}y}{\mathrm{d}x}\right)}{\dfrac{\mathrm{d}x}{\mathrm{d}t}}=\dfrac{4[f'(t^{2})+2t^{2}f''(t^{2})]}{f(t^{2})}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\dfrac{4[f'(t^{2})+2t^{2}f''(t^{2})]}{f(t^{2})}$</span></div>
+</div>
+</article>
+<article class="problem" id="q219" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="219">【219】</span>
+<span class="q-group">有关高阶导数的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $y=y(x)$ 由 $\begin{cases}x=\arctan t\\ 2y-ty^{2}+e^{t}=5\end{cases}$ 所确定，求 $\dfrac{\mathrm{d}y}{\mathrm{d}x}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\mathrm{d}x}{\mathrm{d}t}=\dfrac{1}{1+t^{2}}$，由 $2\dfrac{\mathrm{d}y}{\mathrm{d}t}-y^{2}-2ty\dfrac{\mathrm{d}y}{\mathrm{d}t}+e^{t}=0$ 得 $\dfrac{\mathrm{d}y}{\mathrm{d}t}=\dfrac{y^{2}-e^{t}}{2(1-ty)}$，因而 $\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}=\dfrac{(y^{2}-e^{t})(1+t^{2})}{2(1-ty)}$．<strong>点评</strong> 本题为参数方程求导和隐函数求导的综合题，所以答案中应既含有参数 $t$，又含有因变量 $y$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{(y^{2}-e^{t})(1+t^{2})}{2(1-ty)}$</span></div>
+</div>
+</article>
+<article class="problem" id="q220" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="220">【220】</span>
+<span class="q-group">有关高阶导数的综合题</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $y=y(x)$ 由方程组 $\begin{cases}x=3t^{2}+2t+3\\ e^{y}\sin t-y+1=0\end{cases}$ 所确定，试求 $\dfrac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}\Big|_{t=0}$．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 对方程组两边分别取微分，得 $\begin{cases}\mathrm{d}x=(6t+2)\,\mathrm{d}t\\ e^{y}\sin t\,\mathrm{d}y+e^{y}\cos t\,\mathrm{d}t-\mathrm{d}y=0\end{cases}$ 则 $\dfrac{\mathrm{d}x}{\mathrm{d}t}=6t+2$，$\dfrac{\mathrm{d}y}{\mathrm{d}t}=\dfrac{e^{y}\cos t}{1-e^{y}\sin t}$，且 $y=e^{y}\sin t+1$，$\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}y}{\mathrm{d}t}\cdot\dfrac{\mathrm{d}t}{\mathrm{d}x}=\dfrac{e^{y}\cos t}{(1-e^{y}\sin t)(6t+2)}=\dfrac{e^{y}\cos t}{(2-y)(6t+2)}$，$\dfrac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=\dfrac{\mathrm{d}}{\mathrm{d}x}\left(\dfrac{\mathrm{d}y}{\mathrm{d}x}\right)=\dfrac{\mathrm{d}}{\mathrm{d}t}\left[\dfrac{e^{y}\cos t}{(2-y)(6t+2)}\right]\dfrac{\mathrm{d}t}{\mathrm{d}x}=\dfrac{(2-y)(6t+2)\left(e^{y}\cos t\dfrac{\mathrm{d}y}{\mathrm{d}t}-e^{y}\sin t\right)}{(2-y)^{2}(6t+2)^{3}}-\dfrac{e^{y}\cos t\left[(2-y)6-\dfrac{\mathrm{d}y}{\mathrm{d}t}(6t+2)\right]}{(2-y)^{2}(6t+2)^{3}}$．由于 $\dfrac{\mathrm{d}y}{\mathrm{d}t}\Big|_{t=0}=e$，$y\big|_{t=0}=1$，代入上式得 $\dfrac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}\Big|_{t=0}=\dfrac{e(2e-3)}{4}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\dfrac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}\Big|_{t=0}=\dfrac{e(2e-3)}{4}$</span></div>
+</div>
+</article>
+<h3 class="grp-h">导数几何意义的讨论</h3>
+<article class="problem" id="q221" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="221">【221】</span>
+<span class="q-group">导数几何意义的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设 $(x_{0},y_{0})$ 是抛物线 $y=ax^{2}+bx+c$ 上的一点，若在该点的切线过原点，则系数应满足的关系是________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $y'=2ax+b$，$y'\big|_{x=x_{0}}=2ax_{0}+b$，则曲线在 $(x_{0},y_{0})$ 点的切线方程为 $y-(ax_{0}^{2}+bx_{0}+c)=(2ax_{0}+b)(x-x_{0})$，把 $(0,0)$ 代入方程得 $ax_{0}^{2}-c=0$．故应填 $ax_{0}^{2}=c$，$b$ 任意．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $ax_{0}^{2}=c$，$b$ 任意</span></div>
+</div>
+</article>
+<article class="problem" id="q222" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="222">【222】</span>
+<span class="q-group">导数几何意义的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知曲线 $y=x^{3}-3a^{2}x+b$ 与 $x$ 轴相切，则 $b^{2}$ 可以通过 $a$ 表示为 $b^{2}=$________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题设，在切点处有 $y'=3x^{2}-3a^{2}=0$，即 $x_{0}^{2}=a^{2}$．又在此点 $y$ 坐标为 $0$，于是有 $x_{0}^{3}-3a^{2}x_{0}+b=0$，所以 $b^{2}=x_{0}^{2}(3a^{2}-x_{0}^{2})^{2}=a^{2}\cdot4a^{4}=4a^{6}$．故应填 $4a^{6}$．<strong>点评</strong> 本题考查切线问题，实际上是讨论导数的几何意义．题设曲线的切线斜率为零，即 $y'=0$，由此可确定切点的坐标应满足的条件，再根据切点纵坐标等于零，即可得出结果．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $4a^{6}$</span></div>
+</div>
+</article>
+<article class="problem" id="q223" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="223">【223】</span>
+<span class="q-group">导数几何意义的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $y=f(x)$ 由方程 $e^{2x+y}-\cos(xy)=e-1$ 所确定，则曲线 $y=f(x)$ 在点 $(0,1)$ 处的法线方程为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 方程两边关于 $x$ 求导得 $e^{2x+y}\cdot(2+y')+\sin(xy)\cdot(y+xy')=0$．把 $\begin{cases}x=0\\ y=1\end{cases}$ 代入得 $y'\Big|_{x=0}=-2$，故 $y=f(x)$ 在 $(0,1)$ 处法线方程为 $y-1=\dfrac{1}{2}(x-0)$，即 $x-2y+2=0$．故应填 $x-2y+2=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $x-2y+2=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q224" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="224">【224】</span>
+<span class="q-group">导数几何意义的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $\begin{cases}x=1+t^{2}\\ y=t^{3}\end{cases}$ 在 $t=2$ 处的切线方程为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> $\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}=\dfrac{3t^{2}}{2t}=\dfrac{3}{2}t$，$\dfrac{\mathrm{d}y}{\mathrm{d}x}\Big|_{t=2}=3$，且 $t=2$ 时，$x=5$，$y=8$，则曲线在 $t=2$ 处切线方程为 $y-8=3(x-5)$，即 $3x-y-7=0$．故应填 $3x-y-7=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $3x-y-7=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q225" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="225">【225】</span>
+<span class="q-group">导数几何意义的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">设函数 $y=y(x)$ 由参数方程 $\begin{cases}x=t^{2}+2t\\ y=\ln(1+t)\end{cases}$ 确定，则曲线 $y=y(x)$ 在 $x=3$ 处的法线与 $x$ 轴交点的横坐标是________．(A) $\dfrac{1}{8}\ln2+3$　(B) $-\dfrac{1}{8}\ln2+3$　(C) $-8\ln2+3$　(D) $8\ln2+3$</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 当 $x=3$ 时，有 $t^{2}+2t=3$，得 $t=1$，$t=-3$（舍去，此时 $y$ 无意义）．于是 $\dfrac{\mathrm{d}y}{\mathrm{d}x}\Bigg|_{t=1}=\dfrac{\dfrac{1}{1+t}}{2t+2}\Bigg|_{t=1}=\dfrac{1}{8}$，可见过点 $x=3$（此时 $y=\ln2$）的法线方程为 $y-\ln2=-8(x-3)$，令 $y=0$，得其与 $x$ 轴交点的横坐标为 $x=\dfrac{1}{8}\ln2+3$．故应选 (A)．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应选 (A)</span></div>
+</div>
+</article>
+<article class="problem" id="q226" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="226">【226】</span>
+<span class="q-group">导数几何意义的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">对数螺线 $\rho=e^{\theta}$ 在点 $(\rho,\theta)=\left(e^{\frac{\pi}{2}},\dfrac{\pi}{2}\right)$ 处的切线的直角坐标方程为________．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 对数螺线的参数方程为 $\begin{cases}x=e^{\theta}\cos\theta\\ y=e^{\theta}\sin\theta\end{cases}$，$\theta=\dfrac{\pi}{2}$ 处对应点为 $\left(0,e^{\frac{\pi}{2}}\right)$．而 $\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{\mathrm{d}y/\mathrm{d}\theta}{\mathrm{d}x/\mathrm{d}\theta}=\dfrac{\sin\theta+\cos\theta}{\cos\theta-\sin\theta}$，所以 $\dfrac{\mathrm{d}y}{\mathrm{d}x}\Bigg|_{\theta=\frac{\pi}{2}}=-1$．则对数螺线在 $\left(0,e^{\frac{\pi}{2}}\right)$ 的切线方程为 $y-e^{\frac{\pi}{2}}=-x$．故应填 $x+y-e^{\frac{\pi}{2}}=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故应填 $x+y-e^{\frac{\pi}{2}}=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q227" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="227">【227】</span>
+<span class="q-group">导数几何意义的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知曲线的极坐标方程是 $r=1-\cos\theta$，求该曲线上对应于 $\theta=\dfrac{\pi}{6}$ 处的切线与法线的直角坐标方程．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 此曲线的参数方程为 $\begin{cases}x=(1-\cos\theta)\cos\theta,\\ y=(1-\cos\theta)\sin\theta,\end{cases}$ 即 $\begin{cases}x=\cos\theta-\cos^{2}\theta,\\ y=\sin\theta-\sin\theta\cos\theta.\end{cases}$ 由 $\theta=\dfrac{\pi}{6}$ 得切点的坐标为 $\left(\dfrac{\sqrt{3}}{2}-\dfrac{3}{4},\dfrac{1}{2}-\dfrac{\sqrt{3}}{4}\right)$．$\dfrac{\mathrm{d}y}{\mathrm{d}x}\Bigg|_{\theta=\frac{\pi}{6}}=\dfrac{\dfrac{\mathrm{d}y}{\mathrm{d}\theta}}{\dfrac{\mathrm{d}x}{\mathrm{d}\theta}}\Bigg|_{\theta=\frac{\pi}{6}}=\dfrac{\cos\theta-\cos^{2}\theta+\sin^{2}\theta}{-\sin\theta+2\cos\theta\sin\theta}\Bigg|_{\theta=\frac{\pi}{6}}=1$．于是所求切线方程为 $y-\dfrac{1}{2}+\dfrac{\sqrt{3}}{4}=x-\dfrac{\sqrt{3}}{2}+\dfrac{3}{4}$，即 $x-y-\dfrac{3\sqrt{3}}{4}+\dfrac{5}{4}=0$．法线方程为 $y-\dfrac{1}{2}+\dfrac{\sqrt{3}}{4}=-\left(x-\dfrac{\sqrt{3}}{2}+\dfrac{3}{4}\right)$，即 $x+y-\dfrac{\sqrt{3}}{4}+\dfrac{1}{4}=0$．<strong>点评</strong> 为求出曲线的切线与法线的直角坐标方程，可把 $\theta$ 视为参数，写出曲线的参数方程，再利用参数方程求导公式即可得到切线斜率．一般地，极坐标方程 $r=r(\theta)$ 均可化为参数方程 $\begin{cases}x=r(\theta)\cos\theta\\ y=r(\theta)\sin\theta\end{cases}$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">切线方程为 $x-y-\dfrac{3\sqrt{3}}{4}+\dfrac{5}{4}=0$；法线方程为 $x+y-\dfrac{\sqrt{3}}{4}+\dfrac{1}{4}=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q228" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="228">【228】</span>
+<span class="q-group">导数几何意义的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">已知 $f(x)$ 是周期为 5 的连续函数，它在 $x=0$ 的某个邻域内满足关系式 $$f(1+\sin x)-3f(1-\sin x)=8x+\alpha(x),$$ 其中 $\alpha(x)$ 是当 $x\to0$ 时比 $x$ 高阶的无穷小，且 $f(x)$ 在 $x=1$ 处可导，求曲线 $y=f(x)$ 在点 $(6,f(6))$ 处的切线方程．</div>
+
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由 $\lim\limits_{x\to0}[f(1+\sin x)-3f(1-\sin x)]=\lim\limits_{x\to0}[8x+\alpha(x)]$，得 $f(1)-3f(1)=0$，故 $f(1)=0$．又 $\lim\limits_{x\to0}\dfrac{f(1+\sin x)-3f(1-\sin x)}{\sin x}=\lim\limits_{x\to0}\left[\dfrac{8x}{\sin x}+\dfrac{\alpha(x)}{\sin x}\right]=8$，设 $\sin x=t$，则有 $\lim\limits_{x\to0}\dfrac{f(1+\sin x)-3f(1-\sin x)}{\sin x}=\lim\limits_{t\to0}\dfrac{f(1+t)-f(1)}{t}+3\lim\limits_{t\to0}\dfrac{f(1-t)-f(1)}{-t}=4f'(1)$，所以 $f'(1)=2$．由于 $f(x+5)=f(x)$，所以 $f(6)=f(1)=0$，$f'(6)=f'(1)=2$．故所求的切线方程为 $y=2(x-6)$，即 $2x-y-12=0$．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">故所求的切线方程为 $2x-y-12=0$</span></div>
+</div>
+</article>
+<article class="problem" id="q229" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="229">【229】</span>
+<span class="q-group">导数几何意义的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">如图 229，设曲线 $L$ 的方程为 $y=f(x)$，且 $y''&gt;0$．又 $MT$、$MP$ 分别为该曲线在点 $M(x_{0},y_{0})$ 处的切线和法线．已知线段 $MP$ 的长度为 $\dfrac{(1+{y_0'}^{2})^{\frac{3}{2}}}{y_0''}$（其中 ${y_0'}=y'(x_{0})$，${y_0''}=y''(x_{0})$），试推导出点 $P(\xi,\eta)$ 的坐标表达式．</div>
+<div class="figure-note">图 229：平面直角坐标系，横轴 $x$、纵轴 $y$，原点 $O$；一条凹（下凸）曲线 $L$ 自左向右上升，曲线上标有点 $M(x_{0},y_{0})$；过 $M$ 的切线 $MT$ 自 $M$ 向左下方延伸，与 $x$ 轴交于 $T$（$T$ 在原点右侧）；过 $M$ 的法线 $MP$ 自 $M$ 向左上方延伸，到达第一象限上部、紧邻 $y$ 轴右侧的点 $P(\xi,\eta)$（$P$ 标注在 $y$ 轴右侧顶端附近）．</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 由题设得 $(x_{0}-\xi)^{2}+(y_{0}-\eta)^{2}=\dfrac{(1+{y_0'}^{2})^{3}}{{y_0''}^{2}}$　① 又 $PM\perp MT$，所以 ${y_0'}=-\dfrac{x_{0}-\xi}{y_{0}-\eta}$　② 由①，②解得 $(y_{0}-\eta)^{2}=\dfrac{(1+{y_0'}^{2})^{3}}{{y_0''}^{2}}$ 由于 $y''&gt;0$，曲线 $L$ 是凹的，故 $y_{0}-\eta&lt;0$，从而 $y_{0}-\eta=-\dfrac{1+{y_0'}^{2}}{y_0''}$．又 $x_{0}-\xi=-y_{0}'(y_{0}-\eta)=\dfrac{y_{0}'(1+{y_0'}^{2})}{y_0''}$，于是得 $\begin{cases}\xi=x_{0}-\dfrac{y_{0}'(1+{y_0'}^{2})}{y_0''}\\ \eta=y_{0}+\dfrac{(1+{y_0'}^{2})}{y_0''}\end{cases}$</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$\xi=x_{0}-\dfrac{y_{0}'(1+{y_0'}^{2})}{y_0''}$，$\eta=y_{0}+\dfrac{1+{y_0'}^{2}}{y_0''}$</span></div>
+</div>
+</article>
+<article class="problem" id="q230" data-secanchor="s4">
+<div class="q-head">
+<span class="q-no" data-n="230">【230】</span>
+<span class="q-group">导数几何意义的讨论</span>
+<button class="done-btn" type="button">标记已做</button>
+</div>
+<div class="q-stem">曲线 $y=\dfrac{1}{\sqrt{x}}$ 的切线与 $x$ 轴和 $y$ 轴围成一个图形，记切点的横坐标为 $a$，试求切线方程和这个图形的面积．当切点沿曲线趋于无穷远时，该面积的变化趋势如何？</div>
+<div class="figure-note">（图 230，位于本页右上方、切线方程段落旁）第一象限内的曲线 $y=\dfrac{1}{\sqrt{x}}$：单调递减、下凸，向左上无限逼近 $y$ 轴，向右延伸越过 $Q$ 后继续逼近 $x$ 轴；曲线在点 $P$ 处的切线向左上交 $y$ 轴于 $R$、向右下交 $x$ 轴于 $Q$；自 $P$ 向 $x$ 轴引虚线垂线，垂足横坐标标 $\alpha$；原点标 $O$，两轴末端带箭头并标 $x$、$y$．</div>
+<hr class="div">
+<button class="solution-toggle" type="button">收起解析 ▴</button>
+<div class="solution">
+<div class="sol-label">【解析】</div>
+<div class="sol-body"><strong>解</strong> 如图 230 所示．由 $y=\dfrac{1}{\sqrt{x}}$，得 $y'=-\dfrac{1}{2}x^{-\frac{3}{2}}$，……（解答接下一批）
+则切点 $P\left(a,\dfrac{1}{\sqrt{a}}\right)$ 处的切线方程为 $y-\dfrac{1}{\sqrt{a}}=-\dfrac{1}{2\sqrt{a^{3}}}(x-a)$，切线与 $x$ 轴和 $y$ 轴的交点分别为 $Q(3a,0)$ 和 $R\left(0,\dfrac{3}{2\sqrt{a}}\right)$．于是，$\triangle ORQ$ 的面积 $S=\dfrac{1}{2}\cdot 3a\cdot\dfrac{3}{2\sqrt{a}}=\dfrac{9\sqrt{a}}{4}$，当切点沿 $x$ 轴正方向趋于无穷远时，有 $\lim\limits_{a\to+\infty}S=+\infty$，当切点沿 $y$ 轴正方向趋于无穷远时，有 $\lim\limits_{a\to 0^{+}}S=0$．<strong>点评</strong>　求出切线在坐标轴上的截距，就可得到所求的面积．本题应注意的是切点沿曲线趋于无穷远有两种情形：一种是沿 $x$ 轴正方向趋于无穷远（$a\to+\infty$），另一种是沿 $y$ 轴正方向趋于无穷远（$a\to 0^{+}$）．</div>
+<div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（切线方程 $y-\dfrac{1}{\sqrt{a}}=-\dfrac{1}{2\sqrt{a^{3}}}(x-a)$；$\triangle ORQ$ 的面积 $S=\dfrac{9\sqrt{a}}{4}$；切点沿 $x$ 轴正方向趋于无穷远时 $\lim\limits_{a\to+\infty}S=+\infty$，沿 $y$ 轴正方向趋于无穷远时 $\lim\limits_{a\to 0^{+}}S=0$）</span></div>
+</div>
+</article>
+<h2 class="sec-h" id="sec-s5">1. 微分中值定理</h2>
+<div class="sec-intro">1．罗尔定理 设函数 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $f(a)=f(b)$，则至少存在一点 $\xi\in(a,b)$，使得 $f'(\xi)=0$．2．拉格朗日定理 设函数 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，则至少存在一点 $\xi\in(a,b)$，使得 $f(b)-f(a)=f'(\xi)(b-a)$．3．柯西定理 设函数 $f(x)$、$g(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，$g'(x)$ 在 $(a,b)$ 内每一点处均不为零，则至少有一点 $\xi\in(a,b)$，使得 $\dfrac{f(b)-f(a)}{g(b)-g(a)}=\dfrac{f'(\xi)}{g'(\xi)}$．</div>
+<h3 class="grp-h">验证中值定理及其有关中值的计算</h3>
+</main>
+</div>
+<div class="qnav">
+  <button id="qnav-prev" title="上一题">↑</button>
+  <button id="qnav-next" title="下一题">↓</button>
+</div>
+<footer>
+  内容来自《吉米多维奇高等数学习题精选精解》（张天德、蒋晓云主编）· 仅供个人学习使用<br>
+  <a href="../index.html" style="color:var(--accent);">返回总目录</a> <a class="icon-btn" href="chapter-01.html">上一章</a> <a class="icon-btn" href="chapter-03.html">下一章</a>
+</footer>
+</body>
+</html>
