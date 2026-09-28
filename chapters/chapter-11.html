@@ -733,7 +733,7 @@
 <button class="solution-toggle" type="button">收起解析 ▴</button>
 <div class="solution">
 <div class="sol-label">【解析】</div>
-<div class="sol-body"><strong>解</strong> 因为 $|u_n|^2+|v_n|^2\geqslant 2|u_n\cdot v_n|$. 由正项级数的比较审敛法知 $\sum_{n=1}^{\infty}|u_n\cdot v_n|$ 收敛. 所以 $\sum_{n=1}^{\infty}u_n\cdot v_n$ 绝对收敛. 即 $\sum_{n=1}^{\infty}(u_n+v_n)^2$ 收敛. 故应选(A). <strong>点评</strong> 比较审敛法只适用于正项级数敛散性的判断，因此选项(D)是不对的. 这是任意项级数与正项级数敛散性判断的一个根本区别.</div>
+<div class="sol-body"><strong>解</strong> 因为 $|u_n|^2+|v_n|^2\geqslant 2|u_n\cdot v_n|$. 由正项级数的比较审敛法知 $\sum_{n=1}^{\infty}|u_n\cdot v_n|$ 收敛. 所以 $\sum_{n=1}^{\infty}u_n\cdot v_n$ 绝对收敛. 即 $\sum_{n=1}^{\infty}(u_n+v_n)^2$ 收敛. 故应选(A). <strong>点评</strong> 比较审敛法只适用于正项级数敛散性的判别，因此选项(D)是不对的. 这是任意项级数与正项级数敛散性判断的一个根本区别.</div>
 <div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">(A)</span></div>
 </div>
 </article>
@@ -1079,7 +1079,7 @@
 <button class="solution-toggle" type="button">收起解析 ▴</button>
 <div class="solution">
 <div class="sol-label">【解析】</div>
-<div class="sol-body"><strong>解</strong> (1) 因为 $0&lt;n-\ln n&lt;n$，所以 $\sum_{n=2}^{\infty}\left|\frac{(-1)^n}{n-\ln n}\right|=\sum_{n=2}^{\infty}\frac{1}{n-\ln n}&gt;\sum_{n=2}^{\infty}\frac{1}{n}$，从而 $\sum_{n=2}^{\infty}\left|\frac{(-1)^n}{n-\ln n}\right|$ 发散. (2) 莱布尼兹判别法 1) 由 $\ln\left(1+\frac{1}{n}\right)&lt;1$ 得 $\frac{1}{n}&gt;\ln(1+n)-\ln n$，从而 $1-\ln(1+n)&gt;-\ln n$，所以 $(n+1)-\ln(1+n)&gt;n-\ln n$，即 $\frac{1}{(n+1)-\ln(n+1)}&lt;\frac{1}{n-\ln n}\Rightarrow\left|u_{n+1}\right|&lt;\left|u_n\right|$. 2) $\lim_{n\to\infty}\frac{1}{n-\ln n}=\lim_{x\to+\infty}\frac{1}{x-\ln x}=\lim_{x\to+\infty}\frac{\frac{1}{x}}{1-\frac{1}{x}}=\frac{0}{1-0}=0$. 所以 $\sum_{n=2}^{\infty}\frac{(-1)^n}{n-\ln n}$ 条件收敛.</div>
+<div class="sol-body"><strong>解</strong> (1) 因为 $0&lt;n-\ln n&lt;n$，所以 $\sum_{n=2}^{\infty}\left|\frac{(-1)^n}{n-\ln n}\right|=\sum_{n=2}^{\infty}\frac{1}{n-\ln n}&gt;\sum_{n=2}^{\infty}\frac{1}{n}$，从而 $\sum_{n=2}^{\infty}\left|\frac{(-1)^n}{n-\ln n}\right|$ 发散. (2) 莱布尼兹判别法 1) 由 $\ln\left(1+\frac{1}{n}\right)&lt;1$ 得 $1&gt;\ln(1+n)-\ln n$，从而 $1-\ln(1+n)&gt;-\ln n$，所以 $(n+1)-\ln(1+n)&gt;n-\ln n$，即 $\frac{1}{(n+1)-\ln(n+1)}&lt;\frac{1}{n-\ln n}\Rightarrow\left|u_{n+1}\right|&lt;\left|u_n\right|$. 2) $\lim_{n\to\infty}\frac{1}{n-\ln n}=\lim_{x\to+\infty}\frac{1}{x-\ln x}=\lim_{x\to+\infty}\frac{\frac{1}{x}}{1-\frac{1}{x}}=\frac{0}{1-0}=0$. 所以 $\sum_{n=2}^{\infty}\frac{(-1)^n}{n-\ln n}$ 条件收敛.</div>
 <div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">条件收敛</span></div>
 </div>
 </article>
@@ -1669,7 +1669,7 @@
 <button class="solution-toggle" type="button">收起解析 ▴</button>
 <div class="solution">
 <div class="sol-label">【解析】</div>
-<div class="sol-body"><strong>解</strong> 因为 $$\lim_{n\to\infty}\left|\dfrac{(2n+4)x^{2n+3}}{(n+1)!}\cdot\dfrac{n!}{(2n+2)x^{2n+1}}\right|=\lim_{n\to\infty}\dfrac{(2n+4)x^2}{(n+1)(2n+2)}=0&lt;1,$$ 故该级数的收敛域为 $(-\infty,+\infty)$. 设 $S(x)=\sum\limits_{n=1}^{\infty}\dfrac{2n+2}{n!}x^{2n+1}$， 则 $$S(x)=\left[\ \sum_{n=1}^{\infty}\dfrac{x^{2n+2}}{n!}\right]'=\left[x^2\cdot\sum_{n=1}^{\infty}\dfrac{(x^2)^n}{n!}\right]'$$ $$=\left[x^2(e^{x^2}-1)\right]'=2x(e^{x^2}-1)+2x^3e^{x^2}，\quad -\infty&lt;x&lt;+\infty$$</div>
+<div class="sol-body"><strong>解</strong> 因为 $$\lim_{n\to\infty}\left|\dfrac{(2n+4)x^{2n+3}}{(n+1)!}\cdot\dfrac{n!}{(2n+2)x^{2n+1}}\right|=\lim_{n\to\infty}\dfrac{(2n+4)x^2}{(n+1)(2n+2)}=0&lt;1,$$ 故该级数的收敛域为 $(-\infty,+\infty)$. 设 $S(x)=\sum\limits_{n=1}^{\infty}\dfrac{2n+2}{n!}x^{2n+1}$， 则 $$S(x)=\left[\ \sum_{n=1}^{\infty}\dfrac{x^{2n+2}}{n!}\right]'=\left[x^2\cdot\sum_{n=1}^{\infty}\dfrac{(x^2)^n}{n!}\right]'$$ $$=\left[x^2(e^{x^2}-1)\right]'=2x(e^{x^2}-1)+2x^3e^{x^2},\quad -\infty&lt;x&lt;+\infty$$</div>
 <div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">收敛域为 $(-\infty,+\infty)$；$S(x)=2x(e^{x^2}-1)+2x^3e^{x^2}$，$-\infty&lt;x&lt;+\infty$</span></div>
 </div>
 </article>
@@ -1804,7 +1804,7 @@
 <button class="solution-toggle" type="button">收起解析 ▴</button>
 <div class="solution">
 <div class="sol-label">【解析】</div>
-<div class="sol-body"><strong>解</strong> 因 $\dfrac{1}{1+x^2}=\sum\limits_{n=0}^{\infty}(-1)^nx^{2n},x\in(-1,1)$，故 $$\arctan x=\int_0^x(\arctan x)'\,\mathrm{d}x=\sum_{n=0}^{\infty}\dfrac{(-1)^n}{2n+1}x^{2n+1},\quad x\in[-1,1]$$ 于是 $$f(x)=1+\sum_{n=0}^{\infty}\dfrac{(-1)^n}{2n+1}x^{2n}+\sum_{n=0}^{\infty}\dfrac{(-1)^n}{2n+1}x^{2n+2}=1+\sum_{n=1}^{\infty}\dfrac{(-1)^n}{2n+1}x^{2n}+\sum_{n=1}^{\infty}\dfrac{(-1)^{n-1}}{2n-1}x^{2n}$$ $$=1+\sum_{n=1}^{\infty}\dfrac{(-1)^n2}{1-4n^2}x^{2n},\quad x\in[-1,1]$$ 因此 $\sum\limits_{n=1}^{\infty}\dfrac{(-1)^n}{1-4n^2}=\dfrac{1}{2}\left[f(1)-1\right]=\dfrac{\pi}{4}-\dfrac{1}{2}$. <strong>点评</strong> 由于 $\dfrac{1+x^2}{x}=x^{-1}+x$ 已是 $x$ 的幂级数形式，故可用间接法将 $\arctan x$ 展开为 $x$ 的幂级数.</div>
+<div class="sol-body"><strong>解</strong> 因 $\dfrac{1}{1+x^2}=\sum\limits_{n=0}^{\infty}(-1)^nx^{2n},x\in(-1,1)$，故 $$\arctan x=\int_0^x(\arctan x)'\,\mathrm{d}x=\sum_{n=0}^{\infty}\dfrac{(-1)^n}{2n+1}x^{2n+1},\quad x\in[-1,1]$$ 于是 $$f(x)=1+\sum_{n=1}^{\infty}\dfrac{(-1)^n}{2n+1}x^{2n}+\sum_{n=0}^{\infty}\dfrac{(-1)^n}{2n+1}x^{2n+2}=1+\sum_{n=1}^{\infty}\dfrac{(-1)^n}{2n+1}x^{2n}+\sum_{n=1}^{\infty}\dfrac{(-1)^{n-1}}{2n-1}x^{2n}$$ $$=1+\sum_{n=1}^{\infty}\dfrac{(-1)^n2}{1-4n^2}x^{2n},\quad x\in[-1,1]$$ 因此 $\sum\limits_{n=1}^{\infty}\dfrac{(-1)^n}{1-4n^2}=\dfrac{1}{2}\left[f(1)-1\right]=\dfrac{\pi}{4}-\dfrac{1}{2}$. <strong>点评</strong> 由于 $\dfrac{1+x^2}{x}=x^{-1}+x$ 已是 $x$ 的幂级数形式，故可用间接法将 $\arctan x$ 展开为 $x$ 的幂级数.</div>
 <div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$f(x)=1+\sum\limits_{n=1}^{\infty}\dfrac{(-1)^n2}{1-4n^2}x^{2n}$，$x\in[-1,1]$；$\sum\limits_{n=1}^{\infty}\dfrac{(-1)^n}{1-4n^2}=\dfrac{\pi}{4}-\dfrac{1}{2}$</span></div>
 </div>
 </article>
@@ -1951,7 +1951,7 @@
 <div class="solution">
 <div class="sol-label">【解析】</div>
 <div class="sol-body"><strong>解</strong> $f(x)=\dfrac{1}{x^2+3x+2}=\dfrac{1}{(x+1)(x+2)}=\dfrac{1}{x+1}-\dfrac{1}{x+2}$, 其中， $$\dfrac{1}{x+1}=\dfrac{1}{2\left(1+\dfrac{x-1}{2}\right)}=\dfrac{1}{2}\sum_{n=0}^{\infty}(-1)^n\Big(\dfrac{x-1}{2}\Big)^n,\quad -1&lt;x&lt;3,$$ $$\dfrac{1}{x+2}=\dfrac{1}{3\left(1+\dfrac{x-1}{3}\right)}=\dfrac{1}{3}\sum_{n=0}^{\infty}(-1)^n\Big(\dfrac{x-1}{3}\Big)^n,\quad -2&lt;x&lt;4,$$ 于是 $$f(x)=\dfrac{1}{x^2+3x+2}$$（解答未完，接下一批）
-<strong>解</strong>（接上页末）$$=\frac{1}{2}\sum_{n=0}^{\infty}(-1)^n\left(\frac{x-1}{2}\right)^n-\frac{1}{3}\sum_{n=0}^{\infty}(-1)^n\left(\frac{x-1}{3}\right)^n=\sum_{n=0}^{\infty}(-1)^n\left(\frac{1}{2^{n+1}}-\frac{1}{3^{n+1}}\right)(x-1)^n,\quad -1&lt;x&lt;3.$$ (1) 令 $x=0$，代入上式得 $\frac{1}{2}=\sum_{n=0}^{\infty}\left(\frac{1}{2^n}-\frac{1}{3^n}\right)$；(2) 令 $x=2$，代入上式得 $\frac{1}{12}=\sum_{n=1}^{\infty}(-1)^{n-1}\left(\frac{1}{2^n}-\frac{1}{3^n}\right)$.</div>
+<strong>解</strong>（接上页末）$$=\frac{1}{2}\sum_{n=0}^{\infty}(-1)^n\left(\frac{x-1}{2}\right)^n-\frac{1}{3}\sum_{n=0}^{\infty}(-1)^n\left(\frac{x-1}{3}\right)^n=\sum_{n=0}^{\infty}(-1)^n\left(\frac{1}{2^{n+1}}-\frac{1}{3^{n+1}}\right)(x-1)^n,\quad -1&lt;x&lt;3.$$ (1) 令 $x=0$，代入上式得 $\frac{1}{2}=\sum_{n=1}^{\infty}\left(\frac{1}{2^n}-\frac{1}{3^n}\right)$；(2) 令 $x=2$，代入上式得 $\frac{1}{12}=\sum_{n=1}^{\infty}(-1)^{n-1}\left(\frac{1}{2^n}-\frac{1}{3^n}\right)$.</div>
 <div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">[解答接下批]</span></div>
 </div>
 </article>

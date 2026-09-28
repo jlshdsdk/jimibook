@@ -253,7 +253,7 @@
 <button class="solution-toggle" type="button">收起解析 ▴</button>
 <div class="solution">
 <div class="sol-label">【解析】</div>
-<div class="sol-body"><strong>解</strong> (1) 设曲线方程为 $y=y(x)$，则曲线在点 $(x,y)$ 处切线斜率为 $y'$，由条件知 $y'=x^2$，即为所求微分方程. (2) 设曲线方程为 $y=y(x)$，点 $P(x,y)$ 处法线方程为 $Y-y=-\frac{1}{y}(X-x)$. 当 $Y=0$ 时，得 $X=x+yy'$，则 $Q$ 点坐标为 $Q(x+yy',0)$. 又 $PQ$ 中点在 $y$ 轴上，则 $\frac{x+x+yy'}{2}=0$，即所求方程为 $yy'+2x=0$.</div>
+<div class="sol-body"><strong>解</strong> (1) 设曲线方程为 $y=y(x)$，则曲线在点 $(x,y)$ 处切线斜率为 $y'$，由条件知 $y'=x^2$，即为所求微分方程. (2) 设曲线方程为 $y=y(x)$，点 $P(x,y)$ 处法线方程为 $Y-y=-\frac{1}{y'}(X-x)$. 当 $Y=0$ 时，得 $X=x+yy'$，则 $Q$ 点坐标为 $Q(x+yy',0)$. 又 $PQ$ 中点在 $y$ 轴上，则 $\frac{x+x+yy'}{2}=0$，即所求方程为 $yy'+2x=0$.</div>
 <div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">同解末（(1) $y'=x^2$； (2) $yy'+2x=0$）</span></div>
 </div>
 </article>
@@ -743,7 +743,7 @@
 <span class="q-group">作代换化为齐次微分方程求解</span>
 <button class="done-btn" type="button">标记已做</button>
 </div>
-<div class="q-stem">求微分方程 $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{-(x+y)}{3(x+y)-4}$ 的通解.</div>
+<div class="q-stem">求微分方程 $(x+y)\mathrm{d}x+(3x+3y-4)\mathrm{d}y=0$ 的通解.</div>
 
 <hr class="div">
 <button class="solution-toggle" type="button">收起解析 ▴</button>
@@ -798,7 +798,7 @@
 <button class="solution-toggle" type="button">收起解析 ▴</button>
 <div class="solution">
 <div class="sol-label">【解析】</div>
-<div class="sol-body"><strong>解</strong> 设曲线弧 $\widehat{OA}$ 的方程为 $y=f(x)$，由题意得 $\int_{0}^{x}f(t)\,\mathrm{d}x-\frac{1}{2}xf(x)=x^{2}$，等式两端求导得 $$f(x)-\frac{1}{2}f(x)-\frac{1}{2}f'(x)x=2x,\quad\text{即}\quad y'=\frac{y}{x}-4.$$ 令 $\frac{y}{x}=u$, 上式化为 $x\frac{\mathrm{d}u}{\mathrm{d}x}=-4$, 即 $\mathrm{d}u=-4\frac{\mathrm{d}x}{x}$. 积分得 $u=-4\ln x+C$, 把 $u=\frac{y}{x}$ 代入上式得通解 $y=-4x\ln x+Cx$. 由于 $A(1,1)$ 在曲线上, 即 $y\big|_{x=1}=1$, 因而 $C=1$, 从而 $\widehat{OA}$ 的方程为 $y=x(1-4\ln x)$.</div>
+<div class="sol-body"><strong>解</strong> 设曲线弧 $\widehat{OA}$ 的方程为 $y=f(x)$，由题意得 $\int_{0}^{x}f(x)\,\mathrm{d}x-\frac{1}{2}xf(x)=x^{2}$，等式两端求导得 $$f(x)-\frac{1}{2}f(x)-\frac{1}{2}f'(x)x=2x,\quad\text{即}\quad y'=\frac{y}{x}-4.$$ 令 $\frac{y}{x}=u$, 上式化为 $x\frac{\mathrm{d}u}{\mathrm{d}x}=-4$, 即 $\mathrm{d}u=-4\frac{\mathrm{d}x}{x}$. 积分得 $u=-4\ln x+C$, 把 $u=\frac{y}{x}$ 代入上式得通解 $y=-4x\ln x+Cx$. 由于 $A(1,1)$ 在曲线上, 即 $y\big|_{x=1}=1$, 因而 $C=1$, 从而 $\widehat{OA}$ 的方程为 $y=x(1-4\ln x)$.</div>
 <div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$y=x(1-4\ln x)$</span></div>
 </div>
 </article>
@@ -2594,7 +2594,7 @@ $$p-1=C_1y^2,\quad\text{即}\quad y'=C_1y^2+1,$$
 <span class="q-group">利用不定积分运算求解微分方程</span>
 <button class="done-btn" type="button">标记已做</button>
 </div>
-<div class="q-stem">设函数 $f(x)$ 在 $(0,+\infty)$ 内连续, $f(1)=\dfrac{5}{2}$, 且对所有 $x,t\in(0,+\infty)$, 满足条件 $$\int_{1}^{x}f(u)\,\mathrm{d}u=t\int_{1}^{x}f(u)\,\mathrm{d}u+x\int_{1}^{t}f(u)\,\mathrm{d}u,$$ 求 $f(x)$.</div>
+<div class="q-stem">设函数 $f(x)$ 在 $(0,+\infty)$ 内连续, $f(1)=\dfrac{5}{2}$, 且对所有 $x,t\in(0,+\infty)$, 满足条件 $$\int_{1}^{xt}f(u)\,\mathrm{d}u=t\int_{1}^{x}f(u)\,\mathrm{d}u+x\int_{1}^{t}f(u)\,\mathrm{d}u,$$ 求 $f(x)$.</div>
 
 <hr class="div">
 <button class="solution-toggle" type="button">收起解析 ▴</button>
@@ -2733,7 +2733,7 @@ $$p-1=C_1y^2,\quad\text{即}\quad y'=C_1y^2+1,$$
 <button class="solution-toggle" type="button">收起解析 ▴</button>
 <div class="solution">
 <div class="sol-label">【解析】</div>
-<div class="sol-body"><strong>解</strong> 解此一阶线性微分方程得： $$y=e^{\int\ln 2\,dx}\left[\int 2^{\sin x}(\cos x-1)e^{-\int\ln 2\,dx}dx+C\right]=\frac{1}{\ln 2}2^{\sin x}+C2^x,$$ 由 $x\to+\infty$ 时，$y$ 有界，得 $C=0$. 故微分方程的特解为 $y=\frac{1}{\ln 2}2^{\sin x-x}$.</div>
+<div class="sol-body"><strong>解</strong> 解此一阶线性微分方程得： $$y=e^{\int\ln 2\,dx}\left[\int 2^{\sin x}(\cos x-1)e^{-\int\ln 2\,dx}dx+C\right]=\frac{1}{\ln 2}2^{\sin x-x}+C2^x,$$ 由 $x\to+\infty$ 时，$y$ 有界，得 $C=0$. 故微分方程的特解为 $y=\frac{1}{\ln 2}2^{\sin x-x}$.</div>
 <div class="answer-line"><span class="ans-label">最终答案</span><span class="ans-body">$y=\frac{1}{\ln 2}2^{\sin x-x}$</span></div>
 </div>
 </article>
